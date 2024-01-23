@@ -45,4 +45,4 @@ Domains:
 
 The domains in which this abstract resource can be used. By default, the current domain is selected and cannot be removed from the abstract resource.
 
-For additional information about Requirements, Additional info and Domains, see [Abstract Resource Settings](../../INVN/Abst-Rsrc-Tmplt-Sttngs.htm).
+For additional information about Requirements, Additional info and Domains, see Abstract Resource Settings
