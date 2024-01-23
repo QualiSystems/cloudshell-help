@@ -1,8 +1,0 @@
-{
-  "label": "Installation and Configuration",
-  "position": 6,
-  "link": {
-    "type": "generated-index",
-    "description": "CloudShell suite comprises different components and services. For details on CloudShell's different components and services, see CloudShell Component Architecture."
-  }
-}
