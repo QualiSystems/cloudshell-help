@@ -34,10 +34,11 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-  plugins: [
-    // ...
-    require.resolve('docusaurus-lunr-search'),
-  ],
+
+  plugins: [[ require.resolve('docusaurus-lunr-search'), {
+    highlightResult: true
+  }]],
+
   presets: [
     [
       'classic',
@@ -66,8 +67,9 @@ const config = {
       navbar: {
         title: 'Online Help',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'CloudShell',
           src: 'img/logo.svg',
+          srcDark: 'img/logo-dark.svg',
         },
         items: [
           {
