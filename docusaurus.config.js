@@ -50,7 +50,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/QualiSystems/cloudshell-help/tree/master/',
+            'https://github.com/QualiSystems/cloudshell-help/tree/main/',
 
         },
         theme: {
