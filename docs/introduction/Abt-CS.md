@@ -5,7 +5,7 @@ sidebar_position: 1
 # CloudShell Overview
 **CloudShell** is a cloud automation platform that lets you deliver fully functional sandboxes over any combination of infrastructure, from legacy to public cloud, and eliminate resource conflicts. Creating an IT environment blueprint can be as simple as dragging the resources you need from the inventory and creating the connections between them.
 
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/nzhSpZCeYg8" title="CloudShell Cloud Sandboxing Overview Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" height="500px" src="https://www.youtube.com/embed/nzhSpZCeYg8" title="CloudShell Cloud Sandboxing Overview Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 **CloudShell** significantly reduces blueprint configuration time (by automating the management of IT resources), offers clear visibility into your organization’s resources and their availability status, and optimizes resource use.

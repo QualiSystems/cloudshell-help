@@ -8,12 +8,16 @@ CloudShell Features and Benefits
     *   Easy-to-use drag-and-drop blueprint editor allows you to set up operational blueprints in minutes
     *   Python-based environment orchestration and provisioning
     *   Vibrant developer community containing growing number of open-source shells for 100s of physical devices, virtual appliances, private and public clouds
-    *   Shells - Python-based plugins for discovering lab and cloud infrastructure [More...](#)
+    <details>
+
+    <summary>Shells - Python-based plugins for discovering lab and cloud infrastructure</summary>
         
         *   Data model
         *   Device structure
         *   Common, device-specific Day 2 actions
         *   Drag and drop
+    </details>
+    
         
 *   Application layer configuration management:
     *   Ability to apply configuration management to VM's OSand applications
@@ -23,12 +27,15 @@ CloudShell Features and Benefits
     *   Blueprint reservation and scheduling, resource allocation management and conflict resolution
     *   API and CI/CD tool integrations for DevOps, agile and continuous development processes
 *   Monitoring and control:
-    *   Business insights and utilization reports [More...](#)
+    <details>
+
+    <summary>Business insights and utilization reports</summary>
         
         Custom and out-of-the-box dashboards containing easy-to-understand graphs, charts and tables, providing business insights and actionable intelligence around infrastructure consumption and activity, managed identities and more.
         
         *   Resource inventory (resource/chassis/blade/port etc.), cloud infrastructure, sandbox consumption and licenses, user activity and more
         *   Easy-to-use editor allows you to create and customize existing dashboards in minutes
+    </details>    
         
     *   Robust inventory search mechanism for finding CloudShell resources based on different criteria
     *   In-browser access to resources using SSH, RDP and more
