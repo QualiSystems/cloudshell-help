@@ -1,0 +1,8 @@
+{
+  "label": "Resources",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "The following articles explain how to add, configure and use resources and deployed Apps in a sandbox. Some of these actions can also be performed in an offline blueprint."
+  }
+}
