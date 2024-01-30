@@ -1,0 +1,8 @@
+{
+  "label": "Viewing System Messages",
+  "position": 16,
+  "link": {
+    "type": "generated-index",
+    "description": "CloudShell Portal displays system messages in the following places: Indication Messages, Outout Console Window, Activity Feed Pane, Activity Details Window."
+  }
+}
