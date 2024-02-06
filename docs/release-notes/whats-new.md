@@ -2,60 +2,21 @@
 sidebar_position: 2
 ---
 
-What's New in Version 2023.2
+What's New in Version 2023.3
 ============================
 
-In this article:
-
-*   [Version 1.1 updates](#Version)
-*   [Features and enhancements](#Features)
-*   [Security enhancements and 3rd-party tool upgrades](#Security)
-*   [New and updated API methods](#New)
-
-Version 1.1 updates
--------------------
-
-### QualiX 5.0
-
-We're happy to announce the release of QualiX 5.0. Based on [Apache Guacamole 1.5.3](https://guacamole.apache.org/releases/1.5.3/), this new version of QualiX includes a streamlined QualiX-over-Docker deployment process that allows you to automate SSL and advanced post-deployment configurations as part of the installation process, and updated RDP/SSH/VNC/Telnet dependencies. Upgrade procedures for existing QualiX over Docker/OVAinstallatoins are available.
-
-For details, see Deploy QualiX 5.0 and up Using Docker.
-
-Features and enhancements
--------------------------
+## Features and enhancements
 
 This release includes the following features and enhancements.
 
-### HTTPSsupport for Training Portal
+### CloudShell Events to Message Queue
 
-For enhanced security, the CloudShell Training Portal can be configured to run over HTTPS. For details, see Setting up Training Portal Using the Installer (Over the Shoulder).
+CloudShell can now send asynchronous events to a message queue to be consumed and handled by custom implementations. For details, please reach out to your account manager.
 
-### Allow shell update to override old/deprecated attributes
+### Password Policy
 
-It is now possible to configure shells to automatically remove old deprecated attributes whenever the CloudShell admin updates the shell in the **Manage > Shells** page. For details, see Overriding Old/Deprecated Shell Attributes.
+We are introducing a new feature that allows CloudShell administrators to configure a password policy for enhanced security. This policy enables the definition of specific criteria for password strength when Single Sign-On (SSO) is not in use. For details, see [Setting password policies for CloudShell user accounts](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm#PassPolicy).
 
-### Support for MongoDB 6.0.4
+### Brute-Force Protection on Login
 
-CloudShell's setup process provides a MongoDB 6.0.4 installer for new customers, while existing customers will need to upgrade their MongoDB installation manually, as explained in How to Upgrade MongoDB From 4.2 to 6.0.
-
-Security enhancements and 3rd-party tool upgrades
--------------------------------------------------
-
-*   Implemented support for MongoDB 6.0.4. New CloudShell installations come with version 6.0.4 installed by default, while existing CloudShell customers can upgrade to version 6.0.4 when upgrading to CloudShell 2023.2.
-*   We’ve updated the version of RabbitMQ (3.11.10) & Erlang (25.2.3)
-    
-*   ElasticSearch has been upgraded to 7.17.5
-
-New and updated API methods
----------------------------
-
-*   New CloudShell Administration REST API for managing CloudShell domains, groups, users, license pools, and more. For details, see CloudShell Administration REST API.
-*   New APIs supporting organizing resources in blueprints and sandboxes:
-    
-    *   GetResourcesLabelsInTopology
-        
-    *   GetResourcesLabelsInReservation
-        
-*   Added new methods to WebAPI endpoint and client for Cloudshell Automation API including:
-    
-    <table><tbody><tr><td><p>EndReservation</p><p>CreateImmediateTopologyReservation</p><p>CreateTopologyReservation</p><p>GetUserDetails</p><p>GetTopologyDetails</p><p>FindResources</p><p>GetResourceAvailabilityInTimeRange</p></td><td><p>ConfigureAppsV2</p><p>GetReservationStatus</p><p>GetCurrentReservations</p><p>GetDomainDetails</p><p>UpdateReservationDescription</p><p>AddResourcesToReservation</p><p>UpdateReservationGlobalInputs</p></td><td><p>GetScheduledReservations</p><p>GetResourceLiveStatus</p><p>ExportFamiliesAndModels</p><p>DeleteReservation</p><p>GetServerDateAndTime</p><p>UpdateResourceDescription</p><p>UpdateResourceAddress</p></td></tr></tbody></table>
+Introducing 'Brute-Force Protection' on Login for enhanced security. This feature applies exponential delays after defined failed login attempts. Enhance your system's security with proactive measures against brute force attacks. For details, see [Enabling brute-force protection for logins](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm#BruteForceProtection).

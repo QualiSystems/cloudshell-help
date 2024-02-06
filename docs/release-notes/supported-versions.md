@@ -14,18 +14,19 @@ CloudShell offers two support phases:
 
 | Release | GA Version release date | End of Premier support (18 months) | End of Extended support (30 months) |
 | --- | --- | --- | --- |
+| 2023.3 | December 2023 | July 1, 2025 | July 1, 2026 |
 | 2023.2 | July 2023 | Feb 1, 2025 | Feb 1, 2026 |
 | 2023.1 | March 2023 | Oct 1, 2024 | Oct 1, 2025 |
 | 2022.2 | September 2022 | Apr 1, 2024 | Apr 1, 2025 |
-| 2022.1 | February 2022 | Sept 1, 2023 | Sept 1, 2024 |
-| 2021.2 | August 2021 | Jan 1, 2023 | Jan 1, 2024 |
-| 2021.1 | April 2021 | Nov 1, 2022 | Nov 1, 2023 |
-| 2020.2 | October 2020 | May 1, 2022 | May 1, 2023 |
-| 2020.1 | June 2020 | Jan 1, 2022 | Jan 1, 2023 |
-| 9.3 | September 2019 | Apr 1, 2021 | Apr 1, 2022 |
-| 9.2 | May 2019 | Dec 1, 2020 | Dec 1, 2021 |
-| 9.1 | January 2019 | Aug 1 2020 | Aug 1, 2021 |
-| 9.0 | September 2018 | April 1, 2020 | Apr 1, 2021 |
-| 8.3 | April 2018 | Nov 1, 2019 | Nov 1, 2020 |
-| 8.2 | December 2017 | July 1, 2019 | July 1, 2020 |
-| 8.1 | August 2017 | March 1, 2019 | March 1, 2020 |
+| 2022.1 | February 2022 | <span style={{ color:"gray" }}>Sept 1, 2023</span> | Sept 1, 2024 |
+| <span style={{ color:"gray" }}>2021.2</span> | <span style={{ color:"gray" }}>August 2021</span> | <span style={{ color:"gray" }}>Jan 1, 2023</span> | <span style={{ color:"gray" }}>Jan 1, 2024</span> |
+| <span style={{ color:"gray" }}>2021.1</span> | <span style={{ color:"gray" }}>April 2021</span> | <span style={{ color:"gray" }}>Nov 1, 2022</span> | <span style={{ color:"gray" }}>Nov 1, 2023</span> |
+| <span style={{ color:"gray" }}>2020.2</span> | <span style={{ color:"gray" }}>October 2020</span> | <span style={{ color:"gray" }}>May 1, 2022</span> | <span style={{ color:"gray" }}>May 1, 2023</span> |
+| <span style={{ color:"gray" }}>2020.1</span> | <span style={{ color:"gray" }}>June 2020</span> | <span style={{ color:"gray" }}>Jan 1, 2022</span> | <span style={{ color:"gray" }}>Jan 1, 2023</span> |
+| <span style={{ color:"gray" }}>9.3</span> | <span style={{ color:"gray" }}>September 2019</span> | <span style={{ color:"gray" }}>Apr 1, 2021</span> | <span style={{ color:"gray" }}>Apr 1, 2022</span> |
+| <span style={{ color:"gray" }}>9.2</span> | <span style={{ color:"gray" }}>May 2019</span> | <span style={{ color:"gray" }}>Dec 1, 2020</span> | <span style={{ color:"gray" }}>Dec 1, 2021</span> |
+| <span style={{ color:"gray" }}>9.1</span> | <span style={{ color:"gray" }}>January 2019</span> | <span style={{ color:"gray" }}>Aug 1 2020</span> | <span style={{ color:"gray" }}>Aug 1, 2021</span> |
+| <span style={{ color:"gray" }}>9.0</span> | <span style={{ color:"gray" }}>September 2018</span> | <span style={{ color:"gray" }}>April 1, 2020</span> | <span style={{ color:"gray" }}>Apr 1, 2021</span> |
+| <span style={{ color:"gray" }}>8.3</span> | <span style={{ color:"gray" }}>April 2018</span> | <span style={{ color:"gray" }}>Nov 1, 2019</span> | <span style={{ color:"gray" }}>Nov 1, 2020</span> |
+| <span style={{ color:"gray" }}>8.2</span> | <span style={{ color:"gray" }}>December 2017</span> | <span style={{ color:"gray" }}>July 1, 2019</span> | <span style={{ color:"gray" }}>July 1, 2020</span> |
+| <span style={{ color:"gray" }}>8.1</span> | <span style={{ color:"gray" }}>August 2017</span> | <span style={{ color:"gray" }}>March 1, 2019</span> | <span style={{ color:"gray" }}>March 1, 2020</span> |
