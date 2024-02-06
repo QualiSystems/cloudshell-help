@@ -4,7 +4,7 @@ sidebar_position: 1
 CloudShell Features and Benefits
 ================================
 
-*   Faster time to market:
+*   **Faster time to market:**
     *   Easy-to-use drag-and-drop blueprint editor allows you to set up operational blueprints in minutes
     *   Python-based environment orchestration and provisioning
     *   Vibrant developer community containing growing number of open-source shells for 100s of physical devices, virtual appliances, private and public clouds
@@ -19,14 +19,14 @@ CloudShell Features and Benefits
     </details>
     
         
-*   Application layer configuration management:
+*   **Application layer configuration management:**
     *   Ability to apply configuration management to VM's OSand applications
     *   Ability to load configurations on device OS
-*   Ease of use:
+*   **Ease of use:**
     *   Web-based self-service portal and inventory catalog
     *   Blueprint reservation and scheduling, resource allocation management and conflict resolution
     *   API and CI/CD tool integrations for DevOps, agile and continuous development processes
-*   Monitoring and control:
+*   **Monitoring and control:**
     <details>
 
     <summary>Business insights and utilization reports</summary>
@@ -40,21 +40,21 @@ CloudShell Features and Benefits
     *   Robust inventory search mechanism for finding CloudShell resources based on different criteria
     *   In-browser access to resources using SSH, RDP and more
     *   Activity feed displaying real-time sandbox progress and activity messages, as well as errors
-*   Security and data integrity:
+*   **Security and data integrity:**
     *   HTTPS security
     *   Ability to set cloud security policies across multi-cloud environments
     *   Blueprint-deployment approach ensuring data integrity
     *   Siloed environments
     *   Resource authentication credentials encrypted and accessible only to admins and/or delegated users
     *   Option to isolate/share resources across multiple environments/domains
-*   High performance:
+*   **High performance:**
     *   Powerful sandbox-deployment mechanism supports the deployment of 100s of sandbox environments in parallel
     *   Distributed execution engines allowing for scale, latency mitigation and quick delivery
     *   Integration with leading CI/CD tools and technologies
-*   Multi-site deployments
+*   **Multi-site deployments:**
     *   Domains - Set up site/team/project-specific deployments, with access to privileged users in the organization.
     *   Role-based access control, integration with Active Directory, SSO and more
-*   Test automation:
+*   **Test automation:**
     *   High-performance test automation platform allows the deployment of 100s of jobs in parallel
     *   Native support for Robot Framework
     *   Support for rapid execution of hundreds of test batches in parallel
