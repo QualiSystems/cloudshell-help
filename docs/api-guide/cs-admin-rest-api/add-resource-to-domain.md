@@ -79,7 +79,7 @@ Example header format:
 <details>
 <summary>Response code</summary>
 
-
-
+```javascript
 201 Created
+```
 </details>

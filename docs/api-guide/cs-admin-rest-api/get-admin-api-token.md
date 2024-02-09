@@ -60,6 +60,7 @@ Example header format:
 
 <details>
 <summary>Response example</summary>
+
 ```javascript
 "UJvRg9mn6EywpLYMpRPiQg2"
 ```
@@ -68,6 +69,9 @@ Example header format:
 <details>
 <summary>Response code</summary>
 
-     200
+```javascript
+200
+```
+
 </details>
 

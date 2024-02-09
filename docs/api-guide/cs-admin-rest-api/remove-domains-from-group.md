@@ -1,17 +1,16 @@
 ---
-sidebar_position: 15
+sidebar_position: 16
 ---
 
-
-# Add domains to group
+# Remove domains from group
 
 ### Description
 
-Adds one or more domains to a given group.
+Removes one or more domains from a given group.
 
 ### HTTP method
 
-POST
+DELETE
 
 ### Request
 
@@ -19,7 +18,7 @@ POST
 <summary>URL</summary>
 
 ```javascript
-http://{Admin API IP}:{port#}/api/v1/groups/{id}/domain
+http://{Admin API IP}:{port#}/api/v1/groups/{id}/domains
 ```
 </details>
 
@@ -35,7 +34,6 @@ Example header format:
 | Parameter | Description/Comments |
 | --- | --- |
 | ID | (string) Group's ID. Can be retrieved via [Get all groups](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-all-groups.htm). |
-
 </details>
 
 <details>
@@ -43,8 +41,7 @@ Example header format:
 
 | Parameter | Description/Comments |
 | --- | --- |
-| Id | (string) Group's id. Can be retrieved via [Get all groups](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-all-groups.htm). |
-| ViewOnly | (bool) Specify true to add the group with "view only" permissions. |
+| Id | (string) Domain's id. Can be retrieved via [Get group's domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-group-domains.htm). |
 </details>
 
 <details>
@@ -54,13 +51,12 @@ Example header format:
 {
   "Domains": [
     {
-      "Id": "domain1 id"
+      "Id": "5c966733-c496-486d-8b1a-963c13e9a103"
     },
     {
-      "Id": "domain2 id"
-    }
-  ],
-  "ViewOnly": true
+      "Id": "8cd12c8d-6d40-4dfd-89da-a8d8dde00575"
+    },
+  ]
 }
 ```
 </details>
@@ -81,6 +77,6 @@ Example header format:
 <summary>Response code</summary>
 
 ```javascript
-201 Created
+200 OK
 ```
 </details>

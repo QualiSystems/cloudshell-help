@@ -16,6 +16,7 @@ GET
 
 <details>
 <summary>URL</summary>
+
 ```javascript
 http://{Admin API IP}:{port#}/api/v1/domains/{id}/blueprints
 ```
@@ -23,7 +24,6 @@ http://{Admin API IP}:{port#}/api/v1/domains/{id}/blueprints
 
 <details>
 <summary>Headers</summary>
-
 
 Example header format:
 
@@ -52,6 +52,7 @@ Example header format:
 ### Response
 <details>
 <summary>Response example</summary>
+
 ```javascript
 {
     "Blueprints": [
@@ -128,6 +129,7 @@ Example header format:
 <details>
 <summary>Response code</summary>
 
-
+```javascript
 200 OK
+```
 </details>

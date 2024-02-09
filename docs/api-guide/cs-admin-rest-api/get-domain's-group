@@ -16,6 +16,7 @@ DELETE
 
 <details>
 <summary>URL</summary>
+
 ```javascript
 http://{Admin API IP}:{port#}/api/v1/domains/{id}/blueprint
 ```
@@ -47,6 +48,7 @@ Example header format:
 
 <details>
 <summary>Request example</summary>
+
 ```javascript
 {
   "Blueprints": [
@@ -65,6 +67,7 @@ Example header format:
 
 <details>
 <summary>Response example</summary>
+
 ```javascript
 {
     "Errors": []
@@ -75,6 +78,7 @@ Example header format:
 <details>
 <summary>Response code</summary>
 
-
+```javascript
 200 OK
+```
 </details>

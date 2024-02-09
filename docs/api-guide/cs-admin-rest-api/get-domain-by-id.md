@@ -16,6 +16,7 @@ GET
 
 <details>
 <summary>URL</summary>
+
 ```javascript
 http://{Admin API IP}:{port#}/api/v1/domains/{id}
 ```
@@ -38,7 +39,8 @@ Example header format:
 ### Response
 
 <details>
-<summary>Response example</summary>    
+<summary>Response example</summary>   
+
 ```javascript
 {
     "Id": "5c966733-c496-486d-8b1a-963c13e9a103",
@@ -53,5 +55,8 @@ Example header format:
 
 <details>
 <summary>Response code</summary>  
+
+```javascript
 200 OK
+```
 </details>

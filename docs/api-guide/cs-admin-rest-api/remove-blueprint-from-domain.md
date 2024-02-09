@@ -75,5 +75,7 @@ Example header format:
 <details>
 <summary>Response code</summary>
 
+```javascript
 200 OK
+```
 </details>

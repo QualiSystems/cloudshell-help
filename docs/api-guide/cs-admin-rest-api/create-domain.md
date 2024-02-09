@@ -26,6 +26,7 @@ http://{Admin API IP}:{port#}/api/v1/domains
 
 <details>
 <summary>Headers</summary>
+
 Example header format:
 
 `Authorization: Basic <authorization token returned from the login method>`
@@ -50,6 +51,7 @@ Example header format:
 
 <details>
 <summary>Request example</summary> 
+
 ```javascript
 {
   "Archived": true,
@@ -76,6 +78,9 @@ Example header format:
 
 <details>
 <summary>Response code</summary> 
+
+```javascript
 201 Created
+```
 </details>
 

@@ -84,5 +84,8 @@ Example header format:
 
 <details>
 <summary>Response example</summary>
-    200
+
+```javascript
+200
+```
 </details>

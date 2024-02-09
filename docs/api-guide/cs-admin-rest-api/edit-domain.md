@@ -16,6 +16,7 @@ PUT
 
 <details>
 <summary>URL</summary>
+
 ```javascript
 http://{Admin API IP}:{port#}/api/v1/domains/{id}
 ```
@@ -61,6 +62,7 @@ Example header format:
 
 <details>
 <summary>Request example</summary>
+
 ```javascript
 {
   "Description": "domain's new description",
@@ -74,5 +76,7 @@ Example header format:
 <details>
 <summary>Response code</summary>
 
-200 OK
+```javascript
+200 Ok
+```
 </details>
