@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Get all domains
@@ -83,8 +83,9 @@ Example header format:
 </details>
 
 <details>
-<summary>Response code</summary>
-```js
+<summary>Response example</summary>
+
+```javascript
 200 OK
 ```
 </details>
