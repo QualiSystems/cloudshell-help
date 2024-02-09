@@ -83,6 +83,8 @@ Example header format:
 </details>
 
 <details>
-<summary>Response example</summary>
-    200
+<summary>Response code</summary>
+```js
+200 OK
+```
 </details>
