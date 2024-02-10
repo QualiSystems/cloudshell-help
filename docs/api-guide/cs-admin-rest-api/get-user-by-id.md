@@ -33,7 +33,7 @@ Example header format:
 
 | Parameter | Description/Comments |
 | --- | --- |
-| ID | (string) User's ID. Can be retrieved via [Get all users](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-all-users.htm) or [Get group's users](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-group-users.htm). |
+| ID | (string) User's ID. Can be retrieved via [Get all users](http://localhost:3000/cloudshell-help/next/api-guide/cs-admin-rest-api/get-all-users) or [Get group's users](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-group-users.htm). |
 
 </details>
 
