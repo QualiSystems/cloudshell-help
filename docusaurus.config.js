@@ -35,8 +35,8 @@ const config = {
     locales: ['en'],
   },
 
-  plugins: [[ require.resolve('docusaurus-lunr-search'), {
-    highlightResult: true
+  plugins: [[ require.resolve('@cmfcmf/docusaurus-search-local'), {
+    maxSearchResults: 8
   }]],
 
   presets: [
