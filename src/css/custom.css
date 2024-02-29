@@ -49,4 +49,10 @@
     no-repeat;
 }
 
+.theme-admonition-note {
+  background-color: #ffffcc;
+}
 
+.alert--secondary {
+  --ifm-alert-border-color: #f0a000;
+}
