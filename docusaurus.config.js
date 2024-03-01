@@ -35,9 +35,20 @@ const config = {
     locales: ['en'],
   },
 
-  plugins: [[ require.resolve('docusaurus-lunr-search'), {
-    highlightResult: true
-  }]],
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      ({
+        hashed: true,
+        indexBlog: false,
+        highlightSearchTermsOnTargetPage: true,
+        searchResultLimits: 8,
+        searchResultContextMaxLength: 80,
+        explicitSearchResultPath: true,
+        docsRouteBasePath: '/',
+      }),
+    ],
+  ],
 
   presets: [
     [
@@ -58,7 +69,7 @@ const config = {
         },
       }),
     ],
-  ],
+  ],  
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -75,7 +86,7 @@ const config = {
         items: [
           {
             href: 'https://github.com/QualiSystems/cloudshell-help',
-            label: 'GitHub',
+            className: 'header-github-link',
             position: 'right',
           },
           {
