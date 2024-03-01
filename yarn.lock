@@ -1829,10 +1829,10 @@
   dependencies:
     "@types/mdx" "^2.0.0"
 
-"@node-rs/jieba-darwin-x64@1.9.2":
+"@node-rs/jieba-win32-x64-msvc@1.9.2":
   version "1.9.2"
-  resolved "https://registry.npmjs.org/@node-rs/jieba-darwin-x64/-/jieba-darwin-x64-1.9.2.tgz"
-  integrity sha512-TXms+q4l7/0a7T+O9t5fQ0m6Qi+4XKgtaRmg089iYbvSp4JfX+XIg+ZLJG+9uc25oWpOgpt+z4bsz9rrHnW/6Q==
+  resolved "https://registry.npmjs.org/@node-rs/jieba-win32-x64-msvc/-/jieba-win32-x64-msvc-1.9.2.tgz"
+  integrity sha512-wIseuWUK+WdikhMFPLvr80D0I4wQJSdFsRIljiUhKwnNQESG20zIxSYE1qy7BNBd7s8fAn1BC6PGeg7S/2KliQ==
 
 "@node-rs/jieba@^1.6.0":
   version "1.9.2"
