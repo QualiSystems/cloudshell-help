@@ -12,7 +12,7 @@ sidebar_position: 1
     ```javascript
     <system.web>
          <sessionState timeout="120">
-         </sessionState>
+    </sessionState>
     ```
     
     The default timeout period is 120 minutes.
