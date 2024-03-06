@@ -53,10 +53,16 @@
     no-repeat;
 }
 
+/* change the note admonition background color from the default white */
 .theme-admonition-note {
   background-color: #ffffcc;
 }
 
+[data-theme='dark'] .theme-admonition-note {
+  background-color: #402f02;
+}
+
+/* change the side strip color of the note admonition */
 .alert--secondary {
   --ifm-alert-border-color: #f0a000;
 }
