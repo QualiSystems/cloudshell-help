@@ -27,6 +27,11 @@
   --ifm-color-primary-lightest: #ffffff;
 }
 
+
+.menu__link {
+  font-size: 15px;
+}
+
 .markdown h1:first-child {
   --ifm-h1-font-size: 2.4rem;
 }
