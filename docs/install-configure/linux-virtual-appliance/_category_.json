@@ -1,0 +1,8 @@
+{
+  "label": "Linux Virtual Appliance",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "This guide explains the process for setting up a CloudShell Execution Server on a Linux vCenter VM." 
+  }
+}
