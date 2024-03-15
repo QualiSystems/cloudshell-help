@@ -1,0 +1,8 @@
+{
+  "label": "Ansible Playbook Development for Apps",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "This chapter will take you through the development process of an Ansible playbook for CloudShell App deployment."
+  }
+}

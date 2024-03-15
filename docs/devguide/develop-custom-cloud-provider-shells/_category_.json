@@ -1,0 +1,8 @@
+{
+  "label": "Developing Custom Cloud Provider Shells",
+  "position": 6,
+  "link": {
+    "type": "generated-index",
+    "description": "The Custom Cloud Provider Shell enables sandbox end users to deploy virtual applications on any on prem or public cloud provider or Kubernetes cluster. Note that we're adding cloud provider shells to Quali Repositories all the time. However, to deploy VMs on other cloud providers, or create a modified version of an existing cloud provider shell, you will need to create a shell that allows this to happen."
+  }
+}
