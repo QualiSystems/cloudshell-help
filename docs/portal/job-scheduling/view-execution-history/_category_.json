@@ -1,0 +1,8 @@
+{
+  "label": "Viewing Execution History and Test Reports",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "The following articles explain how to view the execution history of automation suite templates and ad hocs, and how to view reports for completed tests."
+  }
+}
