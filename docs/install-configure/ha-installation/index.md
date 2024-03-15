@@ -4,7 +4,6 @@ This guide explains the process for setting up CloudShell in a high availability
 
 ## Related Topics
 
-- [High Availability Installation](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/HA-Installation.htm?TocPath=Installation%20and%20Configuration|High%20Availability%20Installation|_____0)
     - [CloudShell High Availability Installation Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Ovrv.htm?TocPath=Installation%20and%20Configuration|High%20Availability%20Installation|CloudShell%20High%20Availability%20Installation%20Overview|_____0)
     - [Installation Procedure](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Instl-prcdr.htm?TocPath=Installation%20and%20Configuration|High%20Availability%20Installation|Installation%20Procedure|_____0)
     - [Installing and Configuring Quali Server](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Instl-cnfg-Quali-srv.htm?TocPath=Installation%20and%20Configuration|High%20Availability%20Installation|Installing%20and%20Configuring%20Quali%20Server|_____0)
