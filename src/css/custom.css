@@ -36,6 +36,11 @@
   --ifm-h1-font-size: 2.4rem;
 }
 
+.markdown li > p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .hidden {
   display: none !important;
 }
