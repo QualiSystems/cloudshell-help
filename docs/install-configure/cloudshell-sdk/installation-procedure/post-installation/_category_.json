@@ -1,0 +1,8 @@
+{
+  "label": "Post Installation",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "These steps are performed once only, at the time when first starting the VM and when first logging into CloudShell portal."
+  }
+}
