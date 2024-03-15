@@ -1,0 +1,8 @@
+{
+  "label": "Install and Configure the License Server",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "The License server component is co-hosted with the application server. A Windows script monitors the license server service. Use the procedures in this section to install and configure the License Server and apply the license."
+  }
+}

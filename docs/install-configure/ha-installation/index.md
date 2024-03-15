@@ -1,0 +1,17 @@
+# High Availability Installation and Configuration
+
+This guide explains the process for setting up CloudShell in a high availability environment. Before you start, you might want to check out the [High Availability Deployment](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Deploy/HA-Deploy-Home.htm) guide to get familiarized with CloudShell High Availability.
+
+## Related Topics
+
+- [High Availability Installation](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/HA-Installation.htm?TocPath=Installation%20and%20Configuration|High%20Availability%20Installation|_____0)
+    - [CloudShell High Availability Installation Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Ovrv.htm?TocPath=Installation%20and%20Configuration|High%20Availability%20Installation|CloudShell%20High%20Availability%20Installation%20Overview|_____0)
+    - [Installation Procedure](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Instl-prcdr.htm?TocPath=Installation%20and%20Configuration|High%20Availability%20Installation|Installation%20Procedure|_____0)
+    - [Installing and Configuring Quali Server](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Instl-cnfg-Quali-srv.htm?TocPath=Installation%20and%20Configuration|High%20Availability%20Installation|Installing%20and%20Configuring%20Quali%20Server|_____0)
+    - [Installing Windows Network Load Balancing](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Instl-Win-ntwrk-ld-blnc.htm?TocPath=Installation%20and%20Configuration|High%20Availability%20Installation|Installing%20Windows%20Network%20Load%20Balancing|_____0)
+    - [Configuring Portal Load Balancing](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Cnfg-Prtl-ld-blnc.htm?TocPath=Installation%20and%20Configuration|High%20Availability%20Installation|Configuring%20Portal%20Load%20Balancing|_____0)
+    - [Configuring ARR and IIS to Support SSL in an HA Scenario](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Cnfg-ARR-IIS-for-SSL-in-HA.htm?TocPath=Installation%20and%20Configuration|High%20Availability%20Installation|Configuring%20ARR%20and%20IIS%20to%20Support%20SSL%20in%20an%20HA%20Scenario|_____0)
+    - [How to Create a Cluster in Windows Failover Manager](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Crt-clstr-in-Win-Flvr-Mngr.htm?TocPath=Installation%20and%20Configuration|High%20Availability%20Installation|How%20to%20Create%20a%20Cluster%20in%20Windows%20Failover%20Manager|_____0)
+    - [Maintenance of the HA Plugin](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Maintenance-HA.htm?TocPath=Installation%20and%20Configuration|High%20Availability%20Installation|Maintenance%20of%20the%20HA%20Plugin|_____0)
+    - [Known Issues and Limitations (High Availability)](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Knwn-issues.htm?TocPath=Installation%20and%20Configuration|High%20Availability%20Installation|_____9)
+    - [Appendix](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Appendix.htm?TocPath=Installation%20and%20Configuration|High%20Availability%20Installation|Appendix|_____0)

@@ -1,0 +1,8 @@
+{
+  "label": "Deployment Types (High Availability)",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "The recommended machine configurations are described in this article."
+  }
+}
