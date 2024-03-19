@@ -31,7 +31,7 @@ To configure CloudShell to set the logical names on the ports during reservation
         ![](/Images/CloudShell-Portal/Lab-Management/Environments/TGAbstractAddAttribute.png)
         
 2. Click Save Changes.
-3. Create a blueprint and add the abstract templatefrom the Add Abstract Template catalog.
+3. Create a blueprint and add the abstract template from the Add Abstract Template catalog.
 4. Add to the blueprint a custom setup script that takes the value from the port’s Additional Info and sets the value of the Logical Name attribute on the port.
 5. Reserve the blueprint.
     
