@@ -2,8 +2,7 @@
 sidebar_position: 3
 ---
 
-
-## blueprint identifier
+# Blueprint Identifier
 
 ### Description
 

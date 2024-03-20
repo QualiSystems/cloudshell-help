@@ -25,7 +25,7 @@ Ends an execution of a component or sandbox command, per specified execution ID.
 | Parameter | Description/Comments |
 | --- | --- |
 | `execution_id` | 
-The id of the command's execution (`string`). <br/> Note : You can get the **execution ID** from the [component command start](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/Sndbx-REST-API/REST-API-V2-Ref-Guide.htm?tocpath=CloudShell%20API%20Guide%7CCloudShell%20Sandbox%20API%7C_____3#componen2) and the [blueprint start](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/REST-API-blueprint_strt.htm) methods. |
+The id of the command's execution (`string`). <br/> **<span style={{ color: 'blue' }}>Note:</span>** You can get the **execution ID** from the [component command start](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/Sndbx-REST-API/REST-API-V2-Ref-Guide.htm?tocpath=CloudShell%20API%20Guide%7CCloudShell%20Sandbox%20API%7C_____3#componen2) and the [blueprint start](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/REST-API-blueprint_strt.htm) methods. |
 
 </details>
 

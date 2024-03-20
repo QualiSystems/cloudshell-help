@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-## sandboxes
+# Sandboxes
 
 ### Description
 

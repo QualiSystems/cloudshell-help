@@ -23,7 +23,7 @@ Gets details about a specific execution of a sandbox or component command, per s
 
 | Parameter | Description/Comments |
 | --- | --- |
-| `execution_id` | The id of the command's execution (`string`). <br/> **Tip**  You can get the execution ID from the [component command start](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/Sndbx-REST-API/REST-API-V2-Ref-Guide.htm?tocpath=CloudShell%20API%20Guide%7CCloudShell%20Sandbox%20API%7C_____3#componen2) and the [blueprint start](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/REST-API-blueprint_strt.htm) methods. |
+| `execution_id` | The id of the command's execution (`string`). <br/> **<span style={{ color: 'green' }}>Tip:</span>**  You can get the execution ID from the [component command start](http://localhost:3000/cloudshell-help/next/api-guide/cs-sandbox-api/cs-sandbox-api-version-2-reference-guide/component-command-start) and the [blueprint start](http://localhost:3000/cloudshell-help/next/api-guide/cs-sandbox-api/cs-sandbox-api-version-2-reference-guide/blueprint-start) methods. |
 
 </details>
 

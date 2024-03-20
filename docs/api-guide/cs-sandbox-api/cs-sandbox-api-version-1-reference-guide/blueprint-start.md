@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-## blueprint start
+# Blueprint Start
 
 ### Description
 

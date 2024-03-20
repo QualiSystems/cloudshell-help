@@ -40,10 +40,6 @@ Example header format:
 | --- | --- |
 | UserName | External user name. Can be retrieved via [Get users from an external group](http://localhost:3000/cloudshell-help/next/api-guide/cs-admin-rest-api/get-users-from-an-external-group) |
 | GroupName | External group name. Can be retrieved via [Get all external groups](http://localhost:3000/cloudshell-help/next/api-guide/cs-admin-rest-api/get-all-external-groups). <br/> TIP: You should import by group name for larger organizations containing hundreds of users as importing all users may fail due to active directory/LDAP limitations. |
-=======
-| UserName | External user name. Can be retrieved via [Get users from an external group](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-all-external-group-users.htm) or [Get users from an external group](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-all-external-group-users.htm). |
-| GroupName | External group name. Can be retrieved via [Get all external groups](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-all-external-groups.htm). <br/> Tip: You should import by group name for larger organizations containing hundreds of users as importing all users may fail due to active directory/LDAP limitations. |
-| AllowUpdate | (Optional) You can set this parameter to true to force updating a user that already exists in CloudShell. |
 
 </details>
 

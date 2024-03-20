@@ -25,7 +25,7 @@ The maximum number of entries in the response is configured by the administrator
 
 | URL Parameters | Description/Comments |
 | --- | --- |
-| `sandbox_identifier` | The id of the sandbox. <br/> Note: You can get the sandbox ID from the [sandboxes](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/Sndbx-REST-API/REST-API-V2-Ref-Guide.htm?tocpath=CloudShell%20API%20Guide%7CCloudShell%20Sandbox%20API%7C_____3#sandboxe) method, [blueprint start](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/Sndbx-REST-API/REST-API-V2-Ref-Guide.htm?tocpath=CloudShell%20API%20Guide%7CCloudShell%20Sandbox%20API%7C_____3#blueprin3) method, and from the sandbox ID segment in the CloudShell Portal URL. |
+| `sandbox_identifier` | The id of the sandbox. <br/> **<span style={{ color: 'blue' }}>Note:</span>** You can get the sandbox ID from the [sandboxes](http://localhost:3000/cloudshell-help/next/api-guide/cs-sandbox-api/cs-sandbox-api-version-2-reference-guide/sandboxes) method, [blueprint start](http://localhost:3000/cloudshell-help/next/api-guide/cs-sandbox-api/cs-sandbox-api-version-2-reference-guide/blueprint-start) method, and from the sandbox ID segment in the CloudShell Portal URL. |
 | Query parameters | You may add the following optional parameters to the end of the method's URL to filter the number of events. For example - displaying the last 100 events:
 ``http://{CloudShell Sandbox API Gateway IP address}:{port#}/api/v2/sandboxes/{sandbox_identifier}/activity`?tail=100` `` |
 | `tail` | Last number of entries to return. `(integer)` |
