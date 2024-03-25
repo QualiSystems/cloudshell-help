@@ -2,4 +2,6 @@
 sidebar_position: 1
 ---
 
-# empty page
+# Creating Suites
+
+WIP
