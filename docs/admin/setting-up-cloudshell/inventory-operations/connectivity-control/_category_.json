@@ -1,0 +1,8 @@
+{
+  "label": "Connectivity Control",
+  "position": 6,
+  "link": {
+    "type": "generated-index",
+    "description": "CloudShell provides connectivity support for physical and virtual resources. You can use Patch Panels and L1 switches for physical resources, and VLANs for virtual resources on a private cloud as well as physical resources, and subnets for Apps on a public cloud, such as AWS EC2."
+  } 
+}

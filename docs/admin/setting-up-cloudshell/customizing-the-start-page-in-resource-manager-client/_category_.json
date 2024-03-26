@@ -1,0 +1,8 @@
+{
+  "label": "Customizing the Start Page in Resource Manager Client",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "The Resource Manager Client's start page can be customized to match your personal preferences. The following topics describe the customization options available. The Resource Manager Client's start page is built from an .xml file that comes installed with the application. It allows providing both local and remote information to the user, and supports offline and online modes."
+  }  
+}
