@@ -4,15 +4,6 @@ sidebar_position: 3
 
 # Defining the Self-Service Portal Settings
 
-In this article:
-
-- [Changing the time zone](#changing-the-time-zone)
-- [Switching domains](#switching-domains)
-- [Changing your email address](#changing-your-email-address)
-- [Changing your password](#changing-your-password)
-- [Resetting your password](#resetting-your-password)
-- [Logging off](#logging-off)
-
 ## Changing the time zone
 
 To switch to another time zone:

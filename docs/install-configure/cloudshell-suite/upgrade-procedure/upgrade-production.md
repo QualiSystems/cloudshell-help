@@ -6,11 +6,6 @@ sidebar_position: 3
 
 When upgrading the production environment, the working procedures from the validation upgrade are repeated, see [Upgrade the Validation Environment](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Upgrade%20Procedure/upgrd-valid-env.htm).
 
-In this article:
-
-- [What you need for this stage](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Upgrade%20Procedure/upgrd-prod-env.htm?tocpath=Installation%20and%20Configuration%7CCloudShell%20Suite%7CUpgrade%20Procedure%7C_____3#What)
-- [Production environment upgrade procedure](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Upgrade%20Procedure/upgrd-prod-env.htm?tocpath=Installation%20and%20Configuration%7CCloudShell%20Suite%7CUpgrade%20Procedure%7C_____3#Producti)
-
 ## What you need for this stage
 
 ### CloudShell installation files

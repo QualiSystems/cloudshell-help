@@ -13,11 +13,6 @@ Quali recommends that you validate the organization-specific environment before 
 - Environment-specific installation errors
 - Environment-specific compatibility issues
 
-In this article:
-
-- [What you need for this stage](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Upgrade%20Procedure/upgrd-valid-env.htm?TocPath=Installation%20and%20Configuration|CloudShell%20Suite|Upgrade%20Procedure|_____2#What)
-- [Validation Environment Upgrade Procedure](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Upgrade%20Procedure/upgrd-valid-env.htm?TocPath=Installation%20and%20Configuration|CloudShell%20Suite|Upgrade%20Procedure|_____2#Validati)
-
 ## What you need for this stage
 
 - [CloudShell installation files](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Upgrade%20Procedure/upgrd-valid-env.htm?TocPath=Installation%20and%20Configuration|CloudShell%20Suite|Upgrade%20Procedure|_____2#CloudShe)
