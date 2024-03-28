@@ -1,4 +1,8 @@
 {
   "label": "Troubleshooting Overview",
-  "position": 1
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Welcome to CloudShell's Troubleshooting Guide. It provides possible causes to common errors and offers step-by-step instructions to resolve them. To help you quickly find what you are looking for, simply search for the error or check out the guide's table of contents, organized in categories like Database and Permissions, QualiX and vCenter."
+  }
 }
