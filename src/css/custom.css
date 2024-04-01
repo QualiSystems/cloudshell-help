@@ -76,3 +76,7 @@
 .alert--secondary {
   --ifm-alert-border-color: #f0a000;
 }
+
+p {
+  margin-bottom: 15px !important;
+}
