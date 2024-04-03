@@ -23,7 +23,7 @@ If you choose to close, rather than complete a product installation, make sure t
 
 - [Configure the Execution Server](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-ts-exec-srver.htm)
 - [Configure the Execution Server to Run as a Process by Default](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-ts-exec-srver-prcs.htm)
-- [Configure the Self-Service Portal](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-cs-portal.htm)
+- [Configure the Self-Service Portal](./configure-portal/index.md)
 - [Configure CloudShell Sandbox API](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-cs-sndbx-api.htm)
 - [Select a CloudShell License](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/slct-licns.htm)
 - [Configure the SQL Server Database Connection](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-db-conn-sql.htm)

@@ -64,4 +64,4 @@ Before performing the below steps, try specifying the DB machine's NetBIOS compu
 
 ## Related Topics
 
-[Database Prerequisites](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Overview/db-prereqs.htm)
+[Database Prerequisites](../../install-configure/cs-system-requirements/database-prereq.md)
