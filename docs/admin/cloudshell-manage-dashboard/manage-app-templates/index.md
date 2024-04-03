@@ -43,7 +43,7 @@ To clone an App template:
     
     The cloned App template is added to the Apps page under the original App template. For example:
     
-    ![](/Images/Admin Guide/Inventory-Operations/AppsClone.png)
+    ![](/Images/Admin-Guide/Inventory-Operations/AppsClone.png)
     
 
 ## Editing App templates
