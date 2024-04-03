@@ -30,5 +30,5 @@ Database user permissions were not correctly defined.
 
 **To resolve the issues described above, follow these steps:**
 
-1. Verify you have set the proper SQL database permissions. See [Database Prerequisites](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Overview/db-prereqs.htm).
+1. Verify you have set the proper SQL database permissions. See [Database Prerequisites](../../install-configure/cs-system-requirements/database-prereq.md).
 2. Restart **Quali Server** and try again to access the database.

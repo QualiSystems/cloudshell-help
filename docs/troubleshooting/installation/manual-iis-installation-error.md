@@ -35,4 +35,4 @@ When manually installing the **CloudShell IIS** site using the Set IIS manually
 
 ## Related Topics
 
-[Configure the Self-Service Portal](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-cs-portal.htm)
+[Configure the Self-Service Portal](../../install-configure/cloudshell-suite/configure-products/configure-portal/index.md)

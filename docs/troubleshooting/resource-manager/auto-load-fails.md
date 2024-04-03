@@ -66,4 +66,4 @@ The resource's IP address includes blank spaces either before or after the addre
 
 ## Related Topics
 
-- [L1 Switches](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-L1-Swch.htm)
+- [L1 Switches](../../admin/setting-up-cloudshell/inventory-operations/connectivity-control/l1-switches.md)

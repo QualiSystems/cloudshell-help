@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Configure CloudShell Portal to Work in HTTPS Mode
 
-This article explains how to set CloudShell Portal to run over HTTPS. The full procedure is extensively detailed in [Configure the Self-Service Portal](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-cs-portal.htm).
+This article explains how to set CloudShell Portal to run over HTTPS. The full procedure is extensively detailed in [Configure the Self-Service Portal](../configure-products/configure-portal/index.md).
 
 **Prerequisites:**
 
