@@ -19,7 +19,7 @@ Yes. To assist you with this, we've created the [The CloudShell DevGuide](./devg
 
 **Can CloudShell integrate with common DevOps tools?**
 
-Yes. You can design your own integration or search [Quali Repositories](https://github.com/orgs/QualiSystems/discussions/categories/integrations) for a suitable plugin, such as the [CloudShell Sandbox Jenkins Plugin](https://community.quali.com/repos/2033/cloudshell-sandbox-jenkins-plugin) and [CloudShell TeamCity Plugin](https://community.quali.com/repos/527/cluodshell-teamcity-plugin). For additional information, see [Consuming Sandboxes as Part of Continuous Integration Workflows](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/Flows/Flws-CI-Intg.htm).
+Yes. You can design your own integration or search [Quali Repositories](https://github.com/orgs/QualiSystems/discussions/categories/integrations) for a suitable plugin, such as the [CloudShell Sandbox Jenkins Plugin](https://community.quali.com/repos/2033/cloudshell-sandbox-jenkins-plugin) and [CloudShell TeamCity Plugin](https://community.quali.com/repos/527/cluodshell-teamcity-plugin). For additional information, see [Consuming Sandboxes as Part of Continuous Integration Workflows](./portal/overview/end-to-end-wf/consume-sandbox).
 
 **Can I use as many Execution Servers as I want?**
 

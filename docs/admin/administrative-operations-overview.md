@@ -26,7 +26,7 @@ Use attributes to define resource runtime behavior, to assist with route resolut
 
 Define the various models for each type or resource family, and populate the resource repository with instances of these models.
 :::important
-Tasks related to the resource data model only apply to resources based on 1st Gen shells. While CloudShell supports 1st Gen shells, we recommend using 2nd Gen shells, which already include all the data modeling and configurations, and offer enhanced shell management capabilities. For details, see [Shells Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Shells.htm).
+Tasks related to the resource data model only apply to resources based on 1st Gen shells. While CloudShell supports 1st Gen shells, we recommend using 2nd Gen shells, which already include all the data modeling and configurations, and offer enhanced shell management capabilities. For details, see [Shells Overview](../intro/features/shells.md).
 :::
 ## ![](/Images/Admin-Guide/Admin-operations_4.png) Define CloudShell users
 
