@@ -23,7 +23,7 @@ The **Shells** page is only displayed for system administrators in the **Global*
 You can use the toolbar to only display official Quali shells, sort the Shells according to **Name** or date of modification, and filter them according to Shell **Type**.
 
 ## Importing Shells
-:::caution Note:
+:::warning
 A shell update is not reversible(in other words, you cannot downgrade to an earlier shell version). Therefore, update the template version in the shell's `shell-definition.yaml` ONLY when something in the data model changes (new attributes added to `shell-definition.yaml`). Any changes in just the driver or underlying packages you can keep the template version number the same and then freely "roll back" to a previous version if the shell presents unexpected behavior.
 :::
 **To import a new Shell into CloudShell:**
@@ -72,7 +72,7 @@ This section explains how to add an attribute from the pool of global attributes
 ## Updating Shells
 
 Shell update overrides that existing Shell's settings with the new Shell.
-:::caution Note:
+:::warning
 A shell update is not reversible(in other words, you cannot downgrade to an earlier shell version). Therefore, update the template version in the shell's `shell-definition.yaml` ONLY when something in the data model changes (new attributes added to `shell-definition.yaml`). Any changes in just the driver or underlying packages you can keep the template version number the same and then freely "roll back" to a previous version if the shell presents unexpected behavior.
 :::
 :::note Points to consider:
