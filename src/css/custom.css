@@ -80,3 +80,11 @@
 p {
   margin-bottom: 15px !important;
 }
+
+.details_node_modules-\@docusaurus-theme-classic-lib-theme-Details-styles-module {
+  background-color: #f6ffff;
+}
+
+[data-theme='dark'] .details_node_modules-\@docusaurus-theme-classic-lib-theme-Details-styles-module {
+  background-color: #193c47;
+} 
