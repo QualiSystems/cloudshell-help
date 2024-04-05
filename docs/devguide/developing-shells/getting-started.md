@@ -16,7 +16,7 @@ In our [community](https://github.com/orgs/QualiSystems/repositories), you can 
 
 Historically, we have had two types of shells in CloudShell, 1st Generation shells and 2nd Generation shells. While 1st Gen shells are still used, all new shells are released only as 2nd Generation shells and this developer guide focuses on this type of shells. For additional information, see [Shells Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Shells.htm).
 
-{{youtube}}
+<iframe width="100%" height="500px" src="https://www.youtube.com/embed/AWgSUgJub90" title="What are Shells" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Supported versions - CloudShell v.8.0 and up
 
@@ -107,13 +107,13 @@ You can also change this default for your shell in the shell project’s driver
 
 Before developing your shell, please watch the following video to determine whether you need to create a new shell or customize an existing one:
 
-{{youtube}}
+<iframe width="100%" height="500px" src="https://www.youtube.com/embed/a8yEgOG7-bI" title="Creating or Extending Shells" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 **To create a new project:**
 
 1. Run the following command in your local Command Line:
     
-    ```python
+    ```bash
     shellfoundry new linux-server-shell
     cd linux-server-shell
     ```
@@ -122,7 +122,7 @@ Before developing your shell, please watch the following video to determine whet
     
     Note that by default, the shell is based on Python 2. To use Python 3, create the shell with the \--python 3 tag as follows:
     
-    ```python
+    ```bash
     shellfoundry new linux-server-shell --python 3
     ```
     
@@ -134,7 +134,7 @@ Before developing your shell, please watch the following video to determine whet
     
 3. Run the following command from the root of the project folder
     
-    ```python
+    ```bash
     python -m pip install -r .\src\requirements.txt
     ```
     
@@ -203,7 +203,7 @@ Shellfoundry provides an easy and convenient way to create the Shell package and
 
 - To package the Shell and install it on your local CloudShell server, run the following command:
     
-    ```python
+    ```bash
     shellfoundry install
     ```
     
