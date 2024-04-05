@@ -40,7 +40,7 @@ You can add drivers to resources or blueprints to add commands that can be run i
 :::note
 Python drivers may have dependencies they need to use in order to run. For additional information, see [Requirements, driver dependencies, virtual environments](../../../admin/cloudshell-manage-dashboard/managing-automation/managing-drivers.md#requirements-driver-dependencies-virtual-environments).
 :::
-You can also automate the execution of Python scripts using the API. For details about automating scripts, see [CloudShell Automation API](../../../api-guide/shell-dev-blueprint-design-api/cs-automation-api.md).
+You can also automate the execution of Python scripts using the API. For details about automating scripts, see [CloudShell Automation API](../../../api-guide/shell-dev-blueprint-design-api/cs-automation-api).
 
 You can upload the following CloudShell Authoring and Python drivers to the CloudShell Portal:
 
@@ -61,7 +61,7 @@ You can upload the following CloudShell Authoring and Python drivers to the Clou
     
 3. Browse and select a driver file to upload to CloudShell, and click **Open**.
     
-    The **Uploading Completed** message is displayed at the top of the driver catalog, indicating the upload status. When completed, the **Edit** button is displayed on the right. For more information, see [Editing drivers](../../../admin/cloudshell-manage-dashboard/managing-automation/managing-drivers.md#editing-drivers).
+    The **Uploading Completed** message is displayed at the top of the driver catalog, indicating the upload status. When completed, the **Edit** button is displayed on the right. For more information, see [Editing drivers](#editing-drivers).
     :::note
     In the driver catalog, you can easily identify the driver type. The driver names are marked by the respective **Python** or **CloudShell Authoring** icon, and the **Type** column displays the driver type.
     :::
