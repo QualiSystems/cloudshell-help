@@ -12,6 +12,10 @@ Gets a basic summary of all suite templates in a specific domain.
 
 `http://{Job Scheduling API IP}:{port#}/api/spaces/{space_name}/SuiteTemplate/Summary`
 
+| Parameter | Description/Comments |
+| --- | --- |
+| space_name | CloudShell domain in which the suite was executed. (string) |
+
 ### HTTP method
 
 `GET`
@@ -28,9 +32,6 @@ Example header format:
 
 `Content-Type: application/json`
 
-| Parameter | Description/Comments |
-| --- | --- |
-| space_name | CloudShell domain in which the suite was executed. (string) |
 </details>
 
 ### Response
