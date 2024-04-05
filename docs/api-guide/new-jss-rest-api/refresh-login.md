@@ -12,6 +12,9 @@ Refreshes an expired access token.
 
 `http://{Job Scheduling API IP}:{port#}/api/Token/refresh/{refresh_Token}`
 
+| Parameter | Description/Comments |
+| --- | --- |
+| refresh_token | refreshToken to use. (string) |
 
 ### HTTP method
 
@@ -28,9 +31,6 @@ Example header format:
 
 `Content-Type: application/json`
 
-| Parameter | Description/Comments |
-| --- | --- |
-| refresh_token | refreshToken to use. (string) |
 </details>
 
 ### Response

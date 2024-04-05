@@ -12,6 +12,12 @@ Stops a specific job's execution.
 
 `http://{Job Scheduling API IP}:{port#}/{space_name}/SuiteExecution/{id}/JobExecution/{job_execution_id}/stop`
 
+| Parameter | Description/Comments |
+| --- | --- |
+| space_name | CloudShell domain in which the suite was executed. (string) |
+| id | Suite execution's ID- included in the suite's URL. (string)<br/>For example:<br/><code>ht<span>tp</span>://192.168.74.11/Test%20Lab/execution/<b>1ab91be7-6136-4fd5-b22d-72c462947459</b>/</code> |
+| job_execution_id | Job's id - included in the **jobs** section of the [Get suite execution](./get-suite-execution)'s response. For example:<br/>`..."jobs": [{"id": "205aac56-5826-4b5e-a96a-5887b0940b40",...` |
+
 ### HTTP method
 
 `POST`
@@ -28,11 +34,6 @@ Example header format:
 
 `Content-Type: application/json`
 
-| Parameter | Description/Comments |
-| --- | --- |
-| space_name | CloudShell domain in which the suite was executed. (string) |
-| id | Suite execution's ID- included in the suite's URL. (string)<br/>For example:<br/>http://192.168.74.11/Test%20Lab/execution/<b>1ab91be7-6136-4fd5-b22d-72c462947459</b>/ |
-| job_execution_id | Job's id - included in the **jobs** section of the [Get suite execution](./get-suite-execution.md)'s response. For example:<br/>`..."jobs": [{"id": "205aac56-5826-4b5e-a96a-5887b0940b40",...` |
 </details>
 
 ### Response

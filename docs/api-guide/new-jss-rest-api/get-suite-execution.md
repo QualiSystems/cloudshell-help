@@ -12,6 +12,11 @@ Get a suite execution's details.
 
 `http://{Job Scheduling API IP}:{port#}/api/spaces/{space_name}/SuiteExecution/{id}`
 
+| Parameter | Description/Comments |
+| --- | --- |
+| space_name | CloudShell domain in which the suite was executed. (string) |
+| id | Suite execution's ID- included in the suite's URL. (string)<br/>For example:<br/><code>ht<span>tp</span>://192.168.74.11/Test%20Lab/execution/<b>1ab91be7-6136-4fd5-b22d-72c462947459</b>/</code> |
+
 ### HTTP method
 
 `GET`
@@ -28,10 +33,6 @@ Example header format:
 
 `Content-Type: application/json`
 
-| Parameter | Description/Comments |
-| --- | --- |
-| space_name | CloudShell domain in which the suite was executed. (string) |
-| id | Suite execution's ID- included in the suite's URL. (string)<br/>For example:<br/>http://192.168.74.11/Test%20Lab/execution/<b>1ab91be7-6136-4fd5-b22d-72c462947459</b>/ |
 </details>
 
 ### Response
