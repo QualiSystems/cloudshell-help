@@ -18,19 +18,19 @@ This section explains how to enable end-users to create "full access" connection
     
 2. Under the `<ConfigurationSection name="LinkApplications">` tag, replace the lines of the relevant remote access terminals (Telnet, SSH, RDP, VNC) with the lines in this code sample:
     
-    ```javascript
+    ```xml
     <key name="Telnet" pattern="http://<CloudShell Portal Host>:<CloudShell Portal Port>/Qx/connect?qualix=<VM IP>&amp;qualixType=https&amp;telnet{qid}&amp;qtoken={qtoken}&amp;hostname={Address}&amp;protocol=telnet&amp;port=23&amp;username={User}&amp;password={Password}" icon-key="Telnet" />
     ```
     
-    ```javascript
+    ```xml
     <key name="SSH" pattern="http://<CloudShell Portal Host>:<CloudShell Portal Port>/Qx/connect?qualix=<VM IP>&amp;qualixType=https&amp;ssh{qid}&amp;qtoken={qtoken}&amp;hostname={Address}&amp;protocol=ssh&amp;port=22&amp;username={User}&amp;password=secure" icon-key="SSH" />
     ```
     
-    ```javascript
+    ```xml
     <key name="RDP" pattern="http://<CloudShell Portal Host>:<CloudShell Portal Port>/Qx/connect?qualix=<VM IP>&amp;qualixType=https&amp;rdp{qid}&amp;qtoken={qtoken}&amp;hostname={Address}&amp;protocol=rdp&amp;port=3389&amp;username={User}&amp;password={Password}&amp;security=any&amp;ignore-cert=true" icon-key="RDP" />
     ```
     
-    ```javascript
+    ```xml
     <key name="VNC" pattern="http://<CloudShell Portal Host>:<CloudShell Portal Port>/Qx/connect?qualix=<VM IP>&amp;qualixType=https&amp;vnc{qid}&amp;qtoken={qtoken}&amp;hostname={Address}&amp;protocol=vnc&amp;port=5900&amp;username={User}&amp;password={Password}" icon-key="VNC" />
     ```
     :::note
@@ -47,7 +47,7 @@ This section explains how to enable end-users to create "full access" connection
     :::
 5. For SSH connections: To enable file transfer to and from SSH terminals, add the `enable-sftp=true` property to the SSH line. For example:
     
-    ```javascript
+    ```xml
     <key name="SSH" pattern="http://localhost:80/Qx/connect?qualix=192.168.1.17&enable-sftp=true&qualixType=https&amp;ssh{qid}&amp;qtoken={qtoken}&amp;hostname={Address}&amp;protocol=ssh&amp;port=22&amp;username={User}&amp;password=secure" icon-key="SSH" />
     ```
     
@@ -56,7 +56,7 @@ This section explains how to enable end-users to create "full access" connection
 
 ## Related Topics
 
-- [Enable HTTPS Connection Between QualiX and CloudShell Portal](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-SSL-Suprt.htm)
-- [Enable QualiX Docker Deployment to Work With Trusted Java KeyStore Certificate](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-jks-cert.htm)
-- [Customize Remote Access Terminals](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cstmz-rmt-access-trmnl.htm)
-- [Setting up Training Portal Using Docker (Over the Shoulder)](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-Quali-Srv-over-the-shoulder-docker.htm)
+- [Enable HTTPS Connection Between QualiX and CloudShell Portal](./enable-https/index.md)
+- [Enable QualiX Docker Deployment to Work With Trusted Java KeyStore Certificate](./config-jks-cert.md)
+- [Customize Remote Access Terminals](../../../install-configure/qualix/post-installation-config/customize-remote-access.md)
+- [Setting up Training Portal Using Docker (Over the Shoulder)](../../../install-configure/qualix/training-portal/setting-up-using-docker.md)
