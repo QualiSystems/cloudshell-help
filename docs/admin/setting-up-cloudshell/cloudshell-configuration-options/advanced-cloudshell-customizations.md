@@ -2304,4 +2304,4 @@ Shared tests and assets are stored in the MS SQL database
 
 ## Related topics
 
-- [Customer Configuration Keys Repository](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfg-Ky-Rpstr.htm)
+- [Customer Configuration Keys Repository](./customer-configuration-keys-repository)
