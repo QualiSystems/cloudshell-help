@@ -49,7 +49,7 @@ When installing your execution server on a computer that is not a Windows Server
 9. When configuration completes, click **Finish**.
 10. In CloudShell 8.2 and above, Python dependencies are served to the appropriate drivers and scripts through the **PyPi Server** process, which is installed with CloudShell - see [Configure PyPi Server in Offline Mode](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-PyPi-Srv.htm).
     :::note
-    In CloudShell 8.3, we have changed the mechanism that manages Python dependencies for the drivers and scripts. So if you are upgrading to CloudShell 8.3 or above, make sure to add the Python dependencies to the PyPi Server repositroy residing on Quali Server machine, to make them available to your execution servers. For additional information, see [PyPi Server - Managing Python Shell and Script Dependencies](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Pyth-Cnfg-Mds.htm).
+    In CloudShell 8.3, we have changed the mechanism that manages Python dependencies for the drivers and scripts. So if you are upgrading to CloudShell 8.3 or above, make sure to add the Python dependencies to the PyPi Server repositroy residing on Quali Server machine, to make them available to your execution servers. For additional information, see [PyPi Server - Managing Python Shell and Script Dependencies](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/pypi-server-managing-python-shell-and-script-dependencies.md).
     :::
 11. To enable the execution of tests that run GUI automation (Ranorex), write to Excel using the Filesystem library, use libraries that run GUI elements, or use the **Capture Image** TestShell Studio function,
 

@@ -73,6 +73,6 @@ To verify the configuration is working, open `https://localhost` in your browser
 
 ## Related Topics
 
-- [PyPi Server - Managing Python Shell and Script Dependencies](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Pyth-Cnfg-Mds.htm)
-- [Configuring CloudShell to Execute Python Commands in Offline Mode](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfgr-Pyth-Env-Wrk-Offln.htm)
+- [PyPi Server - Managing Python Shell and Script Dependencies](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/pypi-server-managing-python-shell-and-script-dependencies.md)
+- [Configuring CloudShell to Execute Python Commands in Offline Mode](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/configuring-cloudshell-to-execute-python-commands-in-offline-mode.md)
 - [Using a Proxy to Download Python Packages from Public PyPi](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/PyPi-Srvr-Proxy.htm)

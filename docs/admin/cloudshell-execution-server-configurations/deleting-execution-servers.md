@@ -18,7 +18,7 @@ This article explains how to properly remove execution servers from CloudShell. 
     
     ![](/Images/Admin-Guide/Setting-Up-CloudShell/ExecutionServerAssociations_474x303.png)
     
-    If the execution server has associations, make sure to set the same associations on another execution server. For details, see [Setting Up Execution Servers to Run Commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Tst-n-Cmd-Exc.htm).
+    If the execution server has associations, make sure to set the same associations on another execution server. For details, see [Setting Up Execution Servers to Run Commands](../../admin/cloudshell-execution-server-configurations/setting-up-execution-servers-to-run-commands.md).
     
 4. Delete the execution server.
     

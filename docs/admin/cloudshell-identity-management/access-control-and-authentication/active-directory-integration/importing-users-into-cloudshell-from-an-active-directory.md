@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Importing users into CloudShell from an active directory
 
-The following procedures explain how to import users from your active directory into CloudShell. To enable user import, the `ActiveDirectory.Domain` configuration key needs to be set - see [Configuring CloudShell to import user definitions from an active directory](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm#Configur).
+The following procedures explain how to import users from your active directory into CloudShell. To enable user import, the `ActiveDirectory.Domain` configuration key needs to be set - see [Configuring CloudShell to import user definitions from an active directory](../../../../admin/setting-up-cloudshell/cloudshell-configuration-options/advanced-cloudshell-customizations.md).
 
 Once imported and associated to the relevant CloudShell groups and domains, imported users log into CloudShell using their active directory username and password, and the desired CloudShell domain. In addition, the password of an imported user can only be changed from the active directory itself.
 

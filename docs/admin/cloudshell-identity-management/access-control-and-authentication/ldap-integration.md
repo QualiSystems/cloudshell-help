@@ -6,7 +6,7 @@ sidebar_position: 4
 
 The integration of an LDAP server with CloudShell enables LDAP users to log in to CloudShell Portal with their credentials, without having to be imported manually into the **Resource Manager** users list. The import is done automatically when the user logs in to the portal.
 :::tip
-CloudShell provides additional user authentication options, including Active Directory, SSO and JWT. However, if possible, consider using Active Directory for user authentication as it features a simple configuration process. For additional information, see [Active Directory Integration](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/AD-Intg.htm).
+CloudShell provides additional user authentication options, including Active Directory, SSO and JWT. However, if possible, consider using Active Directory for user authentication as it features a simple configuration process. For additional information, see [Active Directory Integration](../../../admin/cloudshell-identity-management/access-control-and-authentication/active-directory-integration/index.md).
 :::
 
 ## Enabling secure LDAP (LDAPS)

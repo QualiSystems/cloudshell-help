@@ -86,10 +86,10 @@ Perform the following procedure on each CloudShell Portal machine.
 
 **To configure SAML SLO for CloudShell Portal:**
 
-1. Make sure SSO is configured. For details, see [Configuring Single Sign-On (SSO)](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfg-SSO.htm).
+1. Make sure SSO is configured. For details, see [Configuring Single Sign-On (SSO)](../../../../admin/cloudshell-identity-management/access-control-and-authentication/saml-authentication-configuration-sso-slo/configure-sso/index.md).
 2. Disable the `requireSsl` flag by adding the following code to the `web.config` file.
     :::note
-    The `requireSsl` flag only applies to websites that do not use HTTPS. If HTTPS is used, perform the steps in the [Configuring SAML SLO for CloudShell Portal in SSL mode](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfg-SLO.htm?Highlight=Configuring%20Single%20Logout%20(SLO)#Configur2) section and carry on with the configuration process.
+    The `requireSsl` flag only applies to websites that do not use HTTPS. If HTTPS is used, perform the steps in the [Configuring SAML SLO for CloudShell Portal in SSL mode](../../../../admin/cloudshell-identity-management/access-control-and-authentication/saml-authentication-configuration-sso-slo/configuring-single-logout-slo.md#configuring-saml-slo-for-cloudshell-portal-in-ssl-mode) section and carry on with the configuration process.
     :::
     ```javascript
     <?xml version="1.0" encoding="UTF-8"?>

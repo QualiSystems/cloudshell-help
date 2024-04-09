@@ -122,7 +122,7 @@ The term "package" may refer to blueprint package, shell package or Python packa
         
 - Shell package contains the definition of a shell, which can be imported into CloudShell. For details, see [Shells Overview](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/LAB-MNG/Features/Shells.htm).
     
-- Python package contains Python dependencies that are required for the execution of specific shells and scripts. For details, [PyPi Server - Managing Python Shell and Script Dependencies](https://help.quali.com/Online%20Help/2022.2/Portal/Content/Admn/Pyth-Cnfg-Mds.htm).
+- Python package contains Python dependencies that are required for the execution of specific shells and scripts. For details, [PyPi Server - Managing Python Shell and Script Dependencies](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/pypi-server-managing-python-shell-and-script-dependencies.md).
     
 
 ### PyPi Server

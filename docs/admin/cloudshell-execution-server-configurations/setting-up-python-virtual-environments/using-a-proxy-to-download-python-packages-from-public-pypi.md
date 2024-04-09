@@ -55,5 +55,5 @@ The process may differ if you're on a Linux Execution Server. For details, see t
 
 ## Related Topics
 
-- [Configuring CloudShell to Execute Python Commands in Offline Mode](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfgr-Pyth-Env-Wrk-Offln.htm)
-- [Configuring PyPi Server to Work in Secure Mode](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-PyPi-Srv-Scrty.htm)
+- [Configuring CloudShell to Execute Python Commands in Offline Mode](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/configuring-cloudshell-to-execute-python-commands-in-offline-mode.md)
+- [Configuring PyPi Server to Work in Secure Mode](../../../install-configure/cloudshell-suite/secure-communication/config-secured-pypi.md)

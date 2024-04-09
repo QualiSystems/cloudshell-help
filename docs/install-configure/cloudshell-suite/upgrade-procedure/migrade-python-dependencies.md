@@ -12,7 +12,7 @@ This procedure only applies to your offline Python packages (i.e. packages that 
 
 **To copy the packages to the local PyPi Server repository:**
 
-1. If you have access to the Quali Server machine, manually copy the packages from the old repository on the Quali Server and/or Execution Servers. If you don't have access to the Quali Server machine, use the Setup or Twine command line methods, as explained in [PyPi Server - Managing Python Shell and Script Dependencies](https://help.quali.com/Online%20Help/2023.3/Portal/Content/Admn/Pyth-Cnfg-Mds.htm).
+1. If you have access to the Quali Server machine, manually copy the packages from the old repository on the Quali Server and/or Execution Servers. If you don't have access to the Quali Server machine, use the Setup or Twine command line methods, as explained in [PyPi Server - Managing Python Shell and Script Dependencies](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/pypi-server-managing-python-shell-and-script-dependencies.md).
 
 2. Restart the relevant services (**Quali Server** service on the CloudShell Server machine, and **TestShell Execution Server** service on each updated Execution Server machine).
    

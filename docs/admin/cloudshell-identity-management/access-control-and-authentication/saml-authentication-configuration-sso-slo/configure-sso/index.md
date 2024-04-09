@@ -22,12 +22,12 @@ CloudShell supports SAML v2.0. If you encounter an error, please contact your SA
 
 **To configure SAML SSO for CloudShell Portal:**
 
-1. [Set up an Identity Provider (IdP)](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfg-SSO.htm?tocpath=CloudShell%20Administration%7CCloudShell%20Identity%20Management%7CAccess%20Control%20and%20Authentication%7CSAML%20Authentication%20Configuration%20(SSO%20%2F%20SLO)%7CConfiguring%20Single%20Sign-On%20(SSO)%7C_____0#Setting).
+1. [Set up an Identity Provider (IdP)](../../../../../admin/cloudshell-identity-management/access-control-and-authentication/saml-authentication-configuration-sso-slo/configure-sso/index.md#set-up-an-identity-provider-idp).
     :::note
     When setting up and managing the Identity provider, make sure to configure the IdP to recognize CloudShell Portal as a service provider.
     :::
-2. [Install a certificate on a local machine](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfg-SSO.htm?tocpath=CloudShell%20Administration%7CCloudShell%20Identity%20Management%7CAccess%20Control%20and%20Authentication%7CSAML%20Authentication%20Configuration%20(SSO%20%2F%20SLO)%7CConfiguring%20Single%20Sign-On%20(SSO)%7C_____0#Installi).
-3. [Configure CloudShell to work with SAML SSO](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfg-SSO.htm?tocpath=CloudShell%20Administration%7CCloudShell%20Identity%20Management%7CAccess%20Control%20and%20Authentication%7CSAML%20Authentication%20Configuration%20(SSO%20%2F%20SLO)%7CConfiguring%20Single%20Sign-On%20(SSO)%7C_____0#Configur2).
+2. [Install a certificate on a local machine](../../../../../admin/cloudshell-identity-management/access-control-and-authentication/saml-authentication-configuration-sso-slo/configure-sso/index.md#install-a-certificate-on-a-local-machine).
+3. [Configure CloudShell to work with SAML SSO](../../../../../admin/cloudshell-identity-management/access-control-and-authentication/saml-authentication-configuration-sso-slo/configure-sso/index.md#configure-cloudshell-to-work-with-saml-sso).
 
 ### Set up an Identity Provider (IdP)
 

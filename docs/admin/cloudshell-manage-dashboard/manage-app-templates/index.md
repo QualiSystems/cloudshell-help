@@ -1,6 +1,6 @@
 # Managing App Templates
 
-This article describes the administrative actions needed to configure App templates in CloudShell that are based on a cloud provider resource. For additional information, see [Apps Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Apps.htm).
+This article describes the administrative actions needed to configure App templates in CloudShell that are based on a cloud provider resource. For additional information, see [Apps Overview](../../../intro/features/apps-overview.md).
 
 ## Viewing App templates
 
