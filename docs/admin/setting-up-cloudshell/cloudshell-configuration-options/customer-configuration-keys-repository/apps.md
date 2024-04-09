@@ -4,8 +4,7 @@ sidebar_position: 3
 
 # Apps
 
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Set the default category for new Apps (DefaultAppCategory)</summary>
+## Set the default category for new Apps
 <table>
 	<tbody>
 		<tr>
@@ -34,9 +33,8 @@ sidebar_position: 3
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Enable the modification and deletion of App templates only from the template's domain (RestrictEditToCreatingDomain)</summary>
+
+## Enable the modification and deletion of App templates only from the template's domain
 <table>
 	<tbody>
 		<tr>
@@ -65,4 +63,3 @@ sidebar_position: 3
 		</tr>
 	</tbody>
 </table>
-</details>

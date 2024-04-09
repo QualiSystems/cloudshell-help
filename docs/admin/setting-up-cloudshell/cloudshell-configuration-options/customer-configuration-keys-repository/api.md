@@ -6,8 +6,7 @@ sidebar_position: 2
 
 For configuration keys related to API SSO, see [SSO Login to CloudShell APIs](../../../../devguide/available-cs-api/sso-login-to-cs-api.md).
 
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Setting the response page size (DefaultSandboxApiPagingSize)</summary>
+## Setting the response page size
 <table>
 	<tbody>
 		<tr>
@@ -36,9 +35,8 @@ For configuration keys related to API SSO, see [SSO Login to CloudShell APIs](..
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Extending the API authorization token validity period (AuthToken.ExpirationSpanMinutes)</summary>
+
+## Extending the API authorization token validity period
 <table>
 	<tbody>
 		<tr>
@@ -67,4 +65,3 @@ For configuration keys related to API SSO, see [SSO Login to CloudShell APIs](..
 		</tr>
 	</tbody>
 </table>
-</details>

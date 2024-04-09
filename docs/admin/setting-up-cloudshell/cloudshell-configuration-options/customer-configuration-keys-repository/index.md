@@ -18,8 +18,10 @@ The customer configuration keys repository is arranged in the following categori
 - [PyPi Server](./customer-configuration-keys-repository/pypi-server)
 - [Registration, passwords, emails, and licenses](./customer-configuration-keys-repository/registration-passwords-emails-and-licenses)
 - [Sandboxes](./customer-configuration-keys-repository/sandboxes)
+- [Scheduling and Queuing](./scheduling-and-queuing.md)
 - [Scheduling commands](./customer-configuration-keys-repository/scheduling-commands)
 - [Search](./customer-configuration-keys-repository/search)
+- [Single Sign On (SSO)](./single-sign-on-sso.md)
 - [TestShell Studio](./customer-configuration-keys-repository/testshell-studio)
 
 For more information on the use of each configuration key and for examples, see [Advanced CloudShell Customizations](../advanced-cloudshell-customizations.md).

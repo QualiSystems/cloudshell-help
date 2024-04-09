@@ -4,8 +4,7 @@ sidebar_position: 1
 
 # Abstract Resources
 
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Randomized abstract resource selection (RandomizeAbstractSelection)</summary>
+## Randomized abstract resource selection
 <table>
 	<tbody>
 		<tr>
@@ -34,9 +33,8 @@ sidebar_position: 1
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Change the number of matches that are considered for abstract sub-resource requirements (AbstractSubResourceResultsPageSize)</summary>
+
+## Change the number of matches that are considered for abstract sub-resource requirements
 <table>
 	<tbody>
 		<tr>
@@ -65,4 +63,3 @@ sidebar_position: 1
 		</tr>
 	</tbody>
 </table>
-</details>

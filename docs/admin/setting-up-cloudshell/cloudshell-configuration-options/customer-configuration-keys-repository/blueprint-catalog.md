@@ -4,8 +4,7 @@ sidebar_position: 5
 
 # Blueprint Catalog
 
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>New blueprints section: visibility (TopologyDashboardNewTopologies)</summary>
+## New blueprints section: visibility
 <table>
 	<tbody>
 		<tr>
@@ -34,9 +33,8 @@ sidebar_position: 5
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>New blueprints section: number of blueprints to display (NewTopologiesCategoryCount)</summary>
+
+## New blueprints section: number of blueprints to display
 <table>
 	<tbody>
 		<tr>
@@ -65,9 +63,8 @@ sidebar_position: 5
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>New blueprints section: maximum age for new blueprints (NewTopologiesCategoryDaysLimit)</summary>
+
+## New blueprints section: maximum age for new blueprints
 <table>
 	<tbody>
 		<tr>
@@ -96,9 +93,8 @@ sidebar_position: 5
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Recently modified section: visibility (TopologyDashboardRecentlyModified)</summary>
+
+## Recently modified section: visibility
 <table>
 	<tbody>
 		<tr>
@@ -127,9 +123,8 @@ sidebar_position: 5
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Recently modified section: number of blueprints to display (RecentlyModifiedTopologiesCategoryCount)</summary>
+
+## Recently modified section: number of blueprints to display
 <table>
 	<tbody>
 		<tr>
@@ -158,9 +153,8 @@ sidebar_position: 5
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Display most recently reserved blueprints in the **Blueprint Catalog**'s **Featured** view, in which you are either the owner or a permitted user (TopologyDashboardRecentlyReserved)</summary>
+
+## Display most recently reserved blueprints in the **Blueprint Catalog**'s **Featured** view, in which you are either the owner or a permitted user
 <table>
 	<tbody>
 		<tr>
@@ -189,9 +183,8 @@ sidebar_position: 5
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Blueprint Catalog: Set the maximum number of recently reserved blueprints to display in the **Featured** view's **Recently Reserved** section (RecentlyReservedTopologiesCategoryCount)</summary>
+
+## Blueprint Catalog: Set the maximum number of recently reserved blueprints to display in the **Featured** view's **Recently Reserved** section
 <table>
 	<tbody>
 		<tr>
@@ -220,9 +213,8 @@ sidebar_position: 5
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Specify categories of the blueprints to display in the **Featured** section of the **Blueprint Catalog** (TopologyDashboardFeaturedCategories)</summary>
+
+## Specify categories of the blueprints to display in the **Featured** section of the **Blueprint Catalog**
 <table>
 	<tbody>
 		<tr>
@@ -251,9 +243,8 @@ sidebar_position: 5
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Display all blueprints in the main Blueprint Catalog (TopologyDashboardAllTopologies)</summary>
+
+## Display all blueprints in the main Blueprint Catalog
 <table>
 	<tbody>
 		<tr>
@@ -282,9 +273,8 @@ sidebar_position: 5
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Blueprint display modes (ShowAlphabeticTopologySubCategories)</summary>
+
+## Blueprint display modes
 <table>
 	<tbody>
 		<tr>
@@ -313,9 +303,8 @@ sidebar_position: 5
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Hide the **Status** filter (HideEnvironmentsStatusFilter)</summary>
+
+## Hide the **Status** filter
 <table>
 	<tbody>
 		<tr>
@@ -344,9 +333,8 @@ sidebar_position: 5
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Enable **View** type blueprints (EnableEnvironmentTypeView)</summary>
+
+## Enable **View** type blueprints
 <table>
 	<tbody>
 		<tr>
@@ -375,9 +363,8 @@ sidebar_position: 5
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Enable reference architecture flows (EnableEnvironmentType)</summary>
+
+## Enable reference architecture flows
 <table>
 	<tbody>
 		<tr>
@@ -406,9 +393,8 @@ sidebar_position: 5
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Hide templates that require order to disable creating blueprints using those templates (HideOrders)</summary>
+
+## Hide templates that require order to disable creating blueprints using those templates
 <table>
 	<tbody>
 		<tr>
@@ -437,4 +423,4 @@ sidebar_position: 5
 		</tr>
 	</tbody>
 </table>
-</details>
+
