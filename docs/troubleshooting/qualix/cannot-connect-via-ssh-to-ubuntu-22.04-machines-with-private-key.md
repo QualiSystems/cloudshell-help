@@ -14,24 +14,24 @@ Connecting to an Ubuntu 22.04 VM with a private key using the SSH direct access 
 
 1. Login to Ubuntu 22.04 machine.
     
-2. Edit /etc/ssh/sshd\_config.
+2. Edit `/etc/ssh/sshd_config`.
     
 3. Add the following line to the end of the config file:
     
-    ```javascript
+    ```bash
     PubkeyAcceptedKeyTypes +ssh-rsa
     ```
     
 4. Restart ssh server:
     
-    ```javascript
+    ```bash
     systemctl restart ssh
     ```
     
 
 Or run this command:
 
-```javascript
+```bash
 sudo echo -e "PubkeyAcceptedKeyTypes +ssh-rsa\nHostKeyAlgorithms +ssh-rsa" >> /etc/ssh/sshd_config&&systemctl restart ssh
 ```
 
@@ -39,11 +39,9 @@ sudo echo -e "PubkeyAcceptedKeyTypes +ssh-rsa\nHostKeyAlgorithms +ssh-rsa" >> /e
 
 1. Create the script with the below content and place it in an S3 bucket or make it accessible from the deployed App's VM.
     
-    ```javascript
+    ```bash
     #!/bin/bash
-    ```
     
-    ```javascript
     sudo echo -e "PubkeyAcceptedKeyTypes +ssh-rsa\nHostKeyAlgorithms +ssh-rsa" >> /etc/ssh/sshd_config&&systemctl restart ssh
     ```
     

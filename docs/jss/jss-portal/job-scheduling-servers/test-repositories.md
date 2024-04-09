@@ -86,7 +86,7 @@ This section explains how to associate a test repository to an existing test dis
 
 ## Deleting a test repository
 
-:::info Important
+:::warning Important
 Before you delete a test repository, please note that this action will remove from CloudShell all tests that were discovered by the repository's discovery server. Any suites that use these tests will be rendered unusable.
 :::
 

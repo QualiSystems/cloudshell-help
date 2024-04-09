@@ -16,7 +16,7 @@ Make sure to have docker together with iptables when running containers on a lin
 2. Install Docker Compose, as explained in this [docker docs article](https://docs.docker.com/compose/install/).
 3. Run the following from the `/opt/` directory:
     
-    ```javascript
+    ```bash
     sudo wget https://quali-prod-binaries.s3.amazonaws.com/guacamole-quali-install-docker.sh
     sudo chmod +x guacamole-quali-install-docker.sh
     sudo ./guacamole-quali-install-docker.sh
@@ -24,11 +24,13 @@ Make sure to have docker together with iptables when running containers on a lin
     
 4. Start the QualiX container stack by running the following from the `/opt/qualix` directory:
     
-    `sudo ./start.sh`
+    ```bash
+    sudo ./start.sh
+    ```
     
 5. To verify that QualiX is up and running, run the following:
     
-    ```javascript
+    ```bash
     sudo status
     ```
     
@@ -38,13 +40,15 @@ Make sure to have docker together with iptables when running containers on a lin
 
 **To stop QualiX (stops the container stack):**
 
-```javascript
+```bash
 sudo stop
 ```
 
 **To restart QualiX after boot (inactive docker):**
 
-`sudo systemctl enable docker`
+```bash
+sudo systemctl enable docker
+```
 
 **To get the docker logs:**
 
@@ -52,26 +56,24 @@ See [Docker logs (QualiX 4.1 and below)](https://help.quali.com/Online%20Help/0.
 
 **To attach the docker container to a shell:**
 
-```javascript
+```bash
 sudo docker exec -it <container_id>/bin/sh -c "[ -e /bin/bash ] && /bin/bash || /bin/sh"
 ```
 
 **To destroy running containers:**
 
-```javascript
+```bash
 sudo docker stop guacamole guacd
 ```
 
-```javascript
+```bash
 sudo docker rm guacamole guacd
 ```
 
 **To start the containers:**
 
-```javascript
+```bash
 cd /opt/qualix
-```
 
-```javascript
 sudo ./start.sh
 ```
