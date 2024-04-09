@@ -11,8 +11,8 @@ This article explains how to update your local PyPi Server repository. This is r
 **To update offline Python dependencies:**
 
 1. Make a backup copy of the PyPi Server repository folder so you have the option to revert back if any errors occur.
-2. Download the latest Python dependencies package zip file locally and extract the zip file to the local PyPi Server repository. See [Configuring CloudShell to Execute Python Commands in Offline Mode](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfgr-Pyth-Env-Wrk-Offln.htm).
-3. Restart any execution server that has a live instance of the relevant driver or script. This requires running the Execution Server's configuration wizard - see [Configure the Execution Server](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-ts-exec-srver.htm).
+2. Download the latest Python dependencies package zip file locally and extract the zip file to the local PyPi Server repository. See [Configuring CloudShell to Execute Python Commands in Offline Mode](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/configuring-cloudshell-to-execute-python-commands-in-offline-mode.md).
+3. Restart any execution server that has a live instance of the relevant driver or script. This requires running the Execution Server's configuration wizard - see [Configure the Execution Server](../../../install-configure/cloudshell-suite/configure-products/config-execution-server.md).
     
 
 ## Updating online Python dependencies
@@ -25,5 +25,5 @@ In online mode, the PyPi Server process automatically downloads and extracts the
 
 ## Related Topics
 
-- [PyPi Server - Managing Python Shell and Script Dependencies](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Pyth-Cnfg-Mds.htm)
-- [Configuring CloudShell to Execute Python Commands in Offline Mode](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfgr-Pyth-Env-Wrk-Offln.htm)
+- [PyPi Server - Managing Python Shell and Script Dependencies](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/pypi-server-managing-python-shell-and-script-dependencies.md)
+- [Configuring CloudShell to Execute Python Commands in Offline Mode](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/configuring-cloudshell-to-execute-python-commands-in-offline-mode.md)

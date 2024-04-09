@@ -21,7 +21,7 @@ If you choose to close, rather than complete a product installation, make sure t
 
 ## Related topics
 
-- [Configure the Execution Server](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-ts-exec-srver.htm)
+- [Configure the Execution Server](../../../install-configure/cloudshell-suite/configure-products/config-execution-server.md)
 - [Configure the Execution Server to Run as a Process by Default](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-ts-exec-srver-prcs.htm)
 - [Configure the Self-Service Portal](./configure-portal/index.md)
 - [Configure CloudShell Sandbox API](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-cs-sndbx-api.htm)

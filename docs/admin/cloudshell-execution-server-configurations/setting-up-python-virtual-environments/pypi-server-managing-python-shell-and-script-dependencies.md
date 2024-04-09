@@ -6,21 +6,21 @@ sidebar_position: 2
 
 CloudShell manages driver and script dependencies using **PyPi Server**. PyPi Server is a process that is installed with CloudShell on the **Quali Server** computer.
 :::note
-If you are upgrading to CloudShell 8.3 and above, make sure to migrate your offline and locally developed Python packages to the PyPi Server repository. For additional information, see [Migrate Python Dependencies to PyPi Server](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Upgrade%20Procedure/Mgrt-Pyth-pckgs.htm).
+If you are upgrading to CloudShell 8.3 and above, make sure to migrate your offline and locally developed Python packages to the PyPi Server repository. For additional information, see [Migrate Python Dependencies to PyPi Server](../../../install-configure/cloudshell-suite/upgrade-procedure/migrade-python-dependencies.md).
 :::
-The PyPi server allows easy and organized development of Python packages for local use. A developer can remotely upload their own local Python packages to the local PyPi server, making them available to all the Execution Servers, without having to expose these packages in a public repository (such as public PyPi) or a testing repository (such as a local TestPy). For details, see [Configuring CloudShell to Execute Python Commands in Offline Mode](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfgr-Pyth-Env-Wrk-Offln.htm).
+The PyPi server allows easy and organized development of Python packages for local use. A developer can remotely upload their own local Python packages to the local PyPi server, making them available to all the Execution Servers, without having to expose these packages in a public repository (such as public PyPi) or a testing repository (such as a local TestPy). For details, see [Configuring CloudShell to Execute Python Commands in Offline Mode](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/configuring-cloudshell-to-execute-python-commands-in-offline-mode.md).
 
 As illustrated below, the following takes place when a Python script or driver is launched:
 
 1. The execution server contacts the PyPi Server to get the required package versions.
-2. If copies of the packages, with the right versions, reside in the local PyPi Server repository, the Execution Server will download them. However, if the repository contains packages that don't have the right versions (as defined in the shell or script's `requirements.txt` file \- see [Referencing other packages](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Driver-Deep-Dive.htm#Referenc)), the operation will fail.
+2. If copies of the packages, with the right versions, reside in the local PyPi Server repository, the Execution Server will download them. However, if the repository contains packages that don't have the right versions (as defined in the shell or script's `requirements.txt` file \- see [Referencing other packages](../../../devguide/developing-shells/driver-deep-dive.md)), the operation will fail.
 3. If the packages are missing from the local PyPi Server repository, the Execution Server will search and download the packages from public PyPi.
 
 ![](/Images/Admin-Guide/Setting-Up-CloudShell/PyPiServer-flow_673x332.png)
 
 :::note Notes:
-- To configure PyPi Server behind a proxy to allow the Execution Servers to reach PyPi Server, see [Using a Proxy to Download Python Packages from Public PyPi](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/PyPi-Srvr-Proxy.htm).
-- To configure PyPi Server behind a reverse proxy for secure communication between the PyPi Server and the Execution Servers, see [Configuring PyPi Server to Work in Secure Mode](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-PyPi-Srv-Scrty.htm).
+- To configure PyPi Server behind a proxy to allow the Execution Servers to reach PyPi Server, see [Using a Proxy to Download Python Packages from Public PyPi](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/using-a-proxy-to-download-python-packages-from-public-pypi.md).
+- To configure PyPi Server behind a reverse proxy for secure communication between the PyPi Server and the Execution Servers, see [Configuring PyPi Server to Work in Secure Mode](../../../install-configure/cloudshell-suite/secure-communication/config-secured-pypi.md).
 :::
 The following configuration modes are available for Python driver and script dependencies:
 
@@ -44,7 +44,7 @@ However, we do not recommend to place CloudShell dependencies in the repository 
 
 This mode is used when access to the Internet is unavailable for Quali Server and the execution servers. To make dependencies available in offline mode, the admin needs to download the dependencies and place them in the local PyPi Server repository residing on the Quali Server machine when installing or upgrading CloudShell.
 
-For additional information, see [Configuring CloudShell to Execute Python Commands in Offline Mode](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfgr-Pyth-Env-Wrk-Offln.htm).
+For additional information, see [Configuring CloudShell to Execute Python Commands in Offline Mode](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/configuring-cloudshell-to-execute-python-commands-in-offline-mode.md).
 
 ## Loading packages to your PyPi Server repository
 
@@ -145,4 +145,4 @@ For this method, you need the access credentials to the PyPi Server repository, 
 
 ## Related Topics
 
-- [Updating Python Dependencies for Shells, Drivers and Scripts](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Updt-Pyth-Libs.htm)
+- [Updating Python Dependencies for Shells, Drivers and Scripts](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/updating-python-dependencies-for-shells,-drivers-and-scripts)

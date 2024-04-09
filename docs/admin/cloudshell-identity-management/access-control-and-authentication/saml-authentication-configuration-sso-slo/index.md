@@ -6,5 +6,5 @@ Single sign-on is an access control and authentication method that enables you t
 
 ## Related Topics
 
-- [Configuring Single Sign-On (SSO)](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfg-SSO.htm)
-- [Configuring Single Logout (SLO)](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfg-SLO.htm)
+- [Configuring Single Sign-On (SSO)](../../../admin/cloudshell-identity-management/access-control-and-authentication/saml-authentication-configuration-sso-slo/configure-sso/index.md)
+- [Configuring Single Logout (SLO)](../../../../admin/cloudshell-identity-management/access-control-and-authentication/saml-authentication-configuration-sso-slo/configuring-single-logout-slo.md)

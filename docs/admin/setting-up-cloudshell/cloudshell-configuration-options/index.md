@@ -1,6 +1,6 @@
 # CloudShell Configuration Options
 
-The customer configuration keys enable you to customize different aspects of the CloudShell Portal, including look & feel, workflows, access privileges, connectivity and route configurations, and more. For identity management and access control, see [CloudShell Identity Management](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/ID-Mngmt.htm).
+The customer configuration keys enable you to customize different aspects of the CloudShell Portal, including look & feel, workflows, access privileges, connectivity and route configurations, and more. For identity management and access control, see [CloudShell Identity Management](../admin/cloudshell-identity-management/).
 
 ## Related Topics
 

@@ -27,13 +27,13 @@ Yes. You may install and use as many Execution Servers as you'd like. For exampl
 
 **Can I choose which Execution Server will be used for each resource?**
 
-Yes. CloudShell allows linking specific Execution Servers to resources, Apps, services and blueprints. For additional information, see [Setting Up Execution Servers to Run Commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Tst-n-Cmd-Exc.htm).
+Yes. CloudShell allows linking specific Execution Servers to resources, Apps, services and blueprints. For additional information, see [Setting Up Execution Servers to Run Commands](./admin/cloudshell-execution-server-configurations/setting-up-execution-servers-to-run-commands.md).
 
 **Is it possible to access older/archived versions of the online help?**
 
 Yes. Our All Help Versions help page is provided specifically for this purpose. Here you can view the different helps and also download them for offline use.
 
-- Click the All Help Versions button in the online help's toolbar or use this [link](https://help.quali.com/help%20versions/All%20Versions%20Help/Content/Versions.htm).
+- Click the All Help Versions button in the online help's toolbar or use this [link](https://.com/help%20versions/All%20Versions%20Help/Content/Versions.htm).
     
     ![](/Images/CloudShell-Portal/AllHelpVersionsButton.png)
     
@@ -47,7 +47,7 @@ We have an extensive videos library featuring everything from introduction video
 - [Quali's Courses U Portal](https://courses.quali.com/): Role-based courses featuring video tutorials, exercises and quizzes.
 - [Quali's Youtube channel](https://www.youtube.com/user/QualiSystems/playlists): Instructional videos, demos, product implementations, case studies, chalk sessions and more
 - [Quali's Resource Center](https://www.quali.com/resource-center/): Webinars, presentations, customer testimonials, use cases, integrations
-- CloudShell Help: [Short Development Videos](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Short-Dev-Videos.htm)
+- CloudShell Help: [Short Development Videos](./devguide/reference/short-dev-videos.md)
 
 **How do I get access to the Support portal, Download Center, Quali U Courses portal, forums and idea box?**
 

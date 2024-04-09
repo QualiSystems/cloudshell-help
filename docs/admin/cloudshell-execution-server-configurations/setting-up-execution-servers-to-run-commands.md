@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Setting Up Execution Servers to Run Commands
 
-This article explains how to configure execution servers to run commands in CloudShell. Note that associating execution servers to automation suites is done on the job level, as explained in [Add jobs to an automation suite](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/JOB-SCHDL/New-Autmt-Suite.htm#Add2).
+This article explains how to configure execution servers to run commands in CloudShell. Note that associating execution servers to automation suites is done on the job level, as explained in [Add jobs to an automation suite](../../portal/job-scheduling/manage-automation-suites/add-suites.md).
 
 ## Managing execution servers
 
@@ -20,11 +20,11 @@ Blueprint orchestration can be configured to run on one execution server, while 
 :::
 ### Optimizing execution capacity
 
-For detailed information, see [Optimizing Execution Provisioning](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Tst-n-Cmd-Exc-Optmz.htm).
+For detailed information, see [Optimizing Execution Provisioning](../../admin/cloudshell-execution-server-configurations/optimizing-execution-provisioning.md).
 
 ### Distributed command execution
 
-Multiple execution servers can be deployed in order to scale out the provisioning and resource command tasks. By default, blueprint and resource commands are distributed between the execution servers according to their capacity. It is possible, however, to specify more explicit rules to control the execution server selection for commands, as explained in the "execution server selection" sections below. For additional information, see [Optimizing Execution Provisioning](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Tst-n-Cmd-Exc-Optmz.htm).
+Multiple execution servers can be deployed in order to scale out the provisioning and resource command tasks. By default, blueprint and resource commands are distributed between the execution servers according to their capacity. It is possible, however, to specify more explicit rules to control the execution server selection for commands, as explained in the "execution server selection" sections below. For additional information, see [Optimizing Execution Provisioning](../../admin/cloudshell-execution-server-configurations/optimizing-execution-provisioning.md).
 
 ### Resource commands
 
@@ -36,20 +36,20 @@ When a resource command is executed, the system first checks whether a driver fo
 
 Attributes can be used to match resource commands to the right execution server based on geographical location of the server and resource, execution server capabilities or other concerns. In a multi-site deployment, for example, there is an advantage in ensuring that overseas lab resources are only controlled by an on-premise execution server. This will help reduce the network latency and improve performance.
 
-For additional information, see [Associating Resources to Specific Execution Servers](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/INVN/Assct-Rsrc-to-ES.htm).
+For additional information, see [Associating Resources to Specific Execution Servers](../../portal/inventory/managing-resources/associate-resources-to-es.md).
 
 ## Controlling execution server selection for App deployments
 
 To learn how to do this, see the appropriate article:
 
-- For private cloud Apps, see [Managing Private Cloud Apps in Domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Prvt-Cld-Apps-in-Dmns.htm).
-- For public cloud Apps, see [Managing Public Cloud Apps in Domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Pblc-Cld-Apps-in-Dmns.htm).
+- For private cloud Apps, see [Managing Private Cloud Apps in Domains](../../admin/supported-cloud-providers-in-cloudshell/private-cloud-provider-support-in-cloudshell/).
+- For public cloud Apps, see [Managing Public Cloud Apps in Domains](../../admin/supported-cloud-providers-in-cloudshell/public-cloud-provider-support-in-cloudshell/).
 
 ## Controlling execution server selection for blueprint commands
 
 Blueprint driver commands are also distributed between the execution servers based on availability and capacity. In order to restrict blueprint commands to a specific group of execution servers, a configuration key needs to be added specifying the relevant selector attribute value.
 
-1. Create a selector attribute and assign it to an execution server, as explained in [Associating Resources to Specific Execution Servers](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/INVN/Assct-Rsrc-to-ES.htm).
+1. Create a selector attribute and assign it to an execution server, as explained in [Associating Resources to Specific Execution Servers](../../portal/inventory/managing-resources/associate-resources-to-es.md).
     
 2. Specify an attribute value for blueprint commands. Add the following configuration key to the Quali server `customer.config` file: `EnvironmentCommandsESRestrictions`
 
@@ -59,11 +59,11 @@ The value should be the attribute name and value given the syntax `Name=Value`. 
 
 ## Configuring the Execution Server to Run as a Process by Default
 
-See [Configure the Execution Server to Run as a Process by Default](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-ts-exec-srver-prcs.htm).
+See [Configure the Execution Server to Run as a Process by Default](../../install-configure/cloudshell-suite/configure-products/config-execution-server-process.md).
 
 ## Working with local tests
 
-If you are using a source control tool and wish to configure CloudShell to work with your local tests, see [Source Control: Using Local Tests in Automation Suites](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Src-Ctrl.htm) or contact Quali support or your Customer Success representative.
+If you are using a source control tool and wish to configure CloudShell to work with your local tests, see [Source Control: Using Local Tests in Automation Suites](../../admin/setting-up-cloudshell/source-control-using-local-tests-in-automation-suites/) or contact Quali support or your Customer Success representative.
 
 ## Configuring Execution Servers to Deploy vCenter Apps
 
@@ -127,7 +127,7 @@ The default value is 480 minutes.
 
 ## Setting the logging level for Python drivers and scripts running on an Execution Server
 
-It is possible to set the logging level for automation processes running on a specific Execution Server or Python driver (for drivers, see CloudShell Dev Guide's [Tips and Tricks for Shells](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Tips-and-Tricks.htm) article). The logging levels are: DEBUG, INFO, WARN and ERROR.Only messages that are greater than the specified log level are saved to the logs.
+It is possible to set the logging level for automation processes running on a specific Execution Server or Python driver (for drivers, see CloudShell Dev Guide's [Tips and Tricks for Shells](../../devguide/developing-shells/tips-and-tricks-for-shells.md) article). The logging levels are: DEBUG, INFO, WARN and ERROR.Only messages that are greater than the specified log level are saved to the logs.
 
 Logs are organized in different files according to resource and sandbox. The folder location will be relative to the driver in the virtual environment location at: `%venv%\[drivername]\Lib\site-packages\cloudshell\Logs` (e.g. C:\\ProgramData\\QualiSystems\\venv\\Deployment\_Orchestrator\_5\_2\\Lib\\site-packages\\cloudshell\\Logs). Under windows, `[venv]` will be located at `%programdata%\qualisystems\venv`.
 
