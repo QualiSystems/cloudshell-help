@@ -1,8 +1,8 @@
 ---
-sidebar_position: 10
+sidebar_position: 13
 ---
 
-# Remove blueprints from domain
+# Remove groups from domain
 
 ### Description
 
@@ -10,7 +10,7 @@ Removes one or more blueprints from a domain.
 
 ### URL 
 
-`http://{Admin API IP}:{port#}/api/v1/domains/{id}/blueprint`
+`http://{Admin API IP}:{port#}/api/v1/domains/{id}/groups`
 
 | Parameter | Description/Comments |
 | --- | --- |
@@ -39,20 +39,18 @@ Example header format:
 
 | Parameter | Description/Comments |
 | --- | --- |
-| Id | (string) Blueprint's id. Can be retrieved via [Get domain's blueprints](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-domain-blueprints.htm). |
+| Id | (string) Group's id. Can be retrieved via [Get all groups](./get-all-groups.md). |
 
 </details>
 
 <details>
 <summary>Request example</summary>
+
 ```javascript
 {
-  "Blueprints": [
+  "Groups": [
     {
-      "Id": "369960ab-68ff-4fdc-bf02-054a96879812"
-    },
-    {
-      "Id": "a0cd0b72-8ed6-41a8-a460-0ab6253aa6af"
+      "Id": 1
     }
   ]
 }
@@ -63,6 +61,7 @@ Example header format:
 
 <details>
 <summary>Response example</summary>
+
 ```javascript
 {
     "Errors": []

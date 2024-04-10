@@ -2,7 +2,7 @@
 
 In this article, we’ll discuss the different CloudShell APIs.
 
-CloudShell applications have multiple APIs, which enable you to get services from the Quali Server and to utilize CloudShell’s capabilities for Shell automation, blueprint orchestration, sandbox deployment and test automation. CloudShell APIs can be classified as outbound and inbound APIs. In other words, APIs that are used to serve CloudShell in a wider context (our RESTful Sandbox API), like CI/CD processes, and APIs used to extend CloudShell automation and orchestration. For additional information, visit the [CloudShell API Guide](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/CS-API-Guide.htm).
+CloudShell applications have multiple APIs, which enable you to get services from the Quali Server and to utilize CloudShell’s capabilities for Shell automation, blueprint orchestration, sandbox deployment and test automation. CloudShell APIs can be classified as outbound and inbound APIs. In other words, APIs that are used to serve CloudShell in a wider context (our RESTful Sandbox API), like CI/CD processes, and APIs used to extend CloudShell automation and orchestration. For additional information, visit the [CloudShell API Guide](../../api-guide/cs-api-overview.md).
 
 ## CloudShell Sandbox API
 
@@ -20,7 +20,7 @@ Note that since CloudShell Automation API can perform sandbox and CloudShell\-le
 
 ### Examples
 
-See [Useful CloudShell Automation API Code Examples](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/APIs/Useful-Script-Examples.htm).
+See [Useful CloudShell Automation API Code Examples](./available-cs-api/useful-cs-api-examples/).
 
 ## TestShell API
 

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 18
+sidebar_position: 26
 ---
 
 # Add users to group

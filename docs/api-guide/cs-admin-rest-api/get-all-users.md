@@ -1,5 +1,5 @@
 ---
-sidebar_position: 20
+sidebar_position: 28
 ---
 
 # Get all users

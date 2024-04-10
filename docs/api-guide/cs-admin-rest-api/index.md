@@ -6,31 +6,31 @@ The following Administration APIs are available:
 
 **Login:**
 
-- [Get Administration API token](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-login.htm)
+- [Get Administration API token](./get-admin-api-token.md)
 
 **Domains:**
 
 Manage CloudShell domains.
 
-- [Get all domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-all-domains.htm)
-- [Create domain](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-create-domain.htm)
-- [Get domain by ID](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-domain-by-id.htm)
-- [Edit domain](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-edit-domain.htm)
-- [Delete domain](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-delete-domain.htm)
+- [Get all domains](./get-all-domains.md)
+- [Create domain](./create-domain.md)
+- [Get domain by ID](./get-domain-by-id.md)
+- [Edit domain](./edit-domain.md)
+- [Delete domain](./delete-domain.md)
 
 **DomainBlueprints:**
 
 Manage a domain's blueprints.
 
-- [Get domain's blueprints](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-domain-blueprints.htm)
-- [Add blueprints to domain](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-add-blueprints-to-domain.htm)
-- [Remove blueprints from domain](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-remove-blueprints-from-domain.htm)
+- [Get domain's blueprints](./get-domain-blueprints.md)
+- [Add blueprints to domain](./add-blueprints-to-domain.md)
+- [Remove blueprints from domain](./remove-blueprint-from-domain.md)
 
 **DomainGroups:**
 
 Manage a domain's group associations.
 
-- [Get domain's groups](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-domain-groups.htm)
+- [Get domain's groups](./get-domain-group)
 - [Add groups to domain](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-add-groups-to-domain.htm)
 - [Remove groups from domain](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-remove-group-from-domain.htm)
 
@@ -83,7 +83,6 @@ Manage CloudShell users.
 Get and import users from your active directory or LDAP.
 
 - [Get all external groups](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-all-external-groups.htm)
-- [Get users from an external group](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-all-external-group-users.htm)
 - [Get users from an external group](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-all-external-group-users.htm)
 - [Import external users](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-import-external-users.htm)
 

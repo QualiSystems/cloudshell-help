@@ -8,19 +8,20 @@ sidebar_position: 6
 
 Gets a list of all domains in CloudShell
 
+### URL
+
+`http://{Admin API IP}:{port#}/api/v1/domains/{id}`
+
+| Parameter | Description/Comments |
+| --- | --- |
+| ID | (string) Domain's id. Can be retrieved via [Get all domains](./get-all-domains.md). |
+
 ### HTTP method
 
-PUT
+`PUT`
 
 ### Request
 
-<details>
-<summary>URL</summary>
-
-```javascript
-http://{Admin API IP}:{port#}/api/v1/domains/{id}
-```
-</details>
 
 <details>
 
@@ -31,10 +32,6 @@ Example header format:
 `Authorization: Basic <authorization token returned from the login method>`
 
 `Content-Type: application/json`
-
-| Parameter | Description/Comments |
-| --- | --- |
-| id | (string) Domain's id. |
 
 </details>
 

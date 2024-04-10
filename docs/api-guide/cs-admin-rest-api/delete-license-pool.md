@@ -1,6 +1,8 @@
 ---
-sidebar_position: 31
+sidebar_position: 40
 ---
+
+# Delete license pool
 
 ### Description
 

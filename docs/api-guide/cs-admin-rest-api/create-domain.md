@@ -8,21 +8,15 @@ sidebar_position: 4
 
 Creates a new domain in CloudShell.
 
+### URL
+
+`http://{Admin API IP}:{port#}/api/v1/domains`
+
 ### HTTP method
 
-POST
+`POST`
 
 ### Request
-
-
-<details>
-<summary>URL</summary>
-
-```javascript
-http://{Admin API IP}:{port#}/api/v1/domains
-```
-</details>
-
 
 <details>
 <summary>Headers</summary>

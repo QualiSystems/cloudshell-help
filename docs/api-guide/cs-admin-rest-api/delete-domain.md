@@ -8,19 +8,19 @@ sidebar_position: 7
 
 Delete a specific domain from CloudShell.
 
+### URL 
+
+`http://{Admin API IP}:{port#}/api/v1/domains/{id}`
+
+| Parameter | Description/Comments |
+| --- | --- |
+| ID | (string) Domain's id. Can be retrieved via [Get all domains](./get-all-domains.md).|
+
 ### HTTP method
 
-DELETE
+`DELETE`
 
 ### Request
-
-<details>
-<summary>URL</summary>
-
-```javascript
-http://{Admin API IP}:{port#}/api/v1/domains/{id}
-```
-</details>
 
 <details>
 <summary>Headers</summary>
@@ -32,9 +32,6 @@ Example header format:
 
 `Content-Type: application/json`
 
-| Parameter | Description/Comments |
-| --- | --- |
-| id | (string) Domain's id. |
 </details>
 
 ### Response

@@ -1,16 +1,17 @@
 ---
-sidebar_position: 10
+sidebar_position: 12
 ---
 
-# Remove blueprints from domain
+
+# Add groups to domain
 
 ### Description
 
-Removes one or more blueprints from a domain.
+Adds one or more groups to a given domain.
 
 ### URL 
 
-`http://{Admin API IP}:{port#}/api/v1/domains/{id}/blueprint`
+`http://{Admin API IP}:{port#}/api/v1/domains/{id}/groups`
 
 | Parameter | Description/Comments |
 | --- | --- |
@@ -18,13 +19,13 @@ Removes one or more blueprints from a domain.
 
 ### HTTP method
 
-`DELETE`
+`POST`
 
 ### Request
 
+
 <details>
 <summary>Headers</summary>
-
 
 Example header format:
 
@@ -39,20 +40,19 @@ Example header format:
 
 | Parameter | Description/Comments |
 | --- | --- |
-| Id | (string) Blueprint's id. Can be retrieved via [Get domain's blueprints](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-domain-blueprints.htm). |
-
+| Id | (string) Group id. Can be retrieved via [Get all groups](./get-all-groups.md). |
+| ViewOnly | (bool) Specify true to add the group with "view only" permissions. |
 </details>
 
 <details>
 <summary>Request example</summary>
+
 ```javascript
 {
-  "Blueprints": [
+  "Groups": [
     {
-      "Id": "369960ab-68ff-4fdc-bf02-054a96879812"
-    },
-    {
-      "Id": "a0cd0b72-8ed6-41a8-a460-0ab6253aa6af"
+      "Id": 1,
+      "ViewOnly": false
     }
   ]
 }
@@ -63,6 +63,7 @@ Example header format:
 
 <details>
 <summary>Response example</summary>
+
 ```javascript
 {
     "Errors": []

@@ -8,19 +8,19 @@ sidebar_position: 8
 
 Gets a list of all blueprints in a given domain.
 
+### URL
+
+`http://{Admin API IP}:{port#}/api/v1/domains/{id}/blueprints`
+
+| Parameter | Description/Comments |
+| --- | --- |
+| ID | (string) Domain's ID. Can be retrieved via [Get all domains](./get-all-domains.md).|
+
 ### HTTP method
 
-GET
+`GET`
 
 ### Request
-
-<details>
-<summary>URL</summary>
-
-```javascript
-http://{Admin API IP}:{port#}/api/v1/domains/{id}/blueprints
-```
-</details>
 
 <details>
 <summary>Headers</summary>
@@ -31,9 +31,7 @@ Example header format:
 
 `Content-Type: application/json`
 
-| Parameter | Description/Comments |
-| --- | --- |
-| ID | (string) Domain's ID. Can be retrieved via [Get all domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-all-domains.htm).|
+
 </details>
 
 <details>

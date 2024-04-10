@@ -1,5 +1,5 @@
 ---
-sidebar_position: 19
+sidebar_position: 27
 ---
 
 # Remove users from group

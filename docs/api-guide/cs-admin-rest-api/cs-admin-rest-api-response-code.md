@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+title: API Response Codes
 ---
 
 # CloudShell Administration REST API Response Codes

@@ -21,7 +21,7 @@ For additional details about each API, see below.
 
 ## CloudShell Administration REST API
 
-A RESTFul API that allows your admins to perform CloudShell administration tasks remotely, without having to open Resource Manager Client. As such, this API allows you to perform all the tasks provided by Resource Manager Client. This includes managing domains, groups, users, license pools, and also share blueprints/resources among different domains. For details, see [CloudShell Administration REST API](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-ovrvw.htm).
+A RESTFul API that allows your admins to perform CloudShell administration tasks remotely, without having to open Resource Manager Client. As such, this API allows you to perform all the tasks provided by Resource Manager Client. This includes managing domains, groups, users, license pools, and also share blueprints/resources among different domains. For details, see [CloudShell Administration REST API](./cs-admin-rest-api/index.md).
 
 ## Sandbox API
 
