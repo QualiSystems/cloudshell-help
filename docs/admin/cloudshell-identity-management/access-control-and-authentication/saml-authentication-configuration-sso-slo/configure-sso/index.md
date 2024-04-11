@@ -139,7 +139,7 @@ Users created in the IdP can use their defined **User Name** and **Email** attri
 :::note
 By default, users that are added to CloudShell via SSO are also added to the **External Users** group. However, you can change this via the `Registration.AdditionalGroup` configuration key.
 :::
-For information about creating users, see [Managing CloudShell Users](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Add-Usr.htm).
+For information about creating users, see [Managing CloudShell Users](../../../../../admin/cloudshell-identity-management/managing-users/managing-cloudshell-users.md).
 
 **To define user groups for SAML SSO:**
 
@@ -149,7 +149,7 @@ For information about creating users, see [Managing CloudShell Users](https://he
     
     :::note Points to consider:
     - Users are associated to a group if their attributes match all the constraints defined for that group. Users can be associated to more than one group.
-    - By default, group associations are created when registering the user. However, admins can set CloudShell to update the group associations whenever the user logs into CloudShell. For details, see [Enabling CloudShell to auto-update group associations on user login](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfg-SSO.htm?tocpath=CloudShell%20Administration%7CCloudShell%20Identity%20Management%7CAccess%20Control%20and%20Authentication%7CSAML%20Authentication%20Configuration%20(SSO%20%2F%20SLO)%7CConfiguring%20Single%20Sign-On%20(SSO)%7C_____0#Enabling2).
+    - By default, group associations are created when registering the user. However, admins can set CloudShell to update the group associations whenever the user logs into CloudShell. For details, see [Enabling CloudShell to auto-update group associations on user login](../../../../../admin/cloudshell-identity-management/access-control-and-authentication/saml-authentication-configuration-sso-slo/configure-sso/index.md#enabling-cloudshell-to-auto-update-group-associations-on-user-login).
     - Optionally, you can use regular expressions in the `sso_group_rules.config.json` file you created to define dynamic groups that are conditioned by the values of the SAML parameters. Once regular expressions are enabled, with the `EnableRegex` element, the constraints' values are recognized as regular expressions.
     :::
     :::note Notes for setting up SSO login to a CloudShell API:
@@ -257,7 +257,7 @@ Expand for a description of the requirements in the sample file:
     :::
 7. Enter the user name and password you gave the user via the IdP, and you will be referred directly to the Portal's home.
 :::tip
-You can use the SSO Tester utility to test your SSO configuration. For additional information, see [SSO Tester](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/SSO-Tstr.htm).
+You can use the SSO Tester utility to test your SSO configuration. For additional information, see [SSO Tester](../../../../../admin/cloudshell-identity-management/access-control-and-authentication/saml-authentication-configuration-sso-slo/configure-sso/sso-tester.md).
 :::
 ## Enabling CloudShell to auto-update group associations on user login
 

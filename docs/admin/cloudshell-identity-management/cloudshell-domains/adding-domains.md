@@ -17,4 +17,4 @@ Designated system administrators have limited permissions for performing domain 
 3. In the **New Domain** dialog box, enter the **Domain** Name.
 4. Add a short description of the domain. This step is optional but recommended.
 5. Click **OK** to add the new domain.
-6. Next, set up the domain, as explained in [Domains Window](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Dmn-Win.htm).
+6. Next, set up the domain, as explained in [Domains Window](../../../admin/cloudshell-identity-management/cloudshell-domains/domains-window.md).

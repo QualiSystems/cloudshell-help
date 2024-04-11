@@ -53,7 +53,7 @@ In order to make a resource available for users, you need to associate the resou
 
 ## Removing resources from domains
 
-This section explains how to remove resources from domains in Resource Manager Client. Admins can also remove resources via the CloudShell Portal Inventory dashboard but this removes the resource entirely - see [Deleting Resources from the Inventory](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/INVN/Dlt-Rsrc-from-Invnt.htm).
+This section explains how to remove resources from domains in Resource Manager Client. Admins can also remove resources via the CloudShell Portal Inventory dashboard but this removes the resource entirely - see [Deleting Resources from the Inventory](../../../portal/inventory/managing-resources/deleting-resources-from-inventory.md).
 
 **To remove resources via the domain's Resources page:**
 
