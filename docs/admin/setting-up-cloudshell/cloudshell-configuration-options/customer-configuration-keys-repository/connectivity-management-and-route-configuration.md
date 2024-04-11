@@ -4,8 +4,7 @@ sidebar_position: 4
 
 # Connectivity Management and Route Configuration
 
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Set the maximum number of hops allowed per route (MaxHopsForRoute)</summary>
+## Set the maximum number of hops allowed per route
 <table>
 	<tbody>
 		<tr>
@@ -34,9 +33,8 @@ sidebar_position: 4
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Enable automatic route configuration (automatically configures L1 connections) (EnableRouteConfiguration)</summary>
+
+## Enable automatic route configuration (automatically configures L1 connections)
 <table>
 	<tbody>
 		<tr>
@@ -65,9 +63,8 @@ sidebar_position: 4
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Enable regular users to change their email address (ChangeEmailEnabled)</summary>
+
+## Enable regular users to change their email address
 <table>
 	<tbody>
 		<tr>
@@ -96,9 +93,8 @@ sidebar_position: 4
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Enable regular users to change email notifications (ReservationEmail.NonAdminCanChangeNotifications)</summary>
+
+## Enable regular users to change email notifications
 <table>
 	<tbody>
 		<tr>
@@ -127,9 +123,8 @@ sidebar_position: 4
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Set the default number of max hops displayed for routes (in the connection’s Max Hops field in the Resource Connections dialog box) (DefaultMaxHopsForRoute)</summary>
+
+## Set the default number of max hops displayed for routes (in the connection’s Max Hops field in the Resource Connections dialog box)
 <table>
 	<tbody>
 		<tr>
@@ -158,9 +153,8 @@ sidebar_position: 4
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Set the default connection type when creating a connection (DefaultSelectedConnectionType)</summary>
+
+## Set the default connection type when creating a connection
 <table>
 	<tbody>
 		<tr>
@@ -189,9 +183,8 @@ sidebar_position: 4
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Set the supported connection types for new connections (SupportedConnectionTypes)</summary>
+
+## Set the supported connection types for new connections
 <table>
 	<tbody>
 		<tr>
@@ -220,4 +213,4 @@ sidebar_position: 4
 		</tr>
 	</tbody>
 </table>
-</details>
+

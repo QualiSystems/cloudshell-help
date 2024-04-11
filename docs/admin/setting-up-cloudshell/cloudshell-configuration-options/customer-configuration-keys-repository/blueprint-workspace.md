@@ -4,8 +4,7 @@ sidebar_position: 6
 
 # Blueprint Workspace
 
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Defines the maximum allowed orchestration driver teardown time (TopologyTeardownDurationMaxHours)</summary>
+## Defines the maximum allowed orchestration driver teardown time
 <table>
 	<tbody>
 		<tr>
@@ -34,9 +33,8 @@ sidebar_position: 6
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Defines the maximum allowed orchestration driver setup time (TopologySetupDurationMaxHours)</summary>
+
+## Defines the maximum allowed orchestration driver setup time
 <table>
 	<tbody>
 		<tr>
@@ -65,9 +63,8 @@ sidebar_position: 6
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Enable the option to show or hide the **More Info** option from blueprints (HideMoreInfoOnEnvironmentTile)</summary>
+
+## Enable the option to show or hide the **More Info** option from blueprints
 <table>
 	<tbody>
 		<tr>
@@ -96,9 +93,8 @@ sidebar_position: 6
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Block non-admin users from exporting blueprint packages (BlockPackageExportForNonAdmins)</summary>
+
+## Block non-admin users from exporting blueprint packages
 <table>
 	<tbody>
 		<tr>
@@ -127,9 +123,8 @@ sidebar_position: 6
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Display **Instructions** side pane by default (WS_Environment_AutoOpenInstructions)</summary>
+
+## Display **Instructions** side pane by default
 <table>
 	<tbody>
 		<tr>
@@ -158,9 +153,8 @@ sidebar_position: 6
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Display **Commands** side pane by default (WS_Environment_AutoOpenCommands)</summary>
+
+## Display **Commands** side pane by default
 <table>
 	<tbody>
 		<tr>
@@ -189,9 +183,8 @@ sidebar_position: 6
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Enable users to create blueprints from a template (OnlyAllowNewEnvironmentsFromTemplates)</summary>
+
+## Enable users to create blueprints from a template
 <table>
 	<tbody>
 		<tr>
@@ -220,9 +213,8 @@ sidebar_position: 6
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Change the time allocated for exporting the blueprint diagram (ExportToPdf.WaitForRender)</summary>
+
+## Change the time allocated for exporting the blueprint diagram
 <table>
 	<tbody>
 		<tr>
@@ -251,9 +243,8 @@ sidebar_position: 6
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Enable the **Check Blueprint Routes** option in the **Blueprint** menu (DetectFailedRoutes)</summary>
+
+## Enable the **Check Blueprint Routes** option in the **Blueprint** menu
 <table>
 	<tbody>
 		<tr>
@@ -282,9 +273,8 @@ sidebar_position: 6
 		</tr>
 	</tbody>
 </table>
-</details>
-<details style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
-  <summary>Set the route grouping policy (MaxUngroupedRoutes)</summary>
+
+## Set the route grouping policy
 <table>
 	<tbody>
 		<tr>
@@ -313,4 +303,3 @@ sidebar_position: 6
 		</tr>
 	</tbody>
 </table>
-</details>

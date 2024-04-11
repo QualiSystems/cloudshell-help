@@ -4,4 +4,4 @@ sidebar_position: 11
 
 # LDAP Integration
 
-WIP
+See [LDAP Integration](../../../cloudshell-identity-management/access-control-and-authentication/ldap-integration.md).
