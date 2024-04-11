@@ -23,7 +23,7 @@ Gets details about a specific execution of a sandbox or component command, per s
 
 | Parameter | Description/Comments |
 | --- | --- |
-| `execution_id` | The id of the command's execution (`string`). <br/> **<span style={{ color: 'green' }}>Tip:</span>**  You can get the execution ID from the [component command start](http://localhost:3000/cloudshell-help/next/api-guide/cs-sandbox-api/cs-sandbox-api-version-2-reference-guide/component-command-start) and the [blueprint start](http://localhost:3000/cloudshell-help/next/api-guide/cs-sandbox-api/cs-sandbox-api-version-2-reference-guide/blueprint-start) methods. |
+| `execution_id` | The id of the command's execution (`string`). <br/> **<span style={{ color: 'green' }}>Tip:</span>**  You can get the execution ID from the [component command start](./component-command-start.md) and the [blueprint start](./blueprint-start.md) methods. |
 
 </details>
 

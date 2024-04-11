@@ -8,19 +8,19 @@ sidebar_position: 25
 
 Gets a list of all users in a given domain.
 
+### URL
+
+`http://{Admin API IP}:{port#}/api/v1/groups/{id}/Users`
+
+| Parameter | Description/Comments |
+| --- | --- |
+| ID | (string) Group's ID. Can be retrieved via [Get all groups](./get-all-groups.md). |
+
 ### HTTP method
 
-GET
+`GET`
 
 ### Request
-
-<details>
-<summary>URL</summary>
-
-```javascript
-http://{Admin API IP}:{port#}/api/v1/groups/{id}/Users
-```
-</details>
 
 <details>
 <summary>Headers</summary>
@@ -31,9 +31,6 @@ Example header format:
 
 `Content-Type: application/json`
 
-| Parameter | Description/Comments |
-| --- | --- |
-| ID | (string) Group's ID. Can be retrieved via [Get all groups](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-all-groups.htm). |
 </details>
 
 <details>

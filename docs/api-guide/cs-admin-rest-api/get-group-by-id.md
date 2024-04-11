@@ -10,7 +10,7 @@ Gets a group's details using the group's id.
 
 ### URL
 
-`http://{Admin API IP}:{port#}/api/v1/Groups/{id}`
+`http://{Admin API IP}:{port#}/api/v1/groups/{id}`
 
 | Parameter | Description/Comments |
 | --- | --- |

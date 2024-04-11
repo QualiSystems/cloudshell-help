@@ -8,19 +8,20 @@ sidebar_position: 29
 
 Get a user's details.
 
+### URL
+
+`http://{Admin API IP}:{port#}/api/v1/users/{id}`
+
+| Parameter | Description/Comments |
+| --- | --- |
+| ID | (string) User's ID. Can be retrieved via [Get all users](./get-all-users.md) or [Get group's users](./get-group-users.md). |
+
 ### HTTP method
 
-GET
+`GET`
 
 ### Request
 
-<details>
-<summary>URL</summary>
-
-```javascript
-http://{Admin API IP}:{port#}/api/v1/users/{id}
-```
-</details>
 
 <details>
 <summary>Headers</summary>
@@ -30,10 +31,6 @@ Example header format:
 `Authorization: Basic <authorization token returned from the login method>`
 
 `Content-Type: application/json`
-
-| Parameter | Description/Comments |
-| --- | --- |
-| ID | (string) User's ID. Can be retrieved via [Get all users](http://localhost:3000/cloudshell-help/next/api-guide/cs-admin-rest-api/get-all-users) or [Get group's users](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-group-users.htm). |
 
 </details>
 

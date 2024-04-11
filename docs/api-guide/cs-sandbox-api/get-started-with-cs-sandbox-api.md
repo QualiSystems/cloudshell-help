@@ -55,4 +55,4 @@ To use the live documentation pages, log in to the **Authentication API** page u
 :::
 ## Related Topics
 
-- [CloudShell Sandbox API](http://localhost:3000/cloudshell-help/next/api-guide/cs-sandbox-api)
+- [CloudShell Sandbox API](./index.md)

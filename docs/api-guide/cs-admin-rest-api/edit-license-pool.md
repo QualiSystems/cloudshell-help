@@ -8,19 +8,19 @@ sidebar_position: 39
 
 Edit a license pool's details..
 
+### URL 
+
+`http://{Admin API IP}:{port#}/api/v1/licensepools/{id}`
+
+| Parameter | Description/Comments |
+| --- | --- |
+| id | (string) License pool's id. Can be retrieved via [Get all license pools](./get-all-license-pools.md). |
+
 ### HTTP method
 
-PUT
+`PUT`
 
 ### Request
-
-<details>
-<summary>URL</summary>
-
-```javascript
-http://{Admin API IP}:{port#}/api/v1/licensepools/{id}
-```
-</details>
 
 <details>
 <summary>Headers</summary>
@@ -31,9 +31,6 @@ Example header format:
 
 `Content-Type: application/json`
 
-| Parameter | Description/Comments |
-| --- | --- |
-| id | (string) License pool's id. Can be retrieved via [Get all license pools](http://localhost:3000/cloudshell-help/next/api-guide/cs-admin-rest-api/get-all-license-pools). |
 </details>
 
 <details>
@@ -44,7 +41,7 @@ Example header format:
 | Name | (bool) License pool name. |
 | Description | (string) License pool's password |
 | MaxConcurrentReservation | (int) Maximum number of licenses (sandbox reservations) allowed by the license pool. |
-| Domains | (string) Comma-separated list of domain ids to add the license pool to. |
+| Domains | (string) List of domain ids to add the license pool to. |
 </details>
 
 <details>

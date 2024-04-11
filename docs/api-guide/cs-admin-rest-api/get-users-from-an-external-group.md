@@ -8,19 +8,19 @@ sidebar_position: 34
 
 Get users from a group in your active directory/LDAP.
 
+### URL 
+
+`http://{Admin API IP}:{port#}/api/v1/integrations/IdentityManagement/groups/{groupName}/users`
+
+| Parameter | Description/Comments |
+| --- | --- |
+| groupName | Name of the group (e.g. “Azure\_DevOps\_Cloud\_Admins”). Can be retrieved via [Get all external groups](./get-all-external-groups.md). |
+
 ### HTTP method
 
-GET
+`GET`
 
 ### Request
-
-<details>
-<summary>URL</summary>
-
-```javascript
-http://{Admin API IP}:{port#}/api/v1/integrations/IdentityManagement/groups/{groupName}/users
-```
-</details>
 
 <details>
 <summary>Headers</summary>
@@ -31,9 +31,6 @@ Example header format:
 
 `Content-Type: application/json`
 
-| Parameter | Description/Comments |
-| --- | --- |
-| groupName | Name of the group (e.g. “Azure\_DevOps\_Cloud\_Admins”). Can be retrieved via [Get all external groups](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-all-external-groups.htm). |
 </details>
 
 <details>

@@ -8,19 +8,15 @@ sidebar_position: 38
 
 Creates a new license pool in CloudShell.
 
+### URL
+
+`http://{Admin API IP}:{port#}/api/v1/licensepools`
+
 ### HTTP method
 
-POST
+`POST`
 
 ### Request
-
-<details>
-<summary>URL</summary>
-
-```javascript
-http://{Admin API IP}:{port#}/api/v1/licensepools
-```
-</details>
 
 <details>
 <summary>Headers</summary>
@@ -40,7 +36,7 @@ Example header format:
 | Name | (bool) License pool name. |
 | Description | (string) License pool's password |
 | MaxConcurrentReservation | (int) Maximum number of licenses (sandbox reservations) allowed by the license pool. |
-| Domains | (string) Comma-separated list of domain ids to add the license pool to. |
+| Domains | (string) List of domain ids to add the license pool to. |
 </details>
 
 <details>

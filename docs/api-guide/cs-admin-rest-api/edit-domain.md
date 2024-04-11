@@ -45,6 +45,11 @@ Example header format:
 | Archived | (bool) **true** to archive the domain. |
 | LicensePoolId | (string) Id of the license pool. Can be retrieved via [Get all license pools](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-all-license-pools.htm). |
 
+</details>
+
+<details>
+<summary>Request example</summary>
+
 ```javascript
 {
     "Name": "MyFirstDomain",
@@ -55,10 +60,6 @@ Example header format:
 
 }
 ```
-</details>
-
-<details>
-<summary>Request example</summary>
 
 ```javascript
 {
