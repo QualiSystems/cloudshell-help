@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Archiving and Restoring Domains
 
-This article explains how to archive and restore domains. Archiving domains applies to scenarios where the domain is no longer needed but you want to keep it for future use. It is also possible to delete domains that are no longer needed as well as set an end date on domains in the domain's properties tab (for details, see [Domains Window](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Dmn-Win.htm)).
+This article explains how to archive and restore domains. Archiving domains applies to scenarios where the domain is no longer needed but you want to keep it for future use. It is also possible to delete domains that are no longer needed as well as set an end date on domains in the domain's properties tab (for details, see [Domains Window](../../../admin/cloudshell-identity-management/cloudshell-domains/domains-window.md)).
 
 ## Archiving domains
 

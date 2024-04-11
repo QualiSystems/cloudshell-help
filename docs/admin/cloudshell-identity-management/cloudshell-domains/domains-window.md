@@ -18,9 +18,9 @@ Use the domain's tab to add and remove resources, and blueprints (including thei
     
     The domain's tab has three pages:
     
-    - [Properties page](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Dmn-Win.htm?Highlight=Domains%20Window#Properties)
-    - [Resources page](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Dmn-Win.htm?Highlight=Domains%20Window#Resources)
-    - [Diagram page](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Dmn-Win.htm?Highlight=Domains%20Window#Diagram)
+    - [Properties page](../../../admin/cloudshell-identity-management/cloudshell-domains/domains-window.md#properties-page)
+    - [Resources page](../../../admin/cloudshell-identity-management/cloudshell-domains/domains-window.md#resources-page)
+    - [Diagram page](../../../admin/cloudshell-identity-management/cloudshell-domains/domains-window.md#diagram-page)
 
 ## Properties page
 
