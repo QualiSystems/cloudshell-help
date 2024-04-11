@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>cloudshell.api.common_cloudshell_api &mdash; CloudShell Python API 2022.3.0.185573 documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            CloudShell Python API
+              <img src="../../../_static/just_logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2022.3
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../cloudshell.api.html">cloudshell.api package</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">CloudShell Python API</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">cloudshell.api.common_cloudshell_api</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for cloudshell.api.common_cloudshell_api</h1><div class="highlight"><pre>
+<span></span><span class="ch">#!/usr/bin/python</span>
+<span class="c1"># -*- coding: utf-8 -*-</span>
+
+<span class="kn">import</span> <span class="nn">importlib</span>
+<span class="kn">import</span> <span class="nn">types</span>
+<span class="kn">import</span> <span class="nn">ssl</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">urllib3</span>
+<span class="kn">import</span> <span class="nn">urllib3.util</span> <span class="k">as</span> <span class="nn">urllib_util</span>
+<span class="kn">import</span> <span class="nn">xml.etree.ElementTree</span> <span class="k">as</span> <span class="nn">etree</span>
+
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">OrderedDict</span>
+<span class="kn">from</span> <span class="nn">xml.sax.saxutils</span> <span class="kn">import</span> <span class="n">escape</span>
+
+
+<span class="n">urllib3</span><span class="o">.</span><span class="n">disable_warnings</span><span class="p">(</span><span class="n">urllib3</span><span class="o">.</span><span class="n">exceptions</span><span class="o">.</span><span class="n">InsecureRequestWarning</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="o">.</span><span class="n">major</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+    <span class="n">unicode</span> <span class="o">=</span> <span class="n">unicode</span>
+    <span class="nb">str</span> <span class="o">=</span> <span class="nb">str</span>
+    <span class="nb">bytes</span> <span class="o">=</span> <span class="nb">str</span>
+    <span class="n">basestring</span> <span class="o">=</span> <span class="n">basestring</span>
+    <span class="n">TYPE_TYPE</span> <span class="o">=</span> <span class="n">types</span><span class="o">.</span><span class="n">TypeType</span>
+    <span class="n">TYPE_CLASS</span> <span class="o">=</span> <span class="n">types</span><span class="o">.</span><span class="n">ClassType</span>
+<span class="k">elif</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="o">.</span><span class="n">major</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+    <span class="nb">str</span> <span class="o">=</span> <span class="nb">str</span>
+    <span class="n">unicode</span> <span class="o">=</span> <span class="nb">str</span>
+    <span class="nb">bytes</span> <span class="o">=</span> <span class="nb">bytes</span>
+    <span class="n">basestring</span> <span class="o">=</span> <span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">)</span>
+    <span class="n">TYPE_TYPE</span> <span class="o">=</span> <span class="nb">type</span>
+    <span class="n">TYPE_CLASS</span> <span class="o">=</span> <span class="nb">type</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">raise</span>
+
+
+<div class="viewcode-block" id="XMLWrapper"><a class="viewcode-back" href="../../../cloudshell.api.html#cloudshell.api.common_cloudshell_api.XMLWrapper">[docs]</a><span class="k">class</span> <span class="nc">XMLWrapper</span><span class="p">:</span>
+<div class="viewcode-block" id="XMLWrapper.parseXML"><a class="viewcode-back" href="../../../cloudshell.api.html#cloudshell.api.common_cloudshell_api.XMLWrapper.parseXML">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">parseXML</span><span class="p">(</span><span class="n">xml_str</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">etree</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="n">xml_str</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="XMLWrapper.getRootNode"><a class="viewcode-back" href="../../../cloudshell.api.html#cloudshell.api.common_cloudshell_api.XMLWrapper.getRootNode">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">getRootNode</span><span class="p">(</span><span class="n">node</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">node</span><span class="o">.</span><span class="n">getroot</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="XMLWrapper.getChildNode"><a class="viewcode-back" href="../../../cloudshell.api.html#cloudshell.api.common_cloudshell_api.XMLWrapper.getChildNode">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">getChildNode</span><span class="p">(</span><span class="n">parent_node</span><span class="p">,</span> <span class="n">child_name</span><span class="p">,</span> <span class="n">find_prefix</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">parent_node</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">find_prefix</span> <span class="o">+</span> <span class="n">child_name</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="XMLWrapper.getAllChildNode"><a class="viewcode-back" href="../../../cloudshell.api.html#cloudshell.api.common_cloudshell_api.XMLWrapper.getAllChildNode">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">getAllChildNode</span><span class="p">(</span><span class="n">parent_node</span><span class="p">,</span> <span class="n">child_name</span><span class="p">,</span> <span class="n">find_prefix</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">parent_node</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">find_prefix</span> <span class="o">+</span> <span class="n">child_name</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="XMLWrapper.getChildNodeByAttr"><a class="viewcode-back" href="../../../cloudshell.api.html#cloudshell.api.common_cloudshell_api.XMLWrapper.getChildNodeByAttr">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">getChildNodeByAttr</span><span class="p">(</span><span class="n">parent_node</span><span class="p">,</span> <span class="n">child_name</span><span class="p">,</span> <span class="n">attr_name</span><span class="p">,</span> <span class="n">attr_value</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">parent_node</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">child_name</span> <span class="o">+</span> <span class="s1">&#39;[@&#39;</span> <span class="o">+</span> <span class="n">attr_name</span> <span class="o">+</span> <span class="s1">&#39;=</span><span class="se">\&#39;</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="n">attr_value</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\&#39;</span><span class="s1">]&#39;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="XMLWrapper.getAllChildNodeByAttr"><a class="viewcode-back" href="../../../cloudshell.api.html#cloudshell.api.common_cloudshell_api.XMLWrapper.getAllChildNodeByAttr">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">getAllChildNodeByAttr</span><span class="p">(</span><span class="n">parent_node</span><span class="p">,</span> <span class="n">child_name</span><span class="p">,</span> <span class="n">attr_name</span><span class="p">,</span> <span class="n">attr_value</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">parent_node</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">child_name</span> <span class="o">+</span> <span class="s1">&#39;[@&#39;</span> <span class="o">+</span> <span class="n">attr_name</span> <span class="o">+</span> <span class="s1">&#39;=</span><span class="se">\&#39;</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="n">attr_value</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\&#39;</span><span class="s1">]&#39;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="XMLWrapper.getNodeName"><a class="viewcode-back" href="../../../cloudshell.api.html#cloudshell.api.common_cloudshell_api.XMLWrapper.getNodeName">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">getNodeName</span><span class="p">(</span><span class="n">node</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">node</span><span class="o">.</span><span class="n">tag</span></div>
+
+<div class="viewcode-block" id="XMLWrapper.getNodeText"><a class="viewcode-back" href="../../../cloudshell.api.html#cloudshell.api.common_cloudshell_api.XMLWrapper.getNodeText">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">getNodeText</span><span class="p">(</span><span class="n">node</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">node</span><span class="o">.</span><span class="n">text</span></div>
+
+<div class="viewcode-block" id="XMLWrapper.getNodeAttr"><a class="viewcode-back" href="../../../cloudshell.api.html#cloudshell.api.common_cloudshell_api.XMLWrapper.getNodeAttr">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">getNodeAttr</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">attribute_name</span><span class="p">,</span> <span class="n">find_prefix</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">node</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">find_prefix</span> <span class="o">+</span> <span class="n">attribute_name</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="XMLWrapper.getNodePrefix"><a class="viewcode-back" href="../../../cloudshell.api.html#cloudshell.api.common_cloudshell_api.XMLWrapper.getNodePrefix">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">getNodePrefix</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">prefix_name</span><span class="p">):</span>
+        <span class="n">prefix</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">node</span><span class="o">.</span><span class="n">attrib</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">prefix</span>
+        <span class="k">for</span> <span class="n">attrib_name</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">node</span><span class="o">.</span><span class="n">attrib</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="k">if</span> <span class="n">attrib_name</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;{&quot;</span><span class="p">:</span>
+                <span class="n">prefix</span><span class="p">,</span> <span class="n">ignore</span><span class="p">,</span> <span class="n">tag</span> <span class="o">=</span> <span class="n">attrib_name</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">partition</span><span class="p">(</span><span class="s2">&quot;}&quot;</span><span class="p">)</span>
+                <span class="k">return</span> <span class="s2">&quot;{&quot;</span> <span class="o">+</span> <span class="n">prefix</span> <span class="o">+</span> <span class="s2">&quot;}&quot;</span>
+
+        <span class="k">return</span> <span class="n">prefix</span></div>
+
+<div class="viewcode-block" id="XMLWrapper.getStringFromXML"><a class="viewcode-back" href="../../../cloudshell.api.html#cloudshell.api.common_cloudshell_api.XMLWrapper.getStringFromXML">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">getStringFromXML</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">pretty_print</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">etree</span><span class="o">.</span><span class="n">tostring</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">pretty_print</span><span class="o">=</span><span class="n">pretty_print</span><span class="p">)</span></div></div>
+
+
+<span class="c1"># map request class</span>
+<div class="viewcode-block" id="CommonAPIRequest"><a class="viewcode-back" href="../../../cloudshell.api.html#cloudshell.api.common_cloudshell_api.CommonAPIRequest">[docs]</a><span class="k">class</span> <span class="nc">CommonAPIRequest</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwarg</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">attributes</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">kwarg</span><span class="o">.</span><span class="n">items</span><span class="p">()):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">attributes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+            <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_checkContainerValue</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+        <span class="n">result_value</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+            <span class="n">result_value</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+            <span class="k">for</span> <span class="n">list_value</span> <span class="ow">in</span> <span class="n">value</span><span class="p">:</span>
+                <span class="n">result_value</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">CommonAPIRequest</span><span class="o">.</span><span class="n">toContainer</span><span class="p">(</span><span class="n">list_value</span><span class="p">))</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">CommonAPIRequest</span><span class="p">):</span>
+            <span class="n">result_value</span> <span class="o">=</span> <span class="n">CommonAPIRequest</span><span class="o">.</span><span class="n">toContainer</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">result_value</span> <span class="o">=</span> <span class="n">value</span>
+
+        <span class="k">return</span> <span class="n">result_value</span>
+
+<div class="viewcode-block" id="CommonAPIRequest.toContainer"><a class="viewcode-back" href="../../../cloudshell.api.html#cloudshell.api.common_cloudshell_api.CommonAPIRequest.toContainer">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">toContainer</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">dict</span><span class="p">)</span> <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">OrderedDict</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">data</span>
+
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+            <span class="n">data_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+            <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+                <span class="n">data_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">CommonAPIRequest</span><span class="o">.</span><span class="n">_checkContainerValue</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>
+            <span class="k">return</span> <span class="n">data_list</span>
+
+        <span class="n">data_dict</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">()</span>
+        <span class="n">data_dict</span><span class="p">[</span><span class="s1">&#39;__name__&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">attributes</span><span class="p">:</span>
+            <span class="n">data_dict</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">CommonAPIRequest</span><span class="o">.</span><span class="n">_checkContainerValue</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">key</span><span class="p">))</span>
+        <span class="c1"># for key, value in data.__dict__.items():</span>
+        <span class="c1">#     data_dict[key] = CommonAPIRequest._checkContainerValue(value)</span>
+
+        <span class="k">return</span> <span class="n">data_dict</span></div></div>
+<span class="c1"># end map request class</span>
+
+
+<div class="viewcode-block" id="CommonResponseInfo"><a class="viewcode-back" href="../../../cloudshell.api.html#cloudshell.api.common_cloudshell_api.CommonResponseInfo">[docs]</a><span class="k">class</span> <span class="nc">CommonResponseInfo</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xml_object</span><span class="p">,</span> <span class="n">find_prefix</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_parseAttributesData</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">,</span> <span class="n">xml_object</span><span class="p">,</span> <span class="n">find_prefix</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_attributeCastToType</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data_str</span><span class="p">,</span> <span class="n">cast_type_name</span><span class="p">):</span>
+        <span class="n">default_value</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">if</span> <span class="n">cast_type_name</span> <span class="o">==</span> <span class="s1">&#39;bool&#39;</span><span class="p">:</span>
+            <span class="n">default_value</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">elif</span> <span class="n">cast_type_name</span> <span class="o">==</span> <span class="s1">&#39;float&#39;</span><span class="p">:</span>
+            <span class="n">default_value</span> <span class="o">=</span> <span class="mf">0.0</span>
+        <span class="k">elif</span> <span class="n">cast_type_name</span> <span class="o">==</span> <span class="s1">&#39;str&#39;</span><span class="p">:</span>
+            <span class="n">default_value</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+
+        <span class="n">cast_type</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="n">cast_type_name</span><span class="p">)</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">if</span> <span class="n">data_str</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="n">default_value</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">cast_type_name</span> <span class="o">==</span> <span class="s1">&#39;bool&#39;</span><span class="p">:</span>
+                    <span class="n">data</span> <span class="o">=</span> <span class="p">(</span><span class="n">data_str</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;true&#39;</span><span class="p">,</span> <span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;yes&#39;</span><span class="p">,</span> <span class="s1">&#39;on&#39;</span><span class="p">])</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">data</span> <span class="o">=</span> <span class="n">cast_type</span><span class="p">(</span><span class="n">data_str</span><span class="p">)</span>
+
+            <span class="k">except</span> <span class="ne">UnicodeEncodeError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">data</span> <span class="o">=</span> <span class="n">data_str</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+                <span class="k">except</span><span class="p">:</span>
+                    <span class="k">pass</span>
+            <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
+                <span class="k">pass</span>
+
+        <span class="k">return</span> <span class="n">data</span>
+
+    <span class="k">def</span> <span class="nf">_isAttributeTypeDefault</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr_type_name</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">attr_type_name</span> <span class="o">==</span> <span class="s1">&#39;int&#39;</span> <span class="ow">or</span> <span class="n">attr_type_name</span> <span class="o">==</span> <span class="s1">&#39;long&#39;</span> <span class="ow">or</span>
+                <span class="n">attr_type_name</span> <span class="o">==</span> <span class="s1">&#39;float&#39;</span> <span class="ow">or</span> <span class="n">attr_type_name</span> <span class="o">==</span> <span class="s1">&#39;bool&#39;</span> <span class="ow">or</span> <span class="n">attr_type_name</span> <span class="o">==</span> <span class="s1">&#39;str&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_is_empty_object</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">atrrib_data</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">atrrib_data</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kc">False</span>
+
+            <span class="k">if</span> <span class="n">value</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kc">False</span>
+
+        <span class="k">return</span> <span class="kc">True</span>
+
+    <span class="k">def</span> <span class="nf">_append_object_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr_type_name</span><span class="p">,</span> <span class="n">list_node</span><span class="p">,</span> <span class="n">attr_type_instance</span><span class="p">,</span> <span class="n">class_type</span><span class="p">,</span> <span class="n">find_prefix</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_isAttributeTypeDefault</span><span class="p">(</span><span class="n">attr_type_name</span><span class="p">):</span>
+            <span class="n">data_str</span> <span class="o">=</span> <span class="n">XMLWrapper</span><span class="o">.</span><span class="n">getNodeText</span><span class="p">(</span><span class="n">list_node</span><span class="p">)</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_attributeCastToType</span><span class="p">(</span><span class="n">data_str</span><span class="p">,</span> <span class="n">attr_type_name</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">attr_type_instance</span> <span class="o">==</span> <span class="nb">object</span><span class="p">:</span>
+                <span class="n">data</span> <span class="o">=</span> <span class="n">class_type</span><span class="p">(</span><span class="n">list_node</span><span class="p">,</span> <span class="n">find_prefix</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">data</span> <span class="o">=</span> <span class="n">attr_type_instance</span><span class="p">(</span><span class="n">list_node</span><span class="p">,</span> <span class="n">find_prefix</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="nb">hasattr</span><span class="p">(</span><span class="n">list_node</span><span class="p">,</span> <span class="s2">&quot;attrib&quot;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">list_node</span><span class="o">.</span><span class="n">attrib</span><span class="p">):</span>
+                <span class="nb">setattr</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s2">&quot;is_empty_object&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s2">&quot;is_empty_object&quot;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">data</span><span class="o">.</span><span class="n">is_empty_object</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">data</span>
+
+    <span class="k">def</span> <span class="nf">_parseAttributesData</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">class_type</span><span class="p">,</span> <span class="n">xml_object</span><span class="p">,</span> <span class="n">find_prefix</span><span class="p">):</span>
+        <span class="n">attrib_data_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+
+        <span class="n">empty_object_size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">attr_type</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">attr_type</span><span class="p">,</span> <span class="p">(</span><span class="n">TYPE_TYPE</span><span class="p">,</span> <span class="n">TYPE_CLASS</span><span class="p">))</span> <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">attr_type</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="k">continue</span>
+
+            <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">attr_type</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="n">data</span> <span class="o">=</span> <span class="kc">None</span>
+                <span class="n">attr_type_name</span> <span class="o">=</span> <span class="n">attr_type</span><span class="o">.</span><span class="vm">__name__</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_isAttributeTypeDefault</span><span class="p">(</span><span class="n">attr_type_name</span><span class="p">):</span>
+                    <span class="n">data_str</span> <span class="o">=</span> <span class="n">XMLWrapper</span><span class="o">.</span><span class="n">getNodeAttr</span><span class="p">(</span><span class="n">xml_object</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="n">data_str</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                        <span class="n">child_attribute</span> <span class="o">=</span> <span class="n">XMLWrapper</span><span class="o">.</span><span class="n">getChildNode</span><span class="p">(</span><span class="n">xml_object</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+                        <span class="k">if</span> <span class="n">child_attribute</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                            <span class="n">data_str</span> <span class="o">=</span> <span class="n">XMLWrapper</span><span class="o">.</span><span class="n">getNodeText</span><span class="p">(</span><span class="n">child_attribute</span><span class="p">)</span>
+
+                    <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_attributeCastToType</span><span class="p">(</span><span class="n">data_str</span><span class="p">,</span> <span class="n">attr_type_name</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">child_node</span> <span class="o">=</span> <span class="n">XMLWrapper</span><span class="o">.</span><span class="n">getChildNode</span><span class="p">(</span><span class="n">xml_object</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+
+                    <span class="k">if</span> <span class="n">child_node</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                        <span class="n">child_type</span> <span class="o">=</span> <span class="n">XMLWrapper</span><span class="o">.</span><span class="n">getNodeAttr</span><span class="p">(</span><span class="n">child_node</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="n">find_prefix</span><span class="p">)</span>
+                        <span class="k">if</span> <span class="n">child_type</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                            <span class="n">data</span> <span class="o">=</span> <span class="n">attr_type</span><span class="p">(</span><span class="n">child_node</span><span class="p">,</span> <span class="n">find_prefix</span><span class="p">)</span>
+                        <span class="k">else</span><span class="p">:</span>
+                            <span class="n">data</span> <span class="o">=</span> <span class="n">child_type</span><span class="p">(</span><span class="n">child_node</span><span class="p">,</span> <span class="n">find_prefix</span><span class="p">)</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="c1"># continue</span>
+                        <span class="n">data</span> <span class="o">=</span> <span class="kc">None</span>
+
+                <span class="n">attrib_data_dict</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">child_node</span> <span class="o">=</span> <span class="n">XMLWrapper</span><span class="o">.</span><span class="n">getChildNode</span><span class="p">(</span><span class="n">xml_object</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+
+                <span class="n">data_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+                <span class="n">attr_type_instance</span> <span class="o">=</span> <span class="n">attr_type</span><span class="p">[</span><span class="s1">&#39;list&#39;</span><span class="p">]</span>
+                <span class="n">attr_type_name</span> <span class="o">=</span> <span class="n">attr_type_instance</span><span class="o">.</span><span class="vm">__name__</span>
+
+                <span class="k">if</span> <span class="n">child_node</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="n">child_count</span> <span class="o">=</span> <span class="mi">0</span>
+                    <span class="k">for</span> <span class="n">list_node</span> <span class="ow">in</span> <span class="n">child_node</span><span class="p">:</span>
+                        <span class="n">data_object</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_append_object_list</span><span class="p">(</span><span class="n">attr_type_name</span><span class="p">,</span> <span class="n">list_node</span><span class="p">,</span> <span class="n">attr_type_instance</span><span class="p">,</span>
+                                                               <span class="n">class_type</span><span class="p">,</span> <span class="n">find_prefix</span><span class="p">)</span>
+
+                        <span class="k">if</span> <span class="n">data_object</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                            <span class="n">data_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_object</span><span class="p">)</span>
+                            <span class="n">child_count</span> <span class="o">+=</span> <span class="mi">1</span>
+
+                    <span class="c1"># I think that it is a logical bug, but ...</span>
+                    <span class="k">if</span> <span class="n">child_count</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                        <span class="k">for</span> <span class="n">list_node</span> <span class="ow">in</span> <span class="n">xml_object</span><span class="p">:</span>
+                            <span class="k">if</span> <span class="n">XMLWrapper</span><span class="o">.</span><span class="n">getNodeName</span><span class="p">(</span><span class="n">list_node</span><span class="p">)</span> <span class="o">==</span> <span class="n">name</span><span class="p">:</span>
+                                <span class="n">data_object</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_append_object_list</span><span class="p">(</span><span class="n">attr_type_name</span><span class="p">,</span> <span class="n">list_node</span><span class="p">,</span> <span class="n">attr_type_instance</span><span class="p">,</span>
+                                                                       <span class="n">class_type</span><span class="p">,</span> <span class="n">find_prefix</span><span class="p">)</span>
+
+                                <span class="k">if</span> <span class="n">data_object</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                                    <span class="n">data_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_object</span><span class="p">)</span>
+
+                <span class="n">attrib_data_dict</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_list</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_empty_object</span><span class="p">(</span><span class="n">attrib_data_dict</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">attrib_data_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">)</span> <span class="o">==</span> <span class="n">empty_object_size</span><span class="p">:</span>
+            <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;is_empty_object&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CommonApiResult"><a class="viewcode-back" href="../../../cloudshell.api.html#cloudshell.api.common_cloudshell_api.CommonApiResult">[docs]</a><span class="k">class</span> <span class="nc">CommonApiResult</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xml_object</span><span class="p">):</span>
+        <span class="n">error_node</span> <span class="o">=</span> <span class="n">XMLWrapper</span><span class="o">.</span><span class="n">getChildNode</span><span class="p">(</span><span class="n">xml_object</span><span class="p">,</span> <span class="s1">&#39;Error&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">error</span> <span class="o">=</span> <span class="kc">None</span> <span class="k">if</span> <span class="n">error_node</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">XMLWrapper</span><span class="o">.</span><span class="n">getNodeText</span><span class="p">(</span><span class="n">error_node</span><span class="p">)</span>
+
+        <span class="n">error_code_node</span> <span class="o">=</span> <span class="n">XMLWrapper</span><span class="o">.</span><span class="n">getChildNode</span><span class="p">(</span><span class="n">xml_object</span><span class="p">,</span> <span class="s1">&#39;ErrorCode&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">error_code</span> <span class="o">=</span> <span class="kc">None</span> <span class="k">if</span> <span class="n">error_code_node</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">XMLWrapper</span><span class="o">.</span><span class="n">getNodeText</span><span class="p">(</span><span class="n">error_code_node</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">response_info</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">response_info_node</span> <span class="o">=</span> <span class="n">XMLWrapper</span><span class="o">.</span><span class="n">getChildNode</span><span class="p">(</span><span class="n">xml_object</span><span class="p">,</span> <span class="s1">&#39;ResponseInfo&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">response_info_node</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">find_prefix</span> <span class="o">=</span> <span class="n">XMLWrapper</span><span class="o">.</span><span class="n">getNodePrefix</span><span class="p">(</span><span class="n">response_info_node</span><span class="p">,</span> <span class="s1">&#39;xsi&#39;</span><span class="p">)</span>
+            <span class="n">type_attr</span> <span class="o">=</span> <span class="n">XMLWrapper</span><span class="o">.</span><span class="n">getNodeAttr</span><span class="p">(</span><span class="n">response_info_node</span><span class="p">,</span> <span class="n">find_prefix</span> <span class="o">+</span> <span class="s1">&#39;type&#39;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">type_attr</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">response_class</span> <span class="o">=</span> <span class="n">CommonApiResult</span><span class="o">.</span><span class="n">importAPIClass</span><span class="p">(</span><span class="n">type_attr</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">response_class</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">response_info</span> <span class="o">=</span> <span class="n">response_class</span><span class="p">(</span><span class="n">response_info_node</span><span class="p">,</span> <span class="n">find_prefix</span><span class="p">)</span>
+
+        <span class="n">success</span> <span class="o">=</span> <span class="n">XMLWrapper</span><span class="o">.</span><span class="n">getNodeAttr</span><span class="p">(</span><span class="n">xml_object</span><span class="p">,</span> <span class="s1">&#39;Success&#39;</span><span class="p">)</span>
+        <span class="n">success</span> <span class="o">=</span> <span class="n">success</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">success</span> <span class="o">=</span> <span class="n">success</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;true&#39;</span><span class="p">,</span> <span class="s1">&#39;yes&#39;</span><span class="p">,</span> <span class="s1">&#39;on&#39;</span><span class="p">]</span>
+
+<div class="viewcode-block" id="CommonApiResult.importAPIClass"><a class="viewcode-back" href="../../../cloudshell.api.html#cloudshell.api.common_cloudshell_api.CommonApiResult.importAPIClass">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">importAPIClass</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+        <span class="n">module</span> <span class="o">=</span> <span class="n">importlib</span><span class="o">.</span><span class="n">import_module</span><span class="p">(</span><span class="s1">&#39;cloudshell.api.cloudshell_api&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">module</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+            <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">module</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="kc">None</span></div></div>
+
+
+<div class="viewcode-block" id="CloudShellAPIError"><a class="viewcode-back" href="../../../cloudshell.api.html#cloudshell.api.common_cloudshell_api.CloudShellAPIError">[docs]</a><span class="k">class</span> <span class="nc">CloudShellAPIError</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="n">rawxml</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">code</span> <span class="o">=</span> <span class="n">code</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">message</span> <span class="o">=</span> <span class="n">message</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rawxml</span> <span class="o">=</span> <span class="n">rawxml</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;CloudShell API error &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">code</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;: &#39;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">message</span>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;CloudShell API error &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">code</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;: &#39;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">message</span></div>
+
+
+<div class="viewcode-block" id="CommonAPISession"><a class="viewcode-back" href="../../../cloudshell.api.html#cloudshell.api.common_cloudshell_api.CommonAPISession">[docs]</a><span class="k">class</span> <span class="nc">CommonAPISession</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">host</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="n">domain</span><span class="p">,</span> <span class="n">connection_pool_size</span><span class="o">=</span><span class="mi">25</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">host</span> <span class="o">=</span> <span class="n">host</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">username</span> <span class="o">=</span> <span class="n">username</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">password</span> <span class="o">=</span> <span class="n">password</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">domain</span> <span class="o">=</span> <span class="n">domain</span>
+
+        <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2</span> <span class="ow">and</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">13</span><span class="p">:</span>
+            <span class="n">ssl_protocol</span> <span class="o">=</span> <span class="n">ssl</span><span class="o">.</span><span class="n">PROTOCOL_SSLv23</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">ssl_protocol</span> <span class="o">=</span> <span class="n">ssl</span><span class="o">.</span><span class="n">PROTOCOL_TLS</span>
+        <span class="n">ctx</span> <span class="o">=</span> <span class="n">urllib_util</span><span class="o">.</span><span class="n">SSLContext</span><span class="p">(</span><span class="n">ssl_protocol</span><span class="p">)</span>
+        <span class="n">ctx</span><span class="o">.</span><span class="n">check_hostname</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="n">ctx</span><span class="o">.</span><span class="n">verify_mode</span> <span class="o">=</span> <span class="n">ssl</span><span class="o">.</span><span class="n">CERT_NONE</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_http</span> <span class="o">=</span> <span class="n">urllib3</span><span class="o">.</span><span class="n">PoolManager</span><span class="p">(</span><span class="n">num_pools</span><span class="o">=</span><span class="n">connection_pool_size</span><span class="p">,</span>  <span class="n">ssl_context</span><span class="o">=</span><span class="n">ctx</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_parseXML</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xml_str</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">etree</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="n">xml_str</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_replaceSendValue</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Normalize xml string, escape special xml characters</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">data</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="sa">u</span><span class="s1">&#39;&#39;</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">data_str</span> <span class="o">=</span> <span class="n">unicode</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="n">data_str</span> <span class="o">=</span> <span class="n">unicode</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">))</span>
+
+        <span class="n">data_str</span> <span class="o">=</span> <span class="sa">u</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">escape</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">data_str</span><span class="p">])</span>
+
+        <span class="k">if</span> <span class="n">data_str</span> <span class="o">==</span> <span class="s1">&#39;True&#39;</span> <span class="ow">or</span> <span class="n">data_str</span> <span class="o">==</span> <span class="s1">&#39;False&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">data_str</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">data_str</span>
+
+    <span class="k">def</span> <span class="nf">_to_unicode_string</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">data</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="sa">u</span><span class="s1">&#39;&#39;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">unicode</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">unicode</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">_sendRequest</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">operation</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="n">request_headers</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot; Sending http POST request through URLLIB package</span>
+
+<span class="sd">        :param operation: operation name</span>
+<span class="sd">        :param message: request body</span>
+<span class="sd">        :param request_headers: header of the request</span>
+
+<span class="sd">        :return: responce string data</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">operation_url</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">url</span> <span class="o">+</span> <span class="n">operation</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_http</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">&quot;POST&quot;</span><span class="p">,</span> <span class="n">operation_url</span><span class="p">,</span> <span class="n">body</span><span class="o">=</span><span class="n">message</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">),</span> <span class="n">headers</span><span class="o">=</span><span class="n">request_headers</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">response</span><span class="o">.</span><span class="n">data</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">reason</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">data</span>
+
+
+    <span class="k">def</span> <span class="nf">_new_serializeRequestData</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">root_node</span><span class="p">,</span> <span class="n">object_data</span><span class="p">,</span> <span class="n">prev_type</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Generate xml from received request data using etree.xml</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">object_data</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+            <span class="k">if</span> <span class="s1">&#39;__name__&#39;</span> <span class="ow">in</span> <span class="n">object_data</span><span class="p">:</span>
+                <span class="n">working_node</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">SubElement</span><span class="p">(</span><span class="n">root_node</span><span class="p">,</span> <span class="n">object_data</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;__name__&#39;</span><span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">working_node</span> <span class="o">=</span> <span class="n">root_node</span>
+
+            <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">object_data</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="k">if</span> <span class="n">value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="k">continue</span>
+
+                <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">basestring</span><span class="p">):</span>
+                    <span class="n">new_node</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">SubElement</span><span class="p">(</span><span class="n">working_node</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
+                    <span class="n">new_node</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="n">value</span>
+                <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">bool</span><span class="p">):</span>
+                    <span class="n">new_node</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">SubElement</span><span class="p">(</span><span class="n">working_node</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
+                    <span class="n">new_node</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">child_node</span> <span class="o">=</span> <span class="n">working_node</span>
+                    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+                        <span class="n">child_node</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">SubElement</span><span class="p">(</span><span class="n">working_node</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
+                    <span class="n">serialized_node</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_new_serializeRequestData</span><span class="p">(</span><span class="n">child_node</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">root_node</span>
+
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">object_data</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">object_data</span><span class="p">:</span>
+                <span class="n">serialized_node</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_new_serializeRequestData</span><span class="p">(</span><span class="n">root_node</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="nb">list</span><span class="p">())</span>
+
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">object_data</span><span class="p">,</span> <span class="n">basestring</span><span class="p">)</span> <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">object_data</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span> <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">object_data</span><span class="p">,</span> <span class="nb">float</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">prev_type</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">prev_type</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+                <span class="n">child_node</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">SubElement</span><span class="p">(</span><span class="n">root_node</span><span class="p">,</span> <span class="s1">&#39;string&#39;</span><span class="p">)</span>
+                <span class="n">child_node</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="n">object_data</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">object_data</span><span class="p">,</span> <span class="nb">bool</span><span class="p">):</span>
+                <span class="n">root_node</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">object_data</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">root_node</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_to_unicode_string</span><span class="p">(</span><span class="n">object_data</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">root_node</span>
+
+<div class="viewcode-block" id="CommonAPISession.generateAPIRequest"><a class="viewcode-back" href="../../../cloudshell.api.html#cloudshell.api.common_cloudshell_api.CommonAPISession.generateAPIRequest">[docs]</a>    <span class="k">def</span> <span class="nf">generateAPIRequest</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">kwargs</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Generic method for generation and sending XML requests</span>
+
+<span class="sd">        :param return_type: type of returning data</span>
+<span class="sd">        :param kwargs: map of the parameters that need to be send to the server</span>
+
+<span class="sd">        :return: string data or API object</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="s1">&#39;method_name&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">CloudShellAPIError</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span> <span class="s1">&#39;Key &quot;method_name&quot; not in input data!&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+        <span class="n">method_name</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;method_name&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+
+        <span class="n">message</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_serialize_request</span><span class="p">(</span><span class="n">kwargs</span><span class="p">,</span> <span class="n">method_name</span><span class="p">)</span>
+
+        <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_handle_api_response</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_sendRequest</span><span class="p">(</span><span class="n">method_name</span><span class="p">,</span> <span class="n">message</span><span class="p">))</span>
+
+        <span class="k">return</span> <span class="n">result</span></div>
+
+    <span class="k">def</span> <span class="nf">_handle_api_response</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response_str</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        :param str response_str:</span>
+<span class="sd">        :return: either string or deserialized instance representing the api response</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">response_str</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_remove_xml_namespace</span><span class="p">(</span><span class="n">response_str</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">api_response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_deserialize_response</span><span class="p">(</span><span class="n">response_str</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;Invalid Request: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">response_str</span><span class="p">))</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">api_response</span><span class="o">.</span><span class="n">success</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">CloudShellAPIError</span><span class="p">(</span><span class="n">api_response</span><span class="o">.</span><span class="n">error_code</span><span class="p">,</span> <span class="n">api_response</span><span class="o">.</span><span class="n">error</span><span class="p">,</span> <span class="n">response_str</span><span class="p">)</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">response_str</span>
+        <span class="k">if</span> <span class="n">api_response</span><span class="o">.</span><span class="n">response_info</span><span class="p">:</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">api_response</span><span class="o">.</span><span class="n">response_info</span>
+        <span class="k">return</span> <span class="n">result</span>
+
+    <span class="k">def</span> <span class="nf">_serialize_request</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">kwargs</span><span class="p">,</span> <span class="n">method_name</span><span class="p">):</span>
+        <span class="n">request_node</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="n">method_name</span><span class="p">)</span>
+        <span class="c1"># request_str = &#39;&lt;&#39; + method_name + &#39;&gt;\n&#39;</span>
+        <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="p">:</span>
+            <span class="n">child_node</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">SubElement</span><span class="p">(</span><span class="n">request_node</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_new_serializeRequestData</span><span class="p">(</span><span class="n">child_node</span><span class="p">,</span> <span class="n">kwargs</span><span class="p">[</span><span class="n">name</span><span class="p">])</span>
+        <span class="k">return</span> <span class="n">etree</span><span class="o">.</span><span class="n">tostring</span><span class="p">(</span><span class="n">request_node</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_deserialize_response</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response_str</span><span class="p">):</span>
+        <span class="n">response_xml</span> <span class="o">=</span> <span class="n">XMLWrapper</span><span class="o">.</span><span class="n">parseXML</span><span class="p">(</span><span class="n">response_str</span><span class="p">)</span>
+        <span class="n">api_result</span> <span class="o">=</span> <span class="n">CommonApiResult</span><span class="p">(</span><span class="n">response_xml</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">api_result</span>
+
+    <span class="k">def</span> <span class="nf">_remove_xml_namespace</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response_str</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">response_str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;xmlns=&quot;http://schemas.qualisystems.com/ResourceManagement/ApiCommandResult.xsd&quot;&#39;</span><span class="p">,</span>
+                                    <span class="sa">b</span><span class="s1">&#39;&#39;</span><span class="p">)</span> \
+            <span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;&amp;#x0;&#39;</span><span class="p">,</span> <span class="sa">b</span><span class="s1">&#39;&lt;NUL&gt;&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__prettify_xml</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">elem</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Return a pretty-printed XML string for the Element.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="kn">from</span> <span class="nn">xml.dom.minidom</span> <span class="kn">import</span> <span class="n">parseString</span>
+        <span class="n">rough_string</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">tostring</span><span class="p">(</span><span class="n">elem</span><span class="p">,</span> <span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+        <span class="n">reparsed</span> <span class="o">=</span> <span class="n">parseString</span><span class="p">(</span><span class="n">rough_string</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">reparsed</span><span class="o">.</span><span class="n">toprettyxml</span><span class="p">(</span><span class="n">indent</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">)</span></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2016, Quali.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

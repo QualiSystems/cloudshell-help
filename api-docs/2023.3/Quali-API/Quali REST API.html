@@ -1,0 +1,1393 @@
+<html><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><link href="../../../Resources/Stylesheets/QualiStyle.css" rel="stylesheet" /><link href="../../../Resources/Stylesheets/API-REF-Guides.css" rel="stylesheet" /><style type="text/css">
+        body
+        {
+        font-family: 'Segoe UI';
+        font-size: .813em;
+        color: rgb(0,60,105);
+        font-style: normal;
+        }
+
+        p
+        {
+        text-transform: none;
+        text-indent: 5px;
+        }
+
+        a.cmd_link:visited, a.cmd_link:link, a.cmd_link:hover, a.cmd_link:active
+        {
+        padding-left: 10px;
+        color: rgb(0,60,105);
+        font-family: Arial;
+        font-style: normal;
+        font-variant: normal;
+        text-transform: none;
+        font-weight: normal;
+        }
+
+        h1, h2, h3, h4, h5, h6
+        {
+        background-color: rgb(221,221,221);
+        color: rgb(0,60,105);
+        font-family: Arial;
+        font-style: normal;
+        font-variant: normal;
+        text-transform: none;
+        font-weight: normal;
+        }
+
+        h3
+        {
+        font-weight: Bold;
+        font-size: x-large;
+        }
+
+        .commandTitle
+        {
+        font-weight: normal;
+        font-size: medium;
+        padding-left: 25px;
+        }
+
+
+        a.iref
+        {
+        background-color: rgb(230,230,230);
+        color: rgb(60,60,60);
+        font-family: Arial;
+        font-style: normal;
+        font-variant: normal;
+        text-transform: none; /*font-size: 80%;*/
+        }
+
+        .tableOfContent
+        {
+        -moz-column-count: 1; /* Firefox */
+        -webkit-column-count: 1; /* Safari and Chrome */
+        column-count: 1;
+        }
+
+        .description
+        {
+        white-space: pre-line;
+        }
+
+        .moreDescription
+        {
+        white-space: pre-line;
+        }
+
+        .syntax
+        {
+        white-space: pre-line;
+        }
+
+        .mainBody
+        {
+        }
+
+        .out
+        {
+        font-weight: bold;
+        }
+
+        .header
+        {
+        color: #898989;
+        font-size: xx-large;
+        text-align: center;
+        }
+
+        .folderFirst
+        {
+        font-weight: bold;
+        padding-top: 10px;
+        }
+
+        .commandTOC
+        {
+        color: #003C69;
+        text-indent: 20px;
+        }
+
+        li
+        {
+			margin-left: 0;
+			margin-bottom: 0;
+			padding: 2px 3px 5px;
+			list-style-type: circle;
+        }
+
+        table
+        {
+        border-style: solid;
+        border-width: 1px;
+        border-color: #BBB;
+        border-collapse: collapse; /* 'cellspacing' equivalent */
+        width: 100%;
+        }
+
+        table th
+        {
+        background-color: #E5E5E5;
+        height: 21px;
+        font-family: 'Segoe UI';
+        font-size: .813em;
+        color: black;
+        font-style: normal;
+        font-weight: normal;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #BBB;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: .2pt;
+        font-weight: bold;
+        text-align: left;
+        border-style: solid;
+        border-color: rgb(153, 153, 153) silver silver;
+        border-width: 1pt 1pt 1pt;
+        padding: 0.7pt 1.45pt 0.7pt 2.9pt;
+        background: rgb(0, 60, 105) none repeat scroll 0%;
+        -moz-background-clip: initial;
+        -moz-background-origin: initial;
+        -moz-background-inline-policy: initial;
+        height: 18pt;
+        }
+
+        table td
+        {
+        border-style: solid;
+        border-width: 1px;
+        border-color: #BBB;
+        font-size: .813em;
+        padding-right: 4px;
+        padding-left: 4px;
+        padding-bottom: 4px;
+        padding-top: 4px;
+        text-align: left;
+        }
+
+        table td, table th
+        {
+        padding-left: 4px; /* 'cellpadding' equivalent */
+        padding-right: 4px;
+        padding-bottom: 4px;
+        padding-top: 4px;
+        text-align: left;
+        white-space: nowrap;
+        }
+
+        .mandatory
+        {
+        }
+
+        .command
+        {
+        padding-top: 15px;
+        padding-bottom: 25px;
+        }
+
+        .preStyle
+        {
+        /*font-family: 'Segoe UI';
+        font-size: .95em;
+        color: black;*/
+        }
+		
+		.syntaxPreStyle
+        {
+        /*font-family: 'Segoe UI';
+        font-size: .95em;
+        color: black;*/
+        }
+
+        .codeSnippetContainerCodeContainer
+        {
+        /*border-left: solid 1px #939393;
+        border-bottom: solid 1px #939393;
+        border-right: solid 1px #939393;
+        border-top: solid 1px #939393;
+        clear: both;
+        margin-bottom: 12px;
+        position: relative;
+        top: -1px;*/
+        }
+
+        .codeSnippetContainerCode
+        {
+        border-left: solid 1px #939393;
+        border-bottom: solid 1px #939393;
+        border-right: solid 1px #939393;
+        border-top: solid 1px #939393;
+        clear: both;
+        margin-bottom: 5px;
+        position: relative;
+        top: -1px;
+        overflow: auto;
+        margin: 1;
+        padding-right: 21px;
+        padding-left: 21px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        color:Black;
+
+        }
+		
+pre code {
+  display: block; padding: 0.5em;
+}
+
+pre .comment,
+pre .annotation,
+pre .template_comment,
+pre .diff .header,
+pre .chunk,
+pre .apache .cbracket {
+  color: rgb(0, 128, 0);
+}
+
+pre .keyword,
+pre .id,
+pre .built_in,
+pre .smalltalk .class,
+pre .winutils,
+pre .bash .variable,
+pre .tex .command,
+pre .request,
+pre .status,
+pre .nginx .title,
+pre .xml .tag,
+pre .xml .tag .value {
+  color: rgb(0, 0, 255);
+}
+
+pre .string,
+pre .title,
+pre .parent,
+pre .tag .value,
+pre .rules .value,
+pre .rules .value .number,
+pre .ruby .symbol,
+pre .ruby .symbol .string,
+pre .aggregate,
+pre .template_tag,
+pre .django .variable,
+pre .addition,
+pre .flow,
+pre .stream,
+pre .apache .tag,
+pre .date,
+pre .tex .formula {
+  color: rgb(163, 21, 21);
+}
+
+pre .ruby .string,
+pre .decorator,
+pre .filter .argument,
+pre .localvars,
+pre .array,
+pre .attr_selector,
+pre .pseudo,
+pre .pi,
+pre .doctype,
+pre .deletion,
+pre .envvar,
+pre .shebang,
+pre .preprocessor,
+pre .userType,
+pre .apache .sqbracket,
+pre .nginx .built_in,
+pre .tex .special,
+pre .prompt {
+  color: rgb(43, 145, 175);
+}
+
+pre .phpdoc,
+pre .javadoc,
+pre .xmlDocTag {
+  color: rgb(128, 128, 128);
+}
+
+pre .vhdl .typename { font-weight: bold; }
+pre .vhdl .string { color: #666666; }
+pre .vhdl .literal { color: rgb(163, 21, 21); }
+pre .vhdl .attribute { color: #00B0E8; }
+
+pre .xml .attribute { color: rgb(255, 0, 0); }
+		
+      </style><head><title>Quali REST API Guide</title><script><!--
+		var hljs=new function(){function l(o){return o.replace(/&/gm,"&amp;").replace(/</gm,"&lt;").replace(/>/gm,"&gt;")}function b(p){for(var o=p.firstChild;o;o=o.nextSibling){if(o.nodeName=="CODE"){return o}if(!(o.nodeType==3&&o.nodeValue.match(/\s+/))){break}}}function h(p,o){return Array.prototype.map.call(p.childNodes,function(q){if(q.nodeType==3){return o?q.nodeValue.replace(/\n/g,""):q.nodeValue}if(q.nodeName=="BR"){return"\n"}return h(q,o)}).join("")}function a(q){var p=(q.className+" "+q.parentNode.className).split(/\s+/);p=p.map(function(r){return r.replace(/^language-/,"")});for(var o=0;o<p.length;o++){if(e[p[o]]||p[o]=="no-highlight"){return p[o]}}}function c(q){var o=[];(function p(r,s){for(var t=r.firstChild;t;t=t.nextSibling){if(t.nodeType==3){s+=t.nodeValue.length}else{if(t.nodeName=="BR"){s+=1}else{if(t.nodeType==1){o.push({event:"start",offset:s,node:t});s=p(t,s);o.push({event:"stop",offset:s,node:t})}}}}return s})(q,0);return o}function j(x,v,w){var p=0;var y="";var r=[];function t(){if(x.length&&v.length){if(x[0].offset!=v[0].offset){return(x[0].offset<v[0].offset)?x:v}else{return v[0].event=="start"?x:v}}else{return x.length?x:v}}function s(A){function z(B){return" "+B.nodeName+'="'+l(B.value)+'"'}return"<"+A.nodeName+Array.prototype.map.call(A.attributes,z).join("")+">"}while(x.length||v.length){var u=t().splice(0,1)[0];y+=l(w.substr(p,u.offset-p));p=u.offset;if(u.event=="start"){y+=s(u.node);r.push(u.node)}else{if(u.event=="stop"){var o,q=r.length;do{q-=1;o=r[q];y+=("</"+o.nodeName.toLowerCase()+">")}while(o!=u.node);r.splice(q,1);while(q<r.length){y+=s(r[q]);q++}}}}return y+l(w.substr(p))}function f(q){function o(s,r){return RegExp(s,"m"+(q.cI?"i":"")+(r?"g":""))}function p(y,w){if(y.compiled){return}y.compiled=true;var s=[];if(y.k){var r={};function z(A,t){t.split(" ").forEach(function(B){var C=B.split("|");r[C[0]]=[A,C[1]?Number(C[1]):1];s.push(C[0])})}y.lR=o(y.l||hljs.IR,true);if(typeof y.k=="string"){z("keyword",y.k)}else{for(var x in y.k){if(!y.k.hasOwnProperty(x)){continue}z(x,y.k[x])}}y.k=r}if(w){if(y.bWK){y.b="\\b("+s.join("|")+")\\s"}y.bR=o(y.b?y.b:"\\B|\\b");if(!y.e&&!y.eW){y.e="\\B|\\b"}if(y.e){y.eR=o(y.e)}y.tE=y.e||"";if(y.eW&&w.tE){y.tE+=(y.e?"|":"")+w.tE}}if(y.i){y.iR=o(y.i)}if(y.r===undefined){y.r=1}if(!y.c){y.c=[]}for(var v=0;v<y.c.length;v++){if(y.c[v]=="self"){y.c[v]=y}p(y.c[v],y)}if(y.starts){p(y.starts,w)}var u=[];for(var v=0;v<y.c.length;v++){u.push(y.c[v].b)}if(y.tE){u.push(y.tE)}if(y.i){u.push(y.i)}y.t=u.length?o(u.join("|"),true):{exec:function(t){return null}}}p(q)}function d(D,E){function o(r,M){for(var L=0;L<M.c.length;L++){var K=M.c[L].bR.exec(r);if(K&&K.index==0){return M.c[L]}}}function s(K,r){if(K.e&&K.eR.test(r)){return K}if(K.eW){return s(K.parent,r)}}function t(r,K){return K.i&&K.iR.test(r)}function y(L,r){var K=F.cI?r[0].toLowerCase():r[0];return L.k.hasOwnProperty(K)&&L.k[K]}function G(){var K=l(w);if(!A.k){return K}var r="";var N=0;A.lR.lastIndex=0;var L=A.lR.exec(K);while(L){r+=K.substr(N,L.index-N);var M=y(A,L);if(M){v+=M[1];r+='<span class="'+M[0]+'">'+L[0]+"</span>"}else{r+=L[0]}N=A.lR.lastIndex;L=A.lR.exec(K)}return r+K.substr(N)}function z(){if(A.sL&&!e[A.sL]){return l(w)}var r=A.sL?d(A.sL,w):g(w);if(A.r>0){v+=r.keyword_count;B+=r.r}return'<span class="'+r.language+'">'+r.value+"</span>"}function J(){return A.sL!==undefined?z():G()}function I(L,r){var K=L.cN?'<span class="'+L.cN+'">':"";if(L.rB){x+=K;w=""}else{if(L.eB){x+=l(r)+K;w=""}else{x+=K;w=r}}A=Object.create(L,{parent:{value:A}});B+=L.r}function C(K,r){w+=K;if(r===undefined){x+=J();return 0}var L=o(r,A);if(L){x+=J();I(L,r);return L.rB?0:r.length}var M=s(A,r);if(M){if(!(M.rE||M.eE)){w+=r}x+=J();do{if(A.cN){x+="</span>"}A=A.parent}while(A!=M.parent);if(M.eE){x+=l(r)}w="";if(M.starts){I(M.starts,"")}return M.rE?0:r.length}if(t(r,A)){throw"Illegal"}w+=r;return r.length||1}var F=e[D];f(F);var A=F;var w="";var B=0;var v=0;var x="";try{var u,q,p=0;while(true){A.t.lastIndex=p;u=A.t.exec(E);if(!u){break}q=C(E.substr(p,u.index-p),u[0]);p=u.index+q}C(E.substr(p));return{r:B,keyword_count:v,value:x,language:D}}catch(H){if(H=="Illegal"){return{r:0,keyword_count:0,value:l(E)}}else{throw H}}}function g(s){var o={keyword_count:0,r:0,value:l(s)};var q=o;for(var p in e){if(!e.hasOwnProperty(p)){continue}var r=d(p,s);r.language=p;if(r.keyword_count+r.r>q.keyword_count+q.r){q=r}if(r.keyword_count+r.r>o.keyword_count+o.r){q=o;o=r}}if(q.language){o.second_best=q}return o}function i(q,p,o){if(p){q=q.replace(/^((<[^>]+>|\t)+)/gm,function(r,v,u,t){return v.replace(/\t/g,p)})}if(o){q=q.replace(/\n/g,"<br>")}return q}function m(r,u,p){var v=h(r,p);var t=a(r);if(t=="no-highlight"){return}var w=t?d(t,v):g(v);t=w.language;var o=c(r);if(o.length){var q=document.createElement("pre");q.innerHTML=w.value;w.value=j(o,c(q),v)}w.value=i(w.value,u,p);var s=r.className;if(!s.match("(\\s|^)(language-)?"+t+"(\\s|$)")){s=s?(s+" "+t):t}r.innerHTML=w.value;r.className=s;r.result={language:t,kw:w.keyword_count,re:w.r};if(w.second_best){r.second_best={language:w.second_best.language,kw:w.second_best.keyword_count,re:w.second_best.r}}}function n(){if(n.called){return}n.called=true;Array.prototype.map.call(document.getElementsByTagName("pre"),b).filter(Boolean).forEach(function(o){m(o,hljs.tabReplace)})}function k(){window.addEventListener("DOMContentLoaded",n,false);window.addEventListener("load",n,false)}var e={};this.LANGUAGES=e;this.highlight=d;this.highlightAuto=g;this.fixMarkup=i;this.highlightBlock=m;this.initHighlighting=n;this.initHighlightingOnLoad=k;this.IR="[a-zA-Z][a-zA-Z0-9_]*";this.UIR="[a-zA-Z_][a-zA-Z0-9_]*";this.NR="\\b\\d+(\\.\\d+)?";this.CNR="(\\b0[xX][a-fA-F0-9]+|(\\b\\d+(\\.\\d*)?|\\.\\d+)([eE][-+]?\\d+)?)";this.BNR="\\b(0b[01]+)";this.RSR="!|!=|!==|%|%=|&|&&|&=|\\*|\\*=|\\+|\\+=|,|\\.|-|-=|/|/=|:|;|<|<<|<<=|<=|=|==|===|>|>=|>>|>>=|>>>|>>>=|\\?|\\[|\\{|\\(|\\^|\\^=|\\||\\|=|\\|\\||~";this.BE={b:"\\\\[\\s\\S]",r:0};this.ASM={cN:"string",b:"'",e:"'",i:"\\n",c:[this.BE],r:0};this.QSM={cN:"string",b:'"',e:'"',i:"\\n",c:[this.BE],r:0};this.CLCM={cN:"comment",b:"//",e:"$"};this.CBLCLM={cN:"comment",b:"/\\*",e:"\\*/"};this.HCM={cN:"comment",b:"#",e:"$"};this.NM={cN:"number",b:this.NR,r:0};this.CNM={cN:"number",b:this.CNR,r:0};this.BNM={cN:"number",b:this.BNR,r:0};this.inherit=function(q,r){var o={};for(var p in q){o[p]=q[p]}if(r){for(var p in r){o[p]=r[p]}}return o}}();hljs.LANGUAGES.xml=function(a){var c="[A-Za-z0-9\\._:-]+";var b={eW:true,c:[{cN:"attribute",b:c,r:0},{b:'="',rB:true,e:'"',c:[{cN:"value",b:'"',eW:true}]},{b:"='",rB:true,e:"'",c:[{cN:"value",b:"'",eW:true}]},{b:"=",c:[{cN:"value",b:"[^\\s/>]+"}]}]};return{cI:true,c:[{cN:"pi",b:"<\\?",e:"\\?>",r:10},{cN:"doctype",b:"<!DOCTYPE",e:">",r:10,c:[{b:"\\[",e:"\\]"}]},{cN:"comment",b:"<!-",e:"->",r:10},{cN:"cdata",b:"<\\!\\[CDATA\\[",e:"\\]\\]>",r:10},{cN:"tag",b:"<style(?=\\s|>|$)",e:">",k:{title:"style"},c:[b],starts:{e:"</style>",rE:true,sL:"css"}},{cN:"tag",b:"<script(?=\\s|>|$)",e:">",k:{title:"script"},c:[b],starts:{e:"<\/script>",rE:true,sL:"javascript"}},{b:"<\%",e:"\%>",sL:"vbscript"},{cN:"tag",b:"</?",e:"/?>",c:[{cN:"title",b:"[^ />]+"},b]}]}}(hljs);
+//--></script><script>
+		  hljs.tabReplace = '    ';
+		  hljs.initHighlightingOnLoad();
+		  </script></head><body><a name="TOC" /><div class="header">
+          2023.3.0 Quali API REST Reference Guide
+        </div><HR /><div class="tableOfContent"><ul><div class="folderFirst"><li>Authentication</li></div><div class="commandTOC"><a href="&#xA;          #Login">Login</a></div><div class="folderFirst"><li>Automation Suites</li></div><div class="commandTOC"><a href="&#xA;          #Get Available Suite Templates">Get Available Suite Templates</a></div><div class="commandTOC"><a href="&#xA;          #Get Suite Template Details">Get Suite Template Details</a></div><div class="commandTOC"><a href="&#xA;          #Enqueue Custom Suite">Enqueue Custom Suite</a></div><div class="commandTOC"><a href="&#xA;          #Get Suite Details">Get Suite Details</a></div><div class="commandTOC"><a href="&#xA;          #Stop Suite Execution">Stop Suite Execution</a></div><div class="commandTOC"><a href="&#xA;          #Get Suite Status">Get Suite Status</a></div><div class="commandTOC"><a href="&#xA;          #Get Test Folder Child Elements">Get Test Folder Child Elements</a></div><div class="commandTOC"><a href="&#xA;          #Get Test Information">Get Test Information</a></div><div class="folderFirst"><li>Configuration</li></div><div class="commandTOC"><a href="&#xA;          #Import Package">Import Package</a></div><div class="commandTOC"><a href="&#xA;          #Export Package">Export Package</a></div><div class="folderFirst"><li>Manage</li></div><div class="commandTOC"><a href="&#xA;          #Get Execution Servers">Get Execution Servers</a></div><div class="commandTOC"><a href="&#xA;          #Get Execution Server Details">Get Execution Server Details</a></div><div class="commandTOC"><a href="&#xA;          #Get Licenses Usage Info">Get Licenses Usage Info</a></div><div class="commandTOC"><a href="&#xA;          #Include/Exclude Execution Server">Include/Exclude Execution Server</a></div><div class="folderFirst"><li>Jobs</li></div><div class="commandTOC"><a href="&#xA;          #Enqueue Custom Job">Enqueue Custom Job</a></div><div class="commandTOC"><a href="&#xA;          #Get Job Details">Get Job Details</a></div><div class="commandTOC"><a href="&#xA;          #Get Queued Jobs">Get Queued Jobs</a></div><div class="commandTOC"><a href="&#xA;          #Get Running Jobs">Get Running Jobs</a></div><div class="commandTOC"><a href="&#xA;          #Stop Job Execution">Stop Job Execution</a></div><div class="folderFirst"><li>Reservation operations</li></div><div class="commandTOC"><a href="&#xA;          #Get Reservation Attachment">Get Reservation Attachment</a></div><div class="commandTOC"><a href="&#xA;          #Get Reservation Attachments Details">Get Reservation Attachments Details</a></div><div class="commandTOC"><a href="&#xA;          #Delete File From Reservation">Delete File From Reservation</a></div><div class="commandTOC"><a href="&#xA;          #Attach File To Reservation">Attach File To Reservation</a></div><div class="folderFirst"><li>Shells</li></div><div class="commandTOC"><a href="&#xA;          #Add Shell">Add Shell</a></div><div class="commandTOC"><a href="&#xA;          #Update Shell">Update Shell</a></div><div class="commandTOC"><a href="&#xA;          #Delete Shell">Delete Shell</a></div></ul></div><HR /><div class="mainBody"><div class="command"><a name="Login" /><h3>Login</h3><div class="description">Starts a new session in Quali Server using the requested user credentials.</div><div class="moreDescription">      
+      Use the server address and port in the following way: http://serverAddress:tcpPort/API.
+      The autorization token that is returned should be sent in each consecutive API call as part of the header. (See the examples for further information).
+    </div><p><b>
+			  Syntax
+			</b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">PUT http://serverAddress:tcpPort/API/Auth/Login </pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>
+            string
+          </td><td><b>serverMachine</b></td><td><div class="description">IP address or host name of the Quali Server machine, i.e.: 192.100.1.2 or QsServer.</div></td></tr><tr><td>
+            string
+          </td><td><b>serverPort</b></td><td><div class="description">The TCP port that the Portal is configured to work on.</div></td></tr><tr><td>
+            string
+          </td><td><b>username</b></td><td><div class="description">Username to login with.</div></td></tr><tr><td>
+            string
+          </td><td><b>password</b></td><td><div class="description">Specify the user's login password.</div></td></tr><tr><td>
+            string
+          </td><td><b>domain</b></td><td><div class="description">Specify the name of the domain.</div></td></tr><tr><td>
+            string
+          </td><td><b>token</b></td><td><div class="description">Specify the admin authorization token. if passing a token Username and Password should be omitted.</div></td></tr><tr><td><span class="out">out </span>
+            string
+          </td><td><b>authorizationToken</b></td><td><div class="description" /></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Request: 	PUT http://localhost:9000/Api/Auth/Login
+        body:
+        {
+        "Username":"admin",
+        "Password":"admin",
+        "Domain":"Global"
+        }
+
+        OR:
+
+        Request: 	PUT http://localhost:9000/Api/Auth/Login
+        body:
+        {
+        "Token":"dG9rZW32kjrbh2o9nf9rZW4=",
+        "Domain":"Global"
+        }
+      </code></pre></div></div></div><p><b>Output</b><br /><li><b>Authorization Token</b></li><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        For Example: "dW9rZg4gdG9rZW4TKKG9rZW4="
+      </code></pre></div></div></div></p></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Get Available Suite Templates" /><h3>Get Available Suite Templates</h3><div class="description">Retrieves the list of all available automation suites.</div><p><b>
+			  Syntax
+			</b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">GET http://serverAddress:tcpPort/API/Scheduling/SuiteTemplates</pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td><span class="out">out </span>
+            list
+          </td><td><b>templates</b></td><td><div class="description">Provides an array of available automation suites.
+          Each suite is composed of: Name, Description, Owner, Create Date, Modification Date.
+          The name attribute indicates the name of the suite template.
+          The description attribute indicates the description of the suite.
+          The owner attribute indicates the name of the user who created the suite.
+          The create date attribute indicates the create date and time of the suite.
+          The modification date attributes indicate the last modification date and time.          
+        </div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Request: 	GET http://localhost:9000/API/Scheduling/SuiteTemplates
+        Header: 	Authorization: Basic dG9rZW4gdG9rZW4gdG9rZW4=
+      </code></pre></div></div></div><p><b>Output</b><br /><li><b>List of suite templates</b></li><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Output:		HTTP STATUS: 200 OK
+        [
+          {
+          "Name": "testcase 10",
+          "Description": "testcase 10",
+          "Owner": "admin",
+          "CreateDate": "2014-06-12T11:01:08",
+          "ModificationDate": "2014-06-12T11:01:08"
+          },
+          {
+          "Name": "test case 9",
+          "Description": "test case 9",
+          "Owner": "admin",
+          "CreateDate": "2014-06-12T08:43:54",
+          "ModificationDate": "2014-06-12T08:43:53"
+          }
+        ]
+      </code></pre></div></div></div></p></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Get Suite Template Details" /><h3>Get Suite Template Details</h3><div class="description">Retrieves properties of the specified automation suite template.</div><p><b>
+			  Syntax
+			</b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">GET http://serverAddress:tcpPort/API/Scheduling/SuiteTemplates/suiteTemplateName</pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>
+            string
+          </td><td><b>Suite Template Name</b></td><td><div class="description">the name of the suite template that is used as a container for the suite</div></td></tr><tr><td><span class="out">out </span>
+            string
+          </td><td><b>Description</b></td><td><div class="description">Displays the automation suite description.</div></td></tr><tr><td><span class="out">out </span>
+            string
+          </td><td><b>Type </b></td><td><div class="description">Indicates the automation suite type.</div></td></tr><tr><td><span class="out">out </span>
+            string
+          </td><td><b>Owner  </b></td><td><div class="description">Indicates the name of the user who created the automation suite.</div></td></tr><tr><td><span class="out">out </span>DateTime</td><td><b>Create Date</b></td><td><div class="description">Indicates the create date and time of the automation suite.</div></td></tr><tr><td><span class="out">out </span>DateTime</td><td><b>Modification Date</b></td><td><div class="description">Indicates the last update date and time of the automation suite.</div></td></tr><tr><td><span class="out">out </span>
+            string
+          </td><td><b>Email Notifications</b></td><td><div class="description">Indicates notification trigger settings:  None, Errors, Suite and Errors, or All.</div></td></tr><tr><td><span class="out">out </span>
+            number
+          </td><td><b>Remove Jobs From Queue After</b></td><td><div class="description">
+          Indicates the number of minutes for the suite's execution queue timeout. Suites are automatically removed from the queue upon timing out.
+          -1 Indicates that queue timeout is disabled.
+        </div></td></tr><tr><td><span class="out">out </span>bool</td><td><b>End Reservation On End</b></td><td><div class="description">Indicates if the suite's reservation was set to end automatically upon execution completion.</div></td></tr><tr><td><span class="out">out </span>
+            list
+          </td><td><b>Jobs Details</b></td><td><div class="description">Output is an object with the following properties: Name, Description, Execution Servers, Logging Profile, Estimated Duration, Stop On Fail, Stop On Error, Duration Time Buffer and Type.
+          The suite Name column indicates the name of the parent automation suite.
+          The Name column indicates the name of each job.
+          The Description column indicates the description of each job.
+          The Execution Servers indicates a list of one or more execution servers for running the job. Leave empty to run the job on any available execution server.
+          The Logging Profile column indicates the selected logging profile for this job. (None, All, Results, Measurements and Results)
+          The Estimated Duration column Indicates the number of minutes entered as the job's estimated duration. -1 indicates that the duration will be calculated automatically according to the test durations.
+          The Stop On Fail column indicates whether the job was set to stop execution if any of its tests failed.
+          The Stop On Error column indicates whether the job was set to stop execution if any of its tests ended with an error.
+          Duration Time Buffer indicates the number of minutes to be added to the duration estimation.
+          Type Indicates the automation suite type. (Default value: TestShell)
+
+          In addition the object contains internal objects:
+
+          Tests - Information about the tests that were selected for this job, with the following parameters:
+          Test path should contain the full details about the location of the test, for example: TestShell\Tests\Shared\Validation\TestCase1.
+          Test Duration indicates the estimated number of minutes for the execution of the test, This value will be used to calculate the job duration.
+          Parameters indicate Information about the input parameters for each of the tests.
+
+          Topology - indicates the information of the attached topology, with the following parameters:
+          Topology Name indicates the topology name to attach to the job.
+          Global Inputs - Information about the input parameters and parameter values for the attached topology (Optional): Name and value.
+          Requirement Input - Information about the requirements for specific resources that must be included in the topology (Optional): resourcePath, name, value and path.
+          Additional Input - Information about additional input parameters and values for the attached topology (Optional): resourcePath, name and value.
+        </div></td></tr><tr><td><span class="out">out </span>
+            string
+          </td><td><b>Existing Reservation ID</b></td><td><div class="description">Specify existing reservation ID to use for the created suite.
+          This will only be possible for suites with one job and no topologies.
+          Note that the system doesn’t validate the number of jobs attached to the same reservation id. Validation if needed should be applied by the clients of the API.
+        </div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Request: 	GET http://localhost:9000/API/Scheduling/SuiteTemplates/testcase 10
+        Header: 	Authorization: Basic dG9rZW4gdG9rZW4gdG9rZW4=
+      </code></pre></div></div></div><p><b>Output</b><br /><li><b>Suite Template</b></li><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Output:		HTTP STATUS: 200 OK
+        {
+          "SuiteTemplateName": "testcase 10",
+          "SuiteName": null,
+          "Description": "testcase 10",
+          "Type": "TestShell",
+          "Owner": "admin",
+          "CreateDate": "2014-06-12T11:01:08",
+          "ModificationDate": "2014-06-12T11:01:08",
+          "EmailNotifications": "ErrorsOnly",
+          "RemoveJobsFromQueueAfter": -1,
+          "EndReservationOnEnd": true,
+          "JobsDetails": [
+          {
+            "Name": "test case 10 job 1",
+            "Description": "gdfgdfg",
+            "ExecutionServers": [],
+            "LoggingProfile": "None",
+            "EstimatedDuration": 2,
+            "StopOnFail": false,
+            "StopOnError": false,
+            "Tests": [
+              {
+                "TestPath": "TestShell\\Tests\\Shared\\Delay5m",
+                "State": null,
+                "StartTime": null,
+                "EndTime": null,
+                "Result": null,
+                "ReportId": null,
+                "Parameters": [],
+                "EstimatedDuration": null
+              }
+             ],
+            "Topology": null,
+            "DurationTimeBuffer": 0,
+            "EmailNotifications": null,
+            "Type": "TestShell"
+            }
+          ],
+          "ExistingReservationId": null
+        }
+      </code></pre></div></div></div></p></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Enqueue Custom Suite" /><h3>Enqueue Custom Suite<span class="commandTitle">Enqueue Custom Suite</span></h3><div class="description">Create a new custom automation suite and add it to queue</div><p><b>
+			  Syntax
+			</b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">POST http://serverAddress:tcpPort/API/Scheduling/Suites </pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>
+            string
+          </td><td><b>Suite Template Name</b></td><td><div class="description">Specify the name of the suite template to use as a container for the suite. Empty value indicates an adHoc suite.</div></td></tr><tr><td>
+            string
+          </td><td><b>Suite Name</b></td><td><div class="description">Specify the name of the suite template to use as a container for the suite. Empty value indicates an adHoc suite.</div></td></tr><tr><td>
+            string
+          </td><td><b>Description</b></td><td><div class="description">Specify the automation suite description.</div></td></tr><tr><td>
+            string
+          </td><td><b>Type </b></td><td><div class="description">Specify the automation suite type. Default value: TestShell</div></td></tr><tr><td>
+            string
+          </td><td><b>Email Notifications</b></td><td><div class="description">Specify notification trigger settings:  None, Errors Only, Suite and Errors, or All.</div></td></tr><tr><td>
+            number
+          </td><td><b>Remove Jobs From Queue After</b></td><td><div class="description">Indicates the number of minutes for the suite's execution queue timeout. Suites are automatically removed from the queue upon timing out. -1 Indicates that queue timeout is disabled.</div></td></tr><tr><td>bool</td><td><b>End Reservation On End</b></td><td><div class="description">Specify if the suite's reservation should end automatically upon execution completion.</div></td></tr><tr><td>
+            list
+          </td><td><b>Jobs Details</b></td><td><div class="description">
+          Input is an object with the following properties: Name, Description, Execution Servers, Logging Profile, Estimated Duration, Stop On Fail, Stop On Error, Duration Time Buffer and Type.
+          The suite Name column indicates the name of the parent automation suite.
+          The Name column indicates the name of each job.
+          The Description column indicates the description of each job.
+          The Execution Servers indicates a list of one or more execution servers for running the job. Leave empty to run the job on any available execution server.
+          The Logging Profile column indicates the selected logging profile for this job. (None, All, Results, Measurements and Results)
+          The Estimated Duration column Indicates the number of minutes entered as the job's estimated duration. -1 indicates that the duration will be calculated automatically according to the test durations.
+          The Stop On Fail column indicates whether the job was set to stop execution if any of its tests failed.
+          The Stop On Error column indicates whether the job was set to stop execution if any of its tests ended with an error.
+          Duration Time Buffer indicates the number of minutes to be added to the duration estimation.
+          Type Indicates the automation suite type. (Default value: TestShell)
+
+          In addition the object contains internal objects:
+
+          Tests - Information about the tests that were selected for this job, with the following parameters:
+          Test path should contain the full details about the location of the test, for example: TestShell\Tests\Shared\Validation\TestCase1.
+          Test Duration indicates the estimated number of minutes for the execution of the test, This value will be used to calculate the job duration.
+          Parameters indicate Information about the input parameters for each of the tests.
+
+          Topology - indicates the information of the attached topology, with the following parameters:
+          Name - indicates the topology name to attach to the job.
+          Global Inputs - Information about the input parameters and parameter values for the attached topology (Can be empty, but must exist): Name and value.
+          Requirement Input - Information about the requirements for specific resources that must be included in the topology (Can be empty, but must exist): resourcePath, name, value and path.
+          Additional Input - Information about additional input parameters and values for the attached topology (Can be empty, but must exist): resourcePath, name and value.
+        </div></td></tr><tr><td>
+            string
+          </td><td><b>Existing Reservation ID</b></td><td><div class="description">Specify existing reservation ID to use for the created suite.
+          This will only be possible for suites with one job and no topologies.
+          Note that the system doesn’t validate the number of jobs attached to the same reservation id. Validation if needed should be applied by the clients of the API.
+        </div></td></tr><tr><td><span class="out">out </span>
+            string
+          </td><td><b>Suite Id</b></td><td><div class="description">The ID of the automation suite that was created.</div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Request: 	POST http://localhost:9000/API/Scheduling/Suites
+        Header: 	Authorization: Basic dG9rZW4gdG9rZW4gdG9rZW4=
+        Input:
+        {
+          "SuiteTemplateName": "testcase 10",
+          "SuiteName": "testcase 10 ",
+          "Description": "testcase 10",
+          "Type": "TestShell",
+          "Owner": "admin",
+          "EmailNotifications": "ErrorsOnly",
+          "RemoveJobsFromQueueAfter": -1,
+          "EndReservationOnEnd": true,
+          "JobsDetails": [
+          {
+            "Name": "test case 10 job 1",
+            "Description": "gdfgdfg",
+            "ExecutionServers": [],
+            "LoggingProfile": "None",
+            "EstimatedDuration": 2,
+            "StopOnFail": false,
+            "StopOnError": false,
+            "Tests": [
+            {
+              "TestPath": "TestShell\\Tests\\Shared\\TestWithInputs",
+              "State": null,
+              "StartTime": null,
+              "EndTime": null,
+              "Result": null,
+              "ReportId": null,
+              "Parameters": [{"ParameterName":"InStr",     "ParameterValue":"a"},
+                            {"ParameterName":"InNum",     "ParameterValue":"1"},
+                            {"ParameterName":"InStrVect", "ParameterValue":"['b', 'c', 'd']"},
+                            {"ParameterName":"InNumVect", "ParameterValue":"[2, 3, 4]"},
+                            {"ParameterName":"InStrMat",  "ParameterValue":"['e', 'f', 'g';'h', 'i', 'j';]"},
+                            {"ParameterName":"InNumMat",  "ParameterValue":"[5, 6, 7;8, 9, 10;]"}],
+              "EstimatedDuration": null
+            }
+          ],
+          "Topology": {
+            "Name":"my topology",
+            "GlobalInputs":[],
+            "RequirementsInput":[],
+            "AdditionalInput":[]
+          },
+          "DurationTimeBuffer": 0,
+          "EmailNotifications": null,
+          "Type": "TestShell"
+          }
+        ],
+        "ExistingReservationId": null
+        }
+      </code></pre></div></div></div><p><b>Output</b><br /><li><b>Suite Id</b></li><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Output: 	HTTP STATUS: 200 OK	"d071cd61-f958-4002-8149-a433c6fc458a"
+      </code></pre></div></div></div></p></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Get Suite Details" /><h3>Get Suite Details</h3><div class="description">Retrieves the full details of a specific automation suite instance</div><p><b>
+			  Syntax
+			</b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">GET http://localhost:9000/API/Scheduling/Suites/suiteId </pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>
+            string
+          </td><td><b>Suite Id</b></td><td><div class="description">Specify the ID of the automation suite.</div></td></tr><tr><td><span class="out">out </span>
+            string
+          </td><td><b>Suite Template Name</b></td><td><div class="description">the name of the suite template that is used as a container for the suite</div></td></tr><tr><td><span class="out">out </span>
+            string
+          </td><td><b>Suite Name</b></td><td><div class="description">Indicates the name of the automation suite.</div></td></tr><tr><td><span class="out">out </span>
+            string
+          </td><td><b>Description</b></td><td><div class="description">Displays the automation suite description.</div></td></tr><tr><td><span class="out">out </span>
+            string
+          </td><td><b>Type </b></td><td><div class="description">Indicates the automation suite type.</div></td></tr><tr><td><span class="out">out </span>
+            string
+          </td><td><b>Owner  </b></td><td><div class="description">Indicates the name of the user who created the automation suite.</div></td></tr><tr><td><span class="out">out </span>
+            string
+          </td><td><b>Email Notifications</b></td><td><div class="description">Indicates notification trigger settings:  None, Errors, Suite and Errors, or All.</div></td></tr><tr><td><span class="out">out </span>
+            number
+          </td><td><b>Remove Jobs From Queue After</b></td><td><div class="description">Indicates the number of minutes for the suite's execution queue timeout. Suites are automatically removed from the queue upon timing out.
+          -1 Indicates that queue timeout is disabled.
+        </div></td></tr><tr><td><span class="out">out </span>bool</td><td><b>End Reservation On End</b></td><td><div class="description">Indicates if the suite's reservation was set to end automatically upon execution completion.</div></td></tr><tr><td><span class="out">out </span>
+            list
+          </td><td><b>Jobs Details</b></td><td><div class="description">
+          Output is an object with the following properties: Name, Description, Execution Servers, Logging Profile, Estimated Duration, Stop On Fail, Stop On Error, Duration Time Buffer, Type, Job State, Job Result, Start Time, End Time, Elapsed Time, Selected Execution Server and Expected Start Time.
+          The Name column indicates the name of each job.
+          The Description column indicates the description of each job.
+          The Execution Servers indicates a list of one or more execution servers for running the job. Leave empty to run the job on any available execution server.
+          The Logging Profile column indicates the selected logging profile for this job. (None, All, Results, Measurements and Results)
+          The Estimated Duration column Indicates the number of minutes entered as the job's estimated duration. -1 indicates that the duration will be calculated automatically according to the test durations.
+          The Stop On Fail column indicates whether the job was set to stop execution if any of its tests failed.
+          The Stop On Error column indicates whether the job was set to stop execution if any of its tests ended with an error.
+          Duration Time Buffer indicates the number of minutes to be added to the duration estimation.
+          Type Indicates the automation suite type. (Default value: TestShell)
+
+          In addition the object contains internal objects:
+
+          Tests - Information about the tests that were selected for this job, with the following parameters:
+          Test path should contain the full details about the location of the test, for example: TestShell\Tests\Shared\Validation\TestCase1.
+          Test Duration indicates the estimated number of minutes for the execution of the test, This value will be used to calculate the job duration.
+          Parameters indicate Information about the input parameters for each of the tests.
+          State indicates the current status for each test,
+          Start Time and End Time columns indicate the execution start and end times for each test.
+          Result column indicates the return of the test.
+          Report ID, Concatenate the Report ID column value to the relevant IP address to create a URL to the test report.
+          Report Link is a generated link to the report.
+          Estimated Duration is the estimated number of minutes for the execution of the test, This value will be used to calculate the job duration.
+
+
+          Topology - indicates the information of the attached topology, with the following parameters:
+          Topology Name indicates the topology name to attach to the job.
+          Global Inputs - Information about the input parameters and parameter values for the attached topology (Optional): Name and value.
+          Requirement Input - Information about the requirements for specific resources that must be included in the topology (Optional): resourcePath, name, value and path.
+          Additional Input - Information about additional input parameters and values for the attached topology (Optional): resourcePath, name and value.
+        </div></td></tr><tr><td><span class="out">out </span>
+            string
+          </td><td><b>Suite Status</b></td><td><div class="description">Indicates the current status of the automation suite: Pending, Started, Ended or Failed to Start</div></td></tr><tr><td><span class="out">out </span>
+            string
+          </td><td><b>Suite Result</b></td><td><div class="description">Indicate the result of the suite: Error, Failed, Succeeded</div></td></tr><tr><td><span class="out">out </span>
+            string
+          </td><td><b>Remaining Jobs</b></td><td><div class="description">Indicates the number of uncompleted jobs</div></td></tr><tr><td><span class="out">out </span>DateTime</td><td><b>Start Time</b></td><td><div class="description">Indicates the date and time when the suite began execution.</div></td></tr><tr><td><span class="out">out </span>DateTime</td><td><b>End Time</b></td><td><div class="description">Indicates the date and time when the suite completed its execution. The value will be null if the execution hasn't yet ended.</div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Request:
+        GET http://localhost:9000/API/Scheduling/Suites/d071cd61-f958-4002-8149-a433c6fc458a
+        Header: 	Authorization: Basic dG9rZW4gdG9rZW4gdG9rZW4=
+      </code></pre></div></div></div><p><b>Output</b><br /><li><b>Suite Details</b></li><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+       Output:		HTTP STATUS: 200 OK
+      {
+          "SuiteId": "d071cd61-f958-4002-8149-a433c6fc458a",
+          "SuiteName": "#9 aaa",
+          "SuiteTemplateName": "testcase 10",
+          "Description": "testcase 10",
+          "Owner": "admin",
+          "SuiteStatus": "Pending",
+          "SuiteResult": "",
+          "RemainingJobs": 1,
+          "StartTime": null,
+          "EndTime": null,
+          "Type": "TestShell",
+          "RemoveJobsFromQueueAfter": -1,
+          "EndReservationOnEnd": true,
+          "JobsDetails": [
+              {
+                  "Id": "fc5eab1f-3170-4194-a878-0e2b375be8c2",
+                  "OwnerName": "admin",
+                  "JobState": "Pending",
+                  "JobResult": null,
+                  "JobFailureDescription": null,
+                  "EnqueueTime": "2014-07-09T12:05:53",
+                  "StartTime": "0001-01-01T00:00:00",
+                  "EndTime": "0001-01-01T00:00:00",
+                  "ElapsedTime": -1,
+                  "UseAnyExecutionServer": true,
+                  "SelectedExecutionServer": null,
+                  "SuiteId": "d071cd61-f958-4002-8149-a433c6fc458a",
+                  "ExpectedStartTime": null,
+                  "Name": "test case 10 job 1",
+                  "Description": "gdfgdfg",
+                  "ExecutionServers": [],
+                  "LoggingProfile": "None",
+                  "EstimatedDuration": 2,
+                  "StopOnFail": false,
+                  "StopOnError": false,
+                  "Tests": [
+                      {
+                          "TestPath": "TestShell\\Tests\\Shared\\Delay50sec",
+                          "State": "Pending",
+                          "StartTime": null,
+                          "EndTime": null,
+                          "Result": "Pending Execution",
+                          "ReportId": null,
+                          "ReportLink": "",
+                          "Parameters": [],
+                          "EstimatedDuration": null
+                      }
+                  ],
+                  "Topology": null,
+                  "DurationTimeBuffer": 0,
+                  "EmailNotifications": null,
+                  "Type": "TestShell"
+              }
+          ],
+          "EmailNotifications": "ErrorsOnly"
+      }
+      </code></pre></div></div></div></p></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Stop Suite Execution" /><h3>Stop Suite Execution</h3><div class="description">Stops the execution of all the suite's jobs</div><p><b>
+			  Syntax
+			</b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">DELETE http://serverAddress:tcpPort/API/Scheduling/Suites/SuiteId</pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>
+            string
+          </td><td><b>Suite Id</b></td><td><div class="description">Specify the ID of the automation suite to stop.</div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Request:
+        DELETE http://localhost:9000/API/Scheduling/Suites/d071cd61-f958-4002-8149-a433c6fc458a
+        Header: 	Authorization: Basic dG9rZW4gdG9rZW4gdG9rZW4=
+       
+      </code></pre></div></div></div><p><b>Output</b><br /><li><b>Response</b></li><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Output:		HTTP STATUS: 200 OK
+      </code></pre></div></div></div></p></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Get Suite Status" /><h3>Get Suite Status</h3><div class="description">Retrieves the status of a specific automation suite instance</div><p><b>
+			  Syntax
+			</b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">GET http://serverAddress:tcpPort/API/Scheduling/Suites/Status/suiteId </pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>
+            string
+          </td><td><b>Suite Id</b></td><td><div class="description">Specify the ID of the automation suite.</div></td></tr><tr><td><span class="out">out </span>
+            string
+          </td><td><b>Suite Status</b></td><td><div class="description">Indicates the current status of the automation suite: Pending, Started or Ended</div></td></tr><tr><td><span class="out">out </span>
+            list
+          </td><td><b>Jobs Statuses</b></td><td><div class="description">
+          Output is an object with the following properties: Id, Job State.
+          The Id indicates the identifier of each job.
+          The Job State indicates the current state of the job: Pending, Scheduled, Running, Done, Stopped or Cancelled.
+        </div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Request:
+        GET http://localhost:9000/API/Scheduling/Suites/Status/d071cd61-f958-4002-8149-a433c6fc458a
+        Header: 	Authorization: Basic dG9rZW4gdG9rZW4gdG9rZW4=
+      </code></pre></div></div></div><p><b>Output</b><br /><li><b>Suite Status</b></li><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Output:		HTTP STATUS: 200 OK
+        {
+            "SuiteId": "d071cd61-f958-4002-8149-a433c6fc458a",
+            "SuiteStatus": "Pending",
+            "JobsStatuses": [
+                {
+                    "Id": "fc5eab1f-3170-4194-a878-0e2b375be8c2",
+                    "JobState": "Pending"
+                }
+            ]
+        }
+      </code></pre></div></div></div></p></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Get Test Folder Child Elements" /><h3>Get Test Folder Child Elements</h3><div class="description">Retrieves the child elements (folder / tests) of a test folder in the tests tree</div><p><b>
+			  Syntax
+			</b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">GET http://serverAddress:tcpPort/API/Scheduling/Explorer/Shared/fullFolderPath </pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>
+            string
+          </td><td><b>Full Folder Path</b></td><td><div class="description">Specify the full path of the folder. An empty value is mapped to the root tests tree folder.</div></td></tr><tr><td><span class="out">out </span>
+            list
+          </td><td><b>Test Folder Content</b></td><td><div class="description">
+          Output is a list of objects with the following properties: Name, Type, TestInfoUrl.
+          The Name indicates the name of the child element.
+          The Type indicates the type of the child element: Folder, Test.
+          The TestInfoUrl will be empty if the child element is a folder or contain the url of the test info api method in case that the element is a test.
+        </div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Request:
+        GET http://localhost:9000/API/Scheduling/Explorer/Shared/Some%20Folder
+        Header: 	Authorization: Basic dG9rZW4gdG9rZW4gdG9rZW4=
+      </code></pre></div></div></div><p><b>Output</b><br /><li><b>Test Folder Content</b></li><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Output:		HTTP STATUS: 200 OK
+        {
+            "Children": [
+                {
+                    "Name": "some test",
+                    "Type": "Test"
+                    "TestInfoUrl": "http://localhost:9000/API/Scheduling/TestInfo/Shared/Some%20Folder/some%20test"
+                },
+                {
+                    "Name": "another folder",
+                    "Type": "Folder"
+                }
+            ]
+        }
+      </code></pre></div></div></div></p></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Get Test Information" /><h3>Get Test Information</h3><div class="description">Retrieves information about a test in the tests tree</div><p><b>
+			  Syntax
+			</b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">GET http://serverAddress:tcpPort/API/Scheduling/TestInfo/Local/fullFolderPath </pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>
+            string
+          </td><td><b>Full Test Path</b></td><td><div class="description">Specify the full path of the test.</div></td></tr><tr><td><span class="out">out </span>
+            list
+          </td><td><b>Test Info</b></td><td><div class="description">
+          Output is an object with the following properties: Name, Description, Duration, Parameters.
+          The Name indicates the name of test.
+          The Description indicates the description of the test.
+          The Duration indicates the estimated duration of the test (can be empty).
+          The Parameters indicates the list of the test's input parameters each object in the list have the following properties: Name, Description, Type, Dimension, Direction, PossibleValues
+          The Name indicates the name of the parameter.
+          The Description indicates the description of the parameter.
+          The Type indicates the type of the parameter: String, Numeric.
+          The Dimension indicates the dimension of the parameter: Scalar, Vector, Matrix.
+          The Direction indicates the direction of the parameter: In, InOut.
+          The PossibleValues indicates a list of string possible values for the parameter.
+        </div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Request:
+        GET http://localhost:9000/API/Scheduling/TestInfo/Local/Folder/Test1
+        Header: 	Authorization: Basic dG9rZW4gdG9rZW4gdG9rZW4=
+      </code></pre></div></div></div><p><b>Output</b><br /><li><b>API Explorer Result</b></li><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Output:		HTTP STATUS: 200 OK
+        {
+          "Name":"Many parameters test",
+          "Description":"Some description",
+          "Duration":"00:10:00",
+          "Parameters":
+          [
+            {"Name": "InOutStringWithPossibleValues", "Description": "", "Type": "String", "Dimension": "Scalar", "Direction": "InOut", "PossibleValues": ["Galore", "HarbeGalore"]},
+            {"Name": "InStringVector", "Description": "", "Type": "String", "Dimension": "Vector", "Direction": "In", "PossibleValues": []},
+            {"Name": "InNumericMatrix", "Description": "", "Type": "Numeric", "Dimension": "Matrix", "Direction": "In", "PossibleValues": []}
+          ]
+        }
+      </code></pre></div></div></div></p></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Import Package" /><h3>Import Package</h3><div class="description">Imports a quali package into the system.</div><p><b>
+			  Syntax
+			</b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">POST http://serverAddress:tcpPort/API/Package/ImportPackage</pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>
+            string
+          </td><td><b>Package Path</b></td><td><div class="description">Full path to the location of the package that is going to be imported</div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Request: 	POST http://localhost:9000/API/Package/ImportPackage
+        Header: 	Authorization: Basic dG9rZW4gdG9rZW4gdG9rZW4=
+        Content-Disposition: form-data; name="QualiPackage"; filename="package.zip"
+        Content-Type: application/x-zip-compressed
+      </code></pre></div></div></div></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Export Package" /><h3>Export Package</h3><div class="description">Export a quali package into the system.</div><p><b>
+			  Syntax
+			</b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">POST http://serverAddress:tcpPort/API/Package/ExportPackage</pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>
+            list
+          </td><td><b>Topologies</b></td><td><div class="description">Names of the topologies to include in the package</div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Request: 	POST http://localhost:9000/API/Package/ExportPackage
+        Header: 	Authorization: Basic dG9rZW4gdG9rZW4gdG9rZW4=
+        Content-Type: application/json
+        Input:
+        {
+          TopologyNames: ["topo1","topo2"]
+        }
+      </code></pre></div></div></div></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Get Execution Servers" /><h3>Get Execution Servers</h3><div class="description">Get list of CloudShell Execution Servers</div><p><b>
+			  Syntax
+			</b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">GET http://serverAddress:tcpPort/API/Manage/ExecutionServers</pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td><span class="out">out </span>
+            list
+          </td><td><b>Execution Servers</b></td><td><div class="description">Output is an object with the following properties: Execution Server Id, Execution Server Name, Status and Connection state.
+          Execution Server Name indicates the name of the Exectuion Server.
+          Execution Server Id indicates the id of the Exectuion Server.
+          Status indicates whether the Execution Server is included or excluded.
+          Connection indicates whether the Execution Server is online or offline.
+        </div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Request: 	GET http://localhost:9000/API/Manage/ExecutionServers
+        Header: 	Authorization: Basic dG9rZW4gdG9rZW4gdG9rZW4=       
+      </code></pre></div></div></div><p><b>Output</b><br /><li><b>Execution Servers</b></li><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Output: 	HTTP STATUS: 200 OK
+        [
+        {
+        "Name": "Exec-US",
+        "Id": "9ee76246-e9c4-40ed-a365-ed5dde226969",
+        "Status": "Included",
+        "Connection": "Offline"
+        },
+        {
+        "Name": "Exec-EU",
+        "Id": "9128b2d5-18cd-4e9e-9aed-a75f9b75e33e",
+        "Status": "Excluded",
+        "Connection": "Online"
+        }
+        ]
+      </code></pre></div></div></div></p></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Get Licenses Usage Info" /><h3>Get Licenses Usage Info</h3><div class="description">Gets current licenes usage information</div><p><b>
+			  Syntax
+			</b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">GET http://serverAddress:tcpPort/API/Manage/GetLicensesInfo</pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td><span class="out">out </span>
+            list
+          </td><td><b>TotalLicenseData</b></td><td><div class="description">
+            Overall license usage data object with the following properties:
+            Capacity - total amount of concurrent sandboxes allowed.
+            InUse - total amount of active concurrent sandboxes in the system.
+        </div></td></tr><tr><td><span class="out">out </span>
+            list
+          </td><td><b>LicensePools</b></td><td><div class="description">
+            List of the license pools. Each license pool has the following properties:
+            Name - name of the license pool.
+            Capacity - maximum amount of allowed concurrent sandboxes for this license pool.
+            InUse - amount of active concurrent sandboxes for this license pool. 
+            Domains - list of the domains associated with the license pool.
+        </div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Request:  GET http://localhost:9000/API/Manage/GetLicensesInfo
+        Header:  Authorization: Basic dG9rZW4gdG9rZW4gdG9rZW4=
+      </code></pre></div></div></div><p><b>Output</b><br /><li><b>Licenses Usage</b></li><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Output:  HTTP STATUS: 200 OK
+        {
+          "TotalLicenseData": {
+            "Capacity": 500,
+            "InUse": 1
+          },
+          "LicensePools": [
+            {
+              "Name": "Pool A",
+              "Capacity": 5,
+              "InUse": 1,
+              "Domains": [
+                "Domain A"
+              ]
+            },
+            {
+              "Name": "Global Pool",
+              "Capacity": 495,
+              "InUse": 0,
+              "Domains": [
+                "Global",
+                "Domain B",
+                "Domain C",
+                "Domain D",
+                "Test Team NY",
+                "Test Team Calif",
+                "Consulting Phili"
+              ]
+            }
+          ]
+        }
+      </code></pre></div></div></div></p></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Get Execution Server Details" /><h3>Get Execution Server Details</h3><div class="description">Get the detailes of an Execution Server</div><p><b>
+			  Syntax
+			</b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">GET http://serverAddress:tcpPort/API/Manage/ExecutionServers/executionServer1 </pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>
+            string
+          </td><td><b>Execution Server Name</b></td><td><div class="description">Specify the name or id of the Execution Server.</div></td></tr><tr><td><span class="out">out </span>
+            list
+          </td><td><b>Execution Server Details</b></td><td><div class="description">
+          Output is an object with the following properties:  Execution Server Name, Execution Server Id, State, Connection, Host Name, Operating System, Type, Running, Exclusion Reason, Available Job Slots, Available Command Slot, Job Slots Capacity, Command Slots Capacity and Attributes.
+          Execution Server Name indicates the name of the Execution Server.
+          Execution Server Id indicates the id of the Execution Server.
+          Status indicates if the Execution Server is excluded or included.
+          Connection indicates if the Execution Server is online or offline.
+          Host Name indicates the name of the host of the Execution Server.
+          Operating System indicates the type of the operating system of the Execution Server.
+          Type indicates the Execution Server type.
+          Running indicates the total number of running jobs and commands.
+          Exclusion Reason indicates the exclusion reason in case the Execution Server if excluded.
+          Available Job Slots indicates the number of free job slots.
+          Available Command Slot indicates the number of free command slots.
+          Job Slots Capacity indicates the total number of job slots configured on the Execution Server.
+          Command Slots Capacity indicates the total number of command slots configured on the Execution Server.
+          Attributes indicates the attributes configured on the Execution Server.
+        </div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Request: 	GET http://localhost:9000/API/Manage/ExecutionServers/QS-ILTEST321
+        Header: 	Authorization: Basic dG9rZW4gdG9rZW4gdG9rZW4=
+      </code></pre></div></div></div><p><b>Output</b><br /><li><b>Execution Servers</b></li><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Output: 	HTTP STATUS: 200 OK
+        {
+        "Name": "QS-ILTEST321",
+        "Id": "9128b2d5-18cd-4e9e-9aed-a75f9b75e33e",
+        "Status": "Excluded",
+        "Connection": "Offline",
+        "HostName": "QS-ILTEST321",
+        "OperatingSystem": "Windows",
+        "Type": "TestShell",
+        "Running": 0,
+        "ExclusionReason": "Excluded by admin",
+        "AvailableJobSlots": 1,
+        "AvailableCommandSlots": 20,
+        "JobSlotsCapacity": 1,
+        "CommandSlotsCapacity": 20,
+        "Attributes": [
+        {
+        "Name": "Execution Server Selector",
+        "Value": ""
+        },
+        {
+        "Name": "Supports Ansible",
+        "Value": "True"
+        }
+        ]
+        }
+      </code></pre></div></div></div></p></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Include/Exclude Execution Server" /><h3>Include/Exclude Execution Server</h3><div class="description">Include/Exclude a specified Execution Server</div><p><b>
+			  Syntax
+			</b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">POST http://serverAddress:tcpPort/API/Manage/ExecutionServers/executionServer1 </pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>
+            string
+          </td><td><b>Execution Server Name</b></td><td><div class="description">Specify the name or id of the Execution Server.</div></td></tr><tr><td>
+            string
+          </td><td><b>Execution Server Status</b></td><td><div class="description">Specify the status of the Execution Server. Supported values: Included, Excluded</div></td></tr><tr><td>
+            string
+          </td><td><b>Exclusion reason</b></td><td><div class="description">Specify the exclusion reason</div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Request: 	POST http://localhost:9000/API/Manage/ExecutionServers/QS-ILTEST321
+        Header: 	Authorization: Basic dG9rZW4gdG9rZW4gdG9rZW4=
+		
+		body:
+        {
+        "Status":"Excluded",
+        "ExclusionReason":"some reason"
+        }
+      </code></pre></div></div></div></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Enqueue Custom Job" /><h3>Enqueue Custom Job</h3><div class="description">Creates a new custom job, attaches it to a new AdHoc suite, and adds it to the job queue.</div><p><b>
+			  Syntax
+			</b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">POST http://serverAddress:tcpPort/API/Scheduling/Queue </pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>
+            string
+          </td><td><b>Job Name</b></td><td><div class="description">Specify the name of the job. (Limited to 50 characters)</div></td></tr><tr><td>
+            string
+          </td><td><b>Description</b></td><td><div class="description">Provide a short description of the job. (Limited to 500 characters)</div></td></tr><tr><td>
+            list
+          </td><td><b>Execution Servers</b></td><td><div class="description">Specify a list of one or more execution servers for running the job.
+          Leave empty to run the job on any available execution server.
+        </div></td></tr><tr><td>
+            string
+          </td><td><b>Logging Profile</b></td><td><div class="description">Indicate which logging profile to use when executing the job's tests.
+          None, All, Results, Measurements and Results
+        </div></td></tr><tr><td>
+            number
+          </td><td><b>Estimated Duration</b></td><td><div class="description">Specify the time (in minutes) it will take to complete the job
+          -1 indicates that the duration will be calculated automatically according to the test durations.
+        </div></td></tr><tr><td>bool</td><td><b>Stop On Fail</b></td><td><div class="description">Indicate whether to stop the job execution if one of the tests fails.</div></td></tr><tr><td>bool</td><td><b>Stop On Error</b></td><td><div class="description">Indicate whether to abort the job if any test ends with an error.</div></td></tr><tr><td>
+            list
+          </td><td><b>Tests</b></td><td><div class="description">Tests - Information about the tests that were selected for this job, with the following parameters:
+          Test path should contain the full details about the location of the test, for example: TestShell\Tests\Shared\Validation\TestCase1.
+          Test Duration indicates the estimated number of minutes for the execution of the test, This value will be used to calculate the job duration.
+          Parameters indicate Information about the input parameters for each of the tests.
+        </div></td></tr><tr><td>
+            list
+          </td><td><b>Topology</b></td><td><div class="description">Indicates the information of the attached topology, with the following parameters:
+          Topology Name indicates the topology name to attach to the job.
+          Global Inputs - Information about the input parameters and parameter values for the attached topology (Optional): Name and value.
+          Requirement Input - Information about the requirements for specific resources that must be included in the topology (Optional): resourcePath, name, value and path.
+          Additional Input - Information about additional input parameters and values for the attached topology (Optional): resourcePath, name and value.
+        </div></td></tr><tr><td>
+            number
+          </td><td><b>Duration Time Buffer</b></td><td><div class="description">Indicates the number of minutes to be added to the duration estimation.
+          Note that this parameter is used only when "Estimated Duration" is calculated automatically.
+        </div></td></tr><tr><td>
+            string
+          </td><td><b>Email Notification</b></td><td><div class="description">Specify notification trigger settings:  None, Errors Only, Suite and Errors, or All.</div></td></tr><tr><td>
+            string
+          </td><td><b>Type</b></td><td><div class="description">Indicates the automation suite type. Default value: TestShell</div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Request: 	POST http://localhost:9000/API/Scheduling/Queue
+        Header: 	Authorization: Basic dG9rZW4gdG9rZW4gdG9rZW4=
+        Input:
+        {
+        "name": "job1",
+        "description": null,
+        "executionServers": [],
+        "loggingProfile": "None",
+        "estimatedDuration": 123,
+        "stopOnFail": false,
+        "stopOnError": false,
+        "tests": [
+        {
+        "TestPath": "TestShell\\Tests\\Shared\\TestWithInputs",
+        "TestDuration": "123",
+        "Parameters": [{"ParameterName":"InStr",     "ParameterValue":"a"},
+                       {"ParameterName":"InNum",     "ParameterValue":"1"},
+                       {"ParameterName":"InStrVect", "ParameterValue":"['b', 'c', 'd']"},
+                       {"ParameterName":"InNumVect", "ParameterValue":"[2, 3, 4]"},
+                       {"ParameterName":"InStrMat",  "ParameterValue":"['e', 'f', 'g';'h', 'i', 'j';]"},
+                       {"ParameterName":"InNumMat",  "ParameterValue":"[5, 6, 7;8, 9, 10;]"}]
+        }
+        ],
+        "topology": {
+            "Name":"my topology",
+            "GlobalInputs":[],
+            "RequirementsInput":[],
+            "AdditionalInput":[]
+        },
+        "durationTimeBuffer": 10,
+        "emailNotifications": "All",
+        "type" : "TestShell"
+        }
+      </code></pre></div></div></div><p><b>Output</b><br /><li><b>JobId</b></li><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Output: 	HTTP STATUS: 200 OK	"f839063d-34c6-4847-a960-00734ac79aae"
+      </code></pre></div></div></div></p></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Get Job Details" /><h3>Get Job Details</h3><div class="description">Retrieves all details and parameters for a specified job.</div><p><b>
+			  Syntax
+			</b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">GET http://serverAddress:tcpPort/API/Scheduling/Jobs/f839063d-34c6-4847-a960-00734ac79aae </pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>
+            string
+          </td><td><b>Job Id</b></td><td><div class="description">Specify the ID of the job to retrieve</div></td></tr><tr><td><span class="out">out </span>
+            string
+          </td><td><b>Job Name</b></td><td><div class="description">The name of the job associated with the specified job ID. (Limited to 50 characters)</div></td></tr><tr><td><span class="out">out </span>
+            string
+          </td><td><b>Description</b></td><td><div class="description">The description of the job associated with the specified job ID. (Limited to 500 characters)</div></td></tr><tr><td><span class="out">out </span>
+            string
+          </td><td><b>Owner Name</b></td><td><div class="description">The name of the user who created this job.</div></td></tr><tr><td><span class="out">out </span>
+            string
+          </td><td><b>Job State</b></td><td><div class="description">The current state of the job. Pending, Scheduled, Running, Done, Stopped, Cancelled or Failed to Start.</div></td></tr><tr><td><span class="out">out </span>
+            string
+          </td><td><b>Job Result</b></td><td><div class="description">The result of the job execution: Completed, Passed, Failed, Ended With Error, Ended With An Exception, Manually Stopped, Terminated, or Not Started</div></td></tr><tr><td><span class="out">out </span>
+            string
+          </td><td><b>Job Failure Description</b></td><td><div class="description">A short description of the reason for a failed execution. This value will be empty for a running job or for completed jobs that ran without problems.</div></td></tr><tr><td><span class="out">out </span>DateTime</td><td><b>Enqueue Time</b></td><td><div class="description">The date and time when the job was enqueued.</div></td></tr><tr><td><span class="out">out </span>DateTime</td><td><b>Start Time</b></td><td><div class="description">The date and time when the job started running. The value will be null if the job is still Pending or Failed to Start.</div></td></tr><tr><td><span class="out">out </span>DateTime</td><td><b>End Time</b></td><td><div class="description">The date and time when the job stopped running. The value will be null if the job has not yet ended.</div></td></tr><tr><td><span class="out">out </span>
+            number
+          </td><td><b>Elapsed Time</b></td><td><div class="description">The number of minutes that have elapsed since the job started.
+          Returns -1 if the job hasn't started yet.
+          Returns the job duration (in minutes) if the job has already finished.
+        </div></td></tr><tr><td><span class="out">out </span>bool</td><td><b>Use Any Execution Server</b></td><td><div class="description">Indicates that the job owner allowed the job to run on any available server.</div></td></tr><tr><td><span class="out">out </span>
+            list
+          </td><td><b>Execution Servers</b></td><td><div class="description">A list of Execution server names that were selected by the user for this job. This parameter will have values only if the job is still pending.</div></td></tr><tr><td><span class="out">out </span>
+            string
+          </td><td><b>Selected Execution Server</b></td><td><div class="description">The execution server that was selected to run the job.</div></td></tr><tr><td><span class="out">out </span>
+            string
+          </td><td><b>Logging Profile</b></td><td><div class="description">The selected logging profile for this job’s tests. None, All, Results, Measurements and Results</div></td></tr><tr><td><span class="out">out </span>bool</td><td><b>Stop On Fail</b></td><td><div class="description">Indicate whether to stop the job execution if one of the tests fails.</div></td></tr><tr><td><span class="out">out </span>bool</td><td><b>Stop On Error</b></td><td><div class="description">Indicate whether to abort the job if any test ends with an error.</div></td></tr><tr><td><span class="out">out </span>
+            list
+          </td><td><b>Tests</b></td><td><div class="description">
+          Tests - Information about the tests that were selected for this job, with the following parameters:
+          Test path should contain the full details about the location of the test, for example: TestShell\Tests\Shared\Validation\TestCase1.
+          Estimated Duration is the estimated number of minutes for the execution of the test, This value will be used to calculate the job duration.
+          State column indicates the current status for each test.
+          Start Time and End Time columns indicate the execution start and end times for each test.
+          Result column indicates the test result.
+          Report ID, Concatenate the Report ID column value to the relevant IP address to create a URL to the test report.
+          Report Link is a generated link to the report.
+          Parameters indicate Information about the input parameters for each of the tests.
+        </div></td></tr><tr><td><span class="out">out </span>
+            list
+          </td><td><b>Topology</b></td><td><div class="description">Indicates the information of the attached topology, with the following parameters:
+          Topology Name indicates the topology name to attach to the job.
+          Global Inputs - Information about the input parameters and parameter values for the attached topology (Optional): Name and value.
+          Requirement Input - Information about the requirements for specific resources that must be included in the topology (Optional): resourcePath, name, value and path.
+          Additional Input - Information about additional input parameters and values for the attached topology (Optional): resourcePath, name and value.
+        </div></td></tr><tr><td><span class="out">out </span>
+            number
+          </td><td><b>Duration Time Buffer</b></td><td><div class="description">Indicates the number of minutes to be added to the duration estimation.</div></td></tr><tr><td><span class="out">out </span>DateTime</td><td><b>Expected Start Time</b></td><td><div class="description">The expected execution start date and time for a job that is currently pending.</div></td></tr><tr><td><span class="out">out </span>
+            string
+          </td><td><b>Suite Id</b></td><td><div class="description">The ID of the suite that was used to create this job.</div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Request:
+        GET http://localhost:9000/API/Scheduling/Jobs/f839063d-34c6-4847-a960-00734ac79aae
+        Header: 	Authorization: Basic dG9rZW4gdG9rZW4gdG9rZW4=
+      </code></pre></div></div></div><p><b>Output</b><br /><li><b>Job Details</b></li><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Output: 	HTTP STATUS: 200 OK
+        {
+          "Id": "f839063d-34c6-4847-a960-00734ac79aae",
+          "OwnerName": "admin",
+          "JobState": "Scheduled",
+          "JobResult": null,
+          "JobFailureDescription": null,
+          "EnqueueTime": "2014-07-08T11:56:11",
+          "StartTime": "0001-01-01T00:00:00",
+          "EndTime": "0001-01-01T00:00:00",
+          "ElapsedTime": -1,
+          "UseAnyExecutionServer": true,
+          "SelectedExecutionServer": "QS-IL-LT-MENIB",
+          "SuiteId": "2a1b1bfc-eb57-4a52-90aa-5c5186e1c67f",
+          "ExpectedStartTime": "2014-07-08T23:24:00",
+          "Name": "job1",
+          "Description": "",
+          "ExecutionServers": [],
+          "LoggingProfile": "None",
+          "EstimatedDuration": 123,
+          "StopOnFail": false,
+          "StopOnError": false,
+          "Tests": [
+            {
+              "TestPath": "TestShell\\Tests\\Shared\\Delay3m1r_4",
+              "State": "Pending",
+              "StartTime": null,
+              "EndTime": null,
+              "Result": "Pending Execution",
+              "ReportId": null,
+              "ReportLink": "",
+              "Parameters": [],
+              "EstimatedDuration": 123
+            }
+          ],
+          "Topology": null,
+          "DurationTimeBuffer": 10,
+          "EmailNotifications": “All”,
+          "Type": "TestShell"
+        }
+      </code></pre></div></div></div></p></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Get Queued Jobs" /><h3>Get Queued Jobs</h3><div class="description">Retrieves the list of all jobs that are currently in the job queue.</div><p><b>
+			  Syntax
+			</b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">GET http://serverAddress:tcpPort/API/Scheduling/Queue </pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td><span class="out">out </span>
+            list
+          </td><td><b>Queued Jobs</b></td><td><div class="description">Output is an seven column matrix with Job ID, Job Name, Owner, Enqueue Time, Job Details Url, Expected Start Time, and Suite Id as the column headings.
+          Job ID indicates the ID of each job.
+          Job Name indicates the name of the job.
+          Suite Id indicates the ID of the automation suite that was used to create each job.
+          Owner indicates name of the user who initiated each job.
+          Enqueue Time indicates the date and time that each job was added to the queue.
+          Expected Start Time indicates each job's expected execution start date and time.
+          Job Details Url indicates the link address to the REST function that retrieves the full details of the job.
+        </div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Request: 	GET http://localhost:9000/API/Scheduling/Queue
+        Header: 	Authorization: Basic dG9rZW4gdG9rZW4gdG9rZW4=       
+      </code></pre></div></div></div><p><b>Output</b><br /><li><b>Queued Jobs</b></li><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Output: 	HTTP STATUS: 200 OK
+        [
+          {
+            "JobId": "12f9911c-56bc-41fa-b0c1-eb6101ebc883",
+            "SuiteId": "d39e53fc-7922-4c80-80ce-aa1d2f3c5957",
+            "JobName": "job1",
+            "OwnerName": "admin",
+            "EnqueueTime": "2014-07-08T11:50:16",
+            "JobDetailsUrl": "http://localhost:9000/api/Scheduling/Jobs/12f9911c-56bc-41fa-b0c1-eb6101ebc883",
+            "ExpectedStartTime": "2014-07-08T16:36:00"
+          },
+          {
+            "JobId": "4efe96ab-5117-4a0e-ac92-3b054620bdfd",
+            "SuiteId": "c66f9fec-692e-4d50-8ec7-5eff3fa686c5",
+            "JobName": "job1",
+            "OwnerName": "admin",
+            "EnqueueTime": "2014-07-08T11:49:27",
+            "JobDetailsUrl": "http://localhost:9000/api/Scheduling/Jobs/4efe96ab-5117-4a0e-ac92-3b054620bdfd",
+            "ExpectedStartTime": "2014-07-08T14:20:00"
+          }
+        ]
+      </code></pre></div></div></div></p></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Get Running Jobs" /><h3>Get Running Jobs</h3><div class="description">Retrieves the list of all jobs that are currently running</div><p><b>
+			  Syntax
+			</b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">GET http://localhost:9000/API/Scheduling/Executions </pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td><span class="out">out </span>
+            list
+          </td><td><b>Running Jobs</b></td><td><div class="description">Output is a nine column matrix with Job ID, JobName, Owner, Start Time, Execution Server, Current Test, Current Test ID, Total Tests, and suiteId as the column headings.
+          Job ID indicates the ID of each running job.
+          JobName indicates the name of the job.
+          suiteId indicates the ID of the automation suite that was used to create each job.
+          Owner indicates name of the user who initiated each job.
+          Start Time indicates when each job was started.
+          Execution Server indicates the name of the execution server running each job.
+          Current Test indicates the test that is currently being executed for each running job.
+          Current Test ID indicates the ID of the currently running test.
+          Total Tests indicates the number of tests for each running job.
+        </div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Request: 	GET http://serverAddress:tcpPort/API/Scheduling/Executions
+        Header: 	Authorization: Basic dG9rZW4gdG9rZW4gdG9rZW4=
+      </code></pre></div></div></div><p><b>Output</b><br /><li><b>Running Jobs</b></li><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Output: 	HTTP STATUS: 200 OK
+        [
+          {
+            "JobId": "42c97f6d-6388-41c5-b5f1-b7a7ae04aa7b",
+            "SuiteId": "9f9a090c-570a-40e6-b560-b34fb8ce4e0f",
+            "JobName": "test case 10 job 1",
+            "OwnerName": "admin",
+            "StartTime": "2014-07-08T12:34:00",
+            "ExecutionServer": "QS-IL-LT-MENIB",
+            "CurrentTestPath": "TestShell\\Tests\\Shared\\Delay5m",
+            "CurrentTestId": 1,
+            "TotatlTests": 1,
+            "JobDetailsUrl": "http://localhost:9000/api/Scheduling/Jobs/42c97f6d-6388-41c5-b5f1-b7a7ae04aa7b"
+          }
+        ]
+
+      </code></pre></div></div></div></p></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Stop Job Execution" /><h3>Stop Job Execution</h3><div class="description">Stops the execution of the job</div><p><b>
+			  Syntax
+			</b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">DELETE http://serverAddress:tcpPort/API/Scheduling/Executions/jobId </pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>
+            string
+          </td><td><b>Job Id</b></td><td><div class="description">Specify the ID of the job to stop.</div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Request:
+        DELETE http://localhost:9000/API/Scheduling/Executions/42c97f6d-6388-41c5-b5f1-b7a7ae04aa7b
+        Header: 	Authorization: Basic dG9rZW4gdG9rZW4gdG9rZW4=
+      </code></pre></div></div></div><p><b>Output</b><br /><li><b>Response</b></li><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Output:		HTTP STATUS: 200 OK
+      </code></pre></div></div></div></p></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Get Reservation Attachment" /><h3>Get Reservation Attachment</h3><div class="description">Get Reservation Attachment</div><p><b>
+			  Syntax
+			</b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">POST http://serverAddress:tcpPort/API/Package/GetReservationAttachment </pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>
+            string
+          </td><td><b>Reservation Id</b></td><td><div class="description">Specify the id of the reservation.</div></td></tr><tr><td>
+            string
+          </td><td><b>Filename</b></td><td><div class="description">Specify the requested filename in the reservation.</div></td></tr><tr><td>
+            string
+          </td><td><b>Save Path</b></td><td><div class="description">Specify the path where the file will be saved</div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Request:
+        POST http://localhost:9000/API/Package/GetReservationAttachment
+        Header: 	Authorization: Basic dG9rZW4gdG9rZW4gdG9rZW4=
+		Input:
+		{
+			"ReservationId": "c0b859fb-554b-43c5-be04-9d3d55b818f0",
+			"FileName": "report",
+			"SaveToFolderPath": "c:\"
+		}
+      </code></pre></div></div></div><p><b>Output</b><br /><li><b>Response</b></li><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Output:		HTTP STATUS: 200 OK
+      </code></pre></div></div></div></p></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Get Reservation Attachments Details" /><h3>Get Reservation Attachments Details</h3><div class="description">Get Reservation Attachments Details</div><p><b>
+			  Syntax
+			</b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">GET http://serverAddress:tcpPort/API/Package/GetReservationAttachmentsDetails/c0b859fb-554b-43c5-be04-9d3d55b818f0 </pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>
+            string
+          </td><td><b>Reservation Id</b></td><td><div class="description">Specify the id of the reservation.</div></td></tr><tr><td><span class="out">out </span>
+            list
+          </td><td><b>Filenames</b></td><td><div class="description">List of reservation's saved attachments.</div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Request:
+        GET http://localhost:9000/API/Package/GetReservationAttachmentsDetails/c0b859fb-554b-43c5-be04-9d3d55b818f0
+        Header: 	Authorization: Basic dG9rZW4gdG9rZW4gdG9rZW4=
+      </code></pre></div></div></div><p><b>Output</b><br /><li><b>Response</b></li><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Output:		HTTP STATUS: 200 OK
+		{
+          "Success": "true",
+          "AllAttachments": ["report1","report2"],
+          "ErrorMessage": ""
+		}
+      </code></pre></div></div></div></p></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Attach File To Reservation" /><h3>Attach File To Reservation</h3><div class="description">Attach File To Reservation</div><p><b>
+			  Syntax
+			</b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">POST http://serverAddress:tcpPort/API/Package/AttachFileToReservation </pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>
+            string
+          </td><td><b>Reservation Id</b></td><td><div class="description">Specify the id of the reservation.</div></td></tr><tr><td>
+            string
+          </td><td><b>File path</b></td><td><div class="description">Specify the path of the file that needs to be uploaded as a form-data param named ‘QualiPackage’.</div></td></tr><tr><td>
+            string
+          </td><td><b>Save file as</b></td><td><div class="description">Save file as</div></td></tr><tr><td>
+            string
+          </td><td><b>Overwrite If Exists</b></td><td><div class="description">Overwrite If Exists</div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+		Request:
+        POST http://localhost:9000/API/Package/AttachFileToReservation
+        Header:        Authorization: Basic dG9rZW4gdG9rZW4gdG9rZW4=
+        Input:      "reservationId": "c0b859fb-554b-43c5-be04-9d3d55b818f0"
+                    "saveFileAs": "report1"
+                    "overwriteIfExists": "true"
+        Content-Disposition: form-data; name="QualiPackage"; filename="report.ext
+        Content-Type: application/x-zip-compressed
+      </code></pre></div></div></div><p><b>Output</b><br /><li><b>Response</b></li><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Output:		HTTP STATUS: 200 OK
+      </code></pre></div></div></div></p></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Delete File From Reservation" /><h3>Delete File From Reservation</h3><div class="description">Delete File From Reservation</div><p><b>
+			  Syntax
+			</b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">POST http://serverAddress:tcpPort/API/Package/DeleteFileFromReservation </pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>
+            string
+          </td><td><b>Reservation Id</b></td><td><div class="description">Specify the id of the reservation.</div></td></tr><tr><td>
+            string
+          </td><td><b>Filename</b></td><td><div class="description">Specify the fullname of the file to delete</div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Request:
+        POST http://localhost:9000/API/Package/DeleteFileFromReservation
+        Header: 	Authorization: Basic dG9rZW4gdG9rZW4gdG9rZW4=
+		Input:
+		{
+			"ReservationID": "c0b859fb-554b-43c5-be04-9d3d55b818f0",
+			"FileName": "report1"
+		}
+      </code></pre></div></div></div><p><b>Output</b><br /><li><b>Response</b></li><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Output:		HTTP STATUS: 200 OK
+      </code></pre></div></div></div></p></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Add Shell" /><h3>Add Shell</h3><div class="description">Upload and add a new shell into the system</div><p><b>
+			  Syntax
+			</b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">POST http://serverAddress:tcpPort/API/Shells</pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>
+            string
+          </td><td><b>Shell File</b></td><td><div class="description">Full path to the location of the shell that is going to be imported</div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        Request: 	POST http://localhost:9000/API/Shells
+        Header: 	Authorization: Basic dG9rZW4gdG9rZW4gdG9rZW4=
+        Content-Disposition: form-data; name="Shell"; filename="myshell.zip"
+        Content-Type: application/x-zip-compressed
+      </code></pre></div></div></div></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Update Shell" /><h3>Update Shell</h3><div class="description">Upload and upgrade an existing shell</div><p><b>
+			  Syntax
+			</b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">PUT http://serverAddress:tcpPort/API/Shells/[Shell Name]</pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>
+            string
+          </td><td><b>Shell Name</b></td><td><div class="description">The name of the shell to update</div></td></tr><tr><td>
+            string
+          </td><td><b>Shell File</b></td><td><div class="description">Full path to the location of the shell that is going to be imported</div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        PUT http://localhost:9000/API/Shells/MyShellName
+        Header: 	Authorization: Basic dG9rZW4gdG9rZW4gdG9rZW4=
+        Content-Disposition: form-data; name="Shell"; filename="myshell.zip"
+        Content-Type: application/x-zip-compressed
+      </code></pre></div></div></div></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Delete Shell" /><h3>Delete Shell</h3><div class="description">Delete an existing shell</div><p><b>
+			  Syntax
+			</b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">DELETE http://serverAddress:tcpPort/API/Shells/[Shell Name]</pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>
+            string
+          </td><td><b>Shell Name</b></td><td><div class="description">The name of the shell to delete</div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        DELETE http://localhost:9000/API/Shells/MyShellName
+        Header: 	Authorization: Basic dG9rZW4gdG9rZW4gdG9rZW4=
+        Content-Disposition: form-data; shellName="Shell"
+      </code></pre></div></div></div></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /></div></body></html>
