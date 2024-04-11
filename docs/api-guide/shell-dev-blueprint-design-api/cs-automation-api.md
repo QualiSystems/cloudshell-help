@@ -17,10 +17,10 @@ The CloudShell Automation API package includes the following API modules for use
 
 The CloudShell Automation API reference documentation comes in two versions:
 
-The Python package [API guide](https://help.quali.com/Online%20Help/0.0/Python-API/) includes additional information like class structure and return objects and is intended for experienced Python developers, while the [TestShell API Python Reference Guide](https://help.quali.com/Online%20Help/0.0/TestShell-API/TestShell%20Python%20API.html) is intended for developers who are newer to Python, as it features an easy to understand format and code examples.
+The Python package [API guide](pathname:///api-docs/2023.3/Python-API/) includes additional information like class structure and return objects and is intended for experienced Python developers, while the [TestShell API Python Reference Guide](pathname:///api-docs/2023.3/TestShell-API/TestShell%20Python%20API.html) is intended for developers who are newer to Python, as it features an easy to understand format and code examples.
 
 :::note
-CloudShell Automation API uses UTC timezone by default, but you can change to a different timezone using the [CloudShellAPISession](https://help.quali.com/Online%20Help/0.0/Python-API/cloudshell.api.html#cloudshell.api.cloudshell_api.CloudShellAPISession).
+CloudShell Automation API uses UTC timezone by default, but you can change to a different timezone using the [CloudShellAPISession](pathname:///api-docs/2023.3/Python-API/cloudshell.api.html#cloudshell.api.cloudshell_api.CloudShellAPISession).
 :::
 
 For information about installing Python and pip, and for further information about using Python scripts and drivers, see [The CloudShell DevGuide](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Intro/The-CS-DevGuide.htm).

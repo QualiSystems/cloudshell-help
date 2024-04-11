@@ -10,15 +10,15 @@ For additional information, see the following Quali API guides:
 
 - **Quali API Library**: is available by default in the TestShell Studio tools and can be added as a DLL asset to a project in CloudShell Authoring, the driver builder.
 
-For the complete list of Quali API Library functions, see [Quali API Library Reference Guide](https://help.quali.com/Online%20Help/0.0/Quali-API/Quali%20API%20Library.html).  
+For the complete list of Quali API Library functions, see [Quali API Library Reference Guide](pathname:///api-docs/2023.3/Quali-API/Quali%20API%20Library.html).  
 
 - **Quali C# API**: for .NET
     
-    For the complete list of Quali API C# functions, see [Quali API C# Reference Guide](https://help.quali.com/Online%20Help/0.0/Quali-API/Quali%20cSharp%20API.html "Quali API C# Reference Guide").
+    For the complete list of Quali API C# functions, see [Quali API C# Reference Guide](pathname:///api-docs/2023.3/Quali-API/Quali%20cSharp%20API.html "Quali API C# Reference Guide").
     
 - **Quali REST API**: for APIs using the REST client
     
-    For the complete list of Quali API REST functions, see [Quali API REST Reference Guide](https://help.quali.com/Online%20Help/0.0/Quali-API/Quali%20REST%20API.html "Quali API REST Reference Guide").
+    For the complete list of Quali API REST functions, see [Quali API REST Reference Guide](pathname:///api-docs/2023.3/Quali-API/Quali%20REST%20API.html "Quali API REST Reference Guide").
     
     :::note Notes for Quali REST API:
     - Input parameters must be in JSON format.

@@ -118,7 +118,7 @@ The term "package" may refer to blueprint package, shell package or Python packa
         
     - [Packaging API](https://help.quali.com/Online%20Help/2022.2/Portal/Content/API/Pckg-API/PackagingAPI.htm) (API for automating the creation and configuration of blueprint packages)
         
-    - [Export Package](https://help.quali.com/Online%20Help/2022.2/Quali-API/Quali%20API%20Library.html#Export%20Package) (export a blueprint package into CloudShell via Quali API )
+    - [Export Package](pathname:///api-docs/2023.3/Quali-API/Quali%20API%20Library.html#Export%20Package) (export a blueprint package into CloudShell via Quali API )
         
 - Shell package contains the definition of a shell, which can be imported into CloudShell. For details, see [Shells Overview](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/LAB-MNG/Features/Shells.htm).
     
