@@ -12,20 +12,15 @@ Ends a sandbox per specified sandbox ID. Returns a successful response when the 
 
 `http://{CloudShell Sandbox API Gateway IP address}:{port#}/api/v2/sandboxes/{sandbox_identifier}/stop`
 
+| Parameter | Description/Comments |
+| --- | --- |
+| `sandbox_identifier` | The id of the sandbox (`string`). Can be retrieved via [sandboxes](./sandboxes.md), [blueprint start](./blueprint-start.md) and from the sandbox ID segment in the CloudShell Portal URL. |
+
 ### HTTP method
 
 `POST`
 
 ### Request
-
-<details>
-<summary>URL</summary>
-
-| Parameter | Description/Comments |
-| --- | --- |
-| `sandbox_identifier` | The id of the sandbox (`string`). <br/> Note: You can get the sandbox ID from the [sandboxes](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/Sndbx-REST-API/REST-API-V2-Ref-Guide.htm?tocpath=CloudShell%20API%20Guide%7CCloudShell%20Sandbox%20API%7C_____3#sandboxe) method, [blueprint start](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/Sndbx-REST-API/REST-API-V2-Ref-Guide.htm?tocpath=CloudShell%20API%20Guide%7CCloudShell%20Sandbox%20API%7C_____3#blueprin3) method, and from the sandbox ID segment in the CloudShell Portal URL. |
-
-</details>
 
 <details>
 <summary>Headers</summary>

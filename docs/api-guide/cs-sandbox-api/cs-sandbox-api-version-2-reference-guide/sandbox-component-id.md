@@ -13,25 +13,16 @@ Gets details and available actions for a particular component (resource, service
 
 `http://{CloudShell Sandbox API Gateway IP address}:{port#}/api/v2/sandboxes/{sandbox_identifier}/components/{component_id}`
 
+| Parameter | Description/Comments |
+| --- | --- |
+| `sandbox_identifier` | The id of the sandbox (`string`). Can be retrieved via [sandboxes](./sandboxes.md), [blueprint start](./blueprint-start.md) and from the sandbox ID segment in the CloudShell Portal URL. |
+| `component_id` | The id of the component (`string`). Can be retrieved via [sandbox components](./sandbox-components.md) and [blueprint start](./blueprint-start.md). |
+
 ### HTTP method
 
 `GET`
 
 ### Request
-
-<details>
-<summary>URL</summary>
-
-:::note 
-You can get the sandbox ID from the [sandboxes](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/Sndbx-REST-API/REST-API-V2-Ref-Guide.htm?tocpath=CloudShell%20API%20Guide%7CCloudShell%20Sandbox%20API%7C_____3#sandboxe) method, [blueprint start](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/Sndbx-REST-API/REST-API-V2-Ref-Guide.htm?tocpath=CloudShell%20API%20Guide%7CCloudShell%20Sandbox%20API%7C_____3#blueprin3) method, and from the sandbox ID segment in the CloudShell Portal URL, and the component ID from the [sandbox components](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/Sndbx-REST-API/REST-API-V2-Ref-Guide.htm?tocpath=CloudShell%20API%20Guide%7CCloudShell%20Sandbox%20API%7C_____3#sandbox3) method and the [blueprint start](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/REST-API-blueprint_strt.htm) method.
-:::
-
-| Parameter | Description/Comments |
-| --- | --- |
-| `sandbox_identifier` | The id of the sandbox (`string`). |
-| `component_id` | The id of the sandbox component (`string`). |
-
-</details>
 
 <details>
 <summary>Headers</summary>

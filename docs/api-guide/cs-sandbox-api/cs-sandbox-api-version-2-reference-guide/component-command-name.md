@@ -13,26 +13,17 @@ Gets details about a particular command for a specific component (resource, serv
 
 `http://{CloudShell Sandbox API Gateway IP address}:{port#}/api/v2/sandboxes/{sandbox_identifier}/components/{component_id}/commands/{command_name}`
 
+| Parameter | Description/Comments |
+| --- | --- |
+| `sandbox_identifier` | The id of the sandbox (`string`). Can be retrieved via [sandboxes](./sandboxes.md), [blueprint start](./blueprint-start.md) and from the sandbox ID segment in the CloudShell Portal URL. |
+| `component_id` | The id of the component (`string`). Can be retrieved via [sandbox components](./sandbox-components.md) and [blueprint start](./blueprint-start.md). |
+| `command_name` | The name of the command (`string`). Can be retrieved via [sandbox component commands](./sandbox-component-commands.md). |
+
 ### HTTP method
 
 `GET`
 
 ### Request
-
-<details>
-<summary>URL</summary>
-
-:::note
- You can get the sandbox ID from the [sandboxes](./sandboxes.md) method, [blueprint start](./blueprint-start.md) method, and from the sandbox ID segment in the CloudShell Portal URL. You can get the component ID from the [sandbox components](./sandbox-components.md) method and the [blueprint start](./blueprint-start.md) method, and the command's name from the [sandbox component commands](./sandbox-component-commands.md) method.
-:::
-
-| Parameter | Description/Comments |
-| --- | --- |
-| `sandbox_identifier` | The id of the sandbox (`string`). |
-| `component_id` | The id of the sandbox component (`string`). |
-| `command_name` | The name of the component command (`string`). |
-
-</details>
 
 <details>
 <summary>Headers</summary>

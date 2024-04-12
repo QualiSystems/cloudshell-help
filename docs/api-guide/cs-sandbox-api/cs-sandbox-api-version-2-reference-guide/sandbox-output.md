@@ -14,24 +14,22 @@ The maximum number of entries in the response is configured by the administrator
 
 `http://{CloudShell Sandbox API Gateway IP address}:{port#}/api/v2/sandboxes/{sandbox_identifier}/output`
 
+| Parameter | Description/Comments |
+| --- | --- |
+| `sandbox_identifier` | The id of the sandbox (`string`). Can be retrieved via [sandboxes](./sandboxes.md), [blueprint start](./blueprint-start.md) and from the sandbox ID segment in the CloudShell Portal URL. |
+
+You may add the following optional parameters to the end of the method's URL to filter the number of events. For example - displaying the last 100 events:
+| Query parameters |  Description/Comments |
+| --- | --- |
+| `tail` | Last number of entries to return. `(integer)` |
+| `from_entry_id` | ID of the first entry in the response page to display, which is returned in the `next_entry_id` property of the response `(string)` |
+| `since` | Time from which to return all entries. Time must be specified in ISO 8601 format (for example PT23H).`(string)` |
+
 ### HTTP method
 
 `GET`
 
 ### Request
-
-<details>
-<summary>URL</summary>
-
-| URL Parameters | Description/Comments |
-| --- | --- |
-| `sandbox_identifier` | The id of the sandbox. <br/> **<span style={{ color: 'blue' }}>Note:</span>** You can get the sandbox ID from the [sandboxes](./sandboxes.md) method, [blueprint start](./blueprint-start.md) method, and from the sandbox ID segment in the CloudShell Portal URL. |
-| Query parameters | You may add the following optional parameters to the end of the method's URL to filter the number of events. For example - displaying the last 100 events:
-``http://{CloudShell Sandbox API Gateway IP address}:{port#}/api/v2/sandboxes/{sandbox_identifier}/activity`?tail=100` `` |
-| `tail` | Last number of entries to return. `(integer)` |
-| `from_entry_id` | ID of the first entry in the response page to display, which is returned in the `next_entry_id` property of the response `(string)` |
-| `since` | Time from which to return all entries. Time must be specified in ISO 8601 format (for example PT23H).`(string)` |
-</details>
 
 <details>
 <summary>Headers</summary>

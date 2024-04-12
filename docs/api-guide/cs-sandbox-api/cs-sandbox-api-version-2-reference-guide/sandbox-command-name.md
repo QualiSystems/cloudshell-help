@@ -12,25 +12,16 @@ Gets details about a particular blueprint command in a specific sandbox.
 
 `http://{CloudShell Sandbox API Gateway IP address}:{port#}/api/v2/sandboxes/{sandbox_identifier}/commands/{command_name}`
 
+| Parameter | Description/Comments |
+| --- | --- |
+| `sandbox_identifier` | The id of the sandbox (`string`). Can be retrieved via [sandboxes](./sandboxes.md), [blueprint start](./blueprint-start.md) and from the sandbox ID segment in the CloudShell Portal URL. |
+| `command_name` | The name of the sandbox command (`string`). Can be retrieved via [sandbox commands](./sandbox-commands.md) |
+
 ### HTTP method
 
 `GET`
 
 ### Request
-
-<details>
-<summary>URL</summary>
-
-:::note
- You can get the **sandbox ID** from the [sandboxes](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/Sndbx-REST-API/REST-API-V2-Ref-Guide.htm?tocpath=CloudShell%20API%20Guide%7CCloudShell%20Sandbox%20API%7C_____3#sandboxe) method, [blueprint start](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/Sndbx-REST-API/REST-API-V2-Ref-Guide.htm?tocpath=CloudShell%20API%20Guide%7CCloudShell%20Sandbox%20API%7C_____3#blueprin3) method, and from the sandbox ID segment in the CloudShell Portal URL, and the command's name from the [sandbox commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/Sndbx-REST-API/REST-API-V2-Ref-Guide.htm?tocpath=CloudShell%20API%20Guide%7CCloudShell%20Sandbox%20API%7C_____3#sandbox5) method.
-:::
-
-| Parameter | Description/Comments |
-| --- | --- |
-| `sandbox_identifier` | The id of the sandbox (`string`). |
-| `command_name` | The name of the command (`string`). |
-
-</details>
 
 <details>
 <summary>Headers</summary>

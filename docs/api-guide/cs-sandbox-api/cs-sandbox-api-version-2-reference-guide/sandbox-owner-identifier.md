@@ -2,31 +2,25 @@
 sidebar_position: 22
 ---
 
-
-
-# Sandbox Owner Identifier
+# Owner Sandboxes
 
 ### Description
 
-.
+Returns list of sandboxes for a specific owner name
 
 ### URL
 
 `http://{CloudShell Sandbox API Gateway IP address}:{port#}/api/v2/sandboxes/owners/{owner_identifier}`
+
+| Parameter | Description/Comments |
+| --- | --- |
+| `owner_identifier` | The name of the user (`string`). |
 
 ### HTTP method
 
 `GET`
 
 ### Request
-
-<details>
-<summary>URL</summary>
-
-| Parameter | Description/Comments |
-| --- | --- |
-| `owner_identifier` | The name of the user (`string`). |
-</details>
 
 <details>
 <summary>Headers</summary>
@@ -44,7 +38,7 @@ Example header format for the `sandboxes` method:
 <details>
 <summary>Response example</summary>
 
-The `sandboxes` method returns a list of all the sandboxes and the actions that can be performed on each sandbox.
+This method returns a list of all the active sandboxes a specific owner has.
 
 ```javascript
 [
@@ -67,6 +61,8 @@ The `sandboxes` method returns a list of all the sandboxes and the actions that 
       "name": "System Diagnostics Blueprint",
       "id": "07e70b79-3cba-4f1a-a957-fb4b0552fb33"
     }
+  }
+]
 ```
 </details>
 

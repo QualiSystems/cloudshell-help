@@ -15,26 +15,24 @@ The maximum number of entries in the response is configured by the administrator
 
 `http://{CloudShell Sandbox API Gateway IP address}:{port#}/api/v2/sandboxes/{sandbox_identifier}/activity?tail=100&from_event_id`
 
-### HTTP method
-
-`GET`
-
-### Request
-
-<details>
-<summary>URL</summary>
-
 | URL Parameters | Description/Comments |
 | --- | --- |
-| `sandbox_identifier` | The id of the sandbox. <br/> Note: You can get the sandbox ID from the [sandboxes](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/Sndbx-REST-API/REST-API-V2-Ref-Guide.htm?tocpath=CloudShell%20API%20Guide%7CCloudShell%20Sandbox%20API%7C_____3#sandboxe) method, [blueprint start](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/Sndbx-REST-API/REST-API-V2-Ref-Guide.htm?tocpath=CloudShell%20API%20Guide%7CCloudShell%20Sandbox%20API%7C_____3#blueprin3) method, and from the sandbox ID segment in the CloudShell Portal URL. |
-| Query parameters | You may add the following optional parameters to the end of the method's URL to filter the number of events. For example - displaying the last 100 errors:
-`http://{CloudShell Sandbox API Gateway IP address}:{port#}/api/v2/sandboxes/{sandbox_identifier}/activity?tail=100&error_only=true` |
+| `sandbox_identifier` | Can be retrieved via [sandboxes](./sandboxes.md), [blueprint start](./blueprint-start.md) and from the sandbox ID segment in the CloudShell Portal URL. |
+
+You may add the following optional parameters to the end of the method's URL to filter the number of events. For example - displaying the last 100 errors:
+
+| Query Parameters | Description/Comments |
+| --- | --- |
 | `error_only` | Returns only "error" type events. `(bool)` |
 | `since` | Time from which to return all events. Time must be specified in ISO 8601 format (for example PT23H).`(string)` |
 | `tail` | Last number of events to return. `(integer)` |
 | `from_event_id` | ID of the first event in the response page to display, which is returned in the `next_event_id` property of the response. `(string)` |
 
-</details>
+### HTTP method
+
+`GET`
+
+### Request
 
 <details>
 <summary>Headers</summary>

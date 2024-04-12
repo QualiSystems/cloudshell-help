@@ -12,24 +12,15 @@ Gets details and available actions for a particular public blueprint associated 
 
 `http://{CloudShell Sandbox API Gateway IP address}:{port#}/api/v1/blueprints/{blueprint_identifier}`
 
+| Parameter | Description/Comments |
+| --- | --- |
+| `blueprint_identifier` | The name or id of the blueprint (`string`). Can be retrieved via [blueprints](./blueprints.md). |
+
 ### HTTP method
 
 `GET`
 
 ### Request
-
-<details>
-<summary>URL</summary>
-
-:::note
-You can get the blueprint name and blueprint ID from the [blueprints](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/Sndbx-REST-API/REST-API-V1-Ref-Guide.htm?tocpath=CloudShell%20API%20Guide%7CCloudShell%20Sandbox%20API%7C_____2#blueprin) method or from the blueprint ID segment in the CloudShell Portal URL).
-:::
-
-| Parameter | Description/Comments |
-| --- | --- |
-| `blueprint_identifier` | The name or id of the blueprint (`string`). |
-
-</details>
 
 <details>
 <summary>Headers</summary>

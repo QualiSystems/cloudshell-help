@@ -19,6 +19,10 @@ Creates a new sandbox from a specific public blueprint associated with the user'
 
 `http://{CloudShell Sandbox API Gateway IP address}:{port#}/api/v1/blueprints/{blueprint_identifier}/start`
 
+| Parameter | Description/Comments |
+| --- | --- |
+| `blueprint_identifier` | The name or id of the blueprint (`string`). Can be retrieved via [blueprints](./blueprints.md). |
+
 ### HTTP method
 
 `POST`

@@ -12,20 +12,15 @@ Gets details about a specific execution of a sandbox or component command, per s
 
 `http://{CloudShell Sandbox API Gateway IP address}:{port#}/api/v2/executions/{execution_id}`
 
+| Parameter | Description/Comments |
+| --- | --- |
+| `execution_id` | The id of the command's execution (`string`). Can be retrieved via the [component command start](./component-command-start.md) and the [sandbox command start](./sandbox-command-start.md) methods. |
+
 ### HTTP method
 
 `GET`
 
 ### Request
-
-<details>
-<summary>URL</summary>
-
-| Parameter | Description/Comments |
-| --- | --- |
-| `execution_id` | The id of the command's execution (`string`). <br/> **<span style={{ color: 'green' }}>Tip:</span>**  You can get the execution ID from the [component command start](./component-command-start.md) and the [blueprint start](./blueprint-start.md) methods. |
-
-</details>
 
 <details>
 <summary>Headers</summary>
