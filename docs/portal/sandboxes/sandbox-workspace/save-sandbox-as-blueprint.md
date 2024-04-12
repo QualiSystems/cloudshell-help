@@ -7,7 +7,7 @@ sidebar_position: 12
 This article explains how to save a sandbox as a blueprint. This option is useful if you make changes to your sandbox diagram or properties and want to save them for future use. This option is not available for completed restored sandboxes.
 
 :::note
-CloudShell also provides the option of creating a saved sandbox. However, unlike saving a sandbox as a blueprint, saved sandboxes also save the state of both the sandbox and the Apps it contains, including configurations and operations performed on the App VMs during the sandbox. For additional information, see [Sandbox Save and Restore Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Sv-Rstr-Ovrvw.htm)
+CloudShell also provides the option of creating a saved sandbox. However, unlike saving a sandbox as a blueprint, saved sandboxes also save the state of both the sandbox and the Apps it contains, including configurations and operations performed on the App VMs during the sandbox. For additional information, see [Sandbox Save and Restore Overview](../sandbox-save-and-restore-overview.md)
 :::
 
 **To save a sandbox as a blueprint:**
