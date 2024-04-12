@@ -12,7 +12,7 @@ The following list includes changes in behavior introduced into CloudShell by ve
 
 | Capability | Change Description | Changed in Release |
 | --- | --- | --- |
-| Erlang version | To accomodate the upgraded RabbitMQ version (3.12.0) explained in [Breaking Changes](#Breaking), Erlang will be upgraded to newer version 25.2.3. This version is the maximum supported Erlang for RabbitMq 3.12.0. Environment variables will be updated accordingly to suite the new Erlang version. | 2023.2 EA |
+| Erlang version | To accomodate the upgraded RabbitMQ version (3.12.0) explained in [Breaking Changes](#breaking-changes), Erlang will be upgraded to newer version 25.2.3. This version is the maximum supported Erlang for RabbitMq 3.12.0. Environment variables will be updated accordingly to suite the new Erlang version. | 2023.2 EA |
 | Python versions | In 2022.1, we updated CloudShell's Python versions as follows: <ul><li>2.7.10 to 2.7.18</li><li>3.7.1 to 3.9.9</li></ul> This may cause unexpected behavior if your automation is constrained to use specific Python versions.  | 2022.1 EA |
 | API tokens | To increase security and to allow time-based token access to the system, CloudShell 2022.1 generates a time-based token for our product APIs. In previous versions, only some of the APIs used such a system. By default, the token validity period is 5 hours. Notes: <ul><li>For security reasons, we recommend upgrading to the latest version of CloudShell.</li><li> Existing automation code utilizing Quali API may need to be updated to regenerate a token whenever an existing token expires.</li></ul> | 2022.1 EA |
 | Reserve form | The Blueprint Name field in the Reserve form is no longer editable.  | 2022.1 EA |

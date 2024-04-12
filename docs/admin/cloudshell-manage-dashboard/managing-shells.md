@@ -39,7 +39,7 @@ A shell update is not reversible(in other words, you cannot downgrade to an earl
     The Shell is displayed in the **Shells** page and can be used by domain administrators in all CloudShell domains to create new inventory resources, as explained in [Adding Inventory Resources](../../portal/inventory/managing-resources/adding-inventory-resources/index.md).
     
     :::note Notes:
-    - If you are planning on running CloudShell in offline mode, and the Shell has dependencies, make sure to update the dependencies repository - see [Updating Python Dependencies for Shells, Drivers and Scripts](../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/updating-python-dependencies-for-shells,-drivers-and-scripts.md).
+    - If you are planning on running CloudShell in offline mode, and the Shell has dependencies, make sure to update the dependencies repository - see [Updating Python Dependencies for Shells, Drivers and Scripts](../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/updating-python-dependencies-for-shells-drivers-and-scripts.md).
     - Python 3 automation requires Microsoft Visual C++ Redistributable 2015 x86 and x64 to be installed on the Execution Server(s).
     :::    
 
@@ -88,7 +88,7 @@ A shell update is not reversible(in other words, you cannot downgrade to an earl
     
 2. In the dialog box, navigate to the updated Shell's ZIP file, select it and click **Open**.
     :::note
-    If you are planning on running CloudShell in offline mode, and the Shell has dependencies, make sure to update the dependencies repository - see [Updating Python Dependencies for Shells, Drivers and Scripts](../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/updating-python-dependencies-for-shells,-drivers-and-scripts.md).
+    If you are planning on running CloudShell in offline mode, and the Shell has dependencies, make sure to update the dependencies repository - see [Updating Python Dependencies for Shells, Drivers and Scripts](../cloudshell-execution-server-configurations/setting-up-python-virtual-environments/updating-python-dependencies-for-shells-drivers-and-scripts.md).
     :::
 
 ## Downloading Shells from CloudShell
@@ -107,7 +107,7 @@ CloudShell enables you to download Shells from the Shells page. This can be usef
 
 Shells that have inventory resources cannot be deleted.
 :::note
-To delete a 1st Gen Shell, you must use the `DeleteResourceTemplate` method in the [TestShell API](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/TS-API.htm).
+To delete a 1st Gen Shell, you must use the `DeleteResourceTemplate` method in the [TestShell API](../../api-guide/shell-dev-blueprint-design-api/testshell-api.md).
 :::
 **To delete Shells:**
 

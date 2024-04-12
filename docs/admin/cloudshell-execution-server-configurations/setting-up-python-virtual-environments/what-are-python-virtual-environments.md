@@ -15,10 +15,10 @@ However, if a newer version of the shell or script runs, or the same script is r
 - On Windows: `%PROGRAMDATA%\QualiSystems\venv`
 - On Linux: `/usr/share/QualiSystems/venv/`
 :::note
-Using the driver or script for the first time on the execution server may take some setup time to create the new virtual environment and install the dependencies. The next time the same Python driver script is used, any new dependencies uploaded to the Python Package Index (PyPI) repository for this driver or script will be installed. Any existing dependencies will be reused without any changes (and will not require additional setup time). For details on how and when the Execution Server updates the venv, see [Setting the Virtual Environment validity period](../../../admin/cloudshell-execution-server-configurations/setting-up-execution-servers-to-run-commands.md#setting-the-virtual-environment-validity-period).
+Using the driver or script for the first time on the execution server may take some setup time to create the new virtual environment and install the dependencies. The next time the same Python driver script is used, any new dependencies uploaded to the Python Package Index (PyPI) repository for this driver or script will be installed. Any existing dependencies will be reused without any changes (and will not require additional setup time). For details on how and when the Execution Server updates the venv, see [Setting the Virtual Environment validity period](../setting-up-execution-servers-to-run-commands.md#setting-the-virtual-environment-validity-period).
 :::
 ## Related Topics
 
-- [PyPi Server - Managing Python Shell and Script Dependencies](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/pypi-server-managing-python-shell-and-script-dependencies.md)
-- [Configuring CloudShell to Execute Python Commands in Offline Mode](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/configuring-cloudshell-to-execute-python-commands-in-offline-mode.md)
-- [Cleaning Up the Virtual Environments Folder](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/cleaning-up-the-virtual-environments-folder.md)
+- [PyPi Server - Managing Python Shell and Script Dependencies](./pypi-server-managing-python-shell-and-script-dependencies.md)
+- [Configuring CloudShell to Execute Python Commands in Offline Mode](./configuring-cloudshell-to-execute-python-commands-in-offline-mode.md)
+- [Cleaning Up the Virtual Environments Folder](./cleaning-up-the-virtual-environments-folder.md)

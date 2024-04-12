@@ -55,4 +55,4 @@ When installing your execution server on a computer that is not a Windows Server
 
 ## Related Topics
 
-- [Configure the Execution Server to Run as a Process by Default](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-ts-exec-srver-prcs.htm).
+- [Configure the Execution Server to Run as a Process by Default](./config-execution-server-process.md).
