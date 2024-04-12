@@ -33,5 +33,5 @@ For more detailed information about a particular error, see [Activity Feed Pane]
 
 ## Related Topics
 
-- [Activity Feed for an App in the sandbox](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Apps-Activity-Feed.htm)
-- [Activity Feed for a service in the sandbox](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Use-Srvc.htm#Activity)
+- [Activity Feed for an App in the sandbox](../system-messages/activity-feed-pane.md)
+- [Activity Feed for a service in the sandbox](../services.md#activity-feed-for-a-service-in-the-sandbox)

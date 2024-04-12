@@ -30,5 +30,5 @@ This applies to resources that support remote connections. It is possible to ena
 
 ## Related Topics
 
-- [Connecting Remotely to Devices from the Inventory Dashboard](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/INVN/Cnct-Rsrc-Rmt.htm)
-- [QualiX Installation and Configuration](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Qualix.htm)
+- [Connecting Remotely to Devices from the Inventory Dashboard](../../../inventory/managing-resources/connecting-remotely.md)
+- [QualiX Installation and Configuration](../../../../install-configure/qualix/index.md)
