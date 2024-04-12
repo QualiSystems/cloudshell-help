@@ -25,5 +25,5 @@ In online mode, the PyPi Server process automatically downloads and extracts the
 
 ## Related Topics
 
-- [PyPi Server - Managing Python Shell and Script Dependencies](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/pypi-server-managing-python-shell-and-script-dependencies.md)
-- [Configuring CloudShell to Execute Python Commands in Offline Mode](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/configuring-cloudshell-to-execute-python-commands-in-offline-mode.md)
+- [PyPi Server - Managing Python Shell and Script Dependencies](./pypi-server-managing-python-shell-and-script-dependencies.md)
+- [Configuring CloudShell to Execute Python Commands in Offline Mode](./configuring-cloudshell-to-execute-python-commands-in-offline-mode.md)

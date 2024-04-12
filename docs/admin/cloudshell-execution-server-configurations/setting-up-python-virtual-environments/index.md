@@ -9,5 +9,5 @@ The following articles describe what Python virtual environments are, how to con
 - [What are Python Virtual Environments?](./what-are-python-virtual-environments.md)
 - [PyPi Server - Managing Python Shell and Script Dependencies](./pypi-server-managing-python-shell-and-script-dependencies.md)
 - [Configuring CloudShell to Execute Python Commands in Offline Mode](./configuring-cloudshell-to-execute-python-commands-in-offline-mode.md)
-- [Updating Python Dependencies for Shells, Drivers and Scripts](./updating-python-dependencies-for-shells,-drivers-and-scripts.md)
+- [Updating Python Dependencies for Shells, Drivers and Scripts](./updating-python-dependencies-for-shells-drivers-and-scripts.md)
 - [Cleaning Up the Virtual Environments Folder](./cleaning-up-the-virtual-environments-folder.md)

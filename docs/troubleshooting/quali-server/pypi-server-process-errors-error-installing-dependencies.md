@@ -47,7 +47,7 @@ Before performing any of the following steps, please review the log files at the
     A "Welcome to pypiserver" page is displayed.
     
 2. If the page is not displayed, restart your local PyPi Server from CloudShell Monitor on the Quali Server machine.
-3. If you do not have online access, make sure all required packages are installed on your local PyPi Server. See [Loading packages to your PyPi Server repository](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Pyth-Cnfg-Mds.htm#Loading).
+3. If you do not have online access, make sure all required packages are installed on your local PyPi Server. See [Loading packages to your PyPi Server repository](../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/pypi-server-managing-python-shell-and-script-dependencies.md#loading-packages-to-your-pypi-server-repository).
     
 4. If you have a package on the local PyPI Server, but it is not the correct version according to the requirements of the Python shell or script, you will need to load the specific version as well, see [Special considerations](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Pyth-Cnfg-Mds.htm#Special).
     

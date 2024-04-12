@@ -2,6 +2,7 @@
   "label": "Managing Execution Servers",
   "position": 6,
   "link": {
+    "slug": "admin/manage-dashboard/execution-servers",
     "type": "generated-index",
     "description": "This article explains how to track and manage the execution servers, and the command and job executions in CloudShell."
   }

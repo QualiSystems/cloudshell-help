@@ -4,11 +4,11 @@ sidebar_position: 2
 
 # Setting Up Execution Servers to Run Commands
 
-This article explains how to configure execution servers to run commands in CloudShell. Note that associating execution servers to automation suites is done on the job level, as explained in [Add jobs to an automation suite](../../portal/job-scheduling/manage-automation-suites/add-suites.md).
+This article explains how to configure execution servers to run commands in CloudShell. Note that associating execution servers to automation suites is done on the job level, as explained in [Add jobs to an automation suite](../../portal/job-scheduling/manage-automation-suites/add-suites.md#add-jobs-to-an-automation-suite).
 
 ## Managing execution servers
 
-The **Execution Servers** management pages in the web portal allow you to both manage and troubleshoot your execution servers, providing critical, real time data about the status of your execution servers, command and job executions, and troubleshooting information and options. For additional information, see [Managing Execution Servers](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Exctn-Srv.htm).
+The **Execution Servers** management pages in the web portal allow you to both manage and troubleshoot your execution servers, providing critical, real time data about the status of your execution servers, command and job executions, and troubleshooting information and options. For additional information, see [Managing Execution Servers](../../admin/manage-dashboard/execution-servers).
 
 ## Distributed provisioning
 
@@ -20,11 +20,11 @@ Blueprint orchestration can be configured to run on one execution server, while 
 :::
 ### Optimizing execution capacity
 
-For detailed information, see [Optimizing Execution Provisioning](../../admin/cloudshell-execution-server-configurations/optimizing-execution-provisioning.md).
+For detailed information, see [Optimizing Execution Provisioning](./optimizing-execution-provisioning.md).
 
 ### Distributed command execution
 
-Multiple execution servers can be deployed in order to scale out the provisioning and resource command tasks. By default, blueprint and resource commands are distributed between the execution servers according to their capacity. It is possible, however, to specify more explicit rules to control the execution server selection for commands, as explained in the "execution server selection" sections below. For additional information, see [Optimizing Execution Provisioning](../../admin/cloudshell-execution-server-configurations/optimizing-execution-provisioning.md).
+Multiple execution servers can be deployed in order to scale out the provisioning and resource command tasks. By default, blueprint and resource commands are distributed between the execution servers according to their capacity. It is possible, however, to specify more explicit rules to control the execution server selection for commands, as explained in the "execution server selection" sections below. For additional information, see [Optimizing Execution Provisioning](./optimizing-execution-provisioning.md).
 
 ### Resource commands
 
@@ -42,8 +42,8 @@ For additional information, see [Associating Resources to Specific Execution Ser
 
 To learn how to do this, see the appropriate article:
 
-- For private cloud Apps, see [Managing Private Cloud Apps in Domains](../../admin/supported-cloud-providers-in-cloudshell/private-cloud-provider-support-in-cloudshell/).
-- For public cloud Apps, see [Managing Public Cloud Apps in Domains](../../admin/supported-cloud-providers-in-cloudshell/public-cloud-provider-support-in-cloudshell/).
+- For private cloud Apps, see [Managing Private Cloud Apps in Domains](../supported-cloud-providers-in-cloudshell/private-cloud-provider-support-in-cloudshell/managing-private-cloud-apps-in-domains.md).
+- For public cloud Apps, see [Managing Public Cloud Apps in Domains](../supported-cloud-providers-in-cloudshell/public-cloud-provider-support-in-cloudshell/managing-public-cloud-apps-in-domains.md).
 
 ## Controlling execution server selection for blueprint commands
 
@@ -63,7 +63,7 @@ See [Configure the Execution Server to Run as a Process by Default](../../instal
 
 ## Working with local tests
 
-If you are using a source control tool and wish to configure CloudShell to work with your local tests, see [Source Control: Using Local Tests in Automation Suites](../../admin/setting-up-cloudshell/source-control-using-local-tests-in-automation-suites/) or contact Quali support or your Customer Success representative.
+If you are using a source control tool and wish to configure CloudShell to work with your local tests, see [Source Control: Using Local Tests in Automation Suites](../setting-up-cloudshell/source-control-using-local-tests-in-automation-suites/) or contact Quali support or your Customer Success representative.
 
 ## Configuring Execution Servers to Deploy vCenter Apps
 

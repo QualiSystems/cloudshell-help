@@ -266,7 +266,7 @@ The basic flow is:
     
 4. Import the Shell to the development server using `shellfoundry install`.  
     
-5. If the shell requires the use of Python dependencies, which aren’t available in the public PyPi repository, add them to the local PyPi Server. See [PyPi Server - Managing Python Shell and Script Dependencies](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Pyth-Cnfg-Mds.htm).  
+5. If the shell requires the use of Python dependencies, which aren’t available in the public PyPi repository, add them to the local PyPi Server. See [PyPi Server - Managing Python Shell and Script Dependencies](../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/pypi-server-managing-python-shell-and-script-dependencies.md).  
     
 6. Create a resource of the Shell for testing:
     
@@ -281,7 +281,7 @@ The basic flow is:
 9. Rinse and repeat!
     
 
-For more information on how to deploy the Shell to production, refer to the [Deploying to Production](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Deploying-to-Production.htm) section.
+For more information on how to deploy the Shell to production, refer to the [Deploying to Production](./deploy-to-prod.md) section.
 
 ## What’s next
 
