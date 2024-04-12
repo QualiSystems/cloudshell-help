@@ -122,12 +122,12 @@ The term "package" may refer to blueprint package, shell package or Python packa
         
 - Shell package contains the definition of a shell, which can be imported into CloudShell. For details, see [Shells Overview](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/LAB-MNG/Features/Shells.htm).
     
-- Python package contains Python dependencies that are required for the execution of specific shells and scripts. For details, [PyPi Server - Managing Python Shell and Script Dependencies](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/pypi-server-managing-python-shell-and-script-dependencies.md).
+- Python package contains Python dependencies that are required for the execution of specific shells and scripts. For details, [PyPi Server - Managing Python Shell and Script Dependencies](../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/pypi-server-managing-python-shell-and-script-dependencies.md).
     
 
 ### PyPi Server
 
-PyPi Server is a CloudShell component, which manages and serves Python packages and dependencies to Python drivers and scripts that are running in CloudShell sandboxes. It is installed on the Quali Server machine and requires access to the Quali Server and Execution Servers. For details, see [PyPi Server - Managing Python Shell and Script Dependencies](https://help.quali.com/Online%20Help/2022.2/Portal/Content/Admn/Pyth-Cnfg-Mds.htm).
+PyPi Server is a CloudShell component, which manages and serves Python packages and dependencies to Python drivers and scripts that are running in CloudShell sandboxes. It is installed on the Quali Server machine and requires access to the Quali Server and Execution Servers. For details, see [PyPi Server - Managing Python Shell and Script Dependencies](../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/pypi-server-managing-python-shell-and-script-dependencies.md).
 
 ### Quali Server
 

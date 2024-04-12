@@ -11,7 +11,7 @@ This article explains how to update your local PyPi Server repository. This is r
 **To update offline Python dependencies:**
 
 1. Make a backup copy of the PyPi Server repository folder so you have the option to revert back if any errors occur.
-2. Download the latest Python dependencies package zip file locally and extract the zip file to the local PyPi Server repository. See [Configuring CloudShell to Execute Python Commands in Offline Mode](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/configuring-cloudshell-to-execute-python-commands-in-offline-mode.md).
+2. Download the latest Python dependencies package zip file locally and extract the zip file to the local PyPi Server repository. See [Configuring CloudShell to Execute Python Commands in Offline Mode](./configuring-cloudshell-to-execute-python-commands-in-offline-mode.md).
 3. Restart any execution server that has a live instance of the relevant driver or script. This requires running the Execution Server's configuration wizard - see [Configure the Execution Server](../../../install-configure/cloudshell-suite/configure-products/config-execution-server.md).
     
 

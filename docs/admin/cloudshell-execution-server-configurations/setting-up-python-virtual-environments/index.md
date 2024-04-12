@@ -6,8 +6,8 @@ The following articles describe what Python virtual environments are, how to con
 
 ## Related topics
 
-- [What are Python Virtual Environments?](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/what-are-python-virtual-environments.md)
-- [PyPi Server - Managing Python Shell and Script Dependencies](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/pypi-server-managing-python-shell-and-script-dependencies.md)
-- [Configuring CloudShell to Execute Python Commands in Offline Mode](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/configuring-cloudshell-to-execute-python-commands-in-offline-mode.md)
-- [Updating Python Dependencies for Shells, Drivers and Scripts](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/updating-python-dependencies-for-shells,-drivers-and-scripts.md)
-- [Cleaning Up the Virtual Environments Folder](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/cleaning-up-the-virtual-environments-folder.md)
+- [What are Python Virtual Environments?](./what-are-python-virtual-environments.md)
+- [PyPi Server - Managing Python Shell and Script Dependencies](./pypi-server-managing-python-shell-and-script-dependencies.md)
+- [Configuring CloudShell to Execute Python Commands in Offline Mode](./configuring-cloudshell-to-execute-python-commands-in-offline-mode.md)
+- [Updating Python Dependencies for Shells, Drivers and Scripts](./updating-python-dependencies-for-shells,-drivers-and-scripts.md)
+- [Cleaning Up the Virtual Environments Folder](./cleaning-up-the-virtual-environments-folder.md)
