@@ -6,14 +6,14 @@ sidebar_position: 2
 
 CloudShell manages driver and script dependencies using **PyPi Server**. PyPi Server is a process that is installed with CloudShell on the **Quali Server** computer.
 :::note
-If you are upgrading to CloudShell 8.3 and above, make sure to migrate your offline and locally developed Python packages to the PyPi Server repository. For additional information, see [Migrate Python Dependencies to PyPi Server](../../../install-configure/cloudshell-suite/upgrade-procedure/migrade-python-dependencies.md).
+If you are upgrading to CloudShell 8.3 and above, make sure to migrate your offline and locally developed Python packages to the PyPi Server repository. For additional information, see [Migrate Python Dependencies to PyPi Server](../../../install-configure/cloudshell-suite/upgrade-procedure/migrate-python-dependencies.md).
 :::
 The PyPi server allows easy and organized development of Python packages for local use. A developer can remotely upload their own local Python packages to the local PyPi server, making them available to all the Execution Servers, without having to expose these packages in a public repository (such as public PyPi) or a testing repository (such as a local TestPy). For details, see [Configuring CloudShell to Execute Python Commands in Offline Mode](./configuring-cloudshell-to-execute-python-commands-in-offline-mode.md).
 
 As illustrated below, the following takes place when a Python script or driver is launched:
 
 1. The execution server contacts the PyPi Server to get the required package versions.
-2. If copies of the packages, with the right versions, reside in the local PyPi Server repository, the Execution Server will download them. However, if the repository contains packages that don't have the right versions (as defined in the shell or script's `requirements.txt` file \- see [Referencing other packages](../../../devguide/developing-shells/driver-deep-dive.md)), the operation will fail.
+2. If copies of the packages, with the right versions, reside in the local PyPi Server repository, the Execution Server will download them. However, if the repository contains packages that don't have the right versions (as defined in the shell or script's `requirements.txt` file \- see [Referencing other packages](../../../devguide/developing-shells/driver-deep-dive.md#referencing-other-packages)), the operation will fail.
 3. If the packages are missing from the local PyPi Server repository, the Execution Server will search and download the packages from public PyPi.
 
 ![](/Images/Admin-Guide/Setting-Up-CloudShell/PyPiServer-flow_673x332.png)

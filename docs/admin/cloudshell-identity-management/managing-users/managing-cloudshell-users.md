@@ -25,7 +25,7 @@ The following user management options are performed in the **Users** tab in the 
         :::
     - **Administrator**: Select to grant the user System Administrator permissions.
         
-        System administrators are the most privileged users in CloudShell. They can access and modify all assets in their domain(s), including private blueprints, create inventory resources and Apps, perform administrative tasks in CloudShell, like managing users, groups and domains, modifying resource families and models, creating and configuring resources in **Resource Manager Client**, and viewing CloudShell activity logs and utilization reports. Other, less privileged user types are defined by their group's role - see [Managing CloudShell Groups](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Add-Grp.htm).
+        System administrators are the most privileged users in CloudShell. They can access and modify all assets in their domain(s), including private blueprints, create inventory resources and Apps, perform administrative tasks in CloudShell, like managing users, groups and domains, modifying resource families and models, creating and configuring resources in **Resource Manager Client**, and viewing CloudShell activity logs and utilization reports. Other, less privileged user types are defined by their group's role - see [Managing CloudShell Groups](./managing-cloudshell-groups.md).
         
     - **Active**: Clear to add the user as an inactive user. This will prevent the user from accessing and using CloudShell but keep the user profile in the system.
     - **Reservation Duration limit**: Select the maximum allowed sandbox duration for the user. The default is 1 day, which can be changed using the `DefaultUserMaxReservationDuration` configuration key.
@@ -46,7 +46,7 @@ The following user management options are performed in the **Users** tab in the 
 
 ## Importing users into CloudShell from an active directory
 
-The following procedures explain how to import users from your active directory into CloudShell. To enable user import, the `ActiveDirectory.Domain` configuration key needs to be set - see [Configuring CloudShell to import user definitions from an active directory](../../../../admin/setting-up-cloudshell/cloudshell-configuration-options/advanced-cloudshell-customizations.md).
+The following procedures explain how to import users from your active directory into CloudShell. To enable user import, the `ActiveDirectory.Domain` configuration key needs to be set - see [Configuring CloudShell to import user definitions from an active directory](../../setting-up-cloudshell/cloudshell-configuration-options/advanced-cloudshell-customizations.md#configuring-cloudshell-to-import-user-definitions-from-an-active-directory).
 
 Once imported and associated to the relevant CloudShell groups and domains, imported users log into CloudShell using their active directory username and password, and the desired CloudShell domain. In addition, the password of an imported user can only be changed from the active directory itself.
 
@@ -74,12 +74,7 @@ In **Resource Manager Client**, in the **Users** tab, imported users have the **
     - AD First Name field maps to the CloudShell Username (in user list and auto-import dialog)
     - AD Display Name field maps to the CloudShell Display Name (in auto-import dialog)
     - AD Pre-win2000 field (SamAccountName) maps to Cloudshell Username. 
-        <details>
-        <summary>
-        Click more...
-        </summary>    
-            ![](/Images/Admin-Guide/User-Management/SamAccountName.png)
-        </details>
+        ![](/Images/Admin-Guide/User-Management/SamAccountName.png)
     :::    
     
 9. Click **OK**.
@@ -95,9 +90,9 @@ You can also import users from an external text file. The file must contain a li
 3. Click the **Import Users** button.
 4. In the **Import Users** dialog box, select the **Import from file** option.
     
-    [![](/Images/Admin-Guide/User-Management/ImportUsersFromFile_thumb_0_48.png)](https://help.quali.com/Online%20Help/0.0/Portal/Content/Images/Admin%20Guide/User%20Management/ImportUsersFromFile.png)
+    ![](/Images/Admin-Guide/User-Management/ImportUsersFromFile.png)
 
-5. Click **Browse** and select the txt file. The email addresses must be comma or semicolon-separated. For example: jane.d@company.com,john.j@company.com,steve.b@company.com,deb.h@company.com
+5. Click **Browse** and select the txt file. The email addresses must be comma or semicolon-separated. For example: `jane.d@company.com,john.j@company.com,steve.b@company.com,deb.h@company.com`
     
     The file contents are displayed in the text box.
     
@@ -113,11 +108,11 @@ You can also import users from an external text file. The file must contain a li
 
 ### Enabling CloudShell to automatically import Active Directory users when they first log in
 
-For additional information, see [Configuring CloudShell to automatically import users from an external system at login](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm#Configur2).
+For additional information, see [Configuring CloudShell to automatically import users from an external system at login](../../setting-up-cloudshell/cloudshell-configuration-options/advanced-cloudshell-customizations.md#configuring-cloudshell-to-automatically-import-users-from-an-external-system-at-login).
 
 ## Updating user settings
 
-This section explains how to edit a user's settings. The user's name cannot be edited. To edit a user's password, see [Changing a user's password](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Add-Usr.htm?Highlight=Managing%20CloudShell%20Users#Changing_pass).
+This section explains how to edit a user's settings. The user's name cannot be edited. To edit a user's password, see [Changing a user's password](../../../admin/cloudshell-identity-management/managing-users/managing-cloudshell-users.md#changing-a-users-password).
 
 **To edit a user's settings:**
 

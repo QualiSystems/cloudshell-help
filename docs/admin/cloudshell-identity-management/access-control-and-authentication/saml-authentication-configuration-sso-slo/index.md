@@ -6,5 +6,5 @@ Single sign-on is an access control and authentication method that enables you t
 
 ## Related Topics
 
-- [Configuring Single Sign-On (SSO)](../../../admin/cloudshell-identity-management/access-control-and-authentication/saml-authentication-configuration-sso-slo/configure-sso/index.md)
-- [Configuring Single Logout (SLO)](../../../../admin/cloudshell-identity-management/access-control-and-authentication/saml-authentication-configuration-sso-slo/configuring-single-logout-slo.md)
+- [Configuring Single Sign-On (SSO)](./configure-sso/index.md)
+- [Configuring Single Logout (SLO)](./configuring-single-logout-slo.md)

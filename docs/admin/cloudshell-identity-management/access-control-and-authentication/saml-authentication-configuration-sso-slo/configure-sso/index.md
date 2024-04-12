@@ -22,12 +22,12 @@ CloudShell supports SAML v2.0. If you encounter an error, please contact your SA
 
 **To configure SAML SSO for CloudShell Portal:**
 
-1. [Set up an Identity Provider (IdP)](../../../../../admin/cloudshell-identity-management/access-control-and-authentication/saml-authentication-configuration-sso-slo/configure-sso/index.md#set-up-an-identity-provider-idp).
+1. [Set up an Identity Provider (IdP)](#set-up-an-identity-provider-idp).
     :::note
     When setting up and managing the Identity provider, make sure to configure the IdP to recognize CloudShell Portal as a service provider.
     :::
-2. [Install a certificate on a local machine](../../../../../admin/cloudshell-identity-management/access-control-and-authentication/saml-authentication-configuration-sso-slo/configure-sso/index.md#install-a-certificate-on-a-local-machine).
-3. [Configure CloudShell to work with SAML SSO](../../../../../admin/cloudshell-identity-management/access-control-and-authentication/saml-authentication-configuration-sso-slo/configure-sso/index.md#configure-cloudshell-to-work-with-saml-sso).
+2. [Install a certificate on a local machine](#install-a-certificate-on-a-local-machine).
+3. [Configure CloudShell to work with SAML SSO](#configure-cloudshell-to-work-with-saml-sso).
 
 ### Set up an Identity Provider (IdP)
 
@@ -149,7 +149,7 @@ For information about creating users, see [Managing CloudShell Users](../../../.
     
     :::note Points to consider:
     - Users are associated to a group if their attributes match all the constraints defined for that group. Users can be associated to more than one group.
-    - By default, group associations are created when registering the user. However, admins can set CloudShell to update the group associations whenever the user logs into CloudShell. For details, see [Enabling CloudShell to auto-update group associations on user login](../../../../../admin/cloudshell-identity-management/access-control-and-authentication/saml-authentication-configuration-sso-slo/configure-sso/index.md#enabling-cloudshell-to-auto-update-group-associations-on-user-login).
+    - By default, group associations are created when registering the user. However, admins can set CloudShell to update the group associations whenever the user logs into CloudShell. For details, see [Enabling CloudShell to auto-update group associations on user login](#enabling-cloudshell-to-auto-update-group-associations-on-user-login).
     - Optionally, you can use regular expressions in the `sso_group_rules.config.json` file you created to define dynamic groups that are conditioned by the values of the SAML parameters. Once regular expressions are enabled, with the `EnableRegex` element, the constraints' values are recognized as regular expressions.
     :::
     :::note Notes for setting up SSO login to a CloudShell API:
@@ -286,7 +286,7 @@ Users with CloudShell credentials can access CloudShell Portal directly, not via
     
 3. Log in to CloudShell Portal using this URL format: **https://\<CloudShell Portal\>/Account/Login?nocustom=nocustom**.
     
-    For example: "https://192.173.45.80/Account/Login?nocustom=nocustom"
+    For example: "`https://192.173.45.80/Account/Login?nocustom=nocustom`"
     
     You are directed to the CloudShell Portal login page
     

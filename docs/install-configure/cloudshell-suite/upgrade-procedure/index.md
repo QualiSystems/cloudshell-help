@@ -39,4 +39,4 @@ Patches must be installed on GA versions only. Installing a patch on a non-GA 
 - [Upgrade Preparation](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Upgrade%20Procedure/upgd-prep.htm)
 - [Upgrade the Validation Environment](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Upgrade%20Procedure/upgrd-valid-env.htm)
 - [Upgrade the Production Environment](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Upgrade%20Procedure/upgrd-prod-env.htm)
-- [Migrate Python Dependencies to PyPi Server](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Upgrade%20Procedure/Mgrt-Pyth-pckgs.htm)
+- [Migrate Python Dependencies to PyPi Server](./migrate-python-dependencies.md)

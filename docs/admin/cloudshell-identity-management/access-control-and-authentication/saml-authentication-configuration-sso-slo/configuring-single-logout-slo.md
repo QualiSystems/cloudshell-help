@@ -86,7 +86,7 @@ Perform the following procedure on each CloudShell Portal machine.
 
 **To configure SAML SLO for CloudShell Portal:**
 
-1. Make sure SSO is configured. For details, see [Configuring Single Sign-On (SSO)](../../../../admin/cloudshell-identity-management/access-control-and-authentication/saml-authentication-configuration-sso-slo/configure-sso/index.md).
+1. Make sure SSO is configured. For details, see [Configuring Single Sign-On (SSO)](./configure-sso/index.md).
 2. Disable the `requireSsl` flag by adding the following code to the `web.config` file.
     :::note
     The `requireSsl` flag only applies to websites that do not use HTTPS. If HTTPS is used, perform the steps in the [Configuring SAML SLO for CloudShell Portal in SSL mode](../../../../admin/cloudshell-identity-management/access-control-and-authentication/saml-authentication-configuration-sso-slo/configuring-single-logout-slo.md#configuring-saml-slo-for-cloudshell-portal-in-ssl-mode) section and carry on with the configuration process.
@@ -106,7 +106,7 @@ Perform the following procedure on each CloudShell Portal machine.
     
     1. In the `<kentor.authServices` section, set the following properties (if the section is missing, add it).
         
-        - `entityId`: CloudShell Portal (service provider). IP address or DNS name, and port if CloudShell Portal is note using the default (8080). For example: "http://192.168.20.134:85/AuthServices"
+        - `entityId`: CloudShell Portal (service provider). IP address or DNS name, and port if CloudShell Portal is note using the default (8080). For example: "`http://192.168.20.134:85/AuthServices`"
         - `returnUrl`: Logout page URL
         
         For example:
@@ -142,7 +142,7 @@ Perform the following procedure on each CloudShell Portal machine.
         </serviceCertificates>
         ```
         
-4. Configure your identity provider. This typically includes setting the SLO logout page URL, CloudShell Portal issuer (for example: "http://192.168.20.134/AuthServices") and .cer certificate file.
+4. Configure your identity provider. This typically includes setting the SLO logout page URL, CloudShell Portal issuer (for example: "`http://192.168.20.134/AuthServices`") and .cer certificate file.
     
     **To configure the identity provider on Okta:**
     
@@ -160,7 +160,7 @@ If CloudShell Portal is running in SSL mode (HTTPS), you will need to perform se
 
 **To configure SAML SLO to work in HTTPS:**
 
-1. In your identity provider, update all SLO logout URLs to be in https mode. For example: "https://192.168.30.27/AuthServices/Acs".
+1. In your identity provider, update all SLO logout URLs to be in https mode. For example: "`https://192.168.30.27/AuthServices/Acs`".
 2. In the `Kentor.config` file, in the `<kentor.authservices` section, update the `entityId` and `returnUrl` URLs to be in https mode. For example:
     
     ![](/Images/Admin-Guide/SLO-configuration/Kentor.AutServices.HTTPSMode.png)

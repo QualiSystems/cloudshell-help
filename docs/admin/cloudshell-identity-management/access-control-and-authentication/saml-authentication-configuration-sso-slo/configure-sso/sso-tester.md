@@ -10,9 +10,9 @@ The SSO Tester utility allows you to test the Saml2 configuration on a CloudShel
 
 Before using the SSO Tester utility, make sure to:
 
-1. [Install the SSO Tester utility](../../../../../admin/cloudshell-identity-management/access-control-and-authentication/saml-authentication-configuration-sso-slo/configure-sso/sso-tester.md#install-the-sso-tester-utility)
-2. [Create a new website in IIS Manager](../../../../../admin/cloudshell-identity-management/access-control-and-authentication/saml-authentication-configuration-sso-slo/configure-sso/sso-tester.md#create-a-new-website-in-iis-manager)
-3. [Configure CloudShell to work with SAML SSO](../../../../../admin/cloudshell-identity-management/access-control-and-authentication/saml-authentication-configuration-sso-slo/configure-sso/index.md#configure-cloudshell-to-work-with-saml-sso)
+1. [Install the SSO Tester utility](#install-the-sso-tester-utility)
+2. [Create a new website in IIS Manager](#create-a-new-website-in-iis-manager)
+3. [Configure CloudShell to work with SAML SSO](./index.md#configure-cloudshell-to-work-with-saml-sso)
 :::note
 Make sure you have IIS installed on your machine. The SSO Tester utility does not work on machines on which the default IIS Express is installed.
 :::
@@ -75,7 +75,7 @@ The SSO Tester package includes a web application that tests SSO integration wit
     <kentor.authServices entityId="http://CloudShellPortalURL/AuthServices" returnUrl="http://CloudShellPortalURL/">
     ```
     
-3. Edit the `kentor.config` file, according to the requirements described in [Sample file requirements](../../../../../admin/cloudshell-identity-management/access-control-and-authentication/saml-authentication-configuration-sso-slo/configure-sso/index.md#sample-file-requirements).
+3. Edit the `kentor.config` file, according to the requirements described in [Sample file requirements](./index.md#sample-file-requirements).
 4. Open CloudShell Portal.
     
     You are redirected to the IdP login page.

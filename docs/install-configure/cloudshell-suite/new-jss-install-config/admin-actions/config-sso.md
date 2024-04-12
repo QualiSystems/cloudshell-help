@@ -19,9 +19,9 @@ The user SSO login process is as follows:
 
 **Best practices:**
 
-- [Configure the New Job Scheduling to Run in HTTPS](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/JSS/jss-https.htm)
+- [Configure the New Job Scheduling to Run in HTTPS](./config-https.md)
     
-- [Configuring Single Sign-On (SSO)](../../../admin/cloudshell-identity-management/access-control-and-authentication/saml-authentication-configuration-sso-slo/configure-sso/index.md) (Recommended. Without CloudShell SSO, a CloudShell user must be created for each SSO user prior to SSO login)
+- [Configuring Single Sign-On (SSO)](../../../../admin/cloudshell-identity-management/access-control-and-authentication/saml-authentication-configuration-sso-slo/configure-sso/index.md) (Recommended. Without CloudShell SSO, a CloudShell user must be created for each SSO user prior to SSO login)
     
 
 **To enable SSO for the New Job Scheduling:**

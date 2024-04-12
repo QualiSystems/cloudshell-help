@@ -4,7 +4,7 @@ CloudShell provides several access control and authentication methods. Active Di
 
 ## Related Topics
 
-- [Active Directory Integration](../../../admin/cloudshell-identity-management/access-control-and-authentication/active-directory-integration/index.md)
-- [LDAP Integration](../../../admin/cloudshell-identity-management/access-control-and-authentication/ldap-integration.md)
-- [Configuring Single Sign-On (SSO)](../../../admin/cloudshell-identity-management/access-control-and-authentication/saml-authentication-configuration-sso-slo/configure-sso/index.md)
-- [JSON Web Token (JWT) Configuration](../../../admin/cloudshell-identity-management/access-control-and-authentication/json-web-token-jwt-configuration.md)
+- [Active Directory Integration](./active-directory-integration/index.md)
+- [LDAP Integration](./ldap-integration.md)
+- [Configuring Single Sign-On (SSO)](./saml-authentication-configuration-sso-slo/configure-sso/index.md)
+- [JSON Web Token (JWT) Configuration](./json-web-token-jwt-configuration.md)

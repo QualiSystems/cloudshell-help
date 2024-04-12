@@ -658,7 +658,7 @@ By default, when users log out of CloudShell Portal, they are redirected to your
 
 ### Configuring CloudShell to import user definitions from an active directory
 
-The following procedures explain how to enable the import of users from your corporate Microsoft Active Directory into CloudShell. To import user definitions, see [Importing users into CloudShell from an active directory](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Add-Usr.htm#Importing). Note that the passwords of imported users are managed by the active directory itself.
+The following procedures explain how to enable the import of users from your corporate Microsoft Active Directory into CloudShell. To import user definitions, see [Importing users into CloudShell from an active directory](../../cloudshell-identity-management/managing-users/managing-cloudshell-users.md#importing-users-into-cloudshell-from-an-active-directory). Note that the passwords of imported users are managed by the active directory itself.
 
 :::note Prerequisite:
 The computer that will be used to import the users must be in your corporate domain.

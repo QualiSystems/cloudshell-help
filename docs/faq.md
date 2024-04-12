@@ -33,7 +33,7 @@ Yes. CloudShell allows linking specific Execution Servers to resources, Apps, se
 
 Yes. Our All Help Versions help page is provided specifically for this purpose. Here you can view the different helps and also download them for offline use.
 
-- Click the All Help Versions button in the online help's toolbar or use this [link](https://.com/help%20versions/All%20Versions%20Help/Content/Versions.htm).
+- Click the All Help Versions button in the online help's toolbar or use this [link](https://help.quali.com/help%20versions/All%20Versions%20Help/Content/Versions.htm).
     
     ![](/Images/CloudShell-Portal/AllHelpVersionsButton.png)
     
