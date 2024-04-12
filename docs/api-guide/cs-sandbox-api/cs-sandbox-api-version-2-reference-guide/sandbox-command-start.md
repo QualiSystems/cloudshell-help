@@ -22,7 +22,7 @@ Executes a particular command for a specific sandbox.
 <summary>URL</summary>
 
 :::note
- You can get the **sandbox ID** from the [sandboxes](http://localhost:3000/cloudshell-help/next/api-guide/cs-sandbox-api/cs-sandbox-api-version-2-reference-guide/sandboxes) method, [blueprint start](http://localhost:3000/cloudshell-help/next/api-guide/cs-sandbox-api/cs-sandbox-api-version-2-reference-guide/blueprint-start) method, and from the sandbox ID segment in the CloudShell Portal URL, the **component ID** from the [sandbox components](http://localhost:3000/cloudshell-help/next/api-guide/cs-sandbox-api/cs-sandbox-api-version-2-reference-guide/sandbox-components) method and the [blueprint start](http://localhost:3000/cloudshell-help/next/api-guide/cs-sandbox-api/cs-sandbox-api-version-2-reference-guide/blueprint-start) method, and the **command's name** from the [sandbox component commands](http://localhost:3000/cloudshell-help/next/api-guide/cs-sandbox-api/cs-sandbox-api-version-2-reference-guide/sandbox-component-commands) method.
+ You can get the sandbox ID from the [sandboxes](./sandboxes.md) method, [blueprint start](./blueprint-start.md) method, and from the sandbox ID segment in the CloudShell Portal URL. You can get the component ID from the [sandbox components](./sandbox-components.md) method and the [blueprint start](./blueprint-start.md) method, and the command's name from the [sandbox component commands](./sandbox-component-commands.md) method.
 :::
 
 | Parameter | Description/Comments |

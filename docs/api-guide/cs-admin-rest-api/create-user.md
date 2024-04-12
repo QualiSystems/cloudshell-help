@@ -1,5 +1,5 @@
 ---
-sidebar_position: 22
+sidebar_position: 30
 ---
 
 # Create user
@@ -8,19 +8,15 @@ sidebar_position: 22
 
 Creates a new user in CloudShell.
 
+### URL
+
+`http://{Admin API IP}:{port#}/api/v1/users`
+
 ### HTTP method
 
-POST
+`POST`
 
 ### Request
-
-<details>
-<summary>URL</summary>
-
-```javascript
-http://{Admin API IP}:{port#}/api/v1/users
-```
-</details>
 
 <details>
 <summary>Headers</summary>

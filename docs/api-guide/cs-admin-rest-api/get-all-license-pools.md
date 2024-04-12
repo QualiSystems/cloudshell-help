@@ -1,5 +1,5 @@
 ---
-sidebar_position: 27
+sidebar_position: 36
 ---
 
 # Get all license pools
@@ -8,19 +8,15 @@ sidebar_position: 27
 
 Gets a list of all license pools in CloudShell.
 
+### URL
+
+`http://{Admin API IP}:{port#}/api/v1/licensepools`
+
 ### HTTP method
 
-GET
+`GET`
 
 ### Request
-
-<details>
-<summary>URL</summary>
-
-```javascript
-http://{Admin API IP}:{port#}/api/v1/licensepools
-```
-</details>
 
 <details>
 <summary>Headers</summary>

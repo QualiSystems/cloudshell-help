@@ -8,8 +8,8 @@ You can prepare or assign, from within the blueprint workspace, resource attribu
 :::note
 **Points to consider:** CloudShell does not automatically set the new values on the resource, as it does when you set custom resource attribute values in the sandbox.
 
-- You need to first apply the changes using the [Activate-topology](https://help.quali.com/Online%20Help/0.0/Python-API/cloudshell.api.html?highlight=activatetopology#cloudshell.api.cloudshell_api.CloudShellAPISession.ActivateTopology) API, which can be added to the setup flow. Please take into account that this API will also trigger the connection of all the L1 routes.
-- Alternatively, you can read the updated values from the blueprint's information using the [GetTopologyDetails](https://help.quali.com/Online%20Help/0.0/Python-API/cloudshell.api.html?highlight=gettopologydetails#cloudshell.api.cloudshell_api.CloudShellAPISession.GetTopologyDetails) API, and either use it to set the values on the resource or just use it as part of the scripts.
+- You need to first apply the changes using the [Activate-topology](pathname:///api-docs/2023.3/Python-API/cloudshell.api.html?highlight=activatetopology#cloudshell.api.cloudshell_api.CloudShellAPISession.ActivateTopology) API, which can be added to the setup flow. Please take into account that this API will also trigger the connection of all the L1 routes.
+- Alternatively, you can read the updated values from the blueprint's information using the [GetTopologyDetails](pathname:///api-docs/2023.3/Python-API/cloudshell.api.html?highlight=gettopologydetails#cloudshell.api.cloudshell_api.CloudShellAPISession.GetTopologyDetails) API, and either use it to set the values on the resource or just use it as part of the scripts.
 :::
 **To modify resource attributes:**
 

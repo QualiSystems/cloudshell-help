@@ -1,5 +1,5 @@
 ---
-sidebar_position: 14
+sidebar_position: 17
 ---
 
 # Get all groups
@@ -8,19 +8,16 @@ sidebar_position: 14
 
 Gets a list of all groups in CloudShell.
 
+### URL
+
+`http://{Admin API IP}:{port#}/api/v1/groups`
+
 ### HTTP method
 
-GET
+`GET`
 
 ### Request
 
-<details>
-<summary>URL</summary>
-
-```javascript
-http://{Admin API IP}:{port#}/api/v1/groups
-```
-</details>
 
 <details>
 <summary>Headers</summary>

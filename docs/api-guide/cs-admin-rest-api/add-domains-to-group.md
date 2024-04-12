@@ -1,5 +1,5 @@
 ---
-sidebar_position: 15
+sidebar_position: 23
 ---
 
 
@@ -9,19 +9,20 @@ sidebar_position: 15
 
 Adds one or more domains to a given group.
 
+### URL 
+
+`http://{Admin API IP}:{port#}/api/v1/groups/{id}/domain`
+
+| Parameter | Description/Comments |
+| --- | --- |
+| ID | (string) Group's ID. Can be retrieved via [Get all groups](./get-all-groups.md). |
+
 ### HTTP method
 
-POST
+`POST`
 
 ### Request
 
-<details>
-<summary>URL</summary>
-
-```javascript
-http://{Admin API IP}:{port#}/api/v1/groups/{id}/domain
-```
-</details>
 
 <details>
 <summary>Headers</summary>
@@ -32,10 +33,6 @@ Example header format:
 
 `Content-Type: application/json`
 
-| Parameter | Description/Comments |
-| --- | --- |
-| ID | (string) Group's ID. Can be retrieved via [Get all groups](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-all-groups.htm). |
-
 </details>
 
 <details>
@@ -43,7 +40,7 @@ Example header format:
 
 | Parameter | Description/Comments |
 | --- | --- |
-| Id | (string) Group's id. Can be retrieved via [Get all groups](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-all-groups.htm). |
+| Id | (string) Domain ids. Can be retrieved via [Get all domains](./get-all-domains.md). |
 | ViewOnly | (bool) Specify true to add the group with "view only" permissions. |
 </details>
 

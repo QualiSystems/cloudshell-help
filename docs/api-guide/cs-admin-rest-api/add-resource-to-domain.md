@@ -1,5 +1,5 @@
 ---
-sidebar_position: 12
+sidebar_position: 15
 ---
 
 # Add resources to domain
@@ -8,33 +8,28 @@ sidebar_position: 12
 
 Add resources from other domains to a give domain.
 
+### URL
+
+`http://{Admin API IP}:{port#}/api/v1/domains/{id}/resources`
+
+| Parameter | Description/Comments |
+| --- | --- |
+| ID | (string) Domain's id. Can be retrieved via [Get all domains](./get-all-domains.md). |
+
 ### HTTP method
 
-POST
+`POST`
 
 ### Request
 
 <details>
-<summary>URL</summary>
-```javascript
-http://{Admin API IP}:{port#}/api/v1/domains/{id}/resources
-```
-</details>
-
-<details>
 <summary>Headers</summary>
-
-
 
 Example header format:
 
 `Authorization: Basic <authorization token returned from the login method>`
 
 `Content-Type: application/json`
-
-| Parameter | Description/Comments |
-| --- | --- |
-| id | (string) Domain's id. Can be retrieved via [Get all domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-all-domains.htm). |
 
 </details>
 
@@ -43,7 +38,7 @@ Example header format:
 
 | Parameter | Description/Comments |
 | --- | --- |
-| id | (string) Resource id. Can be retrieved via [Get domain's resources](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-domain-resources.htm). |
+| id | (string) Resource id. Can be retrieved via [Get domain's resources](./get-domain-resources.md). |
 | IncludeDescendants | (bool) (Optional) Include sub-resources in the domain. Default is **true**. |
 
 </details>

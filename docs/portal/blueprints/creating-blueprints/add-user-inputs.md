@@ -43,7 +43,7 @@ Global inputs are a simple way to request information from the user when they re
     - Setup scripts that use global inputs with empty spaces before or after the input value may sometimes fail.
     - When a single Lookup attribute is linked, all of the attribute's values are available for selection from the input. However, when linked to multiple Lookup attributes, the input will only contain values that are both published (on the abstract resource or service) and shared by all linked attributes.
     :::
-- A **Password** input accepts a freetext password value. The value is displayed as a masked value (\*\*\*\*\*). This type of global input cannot be linked to other inputs. Note that the value can be decrypted using the CloudShell Automation API's [DecryptPassword](https://help.quali.com/Online%20Help/0.0/Python-API/cloudshell.api.html?highlight=decryptpassword#cloudshell.api.cloudshell_api.CloudShellAPISession.DecryptPassword) method.
+- A **Password** input accepts a freetext password value. The value is displayed as a masked value (\*\*\*\*\*). This type of global input cannot be linked to other inputs. Note that the value can be decrypted using the CloudShell Automation API's [DecryptPassword](pathname:///api-docs/2023.3/Python-API/cloudshell.api.html?highlight=decryptpassword#cloudshell.api.cloudshell_api.CloudShellAPISession.DecryptPassword) method.
 
 :::tip Tip for admins: 
 It is possible to resize the global text boxes of the global inputs. For details, see [Resizing the value box of "text" global inputs](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Rsz-text-glbl-inpt.htm#Resizing).

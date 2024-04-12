@@ -21,7 +21,7 @@ For additional details about each API, see below.
 
 ## CloudShell Administration REST API
 
-A RESTFul API that allows your admins to perform CloudShell administration tasks remotely, without having to open Resource Manager Client. As such, this API allows you to perform all the tasks provided by Resource Manager Client. This includes managing domains, groups, users, license pools, and also share blueprints/resources among different domains. For details, see [CloudShell Administration REST API](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-ovrvw.htm).
+A RESTFul API that allows your admins to perform CloudShell administration tasks remotely, without having to open Resource Manager Client. As such, this API allows you to perform all the tasks provided by Resource Manager Client. This includes managing domains, groups, users, license pools, and also share blueprints/resources among different domains. For details, see [CloudShell Administration REST API](./cs-admin-rest-api/index.md).
 
 ## Sandbox API
 
@@ -29,7 +29,7 @@ A RESTful API designed to facilitate the consumption of public blueprints for CI
 
 ## Automation API
 
-This API is an official Python package utilizing XMLRPC protocol to communicate with CloudShell. It's designed to automate CloudShell from Python scripts and drivers. The CloudShell Automation API is based on the XML RPC API. For details, see the [CloudShell Automation API](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/Pyth-API-Overvw.htm) article, or check out our API guides. The Python package [API guide](https://help.quali.com/Online%20Help/0.0/Python-API/) includes additional information like return objects and is intended for experienced Python developers, while for beginners, we recommend to use the [TestShell API Python Reference Guide](https://help.quali.com/Online%20Help/0.0/TestShell-API/TestShell%20Python%20API.html), which features an easy to understand format and code examples.
+This API is an official Python package utilizing XMLRPC protocol to communicate with CloudShell. It's designed to automate CloudShell from Python scripts and drivers. The CloudShell Automation API is based on the XML RPC API. For details, see the [CloudShell Automation API](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/Pyth-API-Overvw.htm) article, or check out our API guides. The Python package [API guide](pathname:///api-docs/2023.3/Python-API/) includes additional information like return objects and is intended for experienced Python developers, while for beginners, we recommend to use the [TestShell API Python Reference Guide](pathname:///api-docs/2023.3/TestShell-API/TestShell%20Python%20API.html), which features an easy to understand format and code examples.
 
 To learn how to implement this API in .NET or XML RPC, see [TestShell API](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/TS-API.htm).
 
@@ -37,9 +37,9 @@ To learn how to implement this API in .NET or XML RPC, see [TestShell API](https
 
 A RESTful API designed to control the scheduling and queuing of test automation suites. Quali API can be used in several protocols (C#, TCL). This API is also used for importing and exporting packages and Shells, getting sandbox attachments, and execution server details. For details, see [Quali API](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/Quali-API-Topic.htm), or check out the appropriate Quali API reference guide:
 
-- [Quali API Library Reference Guide](https://help.quali.com/Online%20Help/0.0/Quali-API/Quali%20API%20Library.html): is available by default in the TestShell Studio tools and can be added as a DLL asset to a project in CloudShell Authoring.
-- [Quali API C# Reference Guide](https://help.quali.com/Online%20Help/0.0/Quali-API/Quali%20cSharp%20API.html "Quali API C# Reference Guide"): for .NET
-- [Quali API REST Reference Guide](https://help.quali.com/Online%20Help/0.0/Quali-API/Quali%20REST%20API.html "Quali API REST Reference Guide"): for APIs using the REST client
+- [Quali API Library Reference Guide](pathname:///api-docs/2023.3/Quali-API/Quali%20API%20Library.html): is available by default in the TestShell Studio tools and can be added as a DLL asset to a project in CloudShell Authoring.
+- [Quali API C# Reference Guide](pathname:///api-docs/2023.3/Quali-API/Quali%20cSharp%20API.html "Quali API C# Reference Guide"): for .NET
+- [Quali API REST Reference Guide](pathname:///api-docs/2023.3/Quali-API/Quali%20REST%20API.html "Quali API REST Reference Guide"): for APIs using the REST client
 
 The default port for Quali API in the Quali Server is 9000.
 

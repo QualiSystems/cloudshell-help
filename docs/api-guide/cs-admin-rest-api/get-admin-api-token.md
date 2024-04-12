@@ -8,19 +8,15 @@ sidebar_position: 2
 
 Gets an authentication token for Administration API.
 
+### URL
+
+`http://{Admin API IP}:{port#}/Api/Auth/Login`
+
 ### HTTP method
 
-PUT
+`PUT`
 
 ### Request
-
-<details>
-<summary>URL</summary>
-
-```javascript
-http://{Admin API IP}:{port#}/Api/Auth/Login
-```
-</details>
 
 <details>
 <summary>Headers</summary>

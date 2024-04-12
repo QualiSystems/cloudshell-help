@@ -1,5 +1,5 @@
 ---
-sidebar_position: 13
+sidebar_position: 16
 ---
 
 # Remove resources from domain
@@ -8,18 +8,19 @@ sidebar_position: 13
 
 Removes resources/sub-resources from domain by id.
 
+### URL
+
+`http://{Admin API IP}:{port#}/api/v1/domains/{id}/resources`
+
+| Parameter | Description/Comments |
+| --- | --- |
+| ID | (string) Domain's ID. Can be retrieved via [Get all domains](./get-all-domains.md).|
+
 ### HTTP method
 
-DELETE
+`DELETE`
 
 ### Request
-
-<details>
-<summary>URL</summary>
-```javascript
-http://{Admin API IP}:{port#}/api/v1/domains/{id}/resources
-```
-</details>
 
 <details>
 <summary>Headers</summary>
@@ -30,9 +31,6 @@ Example header format:
 
 `Content-Type: application/json`
 
-| Parameter | Description/Comments |
-| --- | --- |
-| ID | (string) Domain's ID. |
 </details>
 
 <details>
@@ -40,7 +38,7 @@ Example header format:
 
 | Parameter | Description/Comments |
 | --- | --- |
-| Id | (string) Resource id (not ParentId). Can be retrieved via [Get domain's resources](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-domain-resources.htm). |
+| Id | (string) Resource id (not ParentId). Can be retrieved via [Get domain's resources](./get-domain-resources.md). |
 | RemoveAssocations | (bool) Unbooks the resource in the domain. Default is **true**. |
 </details>
 

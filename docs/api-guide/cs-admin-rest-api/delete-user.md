@@ -1,5 +1,5 @@
 ---
-sidebar_position: 23
+sidebar_position: 32
 ---
 
 # Delete user
@@ -8,19 +8,19 @@ sidebar_position: 23
 
 Delete a specific user from CloudShell.
 
+### URL
+
+`http://{Admin API IP}:{port#}/api/v1/users/{id}`
+
+| Parameter | Description/Comments |
+| --- | --- |
+| id | (string) User's id. Can be retrieved via [Get all users](./get-all-users.md) or [Get group's users](./get-group-users.md). |
+
 ### HTTP method
 
-DELETE
+`DELETE`
 
 ### Request
-
-<details>
-<summary>URL</summary>
-
-```javascript
-http://{Admin API IP}:{port#}/api/v1/users/{id}
-```
-</details>
 
 <details>
 <summary>Headers</summary>
@@ -30,10 +30,6 @@ Example header format:
 `Authorization: Basic <authorization token returned from the login method>`
 
 `Content-Type: application/json`
-
-| Parameter | Description/Comments |
-| --- | --- |
-| id | (string) User's id. Can be retrieved via [Get all users](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-all-users.htm) or [Get group's users](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-group-users.htm). |
 </details>
 
 ### Response

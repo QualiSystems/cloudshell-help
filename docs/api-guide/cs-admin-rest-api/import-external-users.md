@@ -1,5 +1,5 @@
 ---
-sidebar_position: 26
+sidebar_position: 35
 ---
 
 # Import external users
@@ -8,19 +8,15 @@ sidebar_position: 26
 
 Import users from your active directory/LDAP into CloudShell.
 
+### URL
+
+`http://{Admin API IP}:{port#}/api/v1/integrations/IdentityManagement/users`
+
 ### HTTP method
 
-POST
+`POST`
 
 ### Request
-
-<details>
-<summary>URL</summary>
-
-```javascript
-http://{Admin API IP}:{port#}/api/v1/integrations/IdentityManagement/users
-```
-</details>
 
 <details>
 <summary>Headers</summary>
@@ -38,8 +34,8 @@ Example header format:
 
 | Parameter | Description/Comments |
 | --- | --- |
-| UserName | External user name. Can be retrieved via [Get users from an external group](http://localhost:3000/cloudshell-help/next/api-guide/cs-admin-rest-api/get-users-from-an-external-group) |
-| GroupName | External group name. Can be retrieved via [Get all external groups](http://localhost:3000/cloudshell-help/next/api-guide/cs-admin-rest-api/get-all-external-groups). <br/> TIP: You should import by group name for larger organizations containing hundreds of users as importing all users may fail due to active directory/LDAP limitations. |
+| UserName | External user name. Can be retrieved via [Get users from an external group](./get-users-from-an-external-group.md) |
+| GroupName | External group name. Can be retrieved via [Get all external groups](./get-all-external-groups.md). <br/> TIP: You should import by group name for larger organizations containing hundreds of users as importing all users may fail due to active directory/LDAP limitations. |
 
 </details>
 

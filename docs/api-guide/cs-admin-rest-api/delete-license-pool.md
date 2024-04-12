@@ -1,24 +1,26 @@
 ---
-sidebar_position: 31
+sidebar_position: 40
 ---
+
+# Delete license pool
 
 ### Description
 
 Delete a specific license pool from CloudShell.
 
+### URL
+
+`http://{Admin API IP}:{port#}/api/v1/licensepools/{id}`
+
+| Parameter | Description/Comments |
+| --- | --- |
+| id | (string) License pool's id. Can be retrieved via [Get all license pools](./get-all-license-pools.md). |
+
 ### HTTP method
 
-DELETE
+`DELETE`
 
 ### Request
-
-<details>
-<summary>URL</summary>
-
-```javascript
-http://{Admin API IP}:{port#}/api/v1/licensepools/{id}
-```
-</details>
 
 <details>
 <summary>Headers</summary>
@@ -29,9 +31,6 @@ Example header format:
 
 `Content-Type: application/json`
 
-| Parameter | Description/Comments |
-| --- | --- |
-| id | (string) License pool's id. Can be retrieved via [Get all license pools](http://localhost:3000/cloudshell-help/next/api-guide/cs-admin-rest-api/get-all-license-pools). |
 </details>
 
 ### Response

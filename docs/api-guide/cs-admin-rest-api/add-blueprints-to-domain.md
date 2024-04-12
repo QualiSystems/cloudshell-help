@@ -8,18 +8,19 @@ sidebar_position: 9
 
 Adds one or more blueprints from different domains to the desired domain.
 
+### URL 
+
+`http://{Admin API IP}:{port#}/api/v1/domains/{id}/blueprints`
+
+| Parameter | Description/Comments |
+| --- | --- |
+| ID | (string) Domain's ID. Can be retrieved via [Get all domains](./get-all-domains.md).|
+
 ### HTTP method
 
-POST
+`POST`
 
 ### Request
-
-<details>
-<summary>URL</summary>
-```javascript
-http://{Admin API IP}:{port#}/api/v1/domains/{id}/blueprints
-```
-</details>
 
 <details>
 <summary>Headers</summary>
@@ -31,9 +32,6 @@ Example header format:
 
 `Content-Type: application/json`
 
-| Parameter | Description/Comments |
-| --- | --- |
-| id | (string) Domain's id. |
 </details>
 
 <details>

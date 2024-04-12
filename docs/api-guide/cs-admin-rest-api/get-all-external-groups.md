@@ -1,5 +1,5 @@
 ---
-sidebar_position: 24
+sidebar_position: 33
 ---
 
 # Get all external groups
@@ -8,19 +8,15 @@ sidebar_position: 24
 
 Get all external groups from your active directory/LDAP.
 
+### URL
+
+`http://{Admin API IP}:{port#}/api/v1/integrations/IdentityManagement/groups`
+
 ### HTTP method
 
-GET
+`GET`
 
 ### Request
-
-<details>
-<summary>URL</summary>
-
-```javascript
-http://{Admin API IP}:{port#}/api/v1/integrations/IdentityManagement/groups
-```
-</details>
 
 <details>
 <summary>Headers</summary>

@@ -10,7 +10,7 @@ Developers can use the CloudShell Sandbox API to retrieve information and auto
 CloudShell Sandbox API only works with public blueprints.
 :::
 
-For more information, see [Automating CloudShell Sandboxes for DevOps](http://localhost:3000/cloudshell-help/next/devguide/available-cs-api/automate-cs-sandboxes-for-devops).
+For more information, see [Automating CloudShell Sandboxes for DevOps](../../devguide/available-cs-api/automate-cs-sandboxes-for-devops.md).
 
 ## CloudShell Sandbox API live documentation page
 

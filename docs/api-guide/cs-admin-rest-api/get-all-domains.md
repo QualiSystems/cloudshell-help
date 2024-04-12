@@ -8,19 +8,15 @@ sidebar_position: 3
 
 Gets a list of all domains in CloudShell
 
+### URL
+
+`http://{Admin API IP}:{port#}/api/v1/domains`
+
 ### HTTP method
 
-GET
+`GET`
 
 ### Request
-
-<details>
-<summary>URL</summary>
-
-```javascript
-http://{Admin API IP}:{port#}/api/v1/domains
-```
-</details>
 
 <details>
 <summary>Headers</summary>

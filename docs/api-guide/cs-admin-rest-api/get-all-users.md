@@ -1,5 +1,5 @@
 ---
-sidebar_position: 20
+sidebar_position: 28
 ---
 
 # Get all users
@@ -8,19 +8,15 @@ sidebar_position: 20
 
 Gets a list of all users in CloudShell.
 
+### URL 
+
+`http://{Admin API IP}:{port#}/api/v1/users`
+
 ### HTTP method
 
-GET
+`GET`
 
 ### Request
-
-<details>
-<summary>URL</summary>
-
-```javascript
-http://{Admin API IP}:{port#}/api/v1/users
-```
-</details>
 
 <details>
 <summary>Headers</summary>

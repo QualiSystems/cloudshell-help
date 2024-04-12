@@ -8,18 +8,19 @@ sidebar_position: 10
 
 Removes one or more blueprints from a domain.
 
+### URL 
+
+`http://{Admin API IP}:{port#}/api/v1/domains/{id}/blueprint`
+
+| Parameter | Description/Comments |
+| --- | --- |
+| ID | (string) Domain's ID. Can be retrieved via [Get all domains](./get-all-domains.md).|
+
 ### HTTP method
 
-DELETE
+`DELETE`
 
 ### Request
-
-<details>
-<summary>URL</summary>
-```javascript
-http://{Admin API IP}:{port#}/api/v1/domains/{id}/blueprint
-```
-</details>
 
 <details>
 <summary>Headers</summary>
@@ -31,9 +32,6 @@ Example header format:
 
 `Content-Type: application/json`
 
-| Parameter | Description/Comments |
-| --- | --- |
-| id | (string) Domain's id. Can be retrieved via [Get all domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-all-domains.htm). |
 </details>
 
 <details>

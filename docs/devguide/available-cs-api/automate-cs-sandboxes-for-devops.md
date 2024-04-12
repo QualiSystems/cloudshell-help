@@ -25,7 +25,7 @@ The Sandbox API live documentation page is installed with CloudShell. To access 
 
 #### CloudShell Automation API
 
-The latest Automation API online help is available [here](https://help.quali.com/Online%20Help/0.0/Python-API).
+The latest Automation API online help is available [here](pathname:///api-docs/2023.3/Python-API).
 
 When using the cloudshell\-automation-api package, make sure to install the version of the API which is compatible with your CloudShell version. To make the task of finding the right version easier, this package follows a versioning schema different from other CloudShell packages. The major and minor version of the cloudshell\-automation-api package will always match the CloudShell release its compatible with. Therefore, to install the latest compatible version you need to add these version requirements when installing from pip.
 

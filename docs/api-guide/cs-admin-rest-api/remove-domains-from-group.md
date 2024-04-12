@@ -1,5 +1,5 @@
 ---
-sidebar_position: 16
+sidebar_position: 24
 ---
 
 # Remove domains from group
@@ -8,19 +8,20 @@ sidebar_position: 16
 
 Removes one or more domains from a given group.
 
+### URL
+
+`http://{Admin API IP}:{port#}/api/v1/groups/{id}/domains`
+
+| Parameter | Description/Comments |
+| --- | --- |
+| ID | (string) Group's ID. Can be retrieved via [Get all groups](./get-all-groups.md). |
+
 ### HTTP method
 
-DELETE
+`DELETE`
 
 ### Request
 
-<details>
-<summary>URL</summary>
-
-```javascript
-http://{Admin API IP}:{port#}/api/v1/groups/{id}/domains
-```
-</details>
 
 <details>
 <summary>Headers</summary>
@@ -31,9 +32,6 @@ Example header format:
 
 `Content-Type: application/json`
 
-| Parameter | Description/Comments |
-| --- | --- |
-| ID | (string) Group's ID. Can be retrieved via [Get all groups](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-all-groups.htm). |
 </details>
 
 <details>
