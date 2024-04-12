@@ -8,8 +8,9 @@ This article explains how to add an App to your blueprint.
 :::tip
 You can also add deployed Apps (Apps deployed in another sandbox) to your sandbox as shared resources, cutting App deployment time. For example, you could have a "master" sandbox containing a pool of deployed Apps, which can be added to other sandboxes as resources or to blueprints as abstract resources. Note that such Apps can be deleted only from the master blueprint, but you can still power them on/off in the secondary sandboxes.
 :::
+
 :::note
-To enable the deployment of Apps based on a public cloud like AWS EC2 or Azure, make sure the blueprint is configured to run a setup script that can prepare connectivity in the sandbox, like CloudShell's out-of-the-box Default Sandbox Setup script, and add at least one public cloud App to the blueprint to initiate the script's connectivity process for the cloud provider during the Setup phase of the sandbox. For additional information, see [Configure Blueprint Orchestration](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Crt-Blprnt/Blprnt-Blprnt-Orchs.htm).
+To enable the deployment of Apps based on a public cloud like AWS EC2 or Azure, make sure the blueprint is configured to run a setup script that can prepare connectivity in the sandbox, like CloudShell's out-of-the-box Default Sandbox Setup script, and add at least one public cloud App to the blueprint to initiate the script's connectivity process for the cloud provider during the Setup phase of the sandbox. For additional information, see [Configure Blueprint Orchestration](../configure-orchestration.md).
 :::
 **To add an App to the diagram:**
 
@@ -27,5 +28,5 @@ To enable the deployment of Apps based on a public cloud like AWS EC2 or Azure, 
 
 ## Related Topics
 
-- [Apps in Blueprints](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Blprnt-Use-Apps.htm)
-- [Apps in Sandboxes](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Use-Apps.htm#top)
+- [Apps in Blueprints](../../../../portal/blueprints/creating-blueprints/apps)
+- [Apps in Sandboxes](../../../../portal/sandboxes/workspace/apps)

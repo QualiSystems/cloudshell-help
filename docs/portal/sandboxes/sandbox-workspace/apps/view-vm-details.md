@@ -26,5 +26,4 @@ For Kubernetes, the VM's external IP is displayed.
 
 ## Related Topics
 
-- [Apps in Sandboxes](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Use-Apps.htm)
-- [Apps in Blueprints](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Blprnt-Use-Apps.htm)
+- [Apps in Sandboxes](../../../../portal/sandboxes/workspace/apps)

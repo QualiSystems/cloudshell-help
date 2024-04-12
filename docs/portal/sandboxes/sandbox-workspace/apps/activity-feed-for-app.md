@@ -6,7 +6,7 @@ sidebar_position: 5
 
 The **Activity Feed** pane enables you to display system messages and command execution progress for a specific App in the sandbox.
 
-For information about the activity feed for a resource or service in the sandbox, see [Activity Feed for a Resource in the Sandbox](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Cmpnt-Actvt-Fd.htm) and [Activity Feed for a service in the sandbox](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Use-Srvc.htm#Activity), respectively.
+For information about the activity feed for a resource or service in the sandbox, see [Activity Feed for a Resource in the Sandbox](../resources/activity-feed-for-resources.md) and [Activity Feed for a service in the sandbox](../services.md#activity-feed-for-a-service-in-the-sandbox), respectively.
 
 **To open a component's Activity Feed:**
 
@@ -31,9 +31,8 @@ For information about the activity feed for a resource or service in the sandbox
     - **Component** drop down list: display entries that are related to a specific resource, App or service in the sandbox. The value Component displays entries for all components.
     - **Event type** drop down list: display entries of a specific type. Values are: **Event type** (all entries), **Command**, **Resource**, **Service** and **Sandbox**.
 
-For more detailed information about a particular error, see [Activity Feed Pane](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-View-Actvty-Fd.htm).
+For more detailed information about a particular error, see [Activity Feed Pane](../system-messages/activity-feed-pane.md).
 
 ## Related Topics
 
-- [Apps in Sandboxes](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Use-Apps.htm)
-- [Apps in Blueprints](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Blprnt-Use-Apps.htm)
+- [Apps in Sandboxes](../../../../portal/sandboxes/workspace/apps)

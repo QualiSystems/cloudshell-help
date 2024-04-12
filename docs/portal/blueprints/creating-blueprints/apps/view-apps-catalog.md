@@ -20,5 +20,5 @@ sidebar_position: 1
 
 ## Related Topics
 
-- [Apps in Blueprints](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Blprnt-Use-Apps.htm)
-- [Apps in Sandboxes](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Use-Apps.htm#top)
+- [Apps in Blueprints](../../../../portal/blueprints/creating-blueprints/apps)
+- [Apps in Sandboxes](../../../../portal/sandboxes/workspace/apps)

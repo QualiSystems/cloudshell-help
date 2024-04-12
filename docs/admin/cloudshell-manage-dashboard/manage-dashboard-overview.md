@@ -13,41 +13,14 @@ In the image below, hover over an area or option to learn more about it, or use 
 ![](/Images/CloudShell-Portal/Manage/ManageDashboard_1_.png)
 
 The dashboard's areas are arranged as follows: 
-<details>
-<summary>
-More...
-</summary>
-<table style={{ marginLeft: '0', marginRight: 'auto' }} className="TableStyle-Alternate-Row-Color" cellSpacing="21">
-    <tbody>
-        <tr className="TableStyle-Alternate-Row-Color-Body-Body1">
-            <td className="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">1</td>
-            <td className="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
-                Run a free text search for items in the <span className="SearchHighlight SearchHighlight2">dashboard</span>.
-            </td>
-        </tr>
-        <tr className="TableStyle-Alternate-Row-Color-Body-Body2">
-            <td className="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">2</td>
-            <td className="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
-                <p>
-                    Switch between the different pages in the <span className="SearchHighlight SearchHighlight1">**Manage**</span> <span className="SearchHighlight SearchHighlight2">dashboard</span>.
-                </p>
-            </td>
-        </tr>
-        <tr className="TableStyle-Alternate-Row-Color-Body-Body1">
-            <td className="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">3</td>
-            <td className="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
-                Depending on the <span className="SearchHighlight SearchHighlight2">dashboard</span>, the toolbar may include filtering and sorting options, as well as buttons to add, delete and rearrange the items in the <span className="SearchHighlight SearchHighlight2">dashboard</span>.
-            </td>
-        </tr>
-        <tr className="TableStyle-Alternate-Row-Color-Body-Body2">
-            <td className="TableStyle-Alternate-Row-Color-BodyB-Column1-Body2">4</td>
-            <td className="TableStyle-Alternate-Row-Color-BodyA-Column1-Body2">
-                View and <span className="SearchHighlight SearchHighlight1">manage</span> the <span className="SearchHighlight SearchHighlight2">dashboard</span> items.
-            </td>
-        </tr>
-    </tbody>
-</table>
-</details>
+
+| Area | Description |
+| --- | --- |
+| 1 | Run a free text search for items in the dashboard. |
+| 2 | Switch between the different pages in the **Manage** dashboard. |
+| 3 | Depending on the dashboard, the toolbar may include filtering and sorting options, as well as buttons to add, delete and rearrange the items in the dashboard. |
+| 4 | View and manage the dashboard items. |
+
 
 ## Related Topics
 
