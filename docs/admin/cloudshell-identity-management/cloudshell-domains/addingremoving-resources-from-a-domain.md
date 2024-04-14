@@ -33,7 +33,7 @@ In order to make a resource available for users, you need to associate the resou
 
 - Use the domain tab's **Properties>Topologies** tab, to add a blueprint to the domain. Any resources within that blueprint are automatically added to the domain.
     
-    [![](/Images/Admin-Guide/User-Management/AddDomainRes_1_thumb_0_48.png)](https://help.quali.com/Online%20Help/0.0/Portal/Content/Images/Admin%20Guide/User%20Management/AddDomainRes_1.png)
+    ![](/Images/Admin-Guide/User-Management/AddDomainRes_1.png)
     
 
 **To associate multiple domains to a specific resource:**
@@ -42,9 +42,9 @@ In order to make a resource available for users, you need to associate the resou
     ![](/Images/Admin-Guide/User-Management/AddDomainRes_2_261x345.png)
 2. In the resource's **Configuration** tab, select the **Domains** tab.
 
-[![](/Images/Admin-Guide/User-Management/AddDomainRes_3_thumb_0_48.png)](https://help.quali.com/Online%20Help/0.0/Portal/Content/Images/Admin%20Guide/User%20Management/AddDomainRes_3.png)
+![](/Images/Admin-Guide/User-Management/AddDomainRes_3.png)
 
-4. To allocate the resource to additional domains, click **Add** to open the **Domains Selection** window.
+1. To allocate the resource to additional domains, click **Add** to open the **Domains Selection** window.
     
 
 ![](/Images/Admin-Guide/User-Management/AddDomainRes_4.png)
@@ -64,9 +64,9 @@ This section explains how to remove resources from domains in Resource Manager C
 2. In the **Domains** pane, right-click a domain and select **Open** from the context menu to open the domain's tab.
 3. Open the **Resources** page from the **Page** drop down list.
 
-[![](/Images/Admin-Guide/User-Management/AddDomainRes_5_thumb_0_48.png)](https://help.quali.com/Online%20Help/0.0/Portal/Content/Images/Admin%20Guide/User%20Management/AddDomainRes_5.png)
+![](/Images/Admin-Guide/User-Management/AddDomainRes_5.png)
 
-4. In the **Resources** page, select the resource that you wish to delete and click the **Delete** button. If the selected resource has descendants, they will be removed as well.
+1. In the **Resources** page, select the resource that you wish to delete and click the **Delete** button. If the selected resource has descendants, they will be removed as well.
 
 **To remove resources via the domain's Diagram page:**
 
@@ -80,5 +80,5 @@ This section explains how to remove resources from domains in Resource Manager C
 1. Right-click the resource and select **Configuration** from the context menu.  
     ![](/Images/Admin-Guide/User-Management/AddDomainRes_2_235x310.png)
 2. In the resource's **Configuration** tab, select the **Domains** tab.  
-    [![](/Images/Admin-Guide/User-Management/AddDomainRes_3_thumb_0_48.png)](https://help.quali.com/Online%20Help/0.0/Portal/Content/Images/Admin%20Guide/User%20Management/AddDomainRes_3.png)
+    ![](/Images/Admin-Guide/User-Management/AddDomainRes_3.png)
 3. Select one or more associated domains and click **Remove**.

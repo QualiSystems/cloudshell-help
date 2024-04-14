@@ -18,7 +18,7 @@ By default:
 
 - Right-click the folder and choose **Properties** from the context menu.
 
-[![](/Images/Admin-Guide/User-Management/Folder-permissions_thumb_0_48.png)](https://help.quali.com/Online%20Help/0.0/Portal/Content/Images/Admin%20Guide/User%20Management/Folder%20permissions.png)
+![](/Images/Admin-Guide/User-Management/Folder-permissions.png)
 
 **To set permissions for a specific user or group:**
 

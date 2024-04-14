@@ -20,7 +20,7 @@ There are various ways to define CloudShell groups:
 
 2. In the **Groups** tab, click the **New** button in the **Groups** list pane toolbar.
 
-    [![](/Images/Admin-Guide/User-Management/GroupsTabUsersTabAddButton_thumb_0_48.png)](https://help.quali.com/Online%20Help/0.0/Portal/Content/Images/Admin%20Guide/User%20Management/GroupsTabUsersTabAddButton.png)
+    ![](/Images/Admin-Guide/User-Management/GroupsTabUsersTabAddButton.png)
 
 3. In the **New Group** window, enter the name and description, and select a role for the new group.
     
@@ -48,11 +48,11 @@ Users can be added to several groups.
 1. Select the target group from the list in left pane.
 2. Select the **Users** tab.  
 
-    [![](/Images/Admin-Guide/User-Management/GroupsTabGroupListNamesPane_thumb_0_48.png)](https://help.quali.com/Online%20Help/0.0/Portal/Content/Images/Admin%20Guide/User%20Management/GroupsTabGroupListNamesPane.png)
+    ![](/Images/Admin-Guide/User-Management/GroupsTabGroupListNamesPane.png)
 
 3. Click the **Add** button to open the **Users Selection** window.
 
-    [![](/Images/Admin-Guide/User-Management/UsersSelectionWindow1_thumb_0_48.png)](https://help.quali.com/Online%20Help/0.0/Portal/Content/Images/Admin%20Guide/User%20Management/UsersSelectionWindow1.png)
+    ![](/Images/Admin-Guide/User-Management/UsersSelectionWindow1.png)
 
 4. Select users from the list and click **OK** to add them to the group.
     
@@ -67,7 +67,7 @@ Users can be added to several groups.
 
 - Select the user in **Users** list and click the **Remove** button.
     
-    [![](/Images/Admin-Guide/User-Management/GroupsTabUsersTabRemoveButt_thumb_0_48.png)](https://help.quali.com/Online%20Help/0.0/Portal/Content/Images/Admin%20Guide/User%20Management/GroupsTabUsersTabRemoveButt.png)
+    ![](/Images/Admin-Guide/User-Management/GroupsTabUsersTabRemoveButt.png)
     
 
 ## Associating groups with a domain

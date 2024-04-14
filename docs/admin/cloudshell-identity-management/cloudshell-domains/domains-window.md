@@ -18,20 +18,20 @@ Use the domain's tab to add and remove resources, and blueprints (including thei
     
     The domain's tab has three pages:
     
-    - [Properties page](../../../admin/cloudshell-identity-management/cloudshell-domains/domains-window.md#properties-page)
-    - [Resources page](../../../admin/cloudshell-identity-management/cloudshell-domains/domains-window.md#resources-page)
-    - [Diagram page](../../../admin/cloudshell-identity-management/cloudshell-domains/domains-window.md#diagram-page)
+    - [Properties page](#properties-page)
+    - [Resources page](#resources-page)
+    - [Diagram page](#diagram-page)
 
 ## Properties page
 
 The **Properties** page displays the current domain settings: the domain name, description, the default blueprints folder, a short summary of the domain's reservation history, and any groups or blueprints that are associated with the domain.
 
-[![](/Images/Admin-Guide/User-Management/The-Domain-window_1_thumb_0_48.png)](https://help.quali.com/Online%20Help/0.0/Portal/Content/Images/Admin%20Guide/User%20Management/The%20Domain%20window_1.png)
+![](/Images/Admin-Guide/User-Management/The-Domain-window_1.png)
 
 **To configure settings in the Properties page:**
 
 1. To change a domain's name and description, click the **Edit** button next to the **Domain Name** field.
-2. To archive the domain, click the **Archive** button next to the **Domain Name** field. If the domain is currently archived, click the **Archive** button to restore the domain. For additional information, see [Archiving and Restoring Domains](../../../admin/cloudshell-identity-management/cloudshell-domains/archiving-and-restoring-domains.md).
+2. To archive the domain, click the **Archive** button next to the **Domain Name** field. If the domain is currently archived, click the **Archive** button to restore the domain. For additional information, see [Archiving and Restoring Domains](./archiving-and-restoring-domains.md).
 3. The domain's **Topologies Folder** arranges all blueprints created within that domain. To change the domain's topologies folder, click the **Change** button next to the **Topologies Folder** field.
     :::tip
     Clicking the Clear button next to the Topologies Folder field will remove the blueprints folder and prevent users from adding blueprints to the domain.
@@ -43,22 +43,23 @@ The **Properties** page displays the current domain settings: the domain name, d
     :::
 6. The **Resources** field displays the number of resources associated with the domain. Click the **Add Resource** button to find additional resources.
 7. The **Reservations** field shows a real time summary of the domain's activity.
-8. To add or remove groups from the domain, click the **Groups** tab. The **Groups** tab lists all groups associated with the domain. The **View Only** field is checked for any group with view-only access to the domain. To manage groups and their permission levels, see [Managing CloudShell Groups](../../../admin/cloudshell-identity-management/managing-users/managing-cloudshell-groups.md).
+8. To add or remove groups from the domain, click the **Groups** tab. The **Groups** tab lists all groups associated with the domain. The **View Only** field is checked for any group with view-only access to the domain. To manage groups and their permission levels, see [Managing CloudShell Groups](../managing-users/managing-cloudshell-groups.md).
     :::note
     You can also associate a group with a domain via the **Domains** area in the **Groups** tab.
     :::
-9. Click the **Topologies** tab to add or remove blueprints. The **Topologies** tab lists all blueprints associated with the domain. When you add a blueprint to a domain, the blueprint's resources, Apps and services are added as well. For additional information, see [Adding resources to a domain](../../../admin/cloudshell-identity-management/cloudshell-domains/addingremoving-resources-from-a-domain.md#adding-resources-to-a-domain).
+9. Click the **Topologies** tab to add or remove blueprints. The **Topologies** tab lists all blueprints associated with the domain. When you add a blueprint to a domain, the blueprint's resources, Apps and services are added as well. For additional information, see [Adding resources to a domain](./addingremoving-resources-from-a-domain.md#adding-resources-to-a-domain).
     
-    [![](/Images/Admin-Guide/User-Management/The-Domain-window_2_thumb_0_48.png)](https://help.quali.com/Online%20Help/0.0/Portal/Content/Images/Admin%20Guide/User%20Management/The%20Domain%20window_2.png)
+    ![](/Images/Admin-Guide/User-Management/The-Domain-window_2.png)
     :::note
     You can also manage domain blueprints via the domain's **Diagram** page.
     :::
 
 ## Resources page
 
-The **Resources** page lists all resources associated with the domain. Here you can search for and add resources to domains. For additional information, see [Searching for resources to add to a domain](../../../admin/cloudshell-identity-management/cloudshell-domains/addingremoving-resources-from-a-domain.md#searching-for-resources-to-add-to-a-domain).
+The **Resources** page lists all resources associated with the domain. Here you can search for and add resources to domains. For additional information, see [Searching for resources to add to a domain](./addingremoving-resources-from-a-domain.md#searching-for-resources-to-add-to-a-domain).
 
-[![](/Images/Admin-Guide/User-Management/The-Domain-window_3_thumb_0_48.png)](https://help.quali.com/Online%20Help/0.0/Portal/Content/Images/Admin%20Guide/User%20Management/The%20Domain%20window_3.png)
+![](/Images/Admin-Guide/User-Management/The-Domain-window_3.png)
+
 :::note
 You can also add and remove resources via the **Diagram** page.
 :::
@@ -76,9 +77,11 @@ Resource Manager resolves blueprints that are added via the domain diagram. If a
 **To toggle display of the blueprint's L1 switches and patch panels:**
 
 1. Click **Logical** to view only the requested resources.
-    
-    [![](/Images/Admin-Guide/User-Management/The-Domain-window_4_thumb_0_48.png)](https://help.quali.com/Online%20Help/0.0/Portal/Content/Images/Admin%20Guide/User%20Management/The%20Domain%20window_4.png)
+        
+    ![](/Images/Admin-Guide/User-Management/The-Domain-window_4.png)
     
 2. Click **Physical** to also display resource connections.
     
-    [![](/Images/Admin-Guide/User-Management/The-Domain-window_5_thumb_0_48.png)](https://help.quali.com/Online%20Help/0.0/Portal/Content/Images/Admin%20Guide/User%20Management/The%20Domain%20window_5.png)
+    ![](/Images/Admin-Guide/User-Management/The-Domain-window_5.png)
+
+[asdfasdaf](./)
