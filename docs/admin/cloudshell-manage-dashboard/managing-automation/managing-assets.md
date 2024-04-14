@@ -409,7 +409,7 @@ Global admins can delete any script in CloudShell while domain admins can only d
 
 Each Python script's dependencies are listed in the `requirements.txt` file that is included in the zip file that contains the script. The dependencies are installed on the execution server by the pip installation when CloudShell prepares the Python virtual environment for the script. To use offline execution servers, the admin will need to perform several additional configurations.
 
-For additional information, see [What are Python Virtual Environments?](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/what-are-python-virtual-environments.md).
+For additional information, see [What are Python Virtual Environments?](../../cloudshell-execution-server-configurations/setting-up-python-virtual-environments/what-are-python-virtual-environments.md).
 
 ## Related Topics
 
@@ -418,4 +418,4 @@ For additional information, see [What are Python Virtual Environments?](../../..
 - [Configure Blueprint Orchestration](../../../portal/blueprints/creating-blueprints/configure-orchestration.md)
 - [Run Commands](../../../portal/sandboxes/sandbox-workspace/run-commands.md)
 - [Run App Commands](../../../portal/sandboxes/sandbox-workspace/apps/run-app-commands.md)
-- [CloudShell Sandbox Template](../../../admin/cloudshell-manage-dashboard/blueprint-templates.md#cloudshell-sandbox-template)
+- [CloudShell Sandbox Template](../blueprint-templates.md#cloudshell-sandbox-template)

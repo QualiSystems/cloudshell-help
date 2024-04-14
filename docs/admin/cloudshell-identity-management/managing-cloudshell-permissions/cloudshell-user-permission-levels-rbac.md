@@ -8,7 +8,7 @@ sidebar_position: 1
 
 For more information about group roles and access levels, see [Managing CloudShell Groups](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Add-Grp.htm).
 :::note
-In the tables below, "View Only access" indicates the permissible actions for users who are members of a group that is defined as **View Only** in the domain. For more information, see [Associating groups with a domain](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Add-Grp.htm#Associat).
+In the tables below, "View Only access" indicates the permissible actions for users who are members of a group that is defined as **View Only** in the domain. For more information, see [Associating groups with a domain](../managing-users/managing-cloudshell-groups.md#associating-groups-with-a-domain).
 :::
 ## Blueprints
 
