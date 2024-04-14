@@ -45,5 +45,5 @@ Associating groups with domains allows the group's user access to domain resourc
 - [CloudShell Deployment Overview](../admin/setting-up-cloudshell/cloudshell-deployment-overview.md)
 - [Inventory Operations](../admin/setting-up-cloudshell/inventory-operations/)
 - [CloudShell Identity Management](../admin/cloudshell-identity-management/)
-- [](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/ID-Mngmt.htm)[CloudShell Manage Dashboard](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-CS-Cat.htm)
+- [CloudShell Manage Dashboard](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-CS-Cat.htm)
 - [CloudShell Execution Server Configurations](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Stp-Exctn-Srvr.htm)

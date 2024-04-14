@@ -6,7 +6,7 @@ sidebar_position: 1
 <p>This article lists the different actions each user type can perform in CloudShell. In the tables below, supported actions are indicated in <span style={{ backgroundColor: 'rgba(0, 128, 0, 0.5)', color: 'black' }}>green</span> while unsupported actions are <span style={{ backgroundColor: 'rgba(255, 0, 0, 0.5)', color: 'black' }}>red</span>.</p>
 
 
-For more information about group roles and access levels, see [Managing CloudShell Groups](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Add-Grp.htm).
+For more information about group roles and access levels, see [Managing CloudShell Groups](../managing-users/managing-cloudshell-groups.md).
 :::note
 In the tables below, "View Only access" indicates the permissible actions for users who are members of a group that is defined as **View Only** in the domain. For more information, see [Associating groups with a domain](../managing-users/managing-cloudshell-groups.md#associating-groups-with-a-domain).
 :::
@@ -22,7 +22,7 @@ For brevity, the "Edit" action indicates the user type can create, edit and dele
 
 \*\* indicates that the option can be hidden from non-admin users with the `BlockPackageExportForNonAdmins` key
 
-\*\*\* If the `<add key="OnlyAllowNewEnvironmentsFromTemplates" value="true"/>` key is defined on the server , users can only create blueprints from a template but not from scratch (empty blueprints). However, if there are no templates assigned to the domain, users of that domain cannot create new blueprints. For details, see [The + Create Blueprint Link is Missing From the Blueprint Catalog](https://help.quali.com/Online%20Help/0.0/Portal/Content/Troubleshooting/Create-blueprint-link-is%20missing.htm).
+\*\*\* If the `<add key="OnlyAllowNewEnvironmentsFromTemplates" value="true"/>` key is defined on the server , users can only create blueprints from a template but not from scratch (empty blueprints). However, if there are no templates assigned to the domain, users of that domain cannot create new blueprints. For details, see [The + Create Blueprint Link is Missing From the Blueprint Catalog](../../../troubleshooting/cloudshell-portal/the-create-blueprint-link-is-missing-from-the-blueprint-catalog.md).
 
 <table>
   <thead>
@@ -712,7 +712,7 @@ For brevity, the "Edit" action indicates the user type can both view and edit th
       <td style={{ backgroundColor: 'rgba(255, 0, 0, 0.5)' }}>x</td>
     </tr>
     <tr>
-      <td style={{ fontWeight: 'bold' }}>Edit Shells (See [Shells](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Prmsn.htm?Highlight=CloudShell%20User%20Permission%20Levels%20(RBAC)#Shells) below)</td>
+      <td style={{ fontWeight: 'bold' }}>Edit Shells (See [Shells](../../../admin/cloudshell-identity-management/managing-cloudshell-permissions/cloudshell-user-permission-levels-rbac.md#shells) below)</td>
       <td style={{ backgroundColor: 'rgba(0, 128, 0, 0.5)' }}>v</td>
       <td style={{ backgroundColor: 'rgba(255, 0, 0, 0.5)' }}>x</td>
       <td style={{ backgroundColor: 'rgba(255, 0, 0, 0.5)' }}>x</td>

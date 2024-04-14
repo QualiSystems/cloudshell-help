@@ -15,12 +15,12 @@ You can use the toolbar to sort the App templates according to **Name** or Modif
 
 ## Adding App templates
 
-When adding a new App template, you need to configure the settings of the virtual machine and application you want to deploy. To add App templates, at least one cloud provider resource must be defined. To define private cloud provider resources, see [Private Cloud Provider Support in CloudShell](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Prp-for-prvt-cld-prvdrs.htm), and for public cloud providers, see [Public Cloud Provider Support in CloudShell](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Prp-for-cld-prvdrs.htm).
+When adding a new App template, you need to configure the settings of the virtual machine and application you want to deploy. To add App templates, at least one cloud provider resource must be defined. To define private cloud provider resources, see [Private Cloud Provider Support in CloudShell](../../../admin/supported-cloud-providers-in-cloudshell/private-cloud-provider-support-in-cloudshell/index.md), and for public cloud providers, see [Public Cloud Provider Support in CloudShell](../../../admin/supported-cloud-providers-in-cloudshell/public-cloud-provider-support-in-cloudshell/index.md).
 
-If your CloudShell deployment includes multiple sites, it is recommended to configure the deployment process of the App to be carried out in the domain that is physically closest to the cloud provider. For additional information, see [Managing Private Cloud Apps in Domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Prvt-Cld-Apps-in-Dmns.htm) or [Managing Public Cloud Apps in Domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Pblc-Cld-Apps-in-Dmns.htm).
+If your CloudShell deployment includes multiple sites, it is recommended to configure the deployment process of the App to be carried out in the domain that is physically closest to the cloud provider. For additional information, see [Managing Private Cloud Apps in Domains](../../../admin/supported-cloud-providers-in-cloudshell/private-cloud-provider-support-in-cloudshell/managing-private-cloud-apps-in-domains.md) or [Managing Public Cloud Apps in Domains](../../../admin/supported-cloud-providers-in-cloudshell/public-cloud-provider-support-in-cloudshell/managing-public-cloud-apps-in-domains.md).
 
 :::note Notes for public cloud Apps:
-- By default, all public cloud Apps of the same type in the same sandbox are deployed within the same subnet and therefore are connected to each other and isolated from other sandboxes. However, using the Subnet service, blueprint designers can set up multiple subnet networks in the sandbox, instead of having one default subnet for all the Apps of the same cloud provider. For details, see [Subnet Connectivity](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-Subnets.htm).
+- By default, all public cloud Apps of the same type in the same sandbox are deployed within the same subnet and therefore are connected to each other and isolated from other sandboxes. However, using the Subnet service, blueprint designers can set up multiple subnet networks in the sandbox, instead of having one default subnet for all the Apps of the same cloud provider. For details, see [Subnet Connectivity](../../../admin/setting-up-cloudshell/inventory-operations/connectivity-control/subnet-connectivity/index.md).
 - Public cloud App deployment requires the management network and subnet(s) to be prepared in advance as part of the sandbox Setup process. CloudShell's out-of-the-box Setup process does this. However, the blueprint must include at least one public cloud App to initiate the Setup script's connectivity preparation process for deployment in that public cloud.
 :::
 
@@ -64,7 +64,7 @@ To edit an App template:
     
     The App template's configuration wizard is displayed in the General page.
     
-3. Edit the App template’s settings. For more information, see [Adding App templates](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Apps.htm?Highlight=Managing%20App%20Templates#Adding).
+3. Edit the App template’s settings. For more information, see [Adding App templates](../../../admin/cloudshell-manage-dashboard/manage-app-templates/index.md#adding-app-templates).
 4. Click Save.  
     
 
@@ -88,7 +88,7 @@ To delete App templates:
 
 ## Related Topics
 
-- [Manage Dashboard Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Ovrv.htm)
-- [Managing Public Cloud Apps in Domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Pblc-Cld-Apps-in-Dmns.htm)
-- [Managing Private Cloud Apps in Domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Prvt-Cld-Apps-in-Dmns.htm)
+- [Manage Dashboard Overview](../../../admin/cloudshell-manage-dashboard/manage-dashboard-overview.md)
+- [Managing Public Cloud Apps in Domains](../../../admin/supported-cloud-providers-in-cloudshell/public-cloud-provider-support-in-cloudshell/managing-public-cloud-apps-in-domains.md)
+- [Managing Private Cloud Apps in Domains](../../../admin/supported-cloud-providers-in-cloudshell/private-cloud-provider-support-in-cloudshell/managing-private-cloud-apps-in-domains.md)
 - [Apps in Blueprints](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Blprnt-Use-Apps.htm)

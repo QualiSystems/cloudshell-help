@@ -10,7 +10,6 @@ Additional permissions like creating CloudShell blueprints and extending externa
 
 ## Related Topics
 
-    - [Managing Users](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Usrs-n-grps.htm?TocPath=CloudShell%20Administration|CloudShell%20Identity%20Management|Managing%20Users|_____0)
-    - [CloudShell Domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Dmn.htm?TocPath=CloudShell%20Administration|CloudShell%20Identity%20Management|CloudShell%20Domains|_____0)
-    - [Managing CloudShell Permissions](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Prms.htm?TocPath=CloudShell%20Administration|CloudShell%20Identity%20Management|Managing%20CloudShell%20Permissions|_____0)
-    - [Access Control and Authentication](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Accss-Cntrl-Auth.htm?TocPath=CloudShell%20Administration|CloudShell%20Identity%20Management|Access%20Control%20and%20Authentication|_____0)
+    - [Managing Users](../../admin/cloudshell-identity-management/managing-users/index.md)
+    - [Managing CloudShell Permissions](../../admin/cloudshell-identity-management/managing-cloudshell-permissions/index.md)
+    - [Access Control and Authentication](../../admin/cloudshell-identity-management/access-control-and-authentication/index.md)

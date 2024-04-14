@@ -14,7 +14,7 @@ If a non-admin user attempts to log in during this period, they will get a canne
 
 Additional points to consider when a maintenance window is defined:
 
-- Sandboxes scheduled before the maintenance window will run as usual even if they overlap with the maintenance window. Admin users can view all sandboxes scheduled for the maintenance window duration, by clicking the **Go to Sandboxes** button. See the [Navigating the maintenance window](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Mntnc-Wndw.htm?Highlight=Maintenance%20Window#System) section.
+- Sandboxes scheduled before the maintenance window will run as usual even if they overlap with the maintenance window. Admin users can view all sandboxes scheduled for the maintenance window duration, by clicking the **Go to Sandboxes** button. See the [Navigating the maintenance window](../../admin/cloudshell-manage-dashboard/maintenance-window.md#navigating-the-maintenance-window) section.
 - If a regular user reserves or restores a sandbox that starts or ends outside the maintenance window, the sandbox will be reserved or restored as usual. Users are warned that they will not have access to the sandbox during the maintenance period.
 - Admins can run automation suites during the maintenance window.
 - Reserving a recurring sandbox is blocked if all the occurrences start or end during the maintenance window. Otherwise, the sandbox will start as usual.
@@ -63,4 +63,4 @@ The maintenance window's areas are arranged as follows:
 
 ## Related Topics
 
-- [Manage Dashboard Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Ovrv.htm)
+- [Manage Dashboard Overview](../../admin/cloudshell-manage-dashboard/manage-dashboard-overview.md)

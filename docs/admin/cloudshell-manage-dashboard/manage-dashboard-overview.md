@@ -24,11 +24,11 @@ The dashboard's areas are arranged as follows:
 
 ## Related Topics
 
-- [Managing Shells](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Shells.htm)
-- [Managing App Templates](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Apps.htm)
-- [Managing Categories](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Blprnt-Ctlg-Ctgs.htm)
-- [Licensing](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Licensing.htm)
-- [Setting Up Execution Servers to Run Commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Tst-n-Cmd-Exc.htm)
-- [Maintenance Window](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Mntnc-Wndw.htm)
-- [Blueprint Templates](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Wrk-wth-Blprnt-Tmplt.htm)
-- [Automation Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Autom-Ovrvw.htm)
+- [Managing Shells](../../admin/cloudshell-manage-dashboard/managing-shells.md)
+- [Managing App Templates](../../admin/cloudshell-manage-dashboard/manage-app-templates/index.md)
+- [Managing Categories](../../admin/cloudshell-manage-dashboard/managing-categories.md)
+- [Licensing](../../admin/cloudshell-manage-dashboard/licensing.md)
+- [Setting Up Execution Servers to Run Commands](../../admin/cloudshell-execution-server-configurations/setting-up-execution-servers-to-run-commands.md)
+- [Maintenance Window](../../admin/cloudshell-manage-dashboard/maintenance-window.md)
+- [Blueprint Templates](../../admin/cloudshell-manage-dashboard/blueprint-templates.md)
+- [Automation Overview](../../admin/cloudshell-manage-dashboard/managing-automation/automation-overview.md)

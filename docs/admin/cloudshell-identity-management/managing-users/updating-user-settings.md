@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Updating User Settings
 
-You can modify the user's email and change the user's status in **Resource Manager Client**, and, if enabled, from **CloudShell Portal**. This procedure explains how to do so in Resource Manager Client. For information about modifying user settings in CloudShell Portal, see [Logging into CloudShell](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/Login.htm).
+You can modify the user's email and change the user's status in **Resource Manager Client**, and, if enabled, from **CloudShell Portal**. This procedure explains how to do so in Resource Manager Client. For information about modifying user settings in CloudShell Portal, see [Logging into CloudShell](../../../portal/overview/logging-in.md).
 
 **To edit an existing user:**
 

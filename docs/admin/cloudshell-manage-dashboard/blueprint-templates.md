@@ -10,9 +10,9 @@ Blueprint templates enable your organization to define a uniform standard for ne
 
 Blueprint templates can be viewed and created by system and domain administrators. Domain administrators can view and create templates for their permitted domains only.
 
-CloudShell includes a default out-of-the-box blueprint template, **CloudShell Sandbox Template**, on which all new blueprints are based. You can create additional blueprint templates, according to your needs. For more information, see [Creating a new blueprint template](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Wrk-wth-Blprnt-Tmplt.htm?Highlight=Blueprint%20Templates#Creating).
+CloudShell includes a default out-of-the-box blueprint template, **CloudShell Sandbox Template**, on which all new blueprints are based. You can create additional blueprint templates, according to your needs. For more information, see [Creating a new blueprint template](../../admin/cloudshell-manage-dashboard/blueprint-templates.md#creating-a-new-blueprint-template).
 
-You can enable users to create empty blueprints that are not based on a template and do not include orchestration scripts. For more information, see [Allowing users to create new empty blueprints](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Wrk-wth-Blprnt-Tmplt.htm?Highlight=Blueprint%20Templates#Allowing).
+You can enable users to create empty blueprints that are not based on a template and do not include orchestration scripts. For more information, see [Allowing users to create new empty blueprints](../../admin/cloudshell-manage-dashboard/blueprint-templates.md#allowing-users-to-create-new-empty-blueprints).
 
 ## CloudShell Sandbox Template
 
@@ -97,7 +97,7 @@ The **CloudShell Sandbox Template** is provided by default and is updated by Clo
     
 4. Update the properties and click **Save**.
 
-All non-administrator users can now create blueprints from the templates(s) you created. For step-by-step instructions on how to create a blueprint from a template, see the help topic: [Creating a blueprint from a template](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Crt-Blprnt/Blprnt-New.htm#Creating).
+All non-administrator users can now create blueprints from the templates(s) you created. For step-by-step instructions on how to create a blueprint from a template, see the help topic: [Creating a blueprint from a template](../../portal/blueprints/creating-blueprints/create-blueprint.md#creating-a-blueprint-from-a-template).
 :::note
 The owner of the blueprint template is the administrator who created the template.
 :::
@@ -118,13 +118,13 @@ Changes you perform on the diagram of the template are saved automatically. 
 For administrators, the blueprint template is listed in the **Manage** dashboard in the **Blueprint Templates** page.   
 For users, the blueprint template is now available for creating a new blueprint based on the new template.
 
-All non-administrator users can now create blueprints from the templates(s) you created. For step-by-step instructions on how to create a blueprint from a template, see the help topic: [Creating a blueprint from a template](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Crt-Blprnt/Blprnt-New.htm#Creating).
+All non-administrator users can now create blueprints from the templates(s) you created. For step-by-step instructions on how to create a blueprint from a template, see the help topic: [Creating a blueprint from a template](../../portal/blueprints/creating-blueprints/create-blueprint.md#creating-a-blueprint-from-a-template).
 :::note
 The owner of the blueprint template is the administrator who created the template.
 :::
 ### Allowing users to create new empty blueprints
 
-By default, when creating a new blueprint, it will be based on the CloudShell Sandbox Template. If multiple templates were defined, users must select a template on which to base the blueprint. However, the Admin can enable users to create blueprints that are not based on a template. For more information, see [Enabling the creation of empty blueprints](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm#Enabling)
+By default, when creating a new blueprint, it will be based on the CloudShell Sandbox Template. If multiple templates were defined, users must select a template on which to base the blueprint. However, the Admin can enable users to create blueprints that are not based on a template. For more information, see [Enabling the creation of empty blueprints](../../admin/setting-up-cloudshell/cloudshell-configuration-options/advanced-cloudshell-customizations.md#enabling-the-creation-of-empty-blueprints)
 :::note
 Changes to the configuration file affect the entire system.
 :::
