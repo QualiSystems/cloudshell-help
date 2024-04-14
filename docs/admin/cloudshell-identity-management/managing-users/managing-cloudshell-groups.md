@@ -28,7 +28,7 @@ There are various ways to define CloudShell groups:
     - **Regular users** are the default role for new groups. Regular users can access and use public blueprints in their domain and become owners of blueprints, which allows them to modify the blueprint’s properties and elements.
     - **External users** are very limited users that can view blueprints but not use them. They can view and export public blueprint diagrams but cannot create or modify blueprints and sandboxes. Using the `ExternalUserHasExtendedPermissions` configuration key, external user permissions can be extended to allow them to see blueprint resource structures and commands and reserve blueprints.
     :::note
-    System administrators are defined per user in the user's profile. For additional information, see [Managing CloudShell Users](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Add-Usr.htm).
+    System administrators are defined per user in the user's profile. For additional information, see [Managing CloudShell Users](../../../admin/cloudshell-identity-management/managing-users/managing-cloudshell-users.md).
     :::
   
     ![](/Images/Admin-Guide/User-Management/NewGroupWindow1.png)  

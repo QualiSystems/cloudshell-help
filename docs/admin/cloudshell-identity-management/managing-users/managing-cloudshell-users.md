@@ -21,7 +21,7 @@ The following user management options are performed in the **Users** tab in the 
         
         :::note Notes:
         - The user can change their email in CloudShell Portal.
-        - To enable email notifications, [SMTP mail configuration](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/admn-cnfgr-stgs.htm#SMTP) is required.
+        - To enable email notifications, [SMTP mail configuration](../../../install-configure/cloudshell-suite/configure-products/admin-config-settings.md#smtp-mail-configuration) is required.
         :::
     - **Administrator**: Select to grant the user System Administrator permissions.
         

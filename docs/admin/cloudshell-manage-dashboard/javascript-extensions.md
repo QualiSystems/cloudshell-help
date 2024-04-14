@@ -4,7 +4,7 @@ sidebar_position: 9
 
 # JavaScript Extensions
 
-JavaScript Extensions allow administrators to write custom client-side code in JavaScript that can execute any logic as a part of the suite creation, update, removal, and so on. These scripts can give additional functionality to the user input parameters defined in the tests or for a blueprint resource, for example you can use [Using JavaScript Extensibility to configure dependencies between test parameters](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/JS-Ext.htm?Highlight=JavaScript%20Extensions#Using).
+JavaScript Extensions allow administrators to write custom client-side code in JavaScript that can execute any logic as a part of the suite creation, update, removal, and so on. These scripts can give additional functionality to the user input parameters defined in the tests or for a blueprint resource, for example you can use [Using JavaScript Extensibility to configure dependencies between test parameters](../../admin/cloudshell-manage-dashboard/javascript-extensions.md#using-javascript-extensibility-to-configure-dependencies-between-test-parameters).
 
 You can use the JavaScript Extensions to control the different sets of user input parameters in a Blueprint or Test (modules) by adding JavaScript code in the **Manage** dashboard, in the **Custom JavaScript Modules** extensions page. Modifying the code for the JavaScript extension modules triggers an event when the user performs a particular action in the **Create Suite Template/Edit Suite Template/Run Suite** page. The code can either validate the user inputs, or make changes to them.
 
@@ -133,4 +133,4 @@ You can find a complete sample of the code in the code sample panes at the botto
 ## Related Topics
 
 - Creating Tests
-- [Adding Automation Suites](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/JOB-SCHDL/New-Autmt-Suite.htm)
+- [Adding Automation Suites](../../portal/job-scheduling/manage-automation-suites/add-suites.md)
