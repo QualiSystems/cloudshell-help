@@ -34,7 +34,7 @@ This procedure explains how to retitle certain GUI elements in CloudShell Portal
 **To localize CloudShell Portal:**
 
 1. Go to the `C:\Program Files (x86)\QualiSystems\CloudShell\Portal\Localization` folder.
-2. Create a copy of the `LanguagePortal.xml` file and add the language code before the file extension. For a list of supported file codes, click [here](http://help.quali.com/help%20versions/attachments/Locales.pdf).
+2. Create a copy of the `LanguagePortal.xml` file and add the language code before the file extension. For a list of supported file codes, click [here](/attachments/Locales.pdf).
     
     For example, changing GUI elements to be in Danish:
     

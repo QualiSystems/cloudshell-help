@@ -2,6 +2,7 @@
   "label": "Viewing System Messages",
   "position": 17,
   "link": {
+    "slug": "portal/sandboxes/sandbox-workspace/system-messages",
     "type": "generated-index",
     "description": "CloudShell Portal displays system messages in the following places: Indication Messages, Outout Console Window, Activity Feed Pane, Activity Details Window."
   }
