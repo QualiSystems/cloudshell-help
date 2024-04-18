@@ -536,7 +536,7 @@ You can change the route grouping policy in the blueprint or sandbox diagram. By
 
 ## Execution Server
 
-For Python package handling keys, see [Advanced CloudShell Customizations](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm?Highlight=Advanced%20CloudShell%20Customizations#PyPi). For execution server configurations and customizations, see [Optimizing Execution Provisioning](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Tst-n-Cmd-Exc-Optmz.htm).
+For Python package handling keys, see [Advanced CloudShell Customizations](./advanced-cloudshell-customizations.md). For execution server configurations and customizations, see [Optimizing Execution Provisioning](../../cloudshell-execution-server-configurations/optimizing-execution-provisioning.md).
 
 ## General
 
@@ -584,7 +584,7 @@ You can control which components will be visible to the user using the main menu
 
 This key is used for two reasons:
 
-- To set the CloudShell Portal virtual front in a high availability configuration. For details, see [Creating a Configuration Role in Windows Failover Cluster](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Crt-cnfg-rl-Win-Failover-clstr.htm).
+- To set the CloudShell Portal virtual front in a high availability configuration. For details, see [Creating a Configuration Role in Windows Failover Cluster](../../../install-configure/ha-installation/install-configure-cs-server/install-configure-cs-portal/create-config-role.md).
 - To include a sandbox link in email notifications.
 
 **To configure the CloudShell Portal:**
@@ -672,7 +672,7 @@ The computer that will be used to import the users must be in your corporate dom
 2. Set the key to the name of the domain of the active directory, for example, `Router_UK`.
 3. Save the file.
 4. Restart the **Quali Server** service.
-5. Import the users into **Resource Manager Client**, as explained in [Importing users into CloudShell from an active directory](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Add-Usr.htm#Importing).
+5. Import the users into **Resource Manager Client**, as explained in [Importing users into CloudShell from an active directory](../../cloudshell-identity-management/managing-users/managing-cloudshell-users.md#importing-users-from-an-active-directory-group).
 
 ### Configuring CloudShell to automatically import users from an external system at login
 
@@ -735,7 +735,7 @@ This key determines if the **Manage** dashboard's **Drivers** tab is visible. By
 This key determines which Python version will be used by default for new Python scripts the admin loads into CloudShell. Python 3 is the default.
 
 :::note Notes:
-- You can change the default setting for a script in the **Scripts** management page, as explained in [Editing scripts](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Scrpt.htm#EditingScrpts).
+- You can change the default setting for a script in the **Scripts** management page, as explained in [Editing scripts](../../cloudshell-manage-dashboard/managing-automation/managing-assets.md#editing-scripts).
 - Python 3 automation requires Microsoft Visual C++ Redistributable 2015 x86 and x64 to be installed on the Execution Server(s).
 :::
 
@@ -776,7 +776,7 @@ By default, Quali Server runs orchestration scripts directly in the sandbox, ign
     
 2. Save the file.
 3. Restart the **Quali Server** service.
-4. Make sure a driver is added to all blueprints in CloudShell. For details, see [Add Setup and Teardown scripts](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Crt-Blprnt/Blprnt-Blprnt-Orchs.htm#Add3).
+4. Make sure a driver is added to all blueprints in CloudShell. For details, see [Add Setup and Teardown scripts](../../../portal/blueprints/creating-blueprints/configure-orchestration.md#add-setup-and-teardown-scripts).
 
 ### Increasing the time allowed for Quali Server to stop gracefully
 
@@ -841,7 +841,7 @@ All three keys are defined in the `C:\Program Files (x86)\QualiSystems\CloudShel
 
 ### Allowing regular users to reserve resources from the Inventory dashboard
 
-By default, only admins can reserve resources from the **Inventory** dashboard. For additional information about this option, see [Reserving Resources from the Inventory](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/INVN/Rsrv-Rsrc-frm-Invtr.htm).
+By default, only admins can reserve resources from the **Inventory** dashboard. For additional information about this option, see [Reserving Resources from the Inventory](../../../portal/inventory/managing-resources/reserving-from-inventory.md).
 
 ![](/Images/CloudShell-Portal/Lab-Management/Working-with-the-Inventory/InventResResFromInventory.png)
 
@@ -905,7 +905,7 @@ Following the successful deployment of the New Job Scheduling infrastructure, yo
 
 ## LDAP Integration
 
-For information about integration with an LDAP server, see [LDAP Integration](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/LDAP-Intgr.htm).
+For information about integration with an LDAP server, see [LDAP Integration](../../cloudshell-identity-management/access-control-and-authentication/ldap-integration.md).
 
 ## Monitoring
 
@@ -955,7 +955,7 @@ Note that disabling this key does not prevent CloudShell from sending usage data
 
 ### Disabling the export of usage data to CloudShell Monitor
 
-By default, **CloudShell Monitor** collects CloudShell usage data, which you can retrieve by saving CloudShell system logs, as explained in [Collecting Logs](https://help.quali.com/Online%20Help/0.0/Portal/Content/Troubleshooting/Collecting-logs.htm). If you do not want CloudShell Monitor to collect this data, set the `AddUsageDataToMonitoring` key to **False**.
+By default, **CloudShell Monitor** collects CloudShell usage data, which you can retrieve by saving CloudShell system logs, as explained in [Collecting Logs](../../../troubleshooting/troubleshooting-overview/collecting-logs.md). If you do not want CloudShell Monitor to collect this data, set the `AddUsageDataToMonitoring` key to **False**.
 
 Note that disabling this key does not prevent CloudShell from sending usage data to Quali, but you can prevent that from happening by disabling the `EnableWatcher` key.
 
@@ -1122,7 +1122,7 @@ Email defaults are read-only to all users, except administrators and domain admi
 
 ### Enabling password reset
 
-This key hides or shows the **Forgot your password?** link in the login page. To get the password reset option to work, you need to also configure the [SMTP mail configuration](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/admn-cnfgr-stgs.htm#SMTP) when installing or configuring the Quali Server. By default, this option is disabled.
+This key hides or shows the **Forgot your password?** link in the login page. To get the password reset option to work, you need to also configure the [SMTP mail configuration](../../../install-configure/cloudshell-suite/configure-products/admin-config-settings.md#smtp-mail-configuration) when installing or configuring the Quali Server. By default, this option is disabled.
 
 ![](/Images/Admin-Guide/Setting-Up-CloudShell/PasswordReset.png)
 
@@ -1357,8 +1357,8 @@ Administrators and domain administrators can allow users to change notifications
 
 :::note Notes:
 - The time stamps on sandbox events are in the time zone of the recipient. In the event of multiple recipients in different time zones, CloudShell will send a different email to each time zone's recipients.
-- Email notifications require [SMTP mail configuration](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/admn-cnfgr-stgs.htm#SMTP).
-- It's possible to customize email notification templates. For details, see [Email Notifications Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Notification-Emails.htm).
+- Email notifications require [SMTP mail configuration](../../../install-configure/cloudshell-suite/configure-products/admin-config-settings.md#smtp-mail-configuration).
+- It's possible to customize email notification templates. For details, see [Email Notifications Overview](../../../intro/features/email-notifications.md).
 :::
 **To set the email event defaults for sandboxes, for the sandbox's lifecycle events:**
 
@@ -1410,9 +1410,9 @@ As an administrator you can configure CloudShell to send calendar invitations fo
 
 Email notifications can be created for sandboxes that were created either manually or via an API.
 
-If you extend or end the sandbox, a new event notification will be sent, changing the event time or canceling the event. For more information about extending and ending sandboxes, see [Extend and End Sandboxes](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Prfrm-Actns/Sndbx-Extnd.htm).
+If you extend or end the sandbox, a new event notification will be sent, changing the event time or canceling the event. For more information about extending and ending sandboxes, see [Extend and End Sandboxes](../../../portal/sandboxes/sandbox-workspace/extend-and-end-sandbox.md).
 :::note
-Email notifications require [SMTP mail configuration](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/admn-cnfgr-stgs.htm#SMTP).
+Email notifications require [SMTP mail configuration](../../../install-configure/cloudshell-suite/configure-products/admin-config-settings.md#smtp-mail-configuration).
 :::
 **To enable the calendar event:**
 
@@ -1757,7 +1757,7 @@ It is not recommended to enable Overtime since it makes managing and troubleshoo
 
 ### Showing the **Mark "in use"** option for resources
 
-This key determines whether the mark in use option is available for sandbox resources. For details see [Mark Resources "in use"](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Prfrm-Actns/Sndbx-In-Use.htm).
+This key determines whether the mark in use option is available for sandbox resources. For details see [Mark Resources "in use"](../../../portal/sandboxes/sandbox-workspace/resources/mark-in-use.md).
 
 To display the Mark "in use" option:
 
@@ -1858,7 +1858,7 @@ Apps based on a public cloud provider, such as AWS EC2 and Azure, cannot be used
 
 ### Preventing CloudShell from switching to the domain of a sandbox/blueprint when accessing via URL
 
-By default, when trying to open a URL to a sandbox from a domain you can access but are not currently logged into, CloudShell prompts the user to switch to the domain (assuming the blueprint is public and the user is permitted to access the sandbox/blueprint). If the user confirms the switch, CloudShell will then open the sandbox/blueprint in its domain. However, you can choose to prevent this domain switch by setting the `AutoSwitchDomain` key. For additional information, see [Opening Sandboxes](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Open.htm).
+By default, when trying to open a URL to a sandbox from a domain you can access but are not currently logged into, CloudShell prompts the user to switch to the domain (assuming the blueprint is public and the user is permitted to access the sandbox/blueprint). If the user confirms the switch, CloudShell will then open the sandbox/blueprint in its domain. However, you can choose to prevent this domain switch by setting the `AutoSwitchDomain` key. For additional information, see [Opening Sandboxes](../../../portal/sandboxes/opening-sandboxes.md).
 :::note
 When opening a blueprint from a URL, the domain switch only works if the blueprint URL includes the domain ID. To obtain a blueprint URL with the domain ID, use the CloudShell Automation API's [GetTopologyUrls](pathname:///api-docs/2023.3/python-api/cloudshell.api.html?highlight=gettopology#cloudshell.api.cloudshell_api.CloudShellAPISession.GetTopologyUrls) method.
 :::
@@ -1890,7 +1890,7 @@ By default, this information is displayed, as illustrated in this image:
 
 ### Set List view as the default for sandbox workspaces
 
-By default, when you open a sandbox, the sandbox's elements are displayed in **Diagram** view. However, you can choose to change the default display mode to **List** view, using this key. For additional information, see [Sandbox List View](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Lst-Vw.htm).
+By default, when you open a sandbox, the sandbox's elements are displayed in **Diagram** view. However, you can choose to change the default display mode to **List** view, using this key. For additional information, see [Sandbox List View](../../../portal/sandboxes/sandbox-workspace/sandbox-list-view.md).
 
 **To set List view as the default:**
 
@@ -2056,7 +2056,7 @@ Separate the relevant parameters with a comma as in the example above.
 4. Save the file.
 5. Restart the **CloudShell Portal IIS** service.
 
-For additional information, see [Setting Up Execution Servers to Run Commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Tst-n-Cmd-Exc.htm).
+For additional information, see [Setting Up Execution Servers to Run Commands](../../cloudshell-execution-server-configurations/setting-up-execution-servers-to-run-commands.md).
 
 ### Locking a test for editing
 
@@ -2066,7 +2066,7 @@ Note that while a test is being edited, other users can still edit this test and
 
 Once the test is saved, all users with the required permission may edit the test.
 
-You can enable Admin users to unlock tests. See [Enabling TestShell admins to unlock tests in TestShell Studio](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm?Highlight=Advanced%20CloudShell%20Customizations#Enabling5).
+You can enable Admin users to unlock tests. See [Enabling TestShell admins to unlock tests in TestShell Studio](./advanced-cloudshell-customizations.md#enabling-testshell-admins-to-unlock-tests-in-testshell-studio).
 
 **To enable locking a test for editing in TestShell Studio:**
 
@@ -2090,7 +2090,7 @@ You can enable Admin users to unlock tests. See [Enabling TestShell admins to un
 
 ### Configurations for running local tests
 
-For additional information, see [Working with local tests](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Tst-n-Cmd-Exc.htm#Working).
+For additional information, see [Working with local tests](../../cloudshell-execution-server-configurations/setting-up-execution-servers-to-run-commands.md#working-with-local-tests).
 
 ### Suite notification default severity level
 
@@ -2109,7 +2109,7 @@ Other possible values are `None`, `SuiteAndErrors`, and `All`.
 
 ### Setting the Test Execution Report Template for Automation Suite Tests
 
-For additional information, see [Setting the Test Execution Report Template for Automation Suite Tests](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/JOB-SCHDL/St-Exc-Rprt-Tmplt.htm).
+For additional information, see [Setting the Test Execution Report Template for Automation Suite Tests](../../../portal/job-scheduling/view-execution-history/view-test-reports/setting-test-execution-report-template.md).
 
 ### Setting the maximum number of steps for test reports
 
@@ -2269,7 +2269,7 @@ As the user searches the resources database, automatic attribute filters appear 
 
 *SSO/SLO configuration is available with CloudShell Premium Tier.*
 
-For information about configuring Single Sign-On and SAML, see [Configuring Single Sign-On (SSO)](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfg-SSO.htm).
+For information about configuring Single Sign-On and SAML, see [Configuring Single Sign-On (SSO)](../../cloudshell-identity-management/access-control-and-authentication/saml-authentication-configuration-sso-slo/configure-sso/index.md).
 
 ## TestShell Studio
 
