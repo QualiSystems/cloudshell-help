@@ -7,14 +7,14 @@ The Automation process is enabled in the **Sandbox** workspace and triggered dur
 
 Scripts and drivers are used in the automation process, and their functions vary. For more details, see:
 
-- [Managing Assets](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Scrpt.htm)
-- [Managing Drivers](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Drvr.htm) (hidden by default, applies to 1st Gen shells only)
+- [Managing Assets](../managing-automation/managing-assets.md)
+- [Managing Drivers](../managing-automation/managing-drivers.md) (hidden by default, applies to 1st Gen shells only)
   
   :::warning Important
-  The Drivers management page is only visible if you set the HideDriversTabInManage key. This tab is only relevant when developing 1st Gen Shells. For details, see [Customer Configuration Keys Repository](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfg-Ky-Rpstr.htm).
+  The Drivers management page is only visible if you set the HideDriversTabInManage key. This tab is only relevant when developing 1st Gen Shells. For details, see [Customer Configuration Keys Repository](../../setting-up-cloudshell/cloudshell-configuration-options/customer-configuration-keys-repository/index.md).
   :::
     
 
 CloudShell supports associating scripts and drivers with different domains. For more details, see:
 
-- [Associating Automation to Domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Multi-Ten.htm)
+- [Associating Automation to Domains](./associating-automation-to-domains.md)

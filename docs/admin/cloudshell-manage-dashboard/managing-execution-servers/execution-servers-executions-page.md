@@ -6,7 +6,7 @@ sidebar_position: 3
 
 The **Executions** page enables you to both view the real time status and general information of active driver instances and job executions and manage their executions.
 
-Regarding drivers, the **Executions** page displays the instances of the active drivers, not their commands. For additional information, see [Instance](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Term.htm#Instance).
+Regarding drivers, the **Executions** page displays the instances of the active drivers, not their commands. For additional information, see [Instance](../../../intro/Term.md#instance).
 
 :::note Notes:
 - Starting with CloudShell 9.3, CloudShell runs orchestration scripts directly without needing the **Python Setup & Teardown** blueprint driver. This out-of-the-box behavior can be changed using the ExecutePythonOrchestrationScriptsDirectly configuration key.
@@ -76,7 +76,7 @@ For example:
 
 This procedure shuts down the command executions of a driver's instance but leaves the instance alive. This also applies to script executions.
 :::important Tip:
-To stop a specific command execution, in the sandbox workspace, open the appropriate commands pane and click Stop. For additional information, see [Stopping commands during execution](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Run-Cmd.htm#Stopping).
+To stop a specific command execution, in the sandbox workspace, open the appropriate commands pane and click Stop. For additional information, see [Stopping commands during execution](../../../portal/sandboxes/sandbox-workspace/run-commands.md#stopping-commands-during-execution).
 :::
 **To stop a driver's commands:**
 
@@ -95,7 +95,7 @@ To stop a specific command execution, in the sandbox workspace, open the appropr
 
 ## Terminating a driver's instance or script execution
 
-*This procedure applies to Python drivers and scripts. For CloudShell Authoring drivers, see [Removing a driver's instance](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Exctn-Srv-Exct.htm?Highlight=Execution%20Servers%20-%20Executions%20Page#Removing).*
+*This procedure applies to Python drivers and scripts. For CloudShell Authoring drivers, see [Removing a driver's instance](../managing-execution-servers/execution-servers-executions-page.md#removing-a-drivers-instance).*
 :::note
 Driver instances may include multiple command executions while script executions only have one. For brevity, the term "instance" is used for both driver instances and script executions.
 :::
@@ -121,13 +121,13 @@ In some cases, however, terminating an instance is required. For example, if you
 
 ## Removing a driver's instance
 
-*This procedure applies to CloudShell Authoring drivers. For Python drivers, see [Terminating a driver's instance or script execution](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Exctn-Srv-Exct.htm?Highlight=Execution%20Servers%20-%20Executions%20Page#Terminat).*
+*This procedure applies to CloudShell Authoring drivers. For Python drivers, see [Terminating a driver's instance or script execution](../managing-execution-servers/execution-servers-executions-page.md#terminating-a-drivers-instance-or-script-execution).*
 
 In some scenarios, you may need to remove a driver's instance.
 
 For example, if you associate the resource or App to an execution server, but already have an instance of the driver running on a different execution server, that instance will prevent new commands from running on the resource. This is because the instance is associated to the wrong execution server and multiple driver instances of the same component cannot co\-exist in CloudShell. In this case, terminating the driver instance will enable the new commands to run on the correct execution server.
 :::note
-Before you remove an Authoring driver instance, make sure you stop all of the instance's command executions and exclude the execution server on which the instance resides. To exclude an execution server, see [Including/excluding execution servers](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Exctn-Srv-Servers.htm#Includin).
+Before you remove an Authoring driver instance, make sure you stop all of the instance's command executions and exclude the execution server on which the instance resides. To exclude an execution server, see [Including/excluding execution servers](../managing-execution-servers/execution-servers-servers-page.md#includingexcluding-execution-servers).
 :::
 **To remove a driver instance:**
 
@@ -142,6 +142,6 @@ Before you remove an Authoring driver instance, make sure you stop all of the in
 
 ## Related Topics
 
-- [Execution Servers - Overview Page](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Exctn-Srv-Ovrvw.htm)
-- [Execution Servers - Servers Page](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Exctn-Srv-Servers.htm)
-- [Execution Servers - Commands Queue Page](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Exctn-Srv-Cmnds.htm)
+- [Execution Servers - Overview Page](../managing-execution-servers/execution-servers-overview-page.md)
+- [Execution Servers - Servers Page](../managing-execution-servers/execution-servers-servers-page.md)
+- [Execution Servers - Commands Queue Page](../managing-execution-servers/execution-servers-commands-queue-page.md)

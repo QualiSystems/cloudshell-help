@@ -52,7 +52,7 @@ Excluding an execution server basically means that we're excluding it from new a
 
 In order to improve performance and stability in CloudShell deployments that include multiple geographically distributed sites, it is recommended to configure the deployment process of resource and App commands to run on execution servers that are physically closest to those elements. This is also used to restrict CloudShell's blueprint commands to run on a dedicated execution server or group of execution servers.
 
-This is done by associating an attribute that has the **Execution Server Selector** rule to the resource or App. And setting the same attribute value on that resource or App and on the execution server or execution servers that will deploy the element's commands. For blueprint commands, the attribute needs to be created, and linked to blueprint command executions using the `EnvironmentCommandsESRestrictions` configuration key. For additional information, see the "Controlling execution server selection" sections in [Setting Up Execution Servers to Run Commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Tst-n-Cmd-Exc.htm).
+This is done by associating an attribute that has the **Execution Server Selector** rule to the resource or App. And setting the same attribute value on that resource or App and on the execution server or execution servers that will deploy the element's commands. For blueprint commands, the attribute needs to be created, and linked to blueprint command executions using the `EnvironmentCommandsESRestrictions` configuration key. For additional information, see the "Controlling execution server selection" sections in [Setting Up Execution Servers to Run Commands](../../cloudshell-execution-server-configurations/setting-up-execution-servers-to-run-commands.md).
 
 **To set an attribute value on an execution server:**
 
@@ -82,6 +82,6 @@ This is done by associating an attribute that has the **Execution Server Selecto
 
 ## Related Topics
 
-- [Execution Servers - Overview Page](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Exctn-Srv-Ovrvw.htm)
-- [Execution Servers - Executions Page](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Exctn-Srv-Exct.htm)
-- [Execution Servers - Commands Queue Page](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Exctn-Srv-Cmnds.htm)
+- [Execution Servers - Overview Page](../managing-execution-servers/execution-servers-overview-page.md)
+- [Execution Servers - Executions Page](../managing-execution-servers/execution-servers-executions-page.md)
+- [Execution Servers - Commands Queue Page](../managing-execution-servers/execution-servers-commands-queue-page.md)

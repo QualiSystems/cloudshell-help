@@ -9,7 +9,7 @@ When adding or editing an App, click **App Resource** in the left page, to optio
 ![](/Images/CloudShell-Portal/Manage/AppResource.png)
     
 :::tip
-To help sandbox end-users connect to the VM, it is recommended to include the **User** and **Password** in the blueprint's instructions. For additional information, see [Add Instructions](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Crt-Blprnt/Blprnt-Instr.htm).
+To help sandbox end-users connect to the VM, it is recommended to include the **User** and **Password** in the blueprint's instructions. For additional information, see [Add Instructions](../../../../portal/blueprints/creating-blueprints/add-instructions.md).
 :::
     
 <table>

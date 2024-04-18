@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ## Introduction
 
-This topic describes how to use CloudShell configuration keys to customize and configure CloudShell. For the complete repository of our customer configuration keys, see [Customer Configuration Keys Repository](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfg-Ky-Rpstr.htm).
+This topic describes how to use CloudShell configuration keys to customize and configure CloudShell. For the complete repository of our customer configuration keys, see [Customer Configuration Keys Repository](../../setting-up-cloudshell/cloudshell-configuration-options/customer-configuration-keys-repository/index.md).
 
 ## How to use configuration keys
 
@@ -21,27 +21,27 @@ In this article, you will find CloudShell keys, logically arranged in categories
 
 The following categories are used to organize the configuration keys:
 
-- [Abstract resources](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm?Highlight=Advanced%20CloudShell%20Customizations#Abstract)
-- [API](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm?Highlight=Advanced%20CloudShell%20Customizations#API)
-- [Apps](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm?Highlight=Advanced%20CloudShell%20Customizations#Apps)
-- [Connectivity management and route configuration](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm?Highlight=Advanced%20CloudShell%20Customizations#_Abstract_resources)
-- [Custom live status icons](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm?Highlight=Advanced%20CloudShell%20Customizations#Custom)
-- [Blueprint Catalog](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm?Highlight=Advanced%20CloudShell%20Customizations#_Environment_catalog)
-- [Blueprint Workspace](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm?Highlight=Advanced%20CloudShell%20Customizations#Calendar)
-- [Execution Server](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm?Highlight=Advanced%20CloudShell%20Customizations#Executio)
-- [General](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm?Highlight=Advanced%20CloudShell%20Customizations#_Configuration_options_summary)
-- [Inventory dashboard](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm?Highlight=Advanced%20CloudShell%20Customizations#Inventor)
-- [New Job Scheduling](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm?Highlight=Advanced%20CloudShell%20Customizations#Job)
-- [LDAP Integration](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm?Highlight=Advanced%20CloudShell%20Customizations#LDAP)
-- [Monitoring](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm?Highlight=Advanced%20CloudShell%20Customizations#Monitori)
-- [Online Help](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm?Highlight=Advanced%20CloudShell%20Customizations#Online)
-- [Registration, passwords, emails, and licenses](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm?Highlight=Advanced%20CloudShell%20Customizations#_Reservation_Email_Options)
-- [Sandboxes](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm?Highlight=Advanced%20CloudShell%20Customizations#_Creating_and_viewing)
-- [Scheduling and Queuing](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm?Highlight=Advanced%20CloudShell%20Customizations#_Scheduling_and_Queuing)
-- [Scheduling commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm?Highlight=Advanced%20CloudShell%20Customizations#Scheduli)
-- [Search](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm?Highlight=Advanced%20CloudShell%20Customizations#_Search)
-- [Single Sign On (SSO)](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm?Highlight=Advanced%20CloudShell%20Customizations#_Single_sign_on)
-- [TestShell Studio](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm?Highlight=Advanced%20CloudShell%20Customizations#TestShel)
+- [Abstract resources](./advanced-cloudshell-customizations.md#abstract-resources)
+- [API](./advanced-cloudshell-customizations.md#api)
+- [Apps](./advanced-cloudshell-customizations.md#apps)
+- [Connectivity management and route configuration](./advanced-cloudshell-customizations.md#connectivity-management-and-route-configuration)
+- [Custom live status icons](./advanced-cloudshell-customizations.md#custom-live-status-icons)
+- [Blueprint Catalog](./advanced-cloudshell-customizations.md#blueprint-catalog)
+- [Blueprint Workspace](./advanced-cloudshell-customizations.md#blueprint-workspace)
+- [Execution Server](./advanced-cloudshell-customizations.md#execution-server)
+- [General](./advanced-cloudshell-customizations.md#general)
+- [Inventory dashboard](./advanced-cloudshell-customizations.md#inventory-dashboard)
+- [New Job Scheduling](./advanced-cloudshell-customizations.md#new-job-scheduling)
+- [LDAP Integration](./advanced-cloudshell-customizations.md#ldap-integration)
+- [Monitoring](./advanced-cloudshell-customizations.md#monitoring)
+- [Online Help](./advanced-cloudshell-customizations.md#online-help)
+- [Registration, passwords, emails, and licenses](./advanced-cloudshell-customizations.md#registration-passwords-emails-and-licenses)
+- [Sandboxes](./advanced-cloudshell-customizations.md#sandboxes)
+- [Scheduling and Queuing](./advanced-cloudshell-customizations.md#scheduling-and-queuing)
+- [Scheduling commands](./advanced-cloudshell-customizations.md#scheduling-commands)
+- [Search](./advanced-cloudshell-customizations.md#search)
+- [Single Sign On (SSO)](./advanced-cloudshell-customizations.md#single-sign-on-sso)
+- [TestShell Studio](./advanced-cloudshell-customizations.md#testshell-studio)
 
 ## Abstract resources
 
@@ -78,7 +78,7 @@ This key only applies to the matches that are considered for resolution of the a
 
 ## API
 
-For configuration keys related to API SSO, see [SSO Login to CloudShell APIs](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/APIs/API-SSO.htm).
+For configuration keys related to API SSO, see [SSO Login to CloudShell APIs](../../../devguide/available-cs-api/sso-login-to-cs-api.md).
 
 ### Setting the response page size for the Sandbox API live documentation pages
 
@@ -149,11 +149,11 @@ This key disables the options to edit or delete an App template when the admin i
 
 ## Connectivity management and route configuration
 
-For more information about the connection types, see [Add Physical Network Connectivity Requirements](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Rsc-Cnct/Phys-Ntwrk-Crt.htm).
+For more information about the connection types, see [Add Physical Network Connectivity Requirements](../../../portal/sandboxes/sandbox-workspace/add-connectivity/add-physical-network/add-phy-net-req/index.md).
 
 ### Setting max hops for routes
 
-You can set the maximum allowed hops for route resolution to cap the number of chassis connections that can be used when resolving a route. For details, see [Configure Physical Network Connectivity Requirements](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Rsc-Cnct/Phys-Ntwrk-Cnfg.htm).
+You can set the maximum allowed hops for route resolution to cap the number of chassis connections that can be used when resolving a route. For details, see [Configure Physical Network Connectivity Requirements](../../../portal/sandboxes/sandbox-workspace/add-connectivity/add-physical-network/config-physical-conn-req.md).
 
 The default value is 6 hops (or 7 switches).
 
@@ -412,7 +412,7 @@ The following table describes all the possible behaviors: 
 
 | Activity | Key value set to 'False'  | Key value set to 'True' |
 | --- | --- | --- |
-| A single template is defined | Clicking **\+ Create Blueprint** opens the drop-down list which includes the default out-of-the-box CloudShell Sandbox Template. The **Create Empty Blueprint** button is available. | Clicking **\+ Create Blueprint** creates a new blueprint based on the default out-of-the-box [CloudShell Sandbox Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Wrk-wth-Blprnt-Tmplt.htm#CloudShe). The Create Empty Blueprint button is not available. |
+| A single template is defined | Clicking **\+ Create Blueprint** opens the drop-down list which includes the default out-of-the-box CloudShell Sandbox Template. The **Create Empty Blueprint** button is available. | Clicking **\+ Create Blueprint** creates a new blueprint based on the default out-of-the-box [CloudShell Sandbox Template](../../cloudshell-manage-dashboard/blueprint-templates.md#cloudshell-sandbox-template). The Create Empty Blueprint button is not available. |
 | Multiple templates are defined | Clicking **\+ Create Blueprint** opens the drop-down list containing all available templates. The **Create Empty Blueprint** button is available. | The **Add New Blueprint** button is available. Clicking **\+ Create Blueprint** opens the drop-down list containing all available templates. The **Create Empty Blueprint** button is not available. |
 
 ## Blueprint Workspace
@@ -506,7 +506,7 @@ By default, CloudShell allocates 2 seconds for the **Export Diagram (pdf)** proc
 
 ### Enabling the Check Blueprint Routes option
 
-Use this key to show the **Check Blueprint Routes** option in the **Blueprint** menu. For additional information, see [Check Blueprint Routes](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Chck-Blprnt-Rts.htm).
+Use this key to show the **Check Blueprint Routes** option in the **Blueprint** menu. For additional information, see [Check Blueprint Routes](../../../portal/blueprints/creating-blueprints/check-blueprint-routes.md).
 
 **To enable the Check Blueprint Routes option:** 
 

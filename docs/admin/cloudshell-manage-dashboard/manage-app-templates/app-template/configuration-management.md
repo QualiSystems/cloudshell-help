@@ -10,7 +10,7 @@ When adding or editing an App, click **Configuration Management** and configure 
 ![](/Images/CloudShell-Portal/Manage/ConfigurationManagement.png)
     
 :::tip
-To learn how to develop custom scripts and Ansible playbooks, including examples, and set up support for the desired configuration management tool, see [Developing Configuration Management Scripts for Apps](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Config-Mng/Developing-Config-Management.htm).
+To learn how to develop custom scripts and Ansible playbooks, including examples, and set up support for the desired configuration management tool, see [Developing Configuration Management Scripts for Apps](../../../../devguide/develop-config-management-scripts-for-apps/index.md).
 :::
 
 :::note Notes    
@@ -55,7 +55,7 @@ Select:
 - **Windows Remote Management** if the VM has a Windows OS
         
 :::note
-To run configuration management on a Windows VM, the VM must have WinRM enabled. For details, see [Enable WinRM on Windows VMs to Support Configuration Management](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Config-Mng/Cnfg-WinRM-for-CM.htm).
+To run configuration management on a Windows VM, the VM must have WinRM enabled. For details, see [Enable WinRM on Windows VMs to Support Configuration Management](../../../../devguide/enable-winrm-on-win-vm-for-cfg-mng.md).
 :::                        
             </td>
         </tr>
@@ -165,7 +165,7 @@ Important: To configure Ansible to connect to certified hosts only (Linux VMs wi
 </table>
     
     
-2. To enable the end-user to rerun the App's configuration management on the deployed App in the sandbox, select **Allow rerunning configuration management for resources deployed from the App**. Once the App's deployment completes, a Rerun Configuration Management command is included in the deployed App's Application Commands pane. For details, see [Run App Commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Apps-Run-Cmnds.htm). This is useful for rolling back the App's VM to its original state.
+2. To enable the end-user to rerun the App's configuration management on the deployed App in the sandbox, select **Allow rerunning configuration management for resources deployed from the App**. Once the App's deployment completes, a Rerun Configuration Management command is included in the deployed App's Application Commands pane. For details, see [Run App Commands](../../../../portal/sandboxes/sandbox-workspace/apps/run-app-commands.md). This is useful for rolling back the App's VM to its original state.
     
 3. To enable blueprint and sandbox owners to modify the App's Configuration Management details, select Allow blueprint/sandbox owners to modify the App's Configuration Management. The following details can be modified: playbook/script, authentication details, inventory groups, and parameters. Note that the modifications only apply to the blueprint or sandbox of the instance.
 4. Optionally click the Add New Script/Playbook link at the bottom right to add additional custom scripts/Ansible playbooks to the App. The scripts will run in their display order, from top to bottom. You can drag scripts up or down to rearrange.

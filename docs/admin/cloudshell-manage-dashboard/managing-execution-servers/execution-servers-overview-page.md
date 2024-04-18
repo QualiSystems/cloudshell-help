@@ -10,6 +10,6 @@ The **Overview** page displays the total number of running/scheduled/pending job
 
 ## Related Topics
 
-- [Execution Servers - Servers Page](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Exctn-Srv-Servers.htm)
-- [Execution Servers - Executions Page](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Exctn-Srv-Exct.htm)
-- [Execution Servers - Commands Queue Page](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Exctn-Srv-Cmnds.htm)
+- [Execution Servers - Servers Page](../managing-execution-servers/execution-servers-servers-page.md)
+- [Execution Servers - Executions Page](../managing-execution-servers/execution-servers-executions-page.md)
+- [Execution Servers - Commands Queue Page](../managing-execution-servers/execution-servers-commands-queue-page.md)

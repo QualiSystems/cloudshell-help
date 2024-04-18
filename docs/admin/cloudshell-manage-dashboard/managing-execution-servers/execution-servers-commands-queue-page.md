@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Execution Servers - Commands Queue Page
 
-The **Commands Queue** page lists the command executions that are currently in the queue. In addition, it displays the reason why each command is in the queue. This applies to all types of commands in CloudShell, including resource/App/service commands coming from the shell's driver and orchestration commands. For details on developing such commands, see [Driver Deep Dive](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Driver-Deep-Dive.htm) and [Script Deep Dive](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Orch-Scripts/Scripts-Deep-Dive.htm).
+The **Commands Queue** page lists the command executions that are currently in the queue. In addition, it displays the reason why each command is in the queue. This applies to all types of commands in CloudShell, including resource/App/service commands coming from the shell's driver and orchestration commands. For details on developing such commands, see [Driver Deep Dive](../../../devguide/developing-shells/driver-deep-dive.md) and [Script Deep Dive](../../../devguide/develop-orch-scripts/script-deep-dive.md).
 
 ![](/Images/CloudShell-Portal/Manage/ExecutionServersCommandsQueue.png)
 
@@ -89,7 +89,7 @@ To fix this issue, install the execution server(s) using the **TestShell Executi
             <td>
             The command's resource or App is defined to select an execution server by **Execution Server Selector** attributes but no execution server matches the criteria.
 
-To link the element to an execution server, see the appropriate "Controlling execution server selection" section in [Setting Up Execution Servers to Run Commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Tst-n-Cmd-Exc.htm).
+To link the element to an execution server, see the appropriate "Controlling execution server selection" section in [Setting Up Execution Servers to Run Commands](../../cloudshell-execution-server-configurations/setting-up-execution-servers-to-run-commands.md).
             </td>
         </tr>
         <tr>
@@ -139,6 +139,6 @@ Possible reasons are that the execution servers are:
 
 ## Related Topics
 
-- [Execution Servers - Overview Page](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Exctn-Srv-Ovrvw.htm)
-- [Execution Servers - Servers Page](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Exctn-Srv-Servers.htm)
-- [Execution Servers - Executions Page](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Exctn-Srv-Exct.htm)
+- [Execution Servers - Overview Page](../managing-execution-servers/execution-servers-overview-page.md)
+- [Execution Servers - Servers Page](../managing-execution-servers/execution-servers-servers-page.md)
+- [Execution Servers - Executions Page](../managing-execution-servers/execution-servers-executions-page.md)

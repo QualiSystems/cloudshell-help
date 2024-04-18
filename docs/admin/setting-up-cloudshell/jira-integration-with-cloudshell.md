@@ -105,4 +105,4 @@ CloudShell logs errors related to communication with Jira out of the box. Howeve
 
 ## Related Topics
 
-- [Associating JIRA Issues with Test Executions](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/JOB-SCHDL/Lnk-Tst-to-Jira.htm)
+- [Associating JIRA Issues with Test Executions](../../portal/job-scheduling/associate-jira-issues-with-test-executions.md)
