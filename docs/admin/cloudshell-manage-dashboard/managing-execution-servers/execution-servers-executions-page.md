@@ -8,7 +8,7 @@ The **Executions** page enables you to both view the real time status and genera
 
 Regarding drivers, the **Executions** page displays the instances of the active drivers, not their commands. For additional information, see [Instance](../../../intro/Term.md#instance).
 
-:::note Notes:
+:::note Notes
 - Starting with CloudShell 9.3, CloudShell runs orchestration scripts directly without needing the **Python Setup & Teardown** blueprint driver. This out-of-the-box behavior can be changed using the ExecutePythonOrchestrationScriptsDirectly configuration key.
 - The blueprint driver is still included with CloudShell and running orchestration scripts manually from the sandbox's **Blueprint Commands** pane will invoke it, creating an instance for the driver in the **Executions** page.
 :::
@@ -103,7 +103,7 @@ Terminating a driver's instance immediately cancels all running commands on that
 
 In some cases, however, terminating an instance is required. For example, if you associate the resource or App to an execution server, but already have an instance of the driver running on a different execution server, that instance will prevent new commands from running on the resource. This is because the instance is associated to the wrong execution server and multiple driver instances of the same component cannot co\-exist in CloudShell. In this case, terminating the driver instance will enable the new commands to run on the correct execution server.
 
-:::note Notes:
+:::note Notes
 - Terminating running commands may cause unexpected behavior. For example, terminating a Teardown command execution on a sandbox with Azure VMs may prevent CloudShell from deleting the sandbox's resource group and VMs from the cloud provider.
 - In some cases, terminating a driver's instance in one sandbox may apply to other sandboxes if the resource is shared and is being used in different sandboxes, or in a scenario where concurrent commands are running on the resource.
 :::

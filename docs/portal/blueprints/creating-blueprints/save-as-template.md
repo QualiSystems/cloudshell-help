@@ -6,7 +6,7 @@ sidebar_position: 21
 
 This article explains how to create a template from an existing blueprint. This option is useful if you need to create blueprints that contain a basic set of capabilities, such as custom orchestration scripts.
 
-:::note Notes:
+:::note Notes
 - This action does not alter the blueprint in any way.
 - A blueprint that is configured to allow persistent sandboxes cannot be saved as template
 :::

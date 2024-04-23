@@ -4,7 +4,7 @@ sidebar_position: 9
 
 # Configure the Execution Server
 
-:::note Notes:
+:::note Notes
 - CloudShell also provides Virtual Appliances that install Execution Servers on Linux VMs. For details, see [Linux Execution Server Installation and Configuration](https://help.quali.com/Online%20Help/0.0/Portal/Content/Linux/Linux.htm).
 - To run Ansible configuration management operations, a Linux-based Execution Server needs to be created and configured. For details, see [Ansible Playbook Development for Apps](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Config-Mng/Ansible.htm).
 - Python 3 automation requires Microsoft Visual C++ Redistributable 2015 x86 and x64 to be installed on the Execution Server(s).

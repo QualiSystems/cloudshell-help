@@ -10,7 +10,7 @@ Before running the playbook in an App, it is recommended to test it manually. To
     
     `host_key_checking = False`
     
-    :::note Notes:
+    :::note Notes
     - At runtime, the Ansible driver creates a local `ansible.cfg` file and adds the above key.
     - In addition, this local `ansible.cfg` takes priority over all other config files. See this [Ansible documentation page](https://docs.ansible.com/ansible/latest/reference_appendices/config.html#the-configuration-file) for details about Ansible config file hierarchies.
     :::

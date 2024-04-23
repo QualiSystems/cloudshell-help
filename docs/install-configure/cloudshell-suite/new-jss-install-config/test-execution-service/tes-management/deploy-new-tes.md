@@ -26,7 +26,7 @@ sidebar_position: 1
     :::
 3. Modify the settings accordingly.
     
-    :::note Notes:   
+    :::note Notes   
     - You need to provide a unique name to the new Test Execution Service (in the above example: “test\-execution\-service1”). This name will be used to identify the service in Kubernetes. Make sure to specify the same name in the `TES_API_HOST` environment variable as well, followed by `-svc`.
     - Make sure to use the same image tag (in the above example: “1.0.0.116”) as in the main CloudShell helm chart.
     - It is possible to add additional environment variables to the list for additional customization, as listed in [Parameters](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/JSS/jss-tes-config.htm#Paramete).

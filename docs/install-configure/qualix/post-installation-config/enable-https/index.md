@@ -1,7 +1,7 @@
 # Enable HTTPS Connection Between QualiX and CloudShell Portal
 
 This section explains how to configure secure remote connections to devices and VMs from CloudShell sandboxes.
-:::note Notes:
+:::note Notes
 In order to connect to a device or VM from CloudShell Portal, the resource of the element must include the **User** and **Password** attributes. To learn how to add the attributes to a resource, see [Prepare and Reserve Blueprint](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Wrk-Rsc-Mng.htm).
 
 To connect using a service, the service must include an **Address**.

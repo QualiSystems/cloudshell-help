@@ -146,7 +146,7 @@ Microsoft Azure 2G
     - **RAM**: Memory in GB
     - **HDD**: Disk size in GB. Semicolon-separated list of disk number:size pairs. For example: "1:60;2:40"
             
-    :::note Notes:
+    :::note Notes
 
     - HDD disk size of a deployed App cannot be scaled down.
     - HDD disk size cannot be modified for deployed Apps that have a snapshot.

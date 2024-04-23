@@ -44,7 +44,7 @@ artifacts:
 
 Next, add the required attributes.
 
-:::note Notes:
+:::note Notes
 - You cannot modify an attribute's type and name, nor any attributes that are associated with the shell’s family as this will affect other shells that use this family.
 - CloudShell allows upgrading shells with old/deprecated attributes. For details, see [Overriding Old/Deprecated Shell Attributes](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Override-old-shell-attributes.htm).
 :::

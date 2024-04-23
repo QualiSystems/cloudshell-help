@@ -35,7 +35,7 @@ The following attributes would be used to define the vCenter Clone VM from VM:
 - **Remain Powered On**: The VM will remain powered on during the saving state.
 - **Power Off**: If the VM was powered on before the sandbox entered the saving state, the VM will shut down (power off) for the duration of the save.
 
-:::note Notes:
+:::note Notes
 - The value configured here overrides the configuration in the vCenter cloud provider resource, see [Add VMware vCenter Cloud Provider Resource](../../../../supported-cloud-providers-in-cloudshell/private-cloud-provider-support-in-cloudshell/vmware-vcenter-integration-and-configuration/add-vmware-vcenter-cloud-provider-resource.md).
 - After save has ended, the VM returns to its state prior to saving, regardless of the behavior during the save.
 :::
@@ -73,7 +73,7 @@ If **Customization Spec** is specified, the value specified in the **Hostname** 
             <td>
             (Only applies to Windows and Linux VMs) The private static IP to set on the first vNIC of the VM. If there's a default gateway, specify it after the private IP. For example: "192.168.4.124:80.114.1.87" where 80.114.1.87 is the default gateway
 
-:::note Notes:
+:::note Notes
 - If there is no gateway, the .1 IP of the same subnet will be used as the gateway. So, for private IP "192.168.4.124", gateway "192.168.4.1" will be used.
 - It is also possible to provide a subnet mask here. For example: "192.168.4.124/24:80.114.1.87"
 - If **Customization Spec** is specified, the value specified in the **Private IP** attribute will be used.

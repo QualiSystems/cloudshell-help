@@ -57,7 +57,7 @@ You can also create your own scripts that will setup and teardown a sandbox or c
     - In the **Estimated teardown duration** section, use the Up/Down arrows to define the teardown duration.  
         
     
-    :::note Notes:
+    :::note Notes
     
     - Setting either of these values to a duration of '0' hours and minutes will disable the **Setup** and **Teardown** script's execution.
     - The Setup phase is included in the sendbox's duration while Teardown is scheduled to start when the sandbox duration ends.

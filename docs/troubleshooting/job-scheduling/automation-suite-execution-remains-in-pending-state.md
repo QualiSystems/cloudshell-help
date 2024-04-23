@@ -23,7 +23,7 @@ Here are several possible reasons:
     
     - A resource on the blueprint is currently unavailable (for example, the resource is excluded or exclusively reserved in another sandbox).
     
-    :::note Notes:
+    :::note Notes
     - Items in the queue that are not scheduled will be removed by default after the configured timeout (~ 8 hours by default).
     - Having pending jobs/suites does not necessarily mean other jobs cannot be scheduled successfully.
     :::

@@ -65,7 +65,7 @@ If your CloudShell deployment includes multiple sites, it is recommended to conf
                 <p>Service categories are a method to classify Apps. The Apps are displayed in the **Add App / Service** side pane in the blueprint and sandbox diagram, arranged in categories. Only users who are permitted to view the category can access the App. Apps without a category are not displayed.</p>
                 <p>By default, the **Applications** category is selected.</p>
                 <p>Select a category from the dropdown list. You can select additional categories. Examples of categories are: applications, networking and VLAN.</p>
-:::note Notes:
+:::note Notes
 - The category must be associated with the domain in which the required cloud provider resides. For information about domain categories, see [Managing domain categories](../../../cloudshell-manage-dashboard/managing-categories.md#managing-domain-categories).
 - It is recommended to use up to a 2-level hierarchy when organizing the **Add App / Service** catalog (i.e. root and sub-category).
 - In the **Add App / Service** side pane, Apps are displayed in the root category only. This includes services associated to sub-categories.

@@ -11,7 +11,7 @@ Components with a <span style={{ color:'green' }}>green</span> frame denote comp
 :::
 ![](/Images/IG2/JssArchitecture.png)
 
-:::note Notes:
+:::note Notes
 - The New Job Scheduling services are installed on Kubernetes. These include Job Scheduling Service, Identity Service, Test Discovery Service, Test Execution Service and Sandbox Service. However, Sandbox Service can be installed externally as part of the Quali Server installation.
 - Sandbox Service comes in two flavors, each using a different MongoDB:
     

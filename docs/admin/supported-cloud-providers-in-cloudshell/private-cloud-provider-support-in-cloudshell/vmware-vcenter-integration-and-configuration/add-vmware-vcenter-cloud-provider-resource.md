@@ -8,7 +8,7 @@ This article explains how to configure a vCenter cloud provider resource. The **
 :::important Tip:
 We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which provides significant enhancements and capabilities, and is tamper-resistant from within CloudShell, ensuring your Azure cloud provider resources and Apps are in pristine condition. Useful articles: [Replacing the 1st Gen shell with a 2nd Gen version](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Converting-1G-Shells.htm#Migrate), [Cloud Provider Shells - Features and Capabilities Per Release](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Clp-capabilities.htm).
 :::
-:::note Notes:
+:::note Notes
 - vCenter elements created by CloudShell should not be altered as this may cause unexpected behavior.
 - The supported versions are vSphere 5.5 - 6.5, 6.7, 7.
 :::
@@ -117,7 +117,7 @@ We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which p
                 <td>
                 vCenter cluster or host to use when deploying a virtual machine. To specify a host instead of a cluster, use: Cluster Name/Host IP.
 
-    :::note Notes:
+    :::note Notes
     - If the cluster is in **Under Maintenance** mode, the deployment may fail.
     - Discovery of the resource will fail if your vCenter server has a datastore cluster folder with the same name as the specified VM cluster.
     :::

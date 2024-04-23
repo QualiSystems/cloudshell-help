@@ -16,7 +16,7 @@ The CloudShell Insight BI package includes the following components:
     - **Utilization**: Resource utilization data. Helps to identify bottlenecks and unused resources
     -  **Yearly Utilization**: Monthly resource utilization over the last 12 months
 
-:::note Notes:
+:::note Notes
 - Data related to **Sandbox Save and Restore** is stored in the **Insight** database and can be displayed in customized dashboards.
 - In order to add/customize dashboards and connect to additional data sources, contact your Quali Account Manager.
 - Legacy dashboards are still available as a paid add-on, and include test automation and virtualization dashboards. For details, contact your Quali Account Manager.

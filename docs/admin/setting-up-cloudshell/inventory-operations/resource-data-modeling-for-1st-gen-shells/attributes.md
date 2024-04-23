@@ -202,7 +202,7 @@ The final value is ultimately set by the system.
             <td>
             Enables admins to limit the execution of a resource or App to a specific execution server (or group of execution servers) instead of just using the first available execution server. For more information, see [Setting Up Execution Servers to Run Commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Tst-n-Cmd-Exc.htm).
 
-:::note Notes:
+:::note Notes
 - If the Execution Server Selector attribute is missing from the execution server's details page, make sure the attribute has the **Execution Server Selector** rule attached to it, in Resource Manager Client's **Attributes** tab.
 - Attributes with this rule are displayed in the Inventory dashboard's resource discovery form.
 - This does not apply to job suites as they provide the option of associating specific execution servers to the execution of the job. For more information, see [Add jobs to an automation suite](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/JOB-SCHDL/New-Autmt-Suite.htm#Add2).

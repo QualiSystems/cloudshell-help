@@ -37,7 +37,7 @@ Global inputs are a simple way to request information from the user when they re
     2. Select a Lookup attribute from the **\[Select Attribute\]** drop-down list.
     3. Select the **Bind global input to attribute values** checkbox if you want to ensure that only the lookup attribute's values are used. Leaving this checkbox unselected enables blueprint designers to modify the values presented by the global input.
     
-    :::note Notes:
+    :::note Notes
     
     - Changes made to the attribute's values are automatically applied to the global input.
     - Setup scripts that use global inputs with empty spaces before or after the input value may sometimes fail.
@@ -45,7 +45,7 @@ Global inputs are a simple way to request information from the user when they re
     :::
 - A **Password** input accepts a freetext password value. The value is displayed as a masked value (\*\*\*\*\*). This type of global input cannot be linked to other inputs. Note that the value can be decrypted using the CloudShell Automation API's [DecryptPassword](pathname:///api-docs/2023.3/Python-API/cloudshell.api.html?highlight=decryptpassword#cloudshell.api.cloudshell_api.CloudShellAPISession.DecryptPassword) method.
 
-:::tip Tip for admins: 
+:::tip Tip for admins
 It is possible to resize the global text boxes of the global inputs. For details, see [Resizing the value box of "text" global inputs](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Rsz-text-glbl-inpt.htm#Resizing).
 :::
 ## Resource requirements and additional info
@@ -60,7 +60,7 @@ As the blueprint accumulates more required user inputs, it may become necessary 
 
 After clicking the 'link attribute' button you will be able to choose whether to link to an existing global attribute or create a new one. Once the attribute is linked, you will see the global input appearing as a tag on the input you've linked. Once an input is linked to a global input it will no longer appear to users reserving the blueprint and will be set only via the input it is linked to.
 
-:::note Notes:
+:::note Notes
 
 - If you're linking a Lookup attribute, you cannot bind the two together. As a result, blueprint designers will be able to modify the global input's values. When you create the attribute ahead of time, you can bind it to the attribute values, which disables the modification option. For details, see the Lookup input's description in the [Global inputs](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Crt-Blprnt/Blprnt-Usr-Inpts.htm?Highlight=Add%20User%20Inputs#Global) section above.
 - Abstract resource attributes with partial or search conditions, which use a non-equals action, cannot be linked to global inputs.

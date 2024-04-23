@@ -18,7 +18,7 @@ As illustrated below, the following takes place when a Python script or driver i
 
 ![](/Images/Admin-Guide/Setting-Up-CloudShell/PyPiServer-flow_673x332.png)
 
-:::note Notes:
+:::note Notes
 - To configure PyPi Server behind a proxy to allow the Execution Servers to reach PyPi Server, see [Using a Proxy to Download Python Packages from Public PyPi](../setting-up-python-virtual-environments/using-a-proxy-to-download-python-packages-from-public-pypi.md).
 - To configure PyPi Server behind a reverse proxy for secure communication between the PyPi Server and the Execution Servers, see [Configuring PyPi Server to Work in Secure Mode](../../../install-configure/cloudshell-suite/secure-communication/config-secured-pypi.md).
 :::

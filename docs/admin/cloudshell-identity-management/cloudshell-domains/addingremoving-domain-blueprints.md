@@ -10,7 +10,7 @@ The are two ways to add blueprints to a domain: in the domain tab's **Properties
 - Use the domain tab's **Diagram** page to add new blueprints directly from **Resource Explorer**, and to perform blueprint operations.
 - Multi selection is supported.
 
-:::note Notes:
+:::note Notes
 - When adding a blueprint to a domain, the blueprint's resources, services and Apps are added as well.
 - The blueprint's properties, including privacy setting, are also preserved, so if the blueprint is private, only the blueprint's owner will be able to see it in the new domain.
 :::

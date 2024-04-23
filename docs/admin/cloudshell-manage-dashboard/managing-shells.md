@@ -38,7 +38,7 @@ A shell update is not reversible(in other words, you cannot downgrade to an earl
     
     The Shell is displayed in the **Shells** page and can be used by domain administrators in all CloudShell domains to create new inventory resources, as explained in [Adding Inventory Resources](../../portal/inventory/managing-resources/adding-inventory-resources/index.md).
     
-    :::note Notes:
+    :::note Notes
     - If you are planning on running CloudShell in offline mode, and the Shell has dependencies, make sure to update the dependencies repository - see [Updating Python Dependencies for Shells, Drivers and Scripts](../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/updating-python-dependencies-for-shells-drivers-and-scripts.md).
     - Python 3 automation requires Microsoft Visual C++ Redistributable 2015 x86 and x64 to be installed on the Execution Server(s).
     :::    
@@ -47,7 +47,7 @@ A shell update is not reversible(in other words, you cannot downgrade to an earl
 
 This section explains how to add an attribute from the pool of global attributes to the Shell and set the attribute's defaults. Note that this capability applies to the Shell's root model and sub-models.
 
-:::note Notes:
+:::note Notes
 - This capability applies to attributes that already exist in CloudShell. If the attribute you want to add is missing, make sure to add it in Resource Manager Client's **Attributes** tab.
 - Custom attributes that are added to already-installed service shells are defined as "user input". As such, when adding the service into the blueprint/sandbox diagram, these attributes are displayed in the service's details form. In addition, when upgrading CloudShell to 9.1 or a later version, CloudShell will set all custom service attributes as user input.
 :::

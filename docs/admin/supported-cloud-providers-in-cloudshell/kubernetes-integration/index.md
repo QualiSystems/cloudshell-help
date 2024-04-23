@@ -10,7 +10,7 @@ CloudShell communicates with the Kubernetes cluster over the Kubernetes API to d
 
 When deploying a sandbox, CloudShell creates a Kubernetes deployment in a dedicated namespace for the sandbox. The deployment spins up 1 or more pods for each Kubernetes App (number of pods are defined in the App’s settings) as well as services for exposing the internal and external ports defined in the App. A dedicated service is created for each port. For each internal port, a ClusterIP service is created, and for each external port, a LoadBalancer or NodePort service is created.
 
-:::note Notes:
+:::note Notes
 - CloudShell does not manage Kubernetes App connectivity at this time. This can be done using the external and internal ports defined in the App.
 - When the sandbox ends, the sandbox's namespace along with all its components are automatically deleted from the cluster.
 - The App's external IP is displayed in the VM Details pane. For details, see [View an App's VM Details](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Apps-VM-Details.htm).

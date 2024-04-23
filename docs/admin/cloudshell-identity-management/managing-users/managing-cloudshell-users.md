@@ -19,7 +19,7 @@ The following user management options are performed in the **Users** tab in the 
     - **Password**
     - **Email**: user's email that will receive email notifications and messages from other users regarding sandboxes.
         
-        :::note Notes:
+        :::note Notes
         - The user can change their email in CloudShell Portal.
         - To enable email notifications, [SMTP mail configuration](../../../install-configure/cloudshell-suite/configure-products/admin-config-settings.md#smtp-mail-configuration) is required.
         :::

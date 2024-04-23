@@ -89,7 +89,7 @@ An automation suite must have at least one job that has a test. However, an auto
         | Set specific timeframe | Define a specific start and end time for the suite. |
         | End sandbox when Job fails | Select this option to end sandboxes automatically when the job fails. |
         
-        :::note Notes:        
+        :::note Notes        
         - When the suite's execution time arrives, the suite enters the queue and waits for the right execution server and sandbox to be ready. For additional information, see [Running Automation Suites](../running-automation-suites/index.md).
         - Additional scheduling options are available when running a custom execution of a template. For additional information, see [Running Custom Automation Suites](../running-automation-suites/run-custom-suites.md).
         :::

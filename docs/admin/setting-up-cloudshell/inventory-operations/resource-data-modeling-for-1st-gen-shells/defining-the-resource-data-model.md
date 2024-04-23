@@ -165,12 +165,12 @@ When importing packages into CloudShell or upgrading from CloudShell 8.0 or earl
     
 
 ## Associating a driver to a resource model
-:::caution Important:
-The **Drivers** management page is only visible if you set the HideDriversTabInManage key. This tab is only relevant when developing 1st Gen Shells. For details, see [Customer Configuration Keys Repository](../../../../admin/setting-up-cloudshell/cloudshell-configuration-options/customer-configuration-keys-repository.md).
+:::warning Important
+The **Drivers** management page is only visible if you set the HideDriversTabInManage key. This tab is only relevant when developing 1st Gen Shells. For details, see [Customer Configuration Keys Repository](../../cloudshell-configuration-options/customer-configuration-keys-repository/general.md#show-the-drivers-management-page).
 :::
 This procedure explains how to associate a driver that exists in CloudShell to a resource model. Drivers provide commands that can be run on resources.
 
-Drivers are added to CloudShell in the CloudShell Portal's **Manage** dashboard, as explained in [Adding drivers](../../../../admin/cloudshell-manage-dashboard/managing-automation/managing-drivers.md#adding-drivers).
+Drivers are added to CloudShell in the CloudShell Portal's **Manage** dashboard, as explained in [Adding drivers](../../../cloudshell-manage-dashboard/managing-automation/managing-drivers.md#adding-drivers).
 
 **To associate a driver to a resource model:**
 

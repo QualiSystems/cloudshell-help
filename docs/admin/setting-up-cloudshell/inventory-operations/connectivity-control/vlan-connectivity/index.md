@@ -289,7 +289,7 @@ If QinQ mode is enabled on the VLAN service but cannot be established on the L2 
     </tbody>
 </table>
 1. Save your changes.
-:::note Notes:
+:::note Notes
 When a peer-to-peer connection is being resolved, CloudShell selects a VLAN to use according to the following logic:
 
 1. CloudShell selects the P2P VLAN Default service that exists in the blueprint.

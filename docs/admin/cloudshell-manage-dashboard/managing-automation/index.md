@@ -11,7 +11,7 @@ Scripts and drivers are used in the automation process, and their functions vary
 - [Managing Drivers](../managing-automation/managing-drivers.md) (hidden by default, applies to 1st Gen shells only)
   
   :::warning Important
-  The Drivers management page is only visible if you set the HideDriversTabInManage key. This tab is only relevant when developing 1st Gen Shells. For details, see [Customer Configuration Keys Repository](../../setting-up-cloudshell/cloudshell-configuration-options/customer-configuration-keys-repository/index.md).
+  The Drivers management page is only visible if you set the HideDriversTabInManage key. This tab is only relevant when developing 1st Gen Shells. For details, see [Customer Configuration Keys Repository](../../setting-up-cloudshell/cloudshell-configuration-options/customer-configuration-keys-repository/general.md#show-the-drivers-management-page).
   :::
     
 

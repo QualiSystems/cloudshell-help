@@ -16,7 +16,7 @@ The first thing you need to do is set up an Execution Server that can execute An
 
 This section explains how to indicate that the Execution Server installation has Ansible installed and therefore can support Ansible operations on Apps.
 
-:::note Notes:
+:::note Notes
 - If the Execution Server VM does not have an internet connection, make sure the OfflinePackageRepository zip file is extracted to the local PyPi Server repository. For details, see [Add the out-of-the-box dependencies package to the local PyPi Server repository](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfgr-Pyth-Env-Wrk-Offln.htm#Add2).
 - Quali Server must be running when configuring the Execution Server.
 ::: 
@@ -66,7 +66,7 @@ This section explains how to indicate that the Execution Server installation has
     | /ansible | Parameter indicating to Ansible configuration management that this Execution Server supports Ansible operations |
     | /a |     Additional attributes to set on the Execution Server. For example, passing to that option the value `{'attributeName1':'attributeValue1', 'attributeName2':'attribauteValue2'}` adds two attributes and their values.<br/>Note that the attributes must have the **Execution Server Selector** rule. |
     
-    :::note Notes:
+    :::note Notes
     - If the Execution Server VM does not have an internet connection, make sure the `OfflinePackageRepository` zip file is extracted to the local PyPi Server repository. For details, see [Add the out-of-the-box dependencies package to the local PyPi Server repository](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfgr-Pyth-Env-Wrk-Offln.htm#Add2).
     - Quali Server must be running when configuring the Execution Server.
     - Depending on your flavor of Linux, you may need to escape parameter values containing special characters with single or double quotes. For example: `"admin1234!"`

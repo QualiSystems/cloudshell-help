@@ -6,7 +6,7 @@ This article explains how to configure CloudShell's **Subnet** service to enable
 
 During the sandbox's setup, CloudShell creates the subnets in the public cloud and during App deployment, each App's VM is connected to the appropriate subnets. Subnet-based connectivity supports connections involving public cloud Apps (peer-to-peer and many-to-many).
 
-:::note Notes:
+:::note Notes
 - By default, CloudShell creates a subnet for every sandbox that has public cloud Apps. If additional subnets are required, the blueprint designer can add **Subnet** services to the blueprint and/or create peer-to-peer connections between AWS/Azure Apps. Note that if additional subnets are used, the default subnet will not be created in the sandbox.
 - CloudShell creates the necessary route tables in AWS/Azure.
 :::

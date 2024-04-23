@@ -20,7 +20,7 @@ Use the instructions in the following procedure to configure Insight to work wit
     
     http://\[CloudShell Portal Address\]:\[CloudShell Portal Port\]/Account/SisenseLogin
     
-    :::note Notes:    
+    :::note Notes    
     - \[CloudShell Portal Address\] is the IP address or hostname that users enter in order to browse to CloudShell Portal.
     - \[CloudShell Portal Port\] is the port to use (required if default port 80 is not used).
     :::    

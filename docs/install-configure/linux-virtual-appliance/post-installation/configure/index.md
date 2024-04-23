@@ -22,7 +22,7 @@ Each of these parameters has a short form as well. For example:
 mono QsExecutionServerConsoleConfig.exe /s:192.168.1.66 /u:admin /p:admin /esn:my-exec
 ```
 
-:::note Notes:
+:::note Notes
 - To install the Linux Execution Server in an offline environment, make sure the `OfflinePackageRepository` zip file is extracted to the local PyPi Server repository. For details, see [Add the out-of-the-box dependencies package to the local PyPi Server repository](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfgr-Pyth-Env-Wrk-Offln.htm#Add2).
 - Quali Server must be running when configuring the Execution Server.
 - For TeamMachine, specify the Quali Server's private IP or DNS name.

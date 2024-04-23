@@ -79,7 +79,7 @@ Follow this procedure to install a new Execution Server from scratch. To upgrade
     ./cloudshell_es_install_script.sh 192.168.42.132 admin admin es-shells
     ```
     
-    :::note Notes:
+    :::note Notes
     - If the Execution Server VM does not have an internet connection, make sure the OfflinePackageRepository zip file is extracted to the local PyPi Server repository. For details, see [Add the out-of-the-box dependencies package to the local PyPi Server repository](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfgr-Pyth-Env-Wrk-Offln.htm#Add2).
     - Quali Server must be running when configuring the Execution Server.
     - Depending on your flavor of Linux, you may need to escape parameter values containing special characters with single or double quotes. For example: `"admin1234!"`
@@ -121,7 +121,7 @@ There are two ways to upgrade an AWS Execution Server:
     ./cloudshell_es_install_script.sh 192.168.42.132 admin admin es-shells
     ```
     
-    :::note Notes:
+    :::note Notes
     - If the Execution Server VM does not have an internet connection, make sure the OfflinePackageRepository zip file is extracted to the local PyPi Server repository. For details, see [Add the out-of-the-box dependencies package to the local PyPi Server repository](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfgr-Pyth-Env-Wrk-Offln.htm#Add2).
     - Quali Server must be running when configuring the Execution Server. 
     - Depending on your flavor of Linux, you may need to escape parameter values containing special characters with single or double quotes. For example: `"admin1234!"`

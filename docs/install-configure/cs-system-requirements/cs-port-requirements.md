@@ -19,7 +19,7 @@ The following table describes the required ports for each server or machine on w
 :::tip
 The descriptions for each server/machine indicate which components need outbound port access.
 :::
-:::note Notes: 
+:::note Notes 
 Sandbox Service comes in two flavors, each using a different MongoDB:
 
 - Service embedded on the Quali Server machine that uses MongoDB over port 27017.

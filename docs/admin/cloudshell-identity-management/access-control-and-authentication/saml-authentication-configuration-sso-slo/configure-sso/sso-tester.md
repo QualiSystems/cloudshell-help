@@ -85,7 +85,7 @@ The SSO Tester package includes a web application that tests SSO integration wit
     A test page with the attributes returned by the IdP is displayed.
     
 6. If errors are displayed, make the required changes and reload the website.
-    :::note Notes:
+    :::note Notes
     - If error message HTTP Error 500.19 is issued, change the permissions of the SSO Tester's Portal folder and reload the website.
     - If changes were made to the `kentor.config` file, reset the application in the IIS Manager.
         

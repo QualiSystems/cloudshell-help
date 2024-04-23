@@ -59,7 +59,7 @@ By default, the **Applications** category is selected.
 
 Select a category from the dropdown list. You can select additional categories. Examples of categories are: applications, networking and VLAN.
 
-:::note Notes:
+:::note Notes
 - The category must be associated with the domain in which the required cloud provider resides. For information about domain categories, see [Managing domain categories](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Blprnt-Ctlg-Ctgs.htm#Managing2).
 - It is recommended to use up to a 2-level hierarchy when organizing the Add App / Service catalog (i.e. root and sub-category).
 - In the Add App / Service side pane, Apps are displayed in the root category only. This includes services associated to sub-categories.
@@ -109,7 +109,7 @@ Select a category from the dropdown list. You can select additional categories. 
     To learn how to develop custom scripts and Ansible playbooks, including examples, and set up support for the desired configuration management tool, see [Developing Configuration Management Scripts for Apps](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Config-Mng/Developing-Config-Management.htm).
     :::
 
-    :::note Notes:
+    :::note Notes
     - To run configuration management on an Azure App, make sure the App's VM size is Basic\_A2 or larger.
     - For configuration management operations, CloudShell uses an available Execution Server (for Ansible, it's a Linux Execution Server that has the **Supports Ansible** flag).
         
@@ -220,7 +220,7 @@ To run configuration management on a Windows VM, the VM must have WinRM enabled.
     For GitHub and GitLab, specify the API token. For BitBucket Cloud, set the repo's "App Password" in the App template's **Password** field. For BitBucket Data Center, specify the personal access token.
     
 
-:::note Notes:
+:::note Notes
 - **For Custom Script configurations**: In SSH mode, only bash and sh scripts are allowed. In WinRM mode, only PowerShell scripts are allowed. WinRM over HTTPS only applies to custom scripts at this time. If WinRM is configured to run over HTTPS, the execution server will first try to run the custom script over HTTPS and then fall back to HTTP if HTTPS is unsuccessful. To prevent the fallback, set the **winrm_transport** parameter to **ssl**.
 - **For Ansible configurations**: The Ansible playbook must be a YML or YAML file. To specify multiple playbooks or a hierarchy of an Ansible project, you can specify multiple Ansible playbooks or a ZIP package. For example: `https://raw.githubusercontent.com/QualiSystemsLab/private-repo-zip-download/master/README.zip`
 - If a ZIP containing 2 or more playbooks is specified, CloudShell will use the playbook file titled `site.yml` or `site.yaml`. If the file is missing, the App's deployment will fail.
@@ -303,7 +303,7 @@ Changing the Shell might cause additional fields to become visible and you may n
             <td>
             User defined in the App's image. The **User/Password** credentials are used by QualiX to create in-browser connections to the VM from within the sandbox.
 
-:::note Notes:
+:::note Notes
 - For AWS instances,make sure to set the **User** of a user that already exists on the Amazon machine image. For custom images, the image owner should know the credentials, while community/marketplace images have the image's credentials listed in their documentation.
 - Azure VM username and password restrictions apply. For details, see [Frequently asked question about Windows Virtual Machines](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/faq).
 - For Azure Marketplace images, CloudShell will create a user on the VM based on the **User/Password** credentials you specify.
@@ -316,7 +316,7 @@ Changing the Shell might cause additional fields to become visible and you may n
             <td>
             VM user's password.
 
-:::note Notes:
+:::note Notes
 - For AWS Marketplace images, leave the **Password** empty. The AWS shell generates a new key-pair for each sandbox, which QualiX will use to establish the in-browser connection.
 - For Azure Marketplace images:
     - If the password is not set, only the user name will be required. For Linux VMs, CloudShell will create an SSH key-pair to enable a secure connection.

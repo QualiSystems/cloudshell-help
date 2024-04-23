@@ -44,7 +44,7 @@ session.ConfigureApps(
 )
 ```
 
-:::note Notes:
+:::note Notes
 Since this script uses parameters defined on the App template, it will not work when run manually outside of CloudShell. For this to work, you will need to edit the Python code as follows:
 
 - Update the CloudShell settings passed to the `session` variable, if needed.

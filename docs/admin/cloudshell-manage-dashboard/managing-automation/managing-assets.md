@@ -51,7 +51,7 @@ Scripts give you the flexibility to customize a blueprint and make extra feature
 
 Use the steps in the following procedure to add blueprint and resource scripts to the CloudShell Portal.
 
-:::note Notes:
+:::note Notes
 - The script is added to the domain you are currently in. To expose the script to all domains, add the script in the Global domain
 - By default, new scripts are added into CloudShell as Python 3 scripts. Therefore, if you're adding a Python 2 script, make sure to change the script's **Type**, as explained in [Editing scripts](../../../admin/cloudshell-manage-dashboard/managing-automation/managing-assets.md#editing-scripts).
 :::
@@ -142,7 +142,7 @@ This field is relevant for blueprint scripts only.
 
 The default setting is Python 3, but the CloudShell admin can change it via the `DefaultPythonVersion` configuration key.
 
-:::note Notes:
+:::note Notes
 - This does not affect existing scripts, whose Python version remains as is.
 - Python 3 automation requires Microsoft Visual C++ Redistributable 2015 x86 and x64 to be installed on the Execution Server(s).
 :::

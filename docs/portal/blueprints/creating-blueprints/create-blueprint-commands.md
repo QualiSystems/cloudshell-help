@@ -12,7 +12,7 @@ Scripts give you the flexibility to customize a blueprint and make extra feature
 
 Use the steps in the following procedure to add blueprint and resource scripts to the CloudShell Portal.
 
-:::note Notes:
+:::note Notes
 
 - The script is added to the domain you are currently in. To expose the script to all domains, add the script in the **Global** domain
 - By default, new scripts are added into CloudShell as Python 3 scripts. Therefore, if you're adding a Python 2 script, make sure to change the script's **Type**, as explained in [Editing scripts](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Scrpt.htm#EditingScrpts).

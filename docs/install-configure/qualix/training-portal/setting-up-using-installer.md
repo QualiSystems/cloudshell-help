@@ -164,7 +164,7 @@ sidebar_position: 1
     ```javascript
     http://112.78.85.27:3001/645b57f6-9ea3-4968-aa92-900bf3ee5be8?access=NEapY8Cnqk6JYPNAt7il5w2
     ```
-    :::tip Tips:    
+    :::tip Tips
     - By default, when starting the Training Portal with the `node index.js` command, it will start listening on port 3001. This is a value that is coming from inside the `index.js` file. If you prefer a different port, you should edit the file.
     - Use a tool like pm2 to make the process run as a service ([https://pm2.keymetrics.io/](https://pm2.keymetrics.io/)).
     :::

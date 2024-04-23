@@ -108,7 +108,7 @@ It is therefore important to limit the number of times venvs are updated by the 
 
 The default value is 480 minutes.
 
-:::note Notes:
+:::note Notes
 - If the Execution Server restarts and there are existing virtual environments in place, the Execution Server will update the venv and reset the validity period.
     
 - This key applies to online and offline modes.

@@ -56,7 +56,7 @@ This method enables you to connect multiple endpoints to each other by linking t
     - **Public**: (For Subnet services) Determine if the Subnet is connected to the internet.
     - **Subnet Size**: (For Subnet services) Select the subnet size of this service (block size of the subnet CIDR). Possible values: 16, 32, 64, 128 (corresponding to block sizes of /28, /27, /26 and /25).
         
-        :::note Notes:
+        :::note Notes
         - Since each cloud provider has a few IPs in each subnet reserved for networking services, the actual number of Apps that can be added to a subnet is lower than the number set in the subnet size attribute. Currently in AWS, 5 IPs are reserved.
         - When adding multiple VLAN or subnet services, keep in mind the total maximum number of IPs per sandbox is 255.
         :::

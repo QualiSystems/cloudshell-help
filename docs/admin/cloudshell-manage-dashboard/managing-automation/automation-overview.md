@@ -11,14 +11,14 @@ The Automation process is enabled in the **Sandbox** workspace and is invoked du
 
 Scripts and drivers are used in the automation process, and their functions vary. For more details, see:
 
-- [Managing Assets](../../../admin/cloudshell-manage-dashboard/managing-automation/managing-assets.md)
-- [Managing Drivers](../../../admin/cloudshell-manage-dashboard/managing-automation/managing-drivers.md) (hidden by default, applies to 1st Gen shells only)
-:::caution Important:
-The **Drivers** management page is only visible if you set the HideDriversTabInManage key. This tab is only relevant when developing 1st Gen Shells. For details, see [Customer Configuration Keys Repository](../../../admin/setting-up-cloudshell/cloudshell-configuration-options/customer-configuration-keys-repository.md).
+- [Managing Assets](./managing-assets.md)
+- [Managing Drivers](./managing-drivers.md) (hidden by default, applies to 1st Gen shells only)
+:::warning Important
+The **Drivers** management page is only visible if you set the HideDriversTabInManage key. This tab is only relevant when developing 1st Gen Shells. For details, see [Customer Configuration Keys Repository](../../setting-up-cloudshell/cloudshell-configuration-options/customer-configuration-keys-repository/general.md#show-the-drivers-management-page).
 :::
 CloudShell supports associating scripts and drivers with different domains. For more details, see:
 
-- [Associating Automation to Domains](../../../admin/cloudshell-manage-dashboard/managing-automation/associating-automation-to-domains.md)
+- [Associating Automation to Domains](./associating-automation-to-domains.md)
 
 ## Related Topics
 

@@ -3,12 +3,12 @@ sidebar_position: 3
 ---
 
 # Managing Drivers
-:::caution Important:
-The **Drivers** management page is only visible if you set the HideDriversTabInManage key. This tab is only relevant when developing 1st Gen Shells. For details, see [Customer Configuration Keys Repository](../../../admin/setting-up-cloudshell/cloudshell-configuration-options/customer-configuration-keys-repository.md).
+:::warning Important
+The **Drivers** management page is only visible if you set the HideDriversTabInManage key. This tab is only relevant when developing 1st Gen Shells. For details, see [Customer Configuration Keys Repository](../../setting-up-cloudshell/cloudshell-configuration-options/customer-configuration-keys-repository/general.md#show-the-drivers-management-page).
 :::
 ## Drivers overview
 
-In CloudShell, a driver is a group of commands that can be associated with a blueprint or resource. Each blueprint or resource can have one driver associated with it. Blueprint drivers are developed in CloudShell Authoring while resource drivers can also be developed in Python, on their own or within Shells. To learn more about Shells, see [Managing Shells](../../../admin/cloudshell-manage-dashboard/managing-shells.md).
+In CloudShell, a driver is a group of commands that can be associated with a blueprint or resource. Each blueprint or resource can have one driver associated with it. Blueprint drivers are developed in CloudShell Authoring while resource drivers can also be developed in Python, on their own or within Shells. To learn more about Shells, see [Managing Shells](../managing-shells.md).
 :::note
 Resource drivers are supported for backwards compatibility only.
 :::

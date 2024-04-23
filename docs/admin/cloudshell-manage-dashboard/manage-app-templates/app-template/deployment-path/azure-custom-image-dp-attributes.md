@@ -153,7 +153,7 @@ Options are:
 - **Extension Script File**: Raw URL of the script file
 - **Extension Script Configuration**: Space-separated value containing the tool to be used to execute the script, such as Python or PowerShell, the script's file name and extension, and any inputs that need to be passed to the script. For example: `python my_script.py input1` `input2`
     
-    :::note Notes:
+    :::note Notes
     - For non-PowerShell scripts, the tool to be used to execute the script must be installed on the VM.
     - For Linux VMs, you must specify the tool to be used. For Windows VMs, PowerShell is used by default, unless a different tool is specified.
     - Extension scripts are not supported on Kali Linux images in Azure Marketplace. To fix this issue, you will need to use a modified version of the Marketplace image:

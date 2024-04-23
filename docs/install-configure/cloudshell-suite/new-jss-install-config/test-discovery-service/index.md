@@ -7,7 +7,7 @@
 
 A single Test Discovery Service is responsible for handling a specific remote test repository (also a single test type), so integrating with multiple repositories requires several Test Discovery Services.
 
-:::note Notes:
+:::note Notes
 - Test Discovery Service doesn't need to be associated to a domain. For each test, it checks which domain it applies to using the `.cs_domains` file in the test’s online repository and passes this information to the New Job Scheduling, which assigns the execution of the test to an available Test Execution Service in the test’s domain.
 - Only tests that will be discovered by the new New Job Scheduling will be presented in the Job Scheduling Portal and supported by the system.
 - The New Job Scheduling currently supports the use of a pre-defined interval, but we are considering adding support for a webhook.

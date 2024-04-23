@@ -34,7 +34,7 @@ If any of the below 3rd Party components are missing from your computer, the Clo
 - Microsoft PowerShell version 2 is required for the shell tool.
 - Ranorex version 8.3.2 (last verified in CloudShell 9.3) is required for GUI Automator.
     
-    :::note Notes:
+    :::note Notes
     
     - When using Ranorex with certain browsers, you might have to install a plugin. For example, the Ranorex plugin for Chrome is available at this [link](http://www.ranorex.com/support/user-guide-20/instrumentation-wizard/google-chrome.html).
     - Before upgrading Ranorex, note that tests using Ranorex will be upgraded but cannot be downgraded back to the previous Ranorex version. Therefore, we recommend to back up your local and shared tests before upgrade.

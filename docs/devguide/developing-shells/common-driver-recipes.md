@@ -206,7 +206,7 @@ def PowerOn(self, context, ports):
 
 To enable intellisense, on the `driver.py`, include the ResourceRemoteCommandContext context in the command’s definition, as shown above.
 
-:::note Notes:
+:::note Notes
 - Connected command definitions must include a ports parameter. You don’t need to actually use it in your command. Just make sure it’s included as it allows the connected command to run on multiple resources at the same time.
 - Power commands only apply to unshared resources while generic resource commands can run on both shared and unshared resources.
 - In CloudShell, the resource containing the connected command and the target resource must be directly connected to each other. If you have a switch resource in between, the connected command will not show on the target resource.

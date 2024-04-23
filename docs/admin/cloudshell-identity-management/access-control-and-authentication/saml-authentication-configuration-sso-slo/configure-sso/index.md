@@ -34,7 +34,7 @@ CloudShell supports SAML v2.0. If you encounter an error, please contact your SA
 When setting up an Identity Provider, make sure you do the following:
 
 1. Configure a SAML 2.0 app with the required users.
-    :::note Notes:
+    :::note Notes
     When creating users in the IdP, the users must have the following attributes in order to be authenticated (see the `kentor.config` example to see how they are used):
     
     - `userName`: with the user name;
@@ -240,7 +240,7 @@ Expand for a description of the requirements in the sample file:
 | findValue | A search term to use to find the certificate. The value will be searched for in the field specified by the **x509FindType** attribute. The required information can be found in the installed certificate details in the certificate store. |
 | x509FindType | The field according to which the certificate will be searched, as defined by the value in the **findValue** attribute. You can find more information about this in MSDN's [X509FindType Enumeration](https://msdn.microsoft.com/en-us/library/system.security.cryptography.x509certificates.x509findtype.aspx) page. |
 </details>
-:::note Notes:
+:::note Notes
 - The sample file shows only the minimum requirements.
 - You may also save the certificate file and use the key `<signingCertificate fileName="~/App_Data/Kentor.AuthServices.StubIdp.cer" />` with your certificate file path.
 :::

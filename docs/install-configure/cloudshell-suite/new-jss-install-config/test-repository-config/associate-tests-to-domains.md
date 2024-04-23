@@ -8,7 +8,7 @@ Associating a test to a domain allows the users to split their repositories to g
 
 In the repository, by default, the tests are associated with all domains. To change that, in the online test repository, add a `.cs_domains` file to the relevant parent directory with a list of the domains.
 
-:::note Notes:
+:::note Notes
 
 - The `.cs_domains` file applies to the tests in the directory containing the file and to its sub-directories.
 - The `.cs_domains` file overrides any domain associations defined in a parent directory.

@@ -6,7 +6,7 @@ sidebar_position: 6
 
 You can configure resources to be available or unavailable for other sandboxes by choosing to share or unshare them. The default share status of a resource is determined by its family's Locked by Default check box in the Resource Manager Client's Resource Families explorer.
 
-:::note Notes:
+:::note Notes
 - When you reserve an unshared resource, all its sub-resources become unshared in the sandbox.
 - To override the share setting for a specific resource, edit the resource's default share level in the **Inventory** dashboard. For more details, see [Editing Resources from the Inventory Dashboard](../../../inventory/managing-resources/editing-resources-from-inventory-dashboard.md).
 :::

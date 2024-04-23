@@ -6,7 +6,7 @@ sidebar_position: 8
 
 Labels enable blueprint designers to make the blueprint more readable by creating a visual layer that logically groups your blueprint's resources, Apps, and services according to some shared quality or characteristic, like "Spine Network", "Web Servers" or "Firewall". Labels are created in the blueprint and are included in the blueprint's sandboxes.
 
-:::note Notes:
+:::note Notes
 - Blueprint packages and exported diagrams do not include labels.
 - To share labels between blueprints, use a blueprint template that includes the labels.
 - Labels are only visible in **Diagram** view.

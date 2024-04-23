@@ -6,7 +6,7 @@ sidebar_position: 1
 
 This articles illustrates the sequence of events that take place when a user opens a remote access link. For details on QualiX architecture and ports, see the [Related Topics](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/How-QualiX-works.htm?Highlight=How%20QualiX%20Works#Related) section at the bottom.
 
-:::note Notes:
+:::note Notes
 - When using a QualiX server that is installed on AWS, a pem file is used for authentication instead of the reservation owner's CloudShell credentials.
 - Communication between CloudShell Portal and QualiX is always over HTTPS.
 - QualiX only displays connection links that are available for the selected resource or App. Connections that require an attribute that is missing from the component are not displayed.

@@ -6,7 +6,7 @@ sidebar_position: 5
 
 To allow the Execution Server to run configuration management on a Windows VM, you need to configure the Windows Remote Management (WinRM) service on the App's cloud provider VM. The configuration needs to be included in the VM's image or VM template. However, if the image doesn't include this configuration, you can specify a script that performs this configuration on the deployed VM, as explained below.
 
-:::note Notes:
+:::note Notes
 - The below procedure explains how to configure WinRM over HTTP. If you want to configure WinRM to run over HTTPS, visit this [Microsoft Docs article](https://docs.microsoft.com/en-us/troubleshoot/windows-client/system-management-components/configure-winrm-for-https). WinRM over HTTPS only applies to custom scripts at this time. If WinRM is configured to run over HTTPS, the execution server will first try to run the custom script over HTTPS and then fall back to HTTP if HTTPS is unsuccessful. To prevent the fallback, set the **winrm\_transport** parameter to **ssl**.
 - In CloudShell 8.0, we provide App Starter Packs that deploy Azure Windows VMs with this configuration. For details, contact [Quali Support](http://support.quali.com/).
 :::

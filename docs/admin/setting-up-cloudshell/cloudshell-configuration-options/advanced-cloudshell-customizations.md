@@ -134,7 +134,7 @@ Only users that have permissions to the category's domain will have access to th
 
 This key disables the options to edit or delete an App template when the admin is not in the domain in which the App was created. By default, Apps templates can be modified from any CloudShell domain.
 
-:::note Notes:
+:::note Notes
 - This key does not restrict system admins from editing Apps in other domains.
 - This key does not apply to the "clone App" option.
 :::
@@ -734,7 +734,7 @@ This key determines if the **Manage** dashboard's **Drivers** tab is visible. By
 
 This key determines which Python version will be used by default for new Python scripts the admin loads into CloudShell. Python 3 is the default.
 
-:::note Notes:
+:::note Notes
 - You can change the default setting for a script in the **Scripts** management page, as explained in [Editing scripts](../../cloudshell-manage-dashboard/managing-automation/managing-assets.md#editing-scripts).
 - Python 3 automation requires Microsoft Visual C++ Redistributable 2015 x86 and x64 to be installed on the Execution Server(s).
 :::
@@ -1355,7 +1355,7 @@ Administrators and domain administrators can allow users to change notifications
 
 ### Setting email notification defaults for sandboxes
 
-:::note Notes:
+:::note Notes
 - The time stamps on sandbox events are in the time zone of the recipient. In the event of multiple recipients in different time zones, CloudShell will send a different email to each time zone's recipients.
 - Email notifications require [SMTP mail configuration](../../../install-configure/cloudshell-suite/configure-products/admin-config-settings.md#smtp-mail-configuration).
 - It's possible to customize email notification templates. For details, see [Email Notifications Overview](../../../intro/features/email-notifications.md).

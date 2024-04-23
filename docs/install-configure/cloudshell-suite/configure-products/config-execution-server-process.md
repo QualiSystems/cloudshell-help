@@ -14,7 +14,7 @@ By default, the Execution Server currently runs as a service, which may be conve
 
 In contrast, there may be instances where it is preferred to run the Execution Server as a process. However, running the Execution Server as a process requires a user to be logged in to the machine. The machine can be locked but an active user session must be in progress.
 
-:::note Notes:
+:::note Notes
 - If you need to change the configuration, uninstall the Execution Server, ignore any error that appears and click **OK** to proceed, and install the Execution Server with the new configuration. Then, if desired, configure the Execution Server to run as a process again.
 - If you are performing an upgrade, you will need to perform the below procedure again after upgrading CloudShell.
 :::

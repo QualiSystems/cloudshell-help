@@ -12,7 +12,7 @@ Automation suites are listed in the Executions page of the Job Scheduling dashbo
 Your login group and domain determine which automation suites are listed. In other words, users do not see suites that are attached to blueprints or sandboxes outside of their permitted domains.
 :::
 
-![](/Images/Admin Guide/Setting-Up-CloudShell/Automation-suites.png)
+![](/Images/Admin-Guide/Setting-Up-CloudShell/Automation-suites.png)
 
 Note that migrated suite templates will be automatically connected to the Global domain (and available only to users with permissions to the Global domain). Suite owners can change the associated domain by logging to the portal and editing the suite template.
 

@@ -154,7 +154,7 @@ Once QualiX deployment/upgrade completes, enable the appropriate services.
 3. **WMKS-Proxy Service + Nginx Proxy** - Enable WMKS-Proxy service only, WMKS-Proxy can only work with enabled Nginx.
 4. **Guacamole Service** - Enable Guacamole service only. Nginx Proxy service is not used. This option could be useful when use the service in a cluster. For example, AWS or Azure.
 
-:::note Notes:
+:::note Notes
 - Options 1 - 3 from the above list use Nginx Proxy service, which requires SSL options to be configured. For details, see [Nginx proxy service options](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-Qualix-5.0.htm#Nginx).
 - Option 4 uses the Guacamole service only. To configure SSL options for Guacamole, see [JKS Keystore options, SSL settings for Guacamole Tomcat](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-Qualix-5.0.htm#JKS).
 :::

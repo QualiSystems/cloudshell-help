@@ -16,7 +16,7 @@ Abstract resources enable you to control how restrictive or relaxed the match co
 
 Notice the number of matches counter at the top right side of the dialog. As you modify the restrictions and structure of the abstract resource, it continually updates to provide feedback on the number of different root resources that match all the requirements in the abstract. For example, if the abstract requirements are for 1 root resource with 2 ports and you have 1 inventory resource that has 10 ports and several resources with 1 port each, the matching number will be "1".
 
-:::note Notes:
+:::note Notes
 - The number of matches does not indicate if the resources are available or excluded. It's simply an aid to help you determine if there are resources in your inventory that match the abstract requirements.
 - For performance reasons, when resolving sub-resource requirements, only the first 1000 matches are considered. So for example, if the first 1000 sub resources are unavailable when reserving the blueprint, the resolution will fail. Note that "1000" is the default and can be changed via the `AbstractSubResourceResultsPageSize` configuration key.
 :::
@@ -136,7 +136,7 @@ In the example below, you can see the Juniper switch abstract resource structure
     
 5. Click **Save Changes**.
 
-:::note Notes:
+:::note Notes
 - You do not have to reconstruct the entire resource hierarchy. For example, even if the resource has a complex structure, such as chassis-\>slot-\>subslot-\>port group-\>port, the abstract resource does not need to include all of these levels and can contain just the chassis and the port if those are the relevant resources.
 - For performance reasons, when resolving sub-resource requirements, only the first 1000 matches are considered. So for example, if the first 1000 sub resources are unavailable when reserving the blueprint, the resolution will fail. Note that "1000" is the default and can be changed via the `AbstractSubResourceResultsPageSize` configuration key.
 :::
@@ -215,7 +215,7 @@ This capability does not apply to abstract resources.
     
     ![](/Images/CloudShell-Portal/INVN/AbstractResourceDomainsSelection.png)
     
-    :::note Notes:
+    :::note Notes
     - The current domain cannot be removed.
     - Only the domains you are permitted to access are available.
     - The matches only apply to resources in the current domain.

@@ -3,7 +3,7 @@
 In the **Inventory** dashboard, administrators can add resources based on Shell packages and cloud provider resources for App deployments.
 
 In order to add resources that are based on a Shell, the administrator needs to first import that Shell's package into CloudShell Portal. The Shells are preconfigured with the required settings, attributes, and automation. For additional information, see [Shells Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Shells.htm).
-:::note Notes:
+:::note Notes
 - CloudShell administrators can download the required Shell package from [Quali Repositories](https://github.com/orgs/QualiSystems/repositories) and import it into CloudShell Portal. For details, see [Managing Shells](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Shells.htm).
 - If you are populating your CloudShell inventory for the first time, we recommend to use the **CloudShell Autodiscovery** tool, which allows you to load multiple resources at the same time. For additional information, see the tool's [readme](https://github.com/QualiSystems/cloudshell-autodiscovery/blob/master/README.md).
 :::
