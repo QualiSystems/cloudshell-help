@@ -55,7 +55,7 @@ The **Name** field is mandatory. The **Description** field is optional. Resource
 4. Click the **Image** button and select **Set Image** to browse for an icon for the new resource family.
     
     The icon will be displayed on the resource, Execution instance diagram, and Lab Monitor, for every family resource. The maximum allowed image size is 240 KB. It is recommended to use 32x32 pixel icons.  
-    :::important Tip:
+    :::important Tip
     It is recommended to add the relevant images to your data model so that users creating complex blueprints in CloudShell Portal will easily identify the resources.
     :::
 5. Select the required properties for resources of this family:
@@ -152,11 +152,11 @@ When importing packages into CloudShell or upgrading from CloudShell 8.0 or earl
 4. Right-click the family name and select **Add \> New \> Resource Model**.  
     ![](/Images/Admin-Guide/Resource-Data-Modeling/Resource-Model.png)
 5. Enter a **Name** and optionally enter a **Description** for your model.
-    :::important Tip:
+    :::important Tip
     It is recommended to start with the device vendor and complete with the device model
     :::
 6. Click the **Image** button and browse for an icon to represent the model. The maximum allowed image size is 240 KB. It is recommended to use 32x32 pixel icons.
-    :::important Tip:
+    :::important Tip
     It is recommended to add the relevant images to your data model so that users creating complex blueprints in CloudShell Portal, will easily identify the resources.
     :::
 7. Click **OK**.
@@ -244,7 +244,7 @@ After associating an attribute with a family or model, you can modify the rules 
 Value constraints cannot be set for **Password** or **Boolean** type attributes.
 :::
 ### Configuring attribute inheritance settings
-:::note Important:
+:::note Important
 The attribute inheritance feature will be deprecated in an upcoming release. Please do not use this setting.For additional information, contact [Quali Support](https://register.quali.com/).
 :::
 **To specify inheritance settings for this instance of the attribute:**

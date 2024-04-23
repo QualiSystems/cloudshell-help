@@ -18,7 +18,7 @@ Now that we understand the general concept, let's drill down to the technical pa
 
 - The **Job Scheduling** dashboard's **Update local tests** button (available for admins only) runs a batch script file. This file pulls the latest version from the repository to the Quali Server machine (the files on the Quali Server are used for listing only) and allows CloudShell Portal to show which tests exists/get inputs/etc.
     
-    :::warning Important:
+    :::warning Important
     - **Update local tests** applies to ALL execution servers in your CloudShell deployment. As such, when running **Update local tests**, execution servers that do not have a batch file configured will go into “Waiting for update” mode and become excluded. For details on how to add a passing script, see [Batch scripts](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Update-Lcl-Tst.htm?Highlight=Enabling%20Automation%20Suites%20to%20Use%20Local%20Tests#Batch).
     - **Update local tests** only applies to included execution servers. Therefore, if your execution servers are excluded, ensure that the batch script passes with "exit code 0" and include them, as explained in [Including/excluding execution servers](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Exctn-Srv-Servers.htm#Includin).
     :::

@@ -8,7 +8,7 @@ When adding a new App template, you need to configure the settings of the virtua
 
 If your CloudShell deployment includes multiple sites, it is recommended to configure the deployment process of the App to be carried out in the domain that is physically closest to the cloud provider. For additional information, see [Managing Private Cloud Apps in Domains](../../../supported-cloud-providers-in-cloudshell/private-cloud-provider-support-in-cloudshell/managing-private-cloud-apps-in-domains.md) or [Managing Public Cloud Apps in Domains](../../../supported-cloud-providers-in-cloudshell/public-cloud-provider-support-in-cloudshell/managing-public-cloud-apps-in-domains.md).
 
-:::note Notes for public cloud Apps:
+:::note Notes for public cloud Apps
 - By default, all public cloud Apps of the same type in the same sandbox are deployed within the same subnet and therefore are connected to each other and isolated from other sandboxes. However, using the Subnet service, blueprint designers can set up multiple subnet networks in the sandbox, instead of having one default subnet for all the Apps of the same cloud provider. For details, see [Subnet Connectivity](../../../setting-up-cloudshell/inventory-operations/connectivity-control/subnet-connectivity/index.md).
 - Public cloud App deployment requires the management network and subnet(s) to be prepared in advance as part of the sandbox Setup process. CloudShell's out-of-the-box Setup process does this. However, the blueprint must include at least one public cloud App to initiate the Setup script's connectivity preparation process for deployment in that public cloud.
 :::

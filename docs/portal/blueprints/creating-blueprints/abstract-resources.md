@@ -48,8 +48,8 @@ You can use abstract resources in your blueprint in the following ways:
     The resource's name has a limit of 100 characters and can only contain alpha-numeric characters, spaces, and the following characters: | . - \_ \] \[
     :::
 4. There are three types of resource requirements you can add: **Models** define the model of the resource, **Attributes** define attributes of the resource, and **Sub-resources** are resources within the resource (such as ports). For additional information, see [Defining Requirements](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/INVN/Abst-Rsrc-Tmplt-Sttngs.htm#Defining).
-    :::note Special considerations:
     
+    :::note Special considerations
     - For resources based on a 1st Gen Shell, when creating the abstract resource from an existing resource and no model is selected, the Attributes drop down displays all attributes that are shared among the resource’s family and models.
     - For resources based on a 2nd Gen Shell, only the family’s attributes are displayed, as each model’s attributes have a namespace that is unique to that model.
     

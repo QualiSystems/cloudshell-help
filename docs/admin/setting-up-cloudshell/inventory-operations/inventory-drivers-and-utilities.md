@@ -53,7 +53,7 @@ Sync can be performed for a resource or any of its internal resources (e.g. whol
 - **Sync To Device** overrides device settings with the current state of the device as documented in **Resource Manager Client**.
 
 As synchronization requires the resource to be reserved, the process first initiates an active sandbox for the resource. If you do not reserve the resource before initiating a sync process, an automatic sandbox will be initiated.
-:::note Important:
+:::note Important
 Before running Sync To/From, make sure the CloudShell resource's structure does not include blades or ports that don't exist in the device.
 :::
 #### Sync From Device for existing resources

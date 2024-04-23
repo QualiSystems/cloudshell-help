@@ -7,7 +7,7 @@ To use VLANs in CloudShell, the system administrator needs to perform the follow
 1. Make sure the organization's L2 switches are properly modeled in CloudShell, and include the appropriate resource connections, as explained in [Define the Resource Connections of the Switch or Patch Panel](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-Rsc-Cncts.htm).
 2. [Associate the VLAN service family to the domain categories](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-VLAN.htm?tocpath=CloudShell%20Administration%7CSetting%20Up%20CloudShell%7CInventory%20Operations%7CConnectivity%20Control%7CVLAN%20Connectivity%7C_____0#Associat)
 3. [Customize the VLAN service models](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-VLAN.htm?tocpath=CloudShell%20Administration%7CSetting%20Up%20CloudShell%7CInventory%20Operations%7CConnectivity%20Control%7CVLAN%20Connectivity%7C_____0#Configur)
-:::note Important:
+:::note Important
 Before setting up your L2 resources and connections, review [VLAN Connectivity - Points to Consider](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-VLAN-Cnsdr.htm).
 :::
 :::tip

@@ -5,7 +5,7 @@ sidebar_position: 3
 # Add VMware vCenter Cloud Provider Resource
 
 This article explains how to configure a vCenter cloud provider resource. The **VMware vCenter** cloud provider enables the deployment of virtual machines from vCenter templates, images, clones (existing vCenter VMs) and linked clones (snapshots of existing vCenter VMs). Each deployment type includes the required settings, attributes, and commands. For a video tutorial on how to set up the resource, watch the video at the bottom of the article.
-:::important Tip:
+:::important Tip
 We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which provides significant enhancements and capabilities, and is tamper-resistant from within CloudShell, ensuring your Azure cloud provider resources and Apps are in pristine condition. Useful articles: [Replacing the 1st Gen shell with a 2nd Gen version](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Converting-1G-Shells.htm#Migrate), [Cloud Provider Shells - Features and Capabilities Per Release](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Clp-capabilities.htm).
 :::
 :::note Notes

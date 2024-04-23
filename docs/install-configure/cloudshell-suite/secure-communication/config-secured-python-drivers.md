@@ -5,7 +5,7 @@ sidebar_position: 2
 # Configure Python Drivers and Scripts to Run in HTTPS Mode
 
 The feature allows secure communication (https) between any Python driver/script that uses CloudShell Automation API and Quali Server.
-:::warning **Important**
+:::warning Important
 Once HTTPS mode is enabled, Quali Server will only respond to HTTPS communication when using XML RPC or TCL.
 :::
 This is a three-step process:

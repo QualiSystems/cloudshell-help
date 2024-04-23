@@ -75,7 +75,7 @@ Shell update overrides that existing Shell's settings with the new Shell.
 :::warning
 A shell update is not reversible(in other words, you cannot downgrade to an earlier shell version). Therefore, update the template version in the shell's `shell-definition.yaml` ONLY when something in the data model changes (new attributes added to `shell-definition.yaml`). Any changes in just the driver or underlying packages you can keep the template version number the same and then freely "roll back" to a previous version if the shell presents unexpected behavior.
 :::
-:::note Points to consider:
+:::note Points to consider
 - You can only update Shells with a compatible version.
 - Updating an uncertified Shell may cause backward compatibility issues.  
 :::    

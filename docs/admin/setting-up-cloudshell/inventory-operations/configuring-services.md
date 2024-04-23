@@ -98,7 +98,7 @@ Services only display in the services catalog in CloudShell Portal if the resour
     ![](/Images/Admin-Guide/Inventory-Operations/AttributeRules_457x354.png)
     
 7. In the **Attribute Rules** dialog box, specify the required rules and click **OK**.
-    :::note Important:
+    :::note Important
     The attribute inheritance feature will be deprecated in an upcoming release. Please do not use this setting. For additional information, see [Configuring attribute inheritance settings](../inventory-operations/resource-data-modeling-for-1st-gen-shells/defining-the-resource-data-model.md#configuring-attribute-inheritance-settings) or contact [Quali Support](https://register.quali.com/).
     :::
 8. To link the service family to a domain category, in the **Categories** tab click **Add**.

@@ -5,7 +5,7 @@ sidebar_position: 2
 # Cost Management of AWS EC2 Instances
 
 To assist with your AWS EC2 cost management activities, AWS EC2 resources that are created by CloudShell Apps include the following tags: **Blueprint**, **CreatedBy**, **Domain**, **Name**, **Owner**, and **ReservationId**.
-:::note Important:
+:::note Important
 These tags should not be altered as this may cause unexpected behavior and inaccurate AWS budget reports.
 :::
 For example:

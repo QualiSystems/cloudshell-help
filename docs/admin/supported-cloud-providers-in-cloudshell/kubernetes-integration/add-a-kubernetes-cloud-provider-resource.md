@@ -56,7 +56,7 @@ The Kubernetes Cloud Provider 2nd Gen shell enables the deployment of Kubernetes
             <td>Execution Server Selector</td>
             <td>
             (Optional) This attribute points to a pre-defined group of execution servers (grouped by a common **Execution Server Selector** value). To make the association, enter the same value you specified on the execution server.
-:::important Tip:
+:::important Tip
 The Execution Server Selector attribute does not come with the shell out-of-the-box. If you want to use it, add it to the shell in the **Manage>Shells** page and make sure the attribute has the **Execution Server Selector** rule, in Resource Manager Client's **Attributes** tab.
 :::
             </td>

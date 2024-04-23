@@ -147,7 +147,7 @@ For information about creating users, see [Managing CloudShell Users](../../../.
 2. Create a JSON file with the groups and their constraints per your needs, and save it under the name `sso_group_rules.config.json` in the root folder of the CloudShell Portal installation directory.
 3. Alternatively, you can download the [sample JSON file](https://qualisystems.hosted-by-files.com/Onlinehelpresources/SSO/sso_group_rules.config.json) and use it as a template for the construction of a static predefined group.  
     
-    :::note Points to consider:
+    :::note Points to consider
     - Users are associated to a group if their attributes match all the constraints defined for that group. Users can be associated to more than one group.
     - By default, group associations are created when registering the user. However, admins can set CloudShell to update the group associations whenever the user logs into CloudShell. For details, see [Enabling CloudShell to auto-update group associations on user login](#enabling-cloudshell-to-auto-update-group-associations-on-user-login).
     - Optionally, you can use regular expressions in the `sso_group_rules.config.json` file you created to define dynamic groups that are conditioned by the values of the SAML parameters. Once regular expressions are enabled, with the `EnableRegex` element, the constraints' values are recognized as regular expressions.

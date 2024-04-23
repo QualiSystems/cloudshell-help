@@ -9,7 +9,7 @@ sidebar_position: 1
 When deploying a vCenter App in a sandbox, the CloudShell Execution Server connects to the vCenter server and creates the VM according to the settings (parent VM/image, datacenter, ESXi host or host cluster, storage, dvSwitch, etc.) defined on the App and the App's vCenter cloud provider resource. Specifically, CloudShell accesses the datacenter, finds the parent VM, snapshot, template or image defined on the App template\*, and creates the VM from that parent object. If the App has a connectivity requirement defined in the sandbox, CloudShell will create a port group on the dvSwitch, add the VM's vNIC and configure the VLAN on this vNIC and on all other connected vNICs.
 
 *\* When restoring a saved sandbox with deployed vCenter Apps, CloudShell creates the App VMs from the VM clones CloudShell created during the sandbox saving process. For additional information, see [Save a Sandbox](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Sv.htm).*
-:::note Important:
+:::note Important
 vCenter elements created by CloudShell should not be altered as this may cause unexpected behavior.
 :::
 The following diagram illustrates a vCenter integration (with a local CloudShell installation) hosting a live sandbox that has 6 deployed VMs connected to a VLAN network:
@@ -23,7 +23,7 @@ The following diagram illustrates a vCenter integration (with a local CloudShell
 ## vCenter Prerequisites
 
 For CloudShell integration with vCenter Server, the following preparations need to be made on the vCenter Server.
-:::warning Important:
+:::warning Important
 Please consult your resident vSphere expert before performing these configurations.
 :::
 ### vCenter machine's operating system

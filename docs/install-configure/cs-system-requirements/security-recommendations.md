@@ -9,7 +9,7 @@ sidebar_position: 9
 Administrator access is required for all test stations/servers.
 
 
-:::warning Important: 
+:::warning Important
 When logging in to TestShell Studio with a non-Windows administrator account:
 
 - HTTP plugin fails to load, resulting in an error at startup.

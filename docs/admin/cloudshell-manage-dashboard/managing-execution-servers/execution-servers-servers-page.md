@@ -27,7 +27,7 @@ Execution servers need to be excluded in certain situations. For example, when d
 
 In addition, the execution server may exclude itself in the event of a runtime error.
 
-:::note Important:
+:::note Important
 Excluding an execution server basically means that we're excluding it from new assignments, so when you exclude an execution server, it will complete any running jobs/commands but new ones will be handled by an available execution server.
 :::
 **To change the status of the execution server:**

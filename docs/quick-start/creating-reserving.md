@@ -74,7 +74,7 @@ To set up connectivity between 2 resources:
     
     Physical routes are represented by black dotted lines between the resources, as illustrated in the image below.
     
-    :::warning Notes:
+    :::warning Notes
     - If a connection route is purple, that’s because you defined a Connector type of a connection. This is used for L2 connections and will fail unless you have an L2 resource orvCenter dvSwitch connecting the endpoints. Edit the route connection to open the Resource Connections dialog box, click the Inventory tab in the dialog box, delete the connections and create new ones.
     - If you defined an L1 connection in the blueprint but the connection line is orange, that’s because there’s no L1 switch resource connecting the endpoints. Notify the administrator.
     :::

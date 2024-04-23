@@ -46,6 +46,6 @@ This workflow outlines the basic process for adding, updating or using source\-c
     
 2. Add, update or run tests in TestShell.
 3. If you added or updated a test, Add, Commit and Push the tests to source control.
-:::important Tip:
+:::important Tip
 Make sure to include a meaningful description for each commit as it may be difficult to compare different versions of a test due to the complexity of the local test files.
 :::

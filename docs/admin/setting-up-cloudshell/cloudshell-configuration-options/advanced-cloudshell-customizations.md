@@ -660,7 +660,7 @@ By default, when users log out of CloudShell Portal, they are redirected to your
 
 The following procedures explain how to enable the import of users from your corporate Microsoft Active Directory into CloudShell. To import user definitions, see [Importing users into CloudShell from an active directory](../../cloudshell-identity-management/managing-users/managing-cloudshell-users.md#importing-users-into-cloudshell-from-an-active-directory). Note that the passwords of imported users are managed by the active directory itself.
 
-:::note Prerequisite:
+:::note Prerequisite
 The computer that will be used to import the users must be in your corporate domain.
 :::
 **To enable the import of active directory users:**
@@ -1743,7 +1743,7 @@ It is possible to specify that either the instructions side pane or the blueprin
 ### Controlling whether sandboxes should end automatically
 
 The server can end sandboxes automatically when their end time arrives, or allow them to go into overtime. Sandboxes that have resources that are marked “in use” can go into overtime when their time ends. Using this configuration key, you can enable sandboxes to go into overtime when their time ends. By default, sandboxes end automatically without going into overtime.
-:::note Important:
+:::note Important
 It is not recommended to enable Overtime since it makes managing and troubleshooting conflicts more difficult.
 :::
 **To enable overtime (have sandboxes not end automatically if "in use" resources are present):**

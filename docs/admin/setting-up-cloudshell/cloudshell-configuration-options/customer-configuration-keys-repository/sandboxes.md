@@ -523,7 +523,7 @@ Admins can configure the maximum number of saved sandboxes for a specific user i
 			<td>Possible values</td>
 			<td>
             True/False (True - auto end sandbox at end time / False = allow sandbox to enter overtime
-:::note Important:
+:::note Important
 It is not recommended to enable Overtime since it makes managing and troubleshooting conflicts more difficult.
 :::
             </td>
