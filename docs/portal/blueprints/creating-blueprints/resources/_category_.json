@@ -2,6 +2,7 @@
   "label": "Resources",
   "position": 4,
   "link": {
+    "slug": "portal/blueprints/creating-blueprints/resources",
     "type": "generated-index",
     "description": "The following articles explain how to configure resources in a blueprint:"
   }
