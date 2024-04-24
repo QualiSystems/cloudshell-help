@@ -6,4 +6,4 @@ sidebar_position: 1
 
 **To install Quali Server:**
 
-- Follow the Quali Server installation procedure in [Install Products](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Complete%20Installation/instl-prdcts.htm). For specific configuration options, see [Configure CloudShell Products](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-cs-prdcts.htm).
+- Follow the Quali Server installation procedure in [Install Products](../../cloudshell-suite/complete-install/install-cloudshell/install-products.md). For specific configuration options, see [Configure CloudShell Products](../../../install-configure/cloudshell-suite/configure-products/).

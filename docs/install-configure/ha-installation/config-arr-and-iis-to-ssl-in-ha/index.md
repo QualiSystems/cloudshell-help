@@ -4,6 +4,6 @@ The SSL off-loading approach is used to support SSL in Advanced CloudShell Porta
 
 ## Related Topics
 
-- [Before You Begin](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Bfr-you-bgn.htm)
-- [Configuring ARR to Support SSL](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Cnfg-ARR-IIS-for-SSL.htm)
-- [Configuring ARR to Support SSL Offloading](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Cnfg-ARR-IIS-for-SSL-offld.htm)
+- [Before You Begin](./before-you-begin.md)
+- [Configuring ARR to Support SSL](./config-arr-to-ssl.md)
+- [Configuring ARR to Support SSL Offloading](./config-arr-to-ssl-offloading.md)

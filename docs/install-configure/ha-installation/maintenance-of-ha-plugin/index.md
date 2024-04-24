@@ -4,6 +4,6 @@ This section explains how to upgrade and manage configuration changes on the clu
 
 ## Related Topics
 
-- [Upgrading the CloudShell HA Plugin](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Upgrd-CS-HA.htm)
-- [Moving a WSFC Role between Nodes](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Mv-WSFC-rl-btwn-nds.htm)
-- [Upgrading to a New Version of CloudShell (with the latest HA Plugin)](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Upgrd-nw-vrsn.htm)
+- [Upgrading the CloudShell HA Plugin](./upgrada-cs-ha-plugin.md)
+- [Moving a WSFC Role between Nodes](./move-wsfc-role-between-nodes.md)
+- [Upgrading to a New Version of CloudShell (with the latest HA Plugin)](./upgrade-cloudshell.md)

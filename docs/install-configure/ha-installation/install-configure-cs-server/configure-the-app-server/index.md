@@ -4,5 +4,5 @@ Quali server works with only one active node in Active-Passive mode. You can cha
 
 Use the following procedures to configure Quali server to work in a cluster environment:
 
-- [Locating the Cluster Name](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Fnd-clstr-nm.htm)
-- [Modifying the Quali.vbs File](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Mdf-Quali-vbs.htm)
+- [Locating the Cluster Name](./locating-the-cluster-name.md)
+- [Modifying the Quali.vbs File](./modify-the-quali-vbs-file.md)

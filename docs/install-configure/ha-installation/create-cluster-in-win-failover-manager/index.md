@@ -4,5 +4,5 @@ This section provides general instruction on how to configure a cluster with **F
 
 ## Related Topics
 
-- [Installing the Failover Cluster Feature](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Instl-Flvr-clstr-ftr.htm)
-- [Configuring a New Cluster](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Cnfg-new-clstr.htm)
+- [Installing the Failover Cluster Feature](./install-failover-cluster-feature.md)
+- [Configuring a New Cluster](./config-new-cluster.md)

@@ -4,9 +4,9 @@ After installing Quali Server, you need to configure the server to communicate w
 
 The Quali Server node configuration process is as follows:
 
-- [Configure Quali Server on the First Cluster Node](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Cnfg-Quali-srv-frst-clstr-node.htm)
-- [Set the Same Certificate on all Quali Server Nodes](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Sttng-sm-crtfct-on-all-Quali-srv-nds.htm)
-- [Set up AlwaysOn Availability Groups (Only for AlwaysOn Users)](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Stp-AlwaysOn-avlb-grp.htm)
-- [Configure Quali Server to Work with the Availability Group Listener](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Cnfg-Quali-srv-for-Avlb-grp-lstn.htm)
-- [Displaying Cluster Health Information](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Dspl-clstr-hlth-info.htm)
-- [Configure the Remaining Cluster Nodes](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Cnfg-remain-clstr-nds.htm)
+- [Configure Quali Server on the First Cluster Node](./config-quali-server-on-first-node.md)
+- [Set the Same Certificate on all Quali Server Nodes](./set-the-same-certificate.md)
+- [Set up AlwaysOn Availability Groups (Only for AlwaysOn Users)](./set-up-alwayson-groups.md)
+- [Configure Quali Server to Work with the Availability Group Listener](./configure-quali-server-with-avl-grp.md)
+- [Displaying Cluster Health Information](./display-cluster-health-info.md)
+- [Configure the Remaining Cluster Nodes](./configure-remaining-cluster-nodes.md)

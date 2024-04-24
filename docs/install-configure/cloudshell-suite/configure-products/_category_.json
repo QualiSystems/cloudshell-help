@@ -2,6 +2,7 @@
   "label": "Configure CloudShell Products",
   "position": 5,
   "link": {
+    "slug": "install-configure/cloudshell-suite/configure-products",
     "type": "generated-index",
     "description": "This article describes the configuration settings for the CloudShell products."
   }

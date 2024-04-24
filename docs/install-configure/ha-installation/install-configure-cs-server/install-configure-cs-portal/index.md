@@ -2,8 +2,8 @@
 
 Use the following procedures to install and then configure License Server to work in a cluster environment:
 
-- [Installing CloudShell Portal](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Instl-CS-Prtl.htm)
-- [Modify the WebPortal.vbs File](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Mdf-CSPortal-vbs.htm)
-- [Creating a Configuration Role in Windows Failover Cluster](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Crt-cnfg-rl-Win-Failover-clstr.htm)
-- [Configuring CloudShell Portal to Support SSL](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Cnfg-CS-Prtl-for-SSL.htm)
-- [Configuring the Web Server Load Balancing](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Cnfg-web-srvld-blnc.htm)
+- [Installing CloudShell Portal](./install-cs-portal.md)
+- [Modify the WebPortal.vbs File](./modify-webportal-vbs-file.md)
+- [Creating a Configuration Role in Windows Failover Cluster](./create-config-role.md)
+- [Configuring CloudShell Portal to Support SSL](./configure-cs-portal-to-ssl.md)
+- [Configuring the Web Server Load Balancing](./config-web-server-load-balancing/index.md)
