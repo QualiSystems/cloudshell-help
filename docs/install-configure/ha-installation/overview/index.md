@@ -2,7 +2,7 @@
 
 CloudShell High Availability is available for Premium accounts only.
 
-This guide describes the installation and configuration of the CloudShell High Availability (HA) Add-On, and should be read in conjunction with the [High Availability Deployment](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Deploy/HA-Deploy-Home.htm) guide.
+This guide describes the installation and configuration of the CloudShell High Availability (HA) Add-On, and should be read in conjunction with the [High Availability Deployment](../../ha-deployment/index.md) guide.
 
 The CloudShell High Availability (HA) Add-On provides you with same-site continuous operation in cases of HW/SW failure of any CloudShell component. HA typically deals with a single predictable failure, such as the failure of a processor, memory or power supply. CloudShell HA is based on a failover cluster where all nodes are in a single site.
 
