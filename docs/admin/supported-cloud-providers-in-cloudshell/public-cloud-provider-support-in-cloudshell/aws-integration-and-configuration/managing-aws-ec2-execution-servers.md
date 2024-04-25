@@ -132,7 +132,7 @@ There are two ways to upgrade an AWS Execution Server:
     ```python
     sudo systemctl start es
     ```
-    :::important Tip
+    :::tip
     The Execution Server service name was changed from **qa_execution_server** to **es** in version 8.3.
     :::
 
