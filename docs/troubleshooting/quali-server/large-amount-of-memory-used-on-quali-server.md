@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## Error Message
 
-:::danger &nbsp;
+:::danger-one-line
 Quali Server is utilizing a large amount of memory
 :::
 

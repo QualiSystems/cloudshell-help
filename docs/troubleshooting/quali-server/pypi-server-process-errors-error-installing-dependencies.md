@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ## Error Message
 
-:::danger &nbsp;
+:::danger-one-line
 Error: General Execution. Failed to start execution: Unexpected error – Failed to setup the Python environment, error installing dependencies. The PyPi server process might be down or inaccessible. See the documentation and logs for more details.
 :::
 

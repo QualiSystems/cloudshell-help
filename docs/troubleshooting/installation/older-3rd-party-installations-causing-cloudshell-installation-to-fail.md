@@ -6,15 +6,15 @@ sidebar_position: 12
 
 ## Error Message
 
-:::danger &nbsp;
+:::danger-one-line
 These CS installation components are failing to install
 :::
 
-:::danger &nbsp;
+:::danger-one-line
 CloudShell server Proxy Configuration
 :::
 
-:::danger &nbsp;
+:::danger-one-line
 CloudShell Sandbox API Configuration
 :::
 
@@ -24,7 +24,7 @@ The following services fail to start as part of the Quali Server installation:
 
 When manually starting one of these services, the following error is displays in Windows event logs:
 
-:::danger &nbsp;
+:::danger-one-line
 Error 1067 - the process terminated unexpectedly.
 :::
 

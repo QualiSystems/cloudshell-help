@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## Error Message
 
-:::danger &nbsp;
+:::danger-one-line
 Connection Failed  
 The key `__<keyName>__` already exists in the collection.
 :::

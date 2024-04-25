@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## Error Message
 
-:::danger &nbsp;
+:::danger-one-line
 Not enough storage is available to process this command. (Exception from HRESULT: 0x80070008) (Type: COMException)
 :::
 ## Description

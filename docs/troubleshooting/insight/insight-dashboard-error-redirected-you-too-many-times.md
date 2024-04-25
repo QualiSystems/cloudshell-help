@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## Error Message
 
-:::danger &nbsp;
+:::danger-one-line
 192.168.85.24 redirected you too many times.
 :::
 

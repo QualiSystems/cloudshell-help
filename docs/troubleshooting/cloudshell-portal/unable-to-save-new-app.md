@@ -6,7 +6,7 @@ sidebar_position: 5
 
 ## Error Message
 
-:::danger &nbsp;
+:::danger-one-line
 HTTP 405 Error (Method Not Allowed)
 :::
 ## Description

@@ -75,7 +75,7 @@ For example:
 ## Stopping all command executions of a specific driver instance
 
 This procedure shuts down the command executions of a driver's instance but leaves the instance alive. This also applies to script executions.
-:::important Tip
+:::tip
 To stop a specific command execution, in the sandbox workspace, open the appropriate commands pane and click Stop. For additional information, see [Stopping commands during execution](../../../portal/sandboxes/sandbox-workspace/run-commands.md#stopping-commands-during-execution).
 :::
 **To stop a driver's commands:**

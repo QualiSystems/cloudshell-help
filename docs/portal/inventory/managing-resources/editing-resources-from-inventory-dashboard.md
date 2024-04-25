@@ -114,7 +114,7 @@ This feature does not apply to cloud provider resources.
     
 3. Save your changes.
     
-    :::info &nbsp;
+    :::info-one-line
     It is recommended to rediscover the resource at this time to make sure it was configured properly - see [Discovering Inventory Resources](./discovering-resources.md)
     :::
     

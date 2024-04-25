@@ -508,7 +508,7 @@ The App template defines the settings and configurations of the VM to be deploye
 8. In the left pane, click **Configuration Management** and configure the application to be installed on the VM.
 
     ![](/Images/CloudShell-Portal/Manage/ConfigurationManagement.png)
-    :::important Tip
+    :::tip
     To learn how to develop custom scripts and Ansible playbooks, including examples, and set up support for the desired configuration management tool, see [Developing Configuration Management Scripts for Apps](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Config-Mng/Developing-Config-Management.htm).
     :::
     :::note Notes
@@ -565,7 +565,7 @@ The App template defines the settings and configurations of the VM to be deploye
                     Details of the Ansible playbook or custom script.
 
         - **URL**: Raw URL of the Ansible playbook or ZIP file, or custom script on the online repository (GitHub, GitLab and BitBucket are supported). URL must be accessible to the Execution Servers.
-            :::important Tip
+            :::tip
             The URL can accept parameters defined on the App, enabling you to test new versions of scripts without affecting consumer-ready versions. For example, you can have an App everyone is using, but if you want to test a version you're developing, simply change the value of the URL parameter in the test blueprint.
             
             - To use parameters, specify the parameter name in curly brackets (for example: **\{branch\}**).

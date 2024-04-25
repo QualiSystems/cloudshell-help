@@ -56,6 +56,10 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          admonitions: {
+            keywords: ['danger-one-line', 'warning-one-line' , 'info-one-line', 'tip-one-line', 'note-one-line'],
+            extendDefaults: true,
+          },
           routeBasePath: '/',
           sidebarPath: './sidebars.js',
           // Please change this to your repo.

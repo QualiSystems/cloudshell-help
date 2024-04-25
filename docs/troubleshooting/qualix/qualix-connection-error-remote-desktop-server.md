@@ -6,7 +6,7 @@ sidebar_position: 4
 
 ## Error Message
 
-:::danger &nbsp;
+:::danger-one-line
 CONNECTION ERROR The remote desktop server encountered an error and has closed the connection. Please try again or contact your system administrator.
 :::
 ## Description

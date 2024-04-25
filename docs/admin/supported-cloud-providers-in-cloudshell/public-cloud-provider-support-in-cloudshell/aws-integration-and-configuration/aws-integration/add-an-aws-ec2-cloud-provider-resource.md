@@ -5,7 +5,7 @@ sidebar_position: 7
 # Add an AWS EC2 Cloud Provider Resource
 
 The **AWS EC2** cloud provider enables the deployment of AWS instances from an Amazon Machine Image (AMI).
-:::important Tip:
+:::tip
 We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which provides significant enhancements and capabilities, and is tamper-resistant from within CloudShell, ensuring your Azure cloud provider resources and Apps are in pristine condition. Useful articles: [Replacing the 1st Gen shell with a 2nd Gen version](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Converting-1G-Shells.htm#Migrate), [Cloud Provider Shells - Features and Capabilities Per Release](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Clp-capabilities.htm).
 :::
 **To add an AWS EC2 cloud provider resource:**

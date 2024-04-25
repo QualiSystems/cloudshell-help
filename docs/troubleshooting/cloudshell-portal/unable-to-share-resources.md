@@ -6,7 +6,7 @@ sidebar_position: 6
 
 ## Error Message
 
-:::danger &nbsp;
+:::danger-one-line
 This action cannot be completed. The resource or its sub resources are being used in another reservation.
 :::
 

@@ -7,7 +7,7 @@ sidebar_label: The Requested page cannot be accessed
 
 ## Error Message
 
-:::danger &nbsp;
+:::danger-one-line
 HTTP Error 500.19 - Internal Server Error: The Requested page cannot be accessed because the related configuration data for the page is invalid.
 :::
 
