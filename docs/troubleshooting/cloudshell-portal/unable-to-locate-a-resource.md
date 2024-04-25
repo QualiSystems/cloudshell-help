@@ -6,7 +6,7 @@ sidebar_position: 8
 
 ## Error Message
 
-:::danger &nbsp;
+:::danger-one-line
 No resource matches your search
 :::
 ## Description

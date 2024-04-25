@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ## Error Message
 
-:::danger &nbsp;
+:::danger-one-line
 Please check your database configuration on the server side
 :::
 ## Description

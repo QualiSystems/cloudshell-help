@@ -6,7 +6,7 @@ sidebar_position: 5
 
 ## Error Message
 
-:::danger &nbsp;
+:::danger-one-line
 MS SQL SERVER on the SQL database VM is utilizing a large amount of memory
 :::
 ## Description

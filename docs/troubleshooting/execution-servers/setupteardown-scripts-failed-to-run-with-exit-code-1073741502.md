@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## Error Message
 
-:::danger &nbsp;
+:::danger-one-line
 Script runner exited with exit code: -1073741502
 :::
 

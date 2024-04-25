@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## Error Message
 
-:::danger &nbsp;
+:::danger-one-line
 Error: Failed to update shell. CloudShell responded with: 'Error: Removing attributes from an existing shell is not supported. The following attributes are missing from the new shell definition: '`__<attribute name>__`'
 :::
 

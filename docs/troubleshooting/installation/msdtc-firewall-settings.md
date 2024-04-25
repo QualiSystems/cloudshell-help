@@ -6,7 +6,7 @@ sidebar_position: 4
 
 ## Error Message
 
-:::danger &nbsp;
+:::danger-one-line
 Failed the MSDTC test
 
 The MSDTC transaction manager was unable to pull the transaction from the source transaction manager due to communication problems. Possible causes are: a firewall is present and it doesn't have an exception for the MSDTC process, the two machines cannot find each other by their NetBIOS names, or the support for network transactions is not enabled for one of the two transaction managers:

@@ -8,11 +8,11 @@ sidebar_position: 11
 
 Error message containing "A bulk write operation resulted in one or more errors.". For example:
 
-:::danger &nbsp;
+:::danger-one-line
 ERROR QualiSystems.Infrastructure.NHibernate.Transactions - Transaction commit failed with the following error A bulk write operation resulted in one or more errors.
 :::
 
-:::danger &nbsp;
+:::danger-one-line
 Trying to rollback. - MongoDB.Driver.MongoBulkWriteException\`1\[MongoDB.Bson.BsonDocument\]: A bulk write operation resulted in one or more errors.
 :::
 ## Description

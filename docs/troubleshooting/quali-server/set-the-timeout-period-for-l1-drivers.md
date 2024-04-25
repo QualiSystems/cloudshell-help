@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## Error Message
 
-:::danger &nbsp;
+:::danger-one-line
 An error occurred trying to execute a command on a resource at this address: xxx.xxx.xx.xx. The error was: No response received from agent
 :::
 

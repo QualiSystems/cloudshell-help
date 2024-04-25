@@ -8,13 +8,13 @@ sidebar_position: 7
 
 In CloudShell Portal:
 
-:::danger &nbsp;
+:::danger-one-line
 Service not available
 :::
 
 In Windows Event Viewer>Application (for crashes related to a MongoDB error):
 
-:::danger &nbsp;
+:::danger-one-line
 Application: QsTeamServer.exe  
 Framework Version: v4.0.30319  
 Description: The process was terminated due to an unhandled exception.  

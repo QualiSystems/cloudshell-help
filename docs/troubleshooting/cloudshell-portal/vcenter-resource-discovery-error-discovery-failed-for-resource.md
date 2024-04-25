@@ -8,7 +8,7 @@ sidebar_position: 12
 
 For vCenter cloud provider resource called "Quali vCenter1":
 
-:::danger &nbsp;
+:::danger-one-line
 Discovery failed for resource 'Quali vCenter1': 'get\_inventory' command failed with 'Exception' error.  
 Description: vCenter permissions for configured resource(s) are invalid. The resource is now excluded. To include the resource, navigate to the Inventory page.
 :::

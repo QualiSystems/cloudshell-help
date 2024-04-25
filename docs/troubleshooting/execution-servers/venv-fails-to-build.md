@@ -8,7 +8,7 @@ sidebar_position: 4
 
 When running a shell command in a sandbox, CloudShell is unable to create the virtual environment for the shell's package dependencies on the execution server. The following line is included in the `InstallRequirements.txt` log on the execution server:
 
-:::danger &nbsp;
+:::danger-one-line
 distutils.errors.DistutilsPlatformError: Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": [https://visualstudio.microsoft.com/visual-cpp-build-tools/](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
 :::
 
