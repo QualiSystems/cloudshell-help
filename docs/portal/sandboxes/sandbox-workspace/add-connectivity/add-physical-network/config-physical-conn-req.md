@@ -42,7 +42,7 @@ It is possible to configure new connectivity requirements or modify the properti
             <td>Status</td>
             <td>
             
-:::danger &nbsp;
+:::danger-one-line
 As this feature imposes many restrictions on how environments are resolved and cannot be used in conjunction with some other features such as abstract resources, it is strongly recommended to use shared routes only if it is absolutely required.
 :::
                 Shared routes enable you to dynamically create an L1 route and then share it across several sandboxes.

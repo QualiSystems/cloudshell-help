@@ -6,7 +6,7 @@ sidebar_position: 8
 
 ## Error Message
 
-:::danger &nbsp;
+:::danger-one-line
 This site can't be reached
 
 ![](/Images/Troubleshoot/Refused-Error.png)

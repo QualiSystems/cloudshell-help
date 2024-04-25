@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## Error Message
 
-:::danger &nbsp;
+:::danger-one-line
 CloudShell Portal could not be contacted.
 
 Please check your settings.

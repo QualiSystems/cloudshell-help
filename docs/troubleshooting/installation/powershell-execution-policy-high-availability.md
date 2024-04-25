@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## Error Message
 
-:::danger &nbsp;
+:::danger-one-line
 Incorrect function
 :::
 

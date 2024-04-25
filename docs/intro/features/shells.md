@@ -16,7 +16,7 @@ CloudShell shells can be thought of as either 1st Generation shells (1<sup>st</s
     
 - **2<sup>nd</sup> Gen Shells** are imported through CloudShell Portal’s Shells management page. 2<sup>nd</sup> Gen shells are based on standardized models and attributes, which streamlines the creation, maintenance and sharing of shells. Unlike 1st Gen shells, which can be modified from Resource Manager Client, 2nd Gen shells cannot be altered, ensuring their integrity. For details, see [Managing Shells](../../admin/cloudshell-manage-dashboard/managing-shells.md).
     
-:::tip &nbsp;
+:::tip-one-line
 Both 1st and 2nd shells can coexist with each other in the same CloudShell sandbox. However, it is strongly recommended to migrate any 1<sup>st</sup> Gen shells to 2<sup>nd</sup> Gen. ***Today all shells released by Quali are 2nd Gen***.
 :::
 

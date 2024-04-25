@@ -6,7 +6,7 @@ sidebar_position: 5
 
 ## Error Messages
 
-:::danger &nbsp;
+:::danger-one-line
 - CONNECTION ERROR You do not have permission to access this connection because you are not logged in. Please log in and try again.
 
 - Invalid link – Access denied

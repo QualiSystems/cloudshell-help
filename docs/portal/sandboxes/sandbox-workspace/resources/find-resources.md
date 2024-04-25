@@ -88,7 +88,7 @@ Search results will only show resources that were defined as searchable in the R
         
         You can add additional attribute filters to the search. To delete an attribute filter, hover over it and click the "x" icon.
         
-        :::info &nbsp;
+        :::info
         Multiple values of the same attribute have an OR relationship while multiple attributes have an AND relationship.
         :::
         

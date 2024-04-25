@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ## Error Message
 
-:::danger &nbsp;
+:::danger-one-line
 Faulting application name: python.exe, version: 0.0.0.0, time stamp: 0x5560ad83  
 Faulting module name: python27.dll, version: 2.7.10150.1013, time stamp: 0x5560ad81  
 Exception code: 0xc0000005  
