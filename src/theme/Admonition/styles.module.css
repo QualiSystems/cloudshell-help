@@ -1,0 +1,19 @@
+
+  .admonitionIcon {
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 2px;
+  }
+  
+  .admonitionIcon svg {
+    display: inline-block;
+    height: 22px;
+    width: 25px;
+    fill: var(--ifm-alert-foreground-color);
+  }
+
+  .smallerAlert {
+    padding: 10px 10px 0px 10px;
+  }
+  
+
