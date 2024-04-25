@@ -16,7 +16,7 @@ Resource drivers are supported for backwards compatibility only.
 
 **To associate a driver with a resource:**
 
-1. Make sure the driver is associated to the resource model. For additional information, see [Associating a driver to a resource model](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Dfn-Rsrc-Data-Mdl.htm#Associat).
+1. Make sure the driver is associated to the resource model. For additional information, see [Associating a driver to a resource model](../resource-data-modeling-for-1st-gen-shells/defining-the-resource-data-model.md#associating-a-driver-to-a-resource-model).
 
 1. Right-click the resource and select **Configuration** from the context menu.  
     ![](/Images/Admin-Guide/Inventory-Operations/Inven-Opers_4_354x445.png)

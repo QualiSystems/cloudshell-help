@@ -4,14 +4,14 @@ CloudShell provides dedicated VLAN services that enable the creation of Layer 2 
 
 To use VLANs in CloudShell, the system administrator needs to perform the following configurations:
 
-1. Make sure the organization's L2 switches are properly modeled in CloudShell, and include the appropriate resource connections, as explained in [Define the Resource Connections of the Switch or Patch Panel](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-Rsc-Cncts.htm).
-2. [Associate the VLAN service family to the domain categories](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-VLAN.htm?tocpath=CloudShell%20Administration%7CSetting%20Up%20CloudShell%7CInventory%20Operations%7CConnectivity%20Control%7CVLAN%20Connectivity%7C_____0#Associat)
-3. [Customize the VLAN service models](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-VLAN.htm?tocpath=CloudShell%20Administration%7CSetting%20Up%20CloudShell%7CInventory%20Operations%7CConnectivity%20Control%7CVLAN%20Connectivity%7C_____0#Configur)
+1. Make sure the organization's L2 switches are properly modeled in CloudShell, and include the appropriate resource connections, as explained in [Define the Resource Connections of the Switch or Patch Panel](../define-the-resource-connections-of-the-switch-or-patch-panel.md).
+2. [Associate the VLAN service family to the domain categories](../vlan-connectivity/index.md#associate-the-vlan-service-family-to-the-domain-categories)
+3. [Customize the VLAN service models](../vlan-connectivity/index.md#customize-the-vlan-service-models)
 :::note Important
-Before setting up your L2 resources and connections, review [VLAN Connectivity - Points to Consider](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-VLAN-Cnsdr.htm).
+Before setting up your L2 resources and connections, review [VLAN Connectivity - Points to Consider](../vlan-connectivity/vlan-connectivity--points-to-consider.md).
 :::
 :::tip
-CloudShell supports connecting vCenter Apps to existing port groups. For details, see [Connecting vCenter Apps to an existing VLAN port group](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Rsrc-Cnct.htm#Connecti3).
+CloudShell supports connecting vCenter Apps to existing port groups. For details, see [Connecting vCenter Apps to an existing VLAN port group](../../../../../portal/sandboxes/sandbox-workspace/connect-resources-and-apps.md#connecting-vcenter-apps-to-an-existing-vlan-port-group).
 :::
 ## How CloudShell creates VLAN connections
 
@@ -33,7 +33,7 @@ When connecting a route that uses a VLAN service, CloudShell allocates the VLAN 
 
 ## Associate the VLAN service family to the domain categories
 
-To expose the VLAN services in the **Apps / Services** catalog of a specific domain, you must associate the service family to each desirable domain's service category. For information about creating service categories for domains, see [Creating a service catalog category](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Add-n-Cnfgr-Srvc.htm#Managing).
+To expose the VLAN services in the **Apps / Services** catalog of a specific domain, you must associate the service family to each desirable domain's service category. For information about creating service categories for domains, see [Creating a service catalog category](../../../inventory-operations/configuring-services.md#creating-a-service-catalog-category).
 
 **To associate the VLAN services to the domain category:**
 
@@ -56,7 +56,7 @@ To expose the VLAN services in the **Apps / Services** catalog of a specific dom
 
 ## Customize the VLAN service models
 
-This section explains how to customize the default settings of the VLAN service and control which settings can be changed by the user in the blueprint diagram. To learn how to add a VLAN service to a blueprint and set the service's attribute values, see [Services in Blueprints](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Blprnt-Use-Srvc.htm).
+This section explains how to customize the default settings of the VLAN service and control which settings can be changed by the user in the blueprint diagram. To learn how to add a VLAN service to a blueprint and set the service's attribute values, see [Services in Blueprints](../../../../../portal/blueprints/creating-blueprints/services.md).
 :::note
 Additional VLAN services can be created. For example, you could set up multiple VLAN Auto services in the same domain, each with a different allocation range. Simply duplicate an existing VLAN service and edit the settings, as appropriate. Then, in the Scripts - Resource management page, add the new VLAN service model to the Vlan Service Connect All script.
 :::
@@ -304,9 +304,9 @@ When a peer-to-peer connection is being resolved, CloudShell selects a VLAN to u
 
     ## Related Topics
     
-    - [VLAN Connectivity - Points to Consider](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-VLAN-Cnsdr.htm)
-    - [Services Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Services.htm)
-    - [Apps Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Apps.htm)
-    - [Connections Legend](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Cnctivity-Lgnd.htm)
-    - [Virtual Network Connectivity](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Cnct/Vir-Ntwrk-Cnct-Cntnr.htm)
-    - [Connect Resources and Apps](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Rsrc-Cnct.htm)
+    - [VLAN Connectivity - Points to Consider](./vlan-connectivity--points-to-consider.md)
+    - [Services Overview](../../../../../intro/features/services.md)
+    - [Apps Overview](../../../../../intro/features/apps-overview.md)
+    - [Connections Legend](../../../../../portal/sandboxes/sandbox-workspace/add-connectivity/connections-legend.md)
+    - [Virtual Network Connectivity](../../../../../portal/sandboxes/sandbox-workspace/add-connectivity/add-virtual-network/index.md)
+    - [Connect Resources and Apps](../../../../../portal/sandboxes/sandbox-workspace/connect-resources-and-apps.md)

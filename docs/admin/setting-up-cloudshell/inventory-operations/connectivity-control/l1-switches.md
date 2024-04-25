@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # L1 Switches
 
-CloudShell includes dedicated specialized features for working with L1 switches. These are implemented using CloudShell Shells. To learn how to use L1 switches in CloudShell Portal, see [L1 switches in CloudShell Portal](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-L1-Swch.htm?Highlight=L1%20Switches#Using).
+CloudShell includes dedicated specialized features for working with L1 switches. These are implemented using CloudShell Shells. To learn how to use L1 switches in CloudShell Portal, see [L1 switches in CloudShell Portal](./l1-switches.md#l1-switches-in-cloudshell-portal).
 
 This article explains how to update an L1 switch with a new shell. For details specific to a particular L1 switch, see the documentation set included with the switch's shell.
 
@@ -14,13 +14,13 @@ Every major CloudShell release includes updated resource configurations for the 
 
 The steps for updating an L1 switch are as follows:
 
-1. [Import an L1 shell to CloudShell](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-L1-Swch.htm?Highlight=L1%20Switches#Importin) using the instructions in this article.
-2. [Create the L1 switch resource](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-L1-Swch.htm?Highlight=L1%20Switches#Create)
-3. [Update the L1 switch firmware](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-L1-Swch.htm?Highlight=L1%20Switches#Updating), if needed.
-4. [Sync between the L1 switch and CloudShell](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-L1-Swch.htm?Highlight=L1%20Switches#Switch-s) to load the switch's blades, ports, and settings.
-5. [Define the resource connections of the L1 switch](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-L1-Swch.htm?Highlight=L1%20Switches#Define)
-6. (Optional) [Configure L1 switch runtime](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-L1-Swch.htm?Highlight=L1%20Switches#L12) and replace any incompatible mappings.
-7. [Set the timeout period for L1 drivers](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-L1-Swch.htm?Highlight=L1%20Switches#Set), if needed.
+1. [Import an L1 shell to CloudShell](./l1-switches.md#import-an-l1-shell-to-cloudshell) using the instructions in this article.
+2. [Create the L1 switch resource](./l1-switches.md#create-the-l1-switch-resource)
+3. [Update the L1 switch firmware](./l1-switches.md#update-the-l1-switch-firmware), if needed.
+4. [Sync between the L1 switch and CloudShell](./l1-switches.md#sync-between-the-l1-switch-and-cloudshell) to load the switch's blades, ports, and settings.
+5. [Define the resource connections of the L1 switch](./l1-switches.md#define-the-resource-connections-of-the-l1-switch)
+6. (Optional) [Configure L1 switch runtime](./l1-switches.md#configure-l1-switch-runtime) and replace any incompatible mappings.
+7. [Set the timeout period for L1 drivers](./l1-switches.md#set-the-timeout-period-for-l1-drivers), if needed.
 
 ## Verify user privileges
 
@@ -93,7 +93,7 @@ To support physical endpoints, make sure your physical switches and routers use 
         
     3. Select the switch's **Family**, **Model** and **Driver**.
         :::note
-        The updated Family, Model and Drivers are added when you import the shell to **Resource Manager Client**. The driver contains the device's relevant commands, enables connectivity, and enables you to autoload/syncronize the switch with the updated settings. More about autoload and synchronizations in [Sync between the L1 switch and CloudShell](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-L1-Swch.htm?Highlight=L1%20Switches#Switch-s).
+        The updated Family, Model and Drivers are added when you import the shell to **Resource Manager Client**. The driver contains the device's relevant commands, enables connectivity, and enables you to autoload/syncronize the switch with the updated settings. More about autoload and synchronizations in [Sync between the L1 switch and CloudShell](./l1-switches.md#sync-between-the-l1-switch-and-cloudshell).
         :::
     4. Click **OK**.
 4. In **Resource Explorer**, right-click the new resource and select **Configuration**.
@@ -121,7 +121,7 @@ Drivers are designed to work with a limited range of firmware. Updating a driver
    - The **Sync From** operation updates the attributes of the CloudShell resource but does not override the resource structure like the **Auto Load** operation. **Sync From** updates attributes such as software version, switch address, port names and alarm states with the existing settings of the switch.
    - The **Sync To** operation enables you to update the physical device's settings with the settings defined in the CloudShell resource. To change the values of specific attributes on the physical device, in the **Settings** document of the resource, edit the attribute values and click **Activate**.
     :::note
-    **Sync From** and **Sync To** can also be performed on a specific sub-resource, such as a blade or a port, while **Auto Load** applies to the entire resource structure. For additional information about these operations, see [Inventory Drivers and Utilities](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Invn-Drvrs-n-Utls.htm).
+    **Sync From** and **Sync To** can also be performed on a specific sub-resource, such as a blade or a port, while **Auto Load** applies to the entire resource structure. For additional information about these operations, see [Inventory Drivers and Utilities](../inventory-drivers-and-utilities.md).
     :::
 
 2. Set port attributes.
@@ -144,7 +144,7 @@ Drivers are designed to work with a limited range of firmware. Updating a driver
 
 ## Define the resource connections of the L1 switch
 
-For detailed information on how to do this, see [Define the Resource Connections of the Switch or Patch Panel](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-Rsc-Cncts.htm).
+For detailed information on how to do this, see [Define the Resource Connections of the Switch or Patch Panel](../connectivity-control/define-the-resource-connections-of-the-switch-or-patch-panel.md).
 
 ## Configure L1 switch runtime
 
@@ -211,4 +211,4 @@ You can see an L1 device's resolved connections in real time in the **Resource E
 :::
 CloudShell Portal also enables you to reserve specific blades/ports for the duration of the sandbox. You can either drag the L1 resource into the sandbox (its default is shared) and then use the **Add sub resources** option to add some ports to the diagram (this will allocate the ports exclusively to sandboxes based on this blueprint), or you can use the **Unshare** option on the L1 device resource itself to get exclusive access to the entire resource for that sandbox.
 
-To learn how to add sub-resources and unshare a resource, see [Configure Sub-resources](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Prfrm-Actns/Sndbx-Sub-Rscs.htm) and [Share Reserved Resources](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Prfrm-Actns/Sndbx-Shr.htm).
+To learn how to add sub-resources and unshare a resource, see [Configure Sub-resources](../../../../portal/sandboxes/sandbox-workspace/resources/configure-sub-resources.md) and [Share Reserved Resources](../../../../portal/sandboxes/sandbox-workspace/resources/share-reserved-resources.md).

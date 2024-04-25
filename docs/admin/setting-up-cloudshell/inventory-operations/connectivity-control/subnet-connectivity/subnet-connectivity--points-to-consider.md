@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Subnet Connectivity - Points to Consider
 
-When adding a subnet to a blueprint diagram, take the following points under consideration. To learn how to add a subnet to a blueprint and set the service's attribute values, see [Services in Blueprints](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Blprnt-Use-Srvc.htm).
+When adding a subnet to a blueprint diagram, take the following points under consideration. To learn how to add a subnet to a blueprint and set the service's attribute values, see [Services in Blueprints](../../../../../portal/blueprints/creating-blueprints/services.md).
 
 ## General
 
@@ -26,7 +26,7 @@ When adding a subnet to a blueprint diagram, take the following points under con
 
 ## Private cloud Apps
 
-- Subnet services cannot be connected to private cloud Apps, such as vCenter. For additional information, see [Virtual Network Connectivity](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Cnct/Vir-Ntwrk-Cnct-Cntnr.htm).
+- Subnet services cannot be connected to private cloud Apps, such as vCenter. For additional information, see [Virtual Network Connectivity](../../../../../portal/sandboxes/sandbox-workspace/add-connectivity/add-virtual-network/index.md).
 
 ## Cloud provider resource
 
@@ -39,7 +39,7 @@ When adding a subnet to a blueprint diagram, take the following points under con
     
     However, if you need to disconnect a deployed App, you can remove it from the sandbox. This will both disconnect the App from the subnets or Apps it is connected to, and delete the App's VM from the cloud provider. For additional information, see [Apps in Sandboxes](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Use-Apps.htm).
     
-- It is possible to connect Azure Apps to predefined subnets residing on the Sandbox VNet. This capability is supported for Azure 2<sup>nd</sup> Gen cloud provider resources. For additional information, see [Connecting Azure Apps to predefined subnets](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Rsrc-Cnct.htm#Connecti4).
+- It is possible to connect Azure Apps to predefined subnets residing on the Sandbox VNet. This capability is supported for Azure 2<sup>nd</sup> Gen cloud provider resources. For additional information, see [Connecting Azure Apps to predefined subnets](../../../../../portal/sandboxes/sandbox-workspace/connect-resources-and-apps.md#connecting-azure-apps-to-predefined-subnets).
 - If the diagram has any subnet services, make sure all AWS EC2/Azure Apps in that diagram are connected to at least one subnet. For additional information, see [Apps in Sandboxes](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Use-Apps.htm).
 - For AWS EC2 instances, the subnet range allocation is independent from the IP allocation. As a result, instance IPs may not be included in the defined range of their subnet. Please note that this is a display issue and does not affect connectivity.
     
@@ -50,11 +50,11 @@ When adding a subnet to a blueprint diagram, take the following points under con
 
 ## Modifying subnets
 
-- Subnet services cannot be added, edited or removed from a sandbox. For additional information, see [Services in Sandboxes](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Use-Srvc.htm).
+- Subnet services cannot be added, edited or removed from a sandbox. For additional information, see [Services in Sandboxes](../../../../../portal/sandboxes/sandbox-workspace/services.md).
 
 ## Related Topics
 
-- [Subnet Connectivity](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-Subnets.htm)
-- [Services in Blueprints](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Blprnt-Use-Srvc.htm)
+- [Subnet Connectivity](./index.md)
+- [Services in Blueprints](../../../../../portal/blueprints/creating-blueprints/services.md)
 - [Apps in Blueprints](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Blprnt-Use-Apps.htm)
-- [Virtual Network Connectivity](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Cnct/Vir-Ntwrk-Cnct-Cntnr.htm)
+- [Virtual Network Connectivity](../../../../../portal/sandboxes/sandbox-workspace/add-connectivity/add-virtual-network/index.md)

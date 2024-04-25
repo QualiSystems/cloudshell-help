@@ -12,8 +12,8 @@ During the sandbox's setup, CloudShell creates the subnets in the public cloud a
 :::
 To use subnets in CloudShell, the system administrator needs to perform the following configurations:
 
-1. [Associate the Subnet service family to the domain categories](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-Subnets.htm?tocpath=CloudShell%20Administration%7CSetting%20Up%20CloudShell%7CInventory%20Operations%7CConnectivity%20Control%7CSubnet%20Connectivity%7C_____0#Associat)
-2. [Customize the Subnet service model](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-Subnets.htm?tocpath=CloudShell%20Administration%7CSetting%20Up%20CloudShell%7CInventory%20Operations%7CConnectivity%20Control%7CSubnet%20Connectivity%7C_____0#Configur)
+1. [Associate the Subnet service family to the domain categories](./index.md#associate-the-subnet-service-family-to-the-domain-categories)
+2. [Customize the Subnet service model](./index.md#customize-the-subnet-service-model)
 
 ## How CloudShell creates subnet networks
 
@@ -21,7 +21,7 @@ When a sandbox is deployed, CloudShell uses the cloud provider resource of the A
 
 ## Associate the Subnet service family to the domain categories
 
-To expose the Subnet service in the **Apps / Services** catalog of a specific domain, you must associate the service family to each desirable domain's service category. For information about creating service categories for domains, see [Creating a service catalog category](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Add-n-Cnfgr-Srvc.htm#Managing).
+To expose the Subnet service in the **Apps / Services** catalog of a specific domain, you must associate the service family to each desirable domain's service category. For information about creating service categories for domains, see [Creating a service catalog category](../../../inventory-operations/configuring-services.md#creating-a-service-catalog-category).
 
 **To associate the Subnet service to the domain category:**
 
@@ -44,7 +44,7 @@ To expose the Subnet service in the **Apps / Services** catalog of a specific do
 
 ## Customize the Subnet service model
 
-This section explains how to customize the default settings of the Subnet service and control which settings can be changed by the user in the blueprint diagram. To learn how to add a subnet to a blueprint and set the service's attribute values, see [Services in Blueprints](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Blprnt-Use-Srvc.htm).
+This section explains how to customize the default settings of the Subnet service and control which settings can be changed by the user in the blueprint diagram. To learn how to add a subnet to a blueprint and set the service's attribute values, see [Services in Blueprints](../../../../../portal/blueprints/creating-blueprints/services.md).
 
 **To customize a Subnet preset's attributes:**
 
@@ -66,11 +66,11 @@ This section explains how to customize the default settings of the Subnet servic
 
 ## Related Topics
 
-- [Subnet Connectivity - Points to Consider](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-Subnets-Cnsdr.htm)
-- [AWS Integration](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-Ovrv.htm)
-- [Microsoft Azure Integration](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-VNET-Ovrv.htm)
-- [Managing App Templates](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Apps.htm)
-- [Services Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Services.htm)
-- [Apps Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Apps.htm)
-- [Virtual Network Connectivity](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Cnct/Vir-Ntwrk-Cnct-Cntnr.htm)
-- [Connect Resources and Apps](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Rsrc-Cnct.htm)
+- [Subnet Connectivity - Points to Consider](./subnet-connectivity--points-to-consider.md)
+- [AWS Integration](../.././../../supported-cloud-providers-in-cloudshell/public-cloud-provider-support-in-cloudshell/aws-integration-and-configuration/aws-integration/index.md)
+- [Microsoft Azure Integration](../.././../../supported-cloud-providers-in-cloudshell/public-cloud-provider-support-in-cloudshell/microsoft-azure-integration-and-configuration/microsoft-azure-integration/index.md)
+- [Managing App Templates](../../../../cloudshell-manage-dashboard/manage-app-templates/index.md)
+- [Services Overview](../../../../../intro/features/services.md)
+- [Apps Overview](../../../../../intro/features/apps-overview.md)
+- [Virtual Network Connectivity](../../../../../portal/sandboxes/sandbox-workspace/add-connectivity/add-virtual-network/index.md)
+- [Connect Resources and Apps](../../../../../portal/sandboxes/sandbox-workspace/connect-resources-and-apps.md)

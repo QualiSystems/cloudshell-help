@@ -10,7 +10,7 @@ This article only applies to resources based on 1st Gen shells. While CloudShell
 
 This article explains how to manually create resources in Resource Manager, including sub-resources (such as ports), connections, attributes, and resource settings.
 
-Drivers, groups and domains must be associated to the resources separately. For additional information, see [Associating a Driver with a Resource](./associating-a-driver-with-a-resource.md) and [Adding/Removing Resources from a Domain](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Add-dmn-rsrc.htm) .
+Drivers, groups and domains must be associated to the resources separately. For additional information, see [Associating a Driver with a Resource](./associating-a-driver-with-a-resource.md) and [Adding/Removing Resources from a Domain](../../../cloudshell-identity-management/cloudshell-domains/addingremoving-resources-from-a-domain.md) .
     
 :::note
 It is recommended to add resources based on 2nd Gen Shells via the CloudShell Portal, to enjoy the full range of CloudShell capabilities. For additional information, see [Shells Overview](../../../../intro/features/shells.md).
@@ -114,7 +114,7 @@ Some attribute values will be read-only, depending on the inheritance and overri
 :::
 
 :::danger Important
-The attribute inheritance feature will be deprecated in an upcoming release. Please do not use this setting. For additional information, see [Configuring attribute inheritance settings](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Dfn-Rsrc-Data-Mdl.htm#Configuring_attribute_inheritance_settings) or contact [Quali Support](https://register.quali.com/).
+The attribute inheritance feature will be deprecated in an upcoming release. Please do not use this setting. For additional information, see [Configuring attribute inheritance settings](../resource-data-modeling-for-1st-gen-shells/defining-the-resource-data-model.md#configuring-attribute-inheritance-settings) or contact [Quali Support](https://register.quali.com/).
 :::
 
 You cannot update attribute values for active resources when they are being shared.

@@ -4,8 +4,8 @@ The customer configuration keys enable you to customize different aspects of the
 
 ## Related Topics
 
-- [Customizing the Language File](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cstmz-Lang-File.htm)
-- [Managing CloudShell Portal Tours](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cstmz-Tours.htm)
-- [Advanced CloudShell Customizations](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm)
-- [Customer Configuration Keys Repository](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfg-Ky-Rpstr.htm)
-- [Rebranding CloudShell Portal (White Labeling)](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Rbrnd-CSS.htm)
+- [Customizing the Language File](./customizing-the-language-file.md)
+- [Managing CloudShell Portal Tours](./managing-cloudshell-portal-tours.md)
+- [Advanced CloudShell Customizations](./advanced-cloudshell-customizations.md)
+- [Customer Configuration Keys Repository](./customer-configuration-keys-repository/index.md)
+- [Rebranding CloudShell Portal (White Labeling)](./rebranding-cloudshell-portal-white-labeling.md)

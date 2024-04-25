@@ -29,7 +29,7 @@ To create a patch panel resource, make sure to use the provided resource familie
 7. The **Resource Configuration** page is displayed.
 8. Add the patch panel's ports:
     1. In the **Internal Resources** pane, right-click the patch panel resource and select **New \> Resource** from the context menu. In the **New Resource** dialog box, enter the required information and click **OK**.
-9. To define which devices are connected to the patch panel ports, see [Define the Resource Connections of the Switch or Patch Panel](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-Rsc-Cncts.htm).
+9. To define which devices are connected to the patch panel ports, see [Define the Resource Connections of the Switch or Patch Panel](./define-the-resource-connections-of-the-switch-or-patch-panel.md).
 10. Save the changes.
     
     The patch panel can now be used for any route request, same as L1 routes.
@@ -47,4 +47,4 @@ You can see an L1 device's resolved connections in real time in the **Resource E
 :::
 CloudShell Portal also enables you to reserve specific blades/ports for the duration of the sandbox. You can either drag the L1 resource into the sandbox (its default is shared) and then use the **Add sub resources option** to add some ports to the diagram (this will allocate the ports exclusively to sandboxes based on this blueprint), or you can use the **Unshare** option on the L1 device resource itself to get exclusive access to the entire resource for that sandbox.
 
-To learn how to add sub-resources and unshare a resource, see [Configure Sub-resources](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Prfrm-Actns/Sndbx-Sub-Rscs.htm) and [Share Reserved Resources](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Prfrm-Actns/Sndbx-Shr.htm).
+To learn how to add sub-resources and unshare a resource, see [Configure Sub-resources](../../../../portal/sandboxes/sandbox-workspace/resources/configure-sub-resources.md) and [Share Reserved Resources](../../../../portal/sandboxes/sandbox-workspace/resources/share-reserved-resources.md).
