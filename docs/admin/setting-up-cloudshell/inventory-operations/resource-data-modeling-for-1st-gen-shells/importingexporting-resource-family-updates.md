@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Importing/Exporting Resource Family Updates
 :::important
-This article only applies to resources based on 1st Gen shells. While CloudShell supports 1st Gen shells, we recommend using 2nd Gen shells, which offer enhanced shell management capabilities. For details, see [Shells Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Shells.htm).
+This article only applies to resources based on 1st Gen shells. While CloudShell supports 1st Gen shells, we recommend using 2nd Gen shells, which offer enhanced shell management capabilities. For details, see [Shells Overview](../../../../intro/features/shells.md).
 :::
 ## Importing resource family updates
 
@@ -26,7 +26,7 @@ The system.xml configuration file contains updates to the default families, mode
 
 3. Navigate to the Resource Management Additional files > **Configuration** folder, select the XML file containing the resource family updates, and click **Open**.
     :::note Note about attributes referenced in the XML:
-    Referencing attributes whose names contain unsupported characters may cause unexpected behavior. For details about attribute names, see [Creating an Attribute](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Attrb.htm#Creating).
+    Referencing attributes whose names contain unsupported characters may cause unexpected behavior. For details about attribute names, see [Creating an Attribute](./attributes.md#creating-an-attribute).
     :::
 4. Repeat the process to import updated Resource Family samples, L1 switches configuration files, and traffic family libraries.
 

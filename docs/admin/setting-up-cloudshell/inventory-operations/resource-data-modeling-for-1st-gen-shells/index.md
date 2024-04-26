@@ -1,7 +1,7 @@
 # Resource Data Modeling (for 1st Gen Shells)
 
 :::info
-This article only applies to resources based on 1st Gen shells. While CloudShell supports 1st Gen shells, we recommend using 2nd Gen shells, which offer enhanced shell management capabilities. For details, see [Shells Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Shells.htm).
+This article only applies to resources based on 1st Gen shells. While CloudShell supports 1st Gen shells, we recommend using 2nd Gen shells, which offer enhanced shell management capabilities. For details, see [Shells Overview](../../../../intro/features/shells.md).
 :::
 
 Every resource in the resource repository inherits a collection of properties and behaviors from the data model on which it is based.
@@ -16,7 +16,7 @@ The resource data model and attributes should be standardized across the company
 
 There are two ways to define the resource data model: importing or manually creating them. In practice, defining the data model usually requires a mix of both methods.
 
-Importing data modeling populates Resource Manager with pre-defined resource families, models and structures. You can import updated definitions by launching the configuration wizard, or by importing xml configuration files via the Resource Families tree. For additional information, see [Importing/Exporting Resource Family Updates](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Imprt-Rsrc-Fmli-Updt.htm).
+Importing data modeling populates Resource Manager with pre-defined resource families, models and structures. You can import updated definitions by launching the configuration wizard, or by importing xml configuration files via the Resource Families tree. For additional information, see [Importing/Exporting Resource Family Updates](./importingexporting-resource-family-updates.md).
 
 You can use these configuration files to add new resource families, associated models, attributes and their complete structure, or to update existing family and model definitions for the current resource structure.
 
