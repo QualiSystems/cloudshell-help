@@ -6,7 +6,7 @@ sidebar_position: 2
 
 Attributes allow you to add information about resources, Apps, and services. This may include information intended for the user and/or data to be used by the shell, such as the firmware version of the physical device or cloud provider to be used for App deployments. CloudShell components inherit the attributes defined in their family and model. For example, a router resource has the Port attribute defined in that router's model.
 :::note
-Components based on 2nd Gen Shells inherit their settings from their Shells. For additional information, see [Shells Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Shells.htm).
+Components based on 2nd Gen Shells inherit their settings from their Shells. For additional information, see [Shells Overview](../../../../intro/features/shells).
 :::
 ## Creating an Attribute
 
@@ -38,7 +38,7 @@ Attribute name must begin with a letter and can contain alpha numeric characters
         <tr>
             <td>Attribute Type</td>
             <td>
-            Select the attribute type from the drop down list. There are five types of attributes: **String**, **Password**, **Numeric**, **Boolean** (Yes/No), and **Lookup**. For additional information, see [Attribute Types and Values](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Attrb.htm?Highlight=Attributes#Attribut) below.
+            Select the attribute type from the drop down list. There are five types of attributes: **String**, **Password**, **Numeric**, **Boolean** (Yes/No), and **Lookup**. For additional information, see [Attribute Types and Values](./attributes.md#attribute-types-and-values) below.
             </td>
         </tr>
         <tr>
@@ -167,7 +167,7 @@ Displays the attribute in the Resource Manager Client's **Settings** tab and in 
         </tr>
         <tr>
             <td>Link Configurations</td>
-            <td>(Applies to L1 routes) Displays the attribute in the **Inventory** tab of the **Resource Connections** dialog box and in the **Connection Properties** side pane. This enables users to specify a specific attribute value (such as Speed) that will apply only to this specific route when it is connected in a sandbox. For details, see [Configure Physical Network Connectivity Requirements](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Rsc-Cnct/Phys-Ntwrk-Cnfg.htm).</td>
+            <td>(Applies to L1 routes) Displays the attribute in the **Inventory** tab of the **Resource Connections** dialog box and in the **Connection Properties** side pane. This enables users to specify a specific attribute value (such as Speed) that will apply only to this specific route when it is connected in a sandbox. For details, see [Configure Physical Network Connectivity Requirements](../../../../portal/sandboxes/sandbox-workspace/add-connectivity/add-physical-network/config-physical-conn-req.md).</td>
         </tr>
         <tr>
             <td>Variable Capability</td>
@@ -200,12 +200,12 @@ The final value is ultimately set by the system.
         <tr>
             <td>Execution Server Selector</td>
             <td>
-            Enables admins to limit the execution of a resource or App to a specific execution server (or group of execution servers) instead of just using the first available execution server. For more information, see [Setting Up Execution Servers to Run Commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Tst-n-Cmd-Exc.htm).
+            Enables admins to limit the execution of a resource or App to a specific execution server (or group of execution servers) instead of just using the first available execution server. For more information, see [Setting Up Execution Servers to Run Commands](../../../cloudshell-execution-server-configurations/setting-up-execution-servers-to-run-commands.md).
 
 :::note Notes
 - If the Execution Server Selector attribute is missing from the execution server's details page, make sure the attribute has the **Execution Server Selector** rule attached to it, in Resource Manager Client's **Attributes** tab.
 - Attributes with this rule are displayed in the Inventory dashboard's resource discovery form.
-- This does not apply to job suites as they provide the option of associating specific execution servers to the execution of the job. For more information, see [Add jobs to an automation suite](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/JOB-SCHDL/New-Autmt-Suite.htm#Add2).
+- This does not apply to job suites as they provide the option of associating specific execution servers to the execution of the job. For more information, see [Add jobs to an automation suite](../../../../portal/job-scheduling/manage-automation-suites/add-suites.md#add-jobs-to-an-automation-suite).
 :::
             </td>
         </tr>
@@ -226,7 +226,7 @@ This requires setting the `MonitorTaggedAttributes` configuration key.
             <td>
             Enables displaying attributes in CloudShell Insight BI, enable filtering dashboards data according to attribute values.
 
-See [Displaying attributes in BI](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Attrb.htm?Highlight=Attributes#Display).
+See [Displaying attributes in BI](./attributes.md#displaying-attributes-in-bi).
             </td>
         </tr>
         <tr>
@@ -259,7 +259,7 @@ For performance reasons, the Insight database adds new attributes once every 24 
 :::
 ## Related Topics
 
-- [](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Dfn-Rsrc-Data-Mdl.htm#Associating_an_attribute_to_a_family_or_model "Associating an attribute to a family or model")[Associating an attribute to a family or model](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Dfn-Rsrc-Data-Mdl.htm#Adding)
-- [Restricting values for an associated attribute](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Dfn-Rsrc-Data-Mdl.htm#Restricting_values_for_an_associated_attribute)
-- [Configuring attribute inheritance settings](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Dfn-Rsrc-Data-Mdl.htm#Configuring_attribute_inheritance_settings)
-- [](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Dfn-Rsrc-Data-Mdl.htm#Configur "Configuring associated attribute rules")[Configuring associated attribute rules](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Dfn-Rsrc-Data-Mdl.htm#Configur)
+- [](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Dfn-Rsrc-Data-Mdl.htm#Associating_an_attribute_to_a_family_or_model "Associating an attribute to a family or model")[Associating an attribute to a family or model](./defining-the-resource-data-model.md#associating-an-attribute-to-a-family-or-model)
+- [Restricting values for an associated attribute](./defining-the-resource-data-model.md#restricting-values-for-an-associated-attribute)
+- [Configuring attribute inheritance settings](./defining-the-resource-data-model.md#configuring-attribute-inheritance-settings)
+- [](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Dfn-Rsrc-Data-Mdl.htm#Configur "Configuring associated attribute rules")[Configuring associated attribute rules](./defining-the-resource-data-model.md#configuring-associated-attribute-rules)
