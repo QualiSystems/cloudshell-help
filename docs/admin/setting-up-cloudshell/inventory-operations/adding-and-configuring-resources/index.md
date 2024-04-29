@@ -1,7 +1,7 @@
 # Adding and Configuring Resources
 
 :::info
-This article only applies to resources based on 1st Gen shells. While CloudShell supports 1st Gen shells, we recommend using 2nd Gen shells, which offer enhanced shell management capabilities. For details, see [Shells Overview](../../../intro/features/shells.md).
+This article only applies to resources based on 1st Gen shells. While CloudShell supports 1st Gen shells, we recommend using 2nd Gen shells, which offer enhanced shell management capabilities. For details, see [Shells Overview](../../../../intro/features/shells.md).
 :::
 
 In Resource Manager Client, you can manually add and configure resources. This includes setting up the resource's data model, structure including sub-resources, associating a driver that provides automation commands to be executed on the resource in CloudShell, and associating domains to the resource to allow the domain's users to access and use it.
