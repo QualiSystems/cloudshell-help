@@ -32,7 +32,7 @@ When searching in CloudShell Portal for a resource to add to a blueprint or sand
     1. In Resource Manager, click the **Resource Explorer** pane.
     2. In **Settings** click the **Domains** tab.
     3. Verify that the user's domain is included in the list of domains.
-2. If not, add the resource to the user's domain, see [Adding resources to a domain](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Add-dmn-rsrc.htm#Adding).
+2. If not, add the resource to the user's domain, see [Adding resources to a domain](../../admin/cloudshell-identity-management/cloudshell-domains/addingremoving-resources-from-a-domain.md#adding-resources-to-a-domain).
 
 ### Resource is unsearchable
 
@@ -49,7 +49,7 @@ When searching in CloudShell Portal for a resource to add to a blueprint or sand
 
 1. Check if the resource's **Visibility** is set to **Admin only** in the **Inventory** dashboard.
     :::tip
-    Admins can override the resource family setting for specific resources using the **Inventory** dashboard, see [Editing Resources from the Inventory Dashboard](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/INVN/Edit-Rsrc-in-Invnt.htm).
+    Admins can override the resource family setting for specific resources using the **Inventory** dashboard, see [Editing Resources from the Inventory Dashboard](../../portal/inventory/managing-resources/editing-resources-from-inventory-dashboard.md).
     :::
     
 2. Check if the resource family is set as visible.
@@ -62,7 +62,7 @@ When searching in CloudShell Portal for a resource to add to a blueprint or sand
 **To mark a resource as Included:**
 
 1. Open CloudShell Portal.
-2. Check if the resource is marked as **Excluded**, see [Including/Excluding Inventory Resources](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/INVN/Incld-Rsrc-in-Invnt.htm).
+2. Check if the resource is marked as **Excluded**, see [Including/Excluding Inventory Resources](../../portal/inventory/managing-resources/include-exclude-resources.md).
 3. If the resource is marked as **Excluded**, change the marking to **Include**.
     
 

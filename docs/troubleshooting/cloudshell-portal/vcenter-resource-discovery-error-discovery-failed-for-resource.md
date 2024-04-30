@@ -23,4 +23,4 @@ In many situations, the permissions / role are defined on the datacenter or clus
 
 ## Solution
 
-You will need to ensure the user permissions are defined on the vCenter root level. For detailed instructions on how to do this, see [Required vCenter User Permissions per Deployment Type](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/vCenter-User-Prmsn.htm).
+You will need to ensure the user permissions are defined on the vCenter root level. For detailed instructions on how to do this, see [Required vCenter User Permissions per Deployment Type](../../admin/supported-cloud-providers-in-cloudshell/private-cloud-provider-support-in-cloudshell/vmware-vcenter-integration-and-configuration/required-vcenter-user-permissions-per-deployment-type.md).

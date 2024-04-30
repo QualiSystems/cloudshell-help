@@ -8,7 +8,7 @@ This topic will guide you on how to troubleshoot CloudShell execution errors. Cl
 
 If you are a user or an Admin, you can use these logs to troubleshoot your issue. In some cases, if you have approached Quali Customer Support for assistance, they may ask for these logs to analyze the circumstances that led up to the error.
 
-We also recommend that you use the system messages displayed in CloudShell Portal, for example, the **Activity Details Window**, which presents detailed information pertaining to a specific error or message in the activity feed, including the event's logging information and (for command execution errors) the execution server on which the command is supposed to run. For more information on all CloudShell system messages, see the CloudShell help topic [Viewing System Messages](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-View-Sys-Msgs.htm).
+We also recommend that you use the system messages displayed in CloudShell Portal, for example, the **Activity Details Window**, which presents detailed information pertaining to a specific error or message in the activity feed, including the event's logging information and (for command execution errors) the execution server on which the command is supposed to run. For more information on all CloudShell system messages, see the CloudShell help topic [Viewing System Messages](../../portal/sandboxes/sandbox-workspace/system-messages).
 
 ## CloudShell system logs
 

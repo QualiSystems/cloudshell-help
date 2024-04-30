@@ -15,4 +15,4 @@ The catalogs in CloudShell Portal display partial results or are empty altogethe
 
 ## Solutions
 
-See [Unable to Locate a Resource](https://help.quali.com/Online%20Help/0.0/Portal/Content/Troubleshooting/Unable-to-locate-resource.htm).
+See [Unable to Locate a Resource](./unable-to-locate-a-resource.md).

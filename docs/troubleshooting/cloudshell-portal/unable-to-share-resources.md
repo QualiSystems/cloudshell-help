@@ -26,6 +26,6 @@ You will now be able to share resources in multiple reservations, assuming the p
 
 ## Related Topics
 
-[Share Reserved Resources](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Prfrm-Actns/Blprnt-Shr.htm) (in blueprints)
+[Share Reserved Resources](../../portal/blueprints/creating-blueprints/resources/share-reserved-resources.md) (in blueprints)
 
-[Share Reserved Resources](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Prfrm-Actns/Sndbx-Shr.htm) (in sandboxes)
+[Share Reserved Resources](../../portal/sandboxes/sandbox-workspace/resources/share-reserved-resources.md) (in sandboxes)

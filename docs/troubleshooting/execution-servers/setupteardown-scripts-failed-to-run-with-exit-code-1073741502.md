@@ -22,7 +22,7 @@ This may happen on high throughput installations running a high number of script
 
 **To resolve this issue:**
 
-1. Exclude the CloudShell Execution Server. For details, see [Including/excluding execution servers](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Exctn-Srv-Servers.htm#Includin).
+1. Exclude the CloudShell Execution Server. For details, see [Including/excluding execution servers](../../admin/cloudshell-manage-dashboard/managing-execution-servers/execution-servers-servers-page.md#includingexcluding-execution-servers).
 2. Wait for any running processes on the CloudShell Execution Server to complete.
     
     When excluding a CloudShell Execution Server, the server follows through with the execution of any currently running processes.

@@ -24,7 +24,7 @@ The VM is not automatically powered off by CloudShell at the end of the sandbox.
 If the VM does not need to be online at all times, use an App whose VM lifecycles are managed by CloudShell, or modify the teardown script to power off the Static VM.
 
 :::note
-To support this modification, the generic vCenter Static VM shell includes the **Auto Power Off** attribute. This attribute is not used in this shell so you will need to implement it. See [CloudShell's OOB Orchestration](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Orch-Scripts/CloudShell-OOB-Orch.htm).
+To support this modification, the generic vCenter Static VM shell includes the **Auto Power Off** attribute. This attribute is not used in this shell so you will need to implement it. See [CloudShell's OOB Orchestration](../../devguide/develop-orch-scripts/cs-oob-orch/index.md).
 :::
 
 **To ensure that blueprint teardown operations are configured correctly, in the blueprint's Properties, verify the following:**
@@ -37,9 +37,9 @@ To support this modification, the generic vCenter Static VM shell includes the *
 
 **To troubleshoot teardown execution issues:**
 
-- Check the sandbox's [Activity Feed Pane](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-View-Actvty-Fd.htm) for teardown execution issues and fix accordingly.
+- Check the sandbox's [Activity Feed Pane](../../portal/sandboxes/sandbox-workspace/system-messages/activity-feed-pane.md) for teardown execution issues and fix accordingly.
     
 
 ## Related Topics
 
-- [Static VMs Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Static-VMs.htm)
+- [Static VMs Overview](../../intro/features/static-vms.md)

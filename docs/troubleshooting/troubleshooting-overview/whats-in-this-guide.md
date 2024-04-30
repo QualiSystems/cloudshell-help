@@ -26,4 +26,4 @@ You should always try to identify whether the issue is a CloudShell issue or an 
 
 If you have not been able to solve your issue with the information included in this guide and need the assistance of Customer Support, we recommend that you attach a zip file containing relevant logs when you open your ticket. Providing logs to Customer Support helps them analyze the circumstances that led up to an error, resulting in a more efficient and timely solution.
 
-For more information on how to collect logs, see [Collecting Logs](https://help.quali.com/Online%20Help/0.0/Portal/Content/Troubleshooting/Collecting-logs.htm).
+For more information on how to collect logs, see [Collecting Logs](./collecting-logs.md).
