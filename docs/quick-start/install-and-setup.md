@@ -80,7 +80,7 @@ Quali has a vibrant [developer’s community](https://github.com/orgs/QualiSyste
 - [Apps Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Apps.htm)
 - [Services Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Services.htm)
 - [Abstract Resources Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Abstract-Resources.htm)
-- [Migrating 1st Gen Shells to 2nd Gen](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Converting-1G-Shells.htm)
+- [Migrating 1st Gen Shells to 2nd Gen](../devguide/reference/migrate-1st-gen-shell-to-2nd-gen-shell.md)
 
 ## Check components
 
