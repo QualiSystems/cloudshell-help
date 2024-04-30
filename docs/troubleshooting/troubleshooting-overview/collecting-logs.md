@@ -103,7 +103,7 @@ You will need the logs from the Quali Server machine and the relevant client mac
 
 ### Guacamole service logs
 
-For details about the Guacamole services, see [QualiX High-level Setup Process](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/QualiX-high-level-process.htm).
+For details about the Guacamole services, see [QualiX High-level Setup Process](../../install-configure/qualix/high-level-setup-process.md).
 
 To get the following logs, SSH to QualiX Server and run the appropriate command.
 
@@ -240,7 +240,7 @@ For example:
 
 **To customize the shell’s logging policy, enable debug logging:**
 
-- See [Logging in shells](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Tips-and-Tricks.htm#Logging).
+- See [Logging in shells](../../devguide/developing-shells/tips-and-tricks-for-shells.md#logging-in-shells).
 
 **To change the log level:**
 
@@ -255,7 +255,7 @@ For example:
     
     ![](/Images/Devguide-orchestration-scripts/Scripts-Deep-Dive.png)
     
-    Setting up and retrieving script logs is detailed in [Logging in orchestration scripts](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Orch-Scripts/Scripts-Deep-Dive.htm#Logging).
+    Setting up and retrieving script logs is detailed in [Logging in orchestration scripts](../../devguide/develop-orch-scripts/script-deep-dive.md#logging-in-orchestration-scripts).
     
 
 ### Virtual environment logs
@@ -276,7 +276,7 @@ Look here for the L1 shell execution logs on the Quali Server machine:
 
 ## New Job Scheduling Logs
 
-CloudShells logs events related to the New Job Scheduling's Kubernetes services. For details, see [New Job Scheduling Service Logs](https://help.quali.com/Online%20Help/0.0/Portal/Content/JSS/jss-logs.htm).
+CloudShells logs events related to the New Job Scheduling's Kubernetes services. For details, see [New Job Scheduling Service Logs](../../jss/new-jss-logs.md).
 
 ## QAC logs
 
@@ -286,7 +286,7 @@ QAC does the following:
 - Determines the next available time slot (available time slots are proposed in the **Resolve Conflicts** window that is displayed when reserving a blueprint with resource conflicts)
 
 :::note
-QAC logs are disabled by default. Once enabled, future QAC logs will be included in the [CloudShell system logs](https://help.quali.com/Online%20Help/0.0/Portal/Content/Troubleshooting/Collecting-logs.htm?tocpath=Troubleshooting%7CTroubleshooting%20Overview%7C_____2#CloudShe2) ZIP file.
+QAC logs are disabled by default. Once enabled, future QAC logs will be included in the [CloudShell system logs](#cloudshell-system-logs) ZIP file.
 :::
 
 **To enable QAC logs:**

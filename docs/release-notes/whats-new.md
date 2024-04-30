@@ -15,8 +15,8 @@ CloudShell can now send asynchronous events to a message queue to be consumed an
 
 ### Password Policy
 
-We are introducing a new feature that allows CloudShell administrators to configure a password policy for enhanced security. This policy enables the definition of specific criteria for password strength when Single Sign-On (SSO) is not in use. For details, see [Setting password policies for CloudShell user accounts](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm#PassPolicy).
+We are introducing a new feature that allows CloudShell administrators to configure a password policy for enhanced security. This policy enables the definition of specific criteria for password strength when Single Sign-On (SSO) is not in use. For details, see [Setting password policies for CloudShell user accounts](../admin/setting-up-cloudshell/cloudshell-configuration-options/advanced-cloudshell-customizations.md#setting-password-policies-for-cloudshell-user-accounts).
 
 ### Brute-Force Protection on Login
 
-Introducing 'Brute-Force Protection' on Login for enhanced security. This feature applies exponential delays after defined failed login attempts. Enhance your system's security with proactive measures against brute force attacks. For details, see [Enabling brute-force protection for logins](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm#BruteForceProtection).
+Introducing 'Brute-Force Protection' on Login for enhanced security. This feature applies exponential delays after defined failed login attempts. Enhance your system's security with proactive measures against brute force attacks. For details, see [Enabling brute-force protection for logins](../admin/setting-up-cloudshell/cloudshell-configuration-options/advanced-cloudshell-customizations.md#enabling-brute-force-protection-for-logins).

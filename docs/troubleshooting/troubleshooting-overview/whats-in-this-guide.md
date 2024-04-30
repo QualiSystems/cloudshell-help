@@ -9,7 +9,7 @@ When performing any task in CloudShell, you might occasionally come across an er
 Since we are confident that you will be able to resolve many of the issues yourself, we recommend that before contacting Customer Support, you will:
 
 1. Check out the issues discussed in this guide.
-2. Check out [Known CloudShell Installation Issues](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Appendices/knwn-instl-iss.htm).
+2. Check out [Known CloudShell Installation Issues](../../install-configure/cloudshell-suite/appendix/known-cs-install-issues.md).
 3. Join the technical discussions taking place in our [Community Forums](https://github.com/orgs/QualiSystems/discussions/categories/forums?discussions_q=sdk+category%3AForums).
 
 ## How to find what you need?
