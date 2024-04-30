@@ -39,4 +39,4 @@ Paging or swapping (in Windows) is a virtual memory management scheme, in which 
 
 ## Related Topics
 
-[Minimum Requirements for CloudShell Servers and Clients](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Overview/srvrs.htm)
+[Minimum Requirements for CloudShell Servers and Clients](../../install-configure/cs-system-requirements/min-requirements-for-cs.md)

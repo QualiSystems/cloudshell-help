@@ -34,7 +34,7 @@ To run the CloudShell Suite applications, configure MSDTC Security settings on t
 ## Solution
 
 :::tip
-Before performing the below steps, try specifying the DB machine's NetBIOS computer name in the Quali Server Configuration wizard's **Database Connection** window, so for example, instead of using "`dbmachine\dbinstance`", use "`dbmachine.<NetBIOS-computer-name>\dbinstance`". For details, see [Configure the SQL Server Database Connection](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-db-conn-sql.htm).
+Before performing the below steps, try specifying the DB machine's NetBIOS computer name in the Quali Server Configuration wizard's **Database Connection** window, so for example, instead of using "`dbmachine\dbinstance`", use "`dbmachine.<NetBIOS-computer-name>\dbinstance`". For details, see [Configure the SQL Server Database Connection](../../install-configure/cloudshell-suite/configure-products/config-sql-connection.md).
 :::
 
 **To resolve the issue described above, follow these steps:**

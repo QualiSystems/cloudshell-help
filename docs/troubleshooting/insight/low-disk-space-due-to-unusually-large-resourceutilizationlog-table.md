@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ## Description
 
-[Resource utilization log](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/BI/eslticub-tbls.htm#_Resource_utilization_log) is a table used for analytics, typically by CloudShell Insight. It helps you understand how much of your inventory resources are being used over time. Quali Server has a daily job that adds records to ResourceUtilizationLog. New data is appended to ResourceUtilizationLog, if it is later than the latest EntryDate in ResourceUtilizationLog.
+[Resource utilization log](../../install-configure/cs-insight-bi/cs-insight-bi-elasticube-tables/elasticube-tables.md#resource-utilization-log) is a table used for analytics, typically by CloudShell Insight. It helps you understand how much of your inventory resources are being used over time. Quali Server has a daily job that adds records to ResourceUtilizationLog. New data is appended to ResourceUtilizationLog, if it is later than the latest EntryDate in ResourceUtilizationLog.
 
 ## Solution
 
@@ -16,4 +16,4 @@ If you are using CloudShell Insight, you may want to leave 1-2 years in the log 
 
 Regardless of the size of the table, you should back up the DB before trimming the database, if possible.
 
-For details, see [Database Trimming](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Appendices/db-trimming-bst-prctc.htm).
+For details, see [Database Trimming](../../install-configure/cloudshell-suite/appendix/best-practices-cs-prod/db-trimming.md).

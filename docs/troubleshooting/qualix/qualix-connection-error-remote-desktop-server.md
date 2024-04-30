@@ -27,4 +27,4 @@ The target machine does not have an RDP server installed on it and/or there is a
 
 ## Related Topics
 
-- [QualiX Installation and Configuration](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Qualix.htm)
+- [QualiX Installation and Configuration](../../install-configure/qualix/index.md)

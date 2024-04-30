@@ -30,6 +30,6 @@ If you upgraded to CloudShell 2022.1 and above and your L1 isn’t working, plea
 6. Re-install the L1 driver by executing `install_driver.bat`.
     
 7. Auto-load the new L1 resource in Resource Manager Client.
-8. Make sure it works as expected. You can do this by clicking the **Sync from** button in the L1 resource's **Configuration** tab in Resource Manager Client - see [Sync between the L1 switch and CloudShell](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-L1-Swch.htm#Switch-s).
+8. Make sure it works as expected. You can do this by clicking the **Sync from** button in the L1 resource's **Configuration** tab in Resource Manager Client - see [Sync between the L1 switch and CloudShell](../../admin/setting-up-cloudshell/inventory-operations/connectivity-control/l1-switches.md#sync-between-the-l1-switch-and-cloudshell).
 
 

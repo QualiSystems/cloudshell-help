@@ -18,5 +18,5 @@ You tried to update a shell, but the new shell version is missing attributes tha
 
 **To resolve this issue:**
 
-1. Perform the steps in [Overriding Old/Deprecated Shell Attributes](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Override-old-shell-attributes.htm).
+1. Perform the steps in [Overriding Old/Deprecated Shell Attributes](../../devguide/developing-shells/override-old-shell-attributes.md).
 2. Try again.

@@ -8,8 +8,8 @@ This applies to the **quali\_hub/qualix\_guacamole** and **quali\_hub/qualix\_gu
 
 **Troubleshooting commands**
 
-[Additional Options](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Instl-Cnfg-Docker.htm#Addition)
+[Additional Options](../../install-configure/qualix/install-configure/qualix-4.1-using-docker.md#additional-options)
 
 **Logs**
 
-[Collecting Logs](https://help.quali.com/Online%20Help/0.0/Portal/Content/Troubleshooting/Collecting-logs.htm)
+[Collecting Logs](../troubleshooting-overview/collecting-logs.md)

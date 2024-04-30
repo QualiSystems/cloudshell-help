@@ -25,7 +25,7 @@ Clicking Continue results in a failed build of the Quali Insight database.
 
 To resolve the issue:
 
-1. [Build the Insight ElastiCube](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/BI/bld-elasticube.htm).
+1. [Build the Insight ElastiCube](../../install-configure/cs-insight-bi/install-insight/insight-configuration/build-elasticube.md).
 2. If rebuilding ElastiCube doesn't fix the issue, manually reload each failed table.
     
     1. Open the Sisense ElastiCube Manager application in the BI server.
@@ -42,8 +42,8 @@ To resolve the issue:
         If you see multiple instances of the table, select the one that has Scheme Name "dbo".
         
     9. Repeat steps a-j to reload all the bad tables.
-    10. Rebuild ElastiCube as explained in [Build the Insight ElastiCube](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/BI/bld-elasticube.htm).
+    10. Rebuild ElastiCube as explained in [Build the Insight ElastiCube](../../install-configure/cs-insight-bi/install-insight/insight-configuration/build-elasticube.md).
 
 ## Related Topics
 
-[Minimum Requirements for CloudShell Servers and Clients](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Overview/srvrs.htm)
+[Minimum Requirements for CloudShell Servers and Clients](../../install-configure/cs-system-requirements/min-requirements-for-cs.md)

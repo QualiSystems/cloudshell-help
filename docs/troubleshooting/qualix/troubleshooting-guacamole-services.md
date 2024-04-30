@@ -26,4 +26,4 @@ To run a command. First SSH to Qualix server.
 
 **Logs**
 
-- [Collecting Logs](https://help.quali.com/Online%20Help/0.0/Portal/Content/Troubleshooting/Collecting-logs.htm).
+- [Collecting Logs](../troubleshooting-overview/collecting-logs.md).

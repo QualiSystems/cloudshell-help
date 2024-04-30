@@ -49,4 +49,4 @@ An RDP connection may use different security policies.
 <key name="RDP" pattern="http://<CloudShell Portal Host>:<CloudShell Portal Port>/Qx/connect?qualix=<VM IP>&amp;qualixType=http&amp;rdp{qid}&amp;qtoken={qtoken}&amp;hostname={Address}&amp;protocol=rdp&amp;port=3389&amp;username={User}&amp;password={Password}&amp;security=any&amp;ignore-cert=true" icon-key="RDP" />
 ```
 
-For additional information, see [Configure Remote Access to Sandbox Components Using SSH, RDP, Telnet, VNC (QualiX)](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-Quali-Srv.htm).
+For additional information, see [Configure Remote Access to Sandbox Components Using SSH, RDP, Telnet, VNC (QualiX)](../../install-configure/qualix/post-installation-config/configure-remote-access.md).
