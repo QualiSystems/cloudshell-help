@@ -37,10 +37,10 @@ When adding a subnet to a blueprint diagram, take the following points under con
 
 - Deployed Apps cannot be connected or disconnected in the sandbox.
     
-    However, if you need to disconnect a deployed App, you can remove it from the sandbox. This will both disconnect the App from the subnets or Apps it is connected to, and delete the App's VM from the cloud provider. For additional information, see [Apps in Sandboxes](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Use-Apps.htm).
+    However, if you need to disconnect a deployed App, you can remove it from the sandbox. This will both disconnect the App from the subnets or Apps it is connected to, and delete the App's VM from the cloud provider. For additional information, see [Apps in Sandboxes](../../../../../portal/sandboxes/workspace/apps/).
     
 - It is possible to connect Azure Apps to predefined subnets residing on the Sandbox VNet. This capability is supported for Azure 2<sup>nd</sup> Gen cloud provider resources. For additional information, see [Connecting Azure Apps to predefined subnets](../../../../../portal/sandboxes/sandbox-workspace/connect-resources-and-apps.md#connecting-azure-apps-to-predefined-subnets).
-- If the diagram has any subnet services, make sure all AWS EC2/Azure Apps in that diagram are connected to at least one subnet. For additional information, see [Apps in Sandboxes](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Use-Apps.htm).
+- If the diagram has any subnet services, make sure all AWS EC2/Azure Apps in that diagram are connected to at least one subnet. For additional information, see [Apps in Sandboxes](../../../../../portal/sandboxes/workspace/apps/).
 - For AWS EC2 instances, the subnet range allocation is independent from the IP allocation. As a result, instance IPs may not be included in the defined range of their subnet. Please note that this is a display issue and does not affect connectivity.
     
     For example, the IPs allocated to the deployed instances are outside the subnet's range:
@@ -56,5 +56,5 @@ When adding a subnet to a blueprint diagram, take the following points under con
 
 - [Subnet Connectivity](./index.md)
 - [Services in Blueprints](../../../../../portal/blueprints/creating-blueprints/services.md)
-- [Apps in Blueprints](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Blprnt-Use-Apps.htm)
+- [Apps in Blueprints](../../../../../portal/blueprints/creating-blueprints/apps/)
 - [Virtual Network Connectivity](../../../../../portal/sandboxes/sandbox-workspace/add-connectivity/add-virtual-network/index.md)

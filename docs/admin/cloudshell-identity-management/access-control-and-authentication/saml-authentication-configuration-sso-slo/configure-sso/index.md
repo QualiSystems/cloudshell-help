@@ -41,7 +41,7 @@ When setting up an Identity Provider, make sure you do the following:
     - `emailAddress`: with the email address;
     - `timezoneName`: with the values from the **Time zone name** column in [MSDN's Time Zone IDs](https://msdn.microsoft.com/en-us/library/gg154758.aspx)
     - `RelayState`: with the URL of the location to be directed to after sign-on
-    - (Optional) `Domain`: with the CloudShell domain name to log the user into (if the user's group is associated with more than one domain). To change the name of the `Domain` attribute, see [SAML Single Sign On (SSO)](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfg-Ky-Rpstr.htm#SAML%C2%A0Sin).
+    - (Optional) `Domain`: with the CloudShell domain name to log the user into (if the user's group is associated with more than one domain). To change the name of the `Domain` attribute, see [SAML Single Sign On (SSO)](../../../../../admin/setting-up-cloudshell/cloudshell-configuration-options/customer-configuration-keys-repository/single-sign-on-sso.md#saml-single-sign-on-sso).
         
         - When a user logs into CloudShell for the first time or if the specified CloudShell domain does not exist, they will be logged in randomly to one of the domains they can access.
         - The user will be logged into the domain they were last logged into if either the user does not have permission to access this domain, or no domain attribute was created in the IdP for that user.

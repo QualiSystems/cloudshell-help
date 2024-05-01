@@ -2,6 +2,7 @@
   "label": "CloudShell Manage Dashboard",
   "position": 4,
   "link": {
+    "slug": "admin/cloudshell-manage-dashboard",
     "type": "generated-index",
     "description": "The following CloudShell administration operations are available from CloudShell Portal's Manage dashboard."
   }

@@ -37,7 +37,7 @@ vCenter 5.0.0 and above works only with CloudShell 2022.1 EA and above.
         <tr>
             <td>6.0.0</td>
             <td>
-            Optional port group attributes. To use these attributes, the CloudShell admin needs to manually add them to the VLAN service model in Resource Manager Client. For details, see [Configuring Services](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Add-n-Cnfgr-Srvc.htm).
+            Optional port group attributes. To use these attributes, the CloudShell admin needs to manually add them to the VLAN service model in Resource Manager Client. For details, see [Configuring Services](../setting-up-cloudshell/inventory-operations/configuring-services.md).
 
 The new attributes are:
 
@@ -59,12 +59,12 @@ The new attributes are:
             <td>4.2.5</td>
             <td>
             - Remove the App's newly created vCenter folder if cloning the VM fails
-- VM details show each disk size (See [View an App's VM Details](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Apps-VM-Details.htm))
-- Added hint support for templates to the **VM From Linked Clone** deployment path, so the **vCenter VM** attribute now displays your vCenter server's VMs and templates (See [Add a vCenter App Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/vCenter-App.htm))
-- **Autoload**, **Behavior During Save**, and **IP Regex** attributes are now visible in the App deployment paths (See [Add a vCenter App Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/vCenter-App.htm))
-- Fixed issue that caused CloudShell to ignore the **Behavior During Save** attribute **VM From Linked Clone** deployment path on the resource (See [Add a vCenter App Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/vCenter-App.htm))
+- VM details show each disk size (See [View an App's VM Details](../../portal/sandboxes/sandbox-workspace/apps/view-vm-details.md))
+- Added hint support for templates to the **VM From Linked Clone** deployment path, so the **vCenter VM** attribute now displays your vCenter server's VMs and templates (See [Add a vCenter App Template](./private-cloud-provider-support-in-cloudshell/vmware-vcenter-integration-and-configuration/add-a-vcenter-app-template.md))
+- **Autoload**, **Behavior During Save**, and **IP Regex** attributes are now visible in the App deployment paths (See [Add a vCenter App Template](./private-cloud-provider-support-in-cloudshell/vmware-vcenter-integration-and-configuration/add-a-vcenter-app-template.md))
+- Fixed issue that caused CloudShell to ignore the **Behavior During Save** attribute **VM From Linked Clone** deployment path on the resource (See [Add a vCenter App Template](./private-cloud-provider-support-in-cloudshell/vmware-vcenter-integration-and-configuration/add-a-vcenter-app-template.md))
 - Fixed wmks link generation for different vCenter versions (wmks is used by QualiX)
-- Fixed issue that prevented changing an HDD of a Linked Clone VM (VM created from a VM snapshot) (See [Add a vCenter App Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/vCenter-App.htm))
+- Fixed issue that prevented changing an HDD of a Linked Clone VM (VM created from a VM snapshot) (See [Add a vCenter App Template](./private-cloud-provider-support-in-cloudshell/vmware-vcenter-integration-and-configuration/add-a-vcenter-app-template.md))
 - Fixed issue that prevented selecting a datastore cluster
 - Fixed issue preventing CloudShell from getting the cluster usage without cluster name
 - Fixed issue preventing CloudShell from finding Resource Group under Compute Cluster
@@ -92,7 +92,7 @@ The new attributes are:
         <tr>
             <td>5.0.0</td>
             <td>
-            - Implemented possible value suggestions (autocomplete) for App template attributes: **VM Name**, **VM Template**, and **VM Snapshot** (See [Add a vCenter App Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/vCenter-App.htm))
+            - Implemented possible value suggestions (autocomplete) for App template attributes: **VM Name**, **VM Template**, and **VM Snapshot** (See [Add a vCenter App Template](./private-cloud-provider-support-in-cloudshell/vmware-vcenter-integration-and-configuration/add-a-vcenter-app-template.md))
 :::note    
 vCenter 5.0.0 and above works only with CloudShell 2022.1 EA and above.
 :::
@@ -102,9 +102,9 @@ vCenter 5.0.0 and above works only with CloudShell 2022.1 EA and above.
             <td>4.2.0</td>
             <td>
             - Implemented various fixes and updates
-- Added integration with QualiX for the **Get VM Web Console** feature, by adding the **VM Console Link** attribute to the App Resource Shell (See [Run App Commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Apps-Run-Cmnds.htm))
-- The default value for the shutdown method is hard. even if the value is not valid. (See [Add VMware vCenter Cloud Provider Resource](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/vCenter-Cld-Prvdr-Rsc.htm))
-- Updated **Remove Snapshot** command with new parameter **remove_child** (See [Run App Commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Apps-Run-Cmnds.htm))
+- Added integration with QualiX for the **Get VM Web Console** feature, by adding the **VM Console Link** attribute to the App Resource Shell (See [Run App Commands](../../portal/sandboxes/sandbox-workspace/apps/run-app-commands.md))
+- The default value for the shutdown method is hard. even if the value is not valid. (See [Add VMware vCenter Cloud Provider Resource](./private-cloud-provider-support-in-cloudshell/vmware-vcenter-integration-and-configuration/add-vmware-vcenter-cloud-provider-resource.md))
+- Updated **Remove Snapshot** command with new parameter **remove_child** (See [Run App Commands](../../portal/sandboxes/sandbox-workspace/apps/run-app-commands.md))
 </td>
         </tr>
         <tr>
@@ -120,7 +120,7 @@ This version is supported for CloudShell 2022.1 and up.
             <td>4.0.0</td>
             <td>
             - Support for python 3.9/3.10
-- Added **Remove Snapshot** command (See [Run App Commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Apps-Run-Cmnds.htm))
+- Added **Remove Snapshot** command (See [Run App Commands](../../portal/sandboxes/sandbox-workspace/apps/run-app-commands.md))
 - Added tags for the VM/Folder/Network for vCenter 6.5+
     
 - Improved deployment of Apps with a private IP
@@ -135,14 +135,14 @@ This version is supported for CloudShell 2022.1 and up.
         <tr>
             <td>3.5.0</td>
             <td>
-            - Added **Customize Guest OS** hidden command (See [Run App Commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Apps-Run-Cmnds.htm))
+            - Added **Customize Guest OS** hidden command (See [Run App Commands](../../portal/sandboxes/sandbox-workspace/apps/run-app-commands.md))
             </td>
         </tr>
         <tr>
             <td>3.4.0</td>
             <td>
             - Added the ability to set FQDN hostnames for Linux virtual machines
-- Added the ability to reconfigure CPU/RAM on powered on VMs (See [Run App Commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Apps-Run-Cmnds.htm))
+- Added the ability to reconfigure CPU/RAM on powered on VMs (See [Run App Commands](../../portal/sandboxes/sandbox-workspace/apps/run-app-commands.md))
 - Fixed VM cleanup in case of incorrect customization specification
 - Added the ability to create a new network interface if there are no virtual network adapters on the virtual machine
 </td>
@@ -151,8 +151,8 @@ This version is supported for CloudShell 2022.1 and up.
             <td>3.3.0</td>
             <td>
             - Fixed sandbox folder deletion in the event of failed/canceled VM deployment
-- Fixed issue preventing the addition of multiple HDD disks in the **Reconfigure VM** command for vCenter v7 (See [Run App Commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Apps-Run-Cmnds.htm))
-- Added **vCenter VLAN Port Group** service to support connecting Apps to existing port groups. The vCenter.VLAN.Port.Group.zip service can be downloaded from the vCenter 2G shell's Integrations page and imported into CloudShell. (See [Connecting vCenter Apps to an existing VLAN port group](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Rsrc-Cnct.htm#Connecti3))
+- Fixed issue preventing the addition of multiple HDD disks in the **Reconfigure VM** command for vCenter v7 (See [Run App Commands](../../portal/sandboxes/sandbox-workspace/apps/run-app-commands.md))
+- Added **vCenter VLAN Port Group** service to support connecting Apps to existing port groups. The vCenter.VLAN.Port.Group.zip service can be downloaded from the vCenter 2G shell's Integrations page and imported into CloudShell. (See [Connecting vCenter Apps to an existing VLAN port group](../../portal/sandboxes/sandbox-workspace/connect-resources-and-apps.md#connecting-vcenter-apps-to-an-existing-vlan-port-group))
 - Release Notes:
     - The "vCenter VLAN Port Group" service still has the "VLAN ID" attribute (not required). It was added in order to support consistency between vCenter and CloudShell in terms of VLAN management.
 </td>
@@ -160,41 +160,41 @@ This version is supported for CloudShell 2022.1 and up.
         <tr>
             <td>3.2.0</td>
             <td>
-            - Added possibility to set gateway in the **Private IP** attribute (See [Add a vCenter App Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/vCenter-App.htm))
+            - Added possibility to set gateway in the **Private IP** attribute (See [Add a vCenter App Template](./private-cloud-provider-support-in-cloudshell/vmware-vcenter-integration-and-configuration/add-a-vcenter-app-template.md))
             </td>
         </tr>
         <tr>
             <td>3.1.2</td>
             <td>
-            - Fix for Save/Restore Sandbox (See [Save a Sandbox](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Sv.htm) and [Restore a Saved Sandbox](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Rstr.htm))
-- Changed App's **Deploy** command's mechanism to deploy VMs into folders. Separate folder per sandbox. Folder name = sandbox id (See [Run App Commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Apps-Run-Cmnds.htm))
+            - Fix for Save/Restore Sandbox (See [Save a Sandbox](../../portal/sandboxes/sandbox-workspace/save-sandbox.md) and [Restore a Saved Sandbox](../../portal/sandboxes/saved-sandboxes/restore-saved-sandbox.md))
+- Changed App's **Deploy** command's mechanism to deploy VMs into folders. Separate folder per sandbox. Folder name = sandbox id (See [Run App Commands](../../portal/sandboxes/sandbox-workspace/apps/run-app-commands.md))
 </td>
         </tr>
         <tr>
             <td>3.1.1</td>
             <td>
-            - Added new attributes to all App deployment types: Hostname and **Private IP** (See [Add a vCenter App Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/vCenter-App.htm))
+            - Added new attributes to all App deployment types: Hostname and **Private IP** (See [Add a vCenter App Template](./private-cloud-provider-support-in-cloudshell/vmware-vcenter-integration-and-configuration/add-a-vcenter-app-template.md))
             </td>
         </tr>
         <tr>
             <td>3.0.0</td>
             <td>
-            - Fixed typo: Renamed **HHD** attribute to **HDD** (See [Add a vCenter App Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/vCenter-App.htm))
+            - Fixed typo: Renamed **HHD** attribute to **HDD** (See [Add a vCenter App Template](./private-cloud-provider-support-in-cloudshell/vmware-vcenter-integration-and-configuration/add-a-vcenter-app-template.md))
             </td>
         </tr>
         <tr>
             <td>2.2.0</td>
             <td>
-            - Added **Get VM Web Console** deployed App command (See [Run App Commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Apps-Run-Cmnds.htm))
-- Added vSwitch connectivity support (See [Add VMware vCenter Cloud Provider Resource](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/vCenter-Cld-Prvdr-Rsc.htm))
+            - Added **Get VM Web Console** deployed App command (See [Run App Commands](../../portal/sandboxes/sandbox-workspace/apps/run-app-commands.md))
+- Added vSwitch connectivity support (See [Add VMware vCenter Cloud Provider Resource](./private-cloud-provider-support-in-cloudshell/vmware-vcenter-integration-and-configuration/add-vmware-vcenter-cloud-provider-resource.md))
 </td>
         </tr>
         <tr>
             <td>2.1.0</td>
             <td>
-            - Added **Reconfigure VM** deployed App command (See [Run App Commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Apps-Run-Cmnds.htm))
+            - Added **Reconfigure VM** deployed App command (See [Run App Commands](../../portal/sandboxes/sandbox-workspace/apps/run-app-commands.md))
 - Added **Get Cluster Usage** hidden command
-- Added Managed Object Reference ID to the deployed App's **Get VM Details** (See [View an App's VM Details](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Apps-VM-Details.htm))
+- Added Managed Object Reference ID to the deployed App's **Get VM Details** (See [View an App's VM Details](../../portal/sandboxes/sandbox-workspace/apps/view-vm-details.md))
 </td>
         </tr>
         <tr>
@@ -208,9 +208,9 @@ This version is supported for CloudShell 2022.1 and up.
             <td>
             - Official release
 - Based on python 3
-- Supports vCenter 5.5 - 7. PDF guides on how to find required vCenter elements are available for download in [Add VMware vCenter Cloud Provider Resource](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/vCenter-Cld-Prvdr-Rsc.htm) (step 8).
+- Supports vCenter 5.5 - 7. PDF guides on how to find required vCenter elements are available for download in [Add VMware vCenter Cloud Provider Resource](./private-cloud-provider-support-in-cloudshell/vmware-vcenter-integration-and-configuration/add-vmware-vcenter-cloud-provider-resource.md) (step 8).
 - Built according to Cloud Provider Standard version 1.0.0
-- Added **Customization Spec** attribute to allow additional customization of deployed App (See [Add a vCenter App Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/vCenter-App.htm))
+- Added **Customization Spec** attribute to allow additional customization of deployed App (See [Add a vCenter App Template](./private-cloud-provider-support-in-cloudshell/vmware-vcenter-integration-and-configuration/add-a-vcenter-app-template.md))
 </td>
         </tr>
     </tbody>
@@ -253,9 +253,9 @@ Works with cloud provider resource based on vCenter MWare shell 4.1.0 and above.
         <tr>
             <td>2.5.0</td>
             <td>
-            - **Autoload** and **Enable IP Forwarding** are now available on the App deployment paths (See [Add an Azure App Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-App.htm))
+            - **Autoload** and **Enable IP Forwarding** are now available on the App deployment paths (See [Add an Azure App Template](./public-cloud-provider-support-in-cloudshell/microsoft-azure-integration-and-configuration/microsoft-azure-integration/add-an-azure-app-template.md))
 - Added Managed Identity authorization to Azure Shell
-- Added **KeyVault** attribute (and SSHKeys processing) to the Azure shell resource (See [Add an Azure Cloud Provider Resource](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Cld-Prvdr-Rsc.htm))
+- Added **KeyVault** attribute (and SSHKeys processing) to the Azure shell resource (See [Add an Azure Cloud Provider Resource](./public-cloud-provider-support-in-cloudshell/microsoft-azure-integration-and-configuration/microsoft-azure-integration/add-an-azure-cloud-provider-resource.md))
 - Added **Availability Zones** attribute to the Azure shell resource and App deployment paths
 - Fixed several bugs related to storage account creation, VM details display, and extension script executions
 </td>
@@ -269,37 +269,37 @@ Works with cloud provider resource based on vCenter MWare shell 4.1.0 and above.
         <tr>
             <td>2.4.1</td>
             <td>
-            - Added **Boot Diagnostics Storage Account** deployment type attribute (See [Add an Azure App Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-App.htm))
+            - Added **Boot Diagnostics Storage Account** deployment type attribute (See [Add an Azure App Template](./public-cloud-provider-support-in-cloudshell/microsoft-azure-integration-and-configuration/microsoft-azure-integration/add-an-azure-app-template.md))
             </td>
         </tr>
         <tr>
             <td>2.4.0</td>
             <td>
             - Added support for adding Bring Your Own License (BYOL) licenses for the virtual machines
-- Added custom tags support in the Azure Deployment Path (See [Add an Azure App Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-App.htm))
-- The App's **Get VM Details** command now returns more accurate information about the OS disk and data disks (See [View an App's VM Details](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Apps-VM-Details.htm))
+- Added custom tags support in the Azure Deployment Path (See [Add an Azure App Template](./public-cloud-provider-support-in-cloudshell/microsoft-azure-integration-and-configuration/microsoft-azure-integration/add-an-azure-app-template.md))
+- The App's **Get VM Details** command now returns more accurate information about the OS disk and data disks (See [View an App's VM Details](../../portal/sandboxes/sandbox-workspace/apps/view-vm-details.md))
 - Added an additional validation for the **Resource Group** attribute in the Azure Deployment Path
 - Removed Sandbox NSG creation for scenarios where all subnets are predefined
-- Added ability to enable boot diagnostic for the VM (See [Add an Azure App Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-App.htm))
-- Added logic to automatically hide **Power On** command for shared deployed App resources - Apps that were deployed in a different sandbox (See [Add an Azure App Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-App.htm))
+- Added ability to enable boot diagnostic for the VM (See [Add an Azure App Template](./public-cloud-provider-support-in-cloudshell/microsoft-azure-integration-and-configuration/microsoft-azure-integration/add-an-azure-app-template.md))
+- Added logic to automatically hide **Power On** command for shared deployed App resources - Apps that were deployed in a different sandbox (See [Add an Azure App Template](./public-cloud-provider-support-in-cloudshell/microsoft-azure-integration-and-configuration/microsoft-azure-integration/add-an-azure-app-template.md))
 </td>
         </tr>
         <tr>
             <td>2.3.0</td>
             <td>
-            - Added support for data disks in the Azure deployment paths (See [Add an Azure App Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-App.htm))
-- Added **Reconfigure VM** command (See [Run App Commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Apps-Run-Cmnds.htm))
-- Added support for **Standard SSD/Premium SSD/Ultra SSD** and other types of Azure disks (See [Add an Azure App Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-App.htm))
+            - Added support for data disks in the Azure deployment paths (See [Add an Azure App Template](./public-cloud-provider-support-in-cloudshell/microsoft-azure-integration-and-configuration/microsoft-azure-integration/add-an-azure-app-template.md))
+- Added **Reconfigure VM** command (See [Run App Commands](../../portal/sandboxes/sandbox-workspace/apps/run-app-commands.md))
+- Added support for **Standard SSD/Premium SSD/Ultra SSD** and other types of Azure disks (See [Add an Azure App Template](./public-cloud-provider-support-in-cloudshell/microsoft-azure-integration-and-configuration/microsoft-azure-integration/add-an-azure-app-template.md))
 - Removed Sandbox/MGMT vNETs binding to the network tags
-- Added possibility to deploy Azure VM in a separate Resource Group (See [Add an Azure App Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-App.htm))
+- Added possibility to deploy Azure VM in a separate Resource Group (See [Add an Azure App Template](./public-cloud-provider-support-in-cloudshell/microsoft-azure-integration-and-configuration/microsoft-azure-integration/add-an-azure-app-template.md))
 </td>
         </tr>
         <tr>
             <td>2.1.0</td>
             <td>
-            - New **Azure Shared Image Gallery** App deployment type (See [Add an Azure App Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-App.htm))
-- Sandbox management network is optional now (See [Create a Management Resource Group and VNets](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Crt-Mng-RSc-Grp.htm))
-- Added support for predefined subnets (See [Connecting Azure Apps to predefined subnets](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Rsrc-Cnct.htm#Connecti4))
+            - New **Azure Shared Image Gallery** App deployment type (See [Add an Azure App Template](./public-cloud-provider-support-in-cloudshell/microsoft-azure-integration-and-configuration/microsoft-azure-integration/add-an-azure-app-template.md))
+- Sandbox management network is optional now (See [Create a Management Resource Group and VNets](./public-cloud-provider-support-in-cloudshell/microsoft-azure-integration-and-configuration/microsoft-azure-integration/create-a-management-resource-group-and-vnets.md))
+- Added support for predefined subnets (See [Connecting Azure Apps to predefined subnets](../../portal/sandboxes/sandbox-workspace/connect-resources-and-apps.md#connecting-azure-apps-to-predefined-subnets))
 </td>
         </tr>
         <tr>
@@ -311,7 +311,7 @@ Works with cloud provider resource based on vCenter MWare shell 4.1.0 and above.
         <tr>
             <td>1.1.2</td>
             <td>
-            - Added support for custom tags (See [Create a Management Resource Group and VNets](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Crt-Mng-RSc-Grp.htm))
+            - Added support for custom tags (See [Create a Management Resource Group and VNets](./public-cloud-provider-support-in-cloudshell/microsoft-azure-integration-and-configuration/microsoft-azure-integration/create-a-management-resource-group-and-vnets.md))
             </td>
         </tr>
         <tr>
@@ -339,33 +339,33 @@ Works with cloud provider resource based on vCenter MWare shell 4.1.0 and above.
         <tr>
             <td>1.3.0</td>
             <td>
-            - Added support for PowerShell scripts in User Data (See [Add an AWS EC2 App Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-AWS-App.htm))
+            - Added support for PowerShell scripts in User Data (See [Add an AWS EC2 App Template](./public-cloud-provider-support-in-cloudshell/aws-integration-and-configuration/aws-integration/add-an-aws-ec2-app-template.md))
             </td>
         </tr>
         <tr>
             <td>1.2.0</td>
             <td>
-            - Added new **Single VPC Mode**. Defined in the AWS cloud provider resource, which allows Apps that use this resource to be deployed within the Management VPC (See[Add an AWS EC2 Cloud Provider Resource](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-AWS-Cld-Prvdr-Rsc.htm))
+            - Added new **Single VPC Mode**. Defined in the AWS cloud provider resource, which allows Apps that use this resource to be deployed within the Management VPC (See [Add an AWS EC2 Cloud Provider Resource](./public-cloud-provider-support-in-cloudshell/aws-integration-and-configuration/aws-integration/add-an-aws-ec2-cloud-provider-resource.md))
             </td>
         </tr>
         <tr>
             <td>1.1.1</td>
             <td>
-            - Updated description for the attributes **Enable Source Dest Check** and **Status Check Timeout** (See [Add an AWS EC2 App Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-AWS-App.htm))
+            - Updated description for the attributes **Enable Source Dest Check** and **Status Check Timeout** (See [Add an AWS EC2 App Template](./public-cloud-provider-support-in-cloudshell/aws-integration-and-configuration/aws-integration/add-an-aws-ec2-app-template.md))
             </td>
         </tr>
         <tr>
             <td>1.1.0</td>
             <td>
-            - New deployment type attribute **Enable Source Dest Check** allows disabling source/dest check (See [Add an AWS EC2 App Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-AWS-App.htm))
-- New deployment type attribute **Status Check Timeout** to set timeout for a status check (See [Add an AWS EC2 App Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-AWS-App.htm))
+            - New deployment type attribute **Enable Source Dest Check** allows disabling source/dest check (See [Add an AWS EC2 App Template](./public-cloud-provider-support-in-cloudshell/aws-integration-and-configuration/aws-integration/add-an-aws-ec2-app-template.md))
+- New deployment type attribute **Status Check Timeout** to set timeout for a status check (See [Add an AWS EC2 App Template](./public-cloud-provider-support-in-cloudshell/aws-integration-and-configuration/aws-integration/add-an-aws-ec2-app-template.md))
 </td>
         </tr>
         <tr>
             <td>1.0.3</td>
             <td>
             - Official release
-- Added new flavor - **Shared VPC** (See [AWS Integration](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-Ovrv.htm))
+- Added new flavor - **Shared VPC** (See [AWS Integration](./public-cloud-provider-support-in-cloudshell/aws-integration-and-configuration/aws-integration/index.md))
 - Multiple minor bug fixes
 </td>
         </tr>
@@ -373,7 +373,7 @@ Works with cloud provider resource based on vCenter MWare shell 4.1.0 and above.
             <td>0.2.2</td>
             <td>
             - Pre-release
-- Added support for **Shared VPC** (See [AWS Integration](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-Ovrv.htm))
+- Added support for **Shared VPC** (See [AWS Integration](./public-cloud-provider-support-in-cloudshell/aws-integration-and-configuration/aws-integration/index.md))
 - Based on Python 3
 </td>
         </tr>
@@ -397,7 +397,7 @@ Works with cloud provider resource based on vCenter MWare shell 4.1.0 and above.
 :::note
 Supported on CloudShell 2022.2 GA and up
 :::
-- Added **Behavior During Save** attribute for the Save/Restore command (See [Add OpenStack Cloud Provider Resource](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/OpenStack-Cld-Prvdr-Rsc.htm))
+- Added **Behavior During Save** attribute for the Save/Restore command (See [Add OpenStack Cloud Provider Resource](./private-cloud-provider-support-in-cloudshell/openstack-integration-and-configuration/add-openstack-cloud-provider-resource.md))
 </td>
         </tr>
         <tr>
@@ -406,11 +406,11 @@ Supported on CloudShell 2022.2 GA and up
 :::note
 Supported on CloudShell 2022.2 GA and up
 :::
-- Added sandbox Save/Restore support for OpenStack Apps and deployed Apps (See [Save a Sandbox](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Sv.htm))
-- Added the **Private IP** attribute (See [Add an OpenStack App Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/OpenStack-App.htm))
-- Added the **User Data** attribute, allowing you to specify metadata or a post-installation script that will run on the deployed App (See [Add an OpenStack App Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/OpenStack-App.htm))
-- Added ability to connect to an existing network (See [Connecting OpenStack App to an existing network](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Rsrc-Cnct.htm#Connecti5))
-- Added ability to specify **Subnet CIDR** in VLAN service (See [Specify Subnet CIDR for OpenStack VLAN service](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Rsrc-Cnct.htm#Specify))
+- Added sandbox Save/Restore support for OpenStack Apps and deployed Apps (See [Save a Sandbox](../../portal/sandboxes/sandbox-workspace/save-sandbox.md))
+- Added the **Private IP** attribute (See [Add an OpenStack App Template](./private-cloud-provider-support-in-cloudshell/openstack-integration-and-configuration/add-an-openstack-app-template.md))
+- Added the **User Data** attribute, allowing you to specify metadata or a post-installation script that will run on the deployed App (See [Add an OpenStack App Template](./private-cloud-provider-support-in-cloudshell/openstack-integration-and-configuration/add-an-openstack-app-template.md))
+- Added ability to connect to an existing network (See [Connecting OpenStack App to an existing network](../../portal/sandboxes/sandbox-workspace/connect-resources-and-apps.md#connecting-openstack-app-to-an-existing-network))
+- Added ability to specify **Subnet CIDR** in VLAN service (See [Specify Subnet CIDR for OpenStack VLAN service](../../portal/sandboxes/sandbox-workspace/connect-resources-and-apps.md#specify-subnet-cidr-for-openstack-vlan-service))
 - Added built-in capability to create separate trunks for different VLAN services
 </td>
         </tr>
@@ -418,17 +418,17 @@ Supported on CloudShell 2022.2 GA and up
             <td>1.1.0</td>
             <td>
             - VLAN trunk support
-- Added the **OpenStack Trunk Network ID** attribute (See [Add OpenStack Cloud Provider Resource](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/OpenStack-Cld-Prvdr-Rsc.htm))
-- Updated the **OpenStack Domain Name** attribute's description (See [Add OpenStack Cloud Provider Resource](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/OpenStack-Cld-Prvdr-Rsc.htm))
+- Added the **OpenStack Trunk Network ID** attribute (See [Add OpenStack Cloud Provider Resource](./private-cloud-provider-support-in-cloudshell/openstack-integration-and-configuration/add-openstack-cloud-provider-resource.md))
+- Updated the **OpenStack Domain Name** attribute's description (See [Add OpenStack Cloud Provider Resource](./private-cloud-provider-support-in-cloudshell/openstack-integration-and-configuration/add-openstack-cloud-provider-resource.md))
 </td>
         </tr>
         <tr>
             <td>1.0.0</td>
             <td>
             - Official release
-- Added the **Console** command (See [Run App Commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Apps-Run-Cmnds.htm))
+- Added the **Console** command (See [Run App Commands](../../portal/sandboxes/sandbox-workspace/apps/run-app-commands.md))
 - Renamed the Shell to "OpenStack Cloud Provider Shell 2G" (See [OpenStack Cloud Provider Shell 2G](https://community.quali.com/repos/5441/openstack-cloud-provider-shell-2g) community page)
-- Added the **Inbound Ports** attribute to the App's deployment type (See [Add an OpenStack App Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/OpenStack-App.htm))
+- Added the **Inbound Ports** attribute to the App's deployment type (See [Add an OpenStack App Template](./private-cloud-provider-support-in-cloudshell/openstack-integration-and-configuration/add-an-openstack-app-template.md))
 </td>
         </tr>
         <tr>

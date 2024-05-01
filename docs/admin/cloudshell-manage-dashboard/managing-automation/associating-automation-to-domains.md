@@ -30,7 +30,7 @@ To expose a service to users of a non-Global domain, either associate the servic
 
 - For 1st gen service shells: modify the category(s) in the shell project’s configuration files to add a new category(s). See the CloudShell Dev Guide's [Migrating Shells to Python 3](../../../devguide/reference/migrate-shells-to-py3.md).
     
-- For 2nd gen service shells: See the CloudShell Dev Guide's [Associating categories to a service shell](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Customizing-Shells.htm#Associat).
+- For 2nd gen service shells: See the CloudShell Dev Guide's [Associating categories to a service shell](../../../devguide/developing-shells/customize-shells.md#associating-categories-to-a-service-shell).
     
 
 ### Apps

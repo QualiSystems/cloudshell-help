@@ -17,7 +17,7 @@ Some configurations involve setting configuration keys. This means copying the k
 
 ## How to use this article
 
-In this article, you will find CloudShell keys, logically arranged in categories. For example, the Setting home page `key = HomePageUrl` is found under the General category both in the table (see [Set the default home page (HomePageUrl)](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfg-Ky-Rpstr.htm#Setting_the_default_home_pag) in the list of keys) and in the General category [Setting the default home page](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm?Highlight=Advanced%20CloudShell%20Customizations#_Setting_the_default).
+In this article, you will find CloudShell keys, logically arranged in categories. For example, the Setting home page `key = HomePageUrl` is found under the General category both in the table (see [Set the default home page (HomePageUrl)](./customer-configuration-keys-repository/general.md#set-the-default-home-page) in the list of keys) and in the General category [Setting the default home page](#setting-the-default-home-page).
 
 The following categories are used to organize the configuration keys:
 
@@ -1844,7 +1844,7 @@ Administrators can enable CloudShell users to start a new sandbox from scratch (
 
 By default, sandboxes can only be created from existing blueprints.
 :::note
-Apps based on a public cloud provider, such as AWS EC2 and Azure, cannot be used when creating an ad hoc sandbox. For additional information, see [Apps in Blueprints](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Blprnt-Use-Apps.htm#Adding).
+Apps based on a public cloud provider, such as AWS EC2 and Azure, cannot be used when creating an ad hoc sandbox. For additional information, see [Apps in Blueprints](../../../portal/blueprints/creating-blueprints/apps/).
 :::
 **To enable users to create ad hoc sandboxes:**
 

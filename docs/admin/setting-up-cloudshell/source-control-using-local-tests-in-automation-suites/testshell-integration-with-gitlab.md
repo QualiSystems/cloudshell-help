@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # TestShell Integration with GitLab
 
-This article guides you on how to configure GitLab as the source control solution for your local tests and assets for automation suites executed in the **Job Scheduling** dashboard. Since local tests are accessible only to the client on which they were created, using a source control solution, these tests can be shared with other clients as well. In this article we will focus on GitLab as the source control solution. For other solutions, see [Source Control: Using Local Tests in Automation Suites](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Src-Ctrl.htm).
+This article guides you on how to configure GitLab as the source control solution for your local tests and assets for automation suites executed in the **Job Scheduling** dashboard. Since local tests are accessible only to the client on which they were created, using a source control solution, these tests can be shared with other clients as well. In this article we will focus on GitLab as the source control solution. For other solutions, see [Source Control: Using Local Tests in Automation Suites](../source-control-using-local-tests-in-automation-suites/index.md).
 
 This integration provides test users with the latest version of the desired test(s) and assets and also allows test developers to push updates to GitLab. In this process, you will link your CloudShell clients (CloudShell Portal, TestShell Studio and Runner) and Execution Server(s) to a specific GitLab repository, which will contain the tests and assets, and make them available to these clients.
 :::note
@@ -65,7 +65,7 @@ For this to work, you need to follow these basic steps:
     
     Note that you need to configure each machine to work with the parent folder path, as explained in the beginning of this procedure.
     
-9. [Configure Quali Server](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Update-Lcl-Tst.htm#Configur2) to work with local tests and assets.
+9. [Configure Quali Server](./enabling-automation-suites-to-use-local-tests.md#configure-quali-server) to work with local tests and assets.
     
     This requires setting a batch file that automates the Git Pull request using the **Update Local Tests** process (executed from Portal’s **Job Scheduling** dashboard). You’re welcome to use the following code in the **Update Local Tests** batch file.
     
@@ -76,9 +76,9 @@ For this to work, you need to follow these basic steps:
     git pull
     ```
     
-    For details and additional batch script examples, see [Batch scripts](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Update-Lcl-Tst.htm#Batch).
+    For details and additional batch script examples, see [Batch scripts](./enabling-automation-suites-to-use-local-tests.md#batch-scripts).
     
-10. To use source controlled tests in CloudShell Portal job suites, enable the relevant execution servers to access the repository, as explained in [Configure each Execution Server that will support local tests](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Update-Lcl-Tst.htm#Configur3).
+10. To use source controlled tests in CloudShell Portal job suites, enable the relevant execution servers to access the repository, as explained in [Configure each Execution Server that will support local tests](./enabling-automation-suites-to-use-local-tests.md#configure-each-execution-server-that-will-support-local-tests).
 11. To verify, update local files on each client, and make sure that client uses the updated tests.
     
     This concludes the integration process.

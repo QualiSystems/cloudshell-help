@@ -19,8 +19,8 @@ Now that we understand the general concept, let's drill down to the technical pa
 - The **Job Scheduling** dashboard's **Update local tests** button (available for admins only) runs a batch script file. This file pulls the latest version from the repository to the Quali Server machine (the files on the Quali Server are used for listing only) and allows CloudShell Portal to show which tests exists/get inputs/etc.
     
     :::warning Important
-    - **Update local tests** applies to ALL execution servers in your CloudShell deployment. As such, when running **Update local tests**, execution servers that do not have a batch file configured will go into “Waiting for update” mode and become excluded. For details on how to add a passing script, see [Batch scripts](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Update-Lcl-Tst.htm?Highlight=Enabling%20Automation%20Suites%20to%20Use%20Local%20Tests#Batch).
-    - **Update local tests** only applies to included execution servers. Therefore, if your execution servers are excluded, ensure that the batch script passes with "exit code 0" and include them, as explained in [Including/excluding execution servers](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Exctn-Srv-Servers.htm#Includin).
+    - **Update local tests** applies to ALL execution servers in your CloudShell deployment. As such, when running **Update local tests**, execution servers that do not have a batch file configured will go into “Waiting for update” mode and become excluded. For details on how to add a passing script, see [Batch scripts](#batch-scripts).
+    - **Update local tests** only applies to included execution servers. Therefore, if your execution servers are excluded, ensure that the batch script passes with "exit code 0" and include them, as explained in [Including/excluding execution servers](../../cloudshell-manage-dashboard/managing-execution-servers/execution-servers-servers-page.md#includingexcluding-execution-servers).
     :::
 - Once the batch file completes:
   - For each execution server, if the execution server state is idle (not running any test), the execution server launches a batch file that pulls the latest test versions to the execution server. If the execution server is not idle, the batch file will run when it completes its current executions.
@@ -34,10 +34,10 @@ This only applies to tests residing in the source control repository, so before 
 :::
 For this to work, you need to do the following:
 
-1. [Configure CloudShell Portal](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Update-Lcl-Tst.htm?Highlight=Enabling%20Automation%20Suites%20to%20Use%20Local%20Tests#Configur): Enable CloudShell Portal to browse the local tests folder
-2. [Configure Quali Server](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Update-Lcl-Tst.htm?Highlight=Enabling%20Automation%20Suites%20to%20Use%20Local%20Tests#Configur2): Set the local tests folder and batch script that will retrieve the local tests from the source control repository
-3. [Configure each Execution Server that will support local tests](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Update-Lcl-Tst.htm?Highlight=Enabling%20Automation%20Suites%20to%20Use%20Local%20Tests#Configur3): Set the folder that will store the tests from the source control repository
-4. [Enable the use of Local Assets](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Update-Lcl-Tst.htm?Highlight=Enabling%20Automation%20Suites%20to%20Use%20Local%20Tests#Enable): Enable the tests to use local assets if any tests require the use of local TestShell assets
+1. [Configure CloudShell Portal](#configure-cloudshell-portal): Enable CloudShell Portal to browse the local tests folder
+2. [Configure Quali Server](#configure-quali-server): Set the local tests folder and batch script that will retrieve the local tests from the source control repository
+3. [Configure each Execution Server that will support local tests](#configure-each-execution-server-that-will-support-local-tests): Set the folder that will store the tests from the source control repository
+4. [Enable the use of Local Assets](#enable-the-use-of-local-assets): Enable the tests to use local assets if any tests require the use of local TestShell assets
     
     Once enabled, CloudShell admins can run the **Update Local Tests** batch script from the **Job Scheduling** dashboard to retrieve the local tests from the source control repository.
     
@@ -99,7 +99,7 @@ The folder must be different from the one in use for saved Studio tests (`~\Docu
         <tr>
             <td>`LocalEnvironmentGetBatchFilePath`</td>
             <td>
-            Set the path to the batch script that will update the tests from source control when the admin initiates the **Update local tests** process. For details, see [Batch scripts](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Update-Lcl-Tst.htm?Highlight=Enabling%20Automation%20Suites%20to%20Use%20Local%20Tests#Batch).
+            Set the path to the batch script that will update the tests from source control when the admin initiates the **Update local tests** process. For details, see [Batch scripts](#batch-scripts).
 
 *Although the Quali Server doesn't run the tests, it needs to expose the latest test versions when adding tests to the automation suite.*
 
@@ -130,7 +130,7 @@ For example:
 
 On each execution server machine, the developer/admin adds the new test from the repository to the execution server.
 :::important
-Prior to running the **Update local tests** process, make sure every execution server has a batch file in the specified folder, as the update process will run on all the execution servers in CloudShell and exclude execution servers with a bad or missing batch file. For details, see [Batch scripts](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Update-Lcl-Tst.htm?Highlight=Enabling%20Automation%20Suites%20to%20Use%20Local%20Tests#Batch).
+Prior to running the **Update local tests** process, make sure every execution server has a batch file in the specified folder, as the update process will run on all the execution servers in CloudShell and exclude execution servers with a bad or missing batch file. For details, see [Batch scripts](#batch-scripts).
 :::
 **To configure an execution server:**
 
@@ -175,7 +175,7 @@ For example:
         <tr>
             <td>`LocalEnvironmentGetBatchFilePath`</td>
             <td>
-            Set the path to the batch file that will update the tests from source control during the **Update local tests** process. For details, see [Batch scripts](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Update-Lcl-Tst.htm?Highlight=Enabling%20Automation%20Suites%20to%20Use%20Local%20Tests#Batch).
+            Set the path to the batch file that will update the tests from source control during the **Update local tests** process. For details, see [Batch scripts](#batch-scripts).
 
 For example:
 
@@ -297,4 +297,4 @@ In the Server installation directory, there is a sub-folder called `Local Sync B
 
 ## Related Topics
 
-- [Job Scheduling Dashboard](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/JOB-SCHDL/Job-Schdl-Dsbrd.htm)
+- [Job Scheduling Dashboard](../../../portal/job-scheduling/job-scheduling-dashboard.md)

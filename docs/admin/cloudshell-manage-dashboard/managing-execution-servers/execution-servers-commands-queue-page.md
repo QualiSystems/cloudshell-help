@@ -73,7 +73,7 @@ To fix this issue, do one of the following:
 - Stop the currently running command that is preventing the enqueued command to run.
 - Enable concurrent commands for the resource or blueprints, as follows:
     
-    For resources based on 1st Gen Shells, in **Resource Manager Client**, open the Shell's model and in the **Parameters** area, select **Supports Concurrent Commands**. For 2nd Gen Shells, you need to add support concurrent commands in the `shell-definition.yaml` file, as explained in [Drivers and concurrency](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Driver-Deep-Dive.htm#drivers-and-concurrency). To enable concurrent blueprint script commands, set the `AllowConcurrentTopologyScriptCommands` configuration key to `true`.
+    For resources based on 1st Gen Shells, in **Resource Manager Client**, open the Shell's model and in the **Parameters** area, select **Supports Concurrent Commands**. For 2nd Gen Shells, you need to add support concurrent commands in the `shell-definition.yaml` file, as explained in [Drivers and concurrency](../../../devguide/developing-shells/driver-deep-dive.md#drivers-and-concurrency). To enable concurrent blueprint script commands, set the `AllowConcurrentTopologyScriptCommands` configuration key to `true`.
 </td>
         </tr>
         <tr>

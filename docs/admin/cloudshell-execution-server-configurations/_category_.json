@@ -2,6 +2,7 @@
   "label": "CloudShell Execution Server Configurations",
   "position": 5,
   "link": {
+    "slug": "admin/cloudshell-execution-server-configurations",
     "type": "generated-index",
     "description": "This chapter explains how to configure execution servers to run tests and commands in CloudShell."
   }

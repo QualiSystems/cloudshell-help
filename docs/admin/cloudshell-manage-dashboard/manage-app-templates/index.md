@@ -91,4 +91,4 @@ To delete App templates:
 - [Manage Dashboard Overview](../../../admin/cloudshell-manage-dashboard/manage-dashboard-overview.md)
 - [Managing Public Cloud Apps in Domains](../../../admin/supported-cloud-providers-in-cloudshell/public-cloud-provider-support-in-cloudshell/managing-public-cloud-apps-in-domains.md)
 - [Managing Private Cloud Apps in Domains](../../../admin/supported-cloud-providers-in-cloudshell/private-cloud-provider-support-in-cloudshell/managing-private-cloud-apps-in-domains.md)
-- [Apps in Blueprints](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Blprnt-Use-Apps.htm)
+- [Apps in Blueprints](../../portal/blueprints/creating-blueprints/apps/)

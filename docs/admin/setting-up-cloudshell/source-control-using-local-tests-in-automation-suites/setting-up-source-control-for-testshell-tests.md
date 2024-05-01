@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Setting Up Source Control for TestShell Tests
 
-This article discusses the configuration steps for adding and managing tests using a source control solution. These procedures apply to tests executed by TestShell Studio and Runner. For executing local tests in Job Scheduling automation suites, see [Enabling Automation Suites to Use Local Tests](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Update-Lcl-Tst.htm).
+This article discusses the configuration steps for adding and managing tests using a source control solution. These procedures apply to tests executed by TestShell Studio and Runner. For executing local tests in Job Scheduling automation suites, see [Enabling Automation Suites to Use Local Tests](./enabling-automation-suites-to-use-local-tests.md).
 :::note
 The application is oblivious to source control, so all source control\-related actions including Commit, Get Latest and conflict management are handled in your source control solution.
 :::

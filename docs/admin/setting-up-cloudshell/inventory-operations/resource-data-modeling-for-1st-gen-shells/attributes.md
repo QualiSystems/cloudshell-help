@@ -259,7 +259,7 @@ For performance reasons, the Insight database adds new attributes once every 24 
 :::
 ## Related Topics
 
-- [](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Dfn-Rsrc-Data-Mdl.htm#Associating_an_attribute_to_a_family_or_model "Associating an attribute to a family or model")[Associating an attribute to a family or model](./defining-the-resource-data-model.md#associating-an-attribute-to-a-family-or-model)
+- [Associating an attribute to a family or model](./defining-the-resource-data-model.md#associating-an-attribute-to-a-family-or-model)
 - [Restricting values for an associated attribute](./defining-the-resource-data-model.md#restricting-values-for-an-associated-attribute)
 - [Configuring attribute inheritance settings](./defining-the-resource-data-model.md#configuring-attribute-inheritance-settings)
-- [](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Dfn-Rsrc-Data-Mdl.htm#Configur "Configuring associated attribute rules")[Configuring associated attribute rules](./defining-the-resource-data-model.md#configuring-associated-attribute-rules)
+- [Configuring associated attribute rules](./defining-the-resource-data-model.md#configuring-associated-attribute-rules)

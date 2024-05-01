@@ -6,6 +6,6 @@ As illustrated below, in a source controlled deployment, the TestShell Studio Cl
 
 ![](/Images/Admin-Guide/Setting-Up-CloudShell/SourceControlArchitecture.png)
 
-- For local tests executed in TestShell Studio, Runner and Authoring, see [Setting Up Source Control for TestShell Tests](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/St-Src-Cntrl.htm).
-- For an end-to-end example explaining how to use GitLab source control to sync tests for **Job Scheduling** automation suites, see [TestShell Integration with GitLab](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Update-Lcl-Tst-GitLab.htm).
-- For offline deployments, use an on-prem source control solution like GitLab, Apache Subversion or Microsoft Team Foundation Server. For details, see [TestShell Integration with GitLab](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Update-Lcl-Tst-GitLab.htm).
+- For local tests executed in TestShell Studio, Runner and Authoring, see [Setting Up Source Control for TestShell Tests](./setting-up-source-control-for-testshell-tests.md).
+- For an end-to-end example explaining how to use GitLab source control to sync tests for **Job Scheduling** automation suites, see [TestShell Integration with GitLab](./testshell-integration-with-gitlab.md).
+- For offline deployments, use an on-prem source control solution like GitLab, Apache Subversion or Microsoft Team Foundation Server. For details, see [TestShell Integration with GitLab](./testshell-integration-with-gitlab.md).
