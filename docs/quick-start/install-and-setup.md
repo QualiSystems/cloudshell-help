@@ -27,18 +27,18 @@ The basic components are:
 - Quali Server: Processes requests, manages and shares data/resources with CloudShell clients (Portal, APIs, etc.) from the CloudShell databases (MySQL, MongoDB).
 - Execution Server: CloudShell component that executes commands and tests. Multiple execution servers can be installed for distributed provisioning.
 
-1. Make sure the machine(s) that will host CloudShell comply with our [CloudShell System Requirements](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Overview/sys-req.htm).
+1. Make sure the machine(s) that will host CloudShell comply with our [CloudShell System Requirements](../install-configure/cs-system-requirements/index.md).
     
     :::info
     CloudShell’s servers and clients can coexist on the same machine, but for load/performance reasons, you might want to consider installing high-load components such as Quali Server, CloudShell Portal and the Execution Servers on dedicated machines.
     :::
     
-2. Install and configure CloudShell suite. For details, see [CloudShell Suite Installation Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Overview/ovrvw.htm).
+2. Install and configure CloudShell suite. For details, see [CloudShell Suite Installation Overview](../install-configure/cloudshell-suite/cloudshell-suite-overview/index.md).
     
-    You can also install CloudShell in a [High Availability](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Overview/hi-avail.htm) configuration.
+    You can also install CloudShell in a [High Availability](../install-configure/cloudshell-suite/cloudshell-suite-overview/high-availability.md) configuration.
     
-3. We highly recommend using CloudShell’s Insight, our BI platform. Insight is provided free of charge with out-of-the-box resource utilization and activity dashboards, but can be customized as a paid add-on. For details, see [CloudShell Insight BI](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/BI/CS-Insight-BI.htm).
-4. You might also want to install and configure [QualiX Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Ovrv.htm), to allow your sandbox end-users to remotely connect to the sandbox’s devices and VMs from the browser, without needing the machine’s credentials nor an RDP or SSH client.
+3. We highly recommend using CloudShell’s Insight, our BI platform. Insight is provided free of charge with out-of-the-box resource utilization and activity dashboards, but can be customized as a paid add-on. For details, see [CloudShell Insight BI](../install-configure/cs-insight-bi/index.md).
+4. You might also want to install and configure [QualiX Overview](../install-configure/qualix/qualix-overview/index.md), to allow your sandbox end-users to remotely connect to the sandbox’s devices and VMs from the browser, without needing the machine’s credentials nor an RDP or SSH client.
 
 ## Optionally set up users, groups and domains
 
@@ -52,9 +52,9 @@ This diagram illustrates how users, groups and domains work together:
 
 ### Related Topics
 
-- [Adding Domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Dmn.htm)
-- [Managing CloudShell Groups](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Add-Grp.htm)
-- [Managing CloudShell Users](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Add-Usr.htm)
+- [Adding Domains](../admin/cloudshell-identity-management/cloudshell-domains/adding-domains.md)
+- [Managing CloudShell Groups](../admin/cloudshell-identity-management/managing-users/managing-cloudshell-groups.md)
+- [Managing CloudShell Users](../admin/cloudshell-identity-management/managing-users/managing-cloudshell-users.md)
 
 ## Create Resources and Apps
 
@@ -75,11 +75,11 @@ Quali has a vibrant [developer’s community](https://github.com/orgs/QualiSyste
 
 ### Related Topics
 
-- [Shells Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Shells.htm)
-- [Resources Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Resources.htm)
-- [Apps Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Apps.htm)
-- [Services Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Services.htm)
-- [Abstract Resources Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Abstract-Resources.htm)
+- [Shells Overview](../intro/features/shells.md)
+- [Resources Overview](../intro/features/resources.md)
+- [Apps Overview](../intro/features/apps-overview.md)
+- [Services Overview](../intro/features/services.md)
+- [Abstract Resources Overview](../intro/features/abstract-resources.md)
 - [Migrating 1st Gen Shells to 2nd Gen](../devguide/reference/migrate-1st-gen-shell-to-2nd-gen-shell.md)
 
 ## Check components

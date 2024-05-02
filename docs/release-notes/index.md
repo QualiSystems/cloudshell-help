@@ -14,6 +14,6 @@ Please reach out to your Technical Account Manager for full upgrade support.
 
 You can upgrade to CloudShell 2023.3 from any CloudShell version [that is under support](./supported-versions.md) (either Premier or Extended support phases). To upgrade from a version that is no longer supported, contact your Technical Account Manager.
 
-Before performing an upgrade, please make sure to review the [CloudShell System Requirements](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Overview/sys-req.htm) and [Known Upgrade Issues](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Appendices/knwn-upgrd-iss.htm).
+Before performing an upgrade, please make sure to review the [CloudShell System Requirements](../install-configure/cs-system-requirements/index.md) and [Known Upgrade Issues](../install-configure/cloudshell-suite/appendix/known-upgrade-issues.md).
 
-Please make sure to review the [General Announcements](./general-announcments.md) , [Bugs Fixed](https://help.quali.com/Online%20Help/0.0/Portal/Content/RN/Bugs_Fixed.htm) and [Behavior Changes and Removed Capabilities](https://help.quali.com/Online%20Help/0.0/Portal/Content/RN/Rmvd_Brkng_Chng.htm) sections of this release.
+Please make sure to review the [General Announcements](./general-announcments.md) , [Bugs Fixed](./bug-fixes.md) and [Behavior Changes and Removed Capabilities](./behavior-change.md) sections of this release.
