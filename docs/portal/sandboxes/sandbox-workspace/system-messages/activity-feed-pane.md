@@ -6,7 +6,7 @@ sidebar_position: 3
 
 The **Activity Feed** displays information about actions performed in the sandbox by the user and automation processes. This includes information related to blueprint and resource commands, as well as actions performed in the sandbox, such as adding resources to the sandbox workspace, running commands, and changing the end time of the sandbox.
 
-The **Activity Feed** also enables you to display information for a specific component in the sandbox. For additional information, see [Activity Feed for a Resource in the Sandbox](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Cmpnt-Actvt-Fd.htm).
+The **Activity Feed** also enables you to display information for a specific component in the sandbox. For additional information, see [Activity Feed for a Resource in the Sandbox](../resources/activity-feed-for-resources.md).
 
 :::note Notes
 - The ![](/Images/CloudShell-Portal/Lab-Management/Reservations/ActivityNotification_57x23.png) button indicates the number of unread entries in the Activity Feed.

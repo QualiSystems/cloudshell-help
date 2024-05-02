@@ -12,12 +12,12 @@ The following connectivity layers are supported:
 :::note Notes
 - VLAN and Subnet networks support many-to-many connections.
 - CloudShell cannot create connectivity paths involving both L1 and L2 networking devices. Only pure L1 or pure L2 paths are supported. For example, "DUT1 - L1 - L2 - DUT2" path is not supported.
-- For virtual machines, CloudShell provides additional networking customization options including port rules, security groups and more. For details, see [Adding App templates](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Apps.htm#Adding).
+- For virtual machines, CloudShell provides additional networking customization options including port rules, security groups and more. For details, see [Adding App templates](../../../../admin/cloudshell-manage-dashboard/manage-app-templates/index.md#adding-app-templates).
 :::
 
-For more information, see [Physical Network Connectivity](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Rsc-Cnct/Phys-Ntwrk-Cntnr.htm) and [Virtual Network Connectivity](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Cnct/Vir-Ntwrk-Cnct-Cntnr.htm).
+For more information, see [Physical Network Connectivity](./add-physical-network/index.md) and [Virtual Network Connectivity](./add-virtual-network/index.md).
 
 ## Related Topics
 
-- [Connect Resources and Apps](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Rsrc-Cnct.htm)
-- [Connectivity Control](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl.htm)
+- [Connect Resources and Apps](../connect-resources-and-apps.md)
+- [Connectivity Control](../../../../admin/setting-up-cloudshell/inventory-operations/connectivity-control/index.md)

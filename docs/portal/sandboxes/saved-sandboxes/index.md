@@ -25,5 +25,5 @@ The dashboard's areas are arranged as follows:
 
 ## Related Topics
 
-- [Restore a Saved Sandbox](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Rstr.htm)
-- [Delete a Saved Sandbox](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Dlt.htm)
+- [Restore a Saved Sandbox](./restore-saved-sandbox.md)
+- [Delete a Saved Sandbox](./delete-saved-sandbox.md)

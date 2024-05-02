@@ -86,7 +86,7 @@ It is possible to connect remotely to a device via RDP, SSH, VNC, or Telnet usin
 
 The **Activity Feed** pane enables you to display system messages and command execution progress for a specific service in the sandbox.
 
-For information about the activity feed for a resource or App in the sandbox, see [Activity Feed for a Resource in the Sandbox](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Cmpnt-Actvt-Fd.htm) and [Activity Feed for an App in the sandbox](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Apps-Activity-Feed.htm), respectively.
+For information about the activity feed for a resource or App in the sandbox, see [Activity Feed for a Resource in the Sandbox](./resources/activity-feed-for-resources.md) and [Activity Feed for an App in the sandbox](./apps/activity-feed-for-app.md), respectively.
 
 **To open a component's Activity Feed:**
 
@@ -111,4 +111,4 @@ For information about the activity feed for a resource or App in the sandbox, se
     - **Component** drop down list: display entries that are related to a specific resource, App or service in the sandbox. The value Component displays entries for all components.
     - **Event type** drop down list: display entries of a specific type. Values are: **Event type** (all entries), **Command**, **Resource**, **Service** and **Sandbox**.
 
-For more detailed information about a particular error, see [Activity Feed Pane](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-View-Actvty-Fd.htm).
+For more detailed information about a particular error, see [Activity Feed Pane](./system-messages/activity-feed-pane.md).

@@ -36,8 +36,8 @@ The Actions menu enables you to perform actions on a specific resource, App or s
 1. Click the row's ![](/Images/CloudShell-Portal/Manage/ExecutionServersServersMenuButton.png) button.
 2. Select the appropriate action:
 
-- **Share/unshare reserved resources**: Configure elements in the sandbox to be available or unavailable for other sandboxes by choosing to share or unshare them. For more information, see [Share Reserved Resources](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/LAB-MNG/Prfrm-Actns/Blprnt-Shr.htm).
-- **Telnet/SSH/RDP**: Connect remotely to a resource via RDP, SSH, or Telnet from CloudShell. For more information, see [Connect Remotely to Devices with QualiX (RDP, SSH, Telnet)](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/LAB-MNG/Prfrm-Actns/Sndbx-Rmt-Cnct.htm).
+- **Share/unshare reserved resources**: Configure elements in the sandbox to be available or unavailable for other sandboxes by choosing to share or unshare them. For more information, see [Share Reserved Resources](../../blueprints/creating-blueprints/resources/share-reserved-resources.md).
+- **Telnet/SSH/RDP**: Connect remotely to a resource via RDP, SSH, or Telnet from CloudShell. For more information, see [Connect Remotely to Devices with QualiX (RDP, SSH, Telnet)](./resources/connect-remotely-with-qualix.md).
 - **Remove** to remove the selected resource or App from the sandbox.
 
 ## Searching the list

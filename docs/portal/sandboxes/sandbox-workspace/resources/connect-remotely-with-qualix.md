@@ -7,7 +7,7 @@ sidebar_position: 8
 It is possible to connect remotely to a device using the device's address and user credentials via RDP, SSH, VNC, or Telnet.
 
 :::note
-This applies to resources that support remote connections. It is possible to enable or disable remote connection via QualiX on the resource level. For details, see [Editing Resources from the Inventory Dashboard](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/INVN/Edit-Rsrc-in-Invnt.htm).
+This applies to resources that support remote connections. It is possible to enable or disable remote connection via QualiX on the resource level. For details, see [Editing Resources from the Inventory Dashboard](../../../inventory/managing-resources/editing-resources-from-inventory-dashboard.md).
 :::
 
 **To connect to a device via remote protocol:**

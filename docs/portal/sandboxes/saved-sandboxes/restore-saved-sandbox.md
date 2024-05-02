@@ -8,7 +8,7 @@ sidebar_position: 1
 
 In CloudShell, you can restore a saved sandbox to the exact state of the sandbox when it was saved. The saved sandbox is an independent copy of the original sandbox, and can be restored to multiple sandboxes.
 
-The restore script is available out-of-the-box. It is a part of the setup process and when restoring a sandbox, it actually replaces the setup script. To customize the restore script, see the CloudShell Dev Guide's [Extending the OOB Restore Orchestration Script](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Orch-Scripts/CloudShell-OOB-Orch.htm#Extendin2).
+The restore script is available out-of-the-box. It is a part of the setup process and when restoring a sandbox, it actually replaces the setup script. To customize the restore script, see the CloudShell Dev Guide's [Extending the OOB Restore Orchestration Script](../../../devguide/develop-orch-scripts/cs-oob-orch/index.md#extending-the-oob-restore-orchestration-script).
 
 Note: Save and Restore does not apply to persistent environments.
 
@@ -57,7 +57,7 @@ Note: Save and Restore does not apply to persistent environments.
     5. If the original blueprint had inputs, they are displayed here. Values are taken from the saved sandbox and are not-editable.
 6. Click **Restore**.
     
-    If any resource is unavailable for the scheduled time slot, the Conflicts dialog box is displayed, proposing an alternative time slot, as described in [Dealing with conflicts](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Crt.htm#Dealing).
+    If any resource is unavailable for the scheduled time slot, the Conflicts dialog box is displayed, proposing an alternative time slot, as described in [Dealing with conflicts](../../../portal/sandboxes/creating-sandboxes.md#dealing-with-conflicts).
     
     The saved sandbox is restored to the state when the sandbox was saved. Once the sandbox is restored, the sandbox state changes to **Active**.
     
@@ -68,7 +68,7 @@ Note: Save and Restore does not apply to persistent environments.
 
 Currently, CloudShell Save and Restore applies only to sandboxes with vCenter/OpenStack-based virtual components, physical resources and CloudShell services. Apps of other cloud providers are not supported and therefore, you cannot save and restore a sandbox which contains any of these elements.
 
-The elements of the saved sandbox that are restored directly reflect the elements that were saved when you saved the sandbox. For information on the save logic, see [Sandbox save logic](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Sv.htm#Save2).
+The elements of the saved sandbox that are restored directly reflect the elements that were saved when you saved the sandbox. For information on the save logic, see [Sandbox save logic](../../../portal/sandboxes/sandbox-workspace/save-sandbox.md#sandbox-save-logic).
 
 There are, however, a number of important points that you should consider when restoring a saved sandbox:
 

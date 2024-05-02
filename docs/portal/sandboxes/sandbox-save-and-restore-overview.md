@@ -28,12 +28,12 @@ Since **Save and Restore** is a CloudShell paid add-on, you are required to purc
 
 ## Recommended workflow
 
-1. Enable Save and Restore in a blueprint. See [Define the Blueprint's Properties](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Crt-Blprnt/Blprnt-Prps.htm).
-2. [Reserve a blueprint from the Catalog](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Blprnt-Ctlg.htm#Reserve)
-3. [Save a Sandbox](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Sv.htm)
-4. Manage saved sandboxes in the [Saved Sandboxes Dashboard](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Svd-Dshbrd.htm)
-    1. [Restore a Saved Sandbox](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Rstr.htm)
-    2. [Delete a Saved Sandbox](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Dlt.htm)
+1. Enable Save and Restore in a blueprint. See [Define the Blueprint's Properties](../blueprints/creating-blueprints/blueprint-properties.md).
+2. [Reserve a blueprint from the Catalog](../blueprints/blueprint-catalog.md#reserve-a-blueprint-from-the-catalog)
+3. [Save a Sandbox](./sandbox-workspace/save-sandbox.md)
+4. Manage saved sandboxes in the [Saved Sandboxes Dashboard](./saved-sandboxes/index.md)
+    1. [Restore a Saved Sandbox](./saved-sandboxes/restore-saved-sandbox.md)
+    2. [Delete a Saved Sandbox](./saved-sandboxes/delete-saved-sandbox.md)
 
 ## Configuration and administration process
 
@@ -43,5 +43,5 @@ You can customize and manage certain aspects of the save and restore flow. For e
 
 ## Related Topics
 
-- [Save Sandbox Configurations](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Sv-Sndbx-Cnfg.htm#Setting)
-- [Extending save and restore blueprint scripts](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Sv-Sndbx-Cnfg.htm#Extendin)
+- [Save Sandbox Configurations](../../admin/setting-up-cloudshell/cloudshell-configuration-options/save-sandbox-configurations.md#save-sandbox-configurations)
+- [Extending save and restore blueprint scripts](../../admin/setting-up-cloudshell/cloudshell-configuration-options/save-sandbox-configurations.md#extending-save-and-restore-blueprint-scripts)

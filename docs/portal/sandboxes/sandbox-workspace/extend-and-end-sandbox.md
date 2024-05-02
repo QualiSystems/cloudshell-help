@@ -6,7 +6,7 @@ sidebar_position: 18
 
 You can extend and end sandboxes from the **Sandboxes** dashboard and from the Sandbox workspace.
 
-To define a calendar event for a sandbox, see [Create a Calendar Event for a Sandbox](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Creat-clndr-event-4-sndbx.htm).
+To define a calendar event for a sandbox, see [Create a Calendar Event for a Sandbox](./create-cal-event-for-sandbox.md).
 
 ## Extending a sandbox
 

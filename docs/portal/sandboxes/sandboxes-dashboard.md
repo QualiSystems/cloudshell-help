@@ -22,7 +22,7 @@ The dashboard's areas are arranged as follows:
 | --- | --- |
 | 1  |  Run a free text search for sandboxes listed in the dashboard. For example, you can search for sandboxes by name or sandbox id. The search also applies to restored sandboxes. |
 | 2  | Switch between the **Sandboxes** dashboard and the **Blueprint Catalog**.  |
-| 3  | Display the All Sandboxes dashboard or the Saved Sandboxes dashboard. The Saved menu option requires the Save and Restore paid add-on. For details about Save and Restore, see [Sandbox Save and Restore Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Sv-Rstr-Ovrvw.htm).  |
+| 3  | Display the All Sandboxes dashboard or the Saved Sandboxes dashboard. The Saved menu option requires the Save and Restore paid add-on. For details about Save and Restore, see [Sandbox Save and Restore Overview](./sandbox-save-and-restore-overview.md).  |
 | 4  | Use the filters to find sandboxes matching specific criteria.  |
 | 5  | The dashboard header enables you to view and filter the sandboxes list according to time range, and reset all filters to their default settings.  |
 | 6  | The main work area lists past, present and future sandboxes. Click a sandbox to open its diagram.   |
@@ -77,11 +77,11 @@ The State filter group is visible to administrators only. It enables you to filt
 | ![](/Images/CloudShell-Portal/Lab-Management/Reservations/ActiveColorCode_9x9.png) Active (with Error) | Sandbox is currently active and ready for use. Setup was not completed successfully. |
 | ![](/Images/CloudShell-Portal/Lab-Management/Reservations/TeardownColorCode.png) Teardown | Teardown command is currently running. Sandbox is not available for use. <br/><br/>During teardown, CloudShell releases the sandbox's resources to allow others to use them, powers off the Apps and deletes them from the cloud provider, and disconnects layer 2 connections. |
 | ![](/Images/CloudShell-Portal/Lab-Management/Reservations/CompletedColorCode_9x9.png) Completed | Sandbox ended and is not available for use. The sandbox is no longer considered active and does not hold any resources. |
-| ![](/Images/CloudShell-Portal/Lab-Management/Reservations/OvertimeColorCode_9x9.png) Overtime | (Requires the `AutoEndReservation` key to be disabled) Sandboxes with resources that are marked "in use" remain active after the sandbox time ends. Ending the sandbox requires the user to manually end each "in use" resource or the entire sandbox. For additional information, see [Mark Resources "in use"](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Prfrm-Actns/Sndbx-In-Use.htm). |
-| ![](/Images/CloudShell-Portal/Lab-Management/Reservations/SavingColorCode.png) Saving | Save command is currently running. Once saving is complete, status returns to Active. You can only save a sandbox that is Active or Active (with Error). <br/><br/>For additional information, see [Save a Sandbox](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Sv.htm). |
+| ![](/Images/CloudShell-Portal/Lab-Management/Reservations/OvertimeColorCode_9x9.png) Overtime | (Requires the `AutoEndReservation` key to be disabled) Sandboxes with resources that are marked "in use" remain active after the sandbox time ends. Ending the sandbox requires the user to manually end each "in use" resource or the entire sandbox. For additional information, see [Mark Resources "in use"](./sandbox-workspace/resources/mark-in-use.md). |
+| ![](/Images/CloudShell-Portal/Lab-Management/Reservations/SavingColorCode.png) Saving | Save command is currently running. Once saving is complete, status returns to Active. You can only save a sandbox that is Active or Active (with Error). <br/><br/>For additional information, see [Save a Sandbox](./sandbox-workspace/save-sandbox.md). |
 | ![](/Images/CloudShell-Portal/Lab-Management/Reservations/TeardownWithErrors_10x9.png) Completed (with Error) | Sandbox ended with errors (Teardown process failed). Note that resources in "Completed (with Error)" status are no longer considered reserved. However, the sandbox will remain in this state until you manually clean up the sandbox's infrastructure and then rerun the sandbox's Teardown process. |
 
-For actions that are permitted during each of the sandbox states, see [Permissible actions according to sandbox status](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Prmsn.htm#Permissi2)
+For actions that are permitted during each of the sandbox states, see [Permissible actions according to sandbox status](../../admin/cloudshell-identity-management/managing-cloudshell-permissions/cloudshell-user-permission-levels-rbac.md#permissible-actions-according-to-sandbox-status)
 
 #### Type
 

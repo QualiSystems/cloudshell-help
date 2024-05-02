@@ -69,7 +69,7 @@ Note: Some commands, like Refresh IP, do not apply to static VMs.
             - Running several customization specs on the same VM by running this command consecutively for each customization spec, followed by a power cycle (Power Off and then Power On)
             - Having a custom setup script that reserves the VM's MAC addresses from the IP management system (IPMS) and then runs the Customize Guest OS to assign the reserved IP addresses to the VM's network interfaces.
             
-            For details, see [Customize Guest OS vCenter Command Implementation](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Orch-Scripts/vCenter-customize-guest-os.htm).
+            For details, see [Customize Guest OS vCenter Command Implementation](../../../../devguide/develop-orch-scripts/cs-oob-orch/customize-guest-os-vcenter-command.md).
             </td>
         </tr>
         <tr>
@@ -85,7 +85,7 @@ Note: Some commands, like Refresh IP, do not apply to static VMs.
             <td>Get VM Web Console</td>
             <td>VMware vCenter 2G</td>
             <td>
-            Open the VM’s web console directly from the deployed App. This can be done with or without QualiX (by specifying the credentials of a vCenter user that has at least the Virtual Machine console user role). For details on configuring QualiX support, see [Configure VM Web Console Access to vCenter App VMs (QualiX)](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-vCenter-Console.htm).
+            Open the VM’s web console directly from the deployed App. This can be done with or without QualiX (by specifying the credentials of a vCenter user that has at least the Virtual Machine console user role). For details on configuring QualiX support, see [Configure VM Web Console Access to vCenter App VMs (QualiX)](../../../../install-configure/qualix/post-installation-config/configure-vm-web-console.md).
 
             **To open the VM's web console:**
 
@@ -105,8 +105,8 @@ Note: Some commands, like Refresh IP, do not apply to static VMs.
             Shuts down the App's virtual machine but does not remove it from the sandbox.
             
 :::note Notes
- - Apps are designed to be used in the context of a sandbox. Therefore, when the sandbox ends, you must ensure the deployed Apps are deleted and their virtual machines powered off and removed from the cloud provider. CloudShell's out-of-the-box **Default Sandbox Teardown** orchestration script does this during the **Teardown** process of the sandbox. For additional information, see [CloudShell Sandbox Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Wrk-wth-Blprnt-Tmplt.htm#CloudShe).
- - Deleting a deployed App from the sandbox will power off the App's VM and delete the VM from the cloud provider. For additional information, see the [Run App Commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Apps-Run-Cmnds.htm?tocpath=CloudShell%20Portal%7CSandboxes%7CSandbox%20Workspace%7CApps%7C_____4#Removing) below.
+ - Apps are designed to be used in the context of a sandbox. Therefore, when the sandbox ends, you must ensure the deployed Apps are deleted and their virtual machines powered off and removed from the cloud provider. CloudShell's out-of-the-box **Default Sandbox Teardown** orchestration script does this during the **Teardown** process of the sandbox. For additional information, see [CloudShell Sandbox Template](../../../../admin/cloudshell-manage-dashboard/blueprint-templates.md#cloudshell-sandbox-template).
+ - Deleting a deployed App from the sandbox will power off the App's VM and delete the VM from the cloud provider. For additional information, see the [Run App Commands](../../../../portal/sandboxes/sandbox-workspace/apps/run-app-commands.md) below.
 :::
 </td>
         </tr>
@@ -201,7 +201,7 @@ Microsoft Azure 2G
 
             :::note Notes
 
-- This command is available only for Apps that support re-running configuration management (see [Adding App templates](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Apps.htm#Adding) for details).
+- This command is available only for Apps that support re-running configuration management (see [Adding App templates](../../../../admin/cloudshell-manage-dashboard/manage-app-templates/index.md#adding-app-templates) for details).
 - Configuration management commands cannot be cancelled or stopped.
 - The configuration management inputs can be retrieved via the GetResourceCommands CloudShell Automation API for Apps that allow rerunning configuration management from the sandbox.
 :::

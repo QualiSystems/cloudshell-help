@@ -29,7 +29,7 @@ The **Activity Feed** pane enables you to display system messages and command ex
     - **Component** drop down list: display entries that are related to a specific resource, App or service in the sandbox. The value Component displays entries for all components.
     - **Event type** drop down list: display entries of a specific type. Values are: **Event type** (all entries), **Command**, **Resource**, **Service** and **Sandbox**.
 
-For more detailed information about a particular error, see [Activity Feed Pane](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-View-Actvty-Fd.htm).
+For more detailed information about a particular error, see [Activity Feed Pane](../system-messages/activity-feed-pane.md).
 
 ## Related Topics
 

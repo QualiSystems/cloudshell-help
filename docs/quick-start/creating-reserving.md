@@ -89,7 +89,7 @@ To set up connectivity between 2 resources:
 
 ### Orchestration scripts
 
-CloudShell provides out-of-the-box setup and teardown orchestration scripts which are attached to every new blueprint, but you’re welcome to create your own custom scripts, as explained in [Creating and using orchestration scripts in CloudShell](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Orch-Scripts/Getting-Started.htm#Creating2).
+CloudShell provides out-of-the-box setup and teardown orchestration scripts which are attached to every new blueprint, but you’re welcome to create your own custom scripts, as explained in [Creating and using orchestration scripts in CloudShell](../devguide/develop-orch-scripts/getting-started-with-orch-scripts.md#creating-and-using-orchestration-scripts-in-cloudshell).
 
 The out-of-the-box scripts do the following:
 
