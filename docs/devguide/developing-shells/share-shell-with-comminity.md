@@ -23,7 +23,7 @@ For example:
 
 ![Directory Structure](/Images/Devguide-shells/Sharing-a-Shell-with-the-Community_624x680.png)
 
-Some of the fields are optional, so please check one of our certified shells to see which fields to fill in, like the [Cisco NXOS Switch 2G Shell](https://community.quali.com/repos/1336/cisco-nxos-switch-shell-2g-1).
+Some of the fields are optional, so please check one of our certified shells to see which fields to fill in, like the [Cisco NXOS Switch 2G Shell](https://github.com/orgs/QualiSystems/discussions/1559).
 
 To allow community developers to create modified copies of your shell, copy the shell’s repository URL to the **GitHub User/Repository** field, as illustrated above. We recommend using this field since it also allows us to automatically build the **GitHub URL** and **Download URL** links as well as show more details about this repository.
 

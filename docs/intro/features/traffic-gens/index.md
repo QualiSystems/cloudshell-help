@@ -14,7 +14,7 @@ The following image illustrates a controller service that runs traffic from a tr
 
 While we still support the use of 1st Gen shells, we highly recommend using the 2nd Gen version of the traffic generators you want to use.
 
-Our existing traffic generator shells can be downloaded from [Quali Repositories](https://github.com/orgs/QualiSystems/repositories) and have different levels - Certified, Preview & Community grade. Can't find the Shell you're looking for? You can extend an existing Shell, create a new Shell based on one of our [Shell standards](https://community.quali.com/repos/type/Standard.html), or suggest a new standard in our [Idea Box](https://community.quali.com/spaces/11/index.html).
+Our existing traffic generator shells can be downloaded from [Quali Repositories](https://github.com/orgs/QualiSystems/repositories) and have different levels - Certified, Preview & Community grade. Can't find the Shell you're looking for? You can extend an existing Shell, create a new Shell based on one of our [Shell standards](https://github.com/orgs/QualiSystems/discussions?discussions_q=label%3AStandard+), or suggest a new standard in our [Idea Box](https://github.com/orgs/QualiSystems/discussions/categories/idea-box).
 
 ## How to set up a traffic generator in CloudShell
 

@@ -16,7 +16,7 @@ To create and use a Shell:
     2. Associate CloudShell to Shellfoundry - see [Configuring CloudShell Connection Settings](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Getting-Started.htm#Configur) in the CloudShell Dev Guide.
     3. Get a list of all available standard templates - see [Setting the Standard](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Modeling-with-TOSCA.htm#Setting) in the CloudShell Dev Guide.
         
-        Every standard has a dedicated GitHub repo with documentation to help you find the Shell that is most suitable for the type of resource you want to model. To see our standards, click [here](https://community.quali.com/repos/type/Standard).
+        Every standard has a dedicated GitHub repo with documentation to help you find the Shell that is most suitable for the type of resource you want to model. To see our standards, click [here](https://github.com/orgs/QualiSystems/discussions?discussions_q=label%3AStandard+).
         
     4. Create a new Shell from a suitable template and name it after the device's model - see [Setting the Standard](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Modeling-with-TOSCA.htm#Setting).
 5. Package and import the Shell into CloudShell's inventory - see [Packaging and importing a Shell into CloudShell](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Shellfoundry.htm#Packagin) in the CloudShell Dev Guide.

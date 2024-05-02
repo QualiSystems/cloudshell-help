@@ -17,4 +17,4 @@ This procedure explains how to delete Apps from a blueprint.
 ## Related Topics
 
 - [Apps in Blueprints](../../../../portal/blueprints/creating-blueprints/apps)
-- [Apps in Sandboxes](../../../../portal/sandboxes/workspace/apps)
+- [Apps in Sandboxes](../../../../portal/sandboxes/sandbox-workspace/apps)

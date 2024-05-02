@@ -21,4 +21,4 @@ Use this option to revert back to the definitions of the App template. Note that
 ## Related Topics
 
 - [Apps in Blueprints](../../../../portal/blueprints/creating-blueprints/apps)
-- [Apps in Sandboxes](../../../../portal/sandboxes/workspace/apps)
+- [Apps in Sandboxes](../../../../portal/sandboxes/sandbox-workspace/apps)

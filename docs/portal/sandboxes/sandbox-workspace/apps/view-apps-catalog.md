@@ -20,5 +20,5 @@ sidebar_position: 1
 
 ## Related Topics
 
-- [Apps in Sandboxes](../../../../portal/sandboxes/workspace/apps)
+- [Apps in Sandboxes](../../../../portal/sandboxes/sandbox-workspace/apps)
 - [Apps in Blueprints](../../../../portal/blueprints/creating-blueprints/apps)

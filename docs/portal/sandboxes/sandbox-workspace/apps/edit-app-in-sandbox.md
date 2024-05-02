@@ -43,5 +43,5 @@ For Apps connected to a subnet, all Apps in the same subnet must use the same cl
 
 ## Related Topics
 
-- [Apps in Sandboxes](../../../../portal/sandboxes/workspace/apps)
+- [Apps in Sandboxes](../../../../portal/sandboxes/sandbox-workspace/apps)
 - [Apps in Blueprints](../../../../portal/blueprints/creating-blueprints/apps)

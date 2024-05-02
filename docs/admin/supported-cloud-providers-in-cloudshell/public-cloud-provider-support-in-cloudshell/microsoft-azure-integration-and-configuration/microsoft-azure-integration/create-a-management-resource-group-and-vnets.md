@@ -7,7 +7,7 @@ sidebar_position: 2
 The **Azure Resource Template** deployment process creates the CloudShell management resource group, the CloudShell Management VNet and CloudShell Sandbox VNet within the resource group and a peering between these networks, which are detailed in [Microsoft Azure Integration](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-VNET-Ovrv.htm). You will then need to configure the Execution Server and QualiX Server created in the CloudShell Management VNet to access the Quali Server.
 
 :::note Notes:
-- We strongly recommend using the new and improved [Azure 2nd Gen shell](https://community.quali.com/repos/5247/azure-cloud-provider-shell-2g). If you're using the 1<sup>st</sup> Gen version of the shell that comes out of the box with CloudShell, see [this version](https://help.quali.com/Online%20Help/2021.1/Portal/Content/Admn/Azure-Crt-Mng-RSc-Grp.htm) of the online help.
+- We strongly recommend using the new and improved [Azure 2nd Gen shell](https://github.com/orgs/QualiSystems/discussions/1687). If you're using the 1<sup>st</sup> Gen version of the shell that comes out of the box with CloudShell, see [this version](https://help.quali.com/Online%20Help/2021.1/Portal/Content/Admn/Azure-Crt-Mng-RSc-Grp.htm) of the online help.
 - The below procedure assumes you already have CloudShell Server installed locally. However, if you plan on installing CloudShell Server on the Azure region, see [Integrating Azure with Cloud-based CloudShell Installation](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Cld-Only-Intg.htm).
 :::
 **To create a CloudShell management resource group and the required networks:**

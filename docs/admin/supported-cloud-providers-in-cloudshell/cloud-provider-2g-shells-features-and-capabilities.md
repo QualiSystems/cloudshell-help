@@ -10,7 +10,7 @@ In addition to our certified cloud provider shells, we also have "community" gra
 :::
 ## VMware vCenter
 
-- Shell's community page - [VMware vCenter Cloud Provider Shell 2G](https://community.quali.com/repos/5386/vmware-vcenter-cloud-provider-shell-2g).
+- Shell's community page - [VMware vCenter Cloud Provider Shell 2G](https://github.com/orgs/QualiSystems/discussions/1691).
 - Shell's [README](https://github.com/QualiSystems/VMware-vCenter-Cloud-Provider-Shell-2G/blob/master__old_code/README.md).
 :::note
 vCenter 5.0.0 and above works only with CloudShell 2022.1 EA and above.
@@ -241,7 +241,7 @@ Works with cloud provider resource based on vCenter MWare shell 4.1.0 and above.
 
 ## Microsoft Azure
 
-- Shell's community page - [Azure Cloud Provider Shell 2G](https://community.quali.com/repos/5247/azure-cloud-provider-shell-2g).
+- Shell's community page - [Azure Cloud Provider Shell 2G](https://github.com/orgs/QualiSystems/discussions/1687).
 - Shell's [README](https://github.com/QualiSystems/Microsoft-Azure-Cloud-Provider-Shell-2G/blob/master/README.md).
 
 <table>
@@ -327,7 +327,7 @@ Works with cloud provider resource based on vCenter MWare shell 4.1.0 and above.
 
 ## Amazon AWS EC2
 
-- Shell's community page - [Amazon AWS Cloud Provider Shell 2G](https://community.quali.com/repos/5448/amazon-aws-cloud-provider-shell-2g).
+- Shell's community page - [Amazon AWS Cloud Provider Shell 2G](https://github.com/orgs/QualiSystems/discussions/1695).
 - Shell's [README](https://github.com/QualiSystems/Amazon-AWS-Cloud-Provider-Shell-2G#readme).
 
 <table>
@@ -382,7 +382,7 @@ Works with cloud provider resource based on vCenter MWare shell 4.1.0 and above.
 
 ## OpenStack
 
-- Shell's community page - [OpenStack Cloud Provider Shell 2G](https://community.quali.com/repos/5441/openstack-cloud-provider-shell-2g).
+- Shell's community page - [OpenStack Cloud Provider Shell 2G](https://github.com/orgs/QualiSystems/discussions/1694).
 - Shell's [README](https://github.com/QualiSystems/OpenStack-Cloud-Provider-Shell-2G#readme).
 
 <table>
@@ -427,7 +427,7 @@ Supported on CloudShell 2022.2 GA and up
             <td>
             - Official release
 - Added the **Console** command (See [Run App Commands](../../portal/sandboxes/sandbox-workspace/apps/run-app-commands.md))
-- Renamed the Shell to "OpenStack Cloud Provider Shell 2G" (See [OpenStack Cloud Provider Shell 2G](https://community.quali.com/repos/5441/openstack-cloud-provider-shell-2g) community page)
+- Renamed the Shell to "OpenStack Cloud Provider Shell 2G" (See [OpenStack Cloud Provider Shell 2G](https://github.com/orgs/QualiSystems/discussions/1694) community page)
 - Added the **Inbound Ports** attribute to the App's deployment type (See [Add an OpenStack App Template](./private-cloud-provider-support-in-cloudshell/openstack-integration-and-configuration/add-an-openstack-app-template.md))
 </td>
         </tr>
@@ -445,7 +445,7 @@ Supported on CloudShell 2022.2 GA and up
 
 ## Kubernetes
 
-- Shell's community page - [Kubernetes Cloud Provider Shell 2G](https://community.quali.com/repos/5363/kubernetes-cloud-provider-shell-2g-1).
+- Shell's community page - [Kubernetes Cloud Provider Shell 2G](https://github.com/orgs/QualiSystems/discussions/1689).
 - Shell's [README](https://github.com/QualiSystems/Kubernetes-Cloud-Provider-2G/blob/master/README.md).
 
 <table>
@@ -467,7 +467,7 @@ Supported on CloudShell 2022.2 GA and up
 
 ## Oracle Cloud Infrastructure (OCI)
 
-- Shell's community page - [Oracle Cloud Infrastructure (OCI) Shell 2G](https://community.quali.com/repos/5125/oracle-cloud-infrastructure-oci-shell-2g).
+- Shell's community page - [Oracle Cloud Infrastructure (OCI) Shell 2G](https://github.com/orgs/QualiSystems/discussions/1686).
 - Shell's [README](https://github.com/QualiSystems/OCI-Shell-2G/blob/dev/README.md).
 
 <table>
@@ -506,7 +506,7 @@ Supported on CloudShell 2022.2 GA and up
 
 ## Cisco VIRL
 
-- Shell's community page - [VIRL Shell 2G](https://community.quali.com/repos/5103/virl-shell-2g).
+- Shell's community page - [VIRL Shell 2G](https://github.com/orgs/QualiSystems/discussions/1685).
 - Shell's [README](https://github.com/QualiSystems/VIRL-Shell-2G).
 
 <table>

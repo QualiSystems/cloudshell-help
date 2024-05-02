@@ -3,7 +3,7 @@
 This article discusses the integration of CloudShell with vCenter to allow CloudShell to spin up and manage the lifecycle of VMs hosted on vCenter Server. vCenter integration is provided out of the box starting with CloudShell version 7.0 and includes the following:
 
 - VM lifecycle management (Deploy App, Power On, Refresh IP, Power Off and Delete)
-- Connectivity with other VMs and physical resources, including static VMs. Connectivity is based on vCenter dvSwitch (standard vSwitch supported in [vCenter 2<sup>nd</sup> Gen cloud provider shell](https://community.quali.com/repos/5386/vmware-vcenter-cloud-provider-shell-2g)).
+- Connectivity with other VMs and physical resources, including static VMs. Connectivity is based on vCenter dvSwitch (standard vSwitch supported in [vCenter 2<sup>nd</sup> Gen cloud provider shell](https://github.com/orgs/QualiSystems/discussions/1691)).
 - Snapshot management (Save Snapshot, Restore Snapshot, and Get Snapshots)
 
 CloudShell supports two integration modes with vCenter, where Quali Server is installed internally on a vCenter VM or externally.

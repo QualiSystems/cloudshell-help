@@ -29,4 +29,4 @@ To enable the deployment of Apps based on a public cloud like AWS EC2 or Azure, 
 ## Related Topics
 
 - [Apps in Blueprints](../../../../portal/blueprints/creating-blueprints/apps)
-- [Apps in Sandboxes](../../../../portal/sandboxes/workspace/apps)
+- [Apps in Sandboxes](../../../../portal/sandboxes/sandbox-workspace/apps)

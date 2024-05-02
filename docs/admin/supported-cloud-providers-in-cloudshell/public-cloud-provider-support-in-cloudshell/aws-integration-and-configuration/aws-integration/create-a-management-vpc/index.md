@@ -2,7 +2,7 @@
 
 The **CloudFormation** service creates the Management VPC, subnet within the Management VPC, and then launches three AWS EC2 instances, two with an execution server and one with QualiX. The execution servers then need to be configured to access the on-prem Quali Server. To set up a deployment where Quali Server is also installed on AWS, see [Integrating AWS with Cloud-based CloudShell Installation](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-CS-on-AWS.htm).
 :::note Important:
-We strongly recommend using the new and improved [AWS 2nd Gen shell](https://community.quali.com/repos/5448/amazon-aws-cloud-provider-shell-2g). If you're using the 1<sup>st</sup> Gen version of the shell that comes out of the box with CloudShell, see [this version](https://help.quali.com/Online%20Help/2021.1/Portal/Content/Admn/VPC-Crt-Mng-VPC-Ntwrks.htm?Highlight=management%20vpc) of the online help.
+We strongly recommend using the new and improved [AWS 2nd Gen shell](https://github.com/orgs/QualiSystems/discussions/1695). If you're using the 1<sup>st</sup> Gen version of the shell that comes out of the box with CloudShell, see [this version](https://help.quali.com/Online%20Help/2021.1/Portal/Content/Admn/VPC-Crt-Mng-VPC-Ntwrks.htm?Highlight=management%20vpc) of the online help.
 :::
 **To create a Management VPC and the required networks:**
 

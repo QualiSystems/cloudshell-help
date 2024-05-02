@@ -17,5 +17,5 @@ VM resources that were not deployed by a CloudShell App, like static VMs that we
 
 ## Related Topics
 
-- [Apps in Sandboxes](../../../../portal/sandboxes/workspace/apps)
+- [Apps in Sandboxes](../../../../portal/sandboxes/sandbox-workspace/apps)
 - [Apps in Blueprints](../../../../portal/blueprints/creating-blueprints/apps)

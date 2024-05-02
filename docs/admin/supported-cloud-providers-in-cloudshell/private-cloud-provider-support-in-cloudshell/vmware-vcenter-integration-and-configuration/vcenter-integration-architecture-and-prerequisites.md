@@ -52,7 +52,7 @@ Please consult your resident vSphere expert before performing these configuratio
     
     CloudShell manages VM networking via the dvSwitch, so if you require networking, you will need a dvSwitch that is capable of creating and configuring port groups.
     :::note
-    vSwitch connectivity is supported in the vCenter 2<sup>nd</sup> Gen cloud provider shell and requires the same vSwitch name to be set on all relevant VM cluster hosts. The **VMware vCenter Cloud Provider Shell 2G** shell can be downloaded [here](https://community.quali.com/repos/5386/vmware-vcenter-cloud-provider-shell-2g).
+    vSwitch connectivity is supported in the vCenter 2<sup>nd</sup> Gen cloud provider shell and requires the same vSwitch name to be set on all relevant VM cluster hosts. The **VMware vCenter Cloud Provider Shell 2G** shell can be downloaded [here](https://github.com/orgs/QualiSystems/discussions/1691).
     :::
     - Connected to the same physical NICs as the physical backbone switch
     - Capable of creating and configuring port groups

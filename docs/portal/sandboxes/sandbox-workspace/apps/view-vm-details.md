@@ -26,4 +26,4 @@ For Kubernetes, the VM's external IP is displayed.
 
 ## Related Topics
 
-- [Apps in Sandboxes](../../../../portal/sandboxes/workspace/apps)
+- [Apps in Sandboxes](../../../../portal/sandboxes/sandbox-workspace/apps)
