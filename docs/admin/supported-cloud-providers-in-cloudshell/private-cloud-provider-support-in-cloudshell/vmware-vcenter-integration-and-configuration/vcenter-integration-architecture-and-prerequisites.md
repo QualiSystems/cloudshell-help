@@ -8,7 +8,7 @@ sidebar_position: 1
 
 When deploying a vCenter App in a sandbox, the CloudShell Execution Server connects to the vCenter server and creates the VM according to the settings (parent VM/image, datacenter, ESXi host or host cluster, storage, dvSwitch, etc.) defined on the App and the App's vCenter cloud provider resource. Specifically, CloudShell accesses the datacenter, finds the parent VM, snapshot, template or image defined on the App template\*, and creates the VM from that parent object. If the App has a connectivity requirement defined in the sandbox, CloudShell will create a port group on the dvSwitch, add the VM's vNIC and configure the VLAN on this vNIC and on all other connected vNICs.
 
-*\* When restoring a saved sandbox with deployed vCenter Apps, CloudShell creates the App VMs from the VM clones CloudShell created during the sandbox saving process. For additional information, see [Save a Sandbox](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Sv.htm).*
+\*\* When restoring a saved sandbox with deployed vCenter Apps, CloudShell creates the App VMs from the VM clones CloudShell created during the sandbox saving process. For additional information, see [Save a Sandbox](../../../../portal/sandboxes/sandbox-workspace/save-sandbox.md).*
 :::note Important
 vCenter elements created by CloudShell should not be altered as this may cause unexpected behavior.
 :::
@@ -86,7 +86,7 @@ To help you organize your CloudShell activity on vSphere, we've come up with the
 
 - "Management" folder - should contain all management VMs:
     - Quali server (Quali Server can be installed on a dedicated VM on the vCenter or in an external location with networking to the vCenter Server)
-    - QualiX: In order to use QualiX for in-browser connections to App VMs, make sure the QualiX machine is accessible to the sandbox application network. See [QualiX Installation and Configuration](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Qualix.htm)
+    - QualiX: In order to use QualiX for in-browser connections to App VMs, make sure the QualiX machine is accessible to the sandbox application network. See [QualiX Installation and Configuration](../../../../install-configure/qualix/index.md)
     - DHCP (if used with a dedicated server) - other applications and services that manage Cloudshell-deployed VM capabilities
 - "Infrastructure" folder – for infrastructure static VMs:
     - Static always-on VMs (Firewalls, DBs, etc.)

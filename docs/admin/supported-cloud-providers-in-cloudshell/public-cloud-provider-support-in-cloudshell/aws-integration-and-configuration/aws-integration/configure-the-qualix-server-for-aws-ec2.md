@@ -8,7 +8,7 @@ Follow these guidelines when setting up QualiX in-browser connections in your AW
 :::note
 To connect to App instances without QualiX, you will need to access the keypair location defined in the AWS EC2 cloud provider resource and download the key-pair `.pem` file from the bucket bearing the reservation ID.
 :::
-- If the only QualiX server in your CloudShell deployment is the one in the Management VPC in AWS, refer to the [QualiX Installation and Configuration](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Qualix.htm) on how to configure it, and for the server address, use the **QualixInstanceEIP** output from the **CloudFormation** process - see [Create a Management VPC and Networks using CloudFormation](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-Crt-Mng-VPC-Ntwrks.htm).
+- If the only QualiX server in your CloudShell deployment is the one in the Management VPC in AWS, refer to the [QualiX Installation and Configuration](../../../../../install-configure/qualix/index.md) on how to configure it, and for the server address, use the **QualixInstanceEIP** output from the **CloudFormation** process - see [Create a Management VPC and Networks using CloudFormation](./create-a-management-vpc/index.md).
 - If there are more QualiX servers in your CloudShell deployments, do the following for each relevant server:
     1. Install QualiX version 2.3 or above.
     2. Use an attribute to hold the QualiX Server address, and customize the `ServerUniversalSettings.xml` file on the Quali Server machine to have Quali Server take the QualiX Server address from this attribute.
@@ -19,4 +19,4 @@ To connect to App instances without QualiX, you will need to access the keypair 
 
 ## Related Topics
 
-- [Connect Remotely to Devices with QualiX (RDP, SSH, Telnet)](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Prfrm-Actns/Sndbx-Rmt-Cnct.htm)
+- [Connect Remotely to Devices with QualiX (RDP, SSH, Telnet)](../../../../../portal/sandboxes/sandbox-workspace/resources/connect-remotely-with-qualix.md)

@@ -84,7 +84,7 @@ To enable CloudShell to deploy and manage the lifecycle of OpenStack instances, 
         </tr>
         <tr>
             <td>Provider networks</td>
-            <td>OpenStack provider networks are shared across all projects in your OpenStack installation. Therefore, to avoid ID collisions, make sure the VLAN services that will be used for OpenStack VM connectivity do not have overlapping allocation ranges for the same pool name. For information about setting up VLAN services, see [VLAN Connectivity](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-VLAN.htm).</td>
+            <td>OpenStack provider networks are shared across all projects in your OpenStack installation. Therefore, to avoid ID collisions, make sure the VLAN services that will be used for OpenStack VM connectivity do not have overlapping allocation ranges for the same pool name. For information about setting up VLAN services, see [VLAN Connectivity](../../../setting-up-cloudshell/inventory-operations/connectivity-control/vlan-connectivity/index.md).</td>
         </tr>
         <tr>
             <td>Project Security Group</td>

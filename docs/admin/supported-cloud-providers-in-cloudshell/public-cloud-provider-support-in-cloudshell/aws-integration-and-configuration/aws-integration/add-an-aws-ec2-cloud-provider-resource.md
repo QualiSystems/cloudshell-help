@@ -6,11 +6,11 @@ sidebar_position: 7
 
 The **AWS EC2** cloud provider enables the deployment of AWS instances from an Amazon Machine Image (AMI).
 :::tip
-We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which provides significant enhancements and capabilities, and is tamper-resistant from within CloudShell, ensuring your Azure cloud provider resources and Apps are in pristine condition. Useful articles: [Replacing the 1st Gen shell with a 2nd Gen version](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Converting-1G-Shells.htm#Migrate), [Cloud Provider Shells - Features and Capabilities Per Release](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Clp-capabilities.htm).
+We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which provides significant enhancements and capabilities, and is tamper-resistant from within CloudShell, ensuring your Azure cloud provider resources and Apps are in pristine condition. Useful articles: [Replacing the 1st Gen shell with a 2nd Gen version](../../../../../devguide/reference/migrate-1st-gen-shell-to-2nd-gen-shell.md#replacing-the-1st-gen-shell-with-a-2nd-gen-version), [Cloud Provider Shells - Features and Capabilities Per Release](../../../cloud-provider-2g-shells-features-and-capabilities.md).
 :::
 **To add an AWS EC2 cloud provider resource:**
 
-1. Log in to CloudShell as administrator and access the required domain. This will enable the Apps based on this cloud provider resource to be usable in this domain. For additional information, see [Managing Public Cloud Apps in Domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Pblc-Cld-Apps-in-Dmns.htm).
+1. Log in to CloudShell as administrator and access the required domain. This will enable the Apps based on this cloud provider resource to be usable in this domain. For additional information, see [Managing Public Cloud Apps in Domains](../../managing-public-cloud-apps-in-domains.md).
     
 2. In the **Inventory** dashboard, in the **Resources** tab, click the folder in which you want to create the resource.
 3. Click **\+ Add New**.
@@ -45,9 +45,9 @@ We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which p
                 <td>
                 (Optional) This attribute points to a pre-defined group of execution servers (grouped by a common **Execution Server Selector** value). To make the association, enter the same value you specified on the execution server.
     :::note
-    To use the out-of-the-box **Execution Server Selector** attribute, make sure it has the "Execution Server Selector" rule. For details on how to add the rule to the attribute, see [Defining attribute rules](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Attrb.htm#Defining).
+    To use the out-of-the-box **Execution Server Selector** attribute, make sure it has the "Execution Server Selector" rule. For details on how to add the rule to the attribute, see [Defining attribute rules](../../../../setting-up-cloudshell/inventory-operations/resource-data-modeling-for-1st-gen-shells/attributes.md#defining-attribute-rules).
     :::
-    For additional information on managing App deployments per domains, see [Managing Public Cloud Apps in Domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Pblc-Cld-Apps-in-Dmns.htm).
+    For additional information on managing App deployments per domains, see [Managing Public Cloud Apps in Domains](../../managing-public-cloud-apps-in-domains.md).
                 </td>
             </tr>
             <tr>
@@ -56,7 +56,7 @@ We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which p
                 <td>
                 The code of the AWS region to be used by this cloud provider resource. For example, "us-east-1".
     :::note
-    The AWS region must have **Management VPC** configured. For the list of supported regions, see [AWS Regions Supported by CloudShell](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-Regions.htm).
+    The AWS region must have **Management VPC** configured. For the list of supported regions, see [AWS Regions Supported by CloudShell](./aws-regions-supported-by-cloudshell.md).
     :::
                 </td>
             </tr>
@@ -189,7 +189,7 @@ We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which p
     
     When the discovery process completes, a confirmation message is displayed. The cloud provider resource is displayed in the **Inventory** dashboard in CloudShell Portal and in Resource Manager Client.
     
-    To customize the App deployment types and publish App orchestration parameters, see [Customizing App Deployment Types](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfg-App-Dply-Types.htm)
+    To customize the App deployment types and publish App orchestration parameters, see [Customizing App Deployment Types](../../../customizing-app-deployment-types.md)
     
 
-9. Next, [Add an AWS EC2 App Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-AWS-App.htm).
+9. Next, [Add an AWS EC2 App Template](./add-an-aws-ec2-app-template.md).

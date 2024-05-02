@@ -19,7 +19,7 @@ The CloudShell CloudFormation process installs two Execution Servers on the AWS 
 
 This procedure is required if Quali Server is also installed on AWS.
 
-- Log in to the Execution Server machine and follow the instructions in [Configure the Linux Execution Server](https://help.quali.com/Online%20Help/0.0/Portal/Content/Linux/Cnfg-Exec-Srv.htm).
+- Log in to the Execution Server machine and follow the instructions in [Configure the Linux Execution Server](../../../../install-configure/linux-virtual-appliance/post-installation/configure/index.md).
 
 ## Execution Server logs
 
@@ -80,7 +80,7 @@ Follow this procedure to install a new Execution Server from scratch. To upgrade
     ```
     
     :::note Notes
-    - If the Execution Server VM does not have an internet connection, make sure the OfflinePackageRepository zip file is extracted to the local PyPi Server repository. For details, see [Add the out-of-the-box dependencies package to the local PyPi Server repository](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfgr-Pyth-Env-Wrk-Offln.htm#Add2).
+    - If the Execution Server VM does not have an internet connection, make sure the OfflinePackageRepository zip file is extracted to the local PyPi Server repository. For details, see [Add the out-of-the-box dependencies package to the local PyPi Server repository](../../../cloudshell-execution-server-configurations/setting-up-python-virtual-environments/configuring-cloudshell-to-execute-python-commands-in-offline-mode.md#add-the-out-of-the-box-dependencies-package-to-the-local-pypi-server-repository).
     - Quali Server must be running when configuring the Execution Server.
     - Depending on your flavor of Linux, you may need to escape parameter values containing special characters with single or double quotes. For example: `"admin1234!"`
     :::
@@ -122,7 +122,7 @@ There are two ways to upgrade an AWS Execution Server:
     ```
     
     :::note Notes
-    - If the Execution Server VM does not have an internet connection, make sure the OfflinePackageRepository zip file is extracted to the local PyPi Server repository. For details, see [Add the out-of-the-box dependencies package to the local PyPi Server repository](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfgr-Pyth-Env-Wrk-Offln.htm#Add2).
+    - If the Execution Server VM does not have an internet connection, make sure the OfflinePackageRepository zip file is extracted to the local PyPi Server repository. For details, see [Add the out-of-the-box dependencies package to the local PyPi Server repository](../../../cloudshell-execution-server-configurations/setting-up-python-virtual-environments/configuring-cloudshell-to-execute-python-commands-in-offline-mode.md#add-the-out-of-the-box-dependencies-package-to-the-local-pypi-server-repository).
     - Quali Server must be running when configuring the Execution Server. 
     - Depending on your flavor of Linux, you may need to escape parameter values containing special characters with single or double quotes. For example: `"admin1234!"`
     :::    

@@ -6,7 +6,7 @@ sidebar_position: 3
 
 This article explains how to configure a vCenter cloud provider resource. The **VMware vCenter** cloud provider enables the deployment of virtual machines from vCenter templates, images, clones (existing vCenter VMs) and linked clones (snapshots of existing vCenter VMs). Each deployment type includes the required settings, attributes, and commands. For a video tutorial on how to set up the resource, watch the video at the bottom of the article.
 :::tip
-We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which provides significant enhancements and capabilities, and is tamper-resistant from within CloudShell, ensuring your Azure cloud provider resources and Apps are in pristine condition. Useful articles: [Replacing the 1st Gen shell with a 2nd Gen version](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Converting-1G-Shells.htm#Migrate), [Cloud Provider Shells - Features and Capabilities Per Release](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Clp-capabilities.htm).
+We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which provides significant enhancements and capabilities, and is tamper-resistant from within CloudShell, ensuring your Azure cloud provider resources and Apps are in pristine condition. Useful articles: [Replacing the 1st Gen shell with a 2nd Gen version](../../../../devguide/reference/migrate-1st-gen-shell-to-2nd-gen-shell.md#replacing-the-1st-gen-shell-with-a-2nd-gen-version), [Cloud Provider Shells - Features and Capabilities Per Release](../../cloud-provider-2g-shells-features-and-capabilities.md).
 :::
 :::note Notes
 - vCenter elements created by CloudShell should not be altered as this may cause unexpected behavior.
@@ -29,7 +29,7 @@ We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which p
     
     ![](/Images/Admin-Guide/Inventory-Operations/AppsResourceDiscoveryInformation.png)
     
-8. Enter the required information. Unless specified differently, paths are relative to the datacenter so for example, to specify VM storage "datastore cluster" that is under datacenter "QualiSB", enter "datastore cluster" in the **VM Storage** field. For guidance on finding each element in your vCenter server, see [vCenter cheetsheet for versions 5.5-6.5](https://help.quali.com/help%20versions/attachments/VCenter_5.5_6.5_Cloud_Provider_Resource_Configuration_Cheetsheet.pdf) or [vCenter cheetsheet for version 6.7 and above](https://help.quali.com/help%20versions/attachments/VCenter_6.7_Cloud_Provider_Resource_Configuration_Cheetsheet.pdf).
+8. Enter the required information. Unless specified differently, paths are relative to the datacenter so for example, to specify VM storage "datastore cluster" that is under datacenter "QualiSB", enter "datastore cluster" in the **VM Storage** field. For guidance on finding each element in your vCenter server, see [vCenter cheetsheet for versions 5.5-6.5](../../../../../static/attachments/VCenter_5.5_6.5_Cloud_Provider_Resource_Configuration_Cheetsheet.pdf) or [vCenter cheetsheet for version 6.7 and above](../../../../../static/attachments/VCenter_6.7_Cloud_Provider_Resource_Configuration_Cheetsheet.pdf).
     :::note
     All vCenter elements must be located under the same data center.
     :::
@@ -52,7 +52,7 @@ We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which p
                 <td>
                 User on the vCenter server.
 
-    The user must be assigned to the root level of the vCenter server with the necessary permissions. For details, see [Required vCenter User Permissions per Deployment Type](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/vCenter-User-Prmsn.htm).
+    The user must be assigned to the root level of the vCenter server with the necessary permissions. For details, see [Required vCenter User Permissions per Deployment Type](./required-vcenter-user-permissions-per-deployment-type.md).
                 </td>
             </tr>
             <tr>
@@ -147,9 +147,9 @@ We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which p
                 <td>
                 (Optional) This attribute points to a pre-defined group of execution servers (grouped by a common **Execution Server Selector** value). To make the association, enter the same value you specified on the execution server.
 
-    For additional information on managing App deployments per domains, see [Managing Private Cloud Apps in Domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Prvt-Cld-Apps-in-Dmns.htm).
+    For additional information on managing App deployments per domains, see [Managing Private Cloud Apps in Domains](../managing-private-cloud-apps-in-domains.md).
     :::note
-    App deployment requires a minimum number of slots to be available. See [Number of execution slots for VM deployments](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Tst-n-Cmd-Exc.htm#Executio).
+    App deployment requires a minimum number of slots to be available. See [Number of execution slots for VM deployments](../../../cloudshell-execution-server-configurations/setting-up-execution-servers-to-run-commands.md#number-of-execution-slots-for-vm-deployments).
     :::
                 </td>
             </tr>
@@ -188,7 +188,7 @@ We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which p
                 <td>Saved Sandbox Storage</td>
                 <td>All</td>
                 <td>
-                (Applies to the **Save and Restore** paid add-on) During the saving process, CloudShell creates a clone of the sandbox's App VMs in this vCenter storage, which CloudShell will later use to restore the VM when the user restores the saved sandbox. See [Save a Sandbox](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Sv.htm) for more information.
+                (Applies to the **Save and Restore** paid add-on) During the saving process, CloudShell creates a clone of the sandbox's App VMs in this vCenter storage, which CloudShell will later use to restore the VM when the user restores the saved sandbox. See [Save a Sandbox](../../../../portal/sandboxes/sandbox-workspace/save-sandbox.md) for more information.
 
     For storage purposes, these VM clones can be stored in a different data storage than the one configured in the **VM Storage** attribute defined on the vCenter cloud provider resource. The storage can be either a datastore or a datastore cluster. For example: datastore1 or clustername/datastore1.
 
@@ -212,14 +212,14 @@ We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which p
     
     When the discovery process completes, a confirmation message is displayed. The resource is displayed in the **Inventory** dashboard in CloudShell Portal and in Resource Manager.
     
-    Apps can now be added using the vCenter resource. For additional information, see [Adding App templates](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Apps.htm#Adding).
+    Apps can now be added using the vCenter resource. For additional information, see [Adding App templates](../../../cloudshell-manage-dashboard/manage-app-templates/index.md#adding-app-templates).
     
-    To customize the App deployment types and publish App orchestration parameters, see [Customizing App Deployment Types](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfg-App-Dply-Types.htm).
+    To customize the App deployment types and publish App orchestration parameters, see [Customizing App Deployment Types](../../customizing-app-deployment-types.md).
 
     <iframe width="100%" height="500px" src="https://www.youtube.com/embed/3j7OXk7Zp9A" title="Creating a vCenter Cloud Provider Resource" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     
 
 ## Related Topics
 
-- [Adding Inventory Resources](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/INVN/Add-Rsrc-Tmplt.htm)
-- [Managing Private Cloud Apps in Domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Prvt-Cld-Apps-in-Dmns.htm)
+- [Adding Inventory Resources](../../../../portal/inventory/managing-resources/adding-inventory-resources/index.md)
+- [Managing Private Cloud Apps in Domains](../managing-private-cloud-apps-in-domains.md)

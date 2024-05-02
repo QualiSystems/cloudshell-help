@@ -60,7 +60,7 @@ By default, the **Applications** category is selected.
 Select a category from the dropdown list. You can select additional categories. Examples of categories are: applications, networking and VLAN.
 
 :::note Notes
-- The category must be associated with the domain in which the required cloud provider resides. For information about domain categories, see [Managing domain categories](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Blprnt-Ctlg-Ctgs.htm#Managing2).
+- The category must be associated with the domain in which the required cloud provider resides. For information about domain categories, see [Managing domain categories](../../cloudshell-manage-dashboard/managing-categories.md#managing-domain-categories).
 - It is recommended to use up to a 2-level hierarchy when organizing the Add App / Service catalog (i.e. root and sub-category).
 - In the Add App / Service side pane, Apps are displayed in the root category only. This includes services associated to sub-categories.
 :::
@@ -69,7 +69,7 @@ Select a category from the dropdown list. You can select additional categories. 
     </tbody>
 </table>
 
-6. In the left pane, click **Deployment Paths** and configure the App template's deployment path.
+1. In the left pane, click **Deployment Paths** and configure the App template's deployment path.
     
     A deployment path defines (1) the VM’s settings such as storage size, CPU and image file, and (2) the CloudShell cloud provider resource that enables CloudShell to access the cloud provider and deploy the VM on it.
     
@@ -101,12 +101,12 @@ Select a category from the dropdown list. You can select additional categories. 
         | RAM Limit | (Optional) The RAM limit for each container. Memory is measured in bytes. Memory is expressed as a plain integer or as a fixed-point integer using one of these suffixes - E, P, T, G, M, K. You can also use the power-of-two equivalents - Ei, Pi, Ti, Gi, Mi, Ki. For example, '256M'. |
         
     
-7. To add additional deployment paths to the App template, click the **Add New Deployment Path** link at the bottom of the wizard and fill in the required information.
-8. In the left pane, click **Configuration Management** and configure the application to be installed on the VM.
+2. To add additional deployment paths to the App template, click the **Add New Deployment Path** link at the bottom of the wizard and fill in the required information.
+3. In the left pane, click **Configuration Management** and configure the application to be installed on the VM.
     
     ![](/Images/CloudShell-Portal/Manage/ConfigurationManagement.png)
     :::tip
-    To learn how to develop custom scripts and Ansible playbooks, including examples, and set up support for the desired configuration management tool, see [Developing Configuration Management Scripts for Apps](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Config-Mng/Developing-Config-Management.htm).
+    To learn how to develop custom scripts and Ansible playbooks, including examples, and set up support for the desired configuration management tool, see [Developing Configuration Management Scripts for Apps](../../../devguide/develop-config-management-scripts-for-apps/index.md).
     :::
 
     :::note Notes
@@ -153,7 +153,7 @@ Select:
 - **SSH** if the VM has a Linux OS
 - **Windows Remote Management** if the VM has a Windows OS
 :::note
-To run configuration management on a Windows VM, the VM must have WinRM enabled. For details, see [Enable WinRM on Windows VMs to Support Configuration Management](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Config-Mng/Cnfg-WinRM-for-CM.htm).
+To run configuration management on a Windows VM, the VM must have WinRM enabled. For details, see [Enable WinRM on Windows VMs to Support Configuration Management](../../../devguide/enable-winrm-on-win-vm-for-cfg-mng.md).
 :::
             </td>
         </tr>
@@ -263,7 +263,7 @@ To configure Ansible to connect to certified hosts only (Linux VMs with a valid 
     </tbody>
 </table> 
         
-- To enable the end-user to rerun the App's configuration management on the deployed App in the sandbox, select **Allow rerunning configuration management for resources deployed from the App**. Once the App's deployment completes, a **Rerun Configuration Management** command is included in the deployed App's **Application Commands** pane. For details, see [Run App Commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Apps-Run-Cmnds.htm). This is useful for rolling back the App's VM to its original state.
+- To enable the end-user to rerun the App's configuration management on the deployed App in the sandbox, select **Allow rerunning configuration management for resources deployed from the App**. Once the App's deployment completes, a **Rerun Configuration Management** command is included in the deployed App's **Application Commands** pane. For details, see [Run App Commands](../../../portal/sandboxes/sandbox-workspace/apps/run-app-commands.md). This is useful for rolling back the App's VM to its original state.
     
 - To enable blueprint and sandbox owners to modify the App's Configuration Management details, select **Allow blueprint/sandbox owners to modify the App's Configuration Management**. The following details can be modified: playbook/script, authentication details, inventory groups, and parameters. Note that the modifications only apply to the blueprint or sandbox of the instance.
     
@@ -274,11 +274,11 @@ To configure Ansible to connect to certified hosts only (Linux VMs with a valid 
         ![](/Images/CloudShell-Portal/Manage/RenameConfigManageScript.png)
         
     
-9. In the left pane, click **App Resource** to optionally set the VM's operating system user credentials (for example, to connect to the VM via RDP or SSH). You can also change the deployed App's Shell.
+1. In the left pane, click **App Resource** to optionally set the VM's operating system user credentials (for example, to connect to the VM via RDP or SSH). You can also change the deployed App's Shell.
     
     ![](/Images/CloudShell-Portal/Manage/AppResource.png)
     :::important
-    To help sandbox end-users connect to the VM, it is recommended to include the User and Password in the blueprint's instructions. For additional information, see [Add Instructions](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Crt-Blprnt/Blprnt-Instr.htm).
+    To help sandbox end-users connect to the VM, it is recommended to include the User and Password in the blueprint's instructions. For additional information, see [Add Instructions](../../../portal/blueprints/creating-blueprints/add-instructions.md).
     :::
     
 <table>
@@ -327,6 +327,6 @@ Changing the Shell might cause additional fields to become visible and you may n
     </tbody>
 </table>
     
-10.   Click **Done**.
+1.    Click **Done**.
     
     The new App template is displayed in the **Apps** page.

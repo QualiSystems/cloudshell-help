@@ -8,6 +8,6 @@ AWS elements created by CloudShell should not be altered as this may cause unexp
 
 ## Related Topics
 
-- [AWS Integration](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-Ovrv.htm)
-- [Managing Public Cloud Apps in Domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Pblc-Cld-Apps-in-Dmns.htm)
-- [Cost Management of AWS EC2 Instances](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/AWS-Cst-Mngmnt.htm)
+- [AWS Integration](./aws-integration/index.md)
+- [Managing Public Cloud Apps in Domains](../managing-public-cloud-apps-in-domains.md)
+- [Cost Management of AWS EC2 Instances](../aws-integration-and-configuration/cost-management-of-aws-ec2-instances.md)

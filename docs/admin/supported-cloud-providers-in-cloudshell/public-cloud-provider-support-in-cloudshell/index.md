@@ -6,5 +6,5 @@ In addition, CloudShell tags are attached to all CloudShell-created elements in 
 
 ## Related Topics
 
-- [AWS Integration](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-Ovrv.htm)
-- [Microsoft Azure Integration](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-VNET-Ovrv.htm)
+- [AWS Integration](./aws-integration-and-configuration/aws-integration/index.md)
+- [Microsoft Azure Integration](./microsoft-azure-integration-and-configuration/microsoft-azure-integration/index.md)

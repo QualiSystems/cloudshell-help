@@ -19,7 +19,7 @@ During the deployment of vCenter Apps in a CloudShell sandbox, CloudShell access
 
 ## Basic Requirements
 
-The following VMware vSphere components are required for CloudShell integration with vCenter (supported version is listed in [vCenter Integration Architecture and Prerequisites](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/vCenter-Prereqs.htm)):
+The following VMware vSphere components are required for CloudShell integration with vCenter (supported version is listed in [vCenter Integration Architecture and Prerequisites](./vcenter-integration-architecture-and-prerequisites.md)):
 
 - vSphere® Standard™ / Enterprise Plus™/ with Operations Management™ / Platinum™
     :::note
@@ -34,19 +34,19 @@ The following VMware vSphere components are required for CloudShell integration 
     - dvSwitch that is capable of creating and configuring port groups (vCenter 2<sup>nd</sup> Gen shell supports standard vSwitch as well)
         
 
-Note that for additional capabilities or to integrate with other VMware vSphere components such as vSphere Client, you will need to implement a custom cloud provider that supports these options. For details, see the Dev Guide's [Getting Started with Cloud Provider Development](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Cld-Prvdrs/Getting-Started.htm).
+Note that for additional capabilities or to integrate with other VMware vSphere components such as vSphere Client, you will need to implement a custom cloud provider that supports these options. For details, see the Dev Guide's [Getting Started with Cloud Provider Development](../../../../devguide/develop-custom-cloud-provider-shells/getting-started-with-cp-dev.md).
 
 ## vCenter integration workflow
 
 For each vCenter Server you want to integrate with CloudShell, perform the following steps:
 
-1. Prepare vCenter Server for integration with CloudShell. See [vCenter Integration Architecture and Prerequisites](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/vCenter-Prereqs.htm).
-2. Designate a vCenter user with the required permissions to be used by CloudShell to access and interact with vCenter Server. See [Required vCenter User Permissions per Deployment Type](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/vCenter-User-Prmsn.htm).
-3. [Add VMware vCenter Cloud Provider Resource](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/vCenter-Cld-Prvdr-Rsc.htm) based on the specifications of the designated vCenter datacenter.
-4. Set up CloudShell App Templates to deploy and configure VMs on the datacenter. See [Add a vCenter App Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/vCenter-App.htm).
+1. Prepare vCenter Server for integration with CloudShell. See [vCenter Integration Architecture and Prerequisites](./vcenter-integration-architecture-and-prerequisites.md).
+2. Designate a vCenter user with the required permissions to be used by CloudShell to access and interact with vCenter Server. See [Required vCenter User Permissions per Deployment Type](./required-vcenter-user-permissions-per-deployment-type.md).
+3. [Add VMware vCenter Cloud Provider Resource](./add-vmware-vcenter-cloud-provider-resource.md) based on the specifications of the designated vCenter datacenter.
+4. Set up CloudShell App Templates to deploy and configure VMs on the datacenter. See [Add a vCenter App Template](./add-a-vcenter-app-template.md).
     
-    To have CloudShell App deployments run on specific domains in CloudShell, follow the steps in [Managing Private Cloud Apps in Domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Prvt-Cld-Apps-in-Dmns.htm).
-5. Configure QualiX for in-browser connections to App VMs hosted on vCenter Server from the sandbox. See [QualiX Installation and Configuration](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Qualix.htm).
+    To have CloudShell App deployments run on specific domains in CloudShell, follow the steps in [Managing Private Cloud Apps in Domains](../managing-private-cloud-apps-in-domains.md).
+5. Configure QualiX for in-browser connections to App VMs hosted on vCenter Server from the sandbox. See [QualiX Installation and Configuration](../../../../install-configure/qualix/index.md).
    :::note
    The QualiX Server must be accessible to the vCenter Server and can be installed either externally or in a VM on the vCenter Server.
    :::

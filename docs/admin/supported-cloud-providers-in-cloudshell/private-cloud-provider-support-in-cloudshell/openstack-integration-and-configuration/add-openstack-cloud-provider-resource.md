@@ -13,7 +13,7 @@ The OpenStack 2<sup>nd</sup> Gen cloud provider enables the deployment of OpenSt
 **To add an OpenStack cloud provider resource:**
 
 1. Log in to CloudShell Portal as administrator.
-2. Import the OpenStack 2G shell into CloudShell. For details, see [Importing Shells](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Shells.htm#Adding).
+2. Import the OpenStack 2G shell into CloudShell. For details, see [Importing Shells](../../../cloudshell-manage-dashboard/managing-shells.md#importing-shells).
     
     ![](/Images/Admin-Guide/KubernetesDownloadShell.png)
     
@@ -87,7 +87,7 @@ The OpenStack 2<sup>nd</sup> Gen cloud provider enables the deployment of OpenSt
             <tr>
                 <td>Floating IP Subnet ID</td>
                 <td>
-                UUID of the external network subnet that will allocate floating IDs to the OpenStack instances, to allow external connectivity into those instances. For additional details, see [OpenStack Configuration Requirements](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/OpenStack-Cnfg-Rqrs.htm).
+                UUID of the external network subnet that will allocate floating IDs to the OpenStack instances, to allow external connectivity into those instances. For additional details, see [OpenStack Configuration Requirements](./openstack-configuration-requirements.md).
 
     Displayed in OpenStack portal>**Network**\>**Networks** page>**Subnets** tab>select the subnet>**ID** value. For assistance identifying your Floating IP network, contact your OpenStack admin.
                 </td>
@@ -127,7 +127,7 @@ The OpenStack 2<sup>nd</sup> Gen cloud provider enables the deployment of OpenSt
                 <td>
                 (Optional) This attribute points to a pre-defined group of execution servers (grouped by a common **Execution Server Selector** value). To make the association, enter the same value you specified on the execution server.
 
-    This attribute is typically used for different sites or domains. For additional information on managing App deployments per domains, see [Managing Private Cloud Apps in Domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Prvt-Cld-Apps-in-Dmns.htm).
+    This attribute is typically used for different sites or domains. For additional information on managing App deployments per domains, see [Managing Private Cloud Apps in Domains](../managing-private-cloud-apps-in-domains.md).
                 </td>
             </tr>
         </tbody>
@@ -137,12 +137,12 @@ The OpenStack 2<sup>nd</sup> Gen cloud provider enables the deployment of OpenSt
     
         When the discovery process completes, a confirmation message is displayed. The resource is displayed in the **Inventory** dashboard in CloudShell Portal and in Resource Manager.
         
-        Apps can now be added using the OpenStack resource. For additional information, see [Adding App templates](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Apps.htm#Adding).
+        Apps can now be added using the OpenStack resource. For additional information, see [Adding App templates](../../../cloudshell-manage-dashboard/manage-app-templates/index.md).
         
-        To customize the App deployment types and publish App orchestration parameters, see [Customizing App Deployment Types](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfg-App-Dply-Types.htm)
+        To customize the App deployment types and publish App orchestration parameters, see [Customizing App Deployment Types](../../customizing-app-deployment-types.md)
     
 
 ## Related Topics
 
-- [Adding Inventory Resources](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/INVN/Add-Rsrc-Tmplt.htm)
-- [Managing Private Cloud Apps in Domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Prvt-Cld-Apps-in-Dmns.htm)
+- [Adding Inventory Resources](../../../../portal/inventory/managing-resources/adding-inventory-resources/index.md)
+- [Managing Private Cloud Apps in Domains](../managing-private-cloud-apps-in-domains.md)

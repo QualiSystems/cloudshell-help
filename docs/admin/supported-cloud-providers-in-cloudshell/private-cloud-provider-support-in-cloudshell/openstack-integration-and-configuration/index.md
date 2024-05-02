@@ -9,8 +9,8 @@ The OpenStack 2<sup>nd</sup> Gen cloud provider enables the deployment of OpenSt
 
 # Related Topics
 
-- [OpenStack Configuration Requirements](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/OpenStack-Cnfg-Rqrs.htm)
-- [Add OpenStack Cloud Provider Resource](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/OpenStack-Cld-Prvdr-Rsc.htm)
-- [Add an OpenStack App Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/OpenStack-App.htm)
-- [OpenStack Known Limitations](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/OpenStack-Known-Limits.htm)
-- [Managing Private Cloud Apps in Domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Prvt-Cld-Apps-in-Dmns.htm)
+- [OpenStack Configuration Requirements](./openstack-configuration-requirements.md)
+- [Add OpenStack Cloud Provider Resource](./add-openstack-cloud-provider-resource.md)
+- [Add an OpenStack App Template](./add-an-openstack-app-template.md)
+- [OpenStack Known Limitations](./openstack-known-limitations.md)
+- [Managing Private Cloud Apps in Domains](../managing-private-cloud-apps-in-domains.md)

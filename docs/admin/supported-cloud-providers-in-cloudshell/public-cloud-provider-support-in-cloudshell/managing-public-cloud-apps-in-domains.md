@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Managing Public Cloud Apps in Domains
 
-*The procedures in this article apply to Apps hosted on a public cloud provider, like AWS EC2 or Azure. For private cloud Apps like vCenter, see [Managing Private Cloud Apps in Domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Prvt-Cld-Apps-in-Dmns.htm).*
+*The procedures in this article apply to Apps hosted on a public cloud provider, like AWS EC2 or Azure. For private cloud Apps like vCenter, see [Managing Private Cloud Apps in Domains](./managing-public-cloud-apps-in-domains.md).*
 
 CloudShell does not support the deployment of public cloud Apps on different cloud regions in the same sandbox. It is therefore required to include (in a blueprint or sandbox) only Apps with an active deployment path that is associated to a single cloud provider resource. A warning is displayed if this design guideline is not kept.
 
@@ -17,12 +17,12 @@ For illustration purposes, we will configure an AWS App in this article.
 This is a five step process:
 
 1. Decide which CloudShell domain to associate to the public cloud region
-2. [Set the execution server's selector attribute](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Pblc-Cld-Apps-in-Dmns.htm?Highlight=Managing%20Public%20Cloud%20Apps%20in%20Domains#Associat)
-3. [Create a cloud provider resource in the required domain](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Pblc-Cld-Apps-in-Dmns.htm?Highlight=Managing%20Public%20Cloud%20Apps%20in%20Domains#Create)
-4. [Configure the Execution Server to support Ansible operations](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Pblc-Cld-Apps-in-Dmns.htm?Highlight=Managing%20Public%20Cloud%20Apps%20in%20Domains#Configur)
-5. [Associate the public cloud App to the domain](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Pblc-Cld-Apps-in-Dmns.htm?Highlight=Managing%20Public%20Cloud%20Apps%20in%20Domains#Associat3)
+2. [Set the execution server's selector attribute](./managing-public-cloud-apps-in-domains.md#set-the-execution-servers-selector-attribute)
+3. [Create a cloud provider resource in the required domain](./managing-public-cloud-apps-in-domains.md#create-a-cloud-provider-resource-in-the-required-domain)
+4. [Configure the Execution Server to support Ansible operations](./managing-public-cloud-apps-in-domains.md#configure-the-execution-server-to-support-ansible-operations)
+5. [Associate the public cloud App to the domain](./managing-public-cloud-apps-in-domains.md#associate-the-public-cloud-app-to-the-domain)
 :::important
-Before you begin, make sure CloudShell has been configured on the required public cloud region. See [AWS Integration](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-Ovrv.htm) or [Microsoft Azure Integration](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-VNET-Ovrv.htm).
+Before you begin, make sure CloudShell has been configured on the required public cloud region. See [AWS Integration](./aws-integration-and-configuration/aws-integration/index.md) or [Microsoft Azure Integration](./microsoft-azure-integration-and-configuration/microsoft-azure-integration/index.md).
 :::
 ## Set the execution server's selector attribute
 
@@ -58,7 +58,7 @@ This procedure explains how to prepare the execution server to deploy the Apps. 
 **To set the cloud provider resource to the domain:**
 
 1. As system administrator, log in to CloudShell and select the required domain.
-2. Create the cloud provider resource, as explained in [Adding AWS EC2 Cloud Provider Resource](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/INVN/Add-AWS-EC2-Shell.htm) and [Adding Microsoft Azure Cloud Provider Resource](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/INVN/Add-Azure-Shell.htm).
+2. Create the cloud provider resource, as explained in [Adding AWS EC2 Cloud Provider Resource](../../../portal/inventory/managing-resources/adding-inventory-resources/adding-aws-cp.md) and [Adding Microsoft Azure Cloud Provider Resource](../../../portal/inventory/managing-resources/adding-inventory-resources/adding-azure-cp.md).
     
 3. In the **Region** attribute, enter the public cloud's region that is relevant for the current domain.
     
@@ -73,7 +73,7 @@ This procedure explains how to prepare the execution server to deploy the Apps. 
 :::note
 This section is only required for Ansible configuration management.
 :::
-To use Ansible to install and configure applications on Apps, the system administrator needs to perform several configurations on the Linux-based Execution Server that will be used to run the Ansible operations on the App's deployed VMs. For additional information, see [Ansible Playbook Development for Apps](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Config-Mng/Ansible.htm).
+To use Ansible to install and configure applications on Apps, the system administrator needs to perform several configurations on the Linux-based Execution Server that will be used to run the Ansible operations on the App's deployed VMs. For additional information, see [Ansible Playbook Development for Apps](../../../devguide/develop-config-management-scripts-for-apps/ansible-playbook-dev-for-apps/).
 
 ## Associate the public cloud App to the domain
 
@@ -85,11 +85,11 @@ To make the App available to members of specific domains, in the App template, s
     
     The **Apps** page is displayed.
     
-2. Create a new App or edit an existing one, as explained in [Managing App Templates](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Apps.htm).
+2. Create a new App or edit an existing one, as explained in [Managing App Templates](../../cloudshell-manage-dashboard/manage-app-templates/index.md).
     
     The App's configuration wizard is displayed.
     
-3. To make the App available to members of this domain, from the **Categories** dropdown list, select the categories associated to the domain. For details about creating domain categories, see [Managing domain categories](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Blprnt-Ctlg-Ctgs.htm#Managing2).
+3. To make the App available to members of this domain, from the **Categories** dropdown list, select the categories associated to the domain. For details about creating domain categories, see [Managing domain categories](../../cloudshell-manage-dashboard/managing-categories.md#managing-domain-categories).
     
     For example, Testing NY:
     
@@ -106,6 +106,6 @@ To make the App available to members of specific domains, in the App template, s
 
 ## Related Topics
 
-- [Manage Dashboard Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Ovrv.htm)
-- [Managing App Templates](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Apps.htm)
-- [Apps Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Apps.htm)
+- [Manage Dashboard Overview](../../cloudshell-manage-dashboard/manage-dashboard-overview.md)
+- [Managing App Templates](../../cloudshell-manage-dashboard/manage-app-templates/index.md)
+- [Apps Overview](../../../intro/features/apps-overview.md)

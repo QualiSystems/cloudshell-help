@@ -9,7 +9,7 @@ The Kubernetes Cloud Provider 2nd Gen shell enables the deployment of Kubernetes
 **To add a Kubernetes resource:**
 
 1. Log in to CloudShell Portal as administrator.
-2. Import the Kubernetes shell into CloudShell. For details, see [Importing Shells](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Shells.htm#Adding).
+2. Import the Kubernetes shell into CloudShell. For details, see [Importing Shells](../../cloudshell-manage-dashboard/managing-shells.md#importing-shells).
     
     ![](/Images/Admin-Guide/KubernetesDownloadShell.png)
     
@@ -68,6 +68,6 @@ The Execution Server Selector attribute does not come with the shell out-of-the-
     
     When the discovery process completes, a confirmation message is displayed. The cloud provider resource is displayed in the Inventory dashboard in CloudShell Portal and in Resource Manager Client.
     
-    To customize the App deployment types and publish App orchestration parameters, see [Customizing App Deployment Types](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfg-App-Dply-Types.htm).
+    To customize the App deployment types and publish App orchestration parameters, see [Customizing App Deployment Types](../customizing-app-deployment-types.md).
     
-10.  Next, [Add a Kubernetes App Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/K8s-App.htm).
+10.  Next, [Add a Kubernetes App Template](../kubernetes-integration/add-a-kubernetes-app-template.md).

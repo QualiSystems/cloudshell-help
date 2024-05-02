@@ -13,7 +13,7 @@ When deploying a sandbox, CloudShell creates a Kubernetes deployment in a dedica
 :::note Notes
 - CloudShell does not manage Kubernetes App connectivity at this time. This can be done using the external and internal ports defined in the App.
 - When the sandbox ends, the sandbox's namespace along with all its components are automatically deleted from the cluster.
-- The App's external IP is displayed in the VM Details pane. For details, see [View an App's VM Details](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Apps-VM-Details.htm).
+- The App's external IP is displayed in the VM Details pane. For details, see [View an App's VM Details](../../../portal/sandboxes/sandbox-workspace/apps/view-vm-details.md).
 :::
 ## Kubernetes installation workflow
 
@@ -25,14 +25,10 @@ To integrate Kubernetes with CloudShell, perform the following steps:
       <td style={{ backgroundColor: '#fff9c7' }}>
         <ol>
           <li value="1">
-            <a href="https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/K8s-Clp-Rsc.htm" className="MCXref xref">
-              Add a Kubernetes Cloud Provider Resource
-            </a>
+            [Add a Kubernetes Cloud Provider Resource](./add-a-kubernetes-cloud-provider-resource.md)
           </li>
           <li value="2">
-            <a href="https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/K8s-App.htm" className="MCXref xref">
-              Add a Kubernetes App Template
-            </a>
+            [Add a Kubernetes App Template](./add-a-kubernetes-app-template.md)
           </li>
         </ol>
       </td>
@@ -43,5 +39,5 @@ To integrate Kubernetes with CloudShell, perform the following steps:
 
 ## Related Topics
 
-- [Kubernetes Prerequisites](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/K8s-Prereqs.htm)
-- [Supported Cloud Providers for Kubernetes Integration](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/K8s-Sprtd-Clps.htm)
+- [Kubernetes Prerequisites](./kubernetes-prerequisites.md)
+- [Supported Cloud Providers for Kubernetes Integration](./supported-cloud-providers-for-kubernetes-integration.md)

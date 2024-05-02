@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Managing Private Cloud Apps in Domains
 
-*The procedures in this article apply to Apps hosted on a private cloud provider, like vCenter or OpenStack. For public cloud Apps like AWS EC2 or Azure, see [Managing Public Cloud Apps in Domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Pblc-Cld-Apps-in-Dmns.htm).*
+*The procedures in this article apply to Apps hosted on a private cloud provider, like vCenter or OpenStack. For public cloud Apps like AWS EC2 or Azure, see [Managing Public Cloud Apps in Domains](../public-cloud-provider-support-in-cloudshell/managing-public-cloud-apps-in-domains.md).*
 
 In order to improve performance and stability in CloudShell deployments that include multiple geographically distributed sites, administrators need to configure the deployment process of the App to be carried out in the domain of the cloud provider (i.e. configure the App to be deployed using the execution server closest to the lab in which the cloud provider resides).
 
@@ -12,11 +12,11 @@ This is done by associating the App and cloud provider to the domain, to make su
 
 This is a five-step process:
 
-1. [Create a cloud provider resource set to the domain](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Prvt-Cld-Apps-in-Dmns.htm?Highlight=Managing%20Private%20Cloud%20Apps%20in%20Domains#Create)
-2. [Configure the Execution Server to support Ansible operations](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Prvt-Cld-Apps-in-Dmns.htm?Highlight=Managing%20Private%20Cloud%20Apps%20in%20Domains#Associat2)
-3. [Associate the Execution Server Selector attribute to the deployed App's family](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Prvt-Cld-Apps-in-Dmns.htm?Highlight=Managing%20Private%20Cloud%20Apps%20in%20Domains#Associat4)
-4. [Associate the execution servers to the domain](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Prvt-Cld-Apps-in-Dmns.htm?Highlight=Managing%20Private%20Cloud%20Apps%20in%20Domains#Associat)
-5. [Associate the App's deployment to the domain](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Prvt-Cld-Apps-in-Dmns.htm?Highlight=Managing%20Private%20Cloud%20Apps%20in%20Domains#Associat3)
+1. [Create a cloud provider resource set to the domain](../private-cloud-provider-support-in-cloudshell/managing-private-cloud-apps-in-domains.md#create-a-cloud-provider-resource-set-to-the-domain)
+2. [Configure the Execution Server to support Ansible operations](../private-cloud-provider-support-in-cloudshell/managing-private-cloud-apps-in-domains.md#configure-the-execution-server-to-support-ansible-operations)
+3. [Associate the Execution Server Selector attribute to the deployed App's family](../private-cloud-provider-support-in-cloudshell/managing-private-cloud-apps-in-domains.md#associate-the-execution-server-selector-attribute-to-the-deployed-apps-family)
+4. [Associate the execution servers to the domain](../private-cloud-provider-support-in-cloudshell/managing-private-cloud-apps-in-domains.md#associate-the-execution-servers-to-the-domain)
+5. [Associate the App's deployment to the domain](../private-cloud-provider-support-in-cloudshell/managing-private-cloud-apps-in-domains.md#associate-the-apps-deployment-to-the-domain)
 
 ## Create a cloud provider resource set to the domain
 
@@ -38,7 +38,7 @@ A cloud provider resource should be set to one domain only. For multiple domains
 :::note
 This section is only required for Ansible configuration management.
 :::
-To use Ansible to install and configure applications on Apps, the system administrator needs to perform several configurations on the Linux-based Execution Server that will be used to run the Ansible operations on the App's deployed VMs. For additional information, see [Ansible Playbook Development for Apps](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Config-Mng/Ansible.htm).
+To use Ansible to install and configure applications on Apps, the system administrator needs to perform several configurations on the Linux-based Execution Server that will be used to run the Ansible operations on the App's deployed VMs. For additional information, see [Ansible Playbook Development for Apps](../../../devguide/develop-config-management-scripts-for-apps/ansible-playbook-dev-for-apps/).
 
 ## Associate the Execution Server Selector attribute to the deployed App's family
 
@@ -87,11 +87,11 @@ To configure the App to be deployed in a specific domain, you need to associate 
     
     The **Apps** page is displayed.
     
-2. Create a new App or edit an existing one, as explained in [Managing App Templates](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Apps.htm).
+2. Create a new App or edit an existing one, as explained in [Managing App Templates](../../cloudshell-manage-dashboard/manage-app-templates/index.md).
     
     The App's configuration wizard is displayed.
     
-3. To make the App available to members of this domain, from the **Categories** dropdown list, select the categories associated to the domain. For details about creating domain categories, see [Managing domain categories](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Blprnt-Ctlg-Ctgs.htm#Managing2).
+3. To make the App available to members of this domain, from the **Categories** dropdown list, select the categories associated to the domain. For details about creating domain categories, see [Managing domain categories](../../cloudshell-manage-dashboard/managing-categories.md#managing-domain-categories).
     
     For example, "London":
     
@@ -107,6 +107,6 @@ To configure the App to be deployed in a specific domain, you need to associate 
 
 ## Related Topics
 
-- [Manage Dashboard Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Ovrv.htm)
-- [Managing App Templates](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Apps.htm)
-- [Apps Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Apps.htm)
+- [Manage Dashboard Overview](../../cloudshell-manage-dashboard/manage-dashboard-overview.md)
+- [Managing App Templates](../../cloudshell-manage-dashboard/manage-app-templates/index.md)
+- [Apps Overview](../../../intro/features/apps-overview.md)

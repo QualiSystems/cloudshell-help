@@ -35,7 +35,7 @@ This section explains how to set App creation and orchestration parameters as us
     
     The model's **Parameters** page is displayed.
     
-5. From the **Attributes** tab, select one of the following attributes and click **Edit Rules**. For parameter descriptions, see [App parameters](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfg-App-Dply-Types.htm?Highlight=Customizing%20App%20Deployment%20Types#App3).
+5. From the **Attributes** tab, select one of the following attributes and click **Edit Rules**. For parameter descriptions, see [App parameters](#app-parameters).
     
     The **Attribute Rules** dialog box is displayed.
     
@@ -48,7 +48,7 @@ This section explains how to set App creation and orchestration parameters as us
 
 **To publish App creation and/or orchestration parameters in 1<sup>st</sup> Gen shells:**
 
-1. Extend the shell, as explained in [Customizing a 2nd Gen Shell](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Shellfoundry.htm#Customiz).
+1. Extend the shell, as explained in [Customizing a 2nd Gen Shell](../../devguide/reference/shellfoundry.md#customizing-a-2nd-gen-shell).
 2. Extract the shell's project folder to your local computer.
 3. Open the project folder in your preferred IDE.
 4. From the shell's `deployments` folder, open the `deployment-path.yaml`.
@@ -69,7 +69,7 @@ This section explains how to set App creation and orchestration parameters as us
 
 This section explains how to modify the default settings of certain App creation and orchestration parameters that are used when creating Apps in the **Manage** dashboard.
 :::note
-These parameters are used by CloudShell's **Setup** and **Teardown** scripts. For additional information, see [Configure Blueprint Orchestration](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Crt-Blprnt/Blprnt-Blprnt-Orchs.htm).
+These parameters are used by CloudShell's **Setup** and **Teardown** scripts. For additional information, see [Configure Blueprint Orchestration](../../portal/blueprints/creating-blueprints/configure-orchestration.md).
 :::
 ### Modifying App parameter defaults for 1<sup>st</sup> Gen shells
 
@@ -96,7 +96,7 @@ These parameters are used by CloudShell's **Setup** and **Teardown** scripts. Fo
     
     The model's **Parameters** page is displayed.
     
-5. From the **Attributes** tab, select one of the following attributes and click **Edit Rules**. For parameter descriptions, see [App parameters](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfg-App-Dply-Types.htm?Highlight=Customizing%20App%20Deployment%20Types#App3).
+5. From the **Attributes** tab, select one of the following attributes and click **Edit Rules**. For parameter descriptions, see [App parameters](#app-parameters).
     
     The **Attribute Rules** dialog box is displayed.
     
@@ -113,7 +113,7 @@ These parameters are used by CloudShell's **Setup** and **Teardown** scripts. Fo
 
 **To modify App parameter defaults (2<sup>nd</sup> Gen):**
 
-1. Extend the shell, as explained in [Customizing a 2nd Gen Shell](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Shellfoundry.htm#Customiz).
+1. Extend the shell, as explained in [Customizing a 2nd Gen Shell](../../devguide/reference/shellfoundry.md#customizing-a-2nd-gen-shell).
 2. Extract the shell's project folder to your local computer.
 3. Open the project folder in your preferred IDE.
 4. In the shell's `deployments` folder, open `deployment-path.yaml`.
@@ -185,7 +185,7 @@ These parameters are used by CloudShell's **Setup** and **Teardown** scripts. Fo
 
 ## Related Topics
 
-- [Add an AWS EC2 Cloud Provider Resource](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-AWS-Cld-Prvdr-Rsc.htm)
-- [Add an Azure Cloud Provider Resource](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Cld-Prvdr-Rsc.htm)
-- [Add VMware vCenter Cloud Provider Resource](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/vCenter-Cld-Prvdr-Rsc.htm)
-- [Developing Custom Cloud Provider Shells](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Cld-Prvdrs/Developing-Cloud-Shells.htm)
+- [Add an AWS EC2 Cloud Provider Resource](./public-cloud-provider-support-in-cloudshell/aws-integration-and-configuration/aws-integration/add-an-aws-ec2-cloud-provider-resource.md)
+- [Add an Azure Cloud Provider Resource](./public-cloud-provider-support-in-cloudshell/microsoft-azure-integration-and-configuration/microsoft-azure-integration/add-an-azure-cloud-provider-resource.md)
+- [Add VMware vCenter Cloud Provider Resource](./private-cloud-provider-support-in-cloudshell/vmware-vcenter-integration-and-configuration/add-vmware-vcenter-cloud-provider-resource.md)
+- [Developing Custom Cloud Provider Shells](../../devguide/develop-custom-cloud-provider-shells/)

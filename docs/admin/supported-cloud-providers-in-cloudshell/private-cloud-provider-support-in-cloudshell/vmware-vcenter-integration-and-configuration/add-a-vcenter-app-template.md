@@ -60,7 +60,7 @@ The App template defines the settings and configurations of the VM to be deploye
     Select a category from the dropdown list. You can select additional categories. Examples of categories are: applications, networking and VLAN.
 
     :::note Notes
-    - The category must be associated with the domain in which the required cloud provider resides. For information about domain categories, see [Managing domain categories](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Blprnt-Ctlg-Ctgs.htm#Managing2).
+    - The category must be associated with the domain in which the required cloud provider resides. For information about domain categories, see [Managing domain categories](../../../cloudshell-manage-dashboard/managing-categories.md#managing-domain-categories).
     - It is recommended to use up to a 2-level hierarchy when organizing the **Add App / Service** catalog (i.e. root and sub-category).
     - In the **Add App / Service** side pane, Apps are displayed in the root category only. This includes services associated to sub-categories.
     :::
@@ -116,7 +116,7 @@ The App template defines the settings and configurations of the VM to be deploye
             
 
         :::note Notes
-        - The value configured here overrides the configuration in the vCenter cloud provider resource, see [Add VMware vCenter Cloud Provider Resource](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/vCenter-Cld-Prvdr-Rsc.htm).
+        - The value configured here overrides the configuration in the vCenter cloud provider resource, see [Add VMware vCenter Cloud Provider Resource](./add-vmware-vcenter-cloud-provider-resource.md).
         - After save has ended, the VM returns to its state prior to saving, regardless of the behavior during the save.
         :::
                     </td>
@@ -125,11 +125,11 @@ The App template defines the settings and configurations of the VM to be deploye
                     <td>Saved Sandbox Storage</td>
                     <td>All</td>
                     <td>
-                    (Applies to the **Save and Restore** paid add-on) During the saving process, CloudShell creates a clone of the sandbox's App VMs in this vCenter storage, which CloudShell will later use to restore the VM when the user restores the saved sandbox. See [Save a Sandbox](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Sv.htm) for more information.
+                    (Applies to the **Save and Restore** paid add-on) During the saving process, CloudShell creates a clone of the sandbox's App VMs in this vCenter storage, which CloudShell will later use to restore the VM when the user restores the saved sandbox. See [Save a Sandbox](../../../../portal/sandboxes/sandbox-workspace/save-sandbox.md) for more information.
 
         For storage purposes, these VM clones can be stored in a different data storage than the one configured in the **VM Storage** attribute defined on the vCenter cloud provider resource. The storage can be either a datastore or a datastore cluster. For example: datastore1 or clustername/datastore1.
 
-        - **Note**: The value configured here overrides the configuration in the vCenter cloud provider resource, see [Add VMware vCenter Cloud Provider Resource](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/vCenter-Cld-Prvdr-Rsc.htm).
+        - **Note**: The value configured here overrides the configuration in the vCenter cloud provider resource, see [Add VMware vCenter Cloud Provider Resource](./add-vmware-vcenter-cloud-provider-resource.md).
         </td>
                 </tr>
                 <tr>
@@ -221,7 +221,7 @@ The App template defines the settings and configurations of the VM to be deploye
             
 
         :::note Notes
-        - The value configured here overrides the configuration in the vCenter cloud provider resource, see [Add VMware vCenter Cloud Provider Resource](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/vCenter-Cld-Prvdr-Rsc.htm).
+        - The value configured here overrides the configuration in the vCenter cloud provider resource, see [Add VMware vCenter Cloud Provider Resource](./add-vmware-vcenter-cloud-provider-resource.md).
         - After save has ended, the VM returns to its state prior to saving, regardless of the behavior during the save.
         :::
                     </td>
@@ -230,11 +230,11 @@ The App template defines the settings and configurations of the VM to be deploye
                     <td>Saved Sandbox Storage</td>
                     <td>All</td>
                     <td>
-                    (Applies to the **Save and Restore** paid add-on) During the saving process, CloudShell creates a clone of the sandbox's App VMs in this vCenter storage, which CloudShell will later use to restore the VM when the user restores the saved sandbox. See [Save a Sandbox](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Sv.htm) for more information.
+                    (Applies to the **Save and Restore** paid add-on) During the saving process, CloudShell creates a clone of the sandbox's App VMs in this vCenter storage, which CloudShell will later use to restore the VM when the user restores the saved sandbox. See [Save a Sandbox](../../../../portal/sandboxes/sandbox-workspace/save-sandbox.md) for more information.
 
         For storage purposes, these VM clones can be stored in a different data storage than the one configured in the **VM Storage** attribute defined on the vCenter cloud provider resource. The storage can be either a datastore or a datastore cluster. For example: datastore1 or clustername/datastore1.
         :::note
-        The value configured here overrides the configuration in the vCenter cloud provider resource, see [Add VMware vCenter Cloud Provider Resource](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/vCenter-Cld-Prvdr-Rsc.htm).
+        The value configured here overrides the configuration in the vCenter cloud provider resource, see [Add VMware vCenter Cloud Provider Resource](./add-vmware-vcenter-cloud-provider-resource.md).
         :::
                     </td>
                 </tr>
@@ -339,7 +339,7 @@ The App template defines the settings and configurations of the VM to be deploye
             
 
         :::note Notes
-        - The value configured here overrides the configuration in the vCenter cloud provider resource, see [Add VMware vCenter Cloud Provider Resource](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/vCenter-Cld-Prvdr-Rsc.htm).
+        - The value configured here overrides the configuration in the vCenter cloud provider resource, see [Add VMware vCenter Cloud Provider Resource](./add-vmware-vcenter-cloud-provider-resource.md).
         - After save has ended, the VM returns to its state prior to saving, regardless of the behavior during the save.
         :::
                     </td>
@@ -348,11 +348,11 @@ The App template defines the settings and configurations of the VM to be deploye
                     <td>Saved Sandbox Storage</td>
                     <td>All</td>
                     <td>
-                    (Applies to the **Save and Restore** paid add-on) During the saving process, CloudShell creates a clone of the sandbox's App VMs in this vCenter storage, which CloudShell will later use to restore the VM when the user restores the saved sandbox. See [Save a Sandbox](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Sv.htm) for more information.
+                    (Applies to the **Save and Restore** paid add-on) During the saving process, CloudShell creates a clone of the sandbox's App VMs in this vCenter storage, which CloudShell will later use to restore the VM when the user restores the saved sandbox. See [Save a Sandbox](../../../../portal/sandboxes/sandbox-workspace/save-sandbox.md) for more information.
 
         For storage purposes, these VM clones can be stored in a different data storage than the one configured in the **VM Storage** attribute defined on the vCenter cloud provider resource. The storage can be either a datastore or a datastore cluster. For example: datastore1 or clustername/datastore1.
         :::note
-        The value configured here overrides the configuration in the vCenter cloud provider resource, see [Add VMware vCenter Cloud Provider Resource](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/vCenter-Cld-Prvdr-Rsc.htm).
+        The value configured here overrides the configuration in the vCenter cloud provider resource, see [Add VMware vCenter Cloud Provider Resource](./add-vmware-vcenter-cloud-provider-resource.md).
         :::
                     </td>
                 </tr>
@@ -438,7 +438,7 @@ The App template defines the settings and configurations of the VM to be deploye
             
 
         :::note Notes
-        - The value configured here overrides the configuration in the vCenter cloud provider resource, see [Add VMware vCenter Cloud Provider Resource](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/vCenter-Cld-Prvdr-Rsc.htm).
+        - The value configured here overrides the configuration in the vCenter cloud provider resource, see [Add VMware vCenter Cloud Provider Resource](./add-vmware-vcenter-cloud-provider-resource.md).
         - After save has ended, the VM returns to its state prior to saving, regardless of the behavior during the save.
         :::
                     </td>
@@ -447,11 +447,11 @@ The App template defines the settings and configurations of the VM to be deploye
                     <td>Saved Sandbox Storage</td>
                     <td>All</td>
                     <td>
-                    (Applies to the **Save and Restore** paid add-on) During the saving process, CloudShell creates a clone of the sandbox's App VMs in this vCenter storage, which CloudShell will later use to restore the VM when the user restores the saved sandbox. See [Save a Sandbox](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Sv.htm) for more information.
+                    (Applies to the **Save and Restore** paid add-on) During the saving process, CloudShell creates a clone of the sandbox's App VMs in this vCenter storage, which CloudShell will later use to restore the VM when the user restores the saved sandbox. See [Save a Sandbox](../../../../portal/sandboxes/sandbox-workspace/save-sandbox.md) for more information.
 
         For storage purposes, these VM clones can be stored in a different data storage than the one configured in the **VM Storage** attribute defined on the vCenter cloud provider resource. The storage can be either a datastore or a datastore cluster. For example: datastore1 or clustername/datastore1.
         :::note
-        The value configured here overrides the configuration in the vCenter cloud provider resource, see [Add VMware vCenter Cloud Provider Resource](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/vCenter-Cld-Prvdr-Rsc.htm).
+        The value configured here overrides the configuration in the vCenter cloud provider resource, see [Add VMware vCenter Cloud Provider Resource](./add-vmware-vcenter-cloud-provider-resource.md).
         :::
                     </td>
                 </tr>
@@ -509,7 +509,7 @@ The App template defines the settings and configurations of the VM to be deploye
 
     ![](/Images/CloudShell-Portal/Manage/ConfigurationManagement.png)
     :::tip
-    To learn how to develop custom scripts and Ansible playbooks, including examples, and set up support for the desired configuration management tool, see [Developing Configuration Management Scripts for Apps](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Config-Mng/Developing-Config-Management.htm).
+    To learn how to develop custom scripts and Ansible playbooks, including examples, and set up support for the desired configuration management tool, see [Developing Configuration Management Scripts for Apps](../../../../devguide/develop-config-management-scripts-for-apps/index.md).
     :::
     :::note Notes
     - To run configuration management on an Azure App, make sure the App's VM size is Basic\_A2 or larger.
@@ -555,7 +555,7 @@ The App template defines the settings and configurations of the VM to be deploye
         - **SSH** if the VM has a Linux OS
         - **Windows Remote Management** if the VM has a Windows OS
         :::note
-        To run configuration management on a Windows VM, the VM must have WinRM enabled. For details, see [Enable WinRM on Windows VMs to Support Configuration Management](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Config-Mng/Cnfg-WinRM-for-CM.htm).
+        To run configuration management on a Windows VM, the VM must have WinRM enabled. For details, see [Enable WinRM on Windows VMs to Support Configuration Management](../../../../devguide/enable-winrm-on-win-vm-for-cfg-mng.md).
         :::
                     </td>
                 </tr>
@@ -665,7 +665,7 @@ The App template defines the settings and configurations of the VM to be deploye
             </tbody>
         </table>
 
-      1. To enable the end-user to rerun the App's configuration management on the deployed App in the sandbox, select **Allow rerunning configuration management for resources deployed from the App**. Once the App's deployment completes, a **Rerun Configuration Management** command is included in the deployed App's **Application Commands** pane. For details, see [https://help.quali.com/Online%2520Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Apps-Run-Cmnds.htm](https://help.quali.com/Online%2520Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Apps-Run-Cmnds.htm). This is useful for rolling back the App's VM to its original state.
+      1. To enable the end-user to rerun the App's configuration management on the deployed App in the sandbox, select **Allow rerunning configuration management for resources deployed from the App**. Once the App's deployment completes, a **Rerun Configuration Management** command is included in the deployed App's **Application Commands** pane. For details, see [Run App Commands](../../../../portal/sandboxes/sandbox-workspace/apps/run-app-commands.md). This is useful for rolling back the App's VM to its original state.
       2. To enable blueprint and sandbox owners to modify the App's Configuration Management details, select **Allow blueprint/sandbox owners to modify the App's Configuration Management**. The following details can be modified: playbook/script, authentication details, inventory groups, and parameters. Note that the modifications only apply to the blueprint or sandbox of the instance.
       3. Optionally click the **Add New Script/Playbook** link at the bottom right to add additional custom scripts/Ansible playbooks to the App. The scripts will run in their display order, from top to bottom. You can drag scripts up or down to rearrange.
       4. To change the script's alias, click the script's name and change as appropriate.
@@ -675,7 +675,7 @@ The App template defines the settings and configurations of the VM to be deploye
 
     ![](/Images/CloudShell-Portal/Manage/AppResource.png)
     :::important
-    To help sandbox end-users connect to the VM, it is recommended to include the **User** and **Password** in the blueprint's instructions. For additional information, see [Add Instructions](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Crt-Blprnt/Blprnt-Instr.htm).
+    To help sandbox end-users connect to the VM, it is recommended to include the **User** and **Password** in the blueprint's instructions. For additional information, see [Add Instructions](../../../../portal/blueprints/creating-blueprints/add-instructions.md).
     :::
 
     <table>
