@@ -2,6 +2,7 @@
   "label": "Managing Automation Suites",
   "position": 3,
   "link": {
+    "slug": "portal/job-scheduling/manage-automation-suites/",
     "type": "generated-index",
     "description": "This article explains how to create, edit and delete your automation suites, jobs and tests."
   }

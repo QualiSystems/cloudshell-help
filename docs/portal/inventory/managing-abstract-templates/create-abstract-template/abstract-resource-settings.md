@@ -37,7 +37,7 @@ Alternatively, you can choose to share the resource. This strategy is especially
 
 This setting determines how the abstract resource will behave when saving the sandbox. The abstract resource's template determines the abstract resource's behavior in the blueprint, but blueprint designers can change it.
 :::note
-The blueprint's abstract template save behavior policy determines the behavior of the abstract resources in the blueprint. For additional information, see [Define the Blueprint's Properties](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Crt-Blprnt/Blprnt-Prps.htm).
+The blueprint's abstract template save behavior policy determines the behavior of the abstract resources in the blueprint. For additional information, see [Define the Blueprint's Properties](../../../blueprints/creating-blueprints/blueprint-properties.md).
 :::
 **To change the save behavior for an abstract resource:**
 
@@ -65,7 +65,7 @@ Model requirements limit the solution of the abstract resource to specific model
     :::note
     Model priority only applies to the main resource (not to sub-resources).
     :::
-5. To have the user select the suitable model when reserving the blueprint, click ![](/Images/CloudShell-Portal/Lab-Management/Working-with-Resources/PublishButton_29x29.png). See [Publishing abstract resource user inputs](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/INVN/Abst-Rsrc-Tmplt-Sttngs.htm?Highlight=Abstract%20Resource%20Settings#Publishi).
+5. To have the user select the suitable model when reserving the blueprint, click ![](/Images/CloudShell-Portal/Lab-Management/Working-with-Resources/PublishButton_29x29.png). See [Publishing abstract resource user inputs](#publishing-abstract-resource-user-inputs).
     
 6. Click **Save Changes**.
 
@@ -148,7 +148,7 @@ Unless the main abstract resource is also connectible (doubles as a port), addin
 
 Creating connectivity requirements between an abstract resource and another endpoint in the blueprint diagram follows the same process as with any other resource. However, the following need to be considered:
 
-- CloudShell does not take into account VLAN connectivity requirements when resolving an abstract resource in the sandbox. It is therefore recommended to use physical layer connectivity for connections involving one or more abstract resources. For additional information, see [Add Physical Network Connectivity Requirements](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Rsc-Cnct/Phys-Ntwrk-Crt.htm).
+- CloudShell does not take into account VLAN connectivity requirements when resolving an abstract resource in the sandbox. It is therefore recommended to use physical layer connectivity for connections involving one or more abstract resources. For additional information, see [Add Physical Network Connectivity Requirements](../../../sandboxes/sandbox-workspace/add-connectivity/add-physical-network/add-phy-net-req/index.md).
 - Abstract resources and sub-resources assigned a quantity value greater than one are not connectible to other devices in the blueprint via routes.
 - Shared ports cannot be used for connectivity. Therefore, make sure each sub-resource that represents a port in the abstract resource is unshared. To do this, in the abstract resource dialog box, select the sub-resource and select the **I need the entire resource** option.
     
@@ -242,5 +242,5 @@ For published resource quantities, the default value provided for the quantity b
 
 ## Related Topics
 
-- [Inventory Dashboard](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/INVN/Invnt-Dshbrd.htm)
-- [Add Abstract Resources](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/RSRC-n-SRVC-Wrk-wth-Abst-Rsrc.htm)
+- [Inventory Dashboard](../../inventory-dashboard.md)
+- [Add Abstract Resources](../../../blueprints/creating-blueprints/abstract-resources.md)

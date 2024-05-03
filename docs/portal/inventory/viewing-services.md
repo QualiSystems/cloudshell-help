@@ -15,5 +15,5 @@ The **Services** page lists the Apps and services associated with the current do
 
 ## Related Topics
 
-- [Apps in Sandboxes](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Use-Apps.htm)
-- [Services in Sandboxes](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Use-Srvc.htm)
+- [Apps in Sandboxes](../../portal/sandboxes/sandbox-workspace/apps)
+- [Services in Sandboxes](../sandboxes/sandbox-workspace/services.md)

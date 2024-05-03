@@ -2,9 +2,9 @@
 
 In the **Inventory** dashboard, administrators can add resources based on Shell packages and cloud provider resources for App deployments.
 
-In order to add resources that are based on a Shell, the administrator needs to first import that Shell's package into CloudShell Portal. The Shells are preconfigured with the required settings, attributes, and automation. For additional information, see [Shells Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Shells.htm).
+In order to add resources that are based on a Shell, the administrator needs to first import that Shell's package into CloudShell Portal. The Shells are preconfigured with the required settings, attributes, and automation. For additional information, see [Shells Overview](../../../../intro/features/shells.md).
 :::note Notes
-- CloudShell administrators can download the required Shell package from [Quali Repositories](https://github.com/orgs/QualiSystems/repositories) and import it into CloudShell Portal. For details, see [Managing Shells](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Shells.htm).
+- CloudShell administrators can download the required Shell package from [Quali Repositories](https://github.com/orgs/QualiSystems/repositories) and import it into CloudShell Portal. For details, see [Managing Shells](../../../../admin/cloudshell-manage-dashboard/managing-shells.md).
 - If you are populating your CloudShell inventory for the first time, we recommend to use the **CloudShell Autodiscovery** tool, which allows you to load multiple resources at the same time. For additional information, see the tool's [readme](https://github.com/QualiSystems/cloudshell-autodiscovery/blob/master/README.md).
 :::
 
@@ -45,6 +45,6 @@ In order to add resources that are based on a Shell, the administrator needs to 
 ## Related Topics
 
 - [Inventory Dashboard](../../inventory-dashboard)
-- [Traffic Generators Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Traffic-Gens.htm)
-- [Editing Resources from the Inventory Dashboard](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/INVN/Edit-Rsrc-in-Invnt.htm)
-- [Discovering Inventory Resources](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/INVN/Dscvr-Rsrc-in-Invnt.htm)
+- [Traffic Generators Overview](../../../../intro/features/traffic-gens/index.md)
+- [Editing Resources from the Inventory Dashboard](../editing-resources-from-inventory-dashboard.md)
+- [Discovering Inventory Resources](../discovering-resources.md)
