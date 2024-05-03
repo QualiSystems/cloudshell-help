@@ -107,7 +107,7 @@ Blueprints of type ‘view’ cannot be reserved.
     
     ![](/Images/CloudShell-Portal/Lab-Management/Reservations/SetupStageConfiguration.png)
     
-    Note that during the Setup process, the sandbox is locked in CloudShell Portal and cannot be modified - see [Unlocking sandboxes for use during the Setup process](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm#Locking2).  
+    Note that during the Setup process, the sandbox is locked in CloudShell Portal and cannot be modified - see [Unlocking sandboxes for use during the Setup process](../../admin/setting-up-cloudshell/cloudshell-configuration-options/advanced-cloudshell-customizations.md#unlocking-sandboxes-for-use-during-the-setup-process).  
     The default setup process has 4 stages:
     
     - **Preparation** \- Prepare network connections for the sandbox's Apps and any additional custom preparations.

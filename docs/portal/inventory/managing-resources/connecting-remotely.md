@@ -27,4 +27,4 @@ This applies to resources that support remote connections. It is possible to ena
 
 - [Inventory Dashboard](../inventory-dashboard)
 - [Connect Remotely to Devices with QualiX (RDP, SSH, Telnet)](../../sandboxes/sandbox-workspace/resources/connect-remotely-with-qualix) (from the sandbox workspace)
-- [QualiX Installation and Configuration](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Qualix.htm)
+- [QualiX Installation and Configuration](../../../install-configure/qualix/index.md)

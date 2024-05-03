@@ -20,7 +20,7 @@ The basic creation and implementation process is as follows:
     
 2. Set up the Cloud Provider interface. In other words, implement the cloud provider driver that will be called by the server when interaction with the cloud provider is needed.
     
-3. If the shell requires the use of Python dependencies, which aren’t available in the public PyPi repository, add them to the local PyPi Server repository. See [PyPi Server - Managing Python Shell and Script Dependencies](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/pypi-server-managing-python-shell-and-script-dependencies.md).
+3. If the shell requires the use of Python dependencies, which aren’t available in the public PyPi repository, add them to the local PyPi Server repository. See [PyPi Server - Managing Python Shell and Script Dependencies](../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/pypi-server-managing-python-shell-and-script-dependencies.md).
     
 4. Debug the shell.
     

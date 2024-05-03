@@ -22,4 +22,4 @@ To delete, you must log in as administrator of the domain in which the abstract 
 
 ## Related Topics
 
-- [Inventory Dashboard](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/INVN/Invnt-Dshbrd.htm)
+- [Inventory Dashboard](../inventory-dashboard.md)

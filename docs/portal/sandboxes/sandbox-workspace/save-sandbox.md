@@ -86,7 +86,7 @@ In the following tables, you will find a detailed explanation of the sandbox com
 
 :::note Notes
 
-- Resources selected from an abstract resource (when the original sandbox was reserved) are saved as is, not as abstracts. However, starting with CloudShell 9.3, resources based on abstract resources behave according to the abstract's defined save behavior - see [Save behavior for abstract resources](../../inventory/managing-abstract-templates/create-abstract-template/viewing-abstract-templates.md#save-behavior-for-abstract-resources).
+- Resources selected from an abstract resource (when the original sandbox was reserved) are saved as is, not as abstracts. However, starting with CloudShell 9.3, resources based on abstract resources behave according to the abstract's defined save behavior - see [Save behavior for abstract resources](../../inventory/managing-abstract-templates/create-abstract-template/abstract-resource-settings.md#save-behavior-for-abstract-resources).
 - Device configurations are not saved as part of the saving procedure. However, you can extend the Save and Restore out-of-the-box orchestration scripts to do that, as explained in [Save/Restore Physical Resource Configurations Examples](../../../devguide/develop-orch-scripts/cs-oob-orch/index.md#saverestore-physical-resource-configurations-examples).
 :::
             </td>

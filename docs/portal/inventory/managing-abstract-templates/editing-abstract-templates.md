@@ -19,9 +19,9 @@ To edit, you must log in as administrator of the domain in which the abstract re
    
     The **Edit Resource Template** wizard is displayed, in the properties page.
     
-4. Make the necessary changes. For additional information, see [Abstract Resource Settings](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/INVN/Abst-Rsrc-Tmplt-Sttngs.htm).
+4. Make the necessary changes. For additional information, see [Abstract Resource Settings](../managing-abstract-templates/create-abstract-template/index.md).
 5. Click **Save Changes**.
 
 ## Related Topics
 
-- [Inventory Dashboard](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/INVN/Invnt-Dshbrd.htm)
+- [Inventory Dashboard](../inventory-dashboard.md)

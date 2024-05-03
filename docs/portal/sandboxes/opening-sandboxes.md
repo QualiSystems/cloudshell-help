@@ -40,4 +40,4 @@ Unlike blueprint links, which must be generated using the API, the sandbox link 
 
 ## Related Topics
 
-- [Opening Blueprints](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Crt-Blprnt/Blprnt-Open.htm)
+- [Opening Blueprints](../blueprints/opening-blueprints.md)

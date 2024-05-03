@@ -57,7 +57,7 @@ To change your password:
 
 ## Resetting your password
 
-Note that this option needs to be enabled by your administrator, as explained in [Enabling password reset](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm#Enabling4).
+Note that this option needs to be enabled by your administrator, as explained in [Enabling password reset](../../admin/setting-up-cloudshell/cloudshell-configuration-options/advanced-cloudshell-customizations.md#enabling-password-reset).
 
 - If you forgot your password, click the Forgot your password? link in the login page to reset your password.
     

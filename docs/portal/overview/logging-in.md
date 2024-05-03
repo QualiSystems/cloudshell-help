@@ -29,6 +29,6 @@ To log into CloudShell:
 6. Click Login.
 7. If this is your first time logging in to CloudShell Portal with this user from this computer, select your desired timezone and again click Login.
     
-    The timezone details are stored for subsequent logins and can be checked and/or modified in the User Menu in CloudShell Portal. For more information, see [Changing the time zone](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/CS-Settings.htm#Change).
+    The timezone details are stored for subsequent logins and can be checked and/or modified in the User Menu in CloudShell Portal. For more information, see [Changing the time zone](./portal-settings.md#changing-the-time-zone).
     
     ![](/Images/CloudShell-Portal/LoginPageSelectTimezone.png)

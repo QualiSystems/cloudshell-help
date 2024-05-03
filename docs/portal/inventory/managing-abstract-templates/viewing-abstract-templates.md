@@ -15,4 +15,4 @@ In the **Abstract Templates** page, you can view a repository of the abstract re
 
 ## Related Topics
 
-- [Inventory Dashboard](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/INVN/Invnt-Dshbrd.htm)
+- [Inventory Dashboard](../inventory-dashboard.md)

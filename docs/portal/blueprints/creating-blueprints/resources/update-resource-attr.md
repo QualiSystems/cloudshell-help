@@ -26,4 +26,4 @@ You can prepare or assign, from within the blueprint workspace, resource attribu
 
 ## Related Topics
 
-- [Blueprint Workspace](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Blprnt-Brws-Wrkspc.htm)
+- [Blueprint Workspace](../../blueprint-workspace/index.md)

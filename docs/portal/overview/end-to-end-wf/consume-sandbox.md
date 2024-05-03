@@ -16,7 +16,7 @@ To integrate CloudShell with your CI tool:
 2. Configure the CloudShell connection details on your CI tool, as explained in the plugin's documentation.
 3. Design a blueprint that suits your CI process.
     
-    - Make sure the blueprint's Setup script includes all the automation that is required for the test. For details, see CloudShell Dev Guide's [CloudShell's OOB Orchestration](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Orch-Scripts/CloudShell-OOB-Orch.htm).
+    - Make sure the blueprint's Setup script includes all the automation that is required for the test. For details, see CloudShell Dev Guide's [CloudShell's OOB Orchestration](../../../devguide/develop-orch-scripts/cs-oob-orch/index.md).
     - In addition, the CI tool must wait for the sandbox's setup process to complete before running the test. Note that CloudShell's Default Sandbox Setup script provides this functionality.
 4. Create your first build in the CI tool, as detailed in the plugin's documentation. This includes specifying the blueprint's name, duration, inputs, and any optional details, as appropriate.
     

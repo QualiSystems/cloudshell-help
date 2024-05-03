@@ -35,7 +35,7 @@ Customizing an automation suite does not change the automation suite template's 
         </tr>
         <tr>
             <td>Inputs</td>
-            <td>If the automation suite's blueprint or tests have published inputs, use this area to set the values of the published and unpublished inputs. Multiline values are supported for test input string attributes, as explained in <a href="https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/JOB-SCHDL/New-Autmt-Suite.htm#Add3" class="MCXref xref">Add tests to a job</a>.</td>
+            <td>If the automation suite's blueprint or tests have published inputs, use this area to set the values of the published and unpublished inputs. Multiline values are supported for test input string attributes, as explained in [Add tests to a job](../manage-automation-suites/add-suites.md#add-tests-to-a-job).</td>
         </tr>
     </tbody>
     </table>
