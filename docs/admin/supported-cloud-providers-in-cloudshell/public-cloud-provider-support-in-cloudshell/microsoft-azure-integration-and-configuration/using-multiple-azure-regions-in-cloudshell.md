@@ -22,4 +22,4 @@ For illustration purposes, consider this scenario of a sandbox deploying subnets
     - Set region A's cloud provider resource to ignore the first half of the range (1 - 8,388,608)
         
     - Set region B's cloud provider resource to ignore the second half of the range (8,388,609 - 16,777,216)
-- To set up network connectivity between each cloud provider's Apps, see [Subnet Connectivity - Points to Consider](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-Subnets-Cnsdr.htm).
+- To set up network connectivity between each cloud provider's Apps, see [Subnet Connectivity - Points to Consider](../../../setting-up-cloudshell/inventory-operations/connectivity-control/subnet-connectivity/subnet-connectivity--points-to-consider.md).

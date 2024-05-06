@@ -9,7 +9,7 @@ sidebar_position: 5
 1. To prepare Quali Server, configure the connection between the Management VPC and Quali Server via VPN, and register the Execution Servers on Quali Server.
 2. To complete the configuration, perform the following steps:
     1. Open the AWS console and identify the Management VPC listed in the **VPN Connections** summary.
-    2. Open the Management VPC’s VPN connection created in [Create a Management VPC and Networks using CloudFormation](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-Crt-Mng-VPC-Ntwrks.htm).
+    2. Open the Management VPC’s VPN connection created in [Create a Management VPC and Networks using CloudFormation](./create-a-management-vpc/index.md).
     3. Select the **Management VPC** and click **Download Configuration** according to the type of gateway you have on the Quali Server network side.
         
         ![](/Images/Admin-Guide/AWS-deployment-type/AWSDeploymentTypeInstallation.png)
@@ -26,4 +26,4 @@ sidebar_position: 5
         
         ![](/Images/Admin-Guide/AWS-deployment-type/CloudFormationRebootExecutionServers.png)
         
-5. Next, [Configure an Execution Server Selector for AWS EC2](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-Exec-Srv.htm).
+5. Next, [Configure an Execution Server Selector for AWS EC2](./configure-an-execution-server-selector-for-aws-ec2.md).

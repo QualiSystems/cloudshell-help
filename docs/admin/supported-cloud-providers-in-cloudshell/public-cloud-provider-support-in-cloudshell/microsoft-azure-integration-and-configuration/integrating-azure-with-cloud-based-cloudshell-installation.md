@@ -14,12 +14,12 @@ The process is as follows:
     
     - You can install all the required CloudShell components on this VM or use a combination of VMs in the same VNet.
     - Make sure the VNet has an address space that will not overlap with the CloudShell Sandbox VNet, which is "10.0.0.0/8". Something like "192.168.25.0/24".
-4. [Configure Azure API to work with CloudShell](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Cnfg-API.htm).
-5. Deploy the Azure template to create the management resource group and VNets, as explained in [Create a Management Resource Group and VNets](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Crt-Mng-RSc-Grp.htm).
+4. [Configure Azure API to work with CloudShell](./microsoft-azure-integration/configure-azure-api-to-work-with-cloudshell.md).
+5. Deploy the Azure template to create the management resource group and VNets, as explained in [Create a Management Resource Group and VNets](./microsoft-azure-integration/create-a-management-resource-group-and-vnets.md).
     
     - You can choose to create a new management resource group or select the CloudShell VM's resource group. However, if you deploy the Azure template in a different resource group, you will also need to create a peering between the CloudShell VM's VNet and the CloudShell management VNet.
     - In the template, make sure to select the **Internal** deployment mode.
-6. Connect the Execution Server to the CloudShell Server. For details, see [Connecting the Execution Server to Quali Server](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-VNET-Exec-Srv-Mng.htm#Connecti).
+6. Connect the Execution Server to the CloudShell Server. For details, see [Connecting the Execution Server to Quali Server](./managing-the-azure-execution-server.md#connecting-the-execution-server-to-quali-server).
     
 7. Create the Azure cloud provider resource and an App template.
     
@@ -36,7 +36,7 @@ The process is as follows:
 
 ### Related Topics
 
-- [Microsoft Azure Integration and Configuration](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Intgr-and-Cnfg.htm)
-- [Add an Azure Cloud Provider Resource](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Cld-Prvdr-Rsc.htm)
-- [Managing App Templates](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Apps.htm)
-- [Subnet Connectivity](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-Subnets.htm)
+- [Microsoft Azure Integration and Configuration](./microsoft-azure-integration/index.md)
+- [Add an Azure Cloud Provider Resource](./microsoft-azure-integration/add-an-azure-cloud-provider-resource.md)
+- [Managing App Templates](../../../cloudshell-manage-dashboard/manage-app-templates/index.md)
+- [Subnet Connectivity](../../../setting-up-cloudshell/inventory-operations/connectivity-control/subnet-connectivity/index.md)

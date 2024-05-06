@@ -37,7 +37,7 @@ The deployment architecture in AWS requires a **Management VPC** to be created f
     - **es-shells**: Execution server to be used for the deployment and management of the AWS instances. This execution server has access to AWS API and is associated with an AWS IAM role.
     - **es-commands**: Execution server to be used for running scripts and commands on the AWS instances. This execution server is associated with an empty AWS IAM role.
 - **NAT**: (Created in integrations where Quali Server IS NOT installed on AWS) Network address translation instance that enables internally deployed AWS instances to initiate outbound traffic to the Internet or other AWS services, while preventing the AWS instances from receiving inbound traffic from the Internet. Do not touch this instance.
-- **cloudshell-server**: Created when deploying a public Main CloudFormation template without VPN. It's the user's responsibility to install Quali Server on this instance. For details, see [Integrating AWS with Cloud-based CloudShell Installation](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-CS-on-AWS.htm).
+- **cloudshell-server**: Created when deploying a public Main CloudFormation template without VPN. It's the user's responsibility to install Quali Server on this instance. For details, see [Integrating AWS with Cloud-based CloudShell Installation](../../aws-integration-and-configuration/aws-integration/create-a-management-vpc/integrating-aws-with-cloud-based-cloudshell.md).
 :::note
 Keeping these instances running at all times entails a fixed monthly rate.
 :::
@@ -49,7 +49,7 @@ In dedicated VPC mode, the sandbox VPC is connected to the Management VPC using 
 
 :::note Notes:
 - AWS EC2 Apps in the same sandbox are actually on the same subnet and VPC, and can interact with each other.
-- CloudShell allows sandboxes to have multiple subnets. See [Subnet Connectivity](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-Subnets.htm).
+- CloudShell allows sandboxes to have multiple subnets. See [Subnet Connectivity](../../../../setting-up-cloudshell/inventory-operations/connectivity-control/subnet-connectivity/index.md).
 - When the sandbox ends, the Sandbox VPC along with all its components (the subnets, the App instances and the VPC Peering) are automatically deleted by CloudShell. In Shared VPC mode, the sandbox subnets and instances are deleted but the VPC infrastructure remains.
 - In dedicated mode, when the sandbox ends, the Sandbox VPC along with all its components (subnets, App instances and the VPC peering) are automatically deleted by CloudShell. In shared mode, the subnets and App instances are deleted but the shared VPC remains.
 - Amazon API enables you to retrieve a sandbox's VPC name using the **ReservationId** tag with the sandbox's ID. This can be used, for example, in real-time automation processes.
@@ -58,23 +58,23 @@ In dedicated VPC mode, the sandbox VPC is connected to the Management VPC using 
 
 For each AWS region you want to integrate with CloudShell, perform the following steps:
 
-1. [Create a Management VPC and Networks using CloudFormation](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-Crt-Mng-VPC-Ntwrks.htm#Create)
+1. [Create a Management VPC and Networks using CloudFormation](./create-a-management-vpc/index.md)
     
-    In order to deploy a shared VPC integration where CloudShell sandboxes are deployed to an existing VPC, you need to also create a Shared VPC stack to define the AWS account and shared VPC to use, as explained in [Create a Shared VPC using CloudFormation](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-Crt-Shared-VPC.htm).
+    In order to deploy a shared VPC integration where CloudShell sandboxes are deployed to an existing VPC, you need to also create a Shared VPC stack to define the AWS account and shared VPC to use, as explained in [Create a Shared VPC using CloudFormation](./create-a-shared-vpc-using-cloudformation.md).
     
-2. [Connect the Management VPC to Quali Server](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-Cnct-to-Quali.htm#Connect)
-3. [Configure an Execution Server Selector for AWS EC2](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-Exec-Srv.htm#Configur)
-4. [Add an AWS EC2 Cloud Provider Resource](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-AWS-Cld-Prvdr-Rsc.htm#Create2)
+2. [Connect the Management VPC to Quali Server](./connect-the-management-vpc-to-quali-server.md)
+3. [Configure an Execution Server Selector for AWS EC2](./configure-an-execution-server-selector-for-aws-ec2.md)
+4. [Add an AWS EC2 Cloud Provider Resource](./add-an-aws-ec2-cloud-provider-resource.md)
     
     For shared VPC mode, make sure to also configure the shared VPC parameters on the cloud provider resource.
     
-5. [Add an AWS EC2 App Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-AWS-App.htm)
-6. [Configure the Qualix Server for AWS EC2](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-Qualix-Srv.htm#Configur2)
+5. [Add an AWS EC2 App Template](./add-an-aws-ec2-app-template.md)
+6. [Configure the Qualix Server for AWS EC2](./configure-the-qualix-server-for-aws-ec2.md)
 
 ## Related Topics
 
-- [AWS Regions Supported by CloudShell](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-Regions.htm)
-- [Required Permissions for AWS Deployment](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-Cnfg-Rqrs.htm)
-- [Managing Public Cloud Apps in Domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Pblc-Cld-Apps-in-Dmns.htm)
-- [Cost Management of AWS EC2 Instances](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/AWS-Cst-Mngmnt.htm)
-- [Managing AWS EC2 Execution Servers](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-Exec-Srv-Mng.htm)
+- [AWS Regions Supported by CloudShell](./aws-regions-supported-by-cloudshell.md)
+- [Required Permissions for AWS Deployment](./required-permissions-for-aws-deployment.md)
+- [Managing Public Cloud Apps in Domains](../../managing-public-cloud-apps-in-domains.md)
+- [Cost Management of AWS EC2 Instances](../cost-management-of-aws-ec2-instances.md)
+- [Managing AWS EC2 Execution Servers](../managing-aws-ec2-execution-servers.md)

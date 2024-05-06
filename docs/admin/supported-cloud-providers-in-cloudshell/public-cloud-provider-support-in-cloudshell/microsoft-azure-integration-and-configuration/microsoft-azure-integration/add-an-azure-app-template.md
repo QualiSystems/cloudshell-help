@@ -7,7 +7,7 @@ sidebar_position: 5
 The App template defines the settings and configurations of the VM to be deployed in the sandbox as well as the application(s) to be installed on that VM.
 
 :::note Notes:
-- By default, all public cloud Apps of the same type in the same sandbox are deployed within the same subnet and therefore are connected to each other and isolated from other sandboxes. However, using the **Subnet** service, blueprint designers can set up multiple subnet networks in the sandbox, instead of having one default subnet for all the Apps of the same cloud provider. For details, see [Subnet Connectivity](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-Subnets.htm).
+- By default, all public cloud Apps of the same type in the same sandbox are deployed within the same subnet and therefore are connected to each other and isolated from other sandboxes. However, using the **Subnet** service, blueprint designers can set up multiple subnet networks in the sandbox, instead of having one default subnet for all the Apps of the same cloud provider. For details, see [Subnet Connectivity](../../../../setting-up-cloudshell/inventory-operations/connectivity-control/subnet-connectivity/index.md).
 - Public cloud App deployment requires the management network and subnet(s) to be prepared in advance as part of the sandbox **Setup** process. CloudShell's out-of-the-box **Setup** process does this. However, the blueprint must include at least one public cloud App to initiate the **Setup** script's connectivity preparation process for deployment in that public cloud.
 :::
 **To add a new Azure App template:**
@@ -64,7 +64,7 @@ The App template defines the settings and configurations of the VM to be deploye
     Select a category from the dropdown list. You can select additional categories. Examples of categories are: applications, networking and VLAN.
 
     :::note Notes:
-    - The category must be associated with the domain in which the required cloud provider resides. For information about domain categories, see [Managing domain categories](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Blprnt-Ctlg-Ctgs.htm#Managing2).
+    - The category must be associated with the domain in which the required cloud provider resides. For information about domain categories, see [Managing domain categories](../../../../cloudshell-manage-dashboard/managing-categories.md#managing-domain-categories).
     - It is recommended to use up to a 2-level hierarchy when organizing the **Add App / Service** catalog (i.e. root and sub-category).
     - In the **Add App / Service** side pane, Apps are displayed in the root category only. This includes services associated to sub-categories.
     :::
@@ -796,7 +796,7 @@ The App template defines the settings and configurations of the VM to be deploye
 
     ![](/Images/CloudShell-Portal/Manage/ConfigurationManagement.png)
     :::tip
-    To learn how to develop custom scripts and Ansible playbooks, including examples, and set up support for the desired configuration management tool, see [Developing Configuration Management Scripts for Apps](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Config-Mng/Developing-Config-Management.htm).
+    To learn how to develop custom scripts and Ansible playbooks, including examples, and set up support for the desired configuration management tool, see [Developing Configuration Management Scripts for Apps](../../.././../../devguide/develop-config-management-scripts-for-apps/index.md).
     :::
     :::note Notes:
     - To run configuration management on an Azure App, make sure the App's VM size is Basic_A2 or larger.
@@ -842,7 +842,7 @@ The App template defines the settings and configurations of the VM to be deploye
             - **SSH** if the VM has a Linux OS
             - **Windows Remote Management** if the VM has a Windows OS
             :::note
-            To run configuration management on a Windows VM, the VM must have WinRM enabled. For details, see [Enable WinRM on Windows VMs to Support Configuration Management](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Config-Mng/Cnfg-WinRM-for-CM.htm).
+            To run configuration management on a Windows VM, the VM must have WinRM enabled. For details, see [Enable WinRM on Windows VMs to Support Configuration Management](../../../../../devguide/enable-winrm-on-win-vm-for-cfg-mng.md).
             :::
                         </td>
                     </tr>
@@ -952,7 +952,7 @@ The App template defines the settings and configurations of the VM to be deploye
                 </tbody>
             </table>
 
-        2. To enable the end-user to rerun the App's configuration management on the deployed App in the sandbox, select **Allow rerunning configuration management for resources deployed from the App**. Once the App's deployment completes, a **Rerun Configuration Management** command is included in the deployed App's **Application Commands** pane. For details, see [Run App Commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Apps-Run-Cmnds.htm). This is useful for rolling back the App's VM to its original state.
+        2. To enable the end-user to rerun the App's configuration management on the deployed App in the sandbox, select **Allow rerunning configuration management for resources deployed from the App**. Once the App's deployment completes, a **Rerun Configuration Management** command is included in the deployed App's **Application Commands** pane. For details, see [Run App Commands](../../../../../portal/sandboxes/sandbox-workspace/apps/run-app-commands.md). This is useful for rolling back the App's VM to its original state.
         3. To enable blueprint and sandbox owners to modify the App's Configuration Management details, select **Allow blueprint/sandbox owners to modify the App's Configuration Management**. The following details can be modified: playbook/script, authentication details, inventory groups, and parameters. Note that the modifications only apply to the blueprint or sandbox of the instance.
         4. Optionally click the **Add New Script/Playbook** link at the bottom right to add additional custom scripts/Ansible playbooks to the App. The scripts will run in their display order, from top to bottom. You can drag scripts up or down to rearrange.
         5. To change the script's alias, click the script's name and change as appropriate.
@@ -964,7 +964,7 @@ The App template defines the settings and configurations of the VM to be deploye
 
     ![](/Images/CloudShell-Portal/Manage/AppResource.png)
     :::important
-    To help sandbox end-users connect to the VM, it is recommended to include the **User** and **Password** in the blueprint's instructions. For additional information, see [Add Instructions](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Crt-Blprnt/Blprnt-Instr.htm).
+    To help sandbox end-users connect to the VM, it is recommended to include the **User** and **Password** in the blueprint's instructions. For additional information, see [Add Instructions](../../../../../portal/blueprints/creating-blueprints/add-instructions.md).
     :::
 
     <table>

@@ -8,4 +8,4 @@ CloudShell supports the creation of custom routes in Azure sandboxes, allowing y
 
 To do this, you need to add to your blueprint a blueprint or custom setup script that will tell the Azure cloud provider resource to define the custom routing.
 
-For instructions and implementation examples, see [Custom Routing for Azure Apps](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Custom-Routing-for-Azure.htm) in the CloudShell Dev Guide chapter.
+For instructions and implementation examples, see [Custom Routing for Azure Apps](./custom-routing-for-azure-in-sandboxes.md) in the CloudShell Dev Guide chapter.
