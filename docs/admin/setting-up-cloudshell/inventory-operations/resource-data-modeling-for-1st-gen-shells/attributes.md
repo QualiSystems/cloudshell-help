@@ -253,7 +253,7 @@ See [Displaying attributes in BI](./attributes.md#displaying-attributes-in-bi).
 :::note
 Attribute named "model" will be automatically assigned with the rule **Displayed in Insight**.
 :::
-2. After setting the attribute rule in Resource Manager, the attribute will be added to the insight database (Table: ResourceAttributesValuesSummary). To use it in BI dashboards you need to refresh and rebuild the elastic cube, as explained in ["Refresh Insight ElastiCube" on page 1](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/BI/rfrsh-insght-elsticube.htm).
+1. After setting the attribute rule in Resource Manager, the attribute will be added to the insight database (Table: ResourceAttributesValuesSummary). To use it in BI dashboards you need to rebuild the elastic cube, as explained in [Build the Insight ElastiCube](../../../../install-configure/cs-insight-bi/install-insight/insight-configuration/build-elasticube.md).
 :::tip
 For performance reasons, the Insight database adds new attributes once every 24 hours, so you need to wait 24 hours before completing the next steps
 :::

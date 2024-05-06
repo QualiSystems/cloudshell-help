@@ -114,5 +114,5 @@ The Shared VPC option is supported in the AWS 2G shell and enables you to deplo
     7. Replace "\<shared role arn\>" with the shared role ARN. To find the shared VPC role ARN, open your AWS account in a new browser tab, open the shared VPC CloudFormation stack , click the **Outputs** tab and copy the **SharedVpcRoleArn** value.
     8. Click **Review policy** and then **Save changes**.
 2. Next, do one of the following:
-    - If Quali Server is installed in your on-prem network: [Connect the Management VPC to Quali Server](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-Cnct-to-Quali.htm).
-    - If Quali Server is also on AWS: [Configure an Execution Server Selector for AWS EC2](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-Exec-Srv.htm).
+    - If Quali Server is installed in your on-prem network: [Connect the Management VPC to Quali Server](./connect-the-management-vpc-to-quali-server.md).
+    - If Quali Server is also on AWS: [Configure an Execution Server Selector for AWS EC2](./configure-an-execution-server-selector-for-aws-ec2.md).

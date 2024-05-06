@@ -6,7 +6,7 @@ sidebar_position: 4
 
 The **Microsoft Azure** cloud provider enables the deployment of Azure virtual machines from an Azure image.
 :::tip
-We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which provides significant enhancements and capabilities, and is tamper-resistant from within CloudShell, ensuring your Azure cloud provider resources and Apps are in pristine condition. Useful articles: [Replacing the 1st Gen shell with a 2nd Gen version](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Converting-1G-Shells.htm#Migrate), [Cloud Provider Shells - Features and Capabilities Per Release](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Clp-capabilities.htm).
+We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which provides significant enhancements and capabilities, and is tamper-resistant from within CloudShell, ensuring your Azure cloud provider resources and Apps are in pristine condition. Useful articles: [Replacing the 1st Gen shell with a 2nd Gen version](../../../../../devguide/reference/migrate-1st-gen-shell-to-2nd-gen-shell.md#replacing-the-1st-gen-shell-with-a-2nd-gen-version), [Cloud Provider Shells - Features and Capabilities Per Release](../../../cloud-provider-2g-shells-features-and-capabilities.md).
 :::
 **To add an Azure cloud provider resource:**
 
@@ -78,7 +78,7 @@ We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which p
                 <td>
                 The ID of the Azure tenant that is associated with your Azure Active Directory (AAD) instance - called **Directory (tenant) ID** in Azure. For example: ccd13026-98e3-4e90-01f4-28e2afdf3213.
 
-    The tenant ID can be retrieved when creating the Azure API web application or from Azure CLI. For more information, see [Configure Azure API to work with CloudShell](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Cnfg-API.htm).
+    The tenant ID can be retrieved when creating the Azure API web application or from Azure CLI. For more information, see [Configure Azure API to work with CloudShell](./configure-azure-api-to-work-with-cloudshell.md).
                 </td>
             </tr>
             <tr>
@@ -87,7 +87,7 @@ We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which p
                 <td>
                 The Azure API web application's **Application (client) ID**.
 
-    The application ID allows CloudShell to access the Azure API and is generated as part of the web application’s configuration process. For more information, see [Configure Azure API to work with CloudShell](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Cnfg-API.htm).
+    The application ID allows CloudShell to access the Azure API and is generated as part of the web application’s configuration process. For more information, see [Configure Azure API to work with CloudShell](./configure-azure-api-to-work-with-cloudshell.md).
                 </td>
             </tr>
             <tr>
@@ -96,7 +96,7 @@ We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which p
                 <td>
                 The Azure API web application's **client secret**.
 
-    The application key allows CloudShell to access the Azure API and is generated as part of the Azure API web application’s configuration process. For more information, see [Configure Azure API to work with CloudShell](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Cnfg-API.htm).
+    The application key allows CloudShell to access the Azure API and is generated as part of the Azure API web application’s configuration process. For more information, see [Configure Azure API to work with CloudShell](./configure-azure-api-to-work-with-cloudshell.md).
                 </td>
             </tr>
             <tr>
@@ -179,7 +179,7 @@ We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which p
                 <td>
                 (This attribute needs to be added to the shell via the **Manage > Shells > Details / Edit** dialog box) This attribute points to a pre-defined group of execution servers (grouped by a common **Execution Server Selector** value). To make the association, enter the same value you specified on the execution server.
 
-    For additional information on managing App deployments per domains, see [Managing Public Cloud Apps in Domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Pblc-Cld-Apps-in-Dmns.htm).
+    For additional information on managing App deployments per domains, see [Managing Public Cloud Apps in Domains](../../managing-public-cloud-apps-in-domains.md).
                 </td>
             </tr>
         </tbody>
@@ -189,7 +189,7 @@ We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which p
     
     When the discovery process completes, a confirmation message is displayed. The cloud provider resource is displayed in the **Inventory** dashboard in CloudShell Portal and in Resource Manager Client.
     
-    To customize the App deployment types and publish App orchestration parameters, see [Customizing App Deployment Types](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfg-App-Dply-Types.htm)
+    To customize the App deployment types and publish App orchestration parameters, see [Customizing App Deployment Types](../../../customizing-app-deployment-types.md)
     
 
-9. Next, [Configure an Execution Server Selector for Azure](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-VNET-Exec-Srv.htm).
+9. Next, [Configure an Execution Server Selector for Azure](./configure-an-execution-server-selector-for-azure.md).

@@ -1,12 +1,12 @@
 # Create a Management VPC and Networks using CloudFormation
 
-The **CloudFormation** service creates the Management VPC, subnet within the Management VPC, and then launches three AWS EC2 instances, two with an execution server and one with QualiX. The execution servers then need to be configured to access the on-prem Quali Server. To set up a deployment where Quali Server is also installed on AWS, see [Integrating AWS with Cloud-based CloudShell Installation](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-CS-on-AWS.htm).
+The **CloudFormation** service creates the Management VPC, subnet within the Management VPC, and then launches three AWS EC2 instances, two with an execution server and one with QualiX. The execution servers then need to be configured to access the on-prem Quali Server. To set up a deployment where Quali Server is also installed on AWS, see [Integrating AWS with Cloud-based CloudShell Installation](./integrating-aws-with-cloud-based-cloudshell.md).
 :::note Important:
 We strongly recommend using the new and improved [AWS 2nd Gen shell](https://github.com/orgs/QualiSystems/discussions/1695). If you're using the 1<sup>st</sup> Gen version of the shell that comes out of the box with CloudShell, see [this version](https://help.quali.com/Online%20Help/2021.1/Portal/Content/Admn/VPC-Crt-Mng-VPC-Ntwrks.htm?Highlight=management%20vpc) of the online help.
 :::
 **To create a Management VPC and the required networks:**
 
-1. Make sure you have the information required for this process, as listed in [Required Permissions for AWS Deployment](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-Cnfg-Rqrs.htm).
+1. Make sure you have the information required for this process, as listed in [Required Permissions for AWS Deployment](../required-permissions-for-aws-deployment.md).
 2. As an admin, open your AWS management account, search for "cloudformation" and click the **CloudFormation** service.
     
     ![](/Images/Admin-Guide/AWS-deployment-type/CloudFormationSection.png)
@@ -19,7 +19,7 @@ We strongly recommend using the new and improved [AWS 2nd Gen shell](https://git
         - In an internal deployment, the QualiX instance has only a Private IP associated with it. The Private IP is accessible from the networks that are connected to the Management VPC (such as the network in which the Quali Server resides).
         - In an external deployment, the QualiX instance has a Public IP associated with it.
             
-    - **3_Shared_VPC.yaml**: Is optionally deployed after the **0_Main.yaml** and enables you to define an existing VPC that will host the cloud infrastructure (instead of creating a new sandbox VPC for each sandbox). Defines the shared VPC's account, IP ranges and transit gateway. For details, see [Create a Shared VPC using CloudFormation](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-Crt-Shared-VPC.htm).
+    - **3_Shared_VPC.yaml**: Is optionally deployed after the **0_Main.yaml** and enables you to define an existing VPC that will host the cloud infrastructure (instead of creating a new sandbox VPC for each sandbox). Defines the shared VPC's account, IP ranges and transit gateway. For details, see [Create a Shared VPC using CloudFormation](../create-a-shared-vpc-using-cloudformation.md).
 5. Click **Next**.
 6. In the **Specify Details** page, enter a **Stack name** and fill in the installation parameters.
     
@@ -34,7 +34,7 @@ We strongly recommend using the new and improved [AWS 2nd Gen shell](https://git
                 <td>
                 Determines how the network infrastructure is deployed. Options are:
 
-    - **NAT**: Used for internal deployment, where the QualiX instance has only a Private IP associated with it. This option doesn’t expose a public IP to the internet. This option deploys QualiX and the Execution Servers on AWS while CloudShell is installed on prem and communicates with the AWS stack via VPN. It is also possible to have CloudShell installed on AWS. For details, see [Integrating AWS with Cloud-based CloudShell Installation](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-CS-on-AWS.htm).
+    - **NAT**: Used for internal deployment, where the QualiX instance has only a Private IP associated with it. This option doesn’t expose a public IP to the internet. This option deploys QualiX and the Execution Servers on AWS while CloudShell is installed on prem and communicates with the AWS stack via VPN. It is also possible to have CloudShell installed on AWS. For details, see [Integrating AWS with Cloud-based CloudShell Installation](./integrating-aws-with-cloud-based-cloudshell.md).
     - **Local**: Used for deployments where internet access is provided via the on prem VPN.
     - **Public (Elastic IP)**: Used for external deployment, where the QualiX instance has a Public IP associated with it.
     </td>
@@ -48,7 +48,7 @@ We strongly recommend using the new and improved [AWS 2nd Gen shell](https://git
     - **VPC gateway**: Connects the management VPC directly to the on-prem network.
     - **No VPN**: Does not create a VPN connection. Use this option if you plan on having CloudShell installed on AWS and don’t need on-prem access. This option does the following:
         - Does not create a VPN connection.
-        - Deploys an empty Windows Server 2019 Full Base instance on AWS on which you will need to manually install CloudShell Server in this instance, as explained in [Integrating AWS with Cloud-based CloudShell Installation](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-CS-on-AWS.htm).
+        - Deploys an empty Windows Server 2019 Full Base instance on AWS on which you will need to manually install CloudShell Server in this instance, as explained in [Integrating AWS with Cloud-based CloudShell Installation](./integrating-aws-with-cloud-based-cloudshell.md).
     </td>
             </tr>
             <tr>
@@ -131,7 +131,7 @@ We strongly recommend using the new and improved [AWS 2nd Gen shell](https://git
     
     ![](/Images/Admin-Guide/AWS-deployment-type/AWSSubscriptionError.png)
     
-11.  Note the **Outputs** tab at the bottom of the page. You will need this information when you [Add an AWS EC2 Cloud Provider Resource](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-AWS-Cld-Prvdr-Rsc.htm).
+11.  Note the **Outputs** tab at the bottom of the page. You will need this information when you [Add an AWS EC2 Cloud Provider Resource](../add-an-aws-ec2-cloud-provider-resource.md).
     
     ![](/Images/Admin-Guide/AWS-deployment-type/CloudFormationStack.png)
     
@@ -140,6 +140,6 @@ We strongly recommend using the new and improved [AWS 2nd Gen shell](https://git
     ![](/Images/Admin-Guide/AWS-deployment-type/CloudFormationVPNConnections.png)
     
 13.  Next, do one of the following:
-    - If you want to set up a shared VPC integration in which AWS EC2 Apps are deployed to an existing VPC on AWS: [Create a Shared VPC using CloudFormation](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-Crt-Shared-VPC.htm).
-    - If Quali Server is installed in your on-prem network: [Connect the Management VPC to Quali Server](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-Cnct-to-Quali.htm).
-    - If Quali Server is also on AWS: [Configure an Execution Server Selector for AWS EC2](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-Exec-Srv.htm).
+    - If you want to set up a shared VPC integration in which AWS EC2 Apps are deployed to an existing VPC on AWS: [Create a Shared VPC using CloudFormation](../create-a-shared-vpc-using-cloudformation.md).
+    - If Quali Server is installed in your on-prem network: [Connect the Management VPC to Quali Server](../connect-the-management-vpc-to-quali-server.md).
+    - If Quali Server is also on AWS: [Configure an Execution Server Selector for AWS EC2](../configure-an-execution-server-selector-for-aws-ec2.md).

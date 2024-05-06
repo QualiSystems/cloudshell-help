@@ -8,10 +8,10 @@ Azure elements created by CloudShell should not be altered as this may cause une
 
 ## Related Topics
 
-- [Microsoft Azure Integration](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-VNET-Ovrv.htm)
-- [Managing Public Cloud Apps in Domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Pblc-Cld-Apps-in-Dmns.htm)
-- [Cost Management of Microsoft Azure Resources](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Cst-Mngmnt.htm)
-- [Azure Known Limitations](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Known-Limits.htm)
-- [Custom Routing for Azure in Sandboxes](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Cstm-Routing.htm)
-- [Integrating Azure with Cloud-based CloudShell Installation](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Cld-Only-Intg.htm)
-- [Using Multiple Azure Regions in CloudShell](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Mltpl-Rgns.htm)
+- [Microsoft Azure Integration](./microsoft-azure-integration/index.md)
+- [Managing Public Cloud Apps in Domains](../managing-public-cloud-apps-in-domains.md)
+- [Cost Management of Microsoft Azure Resources](./cost-management-of-microsoft-azure-resources.md)
+- [Azure Known Limitations](./azure-known-limitations.md)
+- [Custom Routing for Azure in Sandboxes](./custom-routing-for-azure-in-sandboxes.md)
+- [Integrating Azure with Cloud-based CloudShell Installation](./integrating-azure-with-cloud-based-cloudshell-installation.md)
+- [Using Multiple Azure Regions in CloudShell](./using-multiple-azure-regions-in-cloudshell.md)
