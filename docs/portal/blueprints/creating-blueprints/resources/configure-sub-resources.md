@@ -23,5 +23,5 @@ To view a list of the sub-resources currently attached to this resource, hover o
 
 ## Related Topics
 
-- [Blueprint Workspace](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Blprnt-Brws-Wrkspc.htm)
-- [L1 switches in CloudShell Portal](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-L1-Swch.htm#Using)
+- [Blueprint Workspace](../../blueprint-workspace/index.md)
+- [L1 switches in CloudShell Portal](../../../../admin/setting-up-cloudshell/inventory-operations/connectivity-control/l1-switches.md#l1-switches-in-cloudshell-portal)

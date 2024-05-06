@@ -17,4 +17,4 @@ sidebar_position: 3
 
 ## Related Topics
 
-[Blueprint Workspace](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Blprnt-Brws-Wrkspc.htm)
+[Blueprint Workspace](../../blueprint-workspace/index.md)

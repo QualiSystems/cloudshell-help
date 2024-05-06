@@ -41,7 +41,7 @@ This method enables you to connect multiple endpoints to each other by linking t
     
     Use the **VLAN Auto** service to have CloudShell automatically select the VLAN ID, use the **VLAN Manual** service to specify a particular VLAN ID to use, or use the **Subnet** service to create a new subnet in the AWS EC2 or Azure cloud, and connect AWS EC2/Azure Apps to it.
     :::tip
-    Before you add a Subnet service, read through [Subnet Connectivity - Points to Consider](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-Subnets-Cnsdr.htm).
+    Before you add a Subnet service, read through [Subnet Connectivity - Points to Consider](../../../../../admin/setting-up-cloudshell/inventory-operations/connectivity-control/subnet-connectivity/subnet-connectivity--points-to-consider.md).
     :::
 2. If the **Add Service** dialog box is displayed, configure the parameters available for the service you added. Depending on the service, certain parameters may be read only.
     
@@ -78,8 +78,8 @@ This method enables you to connect multiple endpoints to each other by linking t
 
 ## Related Topics
 
-- [Virtual Network Connectivity](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Cnct/Vir-Ntwrk-Cnct-Cntnr.htm)
-- [VLAN Connectivity](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-VLAN.htm)
-- [Subnet Connectivity](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-Subnets.htm)
-- [Services Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Services.htm)
-- [Apps Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Apps.htm)
+- [Virtual Network Connectivity](../../../../sandboxes/sandbox-workspace/add-connectivity/add-virtual-network/index.md)
+- [VLAN Connectivity](../../../../../admin/setting-up-cloudshell/inventory-operations/connectivity-control/vlan-connectivity/index.md)
+- [Subnet Connectivity](../../../../../admin/setting-up-cloudshell/inventory-operations/connectivity-control/subnet-connectivity/index.md)
+- [Services Overview](../../../../../intro/features/services.md)
+- [Apps Overview](../../../../../intro/features/apps-overview.md)

@@ -20,4 +20,4 @@ In a sandbox, this action will delete a connectivity requirement between two end
 
 ## Related Topics
 
-[Apps Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Apps.htm)
+[Apps Overview](../../../../../intro/features/apps-overview.md)

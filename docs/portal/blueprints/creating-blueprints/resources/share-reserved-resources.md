@@ -8,7 +8,7 @@ You can configure resources to be available or unavailable for other sandboxes b
 
 :::note Notes
 - When you reserve an unshared resource, all its sub-resources become unshared in the sandbox.
-- To override the share setting for a specific resource, edit the resource's default share level in the Inventory dashboard. For more details, see [Editing Resources from the Inventory Dashboard](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/INVN/Edit-Rsrc-in-Invnt.htm).
+- To override the share setting for a specific resource, edit the resource's default share level in the Inventory dashboard. For more details, see [Editing Resources from the Inventory Dashboard](../../../inventory/managing-resources/editing-resources-from-inventory-dashboard.md).
 :::
 **To share or unshare a resource:**
 
@@ -20,6 +20,6 @@ You can configure resources to be available or unavailable for other sandboxes b
 
 ## Related Topics
 
-- [Blueprint Workspace](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Blprnt-Brws-Wrkspc.htm)
-- [Share Reserved Resources](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Prfrm-Actns/Sndbx-Shr.htm) (in sandboxes)
-- [L1 switches in CloudShell Portal](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-L1-Swch.htm#Using)
+- [Blueprint Workspace](../../blueprint-workspace/index.md)
+- [Share Reserved Resources](../../../sandboxes/sandbox-workspace/resources/share-reserved-resources.md) (in sandboxes)
+- [L1 switches in CloudShell Portal](../../../../admin/setting-up-cloudshell/inventory-operations/connectivity-control/l1-switches.md#l1-switches-in-cloudshell-portal)
