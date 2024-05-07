@@ -69,7 +69,7 @@ Note that the OOB setup already includes some default logic in each of the stage
 
 Each stage has an interim **on\_\_\[stage\]\_ended** step which allows the execution of any code that has to run between stages. Note that all the functions you add to a stage (using **add\_to\_configuration**, for example) run in parallel, while **on\_\_\[stage\]\_ended** functions run sequentially.
 
-You can extend the OOB setup and teardown scripts by adding additional steps, or controlling the order of execution. In this section we will focus on the setup script, for examples about how to extend the teardown, see [Extending the OOB Teardown Orchestration Scripts](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Orch-Scripts/CloudShell-OOB-Orch.htm?tocpath=The%20CloudShell%20DevGuide%7CDeveloping%20Orchestration%20Scripts%7CCloudShell%27s%20OOB%20Orchestration%7C_____0#OOB-Teardown-scripts) below. An example for extending the OOB Setup script can be calling additional commands to validate Apps or resource states, launching additional orchestration, or controlling the order in which the sandbox is provisioned.
+You can extend the OOB setup and teardown scripts by adding additional steps, or controlling the order of execution. In this section we will focus on the setup script, for examples about how to extend the teardown, see [Extending the OOB Teardown Orchestration Scripts](#extending-the-oob-teardown-orchestration-scripts) below. An example for extending the OOB Setup script can be calling additional commands to validate Apps or resource states, launching additional orchestration, or controlling the order in which the sandbox is provisioned.
 
 1. Create a copy of the appropriate script, (see below for extension options), and upload the updated version separately into CloudShell Portal as a **Setup** script. DO NOT remove any step in the setup workflow. However, you can add your own steps or change the order of execution.
     
@@ -303,11 +303,11 @@ sandbox = Sandbox()
 sandbox.execute_save()
 ```
 
-By running the **execute\_save** method on a sandbox, the script will call a server logic that will create a saved sandbox. For details about the saving process, see [Sandbox Save and Restore Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Sv-Rstr-Ovrvw.htm).
+By running the **execute\_save** method on a sandbox, the script will call a server logic that will create a saved sandbox. For details about the saving process, see [Sandbox Save and Restore Overview](../../../portal/sandboxes/sandbox-save-and-restore-overview.md).
 
 ### Extending the OOB Save Orchestration Script
 
-*Out of the box, the Save orchestration script only creates the saved sandbox, returns concrete resources to abstract if required, creates a clone of deployed Apps and creates an App in that saved sandbox that points to this clone. For details, see [Sandbox save logic](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Sv.htm#Save2).*
+*Out of the box, the Save orchestration script only creates the saved sandbox, returns concrete resources to abstract if required, creates a clone of deployed Apps and creates an App in that saved sandbox that points to this clone. For details, see [Sandbox save logic](../../../portal/sandboxes/sandbox-workspace/save-sandbox.md).*
 
 You can extend the OOB Save script to execute custom steps before or after the default sandbox save process takes place.
 
@@ -339,11 +339,11 @@ server.sendmail("<sender_email>", "<target_email>", msg)
 
 ### Extending the OOB Restore Orchestration Script
 
-You can also extend the OOB Restore script to execute custom functionality at any point during the default sandbox restore process. The Restore script is a part of the sandbox setup process, and actually replaces the setup. Out of the box, the setup and restore logic are identical. However, if you customized the Setup script and you want the same customized script to be launched when restoring a sandbox, you should customize the Restore script as well, as the Restore script is the one that is being launched in a restored sandbox’s setup phase. It is also possible to customize the Restore script to have a different logic than the Setup script, to create a logic that is relevant only for restored sandboxes. For detailed explanations on how to extend the script’s stages and use its extension methods, see the [Setup and Teardown Orchestration](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Orch-Scripts/CloudShell-OOB-Orch.htm?tocpath=The%20CloudShell%20DevGuide%7CDeveloping%20Orchestration%20Scripts%7CCloudShell%27s%20OOB%20Orchestration%7C_____0#Setup) section above. For deails about the OOB Restore script's operations, see [Restore a Saved Sandbox](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Rstr.htm).
+You can also extend the OOB Restore script to execute custom functionality at any point during the default sandbox restore process. The Restore script is a part of the sandbox setup process, and actually replaces the setup. Out of the box, the setup and restore logic are identical. However, if you customized the Setup script and you want the same customized script to be launched when restoring a sandbox, you should customize the Restore script as well, as the Restore script is the one that is being launched in a restored sandbox’s setup phase. It is also possible to customize the Restore script to have a different logic than the Setup script, to create a logic that is relevant only for restored sandboxes. For detailed explanations on how to extend the script’s stages and use its extension methods, see the [Setup and Teardown Orchestration](../cs-oob-orch/index.md#setup-and-teardown-orchestration) section above. For deails about the OOB Restore script's operations, see [Restore a Saved Sandbox](../../../portal/sandboxes/saved-sandboxes/restore-saved-sandbox.md).
 :::note
 CloudShell does not support executing the Setup command directly via the Restore script using APIs, such as **ExecuteEnvironmentCommand** or **EnqueueEnvironmentCommand**.
 :::
-For example, a Restore script that writes a message to the **Output** console before the Restore workflow operation (to extend the workflow operation itself, use the extension methods in the [Extending the OOB Setup Orchestration Scripts](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Orch-Scripts/CloudShell-OOB-Orch.htm?tocpath=The%20CloudShell%20DevGuide%7CDeveloping%20Orchestration%20Scripts%7CCloudShell%27s%20OOB%20Orchestration%7C_____0#Extendin) section above):
+For example, a Restore script that writes a message to the **Output** console before the Restore workflow operation (to extend the workflow operation itself, use the extension methods in the [Extending the OOB Setup Orchestration Scripts](#extending-the-oob-setup-orchestration-scripts) section above):
 
 ```python
 from cloudshell.workflow.orchestration.sandbox import Sandbox

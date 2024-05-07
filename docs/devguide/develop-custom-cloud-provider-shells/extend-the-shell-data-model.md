@@ -8,7 +8,7 @@ In this article, we will learn how to add attributes to our shell. For informati
 
 Attributes can be added to the cloud provider shell or to the deployment path on the App template. Attributes on the shell are for general authentication/authorization purposes and for setting general configurations for the cloud provider integration, while attributes on the deployment path are typically settings that apply to the App’s VM. For example, Region applies to the cloud provider shell and Image ID applies to the deployment path. We will cover deployment path attributes in the next article.
 
-CloudShell allows upgrading shells with old/deprecated attributes. For details, see [Overriding Old/Deprecated Shell Attributes](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Override-old-shell-attributes.htm).
+CloudShell allows upgrading shells with old/deprecated attributes. For details, see [Overriding Old/Deprecated Shell Attributes](../developing-shells/override-old-shell-attributes.md).
 
 ## Adding an attribute to the shell
 

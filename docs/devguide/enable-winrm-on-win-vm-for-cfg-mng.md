@@ -30,4 +30,4 @@ To allow the Execution Server to run configuration management on a Windows VM, y
 
 ## Related Topics
 
-- [Adding App templates](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Apps.htm#Adding)
+- [Adding App templates](../admin/cloudshell-manage-dashboard/manage-app-templates/index.md#adding-app-templates)

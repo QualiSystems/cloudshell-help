@@ -6,7 +6,7 @@ sidebar_position: 1
 
 The first thing you need to do is set up an Execution Server that can execute Ansible configuration management. For this you will need a Linux Execution Server with the following utilities and configurations:
 
-- Execution Server installed on Linux machine, with the ansible attribute enabled. See [Linux Execution Server Installation and Configuration](https://help.quali.com/Online%20Help/0.0/Portal/Content/Linux/Linux.htm).
+- Execution Server installed on Linux machine, with the ansible attribute enabled. See [Linux Execution Server Installation and Configuration](../../../install-configure/linux-virtual-appliance/).
 - Python 3.7 (Python 3.9.x is provided out of the box with the **Linux Execution Server** virtual appliance or script)
 - Ansible 2.9.27
 - pywinrm 0.4.2
@@ -17,7 +17,7 @@ The first thing you need to do is set up an Execution Server that can execute An
 This section explains how to indicate that the Execution Server installation has Ansible installed and therefore can support Ansible operations on Apps.
 
 :::note Notes
-- If the Execution Server VM does not have an internet connection, make sure the OfflinePackageRepository zip file is extracted to the local PyPi Server repository. For details, see [Add the out-of-the-box dependencies package to the local PyPi Server repository](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfgr-Pyth-Env-Wrk-Offln.htm#Add2).
+- If the Execution Server VM does not have an internet connection, make sure the OfflinePackageRepository zip file is extracted to the local PyPi Server repository. For details, see [Add the out-of-the-box dependencies package to the local PyPi Server repository](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/configuring-cloudshell-to-execute-python-commands-in-offline-mode.md#add-the-out-of-the-box-dependencies-package-to-the-local-pypi-server-repository).
 - Quali Server must be running when configuring the Execution Server.
 ::: 
 
@@ -34,7 +34,7 @@ This section explains how to indicate that the Execution Server installation has
 4. Select the **Supports Ansible** check box to use this Execution Server for Ansible configuration management.
 5. If you have several Execution Servers that support Ansible but want to use this one, see the following section:
     
-    This is recommended for geographically distributed deployments where you want a local Execution Server to perform operations on cloud providers that are physically nearest that Execution Server. For more information, see [Managing Public Cloud Apps in Domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Pblc-Cld-Apps-in-Dmns.htm) or [Managing Private Cloud Apps in Domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Prvt-Cld-Apps-in-Dmns.htm).
+    This is recommended for geographically distributed deployments where you want a local Execution Server to perform operations on cloud providers that are physically nearest that Execution Server. For more information, see [Managing Public Cloud Apps in Domains](../../../admin/supported-cloud-providers-in-cloudshell/public-cloud-provider-support-in-cloudshell/managing-public-cloud-apps-in-domains.md) or [Managing Private Cloud Apps in Domains](../../../admin/supported-cloud-providers-in-cloudshell/private-cloud-provider-support-in-cloudshell/managing-private-cloud-apps-in-domains.md).
     
     **To set a specific Execution Server for Ansible configuration management:**
     
@@ -67,7 +67,7 @@ This section explains how to indicate that the Execution Server installation has
     | /a |     Additional attributes to set on the Execution Server. For example, passing to that option the value `{'attributeName1':'attributeValue1', 'attributeName2':'attribauteValue2'}` adds two attributes and their values.<br/>Note that the attributes must have the **Execution Server Selector** rule. |
     
     :::note Notes
-    - If the Execution Server VM does not have an internet connection, make sure the `OfflinePackageRepository` zip file is extracted to the local PyPi Server repository. For details, see [Add the out-of-the-box dependencies package to the local PyPi Server repository](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfgr-Pyth-Env-Wrk-Offln.htm#Add2).
+    - If the Execution Server VM does not have an internet connection, make sure the `OfflinePackageRepository` zip file is extracted to the local PyPi Server repository. For details, see [Add the out-of-the-box dependencies package to the local PyPi Server repository](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/configuring-cloudshell-to-execute-python-commands-in-offline-mode.md#add-the-out-of-the-box-dependencies-package-to-the-local-pypi-server-repository).
     - Quali Server must be running when configuring the Execution Server.
     - Depending on your flavor of Linux, you may need to escape parameter values containing special characters with single or double quotes. For example: `"admin1234!"`
     :::  
@@ -125,4 +125,4 @@ To run Ansible configuration management on this Execution Server, several additi
 
 ## Next...
 
-Make sure to [Enable WinRM on Windows VMs to Support Configuration Management](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Config-Mng/Cnfg-WinRM-for-CM.htm).
+Make sure to [Enable WinRM on Windows VMs to Support Configuration Management](../../enable-winrm-on-win-vm-for-cfg-mng.md).

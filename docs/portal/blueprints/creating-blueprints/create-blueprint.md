@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Create a Blueprint
 
-You can create an empty blueprint or base it on a blueprint template. It is recommended to use templates as they provide environment automation. For instance, the out-of-the-box CloudShell Sandbox Template template deploys Apps and connections on Setup, and deletes the Apps from their cloud providers on Teardown - see [CloudShell Sandbox Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Wrk-wth-Blprnt-Tmplt.htm#CloudShe) for details.
+You can create an empty blueprint or base it on a blueprint template. It is recommended to use templates as they provide environment automation. For instance, the out-of-the-box **CloudShell Sandbox Template** template deploys Apps and connections on Setup, and deletes the Apps from their cloud providers on Teardown - see [CloudShell Sandbox Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Wrk-wth-Blprnt-Tmplt.htm#CloudShe) for details.
 
 Each blueprint has an owner which by default is the user who created the blueprint, but it can be changed by the owner or by an admin.
 

@@ -42,7 +42,7 @@ To demonstrate these capabilities, we’ll create a simple script, which we’ll
     :::note
     You can get the Sandbox id by using **sandbox.id**. The Sandbox name is also available via the **sandbox.name** property.
     :::
-    Since this script has imports, you’ll need a `requirements.txt` file and a *main.py* function. For details, see [Script Deep Dive](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Orch-Scripts/Scripts-Deep-Dive.htm).
+    Since this script has imports, you’ll need a `requirements.txt` file and a *main.py* function. For details, see [Script Deep Dive](./script-deep-dive.md).
     
 2. In CloudShell Portal, open the **Manage** dashboard.
     

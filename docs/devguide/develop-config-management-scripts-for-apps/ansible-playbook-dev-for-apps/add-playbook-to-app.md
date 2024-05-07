@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Add the Playbook to an App
 
-Now that we have tested and debugged our playbook, the next step is to add it to an App template. For details, see [Adding App templates](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Apps.htm#Adding).
+Now that we have tested and debugged our playbook, the next step is to add it to an App template. For details, see [Adding App templates](../../../admin/cloudshell-manage-dashboard/manage-app-templates/index.md#adding-app-templates).
 :::note
 The playbook runs once during the **Setup** phase for all of the sandbox's Apps that use that playbook, after CloudShell has finished deploying their VMs. This is done both to improve performance and support cross-server logic where multiple applications need to be installed and configured in a certain way.
 :::
@@ -26,7 +26,7 @@ The playbook runs once during the **Setup** phase for all of the sandbox's Apps 
     :::
 7. If the URL is protected, specify the **Username** and **Password**, or **Token**.
     
-8. In the **Inventory Groups** field, specify the inventory groups, separated by semicolons “;”. For details, see the [Inventory Groups](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Config-Mng/Ansible-Playbook-Examples.htm#Inventor) example.
+8. In the **Inventory Groups** field, specify the inventory groups, separated by semicolons “;”. For details, see the [Inventory Groups](./ansible-playbook-examples.md#inventory-groups) example.
     
 9. To add parameters to the playbook, click **Add Parameter**, and enter each parameter’s name and value. Repeat for additional parameters.
     
@@ -40,10 +40,10 @@ You can add parameters to the App template in the following ways:
 - Provide the value as part of the App template, making it the default value for every instance of this App template.
 - Specify a static value in the App in the blueprint.
 - Specify a dynamic value in the App in the blueprint, linking the parameter to one of the blueprint’s Global Inputs. To do so, just enter the global input’s name in curly brackets as the parameter value, or click the “plus” button to select an available Global Input.
-- Pass a value using the API, as illustrated in this [Parameters](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Config-Mng/Ansible-Playbook-Examples.htm#ConfigureApps). This will replace any value provided in the App template or in the blueprint.
+- Pass a value using the API, as illustrated in this [Parameters](./ansible-playbook-examples.md#parameters). This will replace any value provided in the App template or in the blueprint.
 
-10. Open the **App Resource** tab, and enter the VM’s access credentials.
+1.  Open the **App Resource** tab, and enter the VM’s access credentials.
     
     ![Discovery Dialog](/Images/Devguide-configuration-management/Config-manage-Adding-Your_5_624x444.png)
     
-11. Click **Done**.
+2.  Click **Done**.

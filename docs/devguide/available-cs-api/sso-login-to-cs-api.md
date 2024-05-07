@@ -35,7 +35,7 @@ SSO login is not supported for New Job Scheduling API.
     4. Restart the **Quali Server** service.
     </details>   
     
-- IdP user profile that contains an email address ("email" claim and value). To register new users, see the [To define user groups for SAML SSO:](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfg-SSO.htm#APISSO) section.
+- IdP user profile that contains an email address ("email" claim and value). To register new users, see the [To define user groups for SAML SSO:](../../admin/cloudshell-identity-management/access-control-and-authentication/saml-authentication-configuration-sso-slo/configure-sso/index.md#to-define-user-groups-for-saml-sso) section.
 - JWT token generated in your IdP. Note that the authorization token is valid for 5 hours by default, but the validity period can be extended using the `AuthToken.ExpirationSpanMinutes` configuration key.
 
 ## API authentication token creation flow

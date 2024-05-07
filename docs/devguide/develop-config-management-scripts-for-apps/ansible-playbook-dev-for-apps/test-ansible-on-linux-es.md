@@ -34,8 +34,8 @@ Before running the playbook in an App, it is recommended to test it manually. To
     
     ![Discovery Dialog](/Images/Devguide-configuration-management/Ansible_13_624x319.png)
     
-7. Test the playbook by running `ansible-playbook –i <InventoryFile> <MainPlaybookFile.yml>`. For some sample playbooks, see [Ansible Playbook Examples](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Config-Mng/Ansible-Playbook-Examples.htm).
+7. Test the playbook by running `ansible-playbook –i <InventoryFile> <MainPlaybookFile.yml>`. For some sample playbooks, see [Ansible Playbook Examples](./ansible-playbook-examples.md).
     
     ![Discovery Dialog](/Images/Devguide-configuration-management/Ansible_14_624x813.png)
     
-8. Once you are done developing your playbook, zip the playbook files along with the roles folder, upload it to a repository, and set the URL in the App template, as explained in [Add the Playbook to an App](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Config-Mng/Add-the-Playbook.htm).
+8. Once you are done developing your playbook, zip the playbook files along with the roles folder, upload it to a repository, and set the URL in the App template, as explained in [Add the Playbook to an App](./add-playbook-to-app.md).

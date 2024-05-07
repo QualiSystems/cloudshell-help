@@ -46,7 +46,7 @@ Next, add the required attributes.
 
 :::note Notes
 - You cannot modify an attribute's type and name, nor any attributes that are associated with the shell’s family as this will affect other shells that use this family.
-- CloudShell allows upgrading shells with old/deprecated attributes. For details, see [Overriding Old/Deprecated Shell Attributes](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Override-old-shell-attributes.htm).
+- CloudShell allows upgrading shells with old/deprecated attributes. For details, see [Overriding Old/Deprecated Shell Attributes](../developing-shells/override-old-shell-attributes.md).
 :::
 Place the cursor at the end of the `derived_from:` line and press the **\[Enter\]** key. Type “properties:” and press **\[Enter\]** again. Press the **\[Tab\]** key and add the attribute. ***To make the attribute visible to the user in CloudShell, make sure to include the “tags: \[user\_input\]” line.*** For example, adding a string attribute called “My attribute”:
 

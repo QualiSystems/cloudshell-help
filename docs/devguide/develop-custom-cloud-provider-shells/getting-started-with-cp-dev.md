@@ -54,4 +54,4 @@ As of version 9.0, CloudShell supports the ability to define custom cloud provid
 
 - **IDE/Text Editor**: Your preferred IDE editor. We recommend using PyCharm (which offers a free community edition) because of the tooling we’ve already created for that IDE, including a CloudShell developer plugin.
     
-- **Shellfoundry: Shellfoundry** is our CLI tool that allows you to quickly and easily generate and distribute Shells. Make sure to install it on your machine. See [Installing or Updating Shellfoundry](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Getting-Started.htm#Installi) for details.
+- **Shellfoundry: Shellfoundry** is our CLI tool that allows you to quickly and easily generate and distribute Shells. Make sure to install it on your machine. See [Installing or Updating Shellfoundry](./../developing-shells/getting-started.md) for details.

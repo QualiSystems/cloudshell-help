@@ -32,4 +32,4 @@ The default port for Quali API in Quali Server is 9000.
 
 ## Related Topics
 
-- [Configuring Quali API to Work in HTTPS Mode](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Appendices/quali-api-https.htm).
+- [Configuring Quali API to Work in HTTPS Mode](../install-configure/cloudshell-suite/secure-communication/config-secured-quali-api.md).

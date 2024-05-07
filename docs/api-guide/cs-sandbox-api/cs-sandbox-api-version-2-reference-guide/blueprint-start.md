@@ -10,7 +10,7 @@ sidebar_position: 4
 Creates a new sandbox from a specific public blueprint associated with the user's domain. Returns details about the sandbox such as ID and the actions that can be performed on the sandbox. (After the sandbox is created, you can view it in the Sandboxes dashboard in CloudShell Portal.)
 
 :::note
-- You cannot reserve blueprints if there are conflicts with the reservation timeslot. For additional information see [Creating Sandboxes](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Crt.htm).
+- You cannot reserve blueprints if there are conflicts with the reservation timeslot. For additional information see [Creating Sandboxes](../../../portal/sandboxes/creating-sandboxes.md).
 - This method does not support persistent sandboxes. As such, starting a persistent sandbox will deploy a regular sandbox.
 :::
 

@@ -22,14 +22,14 @@ The following article explain the steps required for using CloudShell Sandbox A
 2. Install an API testing tool, such as the [Postman Chrome App](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en), or [Swagger UI](http://swagger.io/swagger-ui/). This is recommended so that you can test the API before integrating it into your code.
 3. Run the login method:
     
-    - [login](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/Sndbx-REST-API/REST-API-V1-Ref-Guide.htm#login) method for version 1
-    - [login](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/Sndbx-REST-API/REST-API-V2-Ref-Guide.htm#login) method for version 2
+    - [login](../cs-sandbox-api/cs-sandbox-api-version-1-reference-guide/login.md) method for version 1
+    - [login](../cs-sandbox-api/cs-sandbox-api-version-2-reference-guide/login.md) method for version 2
 
 Once you have the authorization token (per the specified user and domain), you must include it in the method request header for any of the CloudShell Sandbox API methods on the public blueprints and sandboxes in the desired domain. For a complete list of the available methods access the relevant version:
 
-For version 1, see [CloudShell Sandbox API Version 1 Reference Guide](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/Sndbx-REST-API/REST-API-V1-Ref-Guide.htm).
+For version 1, see [CloudShell Sandbox API Version 1 Reference Guide](../cs-sandbox-api/cs-sandbox-api-version-1-reference-guide/index.md).
 
-For version 2, see [CloudShell Sandbox API Version 2 Reference Guide](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/Sndbx-REST-API/REST-API-V2-Ref-Guide.htm).
+For version 2, see [CloudShell Sandbox API Version 2 Reference Guide](../cs-sandbox-api/cs-sandbox-api-version-2-reference-guide/index.md).
 
 ### Common response codes
 
@@ -51,7 +51,7 @@ When running the methods, you may get some of the following response codes:
 To use the live documentation pages, log in to the **Authentication API** page using your user credentials and the name of the appropriate CloudShell domain. Then, access the **Sandbox API** page to execute its methods on the public blueprints and sandboxes in the domain.
 
 :::note
- Sandbox API can be configured to run in secure mode. See [Configuring Sandbox API to Work in HTTPS Mode](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Appendices/CS-Snbx-API-Https.htm).
+ Sandbox API can be configured to run in secure mode. See [Configuring Sandbox API to Work in HTTPS Mode](../../install-configure/cloudshell-suite/secure-communication/config-secured-sandbox-api.md).
 :::
 ## Related Topics
 

@@ -23,4 +23,4 @@ The Python package [API guide](pathname:///api-docs/2023.3/Python-API/) includes
 CloudShell Automation API uses UTC timezone by default, but you can change to a different timezone using the [CloudShellAPISession](pathname:///api-docs/2023.3/Python-API/cloudshell.api.html#cloudshell.api.cloudshell_api.CloudShellAPISession).
 :::
 
-For information about installing Python and pip, and for further information about using Python scripts and drivers, see [The CloudShell DevGuide](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Intro/The-CS-DevGuide.htm).
+For information about installing Python and pip, and for further information about using Python scripts and drivers, see [The CloudShell DevGuide](../../devguide/index.md).

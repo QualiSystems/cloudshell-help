@@ -12,9 +12,9 @@ CloudShell Apps communicate with Azure using the Azure API. To enable the two pl
 :::
 This configuration is a three-step process:
 
-1. [Add an Azure web application](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Cnfg-API.htm?Highlight=Configure%20Azure%20API%20to%20work%20with%20CloudShell#Adding)
-2. [Delegate Azure API permissions to the web application](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Cnfg-API.htm?Highlight=Configure%20Azure%20API%20to%20work%20with%20CloudShell#Delegati)
-3. [Configure the web application as Contributor](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Cnfg-API.htm?Highlight=Configure%20Azure%20API%20to%20work%20with%20CloudShell#Associat)
+1. [Add an Azure web application](./configure-azure-api-to-work-with-cloudshell.md#add-an-azure-web-application)
+2. [Delegate Azure API permissions to the web application](./configure-azure-api-to-work-with-cloudshell.md#delegate-azure-api-permissions-to-the-web-application)
+3. [Configure the web application as Contributor](./configure-azure-api-to-work-with-cloudshell.md#configure-the-web-application-as-contributor)
 
 ## Add an Azure web application
 
@@ -151,4 +151,4 @@ The **Contributor** role enables CloudShell to create and manage virtual machine
     
     ![](/Images/Admin-Guide/Azure-deployment-type/NewContributorWebApp.png)
     
-10. Next, [Create a Management Resource Group and VNets](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Crt-Mng-RSc-Grp.htm).
+10. Next, [Create a Management Resource Group and VNets](./create-a-management-resource-group-and-vnets.md).
