@@ -20,13 +20,13 @@ sandbox = Sandbox()
 reservation_context_details = sandbox.reservationContextDetails
 ```
 
-Note that to execute this code, you will need to include a `requirements.txt` file in your script, see [Script Deep Dive](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Orch-Scripts/Scripts-Deep-Dive.htm) for more details.
+Note that to execute this code, you will need to include a `requirements.txt` file in your script, see [Script Deep Dive](./script-deep-dive.md) for more details.
 
 To facilitate writing and debugging activities, it is recommended to use advanced IDEs such as PyCharm, which provide autocomplete functionality, as illustrated below.
 
 ![Sandbox information](/Images/Devguide-orchestration-scripts/Scripts-Getting-Information_624x204.png)
 
-Note that if you plan on using methods in your script, and want the IDE to autocomplete the *sandbox* object’s class properties from within the method, you will need to include a docstring referencing the object. For details, see [Docstrings in orchestration scripts](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Intellisense.htm#Docstrin).
+Note that if you plan on using methods in your script, and want the IDE to autocomplete the *sandbox* object’s class properties from within the method, you will need to include a docstring referencing the object. For details, see [Docstrings in orchestration scripts](../reference/intellisense-in-shells-and-scripts.md#docstrings-in-orchestration-scripts).
 
 ## Accessing the sandbox components
 
@@ -161,7 +161,7 @@ It is possible to get the sandbox's current phase via API. This is especially us
 
 This is done by calling the `GetReservationStatus` API and requires obtaining two details from the sandbox - **Status** and **ProvisioningStatus**:
 
-- **Status** provides the reservation status. Possible responses are (for details, see [Sandbox state](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Brws-Wrkspc.htm#Reservation)):
+- **Status** provides the reservation status. Possible responses are (for details, see [Sandbox state](../../portal/sandboxes/sandbox-workspace/index.md#sandbox-state)):
     
     | Status | Description |
     | --- | --- |
@@ -206,7 +206,7 @@ if result.ReservationSlimStatus.Status == 'Started' and result.ReservationSlimSt
 
 ## Getting custom sandbox metadata
 
-It is possible to store and retrieve custom key-value data from the sandbox. For details, see [Custom Sandbox Metadata](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Custom-Sandbox-Metadata.htm).
+It is possible to store and retrieve custom key-value data from the sandbox. For details, see [Custom Sandbox Metadata](../reference/custom-sandbox-metadata.md).
 
 ## Getting saved sandbox information
 
@@ -214,7 +214,7 @@ Starting with CloudShell 9.0, the *cloudshell\-orch-core* Python package inclu
 
 ![Sandbox information](/Images/Devguide-orchestration-scripts/Scripts-Getting-Information_3_624x111.png)
 
-Note that depending on the sandbox, the information may be partial. For example, if the sandbox is not a saved sandbox, the saved sandbox name and description will be missing. For details about our OOB saved sandbox orchestration scripts, see [CloudShell's OOB Orchestration](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Orch-Scripts/CloudShell-OOB-Orch.htm).
+Note that depending on the sandbox, the information may be partial. For example, if the sandbox is not a saved sandbox, the saved sandbox name and description will be missing. For details about our OOB saved sandbox orchestration scripts, see [CloudShell's OOB Orchestration](./cs-oob-orch/index.md).
 
 ## Getting the user context
 

@@ -47,7 +47,7 @@ To shorten the Shell development cycle and reduce much of the boilerplate of set
 python -m pip install shellfoundry
 ```
 
-For additional information, see [Shellfoundry](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Shellfoundry.htm).
+For additional information, see [Shellfoundry](./reference/shellfoundry.md).
 
 ## Install and setup the CloudShell SDK
 
@@ -63,8 +63,8 @@ If you’ve selected to use PyCharm as your IDE, you can take advantage of the c
 
 This guide contains three main areas depending on the type of development or integration you wish to do with CloudShell:
 
-- [Developing Shells](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Intro-to-Shell-Dev.htm)
-- [Developing Orchestration Scripts](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Orch-Scripts/Developing-Orch-Scripts.htm)
-- [Developing Configuration Management Scripts for Apps](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Config-Mng/Developing-Config-Management.htm)
-- [Developing Custom Cloud Provider Shells](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Cld-Prvdrs/Developing-Cloud-Shells.htm)
-- [Available CloudShell APIs](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/APIs/Available-CS-APIs.htm)
+- [Developing Shells](./developing-shells/index.md)
+- [Developing Orchestration Scripts](./develop-orch-scripts/index.md)
+- [Developing Configuration Management Scripts for Apps](./develop-config-management-scripts-for-apps/index.md)
+- [Developing Custom Cloud Provider Shells](../devguide/develop-custom-cloud-provider-shells/)
+- [Available CloudShell APIs](./available-cs-api/index.md)

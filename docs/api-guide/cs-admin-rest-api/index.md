@@ -31,67 +31,67 @@ Manage a domain's blueprints.
 Manage a domain's group associations.
 
 - [Get domain's groups](./get-domain-group)
-- [Add groups to domain](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-add-groups-to-domain.htm)
-- [Remove groups from domain](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-remove-group-from-domain.htm)
+- [Add groups to domain](./add-groups-to-domain.md)
+- [Remove groups from domain](./remove-groups-from-domain.md)
 
 **DomainResources:**
 
 Manage a domain's resources.
 
-- [Get domain's resources](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-domain-resources.htm)
-- [Add resources to domain](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-add-resources-to-domain.htm)
-- [Remove resources from domain](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-remove-resources-from-domain.htm)
+- [Get domain's resources](./get-domain-resources.md)
+- [Add resources to domain](./add-resource-to-domain.md)
+- [Remove resources from domain](./remove-resource-from-domain.md)
 
 **Groups:**
 
 Manage CloudShell groups.
 
-- [Get all groups](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-all-groups.htm)
-- [Create group](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-create-group.htm)
-- [Get group by ID](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-group-by-id.htm)
-- [Edit group](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-edit-group.htm)
-- [Delete group](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-delete-group.htm)
+- [Get all groups](./get-all-groups.md)
+- [Create group](./create-group.md)
+- [Get group by ID](./get-group-by-id.md)
+- [Edit group](./edit-group.md)
+- [Delete group](./delete-group.md)
 
 **GroupDomains:**
 
 Manage a group's domain associations.
 
-- [Get group's domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-group-domains.htm)
-- [Add domains to group](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-add-domains-to-group.htm)
-- [Remove domains from group](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-remove-domains-from-group.htm)
+- [Get group's domains](./get-group-domains.md)
+- [Add domains to group](./add-domains-to-group.md)
+- [Remove domains from group](./remove-domains-from-group.md)
 
 **GroupUsers:**
 
 Manage a group's users.
 
-- [Get group's users](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-group-users.htm)
-- [Add users to group](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-add-users-to-group.htm)
-- [Remove users from group](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-remove-users-from-group.htm)
+- [Get group's users](./get-group-users.md)
+- [Add users to group](./add-users-to-group.md)
+- [Remove users from group](./remove-users-from-group.md)
 
 **Users:**
 
 Manage CloudShell users.
 
-- [Get all users](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-all-users.htm)
-- [Get user by ID](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-user-by-id.htm)
-- [Create user](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-create-user.htm)
-- [Edit user](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-edit-user.htm)
-- [Delete user](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-delete-user.htm)
+- [Get all users](./get-all-users.md)
+- [Get user by ID](./get-user-by-id.md)
+- [Create user](./create-user.md)
+- [Edit user](./edit-user.md)
+- [Delete user](./delete-user.md)
 
 **IdentityManagement:**
 
 Get and import users from your active directory or LDAP.
 
-- [Get all external groups](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-all-external-groups.htm)
-- [Get users from an external group](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-all-external-group-users.htm)
-- [Import external users](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-import-external-users.htm)
+- [Get all external groups](./get-all-external-groups.md)
+- [Get users from an external group](./get-users-from-an-external-group.md)
+- [Import external users](./import-external-users.md)
 
 **LicensePools:**
 
 Manage CloudShell license pools.
 
-- [Get all license pools](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-all-license-pools.htm)
-- [Get license pool by ID](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-license-pool-by-id.htm)
-- [Create license pool](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-create-license-pool.htm)
-- [Edit license pool](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-edit-license-pool.htm)
-- [Delete license pool](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-delete-license-pool.htm)
+- [Get all license pools](./get-all-license-pools.md)
+- [Get license pool by ID](./get-license-pool-by-id.md)
+- [Create license pool](./create-license-pool.md)
+- [Edit license pool](./edit-license-pool.md)
+- [Delete license pool](./delete-license-pool.md)

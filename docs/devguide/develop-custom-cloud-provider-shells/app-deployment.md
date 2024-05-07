@@ -8,10 +8,10 @@ In this article, we’ll learn how to implement the App’s deployment.
 
 To deploy an App successfully, you need to implement the following 4 methods:
 
-- [Deploy method](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Cld-Prvdrs/App-Deployment.htm?Highlight=App%20Deployment#Deploy2) creates the App’s VM instance.
-- [PowerOn method](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Cld-Prvdrs/App-Deployment.htm?Highlight=App%20Deployment#PowerOn) spins up the VM.
-- [remote\_refresh\_ip](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Cld-Prvdrs/App-Deployment.htm?Highlight=App%20Deployment#RemoteRefreshIp) updates the deployed App’s IP address.
-- [GetVmDetails method](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Cld-Prvdrs/App-Deployment.htm?Highlight=App%20Deployment#GetVmDetails) gets information about the VM itself, its operating system, specifications and networking information.
+- [Deploy method](#deploy-method) creates the App’s VM instance.
+- [PowerOn method](#poweron-method) spins up the VM.
+- [remote\_refresh\_ip](#remote_refresh_ip) updates the deployed App’s IP address.
+- [GetVmDetails method](#getvmdetails-method) gets information about the VM itself, its operating system, specifications and networking information.
 
 These methods are executed in the above order during the deployment of an App in the sandbox (either automatically as part of the default sandbox setup script that runs when reserving a sandbox or manually by the user after adding an App to an active sandbox). Once the App is deployed, these methods can be run as individual commands from the deployed App’s commands pane, with the exception of the *Deploy* command which is no longer needed once the App is deployed.
 
@@ -354,7 +354,7 @@ Note that the links in the above workflow pertain to a driver of an L2 implement
 | vmUuid | string | Unique resource id. Populate *vmUuid* with the unique id of the resource in your custom cloud provider. Cloudshell does not use this id, but will keep it for other method calls. |
 | deployedAppAdditionalData | dictionary | Container used to persist custom data in resource, similar to AWS Tags. Included in all resource API query results. For [example](https://github.com/QualiSystems/Custom-L2-Cloud-Provider-Shell-Example/blob/ac94224fd2368aaa9b589bcdfd30e449a53c90ce/src/heavenly_cloud_service_wrapper.py#L209-L213), reading the custom data and returning it in the VM Details. |
 | deployedAppAttributes | array | Contains data describing the deployed app attributes, and are displayed in the App’s Attributes pane in the sandbox. It should be used to change default attribute values on the deployed App resource. For example User & Password attributes exist as part of the default deployed App model. If your custom cloud provider generates a password in runtime for the VM, you should update the *deployedAppAttributes* property accordingly. |
-| vmDetailsData | object | Contains vmNetworkData and vmInstanceData. Displayed in the App’s VM Details pane. For details about the return data, see the [GetVmDetails method](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Cld-Prvdrs/App-Deployment.htm?Highlight=App%20Deployment#GetVmDetails)’s Return value section below. |
+| vmDetailsData | object | Contains vmNetworkData and vmInstanceData. Displayed in the App’s VM Details pane. For details about the return data, see the [GetVmDetails method](#getvmdetails-method)’s Return value section below. |
 
 ## PowerOn method
 
@@ -437,7 +437,7 @@ The *remote\_refresh\_ip* method retrieves the VM’s updated IP address from 
 
 *remote\_refresh\_ip* is run automatically during the sandbox’s setup, after the VM is created and connected to networks, and can also be run manually by the sandbox end-user by running the **Refresh IP** command in the sandbox.
 
-**Note:** This method is mandatory. However, you can choose to disable the call to this method during setup using the **Wait for IP** attribute. For details, see [Controlling App Deployment Orchestration](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Cld-Prvdrs/Controlling-App-Deployment.htm).
+**Note:** This method is mandatory. However, you can choose to disable the call to this method during setup using the **Wait for IP** attribute. For details, see [Controlling App Deployment Orchestration](./controlling-app-deployment-orch.md).
 
 ### Signature
 

@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Connect the CloudShell Management VNet to Quali Server
 
-*Note that this procedure only applies to scenarios where Quali Server is not installed in Azure. If Quali Server is installed on Azure, see [Integrating Azure with Cloud-based CloudShell Installation](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Cld-Only-Intg.htm).*
+*Note that this procedure only applies to scenarios where Quali Server is not installed in Azure. If Quali Server is installed on Azure, see [Integrating Azure with Cloud-based CloudShell Installation](../integrating-azure-with-cloud-based-cloudshell-installation.md).*
 
 This article guides you on how to set up the VPN connection between Quali Server and Azure.
 :::note
@@ -61,4 +61,4 @@ For this procedure, you will need the IP address of your Quali Server VPN endpoi
     
     ![](/Images/Admin-Guide/Azure-deployment-type/CreateConnectionNotification.png)
     
-11. Next, [Add an Azure Cloud Provider Resource](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Cld-Prvdr-Rsc.htm).
+11. Next, [Add an Azure Cloud Provider Resource](./add-an-azure-cloud-provider-resource.md).

@@ -141,7 +141,7 @@ By default, users that are added to CloudShell via SSO are also added to the **E
 :::
 For information about creating users, see [Managing CloudShell Users](../../../../../admin/cloudshell-identity-management/managing-users/managing-cloudshell-users.md).
 
-**To define user groups for SAML SSO:**
+#### To define user groups for SAML SSO:
 
 1. Make sure the required user groups already exist in CloudShell and are added to a domain.
 2. Create a JSON file with the groups and their constraints per your needs, and save it under the name `sso_group_rules.config.json` in the root folder of the CloudShell Portal installation directory.

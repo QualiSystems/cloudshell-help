@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Add Your Script to an App
 
-Now that we have tested and debugged our script, the next step is to add it to an App template. For details, see [Adding App templates](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Apps.htm#Adding).
+Now that we have tested and debugged our script, the next step is to add it to an App template. For details, see [Adding App templates](../../../admin/cloudshell-manage-dashboard/manage-app-templates/index.md#adding-app-templates).
 
 1. In CloudShell Portal, open the **Manage>Apps** page.
     
@@ -34,7 +34,7 @@ Now that we have tested and debugged our script, the next step is to add it to a
         
     - Specify a dynamic value in the App in the blueprint, linking the parameter to one of the blueprint’s Global Inputs. To do so, just enter the global input’s name in curly brackets as the parameter value, or click the “plus” button to select an available Global Input.
         
-    - Pass a value using the API, as illustrated in [Parameters](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Config-Mng/Custom-Scripts.htm#CustomScriptParams). This will replace any value provided in the App template or in the blueprint
+    - Pass a value using the API, as illustrated in [Parameters](../custom-script-dev-for-apps/index.md#parameters). This will replace any value provided in the App template or in the blueprint
         
         ![Discovery Dialog](/Images/Devguide-configuration-management/Config-manage-Adding-Your_4_624x444.png)
         

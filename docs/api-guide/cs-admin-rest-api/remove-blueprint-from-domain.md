@@ -39,7 +39,7 @@ Example header format:
 
 | Parameter | Description/Comments |
 | --- | --- |
-| Id | (string) Blueprint's id. Can be retrieved via [Get domain's blueprints](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-domain-blueprints.htm). |
+| Id | (string) Blueprint's id. Can be retrieved via [Get domain's blueprints](./get-domain-blueprints.md). |
 
 </details>
 

@@ -8,11 +8,11 @@ The rest of this chapter is dedicated to implementing the cloud provider driver 
 
 The articles are:
 
-- [Resource Discovery](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Cld-Prvdrs/Resource-Discovery.htm)
-- [App Deployment](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Cld-Prvdrs/App-Deployment.htm)
-- [Power off and Delete VM](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Cld-Prvdrs/Power-off-and-Delete.htm)
-- [L2 Network Connectivity](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Cld-Prvdrs/L2-Network-Connectivity.htm)
-- [L3 Network Connectivity](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Cld-Prvdrs/L3-Network-Connectivity.htm)
+- [Resource Discovery](./resource-discovery.md)
+- [App Deployment](./app-deployment.md)
+- [Power off and Delete VM](./power-off-and-delete-vm.md)
+- [L2 Network Connectivity](./l2-network-connectivity.md)
+- [L3 Network Connectivity](./l3-network-connectivity.md)
 
 For illustration purposes, we will use a mock shell called HeavenlyCloud, which demonstrates the use and implementation of a custom cloud provider. We’ve created two versions of the shell, **L2HeavenlyCloudShell** for L2 clouds [(download here)](https://github.com/QualiSystems/Custom-L2-Cloud-Provider-Shell-Example) and **L3HeavenlyCloudShell** for L3 clouds [(download here)](https://github.com/QualiSystems/Custom-L3-Cloud-Provider-Shell-Example). The difference between the two is in the networking connectivity implementation.
 

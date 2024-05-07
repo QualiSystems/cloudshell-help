@@ -99,7 +99,7 @@ The goal of the *get\_inventory* function in the Shell’s driver is to query 
 
 **To implement the get\_inventory function:**
 
-1. Run the `shellfoundry generate` command to generate the Shell’s data model. For more information about the Shell’s data model, see [Managing the Shell’s Data Model](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Managing-Shell-Data-Model.htm).
+1. Run the `shellfoundry generate` command to generate the Shell’s data model. For more information about the Shell’s data model, see [Managing the Shell’s Data Model](./managing-the-shell-data-mode.md).
 2. Uncomment the following import in the shell's `driver.py` file:
     
     ```javascript

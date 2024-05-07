@@ -43,7 +43,7 @@ Example header format:
 | Description | (string) Domain description. |
 | EndTime | (string) End time of domain's validity. When the end time is reached, the domain will be accessible but no longer in use. |
 | Archived | (bool) **true** to archive the domain. |
-| LicensePoolId | (string) Id of the license pool. Can be retrieved via [Get all license pools](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-all-license-pools.htm). |
+| LicensePoolId | (string) Id of the license pool. Can be retrieved via [Get all license pools](./get-all-license-pools.md). |
 
 </details>
 

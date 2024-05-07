@@ -2,7 +2,7 @@
 
 The Azure deployment types integrate CloudShell with the Microsoft Azure public cloud. This integration enables the deployment of CloudShell Apps in Microsoft Azure. CloudShell supports deploying Azure virtual machines from Azure Marketplace images and Azure custom images as well as Azure Shared Gallery images using the Azure 2<sup>nd</sup> Gen shell.
 
-CloudShell supports two integration methods with Azure - "on prem" and "cloud". In "on prem", CloudShell Server is already installed locally and requires a VPN connection to Azure, while in "cloud", CloudShell needs to be installed on the Azure region along with the CloudShell integration resources. For details about the "cloud" method, see [Integrating Azure with Cloud-based CloudShell Installation](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Cld-Only-Intg.htm).
+CloudShell supports two integration methods with Azure - "on prem" and "cloud". In "on prem", CloudShell Server is already installed locally and requires a VPN connection to Azure, while in "cloud", CloudShell needs to be installed on the Azure region along with the CloudShell integration resources. For details about the "cloud" method, see [Integrating Azure with Cloud-based CloudShell Installation](../integrating-azure-with-cloud-based-cloudshell-installation.md).
 
 The following diagram illustrates an Azure integration (with a local CloudShell installation) hosting two live sandboxes:
 
@@ -25,11 +25,11 @@ When a new CloudShell sandbox with Azure Apps is starting, the out-of-the-box se
 
 :::note Notes:
 - Azure virtual machines in the same sandbox live in the same subnet and can interact with each other.
-- CloudShell allows sandboxes to have multiple subnets. If multiple subnets are defined (in the blueprint), the setup process will create the defined subnet networks instead of the default subnet. For additional information, see [Subnet Connectivity](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-Subnets.htm).
+- CloudShell allows sandboxes to have multiple subnets. If multiple subnets are defined (in the blueprint), the setup process will create the defined subnet networks instead of the default subnet. For additional information, see [Subnet Connectivity](../../../../setting-up-cloudshell/inventory-operations/connectivity-control/subnet-connectivity/index.md).
 - When the sandbox ends, all related Azure resources, including the sandbox subnet, resource group and virtual machines are automatically deleted by CloudShell.
 :::
 :::tip
-We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which provides significant enhancements and capabilities, and is tamper-resistant from within CloudShell, ensuring your Azure cloud provider resources and Apps are in pristine condition. Useful articles: [Replacing the 1st Gen shell with a 2nd Gen version](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Converting-1G-Shells.htm#Migrate), [Cloud Provider Shells - Features and Capabilities Per Release](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Clp-capabilities.htm).
+We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which provides significant enhancements and capabilities, and is tamper-resistant from within CloudShell, ensuring your Azure cloud provider resources and Apps are in pristine condition. Useful articles: [Replacing the 1st Gen shell with a 2nd Gen version](../../../../../devguide/reference/migrate-1st-gen-shell-to-2nd-gen-shell.md#replacing-the-1st-gen-shell-with-a-2nd-gen-version), [Cloud Provider Shells - Features and Capabilities Per Release](../../../cloud-provider-2g-shells-features-and-capabilities.md).
 :::
 ## Azure installation workflow
 
@@ -45,16 +45,15 @@ For each Azure region you want to integrate with CloudShell, perform the followi
     <tbody>
         <tr>
             <td style={{ backgroundColor: '#fff9c7' }}>
-                <ol>
-                    <li value={1}><a href="https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Cnfg-API.htm">Configure Azure API to work with CloudShell</a></li>
-                    <li value={2}><a href="https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Crt-Mng-RSc-Grp.htm">Create a Management Resource Group and VNets</a></li>
-                    <li value={3}><a href="https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-VNET-Cnct-to-Quali.htm">Connect the CloudShell Management VNet to Quali Server</a></li>
-                    <li value={4}><a href="https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Cld-Prvdr-Rsc.htm">Add an Azure Cloud Provider Resource</a></li>
-                    <li value={5}><a href="https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-App.htm">Add an Azure App Template</a></li>
-                    <li value={6}><a href="https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-VNET-Exec-Srv.htm">Configure an Execution Server Selector for Azure</a></li>
-                    <li value={7}><a href="https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-VNET-Qualix-Srv.htm">Configure the Qualix Server for Azure</a></li>
-                </ol>
-            </td>
+
+1. [Configure Azure API to work with CloudShell](./configure-azure-api-to-work-with-cloudshell.md)
+2. [Create a Management Resource Group and VNets](./create-a-management-resource-group-and-vnets.md)
+3. [Connect the CloudShell Management VNet to Quali Server](./connect-the-cloudshell-management-vnet-to-quali-server.md)
+4. [Add an Azure Cloud Provider Resource](./add-an-azure-cloud-provider-resource.md)
+5. [Add an Azure App Template](./add-an-azure-app-template.md)
+6. [Configure an Execution Server Selector for Azure](./configure-an-execution-server-selector-for-azure.md)
+7. [Configure the Qualix Server for Azure](./configure-the-qualix-server-for-azure.md)
+</td>
         </tr>
     </tbody>
 </table>
@@ -62,9 +61,9 @@ For each Azure region you want to integrate with CloudShell, perform the followi
 
 ## Related Topics
 
-- [Managing Public Cloud Apps in Domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Pblc-Cld-Apps-in-Dmns.htm)
-- [Cost Management of Microsoft Azure Resources](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Cst-Mngmnt.htm)
-- [Managing the Azure Execution Server](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-VNET-Exec-Srv-Mng.htm)
-- [Custom Routing for Azure in Sandboxes](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Cstm-Routing.htm)
-- [Azure Known Limitations](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Known-Limits.htm)
-- [Connecting Azure Apps to predefined subnets](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Rsrc-Cnct.htm#Connecti4)
+- [Managing Public Cloud Apps in Domains](../../managing-public-cloud-apps-in-domains.md)
+- [Cost Management of Microsoft Azure Resources](../cost-management-of-microsoft-azure-resources.md)
+- [Managing the Azure Execution Server](../managing-the-azure-execution-server.md)
+- [Custom Routing for Azure in Sandboxes](../custom-routing-for-azure-in-sandboxes.md)
+- [Azure Known Limitations](../azure-known-limitations.md)
+- [Connecting Azure Apps to predefined subnets](../../../../../portal/sandboxes/sandbox-workspace/connect-resources-and-apps.md#connecting-azure-apps-to-predefined-subnets)

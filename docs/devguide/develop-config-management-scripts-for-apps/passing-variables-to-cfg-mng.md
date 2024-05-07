@@ -25,7 +25,7 @@ The main files in the script are:
 
 ## Related Topics
 
-- [Managing Assets](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Scrpt.htm)
-- [Managing App Templates](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Apps.htm)
-- [Create a Blueprint](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Crt-Blprnt/Blprnt-New.htm)
-- [Configure Blueprint Orchestration](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Crt-Blprnt/Blprnt-Blprnt-Orchs.htm)
+- [Managing Assets](./../../admin/cloudshell-manage-dashboard/managing-automation/managing-assets.md)
+- [Managing App Templates](../../admin/cloudshell-manage-dashboard/manage-app-templates/index.md)
+- [Create a Blueprint](../../portal/blueprints/creating-blueprints/create-blueprint.md)
+- [Configure Blueprint Orchestration](../../portal/blueprints/creating-blueprints/configure-orchestration.md)

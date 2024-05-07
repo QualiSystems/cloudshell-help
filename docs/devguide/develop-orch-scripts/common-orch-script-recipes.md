@@ -73,4 +73,4 @@ Make sure to add a `requirements.txt` file that will include the *cloudshell-orc
 
 Note the code in the components helper’s method to get the correct Apps from the sandbox and the usage in the App object rather than the name of the App for other methods like **apps\_configuration.set\_config\_param**.
 
-Configuration of a sandbox’s Apps can be streamlined by using the OOB setup logic, as explained in [Extending the OOB Setup Orchestration Scripts](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Orch-Scripts/CloudShell-OOB-Orch.htm#Extendin).
+Configuration of a sandbox’s Apps can be streamlined by using the OOB setup logic, as explained in [Extending the OOB Setup Orchestration Scripts](./cs-oob-orch/index.md#extending-the-oob-setup-orchestration-scripts).

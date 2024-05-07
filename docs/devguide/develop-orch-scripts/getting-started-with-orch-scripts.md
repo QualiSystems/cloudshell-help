@@ -30,11 +30,11 @@ Orchestration scripts can enable automating sandbox workflows. You can use orche
 
 This procedure shows the basic steps for creating and using orchestration scripts in CloudShell.
 
-1. Create a Python script. You can create a single python script, or a more complex orchestration that uses dependencies, as explained in [Script Deep Dive](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Orch-Scripts/Scripts-Deep-Dive.htm) .
+1. Create a Python script. You can create a single python script, or a more complex orchestration that uses dependencies, as explained in [Script Deep Dive](./script-deep-dive.md) .
     :::tip
     It is highly recommended to extend CloudShell's out-of-the-box orchestration scripts as they already contain important orchestration capabilities you'd like to preserve. To do so, log in to CloudShell Portal as Global administrator, in the **Manage>Assets>Blueprint** page, download the desired script, make the necessary changes and save the script under a new name.
     :::
-2. If the script requires the use of Python dependencies, which aren’t available in the public PyPi repository, add them to the local PyPi Server. See [Updating Python Dependencies for Shells, Drivers and Scripts](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Updt-Pyth-Libs.htm).
+2. If the script requires the use of Python dependencies, which aren’t available in the public PyPi repository, add them to the local PyPi Server. See [Updating Python Dependencies for Shells, Drivers and Scripts](../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/updating-python-dependencies-for-shells-drivers-and-scripts.md).
     
 3. Save the script (if it's a single file) or zip the package if it comprises multiple files.
     :::important
@@ -146,10 +146,10 @@ To set a specific version of the package, use "==". For example:
 cloudshell-orch-core==3.2.0.169
 ```
 
-For details about the `requirements.txt` file, see [Script Deep Dive](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Orch-Scripts/Scripts-Deep-Dive.htm).
+For details about the `requirements.txt` file, see [Script Deep Dive](./script-deep-dive.md).
 
 ## Setting the default Python version for new orchestration scripts
 
-Starting with CloudShell 9.2, the `DefaultPythonVersion` admin key allows you to control the Python version in which all new orchestration scripts are created. For details, see [Advanced CloudShell Customizations](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm).
+Starting with CloudShell 9.2, the `DefaultPythonVersion` admin key allows you to control the Python version in which all new orchestration scripts are created. For details, see [Advanced CloudShell Customizations](../../admin/setting-up-cloudshell/cloudshell-configuration-options/advanced-cloudshell-customizations.md).
 
 Note that this key also applies to new shells.

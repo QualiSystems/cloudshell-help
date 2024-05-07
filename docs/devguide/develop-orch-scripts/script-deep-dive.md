@@ -14,7 +14,7 @@ To send information to the script, CloudShell sets environment variables in the 
 
 ## Using requirements.txt with CloudShell orchestration scripts
 
-It’s now possible to attach a requirements.txt file to make sure your script will have all dependencies installed on the virtual environment before the script’s execution starts. For details about the *cloudshell-orch-core* package, see this [Getting Started with Orchestration Scripts](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Orch-Scripts/Getting-Started.htm) section.
+It’s now possible to attach a requirements.txt file to make sure your script will have all dependencies installed on the virtual environment before the script’s execution starts. For details about the *cloudshell-orch-core* package, see this [Getting Started with Orchestration Scripts](./getting-started-with-orch-scripts.md) section.
 
 **To use the requirements.txt:**
 

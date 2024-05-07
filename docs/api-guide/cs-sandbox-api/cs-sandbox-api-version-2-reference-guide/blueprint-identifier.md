@@ -38,6 +38,6 @@ Example header format for the `blueprint identifier` method:
 <details>
 <summary>Response example</summary>
 
-The example response of the `blueprint identifier` method is similar to that of the [blueprints](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/REST-API-blueprints.htm) method. However, in this case the output properties are displayed for a particular blueprint (as opposed to multiple ones), and includes any published blueprint and resource input parameters. The API can call a blueprint by name or ID.
+The example response of the `blueprint identifier` method is similar to that of the [blueprints](./blueprints.md) method. However, in this case the output properties are displayed for a particular blueprint (as opposed to multiple ones), and includes any published blueprint and resource input parameters. The API can call a blueprint by name or ID.
 
 </details>

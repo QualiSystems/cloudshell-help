@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Creating the Cloud Provider Shell
 
-Before you start, make sure to set up your machine for shell development and implementations, as explained in [Getting Started with Cloud Provider Development](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Cld-Prvdrs/Getting-Started.htm).
+Before you start, make sure to set up your machine for shell development and implementations, as explained in [Getting Started with Cloud Provider Development](./getting-started-with-cp-dev.md).
 
 ## Creating the cloud provider shell
 
@@ -20,7 +20,7 @@ Navigate to the folder that will contain the Cloud Provider shell and create the
 
 The shell is created in the folder.
 
-Note that the shell project comprises the same files and folders as any other shell, with one exception, the Cloud Provider shell also includes a **Deployments** folder, which contains the deployment paths for the Cloud Provider’s App templates. More on this in [Configuring Deployment Paths](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Cld-Prvdrs/Configuring-Deployment-Paths.htm). For details about the shell project structure, see [The Shell Project Guide](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/The-Shell-Project.htm).
+Note that the shell project comprises the same files and folders as any other shell, with one exception, the Cloud Provider shell also includes a **Deployments** folder, which contains the deployment paths for the Cloud Provider’s App templates. More on this in [Configuring Deployment Paths](./configure-the-deployment-paths.md). For details about the shell project structure, see [The Shell Project Guide](../developing-shells/the-shell-project-guide.md).
 
 Let’s make sure the shell was imported into CloudShell. In command-line, navigate to the shell’s root folder and run:
 

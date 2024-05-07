@@ -25,7 +25,7 @@ A RESTFul API that allows your admins to perform CloudShell administration tasks
 
 ## Sandbox API
 
-A RESTful API designed to facilitate the consumption of public blueprints for CI and DevOps activities. It enables you to automate the deployment of CloudShell sandboxes and interact with sandbox components, and integrates with CI platforms such as Jenkins or Jetbrains TeamCity. CloudShell Sandbox API comes with an API gateway, which enables to interact with CloudShell without direct access to the server. For details, see [CloudShell Sandbox API](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/CS-Snbx-API-Topic.htm).
+A RESTful API designed to facilitate the consumption of public blueprints for CI and DevOps activities. It enables you to automate the deployment of CloudShell sandboxes and interact with sandbox components, and integrates with CI platforms such as Jenkins or Jetbrains TeamCity. CloudShell Sandbox API comes with an API gateway, which enables to interact with CloudShell without direct access to the server. For details, see [CloudShell Sandbox API](./cs-sandbox-api/index.md).
 
 ## Automation API
 

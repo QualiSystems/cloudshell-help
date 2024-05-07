@@ -39,7 +39,7 @@ Example header format:
 
 | Parameter | Description/Comments |
 | --- | --- |
-| Id | (string) Domain's id. Can be retrieved via [Get group's domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/RefGuides/RM-API/admin-api-get-group-domains.htm). |
+| Id | (string) Domain's id. Can be retrieved via [Get group's domains](./get-group-domains.md). |
 </details>
 
 <details>

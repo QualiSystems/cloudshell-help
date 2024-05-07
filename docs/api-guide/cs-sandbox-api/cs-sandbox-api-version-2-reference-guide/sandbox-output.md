@@ -8,7 +8,7 @@ sidebar_position: 14
 
 Gets the content of CloudShell Portal's Output console for a particular ACTIVE sandbox. This displays execution information related to running blueprint and resource commands.
 
-The maximum number of entries in the response is configured by the administrator. If this number of entries is exceeded, the response will include multiple pages. For more information, see [Setting the response page size for the Sandbox API live documentation pages](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm#Controll).
+The maximum number of entries in the response is configured by the administrator. If this number of entries is exceeded, the response will include multiple pages. For more information, see [Setting the response page size for the Sandbox API live documentation pages](../../../admin/setting-up-cloudshell/cloudshell-configuration-options/advanced-cloudshell-customizations.md#setting-the-response-page-size-for-the-sandbox-api-live-documentation-pages).
 
 ### URL
 
