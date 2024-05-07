@@ -20,5 +20,5 @@ sidebar_position: 4
 
 ## Related Topics
 
-- [Physical Network Connectivity](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Rsc-Cnct/Phys-Ntwrk-Cntnr.htm)
-- [View Physical Network Connectivity Requirements](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Rsc-Cnct/Phys-Ntwrk-View.htm)
+- [Physical Network Connectivity](index.md)
+- [View Physical Network Connectivity Requirements](./view-phy-net-connectivity-req.md)

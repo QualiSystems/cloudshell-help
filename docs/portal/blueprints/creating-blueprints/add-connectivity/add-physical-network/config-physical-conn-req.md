@@ -31,6 +31,6 @@ It is possible to configure new connectivity requirements or modify the properti
 
 ## Related Topics
 
-- [Physical Network Connectivity](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Rsc-Cnct/Phys-Ntwrk-Cntnr.htm)
-- [View Physical Network Connectivity Requirements](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Rsc-Cnct/Phys-Ntwrk-View.htm)
-- [Add Physical Network Connectivity Requirements](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Rsc-Cnct/Phys-Ntwrk-Crt.htm)
+- [Physical Network Connectivity](./index.md)
+- [View Physical Network Connectivity Requirements](./view-phy-net-connectivity-req.md)
+- [Add Physical Network Connectivity Requirements](./add-phy-net-req/index.md)
