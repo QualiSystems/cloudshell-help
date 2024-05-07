@@ -19,4 +19,4 @@ If you want to allows specific users to work on a sandbox that is created from a
 
 ## Related Topics
 
-- [Creating Blueprints](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Blprnt-Crt.htm)
+- [Creating Blueprints](./index.md)

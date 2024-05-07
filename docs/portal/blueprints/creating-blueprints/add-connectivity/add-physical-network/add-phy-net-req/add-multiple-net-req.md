@@ -15,7 +15,7 @@ You can specify multiple source and target ports to use to make the connection b
 
 ## Related Topics
 
-- [Physical Network Connectivity](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Rsc-Cnct/Phys-Ntwrk-Cntnr.htm)
-- [Physical Network Connectivity Prerequisites](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Rsc-Cnct/Phys-Ntwrk-Prqst.htm)
-- [View Physical Network Connectivity Requirements](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Rsc-Cnct/Phys-Ntwrk-View.htm)
-- [Add Physical Network Connectivity Requirements](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Rsc-Cnct/Phys-Ntwrk-Crt.htm)
+- [Physical Network Connectivity](../index.md)
+- [Physical Network Connectivity Prerequisites](../physical-net-connectivity-prereq.md)
+- [View Physical Network Connectivity Requirements](../view-phy-net-connectivity-req.md)
+- [Add Physical Network Connectivity Requirements](./index.md)

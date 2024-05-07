@@ -23,4 +23,4 @@ This article explains how to create a template from an existing blueprint. This 
 
 ## Related Topics
 
-- [Creating Blueprints](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Blprnt-Crt.htm)
+- [Creating Blueprints](./index.md)

@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Services in Blueprints
 
-This article explains how to use services in blueprints. For additional information about CloudShell services, see [Services Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Services.htm).
+This article explains how to use services in blueprints. For additional information about CloudShell services, see [Services Overview](../../../intro/features/services.md).
 
 ## View services
 
@@ -22,7 +22,7 @@ This article explains how to use services in blueprints. For additional informat
 
 ## Add services
 :::tip
-Before you add a Subnet service, read through [Subnet Connectivity - Points to Consider](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-Subnets-Cnsdr.htm).
+Before you add a Subnet service, read through [Subnet Connectivity - Points to Consider](../../../admin/setting-up-cloudshell/inventory-operations/connectivity-control/subnet-connectivity/subnet-connectivity--points-to-consider.md).
 :::
 **To add a service to the diagram:**
 
@@ -78,6 +78,6 @@ A new blank blueprint is displayed in the **Blueprint Catalog**.
 
 ## Related Topics
 
-- [VLAN Connectivity](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-VLAN.htm)
-- [Subnet Connectivity](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-Subnets.htm)
-- [Connect Resources and Apps](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Rsrc-Cnct.htm)
+- [VLAN Connectivity](../../../admin/setting-up-cloudshell/inventory-operations/connectivity-control/vlan-connectivity/index.md)
+- [Subnet Connectivity](../../../admin/setting-up-cloudshell/inventory-operations/connectivity-control/subnet-connectivity/index.md)
+- [Connect Resources and Apps](../../sandboxes/sandbox-workspace/connect-resources-and-apps.md)

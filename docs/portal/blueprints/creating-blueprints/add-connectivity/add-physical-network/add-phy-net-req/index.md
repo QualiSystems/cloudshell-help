@@ -1,6 +1,6 @@
 # Add Physical Network Connectivity Requirements
 
-After you add resources into the blueprint or sandbox, you can add their connectivity requirements by drawing connectivity lines between them. There are four connection types: Route, Cable, Tap, and Visual. They are explained in detail below. For app connections, see [Add Virtual Network Connectivity Requirements](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Cnct/Vir-Ntwrk-Cnct-Crt.htm).
+After you add resources into the blueprint or sandbox, you can add their connectivity requirements by drawing connectivity lines between them. There are four connection types: Route, Cable, Tap, and Visual. They are explained in detail below. For app connections, see [Add Virtual Network Connectivity Requirements](../../../../../sandboxes/sandbox-workspace/add-connectivity/add-virtual-network/add-virtual-net-connectivity-req.md).
 
 :::note
 Creating a route request in the blueprint doesn’t guarantee that a possible solution (actual physical connectivity between the endpoints) exists.
@@ -20,19 +20,19 @@ Creating a route request in the blueprint doesn’t guarantee that a possible so
     
 3. From the **Connection Type** dropdown list, select the connection type.
     
-    Each connection type is represented by a color code (see [View Physical Network Connectivity Requirements](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Rsc-Cnct/Phys-Ntwrk-View.htm#Connection_Type_Color_Codes)). For the different connection line types and icons used to indicate different connection variations, see [Connections Legend](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Cnctivity-Lgnd.htm).
+    Each connection type is represented by a color code (see [View Physical Network Connectivity Requirements](../view-phy-net-connectivity-req.md)). For the different connection line types and icons used to indicate different connection variations, see [Connections Legend](../../../../../sandboxes/sandbox-workspace/add-connectivity/connections-legend.md).
     
     | Connection type | Description |
     | --- | --- |
     | Route (Logical) | A route represents a logical connection between two endpoints that may or may not be connected directly and are represented on the diagram by lines. A route may be requested from a source resource that is connected indirectly to the target resource via an L1 switch or patch panel, it can also be used to represent a virtual network link between the two devices. Each of the inner connections between the source and target resource is a route segment. Route segments can be physical connections between two devices, or mapped connections within the switch or panel. |
-    | Cable (Physical) | Represents a request for a physical connection between two endpoints. The cable indicates a direct connection between two resources hence includes only one segment. This requires communicating the cable request to the system administrator who needs to physically connect the resources with a cable. <br/><br/> The following workflow is provided to address situations where you need to make a physical connection between resources in the blueprint. A different workflow may be used to suit your organization's needs.<br/>i. Email the required cable connection to the system administrator. You can draw the connectivity lines between the resources in the blueprint and send them in a CSV file - see [Exporting Diagrams](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Exprt-Imprt/Blprnt-Exprt-Dgrm-Cncts.htm#Exportin). <br/>ii. The system administrator connects the resources with a physical cable and notifies you that the connection is ready. <br/>iii. Reserve the blueprint and create the missing connection using the Cable (Physical) connection type.<br/>iv. Connect the resources.<br/> Once a connection is established, the broken connection line becomes a solid line. |
+    | Cable (Physical) | Represents a request for a physical connection between two endpoints. The cable indicates a direct connection between two resources hence includes only one segment. This requires communicating the cable request to the system administrator who needs to physically connect the resources with a cable. <br/><br/> The following workflow is provided to address situations where you need to make a physical connection between resources in the blueprint. A different workflow may be used to suit your organization's needs.<br/>i. Email the required cable connection to the system administrator. You can draw the connectivity lines between the resources in the blueprint and send them in a CSV file - see [Exporting Diagrams](../../../export-blueprints/export-diagram.md). <br/>ii. The system administrator connects the resources with a physical cable and notifies you that the connection is ready. <br/>iii. Reserve the blueprint and create the missing connection using the Cable (Physical) connection type.<br/>iv. Connect the resources.<br/> Once a connection is established, the broken connection line becomes a solid line. |
     | Tap (Logical) | Creates a type of route that represents a unidirectional connection from a tapped resource (source) to a monitoring device (target). The tap route is direction sensitive. |
-    | Connector (Visual) | This connection is visual only and can be created between any types of endpoints, connectable and non-connectable alike. This connection type does not have connected and disconnected states, just one default state. This type can be used for many different reasons. For example, to visualize some logical relation between endpoints in the diagram, or to pass information to the blueprint's orchestration or one of the resources regarding custom relations between resources. <br/><br/>This connection is also used for L2 and L3 connectivity (CloudShell determines this automatically based on the endpoints) - see [Add Virtual Network Connectivity Requirements](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Cnct/Vir-Ntwrk-Cnct-Crt.htm). |
+    | Connector (Visual) | This connection is visual only and can be created between any types of endpoints, connectable and non-connectable alike. This connection type does not have connected and disconnected states, just one default state. This type can be used for many different reasons. For example, to visualize some logical relation between endpoints in the diagram, or to pass information to the blueprint's orchestration or one of the resources regarding custom relations between resources. <br/><br/>This connection is also used for L2 and L3 connectivity (CloudShell determines this automatically based on the endpoints) - see [Add Virtual Network Connectivity Requirements](../../../../../sandboxes/sandbox-workspace/add-connectivity/add-virtual-network/add-virtual-net-connectivity-req.md). |
     
 
 The available source and target port lists are updated according to the selected connection type.
 
-4. Optionally, use the filters located in the left filter bar to find the ports to use. The following filters are available:
+1. Optionally, use the filters located in the left filter bar to find the ports to use. The following filters are available:
     
     | Filter category | Options |
     | --- | --- |
@@ -43,11 +43,11 @@ The available source and target port lists are updated according to the selected
     
     It is also possible to add custom filters based on attribute values. For example, filtering by protocol type. To configure an attribute to be shown as a filter in the **Resource Connections** dialog box, enable the **Displayed in Route Creation** rule in the attribute in **Resource Manager**. The user should be able to filter ports based on the attributes values.
     
-5. To specify multiple routes between the two endpoints, see [Add Multiple Physical Network Connectivity Requirements](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Rsc-Cnct/Phys-Ntwrk-Mltp.htm#Creating-bulk-connections).
-6. From the **Select Source Port** pane, select the port of the source endpoint.
-7. From the **Select Target Port** pane, select the port of the target endpoint.
-8. Click the **Add** button to add the connectivity requirement. You can add more connectivity requirements between additional ports by repeating the same sequence.
-9. Click **Save** to add the new route.
+2. To specify multiple routes between the two endpoints, see [Add Multiple Physical Network Connectivity Requirements](./add-multiple-net-req.md).
+3. From the **Select Source Port** pane, select the port of the source endpoint.
+4. From the **Select Target Port** pane, select the port of the target endpoint.
+5. Click the **Add** button to add the connectivity requirement. You can add more connectivity requirements between additional ports by repeating the same sequence.
+6. Click **Save** to add the new route.
     
     An indication message is displayed. For example:
     
@@ -55,14 +55,14 @@ The available source and target port lists are updated according to the selected
     When connecting the routes in a sandbox, CloudShell resolves the routes (establishes the required internal mappings in the L1 or Patch Panel resources along the route, or uses a Virtual Network if an App is included in the route).
     
     :::tip
-    To check if the connectivity requirement you added can be solved, see [Check Blueprint](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Chck-Blprnt.htm).
+    To check if the connectivity requirement you added can be solved, see [Check Blueprint](../../../check-blueprint.md).
     :::
     
 
 ## Related Topics
 
-- [Physical Network Connectivity](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Rsc-Cnct/Phys-Ntwrk-Cntnr.htm)
-- [Physical Network Connectivity Prerequisites](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Rsc-Cnct/Phys-Ntwrk-Prqst.htm)
-- [View Physical Network Connectivity Requirements](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Rsc-Cnct/Phys-Ntwrk-View.htm)
-- [Add Multiple Physical Network Connectivity Requirements](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Rsc-Cnct/Phys-Ntwrk-Mltp.htm)
-- [Configure Physical Network Connectivity Requirements](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Rsc-Cnct/Phys-Ntwrk-Cnfg.htm)
+- [Physical Network Connectivity](../index.md)
+- [Physical Network Connectivity Prerequisites](../physical-net-connectivity-prereq.md)
+- [View Physical Network Connectivity Requirements](../view-phy-net-connectivity-req.md)
+- [Add Multiple Physical Network Connectivity Requirements](./add-multiple-net-req.md)
+- [Configure Physical Network Connectivity Requirements](../config-physical-conn-req.md)
