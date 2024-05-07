@@ -8,7 +8,7 @@ This procedure describes how to import a blueprint package into CloudShell so th
 
 Before importing a package, make sure to import (into CloudShell Portal) the shells associated with the blueprint's resources.
 
-See [Exporting a Blueprint Package](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Exprt-Imprt/Blprnt-Exprt.htm) to get more information about how to create these packages.
+See [Exporting a Blueprint Package](./export-blueprints/export-a-package.md) to get more information about how to create these packages.
 
 :::note
 When exporting a package, the complete zip file is exported. However, when preparing the zip file for import, you can change the contents of the package zip file. For instance, you can export a blueprint to generate a package, but remove the Topologies folder from the zip file so that only the resources and data model will be imported.
@@ -28,7 +28,7 @@ The following table describes which elements are imported into CloudShell.
 | Drivers<br/>(1st Gen shells only) | Import all resource drivers (as part of the resource shells) in the package. If drivers that have the same names as existing drivers are added, the existing ones are overwritten, even if the imported package is from an older CloudShell Server version.<br/>**Note:** Resource drivers are supported for backwards compatibility only. |
 | Blueprint scripts | Import Python scripts attached to the blueprint and to the blueprint's components. |
 | Resource scripts / repository assets | Import Python scripts and repository assets (Configuration Management sh/ps1 scripts and Ansible playbooks) attached to the blueprint's components.<br/>**Note:** CloudShell identifies resource scripts and assets by their names. As such, CloudShell does not import a script or asset if one with the same name already exists in CloudShell. |
-| Data model<br/>(1st Gen shells only) | Import new and update existing attributes, new families and models, drivers, and images.<br/>**Warnings:**<ul><li>VLAN and Subnet limitations apply to the importing of blueprints containing these services. For details, see [VLAN Connectivity](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-VLAN.htm) and [Subnet Connectivity - Points to Consider](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl-Subnets-Cnsdr.htm).</li><li>If blueprints that have the same name as existing blueprints are added, the existing blueprints with the same name are overwritten, even if the imported package is from an older CloudShell Server version.</li></ul> |
+| Data model<br/>(1st Gen shells only) | Import new and update existing attributes, new families and models, drivers, and images.<br/>**Warnings:**<ul><li>VLAN and Subnet limitations apply to the importing of blueprints containing these services. For details, see [VLAN Connectivity](../../../admin/setting-up-cloudshell/inventory-operations/connectivity-control/vlan-connectivity/index.md) and [Subnet Connectivity - Points to Consider](../../../admin/setting-up-cloudshell/inventory-operations/connectivity-control/subnet-connectivity/index.md).</li><li>If blueprints that have the same name as existing blueprints are added, the existing blueprints with the same name are overwritten, even if the imported package is from an older CloudShell Server version.</li></ul> |
 | Resources | Import new and update existing resources and sub resources. IP addresses are only updated if the existing value is NA.<br/>Resources are searched for by unique ID. If not found, then the search is performed according to name.<br/>**Warning:** If data models that have the same names as existing data models are added, information that is overwritten includes the default value, description, read-only information and other properties. However, other elements are added, for example model attributes. In most cases information that is set in the database but not in the package is not deleted, like the attributes of a model.<br/>In addition, if any of the packaged resources are based on Shells or Shell versions that are missing from CloudShell, you will be prompted to import the required Shells first. |
 | Abstract resources | Abstract resources are exported as is. |
 | App Templates | Import new and update existing App templates. App templates are searched for by name.<br/>For admins the Apps are included in the blueprint. For regular users, the Apps are included in the blueprint if the regular user is the blueprint owner. |
@@ -58,4 +58,4 @@ The import process is limited by the user's permissions, as described in the fol
 
 ## Related Topics
 
-- [Creating Blueprints](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Blprnt-Crt.htm)
+- [Creating Blueprints](./index.md)

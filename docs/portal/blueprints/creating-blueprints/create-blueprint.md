@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Create a Blueprint
 
-You can create an empty blueprint or base it on a blueprint template. It is recommended to use templates as they provide environment automation. For instance, the out-of-the-box CloudShell Sandbox Template template deploys Apps and connections on Setup, and deletes the Apps from their cloud providers on Teardown - see [CloudShell Sandbox Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Wrk-wth-Blprnt-Tmplt.htm#CloudShe) for details.
+You can create an empty blueprint or base it on a blueprint template. It is recommended to use templates as they provide environment automation. For instance, the out-of-the-box CloudShell Sandbox Template template deploys Apps and connections on Setup, and deletes the Apps from their cloud providers on Teardown - see [CloudShell Sandbox Template](../../../admin/cloudshell-manage-dashboard/blueprint-templates.md#cloudshell-sandbox-template) for details.
 
 Each blueprint has an owner which by default is the user who created the blueprint, but it can be changed by the owner or by an admin.
 
@@ -27,9 +27,9 @@ Each blueprint has an owner which by default is the user who created the bluepri
 
 ## Creating a blueprint from a template
 
-Blueprints that are created from a template inherit the template's settings, including resources, services, Apps, orchestration and connections. By default, users can create blueprints from templates only. As an admin you can enable your users to create blank blueprints by changing the configuration key value. See [Allowing users to create new empty blueprints](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Wrk-wth-Blprnt-Tmplt.htm#Allowing).
+Blueprints that are created from a template inherit the template's settings, including resources, services, Apps, orchestration and connections. By default, users can create blueprints from templates only. As an admin you can enable your users to create blank blueprints by changing the configuration key value. See [Allowing users to create new empty blueprints](../../../admin/cloudshell-manage-dashboard/blueprint-templates.md#allowing-users-to-create-new-empty-blueprints).
 
-For step-by-step instructions on how to create a blueprint template, see [Creating a new blueprint template](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Wrk-wth-Blprnt-Tmplt.htm#Creating).
+For step-by-step instructions on how to create a blueprint template, see [Creating a new blueprint template](../../../admin/cloudshell-manage-dashboard/blueprint-templates.md#creating-a-new-blueprint-template).
 
 **To create a new blueprint from a template:**
 
