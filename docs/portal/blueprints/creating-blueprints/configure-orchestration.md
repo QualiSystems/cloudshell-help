@@ -6,11 +6,11 @@ sidebar_position: 14
 
 *Sandbox environment automation and enhanced orchestration is available with CloudShell Premium Tier.*
 
-This section explains how to configure the blueprint (orchestration) commands that will run on the sandbox and should be used when working on a blueprint that is not based on the default **CloudShell Sandbox Template**, which provides common setup, teardown, save, and restore orchestration commands. For resource automation, see [Managing Assets](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Scrpt.htm).
+This section explains how to configure the blueprint (orchestration) commands that will run on the sandbox and should be used when working on a blueprint that is not based on the default **CloudShell Sandbox Template**, which provides common setup, teardown, save, and restore orchestration commands. For resource automation, see [Managing Assets](../../../admin/cloudshell-manage-dashboard/managing-automation/managing-assets.md).
 
 ## Add blueprint scripts
 
-You can add Python scripts that contain orchestration commands. However, the blueprint scripts first need to be added to CloudShell - see [Adding scripts](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Scrpt.htm#AddingScrpts).
+You can add Python scripts that contain orchestration commands. However, the blueprint scripts first need to be added to CloudShell - see [Adding scripts](../../../admin/cloudshell-manage-dashboard/managing-automation/managing-assets.md#adding-scripts).
 
 **To add blueprint scripts:**
 
@@ -27,13 +27,13 @@ You can add Python scripts that contain orchestration commands. However, the blu
 
 ## Use scripts to set up and tear down blueprints
 
-CloudShell provides [CloudShell Sandbox Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Wrk-wth-Blprnt-Tmplt.htm#CloudShe), an out-of-the-box template, which includes common setup and teardown orchestration. If you have an existing blueprint or you created a new blueprint not based on the out-of-the-box template, you can add out-of-the-box orchestration to your blueprint in the blueprint properties page.
+CloudShell provides [CloudShell Sandbox Template](../../../admin/cloudshell-manage-dashboard/blueprint-templates.md#cloudshell-sandbox-template), an out-of-the-box template, which includes common setup and teardown orchestration. If you have an existing blueprint or you created a new blueprint not based on the out-of-the-box template, you can add out-of-the-box orchestration to your blueprint in the blueprint properties page.
 
-You can also create your own scripts that will setup and teardown a sandbox or customize the out-of-the-box scripts. For more information, see CloudShell Dev Guide's [Getting Started with Orchestration Scripts](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Orch-Scripts/Getting-Started.htm).
+You can also create your own scripts that will setup and teardown a sandbox or customize the out-of-the-box scripts. For more information, see CloudShell Dev Guide's [Getting Started with Orchestration Scripts](../../../devguide/develop-orch-scripts/getting-started-with-orch-scripts.md).
 
 **To add set up and teardown scripts to a blueprint:**
 
-1. In the **Manage** dashboard, upload the orchestration script (as described above). (For more details about adding and editing scripts, see [Managing Assets](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Scrpt.htm).)
+1. In the **Manage** dashboard, upload the orchestration script (as described above). (For more details about adding and editing scripts, see [Managing Assets](../../../admin/cloudshell-manage-dashboard/managing-automation/managing-assets.md).)
 2. In the **Edit Script** dialog box for the required script, set the **Script Type** to be **Setup** or **Teardown** and save.
 3. Open the blueprint's properties page.
 4. (Optional) Select a **Driver**.
@@ -71,9 +71,9 @@ You can also create your own scripts that will setup and teardown a sandbox or c
 
 ## Add save and restore orchestration scripts
 
-The [CloudShell Sandbox Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Wrk-wth-Blprnt-Tmplt.htm#CloudShe) is provided out-of-the-box and includes save and restore orchestration. If you have a new or existing blueprint that is not based on the out-of-the-box template, you can add out-of-the-box orchestration to your blueprint in the blueprint's **Properties** page. For additional customizations related to the **Save and Restore** add-on, see [Save Sandbox Configurations](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Sv-Sndbx-Cnfg.htm)
+The [CloudShell Sandbox Template](../../../admin/cloudshell-manage-dashboard/blueprint-templates.md#cloudshell-sandbox-template) is provided out-of-the-box and includes save and restore orchestration. If you have a new or existing blueprint that is not based on the out-of-the-box template, you can add out-of-the-box orchestration to your blueprint in the blueprint's **Properties** page. For additional customizations related to the **Save and Restore** add-on, see [Save Sandbox Configurations](../../../admin/setting-up-cloudshell/cloudshell-configuration-options/save-sandbox-configurations.md)
 
-Developers can also customize the out-of-the-box **Save and Restore** scripts that save and restore sandboxes. For more information, see the CloudShell Dev Guide's [Getting Started with Orchestration Scripts](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Orch-Scripts/Getting-Started.htm).
+Developers can also customize the out-of-the-box **Save and Restore** scripts that save and restore sandboxes. For more information, see the CloudShell Dev Guide's [Getting Started with Orchestration Scripts](../../../devguide/develop-orch-scripts/getting-started-with-orch-scripts.md).
 
 **To add save and restore orchestration scripts:**
 
@@ -93,9 +93,9 @@ Developers can also customize the out-of-the-box **Save and Restore** scripts th
 
 ## Related Topics
 
-- [Create Blueprint Commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Crt-Blprnt/Crt-Blprnt-Cmnds.htm)
-- [CloudShell Sandbox Template](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Wrk-wth-Blprnt-Tmplt.htm#CloudShe)
-- [Managing Assets](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Scrpt.htm)
-- [Custom Routing for Azure in Sandboxes](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-Cstm-Routing.htm)
-- [Managing Drivers](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Drvr.htm)
-- [Run Commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Run-Cmd.htm)
+- [Create Blueprint Commands](./create-blueprint-commands.md)
+- [CloudShell Sandbox Template](../../../admin/cloudshell-manage-dashboard/blueprint-templates.md#cloudshell-sandbox-template)
+- [Managing Assets](../../../admin/cloudshell-manage-dashboard/managing-automation/managing-assets.md)
+- [Custom Routing for Azure in Sandboxes](../../../admin/supported-cloud-providers-in-cloudshell/public-cloud-provider-support-in-cloudshell/microsoft-azure-integration-and-configuration/custom-routing-for-azure-in-sandboxes.md)
+- [Managing Drivers](../../../admin/cloudshell-manage-dashboard/managing-automation/managing-drivers.md)
+- [Run Commands](../../sandboxes/sandbox-workspace/run-commands.md)

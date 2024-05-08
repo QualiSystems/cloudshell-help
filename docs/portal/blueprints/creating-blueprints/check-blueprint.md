@@ -6,7 +6,7 @@ sidebar_position: 10
 
 This action runs a quick check to see if there is a possible solution to the blueprint's connectivity and abstract resource requirements. It only checks if a possible solution exists and not if the solution is currently available.
 :::tip
-If you are checking a highly complex blueprint, you may want to run a more thorough check of your blueprint's connectivity routes, as explained in [Check Blueprint Routes](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Chck-Blprnt-Rts.htm).
+If you are checking a highly complex blueprint, you may want to run a more thorough check of your blueprint's connectivity routes, as explained in [Check Blueprint Routes](./check-blueprint-routes.md).
 :::
 **To check if a solution exists for a blueprint:**
 
