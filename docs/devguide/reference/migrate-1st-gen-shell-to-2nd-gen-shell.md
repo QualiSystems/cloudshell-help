@@ -5,35 +5,35 @@ sidebar_label: Migrating 1st Gen Shells to 2nd Gen
 
 # Migrating 1<sup>st</sup> Gen Shells to 2<sup>nd</sup> Gen
 
-While CloudShell supports the use of 1st Gen shells, it is strongly recommended to switch to the new and improved 2nd Gen shells. For details, see [Shells Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Shells.htm).
+While CloudShell supports the use of 1st Gen shells, it is strongly recommended to switch to the new and improved 2nd Gen shells. For details, see [Shells Overview](../../intro/features/shells.md).
 
 There are two ways to migrate a 1<sup>st</sup> Gen shell to a 2<sup>nd</sup> Gen shell:
 
-- [Replacing the 1st Gen shell with a 2nd Gen version](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Converting-1G-Shells.htm#Migrate): Applies to scenarios where you have the 2<sup>nd</sup> Gen version of the shell. Note that all Quali-certified 1<sup>st</sup> Gen shells, and some Community-grade shells, have 2<sup>nd</sup> Gen versions, which are available for download from [Quali Repositories](https://github.com/orgs/QualiSystems/discussions/categories/integrations).
+- [Replacing the 1st Gen shell with a 2nd Gen version](../reference/migrate-1st-gen-shell-to-2nd-gen-shell.md#replacing-the-1st-gen-shell-with-a-2nd-gen-version): Applies to scenarios where you have the 2<sup>nd</sup> Gen version of the shell. Note that all Quali-certified 1<sup>st</sup> Gen shells, and some Community-grade shells, have 2<sup>nd</sup> Gen versions, which are available for download from [Quali Repositories](https://github.com/orgs/QualiSystems/discussions/categories/integrations).
     
-- [Converting a custom 1st Gen shell to a 2nd Gen shell](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Converting-1G-Shells.htm#Convert): Applies to scenarios where a 2<sup>nd</sup> Gen version is not available.
+- [Converting a custom 1st Gen shell to a 2nd Gen shell](../reference/migrate-1st-gen-shell-to-2nd-gen-shell.md#converting-a-custom-1st-gen-shell-to-a-2nd-gen-shell): Applies to scenarios where a 2<sup>nd</sup> Gen version is not available.
     
 
 ## Replacing the 1<sup>st</sup> Gen shell with a 2<sup>nd</sup> Gen version
 
 **To replace a 1st Gen shell with a 2<sup>nd</sup> Gen shell:**
 
-1. Import the 2<sup>nd</sup> Gen shell into CloudShell. For details, see [Importing Shells](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Shells.htm#Adding).
+1. Import the 2<sup>nd</sup> Gen shell into CloudShell. For details, see [Importing Shells](../../admin/cloudshell-manage-dashboard/managing-shells.md#importing-shells).
     
 2. Do one of the following:
     
-    - For resources: Create an inventory resource using the new 2<sup>nd</sup> Gen shell. For details, see [Adding Inventory Resources](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/INVN/Add-Rsrc-Tmplt.htm).
+    - For resources: Create an inventory resource using the new 2<sup>nd</sup> Gen shell. For details, see [Adding Inventory Resources](../../portal/inventory/managing-resources/adding-inventory-resources/index.md).
         
     - For services: Make sure the service category, which is associated to the service, has access to the relevant domains.
         
-    - For cloud provider shells, create the 2<sup>nd</sup> Gen cloud provider resource and set up the deployment path(s) in the relevant App templates, see [Apps in Blueprints](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Blprnt-Use-Apps.htm#Edit).
+    - For cloud provider shells, create the 2<sup>nd</sup> Gen cloud provider resource and set up the deployment path(s) in the relevant App templates, see [Apps in Blueprints](../../portal/blueprints/creating-blueprints/apps/).
         
         :::note Important 
         The new deployment type will include "2G" or "2nd Gen" in the name. For example:  
         ![](/Images/Devguide-reference/DeploymentTypes_586x190.png)  
         :::
         
-3. Find any blueprints that use the component to be replaced. For details on how to do this, see [Finding Blueprints Containing a Specific Resource, Service or App](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/APIs/Finding-Blueprints.htm).
+3. Find any blueprints that use the component to be replaced. For details on how to do this, see [Finding Blueprints Containing a Specific Resource, Service or App](../available-cs-api/useful-cs-api-examples/find-blueprints-with-rsrc-serv-or-app.md).
     
 4. In each relevant blueprint and blueprint template, do one of the following:
     

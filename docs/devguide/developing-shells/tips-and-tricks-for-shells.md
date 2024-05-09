@@ -24,7 +24,7 @@ Any logging package can be used with CloudShell. Quali has a customized logging 
 
 ### Where can I see the execution logs?
 
-All logs are saved on the Execution Server where the script or driver is running (except for L1 shell logs, which reside on the Quali Server). For exact locations, see [Collecting Logs](https://help.quali.com/Online%20Help/0.0/Portal/Content/Troubleshooting/Collecting-logs.htm).
+All logs are saved on the Execution Server where the script or driver is running (except for L1 shell logs, which reside on the Quali Server). For exact locations, see [Collecting Logs](../../troubleshooting/troubleshooting-overview/collecting-logs.md).
 
 ![Log Structure](/Images/Devguide-shells/Shells-Tips-and-Tricks_553x66.png)
 
@@ -144,7 +144,7 @@ with ErrorHandlingContext(logger):
 
 Using this scope any exception raised within the **ErrorHandlingContext** will be logged, even if no code remembered to explicitly call the logger.
 
-In addition, you can use this attribute to pass environment variables to shell drivers/scripts running on a specific Execution Server. For additional information about orchestration script logging, see [Script Deep Dive](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Orch-Scripts/Scripts-Deep-Dive.htm).
+In addition, you can use this attribute to pass environment variables to shell drivers/scripts running on a specific Execution Server. For additional information about orchestration script logging, see [Script Deep Dive](../develop-orch-scripts/script-deep-dive.md).
 
 ## Nested scopes
 

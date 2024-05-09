@@ -8,7 +8,7 @@ It is possible to store information for later use in the sandbox using the API. 
 
 This capability can be used to store sandbox\-specific information that is required for your orchestration processes and shells, like user details, unique IDs returned from 3rd party systems, or data created during the setup process that is needed for teardown.
 
-The data is stored as key-value pairs in a container in the sandbox. The data is managed via CloudShell Automation API and starting with CloudShell 2021.2, can be viewed by admins in the sandbox workspace, as explained in [View Sandbox Metadata](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Prfrm-Actns/Sndbx-View-SndbxData.htm). Note that we don’t impose any limitations on the data and its format, and the data isn’t stored encrypted. Sandbox data can be modified or cleared in both Active and Pending sandboxes, while for Completed sandboxes, the data is kept but cannot be modified.
+The data is stored as key-value pairs in a container in the sandbox. The data is managed via CloudShell Automation API and starting with CloudShell 2021.2, can be viewed by admins in the sandbox workspace, as explained in [View Sandbox Metadata](../../portal/sandboxes/sandbox-workspace/view-sandbox-metadata.md). Note that we don’t impose any limitations on the data and its format, and the data isn’t stored encrypted. Sandbox data can be modified or cleared in both Active and Pending sandboxes, while for Completed sandboxes, the data is kept but cannot be modified.
 
 The following API methods are provided:
 

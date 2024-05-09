@@ -8,7 +8,7 @@ A typical Shell driver will first get crucial information from the sandbox and t
 
 To provide easy access to such common information, each driver function has access to a special context object parameter, which is created by CloudShell for each driver command’s execution.
 
-If you’ve generated the default driver template, you may have noticed that the pre-generated functions already have some docstring code-hint annotation. This allows some IDEs like PyCharm to provide autocomplete for the class properties and make it a lot easier to use. For details, see [Docstrings in shells](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Intellisense.htm#Docstrin2).
+If you’ve generated the default driver template, you may have noticed that the pre-generated functions already have some docstring code-hint annotation. This allows some IDEs like PyCharm to provide autocomplete for the class properties and make it a lot easier to use. For details, see [Docstrings in shells](../reference/intellisense-in-shells-and-scripts.md#docstrings-in-shells).
 
 ## CloudShell Shell Core
 
@@ -33,7 +33,7 @@ class ResourceCommandContext:
 
 ### Connectivity
 
-The **connectivity** property contains information about how to connect to CloudShell, such as server address, ports, and so on. It also contains a token which can be used to log in to CloudShell API. As we’ll discuss later, it is generally recommended to use the CloudShell API as little as possible in your Shell, with the exception of a few operations, which we’ll cover later in [Driver Deep Dive](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Driver-Deep-Dive.htm) and [Common Driver Recipes](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Common-Driver-Recipes.htm). So while the connectivity information is readily available on the context, in most cases you should not have to use it.
+The **connectivity** property contains information about how to connect to CloudShell, such as server address, ports, and so on. It also contains a token which can be used to log in to CloudShell API. As we’ll discuss later, it is generally recommended to use the CloudShell API as little as possible in your Shell, with the exception of a few operations, which we’ll cover later in [Driver Deep Dive](./driver-deep-dive.md) and [Common Driver Recipes](./common-driver-recipes.md). So while the connectivity information is readily available on the context, in most cases you should not have to use it.
 
 ### Resource Context
 
@@ -131,7 +131,7 @@ You can find JSON schema definitions of these two JSON objects here:
 
 ### Custom sandbox metadata
 
-Starting with CloudShell 9.2, it is possible to store and retrieve custom key-value data from the sandbox. For details, see [Custom Sandbox Metadata](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Custom-Sandbox-Metadata.htm).
+Starting with CloudShell 9.2, it is possible to store and retrieve custom key-value data from the sandbox. For details, see [Custom Sandbox Metadata](../reference/custom-sandbox-metadata.md).
 
 ### Custom Attributes and the Shell’s data model
 

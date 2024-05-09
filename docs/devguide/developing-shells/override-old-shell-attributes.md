@@ -50,7 +50,7 @@ By default, CloudShell does not allow updating a shell if the newer version is m
 ## Allow overriding attributes on a sub-resource
 
 1. Open the `shell-definition.yaml` in your preferred IDE.
-2. Make sure you have performed the steps in [Allowing overriding attributes on the shell's root](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Override-old-shell-attributes.htm?Highlight=Overriding%20Old/Deprecated%20Shell%20Attributes#Allowing).
+2. Make sure you have performed the steps in [Allowing overriding attributes on the shell's root](./override-old-shell-attributes.md#allowing-overriding-attributes-on-the-shells-root).
 3. Under the node\_types section, create a vendor section for the sub-resource with the following code:
     
     ```javascript

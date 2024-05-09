@@ -23,7 +23,7 @@ Let’s start by creating a new Switch type resource based on the [Networking S
     
     The Shell project includes the *shell-definition.yaml* file, which contains the information needed for importing the Shell’s data model according to the relevant TOSCA Shell standard.
     
-    For a detailed explanation on how to customize the Shell using TOSCA, see [Modeling Shells with TOSCA](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Modeling-with-TOSCA.htm).
+    For a detailed explanation on how to customize the Shell using TOSCA, see [Modeling Shells with TOSCA](./modeling-shells-with-tosca.md).
     
 2. Add the following example properties *custom\_property\_1* and *custom\_property\_2* to the `shell-definition.yaml` file:
     
@@ -73,8 +73,8 @@ To use the Shell’s data model in the driver, we need to first import the data 
     
     For more information see the following related topics:
     
-    - [How Shells Get Information from CloudShell](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/How-Shells-Get-Info.htm)
-    - [Auto-discovery for Inventory Shells](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Auto-discovery.htm)
+    - [How Shells Get Information from CloudShell](./how-shells-get-info-from-cs.md)
+    - [Auto-discovery for Inventory Shells](./auto-discovery-for-inventory-shells.md)
 
 ## Updating the Shell’s data model
 

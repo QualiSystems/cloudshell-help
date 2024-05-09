@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Modeling Shells with TOSCA
 
-By defining how a Shell is modeled in CloudShell, we can control how it’s represented in CloudShell. If you’ve gone through the steps of the [Getting Started with Shell Development](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Getting-Started.htm) tutorial, you may have noticed that with little effort we’ve already managed to model a new type of entity.
+By defining how a Shell is modeled in CloudShell, we can control how it’s represented in CloudShell. If you’ve gone through the steps of the [Getting Started with Shell Development](./getting-started.md) tutorial, you may have noticed that with little effort we’ve already managed to model a new type of entity.
 
 In this section, we’ll take a more in-depth look at how we can customize how Shell resources or deployed Apps are presented and behave in CloudShell.
 
@@ -27,7 +27,7 @@ To give a few examples:
 - [Custom Service Shell Standard](https://github.com/QualiSystems/cloudshell-standards/blob/master/Documentation/Custom%20Service%20Shell%20Standard.md)
     
 
-*Regarding the **Layer 1 Shell** template, please note that this is a special kind of shell with its own template and mechanism, and works differently from 1st and 2nd Gen shells. For more information, see [L1 Switch Shells](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/L1-Switch-Shells.htm).*
+*Regarding the **Layer 1 Shell** template, please note that this is a special kind of shell with its own template and mechanism, and works differently from 1st and 2nd Gen shells. For more information, see [L1 Switch Shells](../reference/l1-switch-shells.md).*
 
 **To get a list of the possible templates:**
 
@@ -308,4 +308,4 @@ The Shell’s image is defined in the artifacts section, and is displayed direct
 
 The Shell supports two capabilities that can be enabled, assuming the Shell’s driver supports them: auto discovery and concurrent execution of commands.
 
-The implementation of these capabilities is covered in detail in [Auto-discovery for Inventory Shells](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Auto-discovery.htm) and the Driver Deep Dive article’s [Drivers and concurrency](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Driver-Deep-Dive.htm#drivers-and-concurrency) section.
+The implementation of these capabilities is covered in detail in [Auto-discovery for Inventory Shells](./auto-discovery-for-inventory-shells.md) and the Driver Deep Dive article’s [Drivers and concurrency](./driver-deep-dive.md#drivers-and-concurrency) section.

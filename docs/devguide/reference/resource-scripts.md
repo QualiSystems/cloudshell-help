@@ -20,9 +20,9 @@ Import the *cloudshell-automation-api* Python package and add it to your scrip
 import cloudshell.helpers.scripts.cloudshell_scripts_helpers as script_help
 ```
 
-To execute this code from within CloudShell, you will also need to include a *requirements.txt* file with your script, and rename the resource script to `__main__.py`. The `__main__.py` file is used as the script’s entry point, when the script is a package containing multiple files. Finally, zip the two files together, upload the zip package to CloudShell Portal’s **Manage>Scripts>Resource** page and make sure to specify the **Models** of the resources this script applies to, as explained in [Associating a resource script to a CloudShell resource](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Resource-Scripts.htm?Highlight=Resource%20Scripts#Associat).
+To execute this code from within CloudShell, you will also need to include a *requirements.txt* file with your script, and rename the resource script to `__main__.py`. The `__main__.py` file is used as the script’s entry point, when the script is a package containing multiple files. Finally, zip the two files together, upload the zip package to CloudShell Portal’s **Manage>Scripts>Resource** page and make sure to specify the **Models** of the resources this script applies to, as explained in [Associating a resource script to a CloudShell resource](./resource-scripts.md).
 
-If you want to write your own packages and use them in your script, make sure to place them in the local PyPi Server repository on the Quali Server machine. For details, see [PyPi Server - Managing Python Shell and Script Dependencies](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Pyth-Cnfg-Mds.htm).
+If you want to write your own packages and use them in your script, make sure to place them in the local PyPi Server repository on the Quali Server machine. For details, see [PyPi Server - Managing Python Shell and Script Dependencies](../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/pypi-server-managing-python-shell-and-script-dependencies.md).
 
 To facilitate writing and debugging activities, it is recommended to use advanced IDEs such as PyCharm, which provide autocomplete functionality, as illustrated below.
 

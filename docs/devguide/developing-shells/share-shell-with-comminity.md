@@ -33,7 +33,7 @@ However, if your shell doesn’t have release versions, use the **Download Url*
 
 The shell’s repository should be displayed shortly in the **Integrations** page as a **Community** grade shell.
 
-If you want Quali to certify your shell, see [Submitting a new shell for certification](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Sharing-Shells.htm?Highlight=Sharing%20a%20Shell%20with%20the%20Community#Submitti).
+If you want Quali to certify your shell, see [Submitting a new shell for certification](./share-shell-with-comminity.md#submitting-a-new-shell-for-certification).
 
 ## Extending an existing shell (forked and modified certified shell with added or modified functionality)
 

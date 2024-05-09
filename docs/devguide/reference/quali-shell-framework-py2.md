@@ -12,7 +12,7 @@ Every CloudShell shell consists of a data model and a driver. The driver is writ
 
 Quali’s official shells have a granularity level of Vendor and OS. This means that each official shell supports all devices of a specific vendor and OS. The exact functionality that is exposed by the shell is defined in the relevant [shell standard](https://github.com/QualiSystems/cloudshell-standards/tree/master/Documentation). The structure of the Python packages reflects this granularity – for example, any logic that is common to all networking devices resides in *cloudshell\-networking*, while any Cisco-specific logic resides in *cloudshell\-networking-cisco*, and any Cisco IOS-specific logic resides in *cloudshell\-networking-cisco-ios*. It is possible to use Quali’s shell framework when creating your own shells or customizing existing ones.
 
-Note that using the framework is optional. To work with one or more of Quali framework’s Python packages, you need to list them in your shell project’s `requirements.txt` file. Then, you can either write the code, which uses the packages, directly in the shell’s driver or create your own Python packages and add them to the shell’s requirements file. You can also load such custom Python packages into your local `PyPi server repository` on the Quali Server machine to make them available to your entire CloudShell deployment - for details on how to load custom packages, see [Configuring CloudShell to Execute Python Commands in Offline Mode](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfgr-Pyth-Env-Wrk-Offln.htm).
+Note that using the framework is optional. To work with one or more of Quali framework’s Python packages, you need to list them in your shell project’s `requirements.txt` file. Then, you can either write the code, which uses the packages, directly in the shell’s driver or create your own Python packages and add them to the shell’s requirements file. You can also load such custom Python packages into your local `PyPi server repository` on the Quali Server machine to make them available to your entire CloudShell deployment - for details on how to load custom packages, see [Configuring CloudShell to Execute Python Commands in Offline Mode](../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/configuring-cloudshell-to-execute-python-commands-in-offline-mode.md).
 :::note-one-line
 **Important:** We don’t recommend to modify Quali Python packages as CloudShell may overwrite them if a newer package that has the same file name is published on the public PyPi repository. Alternatively, you’re welcome to create your own packages, using our Python packages as a reference.
 :::
@@ -26,14 +26,14 @@ The following diagram shows the Python classes used by the shell commands and th
 
 The architecture of a Quali Python shell comprises four inter-dependent elements:
 
-- [Runners](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Quali-Shell-Framework-2.htm?Highlight=Quali%E2%80%99s%20Shell%20Framework%20(Python%202)#Runners)
-- [Flows](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Quali-Shell-Framework-2.htm?Highlight=Quali%E2%80%99s%20Shell%20Framework%20(Python%202)#Flows)
-- [Command Templates](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Quali-Shell-Framework-2.htm?Highlight=Quali%E2%80%99s%20Shell%20Framework%20(Python%202)#CommandTemplates)
-- [Command Actions](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Quali-Shell-Framework-2.htm?Highlight=Quali%E2%80%99s%20Shell%20Framework%20(Python%202)#CommandActions)
+- [Runners](./quali-shell-framework-py2.md#runners)
+- [Flows](./quali-shell-framework-py2.md#flows)
+- [Command Templates](./quali-shell-framework-py2.md#command-templates)
+- [Command Actions](./quali-shell-framework-py2.md#command-actions)
 
 Runners execute Flows and process user inputs, and also define CLI and/or SNMP handlers, which are used in the Flows. Flows sequentially execute a number of Command Actions, while each Command Action runs a specific Command Template.
 
-An additional element that is used by the runners is the communication handler, which allows you to communicate with the device. For details, see [Communication Handlers](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Quali-Shell-Framework-2.htm?Highlight=Quali%E2%80%99s%20Shell%20Framework%20(Python%202)#CommunicationHandlers).  
+An additional element that is used by the runners is the communication handler, which allows you to communicate with the device. For details, see [Communication Handlers](./quali-shell-framework-py2.md#communication-handlers).  
 
 ## Key Entities
 
@@ -84,7 +84,7 @@ Example: Cli handler that requires the parameters `cli`, `resource_config`, `
 
 ![CLI Handler Code Example](/Images/Devguide-reference/Quali-s-Shell-Framework-Python_1_538x83.png)
 
-Note that the first parameter, `cli`, needs a CLI instance from *cloudshell.cli.cli* to be initiated. For details about these parameters, see the [Key Entities](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Quali-Shell-Framework-2.htm?Highlight=Quali%E2%80%99s%20Shell%20Framework%20(Python%202)#KeyEntities) section.
+Note that the first parameter, `cli`, needs a CLI instance from *cloudshell.cli.cli* to be initiated. For details about these parameters, see the [Key Entities](./quali-shell-framework-py2.md#key-entities) section.
 
 ### SNMP Handler
 
@@ -101,7 +101,7 @@ The SNMP handler provides SNMP communication with the device. Like the CLI handl
     - \_create\_disable\_flow
         
 
-For reference, see [cisco\_snmp\_handler](https://github.com/QualiSystems/cloudshell-networking-cisco/blob/5.2.16/cloudshell/networking/cisco/snmp/cisco_snmp_handler.py). For more information, see the [Flows](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Quali-Shell-Framework-2.htm?Highlight=Quali%E2%80%99s%20Shell%20Framework%20(Python%202)#Flows) section.  
+For reference, see [cisco\_snmp\_handler](https://github.com/QualiSystems/cloudshell-networking-cisco/blob/5.2.16/cloudshell/networking/cisco/snmp/cisco_snmp_handler.py). For more information, see the [Flows](./quali-shell-framework-py2.md#flows) section.  
 
 ## Runners
 
@@ -113,7 +113,7 @@ Overall, we have six Runners, all base classes and their interfaces are located 
 :::note
 All runners except for Autoload Runner require the cli-handler parameter to be passed to the runner while it is being initialized. For example, see [this](https://github.com/QualiSystems/Cisco-IOS-Shell/blob/5.0.2/src/cisco_ios_resource_driver.py#L86-L87).
 :::
-- [Connectivity Runner](https://github.com/QualiSystems/cloudshell-networking-devices/blob/dev/cloudshell/devices/runners/connectivity_runner.py) – Uses multithread logic to speed up the VLAN configuration on the device, especially when the resource needs to undergo a huge request that involves multiple, concurrently run actions. To initialize this runner, you have to provide the logger and cli\_handler objects (described in [Key Entities](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Quali-Shell-Framework-2.htm?Highlight=Quali%E2%80%99s%20Shell%20Framework%20(Python%202)#KeyEntities)). Use the `apply_connectivity_changes` method to start. The following properties have to be implemented:
+- [Connectivity Runner](https://github.com/QualiSystems/cloudshell-networking-devices/blob/dev/cloudshell/devices/runners/connectivity_runner.py) – Uses multithread logic to speed up the VLAN configuration on the device, especially when the resource needs to undergo a huge request that involves multiple, concurrently run actions. To initialize this runner, you have to provide the logger and cli\_handler objects (described in [Key Entities](./quali-shell-framework-py2.md#key-entities)). Use the `apply_connectivity_changes` method to start. The following properties have to be implemented:
     
     - add\_vlan\_flow
         
@@ -141,7 +141,7 @@ All runners except for Autoload Runner require the cli-handler parameter to be p
     
     For reference, see this [example](https://github.com/QualiSystems/Cisco-IOS-Shell/blob/5.0.2/src/cisco_ios_resource_driver.py#L79-L87) on how to create the run command runner.
     
-- [State Runner](https://github.com/QualiSystems/cloudshell-networking-devices/blob/dev/cloudshell/devices/runners/state_runner.py) – This runner is very similar to the Run Custom Command Runner as it doesn’t require any additional implementations. It contains implementations for the `Health Check` and `Shutdown` commands. To initialize this runner, you need to pass the *logger*, *api*, *cli\_handler* and *resource\_config* objects mentioned in [Key Entities](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Quali-Shell-Framework-2.htm?Highlight=Quali%E2%80%99s%20Shell%20Framework%20(Python%202)#KeyEntities).
+- [State Runner](https://github.com/QualiSystems/cloudshell-networking-devices/blob/dev/cloudshell/devices/runners/state_runner.py) – This runner is very similar to the Run Custom Command Runner as it doesn’t require any additional implementations. It contains implementations for the `Health Check` and `Shutdown` commands. To initialize this runner, you need to pass the *logger*, *api*, *cli\_handler* and *resource\_config* objects mentioned in [Key Entities](./quali-shell-framework-py2.md#key-entities).
     
     For reference, see this [example](https://github.com/QualiSystems/Cisco-IOS-Shell/blob/5.0.2/src/cisco_ios_resource_driver.py#L371-L379) on how to create the state runner.
     
