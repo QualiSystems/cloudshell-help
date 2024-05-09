@@ -7,7 +7,7 @@ sidebar_position: 2
 Shellfoundry is a command-line utility that allows you to easily create, package and install Shells in CloudShell. It allows creating basic Shells or Shells based on a common 1st or 2nd generation Shell template.
 
 :::note Notes:
-- In order to use shellfoundry on an offline computer, you will need to first download the shellfoundry templates locally and configure shellfoundry to run in offline mode. For details, see [Downloading shellfoundry templates](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Shellfoundry.htm?Highlight=Shellfoundry#Download).
+- In order to use shellfoundry on an offline computer, you will need to first download the shellfoundry templates locally and configure shellfoundry to run in offline mode. For details, see [Downloading shellfoundry templates](#downloading-shellfoundry-templates).
 - Shellfoundary cannot work if there’s a proxy server present between the shellfoundry machine and the remote Quali Server machine.
 :::
 
@@ -15,7 +15,7 @@ Shellfoundry is a command-line utility that allows you to easily create, package
 
 ### Installation
 
-This command installs Shellfoundry on your computer. For more information, see [Getting Started with Shell Development](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Getting-Started.htm).
+This command installs Shellfoundry on your computer. For more information, see [Getting Started with Shell Development](../developing-shells/getting-started.md).
 
 #### Syntax:
 
@@ -25,11 +25,11 @@ pip install shellfoundry
 
 To install a specific shellfoundry version, run: `pip install shellfoundry==<version>`
 
-For the version history, click [Version History](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Shellfoundry.htm?Highlight=Shellfoundry#version-history).
+For the version history, click [Version History](#version-history).
 
 ### Upgrade
 
-If you already have shellfoundry installed on your computer, run this command to upgrade it to the latest version. For more information, see [Installing or Updating Shellfoundry](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Getting-Started.htm#Installi).
+If you already have shellfoundry installed on your computer, run this command to upgrade it to the latest version. For more information, see [Installing or Updating Shellfoundry](../developing-shells/getting-started.md#installing-or-updating-shellfoundry).
 :::note-one-line
 **Note:** To prevent backwards compatibility issues, old versions of shellFoundry are disabled with every new shellfoundry release.
 :::
@@ -41,7 +41,7 @@ python -m pip install shellfoundry ––upgrade
 
 ### Configuring CloudShell settings
 
-(Required) This command sets the Quali Server settings and user access credentials in Shellfoundry. Note that in offline mode, the `shellfoundry list` command lists the shell templates residing locally in the folder defined in the shellfoundry config’s template\_location attribute. For more information, see [Configuring CloudShell Connection Settings](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Getting-Started.htm#Configur).
+(Required) This command sets the Quali Server settings and user access credentials in Shellfoundry. Note that in offline mode, the `shellfoundry list` command lists the shell templates residing locally in the folder defined in the shellfoundry config’s template\_location attribute. For more information, see [Configuring CloudShell Connection Settings](../developing-shells/getting-started.md#configuring-cloudshell-connection-settings).
 
 #### Syntax:
 
@@ -96,9 +96,9 @@ shellfoundry new <Shell-name>
 
 #### Options:
 
-- **\--template**: Creates a shell from a specific shellfoundry template, featuring the template’s settings, attributes and driver commands. For details, see [Modeling Shells with TOSCA](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Modeling-with-TOSCA.htm).
+- **\--template**: Creates a shell from a specific shellfoundry template, featuring the template’s settings, attributes and driver commands. For details, see [Modeling Shells with TOSCA](../developing-shells/modeling-shells-with-tosca.md).
     :::note-one-line
-    **Note:** If you don’t specify a template, shellfoundry will create the shell from the **gen2/resource** template. Use this if you want to create a Shell to customize or experiment on. For more information, see [The Shell Project Guide](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/The-Shell-Project.htm).
+    **Note:** If you don’t specify a template, shellfoundry will create the shell from the **gen2/resource** template. Use this if you want to create a Shell to customize or experiment on. For more information, see [The Shell Project Guide](../developing-shells/the-shell-project-guide.md).
     :::
 - **\--version**: Creates a shell based on a specific shell template version. If you don’t specify the version, shellfoundry will create the shell using the latest shell version that is supported by your CloudShell installation. For details about each version release, see [CloudShell Standards](https://github.com/QualiSystems/cloudshell-standards).
     
@@ -145,7 +145,7 @@ The new shell is added to the path from which you ran the `shellfoundry new` c
 
 ### Customizing a 2nd Gen Shell
 
-This command downloads the source code of the Shell you wish to customize to your local machine and updates the Shell’s Author with the author specified in Shellfoundry. Note that extending official Shells (Shells that were released by Quali) will remove their official tag. For more information, see [Customizing Shells](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Customizing-Shells.htm).
+This command downloads the source code of the Shell you wish to customize to your local machine and updates the Shell’s Author with the author specified in Shellfoundry. Note that extending official Shells (Shells that were released by Quali) will remove their official tag. For more information, see [Customizing Shells](../developing-shells/customize-shells.md).
 
 #### Syntax:
 
@@ -209,7 +209,7 @@ shellfoundry config template_location "C:\Users\steven.g\shell templates"
 
 ### Generating the Shell’s data model file
 
-The shell’s data model (*data\_model.py* file) consists of the standard specifications and the extended data model, which is defined in the *shell-definition.yaml* file. The shell’s data model is mainly used to work with resource attributes and implement the Auto-discovery process. For additional information, see [Managing the Shell’s Data Model](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Managing-Shell-Data-Model.htm).
+The shell’s data model (*data\_model.py* file) consists of the standard specifications and the extended data model, which is defined in the *shell-definition.yaml* file. The shell’s data model is mainly used to work with resource attributes and implement the Auto-discovery process. For additional information, see [Managing the Shell’s Data Model](../developing-shells/managing-the-shell-data-mode.md).
 
 After importing the *data\_model*, PyCharm (and some other IDEs) will recognize the docstring code-hint annotations and will enable autocomplete as you can see below:
 
@@ -243,7 +243,7 @@ shellfoundry delete "Juniper JunOS Switch Shell 2G"
 
 ### Listing available Shell templates
 
-This command lists the 1st and 2nd generation Shell templates you can use for your new Shell. For more information, see [Modeling Shells with TOSCA](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Modeling-with-TOSCA.htm).
+This command lists the 1st and 2nd generation Shell templates you can use for your new Shell. For more information, see [Modeling Shells with TOSCA](../developing-shells/modeling-shells-with-tosca.md).
 
 Note that in offline mode, the command lists the shell templates residing locally in the folder defined in the shellfoundry config’s `template_location` attribute.
 
@@ -269,7 +269,7 @@ The versions are displayed in descending order from latest to earliest.
 
 ### Packaging a Shell
 
-This command packs the shell’s source code, data model and configuration into a ZIP package, which can be uploaded into CloudShell. For additional information, see [Deploying to Production](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Deploying-to-Production.htm).
+This command packs the shell’s source code, data model and configuration into a ZIP package, which can be uploaded into CloudShell. For additional information, see [Deploying to Production](../developing-shells/deploy-to-prod.md).
 
 #### Syntax:
 
@@ -305,7 +305,7 @@ By default, the command downloads the dependencies from public PyPi. However, if
 
 ### Packaging and importing a Shell into CloudShell
 
-This command creates a distributable zip file for the Shell and imports it into CloudShell using the CloudShell Portal and user defined by the `shellfoundry configure` command. For more information, see [Getting Started with Shell Development](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Getting-Started.htm).
+This command creates a distributable zip file for the Shell and imports it into CloudShell using the CloudShell Portal and user defined by the `shellfoundry configure` command. For more information, see [Getting Started with Shell Development](../developing-shells/getting-started.md).
 :::danger-one-line
 **Note:** A shell update is not reversible(in other words, you cannot downgrade to an earlier shell version). Therefore, update the template version in the shell's `shell-definition.yaml` ONLY when something in the data model changes (new attributes added to `shell-definition.yaml`). Any changes in just the driver or underlying packages you can keep the template version number the same and then freely "roll back" to a previous version if the shell presents unexpected behavior.
 :::
