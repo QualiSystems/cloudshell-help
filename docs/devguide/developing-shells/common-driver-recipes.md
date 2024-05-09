@@ -137,7 +137,7 @@ def some_command(self, context, command)
 
 ## Mapping connections using App sub-resources
 
-Developers can map connections between sub-resources residing on deployed Apps. This applies to scenarios where you want to map the port connections between virtual devices residing in App VMs. For example, to map the connection between port 1 residing on a virtual switch and port 2 residing on another virtual switch. For details, see [Mapping Connections using App Sub-resources](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Mapping-App-Connections.htm).
+Developers can map connections between sub-resources residing on deployed Apps. This applies to scenarios where you want to map the port connections between virtual devices residing in App VMs. For example, to map the connection between port 1 residing on a virtual switch and port 2 residing on another virtual switch. For details, see [Mapping Connections using App Sub-resources](../reference/map-connections-using-app-sub-resources.md).
 
 ## Defining a connected command (which runs on another resource)
 

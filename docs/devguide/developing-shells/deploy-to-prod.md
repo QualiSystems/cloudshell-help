@@ -36,7 +36,7 @@ CloudShell distinguishes between two types of attributes:
 - Attributes related to the device or shell, like Firmware Version or Port Speed
     
 
-In this section, we will explain how to add deployment-related attributes (attributes that already exist in CloudShell). When upgrading the Shell, these custom attributes and their association with the Shell will not be overwritten. For details about adding shell or device-specific attributes, see [Customizing a shell’s attributes](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Customizing-Shells.htm#Customiz).
+In this section, we will explain how to add deployment-related attributes (attributes that already exist in CloudShell). When upgrading the Shell, these custom attributes and their association with the Shell will not be overwritten. For details about adding shell or device-specific attributes, see [Customizing a shell’s attributes](./customize-shells.md#customizing-a-shells-attributes).
 
 Note that deployment-related attributes are added to the shell by the CloudShell system administrator while attributes related to a device are added to the shell by the shell’s developer.
 

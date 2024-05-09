@@ -12,9 +12,9 @@ Before developing shells, please familiarize yourself with CloudShell by taking�
 
 A Shell enables CloudShell users to interact with different sandbox elements, like physical devices and virtual appliances. A Shell models the sandbox element in CloudShell and provides commands that CloudShell users and automation processes can run on it, like Power On and Health Check. Each 2nd Gen Shell is modeled after a CloudShell standard, from which the shell inherits its default settings, attributes and driver.
 
-In our [community](https://github.com/orgs/QualiSystems/repositories), you can find both officially released shells and shells developed in our developer community. If you find a shell that fits your needs, you’re welcome to use it as is, or, you can customize its settings and automation, as explained in [Customizing Shells](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Customizing-Shells.htm). If you can’t find the shell you’re looking for, you’re welcome to create a new one from scratch using one of our shell standard templates and contribute it to the community for others to use it as well.
+In our [community](https://github.com/orgs/QualiSystems/repositories), you can find both officially released shells and shells developed in our developer community. If you find a shell that fits your needs, you’re welcome to use it as is, or, you can customize its settings and automation, as explained in [Customizing Shells](./customize-shells.md). If you can’t find the shell you’re looking for, you’re welcome to create a new one from scratch using one of our shell standard templates and contribute it to the community for others to use it as well.
 
-Historically, we have had two types of shells in CloudShell, 1st Generation shells and 2nd Generation shells. While 1st Gen shells are still used, all new shells are released only as 2nd Generation shells and this developer guide focuses on this type of shells. For additional information, see [Shells Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Shells.htm).
+Historically, we have had two types of shells in CloudShell, 1st Generation shells and 2nd Generation shells. While 1st Gen shells are still used, all new shells are released only as 2nd Generation shells and this developer guide focuses on this type of shells. For additional information, see [Shells Overview](../../intro/features/shells.md).
 
 <iframe width="100%" height="500px" src="https://www.youtube.com/embed/AWgSUgJub90" title="What are Shells" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -24,7 +24,7 @@ As of version 8.0, CloudShell supports 2nd Gen Shells. This guide includes instr
 
 For information on developing 1st Gen Shells, see the CloudShell Developer Guide for version 7.1.
 
-To learn more about the different versions of the Shells used by CloudShell and how to upgrade a 1st Gen Shell, see [Migrating 1st Gen Shells to 2nd Gen](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Converting-1G-Shells.htm).
+To learn more about the different versions of the Shells used by CloudShell and how to upgrade a 1st Gen Shell, see [Migrating 1st Gen Shells to 2nd Gen](../reference/migrate-1st-gen-shell-to-2nd-gen-shell.md).
 
 ## Prerequisites
 
@@ -44,7 +44,7 @@ To learn more about the different versions of the Shells used by CloudShell and 
 
 ## Installing or Updating Shellfoundry
 
-To create the Shell project, we’ll use [Shellfoundry](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Shellfoundry.htm), a CLI tool for generating and distributing Shells.
+To create the Shell project, we’ll use [Shellfoundry](../reference/shellfoundry.md), a CLI tool for generating and distributing Shells.
 
 :::note
 Shellfoundary cannot work if there’s a proxy server present between the shellfoundry machine and the remote Quali Server machine.
@@ -68,7 +68,7 @@ If Shellfoundry is already installed, run the following command to update:
 python -m pip install shellfoundry --upgrade
 ```
 
-For first time configuration of Shellfoundry, run the shellfoundry config, as explained in [Shellfoundry](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Shellfoundry.htm).
+For first time configuration of Shellfoundry, run the shellfoundry config, as explained in [Shellfoundry](../reference/shellfoundry.md).
 
 ## Configuring CloudShell Connection Settings
 
@@ -95,11 +95,11 @@ In order to use Shellfoundry, we’ll need to first configure your CloudShell co
     ```
     
 
-Normally, you would need to set the CloudShell admin user/password and the server address. For details, see [Shellfoundry](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Shellfoundry.htm).
+Normally, you would need to set the CloudShell admin user/password and the server address. For details, see [Shellfoundry](../reference/shellfoundry.md).
 
 ## Setting the default python version for new shells
 
-Starting with CloudShell 9.3, the `DefaultPythonVersion` admin key allows you to control the Python version in which all new shells are created. For details, see [Advanced CloudShell Customizations](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm). Note that this key also applies to orchestration scripts.
+Starting with CloudShell 9.3, the `DefaultPythonVersion` admin key allows you to control the Python version in which all new shells are created. For details, see [Advanced CloudShell Customizations](../../admin/setting-up-cloudshell/cloudshell-configuration-options/advanced-cloudshell-customizations.md). Note that this key also applies to orchestration scripts.
 
 You can also change this default for your shell in the shell project’s drivermetadata.xml file, but we’ll discuss that later on.
 

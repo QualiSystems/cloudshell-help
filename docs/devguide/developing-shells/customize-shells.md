@@ -53,11 +53,11 @@ When modifying an existing command, you can add optional input parameters. Just 
 
 For example, in this customized [Cisco NXOS shell](https://github.com/QualiSystemsLab/Extended-Cisco-NXOS-Shell), we modified the commands that configure VLANs on multiple ports and port channels.
 
-It is also possible to hide or remove a command. Hiding a command is done by placing it in a hidden or “admin” category in the `drivermetadata.xml` - see [Commands Visibility and Usability](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Commands-Visibility.htm). Note that removing a command might affect how the shell is used since CloudShell and/or some orchestration scripts might depend on the existing driver’s commands.
+It is also possible to hide or remove a command. Hiding a command is done by placing it in a hidden or “admin” category in the `drivermetadata.xml` - see [Commands Visibility and Usability](./commands-visibility-and-usability.md). Note that removing a command might affect how the shell is used since CloudShell and/or some orchestration scripts might depend on the existing driver’s commands.
 
-When adding or modifying a command, you can leverage Quali’s shell framework to ease the development process. For details, see [Quali’s Shell Framework (Python 2)](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Quali-Shell-Framework-2.htm) and [Quali’s Shell Framework (Python 3)](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Reference/Quali-Shell-Framework-3.htm).
+When adding or modifying a command, you can leverage Quali’s shell framework to ease the development process. For details, see [Quali’s Shell Framework (Python 2)](../reference/quali-shell-framework-py2.md) and [Quali’s Shell Framework (Python 3)](../reference/quali-shell-framework-py3.md).
 
-See some common command extension examples in [Common Driver Recipes](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Common-Driver-Recipes.htm).
+See some common command extension examples in [Common Driver Recipes](./common-driver-recipes.md).
 
 Please check out the following instructional videos on how to develop basic driver commands:
 
@@ -84,7 +84,7 @@ CloudShell provides two ways to customize attributes, which differ depending on 
 - **Associating custom attributes with a shell that is installed in CloudShell**: Use this option when the additional attributes are deployment-related and relevant to multiple resources of different shells. For example, the Execution Server Selector attribute. *Starting with CloudShell version 8.3, this option applies both to the root model of the shell and to the shell’s sub-resource models, such as blades and ports.*
     
 
-The second option of associating custom attributes with an already installed shell is done either via CloudShell Portal or by calling the *SetCustomShellAttribute* API method. For additional information on this method, see [Deploying to Production](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Deploying-to-Production.htm).
+The second option of associating custom attributes with an already installed shell is done either via CloudShell Portal or by calling the *SetCustomShellAttribute* API method. For additional information on this method, see [Deploying to Production](./deploy-to-prod.md).
 
 <div style={{ color: 'red' }}>
 Deleting a 2nd Gen shell’s default attributes (those that come with the standard) is not supported. It is also not possible to customize a 2nd Gen shell’s data model (families and models) and its structure, which is as defined in the shell standard the original shell is based on.
@@ -92,7 +92,7 @@ Deleting a 2nd Gen shell’s default attributes (those that come with the standa
 
 ### Adding or modifying attributes in a shell’s root or sub-model
 
-This section explains how to add attributes to the shell’s root model and to specific models within the shell. To learn how to expose attributes that are required for the discovery of the resource (in the **Inventory** dashboard’s **Resource** discovery dialog box), see [Auto-discovery for Inventory Shells](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Auto-discovery.htm).
+This section explains how to add attributes to the shell’s root model and to specific models within the shell. To learn how to expose attributes that are required for the discovery of the resource (in the **Inventory** dashboard’s **Resource** discovery dialog box), see [Auto-discovery for Inventory Shells](./auto-discovery-for-inventory-shells.md).
 
 **To add/modify a shell’s attributes:**
 
@@ -151,7 +151,7 @@ This section explains how to add attributes to the shell’s root model and to s
         
     - **constraints**: Permitted values.
         
-    - **tags**: Attribute rules. For details, see [Modeling Shells with TOSCA](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Modeling-with-TOSCA.htm). Note that for service shells, the only applicable rule is **user\_input**. For details, see [Publishing a service shell’s attributes](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Customizing-Shells.htm?Highlight=Customizing%20Shells#Publishi).
+    - **tags**: Attribute rules. For details, see [Modeling Shells with TOSCA](./modeling-shells-with-tosca.md). Note that for service shells, the only applicable rule is **user\_input**. For details, see [Publishing a service shell’s attributes](./customize-shells.md#publishing-a-service-shells-attributes).
         
 
 9. Remove any unneeded lines.
@@ -183,7 +183,7 @@ Note that starting with CloudShell 9.1 GA, when adding a custom attribute to an 
 
 **To publish a service shell’s attribute:**
 
-1. Add or modify an existing attribute as explained in the [Customizing a shell’s attributes](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Customizing-Shells.htm?Highlight=Customizing%20Shells#Customiz) section above.
+1. Add or modify an existing attribute as explained in the [Customizing a shell’s attributes](./customize-shells.md#customizing-a-shells-attributes) section above.
     
 2. If you want the service’s attribute to be exposed in the blueprint and sandbox, replace the tags line with the following:
     
@@ -415,7 +415,7 @@ And running the command prints the message to the **Output** window.
 
 ![](/Images/Devguide-shells/Customizing-Shells_7_624x310.png)
 
-So far in this example, we discussed how to create attributes that are specific to the shell. However, CloudShell also includes global attributes that are not isolated to a specific shell and can be used among different CloudShell elements. You can add these global attributes to shells that are already installed on CloudShell using the `SetCustomShellAttribute` API method which connects to CloudShell, searches for the shell by name, and adds the attribute to it. You can also do this directly from CloudShell Portal - see [Adding custom attributes to a Shell](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Shells.htm#Adding2).
+So far in this example, we discussed how to create attributes that are specific to the shell. However, CloudShell also includes global attributes that are not isolated to a specific shell and can be used among different CloudShell elements. You can add these global attributes to shells that are already installed on CloudShell using the `SetCustomShellAttribute` API method which connects to CloudShell, searches for the shell by name, and adds the attribute to it. You can also do this directly from CloudShell Portal - see [Adding custom attributes to a Shell](../../admin/cloudshell-manage-dashboard/managing-shells.md#adding-custom-attributes-to-a-shell).
 
 For example, this script adds the **Execution Server Selector** attribute (with a default value) to our shell:
 

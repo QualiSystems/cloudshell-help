@@ -6,19 +6,19 @@ sidebar_position: 7
 
 The Shell driver commands are accessible to CloudShell users via the portal as well as to orchestration scripts running on the sandbox. In this section we’ll explore the different ways in which these commands can be customized in their appearance and behavior. The following customization options will be reviewed:
 
-- [Changing the shell’s Python version](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Commands-Visibility.htm?Highlight=Commands%20Visibility%20and%20Usability#Changing)
-- [Changing the function’s display name and description](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Commands-Visibility.htm?Highlight=Commands%20Visibility%20and%20Usability#customize_names)
-- [Setting “admin only” functions](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Commands-Visibility.htm?Highlight=Commands%20Visibility%20and%20Usability#admin-only)
-- [Optional parameters and default values](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Commands-Visibility.htm?Highlight=Commands%20Visibility%20and%20Usability#customizing_optional_parameters)
-- [Restricting input to a specific set of possible values](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Commands-Visibility.htm?Highlight=Commands%20Visibility%20and%20Usability#customizing_lookup_values)
-- [Adding categories](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Commands-Visibility.htm?Highlight=Commands%20Visibility%20and%20Usability#customizing_categories)
-- [Orchestration only commands (hidden commands)](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Commands-Visibility.htm?Highlight=Commands%20Visibility%20and%20Usability#customizing_orchestration_only_commands)
+- [Changing the shell’s Python version](#changing-the-shells-python-version)
+- [Changing the function’s display name and description](#changing-the-functions-display-name-and-description)
+- [Setting “admin only” functions](#setting-admin-only-functions)
+- [Optional parameters and default values](#optional-parameters-and-default-values)
+- [Restricting input to a specific set of possible values](#restricting-input-to-a-specific-set-of-possible-values)
+- [Adding categories](#adding-categories)
+- [Orchestration only commands (hidden commands)](#orchestration-only-commands-hidden-commands)
 
-If you haven’t done some already it is recommended to go through the [Getting Started with Shell Development](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Getting-Started.htm) tutorial before continuing to get a better understanding of the overall process of creating and using a shell. We also assume you’ve gone through the steps described in the [Setting up the Development Environment](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Intro/Setting-up-the-Dev-Env.htm) section of this guide.
+If you haven’t done some already it is recommended to go through the [Getting Started with Shell Development](./getting-started.md) tutorial before continuing to get a better understanding of the overall process of creating and using a shell. We also assume you’ve gone through the steps described in the [Setting up the Development Environment](../setting-up-dev-env.md) section of this guide.
 
 ## Setting up
 
-We’ll start by creating a new shell that we’ll use in this example. In the [Getting Started with Shell Development](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Getting-Started.htm) tutorial we used the Shellfoundry CLI tool to generate a working shell to get started quickly. In this section we’ll also be using the Shellfoundry to create an example shell, only this time we’ll use a different project template. The *resource-clean* template is similar to the default template we’ve used previously only it doesn’t contain any example driver functions. This will make it easier for us to really go through the experience of starting from a clean slate.
+We’ll start by creating a new shell that we’ll use in this example. In the [Getting Started with Shell Development](./getting-started.md) tutorial we used the Shellfoundry CLI tool to generate a working shell to get started quickly. In this section we’ll also be using the Shellfoundry to create an example shell, only this time we’ll use a different project template. The *resource-clean* template is similar to the default template we’ve used previously only it doesn’t contain any example driver functions. This will make it easier for us to really go through the experience of starting from a clean slate.
 
 From the command line, navigate to a folder under which you’ll want the new shell to be created and type in the following:
 
@@ -41,7 +41,7 @@ def user_facing_function(self, context, some_parameter, some_other_parameter):
     return "Thank you for calling this function."
 ```
 
-We’ve now created a shell with a single command. Similar to the flow covered in the [Getting Started with Shell Development](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Getting-Started.htm) tutorial, the next steps would be to create a resource instance of this shell in CloudShell and add it to a sandbox so we can experiment with it. You should refer to the [Getting Started with Shell Development](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Getting-Started.htm) tutorial for any question on how to accomplish the three steps below:
+We’ve now created a shell with a single command. Similar to the flow covered in the [Getting Started with Shell Development](./getting-started.md) tutorial, the next steps would be to create a resource instance of this shell in CloudShell and add it to a sandbox so we can experiment with it. You should refer to the [Getting Started with Shell Development](./getting-started.md) tutorial for any question on how to accomplish the three steps below:
 
 1. Install the shell by running the following from the shell directory: `shellfoundry install`
     

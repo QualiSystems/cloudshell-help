@@ -19,9 +19,9 @@ The ***src*** folder in the Shell project is the driver source code root. On s
 
 Every Shell driver is required to have one main driver class. This class represents the main driver interface and is the file CloudShell introspects to get and validate the list of commands for the Shell. Every Shellfoundry template will generate the driver main file in the `driver.py` file and a main driver class with the name ***\[ShellName\]Driver***, both of which are the convention.
 
-Any public function added to this driver will be considered a Shell command. Any private function (prefixed by Python convention by an underscore) added to the main class will be considered an internal helper function and will be ignored by CloudShell. We can refer to these public functions in the driver class as CloudShell command functions. Each command function can also have a special parameter called *context*. This parameter will be provided by CloudShell as an object containing information about the sandbox and resource/app the device is executing against. Another special property of the *context* parameter is that its completely invisible to users or API clients executing the command. If you execute the command from the UI or API you will never see a *context* parameter. The *context* object is reviewed in [How Shells Get Information from CloudShell](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/How-Shells-Get-Info.htm).
+Any public function added to this driver will be considered a Shell command. Any private function (prefixed by Python convention by an underscore) added to the main class will be considered an internal helper function and will be ignored by CloudShell. We can refer to these public functions in the driver class as CloudShell command functions. Each command function can also have a special parameter called *context*. This parameter will be provided by CloudShell as an object containing information about the sandbox and resource/app the device is executing against. Another special property of the *context* parameter is that its completely invisible to users or API clients executing the command. If you execute the command from the UI or API you will never see a *context* parameter. The *context* object is reviewed in [How Shells Get Information from CloudShell](./how-shells-get-info-from-cs.md).
 
-The `drivermetadata.xml` file, also located in the *src* directory provides additional information on the driver functions and how CloudShell should expose and display them as CloudShell Commands. More information about this file and how to customize CloudShell commands can be found in [Commands Visibility and Usability](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Commands-Visibility.htm).
+The `drivermetadata.xml` file, also located in the *src* directory provides additional information on the driver functions and how CloudShell should expose and display them as CloudShell Commands. More information about this file and how to customize CloudShell commands can be found in [Commands Visibility and Usability](./commands-visibility-and-usability.md).
 
 The driver can contain additional files and folders which you can reference in your driver class. In order to reference a file in a nested folder you need to add an `__init__.py` file according to Python convention so that the folder is considered a package with its own namespace.
 
@@ -39,7 +39,7 @@ cloudshell-shell-core>=2.0.0,<2.1.0
 
 According to this constraint, pip will not automatically install any minor version beyond 2.0 but patch versions are allowed.
 
-It is also possible to change the validity period for virtual environments. This period determines if the Execution Servers will update the venv's dependencies on subsequent executions of the venv's driver or script. For details, see [Setting the Virtual Environment validity period](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Tst-n-Cmd-Exc.htm#Setting3).
+It is also possible to change the validity period for virtual environments. This period determines if the Execution Servers will update the venv's dependencies on subsequent executions of the venv's driver or script. For details, see [Setting the Virtual Environment validity period](../../admin/cloudshell-execution-server-configurations/setting-up-execution-servers-to-run-commands.md#setting-the-virtual-environment-validity-period).
 
 ### Returning Results
 
@@ -190,7 +190,7 @@ You should decide whether to enable concurrent execution by balancing the usage 
 
 In general, it is recommended to use the CloudShell API as little as possible from the driver, which is supposed to mostly communicate with the app or device. However, there are several common use cases where drivers would use the API to update CloudShell regarding the status of the resource or write additional messages to the console. Please check out our short instructional video on how to develop API commands at the end of this section.
 
-Starting a CloudShell API session requires information regarding the sandbox reservation and the server connectivity information. All of that information is available in the context parameter of the command function that is being passed by CloudShell. For more information about that object and the information it provides please see the [How Shells Get Information from CloudShell](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/How-Shells-Get-Info.htm) section.
+Starting a CloudShell API session requires information regarding the sandbox reservation and the server connectivity information. All of that information is available in the context parameter of the command function that is being passed by CloudShell. For more information about that object and the information it provides please see the [How Shells Get Information from CloudShell](./how-shells-get-info-from-cs.md) section.
 
 First, as we’ll need the CloudShell API, we should add it to the `requirements.txt` file. Open the `requirements.txt` file and add the following line:
 
@@ -251,6 +251,6 @@ def use_cloudshell_api_session_with_helpers(self, context):
         session.WriteMessageToReservationOutput(context.reservation.reservation_id, "Hello from Shell")
 ```
 
-Now that we have a CloudShell API session, there are three main things we may want to do with it from our driver: Decrypt a password attribute, update the resource live status or update the console widget with progress report. You can find the code for these operations in [Common Driver Recipes](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Common-Driver-Recipes.htm).
+Now that we have a CloudShell API session, there are three main things we may want to do with it from our driver: Decrypt a password attribute, update the resource live status or update the console widget with progress report. You can find the code for these operations in [Common Driver Recipes](./common-driver-recipes.md).
 
 <iframe width="100%" height="500px" src="https://www.youtube.com/embed/Lt5BhmUZR1o" title="Adding API Commands to a Shell" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

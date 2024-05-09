@@ -128,7 +128,7 @@ shellfoundry new debugging_example
 cd debugging_example
 ```
 
-Then create an instance of the DebuggingExample resource and add it to a sandbox so we can use it for testing. These steps are identical to the ones demonstrated in [Getting Started with Shell Development](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Getting-Started.htm), which you can use a reference.
+Then create an instance of the DebuggingExample resource and add it to a sandbox so we can use it for testing. These steps are identical to the ones demonstrated in [Getting Started with Shell Development](./getting-started.md), which you can use a reference.
 
 ### Preparing your environment
 
