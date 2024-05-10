@@ -13,4 +13,4 @@ You can use any hypervisor tool that supports the use of OVA images, including o
     
     The **Settings** screen is displayed.
     
-3. Next, follow the [Post Installation](https://help.quali.com/Online%20Help/0.0/Portal/Content/CloudShell-SDK/Post-Instl.htm) procedures to set up the new VM and register CloudShell.
+3. Next, follow the [Post Installation](../installation-procedure/post-installation/) procedures to set up the new VM and register CloudShell.

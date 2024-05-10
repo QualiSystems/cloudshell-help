@@ -1,6 +1,6 @@
 # Installation and Configuration
 
-CloudShell suite comprises different components and services. For details on CloudShell's different components and services, see [CloudShell Component Architecture](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Overview/cs-compnts.htm).
+CloudShell suite comprises different components and services. For details on CloudShell's different components and services, see [CloudShell Component Architecture](./cs-system-requirements/cs-component-architechture.md).
 
 The following guides are included in this help:
 
@@ -12,4 +12,3 @@ The following guides are included in this help:
 - [High Availability Deployment](./ha-deployment/index.md)
 - [High Availability Installation and Configuration](./ha-installation/index.md)
 - [CloudShell SDK Installation](./cloudshell-sdk/index.md)
-- [TestShell ALM Installation and Configuration](https://help.quali.com/Online%20Help/2023.3/Portal/Content/TestShell-ALM/TestShell-ALM.htm)
