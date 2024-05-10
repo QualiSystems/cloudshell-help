@@ -8,5 +8,5 @@ A failover cluster is a group of independent servers (nodes) that work together 
 
 For details, see the following:
 
-- [High Availability Deployment](https://help.quali.com/Online%20Help/2023.3/Portal/Content/HA-Deploy/HA-Deploy-Home.htm): This document presents the recommended architecture for implementing CloudShell in a High Availability (HA) environment.
-- [High Availability Installation and Configuration](https://help.quali.com/Online%20Help/2023.3/Portal/Content/HA-Install/HA-Installation.htm): This document describes the installation and configuration of CloudShell in a High Availability (HA) environment.
+- [High Availability Deployment](../../ha-deployment/index.md): This document presents the recommended architecture for implementing CloudShell in a High Availability (HA) environment.
+- [High Availability Installation and Configuration](../../ha-installation/index.md): This document describes the installation and configuration of CloudShell in a High Availability (HA) environment.

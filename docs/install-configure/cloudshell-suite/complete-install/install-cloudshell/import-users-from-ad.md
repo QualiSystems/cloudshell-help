@@ -43,7 +43,7 @@ Before importing user definitions from the active directory, the logon user of t
 
 1. Open the CloudShell Resource Management Client.
 2. From the Quali Community's [Docs & Training](http://www.quali.com/community/training/) page, open the **CloudShell Resource Manager Online Help.**
-3. Follow the steps described in [Importing users into CloudShell from an active directory](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Add-Usr.htm#Importing).
+3. Follow the steps described in [Importing users into CloudShell from an active directory](../../../../admin/cloudshell-identity-management/managing-users/managing-cloudshell-users.md#importing-users-into-cloudshell-from-an-active-directory).
 
 ## Enable CloudShell to automatically import users when they first log in to CloudShell
 

@@ -9,7 +9,7 @@ This procedure explains how to restore CloudShell from existing database files.
 **To restore CloudShell databases:**
 
 1. Copy the backup files that you created to the appropriate machine.
-2. Shut down CloudShell services on this machines, as described in the [Restoring CloudShell Databases](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Backup%20and%20Restore/rstr-cs-db.htm?Highlight=Restoring%20CloudShell%20Databases#Backing) procedure above.
+2. Shut down CloudShell services on this machines, as described in the [Backing Up CloudShell Databases](./backup-cs-db.md) procedure.
 3. Restore the backup files into the existing databases.
     1. In SQL Server Management Studio, connect to the CloudShell database server.
     2. In the **Databases** tree, right-click each Quali database, and select **Tasks >Restore\>Database**.
@@ -18,6 +18,6 @@ This procedure explains how to restore CloudShell from existing database files.
     - Quali Server:
         1. Run the **Quali Server Configuration Wizard**.
         2. In the **Administrative Tasks** page, ensure that the Search Service is up to date.
-    - IIS Service: Restart the service as described in [Restoring CloudShell Databases](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Backup%20and%20Restore/rstr-cs-db.htm?Highlight=Restoring%20CloudShell%20Databases#Backing) above.
+    - IIS Service: Restart the service as described in [Backing Up CloudShell Databases](./backup-cs-db.md).
 
 You can now proceed to [Upgrade the Validation Environment](../upgrade-procedure/upgrade-staging.md).

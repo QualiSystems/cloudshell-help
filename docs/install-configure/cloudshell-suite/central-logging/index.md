@@ -25,9 +25,9 @@ For example, Central Logging allows you to (<span style={{ color: 'red' }}>**1**
 
 Central Logging configuration is a two step process:
 
-- [Configure log4net Appenders for Central Logging](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/CentralLog/cnfg-log4net.htm)
-- [Configure Elastic Stack for Central Logging](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/CentralLog/cnfg-elk.htm)
+- [Configure log4net Appenders for Central Logging](./config-log4net.md)
+- [Configure Elastic Stack for Central Logging](./modify-cloudshell.md)
 
 ## Related Topics
 
-- [How to Track Event Threads Using Trace ID or Reservation ID](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/CentralLog/usage.htm)
+- [How to Track Event Threads Using Trace ID or Reservation ID](./track-threads.md)

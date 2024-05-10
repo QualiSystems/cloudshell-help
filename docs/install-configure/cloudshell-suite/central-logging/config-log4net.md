@@ -6,7 +6,7 @@ sidebar_position: 1
 
 This article explains how to set up the log4net appenders for Quali Server and each Execution Server (New Job Scheduling logs are managed via FileBeat and configured separately). The log4net appenders define where to send the json logs collected by FileBeat as well as the log retention policy.
 
-There are two log4net configuration files, one for Quali Server and another for each execution server. Starting with 2021.2, example log4net files with the new json appenders are included alongside the existing `log4net.config` files in the Quali Server and Execution Server installation directories. You may use these example files as is. However, if you are using customized `log4net.config` files, you may wish to copy the relevant sections from the example files into the log4net files, as explained in [Configuring the json appenders on the existing log4net files](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/CentralLog/cnfg-log4net.htm?Highlight=Configure%20log4net%20Appenders%20for%20Central%20Logging#Configur) below.
+There are two log4net configuration files, one for Quali Server and another for each execution server. Starting with 2021.2, example log4net files with the new json appenders are included alongside the existing `log4net.config` files in the Quali Server and Execution Server installation directories. You may use these example files as is. However, if you are using customized `log4net.config` files, you may wish to copy the relevant sections from the example files into the log4net files, as explained in [Configuring the json appenders on the existing log4net files](./config-log4net.md#configuring-the-json-appenders-on-the-existing-log4net-files) below.
 
 The example files are:
 
@@ -85,4 +85,4 @@ If your `log4net.config` files are heavily customized, it may be easier to updat
 4. Save the file.
 5. Restart the appropriate service - **Quali Server** or **TestShell Execution Server**.
 6. Repeat these steps for the `QsExecutionServer.exe.jsonlogs.example` file.
-7. Next, [Configure Elastic Stack for Central Logging](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/CentralLog/cnfg-elk.htm).
+7. Next, [Configure Elastic Stack for Central Logging](./modify-cloudshell.md).
