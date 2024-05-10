@@ -10,13 +10,13 @@ This article discusses an assortment of best practices and recommendations for C
 
 ## CloudShell Portal
 
-- [Best Practices for CloudShell Portal](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/Bst-Prctcs-cs-portal.htm)
+- [Best Practices for CloudShell Portal](../../configure-products/configure-portal/best-practices.md)
 
 ## CloudShell Server
 
-- Do not use Windows client versions for CloudShell Server machines (Quali Server, Portal, Execution Servers, DB). For details, see [Minimum Requirements for CloudShell Servers and Clients](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Overview/srvrs.htm).
+- Do not use Windows client versions for CloudShell Server machines (Quali Server, Portal, Execution Servers, DB). For details, see [Minimum Requirements for CloudShell Servers and Clients](../../../cs-system-requirements/min-requirements-for-cs.md).
 - L1 resource automation is managed by Quali Server, unlike shells and scripts which are handled by the Execution Servers. So, make sure Quali Server has access to your Layer 1 devices.
-- If you're using CloudShell's RabbitMQ, change its default user's credentials, as explained in [Update the RabbitMQ Credentials on Quali Server](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Appendices/update-default-rabbitmq-credentials.htm).
+- If you're using CloudShell's RabbitMQ, change its default user's credentials, as explained in [Update the RabbitMQ Credentials on Quali Server](../upgrade-rabbitmq-creds.md).
 
 ## Easy logging integration
 
@@ -25,7 +25,7 @@ This article discusses an assortment of best practices and recommendations for C
 ## Execution Servers
 
 - Execution Servers must have access to the respective non-L1 devices and cloud providers.
-- Execution Server redundancy: it is recommended to provision different parts of your lab to specific Execution Servers both for security purposes and performance. For details, see [Setting Up Execution Servers to Run Commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Tst-n-Cmd-Exc.htm).
+- Execution Server redundancy: it is recommended to provision different parts of your lab to specific Execution Servers both for security purposes and performance. For details, see [Setting Up Execution Servers to Run Commands](../../../../admin/cloudshell-execution-server-configurations/setting-up-execution-servers-to-run-commands.md).
 - The CloudShell admin's credentials are specified in plain text on the execution server. To increase security, remove the following line from the Linux execution server's process file at /etc/systemd/system/es.service:
     
     ```sh
@@ -33,7 +33,7 @@ This article discusses an assortment of best practices and recommendations for C
     ```
     
     :::note
-    This line enables running the execution server's configuration every time the service is started. Moving forward, you will need to run the execution server's `QsExecutionServerConsoleConfig` manually whenever any credentials change (for example, the Quali Server hostname). For details, see [Configure the Linux Execution Server](https://help.quali.com/Online%20Help/0.0/Portal/Content/Linux/Cnfg-Exec-Srv.htm).
+    This line enables running the execution server's configuration every time the service is started. Moving forward, you will need to run the execution server's `QsExecutionServerConsoleConfig` manually whenever any credentials change (for example, the Quali Server hostname). For details, see [Configure the Linux Execution Server](../../../linux-virtual-appliance/post-installation/configure/index.md).
     :::
     
 
@@ -43,19 +43,19 @@ This article discusses an assortment of best practices and recommendations for C
 - Do not turn off logging.
 - Use HTTPS with a signed certificate.
 - Set the value of the ASP Threads Per Processor Limit property: The default value is 25. The maximum recommended value is 100.
-- Enable IIS HTTP compression, as explained in [Enable dynamic compression on your IIS settings](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/Bst-Prctcs-cs-portal.htm#(Optiona).
+- Enable IIS HTTP compression, as explained in [Enable dynamic compression on your IIS settings](../../configure-products/configure-portal/best-practices.md#enable-dynamic-compression-on-your-iis-settings).
 
 ## MongoDB
 
-Use password protection, as illustrated in [Configure the MongoDB Database Connection](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-db-conn-MongoDB.htm).
+Use password protection, as illustrated in [Configure the MongoDB Database Connection](../../configure-products/config-mongodb-connection.md).
 
-For data trimming best practices, see [Database Trimming](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Appendices/db-trimming-bst-prctc.htm).
+For data trimming best practices, see [Database Trimming](./db-trimming.md).
 
 ## New Job Scheduling
 
-- Set Kubernetes-based CloudShell services to use static IPs. For details, see [Set the Mongo, Rabbit and Sandbox Services to Use Static IPs](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/JSS/jss-static-mongo-rbbt-sndbx.htm).
-- It is recommended to use Kubernetes secrets to store sensitive information like user details and passwords instead of plain text. For details, see [Customize the Deployment Configuration Parameters](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/JSS/jss-cstmz-dply-cnfg.htm).
-- If you're using the CloudShell-deployed RabbitMQ, change its default user's credentials, as explained in [Update the RabbitMQ Credentials in Kubernetes Environment](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/JSS/jss-update-default-rabbitmq-credentials.htm)
+- Set Kubernetes-based CloudShell services to use static IPs. For details, see [Set the Mongo, Rabbit and Sandbox Services to Use Static IPs](../../new-jss-install-config/high-level-install-flow/customize-deployment/set-static-ip.md).
+- It is recommended to use Kubernetes secrets to store sensitive information like user details and passwords instead of plain text. For details, see [Customize the Deployment Configuration Parameters](../../new-jss-install-config/high-level-install-flow/customize-deployment/customize-deployment-config-params.md).
+- If you're using the CloudShell-deployed RabbitMQ, change its default user's credentials, as explained in [Update the RabbitMQ Credentials in Kubernetes Environment](../../new-jss-install-config/admin-actions/update-k8s-env.md)
 
 ## Pypi Server
 
@@ -63,12 +63,12 @@ For data trimming best practices, see [Database Trimming](https://help.quali.com
 
 ## QualiX
 
-- [Configure SSL Certificate on QualiX 4.1 Docker Container](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-SSL-Cert.htm)
+- [Configure SSL Certificate on QualiX 4.1 Docker Container](../../../qualix/post-installation-config/enable-https/configure-ssl-cert.md)
 
 ## SQL Server
 
 - Use Full MSSQL in an AlwaysOn availability group configuration and not SQL Express.
-- Perform a daily backup of your CloudShell databases. For details, see [Back Up and Restore CloudShell](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Backup%20and%20Restore/bkup-rstr-cs.htm).
+- Perform a daily backup of your CloudShell databases. For details, see [Back Up and Restore CloudShell](../../../install-configure/cloudshell-suite/backup-restore).
     - Use backup compression
 - Use RAID 10 configuration for user binaries, data, log files, and TempDB for best performance and availability.
 - Allocate the right memory for MSSQL. 
@@ -85,9 +85,9 @@ For data trimming best practices, see [Database Trimming](https://help.quali.com
 
 ## Sisense
 
-- Schedule the daily ElastiCube build to start after it syncs with the CloudShell Insight DB. For details, see [Synchronization](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/BI/synchrnzn.htm).
+- Schedule the daily ElastiCube build to start after it syncs with the CloudShell Insight DB. For details, see [Synchronization](../../../cs-insight-bi/install-insight/synchronization.md).
 
 ## Additional points to consider
 
-- **Key management:** CloudShell admin configuration keys provide many customization options. Applying keys requires restarting certain CloudShell services. During this time, certain CloudShell functionality may be unavailable. We therefore recommend to set a [Maintenance Window](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Mntnc-Wndw.htm) in which to set the keys. For details about configuration keys, see [Advanced CloudShell Customizations](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm).
+- **Key management:** CloudShell admin configuration keys provide many customization options. Applying keys requires restarting certain CloudShell services. During this time, certain CloudShell functionality may be unavailable. We therefore recommend to set a [Maintenance Window](../../../../admin/cloudshell-manage-dashboard/maintenance-window.md) in which to set the keys. For details about configuration keys, see [Advanced CloudShell Customizations](../../../../admin/setting-up-cloudshell/cloudshell-configuration-options/advanced-cloudshell-customizations.md).
 - Before migrating to your Production environment, make sure to test the staging environment against actual resources/Apps and traffic.

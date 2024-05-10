@@ -22,4 +22,4 @@ sidebar_position: 1
     
     ![](/Images/SDK2/SettingUpTheNewVM_497x255.png)
     
-7. Next, log in to CloudShell Portal remotely and apply the CloudShell license as described in [Applying the CloudShell License](https://help.quali.com/Online%20Help/0.0/Portal/Content/CloudShell-SDK/Apply-CS-licns.htm) .
+7. Next, log in to CloudShell Portal remotely and apply the CloudShell license as described in [Applying the CloudShell License](./apply-cs-license.md) .

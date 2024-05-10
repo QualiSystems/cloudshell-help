@@ -17,7 +17,7 @@ The databases that may cause issues from time to time are:
 - Keep a backup copy of the production database before defragmenting/trimming.
 - As a best practice, we recommend doing the following:
     - To allow CloudShell to work uninterrupted while you trim/defragment the database, run the procedure on a separate SQL Server. To do so, back up the database, restore it on another SQL Server and run the script on the restored database. When the operation completes, restore the updated database in the production SQL Server.
-    - If you continue working with CloudShell while the database is being trimmed/defragmented, you may lose the new data when restoring back the database. To avoid losing new data, set a [Maintenance Window](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Mntnc-Wndw.htm) for the duration of the operation. To get an idea of the time it will take, please perform the defragmentation/trimming procedure on a copy of the database. The operation may take several hours, depending on the size of the database.
+    - If you continue working with CloudShell while the database is being trimmed/defragmented, you may lose the new data when restoring back the database. To avoid losing new data, set a [Maintenance Window](../../../../admin/cloudshell-manage-dashboard/maintenance-window.md) for the duration of the operation. To get an idea of the time it will take, please perform the defragmentation/trimming procedure on a copy of the database. The operation may take several hours, depending on the size of the database.
 :::
 ## Defragment Quali / Insight DBs
 
@@ -87,7 +87,7 @@ This database doesn't have a retention policy, which may cause unnecessary load 
 
 For example, this particular [script](https://help.quali.com/help%20versions/attachments/delete_old_insight_data.zip) clears data that is older than 12 months from the specified Insight DB.
 :::note
-To avoid loss of data, make sure the trimming process is completed before the Insight DB's nightly sync with CloudShell. For details, see [Synchronization](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/BI/synchrnzn.htm).
+To avoid loss of data, make sure the trimming process is completed before the Insight DB's nightly sync with CloudShell. For details, see [Synchronization](../../../cs-insight-bi/install-insight/synchronization.md).
 :::
 **To trim the database using the above script:**
 
@@ -128,4 +128,4 @@ To avoid loss of data, make sure the trimming process is completed before the In
 
 ## Reduce retention period for Mongo DB data
 
-By default, MongoDB keeps sandbox Activity Feed/Output event data for 49+ years. Depending on your CloudShell deployment, you may need to reduce the retention period. For details, see [Limiting the time to keep sandbox Activity Feed/Output data](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm#Limiting).
+By default, MongoDB keeps sandbox Activity Feed/Output event data for 49+ years. Depending on your CloudShell deployment, you may need to reduce the retention period. For details, see [Limiting the time to keep sandbox Activity Feed/Output data](../../../../admin/setting-up-cloudshell/cloudshell-configuration-options/advanced-cloudshell-customizations.md#limiting-the-time-to-keep-sandbox-activity-feedoutput-data).

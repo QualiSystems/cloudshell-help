@@ -10,10 +10,10 @@ This article describes the utilities and Layer 1 (L1) drivers that are installed
 
 CloudShell includes the utilities listed in the following tables:
 
-- [System utilities](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Appendices/appc-utls-l1-drvrs.htm?Highlight=Utilities%20and%20Layer%201%20Drivers#System)
-- [Configuration utilities](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Appendices/appc-utls-l1-drvrs.htm?Highlight=Utilities%20and%20Layer%201%20Drivers#Configur)
-- [Runtime utilities](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Appendices/appc-utls-l1-drvrs.htm?Highlight=Utilities%20and%20Layer%201%20Drivers#Runtime)
-- [Additional configuration files and utilities](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Appendices/appc-utls-l1-drvrs.htm?Highlight=Utilities%20and%20Layer%201%20Drivers#Addition)
+- [System utilities](#system-utilities)
+- [Configuration utilities](#configuration-utilities)
+- [Runtime utilities](#runtime-utilities)
+- [Additional configuration files and utilities](#additional-configuration-files-and-utilities)
 
 ### System utilities
 
