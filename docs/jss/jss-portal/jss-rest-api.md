@@ -49,5 +49,5 @@ To get started, you need to first obtain an accessToken and pass it to the REST 
 
 ## Related Topics
 
-- [New Job Scheduling REST API](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/JSS-API/jss-rest-api-ovrvw.htm)
-- [New Job Scheduling API Login](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/JSS-API/jss-rest-api-accessToken.htm)
+- [New Job Scheduling REST API](../../api-guide/new-jss-rest-api/index.md)
+- [New Job Scheduling API Login](../../api-guide/new-jss-rest-api/jss-api-login.md)

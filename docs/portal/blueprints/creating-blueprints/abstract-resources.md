@@ -47,15 +47,15 @@ You can use abstract resources in your blueprint in the following ways:
     :::note
     The resource's name has a limit of 100 characters and can only contain alpha-numeric characters, spaces, and the following characters: | . - \_ \] \[
     :::
-4. There are three types of resource requirements you can add: **Models** define the model of the resource, **Attributes** define attributes of the resource, and **Sub-resources** are resources within the resource (such as ports). For additional information, see [Defining Requirements](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/INVN/Abst-Rsrc-Tmplt-Sttngs.htm#Defining).
+4. There are three types of resource requirements you can add: **Models** define the model of the resource, **Attributes** define attributes of the resource, and **Sub-resources** are resources within the resource (such as ports). For additional information, see [Defining Requirements](../../inventory/managing-abstract-templates/create-abstract-template/abstract-resource-settings.md#defining-requirements).
     
     :::note Special considerations
     - For resources based on a 1st Gen Shell, when creating the abstract resource from an existing resource and no model is selected, the Attributes drop down displays all attributes that are shared among the resource’s family and models.
     - For resources based on a 2nd Gen Shell, only the family’s attributes are displayed, as each model’s attributes have a namespace that is unique to that model.
     
-    Therefore, if you want to define an abstract resource based on attributes without limiting it to a specific model, either use family-level attributes or use custom attributes, which can be associated with multiple models. To learn how to create and associate custom attributes with your Shell, see the CloudShell Dev Guide's [Deploying to Production](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Deploying-to-Production.htm).
+    Therefore, if you want to define an abstract resource based on attributes without limiting it to a specific model, either use family-level attributes or use custom attributes, which can be associated with multiple models. To learn how to create and associate custom attributes with your Shell, see the CloudShell Dev Guide's [Deploying to Production](../../../devguide/developing-shells/deploy-to-prod.md).
     :::
-5. **Additional Information** inputs are inputs that aren't mandatory. Use these to prompt the user for inputs that drive provisioning or provide general information about the resource. For additional information, see [Defining Additional Info](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/INVN/Abst-Rsrc-Tmplt-Sttngs.htm#Addition).
+5. **Additional Information** inputs are inputs that aren't mandatory. Use these to prompt the user for inputs that drive provisioning or provide general information about the resource. For additional information, see [Defining Additional Info](../../inventory/managing-abstract-templates/create-abstract-template/abstract-resource-settings.md#defining-additional-info).
 6. Click **Save Changes**.
     
     The new abstract resource is displayed in the diagram.
@@ -75,7 +75,7 @@ This action changes a specific resource in the diagram into an abstract resource
     :::tip
     Consider changing the abstract's settings so as not to limit resource selection. For example, removing unneeded attribute values.
     :::
-2. Edit the abstract resource as necessary - see [Abstract Resource Settings](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/INVN/Abst-Rsrc-Tmplt-Sttngs.htm).
+2. Edit the abstract resource as necessary - see [Abstract Resource Settings](../../inventory/managing-abstract-templates/create-abstract-template/abstract-resource-settings.md).
 3. Save the abstract resource.
 </details>
 
@@ -88,10 +88,10 @@ The quickest way to create a copy or a variation of an existing abstract resourc
     
     The new abstract resource is added to the blueprint with the same settings as the original.
     
-2. Edit the abstract resource as necessary - see [Abstract Resource Settings](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/INVN/Abst-Rsrc-Tmplt-Sttngs.htm).
+2. Edit the abstract resource as necessary - see [Abstract Resource Settings](../../inventory/managing-abstract-templates/create-abstract-template/abstract-resource-settings.md).
 3. Save the abstract resource.
 </details>
 
 ## Related Topics
 
-- [Blueprint Workspace](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Blprnt-Brws-Wrkspc.htm)
+- [Blueprint Workspace](../blueprint-workspace/index.md)

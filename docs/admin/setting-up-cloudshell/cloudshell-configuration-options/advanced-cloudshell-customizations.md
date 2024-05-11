@@ -461,7 +461,7 @@ This change applies to all the blueprints in the catalog, in both **Tile** and
 
 When hiding the **More Info** option, it still remains available in the **Blueprint** menu of the blueprint's workspace. 
 
-### Specifying which side panes should be open by default
+### Specifying which side panes should be open by default (blueprints)
 
 It is possible to specify that either the instructions side pane or the blueprint commands side pane be opened by default in the **Blueprints** pages.
 
@@ -1725,7 +1725,7 @@ Use this key to set the maximum number of permitted users that a single reservat
 2. Save the file.
 3. Restart the **Quali Server** service.
 
-### Specifying which side panes should be open by default
+### Specifying which side panes should be open by default (sandboxes)
 
 It is possible to specify that either the instructions side pane or the blueprint commands side pane be opened by default in the **Sandboxes** pages.
 

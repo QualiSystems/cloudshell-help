@@ -46,11 +46,11 @@ Global inputs are a simple way to request information from the user when they re
 - A **Password** input accepts a freetext password value. The value is displayed as a masked value (\*\*\*\*\*). This type of global input cannot be linked to other inputs. Note that the value can be decrypted using the CloudShell Automation API's [DecryptPassword](pathname:///api-docs/2023.3/Python-API/cloudshell.api.html?highlight=decryptpassword#cloudshell.api.cloudshell_api.CloudShellAPISession.DecryptPassword) method.
 
 :::tip Tip for admins
-It is possible to resize the global text boxes of the global inputs. For details, see [Resizing the value box of "text" global inputs](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Rsz-text-glbl-inpt.htm#Resizing).
+It is possible to resize the global text boxes of the global inputs. For details, see [Resizing the value box of "text" global inputs](../../../admin/setting-up-cloudshell/cloudshell-configuration-options/resizing-the-value-box-of-text-global-inputs.md).
 :::
 ## Resource requirements and additional info
 
-Some blueprint inputs are directly related to resource requirements and information that are defined as user inputs. These inputs are displayed in the right hand section of this page. If you have abstract resource templates in your blueprint, and those templates have inputs, they will be listed here. For additional information about setting inputs for blueprint resources, see [Add Abstract Resources](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/RSRC-n-SRVC-Wrk-wth-Abst-Rsrc.htm#top).
+Some blueprint inputs are directly related to resource requirements and information that are defined as user inputs. These inputs are displayed in the right hand section of this page. If you have abstract resource templates in your blueprint, and those templates have inputs, they will be listed here. For additional information about setting inputs for blueprint resources, see [Add Abstract Resources](./abstract-resources.md).
 
 ## Grouping together resource requirements and information
 
@@ -62,7 +62,7 @@ After clicking the 'link attribute' button you will be able to choose whether to
 
 :::note Notes
 
-- If you're linking a Lookup attribute, you cannot bind the two together. As a result, blueprint designers will be able to modify the global input's values. When you create the attribute ahead of time, you can bind it to the attribute values, which disables the modification option. For details, see the Lookup input's description in the [Global inputs](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Crt-Blprnt/Blprnt-Usr-Inpts.htm?Highlight=Add%20User%20Inputs#Global) section above.
+- If you're linking a Lookup attribute, you cannot bind the two together. As a result, blueprint designers will be able to modify the global input's values. When you create the attribute ahead of time, you can bind it to the attribute values, which disables the modification option. For details, see the Lookup input's description in the [Global inputs](#global-inputs) section above.
 - Abstract resource attributes with partial or search conditions, which use a non-equals action, cannot be linked to global inputs.
 :::
 ## Adding description and default values for blueprint inputs

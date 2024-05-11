@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Discovery Servers Dashboard
 
-Each test discovery server is associated to an online (Git) test repository and is responsible for discovering all tests of a supported type in the repository. For additional details, see [Test Discovery Service](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/JSS/jss-tds.htm).
+Each test discovery server is associated to an online (Git) test repository and is responsible for discovering all tests of a supported type in the repository. For additional details, see [Test Discovery Service](../../../install-configure/cloudshell-suite/new-jss-install-config/test-discovery-service/index.md).
 
 ![](/Images/JSS/JssJobSchedulingServers-TDS.png)
 

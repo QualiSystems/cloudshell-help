@@ -25,7 +25,7 @@ This section explains how to associate a test repository to an existing test dis
 
 - Suitable test discovery server to be associated to the test repository
     
-- Test repository that has the appropriate structure and is associated to a domain. For details, see [Test Repository Configuration](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/JSS/jss-tr.htm).
+- Test repository that has the appropriate structure and is associated to a domain. For details, see [Test Repository Configuration](../../../install-configure/cloudshell-suite/new-jss-install-config/test-repository-config/).
     
 
 **To add a new test repository:**

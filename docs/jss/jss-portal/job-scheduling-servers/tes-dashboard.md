@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Test Execution Servers Dashboard
     
-Test execution servers are managed in the Job Scheduling Portal and execute Robot Framework tests. For additional details, see[Test Execution Service](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/JSS/jss-tes.htm).
+Test execution servers are managed in the Job Scheduling Portal and execute Robot Framework tests. For additional details, see [Test Execution Service](../../../install-configure/cloudshell-suite/new-jss-install-config/test-execution-service/index.md).
 
 ![](/Images/JSS/JssJobSchedulingServers.png)
 

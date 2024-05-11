@@ -33,7 +33,7 @@ The **Actions** menu enables you to perform actions on a specific resource, App 
 
 1. Click the row's ![](/Images/CloudShell-Portal/Manage/ExecutionServersServersMenuButton.png) button.
 2. Select the appropriate action:
-   - **Share/unshare reserved resources:** Configure elements in the sandbox to be available or unavailable for other sandboxes by choosing to share or unshare them. For more information, see [Share Reserved Resources](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Prfrm-Actns/Blprnt-Shr.htm).
+   - **Share/unshare reserved resources:** Configure elements in the sandbox to be available or unavailable for other sandboxes by choosing to share or unshare them. For more information, see [Share Reserved Resources](../creating-blueprints/resources/share-reserved-resources.md).
    - **Remove:** to remove the selected resource or App from the blueprint.
 
 ## Searching the list

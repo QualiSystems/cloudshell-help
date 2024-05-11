@@ -39,4 +39,4 @@ Since blueprint URLs do not include the blueprint's domain, the URLs need to be 
 
 ## Related Topics
 
-- [Opening Sandboxes](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Open.htm)
+- [Opening Sandboxes](../sandboxes/opening-sandboxes.md)
