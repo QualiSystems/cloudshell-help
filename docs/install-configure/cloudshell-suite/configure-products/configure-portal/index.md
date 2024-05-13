@@ -2,7 +2,7 @@
 
 CloudShell Portal is a self-service web client. This article describes how to configure the CloudShell Portal.
 :::tip
-If you are installing or upgrading CloudShell, this CloudShell Portal configuration wizard will open automatically as part of the setup process. if you are manually updating the application, open the wizard, as explained in [Configure Application Settings](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-app-stgs.htm).
+If you are installing or upgrading CloudShell, this CloudShell Portal configuration wizard will open automatically as part of the setup process. if you are manually updating the application, open the wizard, as explained in [Configure Application Settings](../configure-app-settings.md).
 :::
 ## Install the required IIS version
 
@@ -29,7 +29,7 @@ The default configuration uses port 80 as the port number and localhost as the a
 **To load the portal:**
 
 1. Open a browser and enter the `localhost:Port# address` for a local machine, or the `IP:port/DNS:port address` for remote access.
-2. In the **Administrative Tasks** window (see [Admin Configuration Settings](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/admn-cnfgr-stgs.htm)), set the admin password, email, and SMTP settings, assign users to groups and domains, and update data.
+2. In the **Administrative Tasks** window (see [Admin Configuration Settings](../admin-config-settings.md)), set the admin password, email, and SMTP settings, assign users to groups and domains, and update data.
 3. Optionally, designate the port manually by entering an available port number in the `Port` field text box. The installer notifies you if the port that you specified is unavailable.
 4. Open **IIS Manager**, select **Request Filtering**, click **HTTP Verbs** and make sure the **PUT** and **DELETE** verbs are enabled on the website.
 
@@ -39,13 +39,13 @@ This section explains how to install IIS website manually.
 
 Manual IIS configuration is a three step process:
 
-1. [Manually install IIS on Supported Windows Server OS](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-cs-portal.htm?tocpath=Installation%20and%20Configuration%7CCloudShell%20Suite%7CConfigure%20CloudShell%20Products%7CConfigure%20the%20Self-Service%20Portal%7C_____0#Manually)
-2. [Manually create the IIS website](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-cs-portal.htm?tocpath=Installation%20and%20Configuration%7CCloudShell%20Suite%7CConfigure%20CloudShell%20Products%7CConfigure%20the%20Self-Service%20Portal%7C_____0#Manually2)
+1. [Manually install IIS on Supported Windows Server OS](../../configure-products/configure-portal/index.md#manually-install-iis-on-supported-windows-server-os)
+2. [Manually create the IIS website](../../configure-products/configure-portal/index.md#manually-create-the-iis-website)
 3. Use the new CloudShell Portal website
 
 ### Manually install IIS on Supported Windows Server OS
 
-Before installing CloudShell Portal, make sure you are using a machine that has a CloudShell Portal-supported OS. For details, see [Minimum Requirements for CloudShell Servers and Clients](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Overview/srvrs.htm).
+Before installing CloudShell Portal, make sure you are using a machine that has a CloudShell Portal-supported OS. For details, see [Minimum Requirements for CloudShell Servers and Clients](../../../cs-system-requirements/min-requirements-for-cs.md).
 
 **Supported versions**
 
@@ -92,8 +92,8 @@ Before installing CloudShell Portal, make sure you are using a machine that has 
 
 Manual Portal IIS website configuration is a three step process:
 
-- [Create a new website in IIS Manager](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-cs-portal.htm?tocpath=Installation%20and%20Configuration%7CCloudShell%20Suite%7CConfigure%20CloudShell%20Products%7CConfigure%20the%20Self-Service%20Portal%7C_____0#Create)
-- [Enter the port you configured](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-cs-portal.htm?tocpath=Installation%20and%20Configuration%7CCloudShell%20Suite%7CConfigure%20CloudShell%20Products%7CConfigure%20the%20Self-Service%20Portal%7C_____0#_Enter_the_port)
+- [Create a new website in IIS Manager](../configure-portal/index.md#create-a-new-website-in-iis-manager)
+- [Enter the port you configured](../configure-portal/index.md#enter-the-port-you-configured)
 - [Test portal settings](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-cs-portal.htm?tocpath=Installation%20and%20Configuration%7CCloudShell%20Suite%7CConfigure%20CloudShell%20Products%7CConfigure%20the%20Self-Service%20Portal%7C_____0#Test)
 
 Optional steps:
@@ -160,7 +160,7 @@ This procedure assumes that CloudShell Portal and Quali Server are installed on 
     ![](/Images/IG2/ASP.NET-4.6.png)
     
 
-**Enter the port you configured**
+#### Enter the port you configured
 
 In order to test connectivity, the CloudShell Configuration Wizard requires the port number.
 

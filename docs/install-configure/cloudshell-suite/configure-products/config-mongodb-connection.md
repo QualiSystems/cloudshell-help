@@ -12,7 +12,7 @@ sidebar_position: 5
     
     ![](/Images/IG2/ConfiguringMongoDBConnectionStrings.png)
     
-2. If you selected to use your organization’s Mongo DB (**Mongo DB Server or cluster** option in the CloudShell Setup wizard) and require authentication, before you continue, perform the steps in [Creating a dbOwner user on the MongoDB databases](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-db-conn-MongoDB.htm?Highlight=Configure%20the%20MongoDB%20Database%20Connection#Creating) below.
+2. If you selected to use your organization’s Mongo DB (**Mongo DB Server or cluster** option in the CloudShell Setup wizard) and require authentication, before you continue, perform the steps in [Creating a dbOwner user on the MongoDB databases](./config-mongodb-connection.md#creating-a-dbowner-user-on-the-mongodb-databases) below.
     
 3. Specify the locations for the three MongoDB databases:
     
@@ -89,4 +89,4 @@ When using an external Mongo DB that requires authentication, you must create a 
 
 ## Related Topics
 
-- [Best Practices for MongoDB](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Appendices/mongoDB-best-prctc.htm)
+- [Best Practices for MongoDB](../complete-install/install-cloudshell/select-database-type/best-practices-for-mongodb.md)

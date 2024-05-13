@@ -18,7 +18,7 @@ sidebar_position: 7
     
     ![](/Images/IG2/Check-for-CloudShell-required_13.png)
     
-3. Complete each step of the CloudShell License Server Configuration Wizard. For more information about configuring CloudShell, see [Configure CloudShell Products](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-cs-prdcts.htm).
+3. Complete each step of the CloudShell License Server Configuration Wizard. For more information about configuring CloudShell, see [Configure CloudShell Products](../../../../install-configure/cloudshell-suite/configure-products).
     
     ![](/Images/IG2/Check-for-CloudShell-required_14.png)
     
@@ -138,7 +138,7 @@ sidebar_position: 7
     
     ![](/Images/IG2/Check-for-CloudShell-required_32.png)
     
-    For more information about the CloudShell Configuration Wizard procedure, see [Configure CloudShell Products](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-cs-prdcts.htm).
+    For more information about the CloudShell Configuration Wizard procedure, see [Configure CloudShell Products](../../../../install-configure/cloudshell-suite/configure-products).
     
 
 Proceed to [Import User Definitions from an Active Directory (Optional)](./import-users-from-ad.md).

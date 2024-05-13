@@ -8,15 +8,15 @@ The **Select a license** window enables you to license your CloudShell applicati
 
 CloudShell uses two types of licenses: **Float** and **Seat**. The floating license is set on the License server while a seat license must be set on each CloudShell client application.
 
-You can configure a mix of license settings, using different types of files for each application. For some applications, you can specify more than one type of license. For example, you could run CloudShell Authoring with a seat license (from the license file) and CloudShell Resource Manager with a floating license (from the license server). For additional information, see [Licensing](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Licensing.htm).
+You can configure a mix of license settings, using different types of files for each application. For some applications, you can specify more than one type of license. For example, you could run CloudShell Authoring with a seat license (from the license file) and CloudShell Resource Manager with a floating license (from the license server). For additional information, see [Licensing](../../../admin/cloudshell-manage-dashboard/licensing.md).
 :::note
-If you need to set or re-set the CloudShell License Server after CloudShell installation, run CloudShell installation using the **Custom / Upgrade** installation option and select the **CloudShell License Server** component. For additional information, see [Custom Component selection](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Complete%20Installation/slct-cs-cmpnt.htm#Custom).
+If you need to set or re-set the CloudShell License Server after CloudShell installation, run CloudShell installation using the **Custom / Upgrade** installation option and select the **CloudShell License Server** component. For additional information, see [Custom Component selection](../complete-install/install-cloudshell/select-components.md#custom-component-selection).
 :::
 ## Activate the license on the License Server
 
 **To activate the license:**
 
-1. Open the **CloudShell License Server** configuration wizard, as explained in [Configure Application Settings](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-app-stgs.htm). If you are installing or upgrading CloudShell, this wizard will open automatically as part of the setup process.
+1. Open the **CloudShell License Server** configuration wizard, as explained in [Configure Application Settings](./configure-app-settings.md). If you are installing or upgrading CloudShell, this wizard will open automatically as part of the setup process.
     
     ![](/Images/IG2/LicenseServerConfigWizard.png)
     

@@ -19,7 +19,7 @@ sidebar_position: 3
     
     If you're using CloudShell without the New Job Scheduling, the password update is automatic and should take a few moments.
     
-2. If your CloudShell deployment uses the New Job Scheduling, set the new password on the different services, as explained in [Modify the CloudShell Admin Password](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/JSS/jss-mdfy-admin-pwd.htm).
+2. If your CloudShell deployment uses the New Job Scheduling, set the new password on the different services, as explained in [Modify the CloudShell Admin Password](../new-jss-install-config/admin-actions/modify-cs-admin-pass.md).
 
 ## PyPi Server Credentials
 

@@ -21,4 +21,4 @@ sidebar_position: 8
     
     **Password**: admin
     
-    For details how to change the username and/or the password, see [Admin password](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/admn-cnfgr-stgs.htm#_Admin_password).
+    For details how to change the username and/or the password, see [Admin password](./admin-config-settings.md#admin-password).

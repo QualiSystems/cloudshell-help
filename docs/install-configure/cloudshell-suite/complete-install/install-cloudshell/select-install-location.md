@@ -15,7 +15,7 @@ sidebar_position: 5
     If you need to install to a different installation path and folder, click **Change**.
     
 <details>
-  <summary>CloudShell uses Erlang and MongoDB, which are installed by default in C: drive as part of CloudShell installation. To change their default installation paths, do the following before you continue with CloudShell setup: **click for more...** ![](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Complete%20Installation/slct-whr-instl-cs.htm?Highlight=select%20where%20to%20install%20cloudshell#)</summary>
+  <summary>CloudShell uses Erlang and MongoDB, which are installed by default in C: drive as part of CloudShell installation. To change their default installation paths, do the following before you continue with CloudShell setup: **click for more...** </summary>
   
   1. From the CloudShell installation package's **\\Data\\Prereq** folder, install Erlang and MongoDB as appropriate. For example, in **D:** drive.
   2. Create the following environment variables on the Quali Server machine:

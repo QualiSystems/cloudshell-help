@@ -5,14 +5,14 @@ sidebar_position: 9
 # Configure the Execution Server
 
 :::note Notes
-- CloudShell also provides Virtual Appliances that install Execution Servers on Linux VMs. For details, see [Linux Execution Server Installation and Configuration](https://help.quali.com/Online%20Help/0.0/Portal/Content/Linux/Linux.htm).
-- To run Ansible configuration management operations, a Linux-based Execution Server needs to be created and configured. For details, see [Ansible Playbook Development for Apps](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Config-Mng/Ansible.htm).
+- CloudShell also provides Virtual Appliances that install Execution Servers on Linux VMs. For details, see [Linux Execution Server Installation and Configuration](../../../install-configure/linux-virtual-appliance).
+- To run Ansible configuration management operations, a Linux-based Execution Server needs to be created and configured. For details, see [Ansible Playbook Development for Apps](../../../devguide/develop-config-management-scripts-for-apps/ansible-playbook-dev-for-apps).
 - Python 3 automation requires Microsoft Visual C++ Redistributable 2015 x86 and x64 to be installed on the Execution Server(s).
 :::
 
 **To configure the Execution Server:**
 
-1. Open the **Execution Server** configuration wizard, as explained in [Configure Application Settings](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-app-stgs.htm). If you are installing or upgrading CloudShell, this wizard will open automatically as part of the setup process.
+1. Open the **Execution Server** configuration wizard, as explained in [Configure Application Settings](./configure-app-settings.md). If you are installing or upgrading CloudShell, this wizard will open automatically as part of the setup process.
 2. In the **Server connectivity** window, specify the execution server settings:
     
     ![](/Images/IG2/Execution-Server-Connectivity.png)
@@ -35,7 +35,7 @@ sidebar_position: 9
     | Job slot capacity   | Specify the permitted number of concurrent jobs.<br/>**Note:** The execution of a job that has a blueprint takes up a concurrent sandbox license for the duration of the job execution. Therefore, if the concurrent sandbox limit has been reached, the execution of such jobs will end in Error. |
     | Command slot Capacity | Specify the permitted number of commands. Do not leave this field blank. You can specify 0 or any required number of command slots. The value of this field is not dependent on a license. |
 :::tip
-To assist you with setting up your job and command slot capacities, see [Optimizing Execution Provisioning](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Tst-n-Cmd-Exc-Optmz.htm). 
+To assist you with setting up your job and command slot capacities, see [Optimizing Execution Provisioning](../../../admin/cloudshell-execution-server-configurations/optimizing-execution-provisioning.md). 
 :::
 5. Click **Next**.
 6. In the **Select a license** window, specify the license to use.
