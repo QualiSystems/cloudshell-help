@@ -16,4 +16,4 @@ Please see the following official MongoDB docs articles for recommended procedur
 
 ## Related Topics
 
-- [Best Practices for CloudShell Production Environment](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Appendices/prod-bst-prctc.htm)
+- [Best Practices for CloudShell Production Environment](../../../appendix/best-practices-cs-prod/)

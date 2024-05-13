@@ -141,4 +141,4 @@ sidebar_position: 7
     For more information about the CloudShell Configuration Wizard procedure, see [Configure CloudShell Products](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-cs-prdcts.htm).
     
 
-Proceed to [Import User Definitions from an Active Directory (Optional)](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Complete%20Installation/imprt-usr-defn-opt.htm).
+Proceed to [Import User Definitions from an Active Directory (Optional)](./import-users-from-ad.md).

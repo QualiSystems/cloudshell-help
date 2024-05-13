@@ -11,7 +11,7 @@ Following security risks in MongoDB 4.2, it was about time to update the version
 The below instructions are for Cloudshell default installation with a standalone MongoDB installation only.
 
 :::note
-MongoDB does not support Windows Server 2012. For details, see [Windows OS requirements](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Overview/srvrs.htm#Software).
+MongoDB does not support Windows Server 2012. For details, see [Windows OS requirements](../../../../cs-system-requirements/min-requirements-for-cs.md).
 :::
 
 ## Prerequisites
@@ -227,5 +227,5 @@ MongoDB does not support Windows Server 2012. For details, see [Windows OS requi
 
 ## Related Topics
 
-- [Select the Database Type](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Complete%20Installation/slct-db-typ.htm)
-- [Best Practices for MongoDB](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Appendices/mongoDB-best-prctc.htm)
+- [Select the Database Type](../select-database-type/index.md)
+- [Best Practices for MongoDB](./best-practices-for-mongodb.md)

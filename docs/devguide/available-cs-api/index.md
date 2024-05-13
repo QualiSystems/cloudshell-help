@@ -52,4 +52,4 @@ For additional information, see the appropriate Quali API Reference Guide:
 
 ## Packaging API
 
-**CloudShell Packaging API** allows you to automate the creation configuration of CloudShell blueprint packages, which can be used for backup purposes and for sharing blueprints between different CloudShell deployments. For additional information and implementation examples, see the [Packaging API](https://help.quali.com/Online%20Help/0.0/Portal/Content/API/Pckg-API/PackagingAPI.htm).
+**CloudShell Packaging API** allows you to automate the creation configuration of CloudShell blueprint packages, which can be used for backup purposes and for sharing blueprints between different CloudShell deployments. For additional information and implementation examples, see the [Packaging API](../../api-guide/packaging-api/index.md).
