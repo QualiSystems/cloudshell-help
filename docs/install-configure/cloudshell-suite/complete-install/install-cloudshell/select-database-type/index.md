@@ -39,7 +39,7 @@ For more information, see [New Job Scheduling Architecture](../../../new-jss-ins
     For high load systems, we recommend using a cluster/instance that is hosted on a separate machine (not Quali Server). For additional information, see [Best Practices for MongoDB](./best-practices-for-mongodb.md).
     :::
     
-4. Click **Next** and proceed to [Set the MongoDB Connection Strings](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-addt-srvcs.htm).
+4. Click **Next** and proceed to [Set the MongoDB Connection Strings](./set-the-mongodb-connection-string.md).
 
 ## Related Topics
 

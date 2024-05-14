@@ -47,7 +47,7 @@ To assist you with setting up your job and command slot capacities, see [Optimiz
 When installing your execution server on a computer that is not a Windows Server machine, make sure to configure the machine's Power Options to prevent it from automatically going into sleep mode.
 :::
 9. When configuration completes, click **Finish**.
-10. In CloudShell 8.2 and above, Python dependencies are served to the appropriate drivers and scripts through the **PyPi Server** process, which is installed with CloudShell - see [Configure PyPi Server in Offline Mode](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-PyPi-Srv.htm).
+10. In CloudShell 8.2 and above, Python dependencies are served to the appropriate drivers and scripts through the **PyPi Server** process, which is installed with CloudShell - see [Configure PyPi Server in Offline Mode](./config-pypi-server-in-offline-mode.md).
     :::note
     In CloudShell 8.3, we have changed the mechanism that manages Python dependencies for the drivers and scripts. So if you are upgrading to CloudShell 8.3 or above, make sure to add the Python dependencies to the PyPi Server repositroy residing on Quali Server machine, to make them available to your execution servers. For additional information, see [PyPi Server - Managing Python Shell and Script Dependencies](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/pypi-server-managing-python-shell-and-script-dependencies.md).
     :::

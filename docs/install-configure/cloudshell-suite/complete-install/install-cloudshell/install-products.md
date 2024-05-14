@@ -32,7 +32,7 @@ sidebar_position: 8
     
     ![](/Images/IG2/Check-for-CloudShell-required_16.png)
     :::note
-    The Quali Server installation also installs the PyPi Server process, which manages Python dependencies for Python drivers and scripts in CloudShell. For additional information, see [Configure PyPi Server in Offline Mode](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-PyPi-Srv.htm).
+    The Quali Server installation also installs the PyPi Server process, which manages Python dependencies for Python drivers and scripts in CloudShell. For additional information, see [Configure PyPi Server in Offline Mode](../../configure-products/config-pypi-server-in-offline-mode.md).
     :::
 6. Complete each step of the Quali Server Configuration Wizard.
 7. At the final step of the Configuration Wizard, click **Finish**.
