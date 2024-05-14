@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 7
 ---
 
 # Select Where to Install CloudShell
