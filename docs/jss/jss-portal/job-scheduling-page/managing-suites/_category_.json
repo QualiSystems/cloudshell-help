@@ -2,6 +2,7 @@
   "label": "Managing Suites",
   "position": 2,
   "link": {
+    "slug": "jss/jss-portal/job-scheduling-page/managing-suites",
     "type": "generated-index",
     "description": "In this area, you will learn how to create, edit and delete your automation suites, jobs and tests."
   }

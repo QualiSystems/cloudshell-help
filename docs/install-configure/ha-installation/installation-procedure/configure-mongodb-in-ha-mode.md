@@ -63,10 +63,10 @@ Using MongoDB in high availability mode requires the use of MongoDB replica sets
         rs.secondaryOk()
         ```
         
-8. Later on in the High Availability installation process, you will also need to install a MongoDB cluster as part of the Quali Server installation and specify the cluster's connection strings. This is all explained in [Select the Database Type](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Complete%20Installation/slct-db-typ.htm) and [Configure the MongoDB Database Connection](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-db-conn-MongoDB.htm).
+8. Later on in the High Availability installation process, you will also need to install a MongoDB cluster as part of the Quali Server installation and specify the cluster's connection strings. This is all explained in [Select the Database Type](../../cloudshell-suite/complete-install/install-cloudshell/select-database-type/index.md) and [Configure the MongoDB Database Connection](../../cloudshell-suite/configure-products/config-mongodb-connection.md).
     
 
 ## Related Topics:
 
-- [Best Practices for MongoDB](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Appendices/mongoDB-best-prctc.htm)
-- [Known Issues and Limitations (High Availability)](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Knwn-issues.htm)
+- [Best Practices for MongoDB](../../cloudshell-suite/complete-install/install-cloudshell/select-database-type/best-practices-for-mongodb.md)
+- [Known Issues and Limitations (High Availability)](../known-issues-and-limitations.md)

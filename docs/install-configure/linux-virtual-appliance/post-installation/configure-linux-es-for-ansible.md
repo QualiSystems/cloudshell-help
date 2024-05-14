@@ -8,7 +8,7 @@ To run Ansible configuration management on this Execution Server, several additi
 
 **Prerequisites:**
 
-- Execution Server has the `/ansible` flag enabled. For details, see [Example: How to Run the Configuration File](https://help.quali.com/Online%20Help/0.0/Portal/Content/Linux/Exmpl-Run-Cnfg.htm)
+- Execution Server has the `/ansible` flag enabled. For details, see [Example: How to Run the Configuration File](./configure/example-run-config-file.md)
 
 **To configure the Execution Server to run Ansible:**
 

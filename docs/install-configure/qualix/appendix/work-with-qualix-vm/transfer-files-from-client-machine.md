@@ -14,7 +14,7 @@ Use the following steps to transfer files from the client machine to the machine
 
 **To transfer files to the SSH machine:**
 
-1. Make sure the SSH connection supports file transfers. For details, see [Configure Remote Access to Sandbox Components Using SSH, RDP, Telnet, VNC (QualiX)](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-Quali-Srv.htm).
+1. Make sure the SSH connection supports file transfers. For details, see [Configure Remote Access to Sandbox Components Using SSH, RDP, Telnet, VNC (QualiX)](../../post-installation-config/configure-remote-access.md).
 2. While connected to a host via SSH using QualiX, use the shortcut to bring up the options menu (CTRL + SHIFT + ALT) 
 3. Click the **Devices** button
 4. Navigate to the required file location by double-clicking a folder to open.

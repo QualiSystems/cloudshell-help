@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Configure VM Web Console Access to vCenter App VMs (QualiX)
 :::note
-This article explains how to set up remote access connections to vCenter App VMs using QualiX's vCenter Console Proxy service and requires the [Prerequisites](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-vCenter-Console.htm?Highlight=Configure%20VM%20Web%20Console%20Access%20to%20vCenter%20App%20VMs%20(QualiX)#Prerequi) listed below. For other VMs or resources, see [Configure Remote Access to Sandbox Components Using SSH, RDP, Telnet, VNC (QualiX)](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-Quali-Srv.htm).
+This article explains how to set up remote access connections to vCenter App VMs using QualiX's vCenter Console Proxy service and requires the [Prerequisites](#prerequisites) listed below. For other VMs or resources, see [Configure Remote Access to Sandbox Components Using SSH, RDP, Telnet, VNC (QualiX)](./configure-remote-access.md).
 :::
 vCenter Apps include a **Get VM Console** command, which allows the end-user to open the vCenter App VM's web console directly from the sandbox. By default, when attempting to open the web console from the sandbox, the user is prompted to enter their vCenter credentials. However, it is possible to enable CloudShell to open the VM web console directly without having to enter the credentials. This is done by using the new **vCenter Console Proxy** service (provided with QualiX 4.0 and above) and attaching a **VM Console Link** reserved attribute to the deployed App shell that CloudShell will automatically populate with a link to the VM console.
 
@@ -35,8 +35,8 @@ vCenter Apps include a **Get VM Console** command, which allows the end-user to 
         3. Add the **VM Console Link** attribute to the **Generic App Model** resource model.
         4. Save.
         5. Restart Resource Manager Client.
-    - If you're using a 2<sup>nd</sup> Gen deployed App shell, see [Adding custom attributes to a Shell](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Shells.htm#Adding2).
-    - If you're creating a 2nd Gen deployed App shell, attach the attribute to the shell as a property in the shell's `shelldefinition.yaml` file. For details, see [Customizing Shells](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Shells/Customizing-Shells.htm).
+    - If you're using a 2<sup>nd</sup> Gen deployed App shell, see [Adding custom attributes to a Shell](../../../admin/cloudshell-manage-dashboard/managing-shells.md#adding-custom-attributes-to-a-shell).
+    - If you're creating a 2nd Gen deployed App shell, attach the attribute to the shell as a property in the shell's `shelldefinition.yaml` file. For details, see [Customizing Shells](../../../devguide/developing-shells/customize-shells.md).
 
 ## Setup
 
@@ -55,7 +55,7 @@ The vCenter Console Proxy service allows users to connect to VCenter VMs from Cl
     ```
     
 3. Replace `<QualiX Host>` with the QualiX machine's hostname or DNS name.
-4. vCenter Console Proxy service **is disabled** by default. To enable, SSH to QualiX Server and run the following (for QualiX 5.0 and above, see [Configure VM Web Console Access to vCenter App VMs (QualiX)](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-vCenter-Console.htm?Highlight=Configure%20VM%20Web%20Console%20Access%20to%20vCenter%20App%20VMs%20(QualiX)#Run)):
+4. vCenter Console Proxy service **is disabled** by default. To enable, SSH to QualiX Server and run the following (for QualiX 5.0 and above, see [Configure VM Web Console Access to vCenter App VMs (QualiX)](./customize-remote-access.md)):
     
     ```javascript
     systemctl enable qualix-wmks-proxy

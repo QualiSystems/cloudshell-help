@@ -72,7 +72,7 @@ An "over the shoulder" connection requires an existing "full access" session to 
     
     1. Copy the appropriate Full link(s):
         :::important
-        Make sure to use these links and not the ones in [Configure Remote Access to Sandbox Components Using SSH, RDP, Telnet, VNC (QualiX)](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-Quali-Srv.htm).
+        Make sure to use these links and not the ones in [Configure Remote Access to Sandbox Components Using SSH, RDP, Telnet, VNC (QualiX)](../post-installation-config/configure-remote-access.md).
         :::
         **SSH Full link:**
         

@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # How QualiX Works
 
-This articles illustrates the sequence of events that take place when a user opens a remote access link. For details on QualiX architecture and ports, see the [Related Topics](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/How-QualiX-works.htm?Highlight=How%20QualiX%20Works#Related) section at the bottom.
+This articles illustrates the sequence of events that take place when a user opens a remote access link. For details on QualiX architecture and ports, see the [Related Topics](#related-topics) section at the bottom.
 
 :::note Notes
 - When using a QualiX server that is installed on AWS, a pem file is used for authentication instead of the reservation owner's CloudShell credentials.
@@ -25,7 +25,7 @@ This articles illustrates the sequence of events that take place when a user ope
 
 ## Related Topics
 
-- [CloudShell Component Architecture](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Overview/cs-compnts.htm)
-- [Microsoft Azure Integration](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Azure-VNET-Ovrv.htm)
-- [AWS Integration](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/VPC-Ovrv.htm)
-- [CloudShell Port Requirements](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Overview/cs-reqd-ports.htm)
+- [CloudShell Component Architecture](../../cs-system-requirements/cs-component-architechture.md)
+- [Microsoft Azure Integration](../../../admin/supported-cloud-providers-in-cloudshell/public-cloud-provider-support-in-cloudshell/microsoft-azure-integration-and-configuration/microsoft-azure-integration/index.md)
+- [AWS Integration](../../../admin/supported-cloud-providers-in-cloudshell/public-cloud-provider-support-in-cloudshell/aws-integration-and-configuration/aws-integration/index.md)
+- [CloudShell Port Requirements](../../cs-system-requirements/cs-port-requirements.md)

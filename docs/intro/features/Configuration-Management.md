@@ -8,8 +8,8 @@ CloudShell supports the execution of Configuration Management scripts or Ansible
 
 There is a difference in the way you set up and use App and resource configuration management in CloudShell:
 
-- App configuration management scripts and playbooks are defined on the App template itself, run during the App deployment (automatically as part of the sandbox setup, and manually via Deploy App command and using the Rerun Configuration Management command on deployed Apps that support rerunning configuration management), and support the sequential execution of multiple scripts or playbooks on the same deployed App. For details, see [Adding App templates](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Apps.htm#Adding).
-- Resource configuration management scripts and playbooks are imported into CloudShell using the Manage > Assets page, attached to resource models or shells, and are manually executed in the sandbox as commands on the resource. For details, see [Managing Assets](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Scrpt.htm).
+- App configuration management scripts and playbooks are defined on the App template itself, run during the App deployment (automatically as part of the sandbox setup, and manually via Deploy App command and using the Rerun Configuration Management command on deployed Apps that support rerunning configuration management), and support the sequential execution of multiple scripts or playbooks on the same deployed App. For details, see [Adding App templates](../../admin/cloudshell-manage-dashboard/manage-app-templates/index.md#adding-app-templates).
+- Resource configuration management scripts and playbooks are imported into CloudShell using the Manage > Assets page, attached to resource models or shells, and are manually executed in the sandbox as commands on the resource. For details, see [Managing Assets](../../admin/cloudshell-manage-dashboard/managing-automation/managing-assets.md).
     
 
 ## User flows
@@ -63,9 +63,9 @@ When configuration management execution called, the following occurs:
 
 ## Related Topics
 
-- [Managing Assets](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Scrpt.htm)
-- [Run Commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Run-Cmd.htm)
-- [Run App Commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Apps-Run-Cmnds.htm)
-- [Import a Blueprint Package into CloudShell](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Exprt-Imprt/Blprnt-Imprt.htm)
-- [Export Blueprint Packages and Configurations](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Exprt-Imprt/Blprnt-Exprt-Pckgs-Cnfgs.htm)
-- [Enable WinRM on Windows VMs to Support Configuration Management](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Config-Mng/Cnfg-WinRM-for-CM.htm)
+- [Managing Assets](../../admin/cloudshell-manage-dashboard/managing-automation/managing-assets.md)
+- [Run Commands](../../portal/sandboxes/sandbox-workspace/run-commands.md)
+- [Run App Commands](../../portal/sandboxes/sandbox-workspace/apps/run-app-commands.md)
+- [Import a Blueprint Package into CloudShell](../../portal/blueprints/creating-blueprints/import-package.md)
+- [Export Blueprint Packages and Configurations](../../portal/blueprints/creating-blueprints/export-blueprints)
+- [Enable WinRM on Windows VMs to Support Configuration Management](../../devguide/enable-winrm-on-win-vm-for-cfg-mng.md)

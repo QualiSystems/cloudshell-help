@@ -2,13 +2,13 @@
 
 This section explains how to configure secure remote connections to devices and VMs from CloudShell sandboxes.
 :::note Notes
-In order to connect to a device or VM from CloudShell Portal, the resource of the element must include the **User** and **Password** attributes. To learn how to add the attributes to a resource, see [Prepare and Reserve Blueprint](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Wrk-Rsc-Mng.htm).
+In order to connect to a device or VM from CloudShell Portal, the resource of the element must include the **User** and **Password** attributes. To learn how to add the attributes to a resource, see [Prepare and Reserve Blueprint](../../prepare-and-reserve-blueprint.md).
 
 To connect using a service, the service must include an **Address**.
 :::
 **To enable SSL connection to sandbox elements:**
 
-1. Make sure to perform the procedure in [Configure Remote Access to Sandbox Components Using SSH, RDP, Telnet, VNC (QualiX)](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-Quali-Srv.htm).
+1. Make sure to perform the procedure in [Configure Remote Access to Sandbox Components Using SSH, RDP, Telnet, VNC (QualiX)](../configure-remote-access.md).
 2. In Quali Server, open the following file in a text editor:
     
     `C:\ProgramData\QualiSystems\Settings\Global\ServerUniversalSettings.xml`

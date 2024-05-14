@@ -10,7 +10,7 @@ Your CPU must have hardware virtualization support (Intel VT-x or AMD-V) to be a
 :::
 **To create a VM by deploying the OVF template:**
 
-1. Make sure you have the Linux Execution Server installation files in a temporary location. For details, see [Downloading the Linux Virtual Appliance Image](https://help.quali.com/Online%20Help/0.0/Portal/Content/Linux/Dwnld-Lnx-VM-Img.htm).
+1. Make sure you have the Linux Execution Server installation files in a temporary location. For details, see [Downloading the Linux Virtual Appliance Image](../linux-es-va-overview/download-es-va-image.md).
 2. Login to your machine as root user.
 3. Navigate to the directory where the installation files were downloaded. Create a backup copy of the qcow2 image file.
 
@@ -54,4 +54,4 @@ Your CPU must have hardware virtualization support (Intel VT-x or AMD-V) to be a
     
     The VM is created.
     
-15. Next, [Log into the VM](https://help.quali.com/Online%20Help/0.0/Portal/Content/Linux/Login.htm).
+15. Next, [Log into the VM](../post-installation/log-into-the-vm.md).

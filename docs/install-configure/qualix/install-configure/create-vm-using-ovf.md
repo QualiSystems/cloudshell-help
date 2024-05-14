@@ -24,4 +24,4 @@ Use the following steps to use vSphere to deploy the QualiX template and create 
 11. Right-click the VM and select **Open Console**.
 12. In the VM console window, check the **Settings Screen** to make sure that it uploaded without errors.
     
-13. After installing the QualiX VM, continue with [Post Installation Configuration](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Post-Instl-Cnfg.htm).
+13. After installing the QualiX VM, continue with [Post Installation Configuration](../post-installation-config/index.md).

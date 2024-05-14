@@ -8,7 +8,7 @@ Use the following steps to use vSphere to deploy the OVF template and create a V
 
 **To create a VM by deploying the OVF template:**
 
-1. Make sure you have the Linux Execution Server installation files in a temporary location. For details, see [Downloading the Linux Virtual Appliance Image](https://help.quali.com/Online%20Help/0.0/Portal/Content/Linux/Dwnld-Lnx-VM-Img.htm).
+1. Make sure you have the Linux Execution Server installation files in a temporary location. For details, see [Downloading the Linux Virtual Appliance Image](../linux-es-va-overview/download-es-va-image.md).
     
 2. In your local machine, login to vSphere with administrator credentials.
 3. Click **File > Deploy OVF Template**. The **Deploy OVF Template** dialog box is displayed.
@@ -38,4 +38,4 @@ Use the following steps to use vSphere to deploy the OVF template and create a V
 11. When the deployment has completed, click **Power On**.
 12. Right-click the VM and select **Open Console**.
 13. In the VM console window, check the **Settings Screen** to be sure that it uploaded without root errors.
-14. Next, [Log into the VM](https://help.quali.com/Online%20Help/0.0/Portal/Content/Linux/Login.htm).
+14. Next, [Log into the VM](../post-installation/log-into-the-vm.md).

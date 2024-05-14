@@ -8,7 +8,7 @@ The steps described in this section need to be applied only once. The only manda
 - Execution Server Name
 
 :::note       
-For Ansible configuration management, the `/ansible` flag needs to be enabled. See [Example: How to Run the Configuration File](https://help.quali.com/Online%20Help/0.0/Portal/Content/Linux/Exmpl-Run-Cnfg.htm).
+For Ansible configuration management, the `/ansible` flag needs to be enabled. See [Example: How to Run the Configuration File](./example-run-config-file.md).
 :::
 However, you can optionally use other configuration parameters that are provided. You can use their default values or modify them. You may use as many of the configuration parameters as needed.
 
@@ -23,13 +23,13 @@ mono QsExecutionServerConsoleConfig.exe /s:192.168.1.66 /u:admin /p:admin /esn:m
 ```
 
 :::note Notes
-- To install the Linux Execution Server in an offline environment, make sure the `OfflinePackageRepository` zip file is extracted to the local PyPi Server repository. For details, see [Add the out-of-the-box dependencies package to the local PyPi Server repository](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfgr-Pyth-Env-Wrk-Offln.htm#Add2).
+- To install the Linux Execution Server in an offline environment, make sure the `OfflinePackageRepository` zip file is extracted to the local PyPi Server repository. For details, see [Add the out-of-the-box dependencies package to the local PyPi Server repository](../../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/configuring-cloudshell-to-execute-python-commands-in-offline-mode.md#add-the-out-of-the-box-dependencies-package-to-the-local-pypi-server-repository).
 - Quali Server must be running when configuring the Execution Server.
 - For TeamMachine, specify the Quali Server's private IP or DNS name.
 - Python drivers and scripts run on the Python installation that is provided by CloudShell at: `/usr/local/bin/python`.
 - Depending on your flavor of Linux, you may need to escape parameter values containing special characters with single or double quotes. For example: `"admin1234!"`
 - Suite execution is not available for Linux Execution Servers.
-- The CloudShell admin's credentials are specified in plain text. You can remove the credentials to enhance security. For details, see [Execution Servers](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Appendices/prod-bst-prctc.htm#Executio).
+- The CloudShell admin's credentials are specified in plain text. You can remove the credentials to enhance security. For details, see [Execution Servers](../../../cloudshell-suite/appendix/best-practices-cs-prod/index.md#execution-servers).
 :::
 ## Useful commands
 

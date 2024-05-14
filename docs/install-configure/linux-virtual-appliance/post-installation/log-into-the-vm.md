@@ -18,4 +18,4 @@ Note that the Linux Execution Server cannot execute TeshShell commands and there
     
     Password: **qs1234**
     
-2. Next, as the root user, navigate to the root directory and install the Execution Server. For details, see [Configure the Linux Execution Server](https://help.quali.com/Online%20Help/0.0/Portal/Content/Linux/Cnfg-Exec-Srv.htm).
+2. Next, as the root user, navigate to the root directory and install the Execution Server. For details, see [Configure the Linux Execution Server](./configure/index.md).

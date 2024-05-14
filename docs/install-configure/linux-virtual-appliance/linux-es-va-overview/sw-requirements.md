@@ -15,4 +15,4 @@ The Execution Server Virtual Appliance is available in two flavors, VMware vSphe
 
 ## Related Topics
 
-- [Minimum Requirements for CloudShell Servers and Clients](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Overview/srvrs.htm)
+- [Minimum Requirements for CloudShell Servers and Clients](../../cs-system-requirements/min-requirements-for-cs.md)

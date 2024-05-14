@@ -17,12 +17,12 @@ QualiX provides two methods for remote access connectivity (each has its own rem
 
 ## In this chapter:
 
-- [Configure Remote Access to Sandbox Components Using SSH, RDP, Telnet, VNC (QualiX)](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-Quali-Srv.htm)
-- [Configure VM Web Console Access to vCenter App VMs (QualiX)](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-vCenter-Console.htm)
-- [Enable HTTPS Connection Between QualiX and CloudShell Portal](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-SSL-Suprt.htm)
-- [Enable QualiX Docker Deployment to Work With Trusted Java KeyStore Certificate](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-jks-cert.htm)
-- [Customize Remote Access Terminals](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cstmz-rmt-access-trmnl.htm)
-- [Set a Static IP for the QualiX VM](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Set-Static-IP.htm)
-- [Restrict QualiX Access to Specific CloudShell Portals](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Restrict-qualix-access-to-portals.htm)
-- [Modify Number of CPUs and Allocated Memory](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Mdfy-no-CPUs-allctd-mem.htm)
-- [QualiX Configuration for Version 5.0 and up](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-Qualix-5.0.htm)
+- [Configure Remote Access to Sandbox Components Using SSH, RDP, Telnet, VNC (QualiX)](./configure-remote-access.md)
+- [Configure VM Web Console Access to vCenter App VMs (QualiX)](./configure-vm-web-console.md)
+- [Enable HTTPS Connection Between QualiX and CloudShell Portal](./enable-https/index.md)
+- [Enable QualiX Docker Deployment to Work With Trusted Java KeyStore Certificate](./config-jks-cert.md)
+- [Customize Remote Access Terminals](./customize-remote-access.md)
+- [Set a Static IP for the QualiX VM](./set-static-ip-for-qualix.md)
+- [Restrict QualiX Access to Specific CloudShell Portals](./restrict-qualix-access.md)
+- [Modify Number of CPUs and Allocated Memory](./modify-cpu-and-ram.md)
+- [QualiX Configuration for Version 5.0 and up](./qualix-config-for-5-and-up.md)

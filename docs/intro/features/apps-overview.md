@@ -6,7 +6,7 @@ sidebar_position: 3
 
 Apps enable you to deploy, as part of your sandbox lifecycle, virtual applications (VMs) that are hosted on a cloud provider.
 
-Note that we're adding cloud provider shells to [Quali Repositories](https://github.com/orgs/QualiSystems/discussions/categories/integrations) all the time. For additional information, see [Cloud Provider Shells - Features and Capabilities Per Release](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Clp-capabilities.htm). For unsupported cloud providers, we provide the Custom Cloud Provider Shell which you can use to develop support for your cloud provider. To learn how to load static VMs from vCenter Server into CloudShell as inventory resources, see [Static VMs Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Static-VMs.htm).
+Note that we're adding cloud provider shells to [Quali Repositories](https://github.com/orgs/QualiSystems/discussions/categories/integrations) all the time. For additional information, see [Cloud Provider Shells - Features and Capabilities Per Release](../../admin/supported-cloud-providers-in-cloudshell/cloud-provider-2g-shells-features-and-capabilities.md). For unsupported cloud providers, we provide the Custom Cloud Provider Shell which you can use to develop support for your cloud provider. To learn how to load static VMs from vCenter Server into CloudShell as inventory resources, see [Static VMs Overview](./static-vms.md).
 
 ![](/Images/OLH-Images/video-icon.jpg)For video tutorials on Apps, please visit [Quali U Courses portal](https://courses.quali.com/).
 
@@ -32,26 +32,26 @@ The App configuration process requires creating a cloud provider resource that w
 Depending on your organization, the system administrator and App/blueprint designers may be the same employee.
 :::
 
-1. For public clouds like AWS EC2 and Microsoft Azure, CloudShell management networks need to first be installed on the cloud provider region that will host the App's VM. See [Public Cloud Provider Support in CloudShell](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Prp-for-cld-prvdrs.htm).
+1. For public clouds like AWS EC2 and Microsoft Azure, CloudShell management networks need to first be installed on the cloud provider region that will host the App's VM. See [Public Cloud Provider Support in CloudShell](../../admin/supported-cloud-providers-in-cloudshell/public-cloud-provider-support-in-cloudshell/index.md).
     
-2. The system administrator creates an Inventory resource for a cloud provider such as VMware vCenter or AWS. For additional information, see [Adding Inventory Resources](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/INVN/Add-Rsrc-Tmplt.htm).
+2. The system administrator creates an Inventory resource for a cloud provider such as VMware vCenter or AWS. For additional information, see [Adding Inventory Resources](../../portal/inventory/managing-resources/adding-inventory-resources/index.md).
     
     This "cloud provider resource" will deploy the App's VM.
     
-3. To enable connectivity between Apps and resources or other Apps, the system administrator configures VLAN or Subnet services, as appropriate. See [Connectivity Control](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnct-Ctrl.htm).
+3. To enable connectivity between Apps and resources or other Apps, the system administrator configures VLAN or Subnet services, as appropriate. See [Connectivity Control](../../admin/setting-up-cloudshell/inventory-operations/connectivity-control/index.md).
     
 4. The App designer creates App templates, which are based on the cloud provider resource.
     
-    This requires configuring the VM to deploy and the application to install on the new VM. For additional information, see [Adding App templates](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Apps.htm#Adding).
+    This requires configuring the VM to deploy and the application to install on the new VM. For additional information, see [Adding App templates](../../admin/cloudshell-manage-dashboard/manage-app-templates/index.md).
     
 5. The blueprint designer adds the App to a blueprint and configures connectivity to other Apps and resources, as appropriate.
     
-    For additional information, see [Apps in Blueprints](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Blprnt-Use-Apps.htm#Adding) and [Add Virtual Network Connectivity Requirements](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Cnct/Vir-Ntwrk-Cnct-Crt.htm).
+    For additional information, see [Apps in Blueprints](../../portal/blueprints/creating-blueprints/apps) and [Add Virtual Network Connectivity Requirements](../../portal/sandboxes/sandbox-workspace/add-connectivity/add-virtual-network/add-virtual-net-connectivity-req.md).
     
-6. End-users can now deploy the Apps in sandboxes - see [Apps in Sandboxes](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Actns/Sndbx-Use-Apps.htm).
+6. End-users can now deploy the Apps in sandboxes - see [Apps in Sandboxes](../../portal/sandboxes/sandbox-workspace/apps/).
 
 ## Related Topics
 
-- [Managing Private Cloud Apps in Domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Prvt-Cld-Apps-in-Dmns.htm)
-- [Managing Public Cloud Apps in Domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Mng-Pblc-Cld-Apps-in-Dmns.htm)
-- [Developing Custom Cloud Provider Shells](https://help.quali.com/Online%20Help/0.0/Portal/Content/DevGuide/Cld-Prvdrs/Developing-Cloud-Shells.htm)
+- [Managing Private Cloud Apps in Domains](../../admin/supported-cloud-providers-in-cloudshell/private-cloud-provider-support-in-cloudshell/managing-private-cloud-apps-in-domains.md)
+- [Managing Public Cloud Apps in Domains](../../admin/supported-cloud-providers-in-cloudshell/public-cloud-provider-support-in-cloudshell/managing-public-cloud-apps-in-domains.md)
+- [Developing Custom Cloud Provider Shells](../../devguide/develop-custom-cloud-provider-shells/)

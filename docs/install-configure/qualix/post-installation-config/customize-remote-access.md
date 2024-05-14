@@ -13,7 +13,7 @@ You can both customize the default access terminals, and add and customize your 
 1. Go to the `C:\ProgramData\QualiSystems\Settings\Global\ServerUniversalSettings.xml` file.
 2. Under the `<ConfigurationSection name="LinkApplications">` tag, add the new remote access terminals.
     
-    For example, to grant access to a webpage of a device, copy one of the default access terminals (for example, RDP/Telnet as shown in the [](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-Quali-Srv.htm#Step4)[Configure Remote Access to Sandbox Components Using SSH, RDP, Telnet, VNC (QualiX)](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-Quali-Srv.htm)), and simply change the settings described in the following steps.
+    For example, to grant access to a webpage of a device, copy one of the default access terminals (for example, RDP/Telnet as shown in the [Configure Remote Access to Sandbox Components Using SSH, RDP, Telnet, VNC (QualiX)](./configure-remote-access.md)), and simply change the settings described in the following steps.
     
 3. Perform the following steps in the line of the appropriate remote access terminals:
 4. Change the entire `pattern` value to be the URL of the desired webpage.

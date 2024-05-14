@@ -27,4 +27,4 @@ The installation files for CloudShell Linux Virtual Appliance are available from
     
     ![](/Images/Linux2/QualiDownloadCenter-InstallationScript.png)
     
-3. Next, create the Linux Execution Server, as explained in [Installation Procedure](https://help.quali.com/Online%20Help/0.0/Portal/Content/Linux/Instl-Prcdr.htm).
+3. Next, create the Linux Execution Server, as explained in [Installation Procedure](../installation-procedure/index.md).

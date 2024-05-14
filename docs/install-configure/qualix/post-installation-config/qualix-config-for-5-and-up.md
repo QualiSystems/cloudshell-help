@@ -11,7 +11,7 @@ This is a Docker environment file in key=value format.
 **To change configuration:**
 
 1. Edit the QualiX Docker configuration file at `/opt/qualix/.qualix.env`.
-2. Update the configuration file with the suitable [Options](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-Qualix-5.0.htm?Highlight=QualiX%20Configuration%20for%20Version%205.0%20and%20up#Options). Make sure each option (key-value pair) is on a separate line in the file.
+2. Update the configuration file with the suitable [Options](#options). Make sure each option (key-value pair) is on a separate line in the file.
 3. Restart QualiX:
     
     ```javascript
@@ -29,10 +29,10 @@ This is a Docker environment file in key=value format.
 
 In this section:
 
-- [QualiX configuration](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-Qualix-5.0.htm?Highlight=QualiX%20Configuration%20for%20Version%205.0%20and%20up#QualiX)
-- [JKS Keystore options, SSL settings for Guacamole Tomcat](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-Qualix-5.0.htm?Highlight=QualiX%20Configuration%20for%20Version%205.0%20and%20up#JKS)
-- [Nginx proxy service options](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-Qualix-5.0.htm?Highlight=QualiX%20Configuration%20for%20Version%205.0%20and%20up#Nginx)
-- [SSO SAML options](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-Qualix-5.0.htm?Highlight=QualiX%20Configuration%20for%20Version%205.0%20and%20up#SSO)
+- [QualiX configuration](#qualix-configuration)
+- [JKS Keystore options, SSL settings for Guacamole Tomcat](#jks-keystore-options-ssl-settings-for-guacamole-tomcat)
+- [Nginx proxy service options](#nginx-proxy-service-options)
+- [SSO SAML options](#sso-saml-options)
 
 ### QualiX configuration
 
@@ -95,7 +95,7 @@ QualiX configuration options that you can uncomment or add.
 
 This section explains how to set a trusted certificate for the Guacamole service.
 
-These options apply when the Guacamole service is used as a standalone service and the Nginx service is disabled. In other case, see [Nginx proxy service options](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-Qualix-5.0.htm?Highlight=QualiX%20Configuration%20for%20Version%205.0%20and%20up#Nginx).
+These options apply when the Guacamole service is used as a standalone service and the Nginx service is disabled. In other case, see [Nginx proxy service options](#nginx-proxy-service-options).
 
 The JKS Keystore file contains SSL certificates for the Guacamole Tomcat service.
 

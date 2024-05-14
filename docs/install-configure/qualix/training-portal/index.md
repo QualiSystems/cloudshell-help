@@ -24,8 +24,8 @@ To illustrate how this works, let's say John needs to undergo training on a new 
 
 There are two ways to configure the Over the Shoulder plugin:
 
-- Installer: [Setting up Training Portal Using the Installer (Over the Shoulder)](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-Quali-Srv-over-the-shoulder-installer.htm)
-- Docker image: [Setting up Training Portal Using Docker (Over the Shoulder)](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-Quali-Srv-over-the-shoulder-docker.htm)
+- Installer: [Setting up Training Portal Using the Installer (Over the Shoulder)](./setting-up-using-installer.md)
+- Docker image: [Setting up Training Portal Using Docker (Over the Shoulder)](./setting-up-using-docker.md)
 
 ## Related Topics
 

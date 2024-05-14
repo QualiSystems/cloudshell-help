@@ -14,13 +14,13 @@ sidebar_position: 3
 
 **To create the Linux execution server in an online environment:**
 
-1. Make sure you have the Linux execution server installation script in a temporary location. For details, see [Downloading the Linux Virtual Appliance Image](https://help.quali.com/Online%20Help/0.0/Portal/Content/Linux/Dwnld-Lnx-VM-Img.htm).
+1. Make sure you have the Linux execution server installation script in a temporary location. For details, see [Downloading the Linux Virtual Appliance Image](./../linux-es-va-overview/download-es-va-image.md).
     
 2. Create a Linux VM with a CentOS version that matches the script's version.
     
 3. Using a file transfer client like WinSCP, upload the script to the VM's root folder.
     
-4. If the VM is in offline mode, extract the **Offline Package Repository** zip file to the local PyPi Server repository. For details, see [Add the out-of-the-box dependencies package to the local PyPi Server repository](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Cnfgr-Pyth-Env-Wrk-Offln.htm#Add2).
+4. If the VM is in offline mode, extract the **Offline Package Repository** zip file to the local PyPi Server repository. For details, see [Add the out-of-the-box dependencies package to the local PyPi Server repository](../../../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/configuring-cloudshell-to-execute-python-commands-in-offline-mode.md#add-the-out-of-the-box-dependencies-package-to-the-local-pypi-server-repository).
     
 5. Run the following command to allow the script to be executable.
     
@@ -34,7 +34,7 @@ sidebar_position: 3
     ./cloudshell_es_install_script.sh <CloudShell IP> <CloudShell User> <CloudShell Password> <ES Server Name>
     ```
     
-7. Next, [Log into the VM](https://help.quali.com/Online%20Help/0.0/Portal/Content/Linux/Login.htm).
+7. Next, [Log into the VM](../post-installation/log-into-the-vm.md).
     
 
 ## Offline installation (CentOS, RedHat, Ubuntu)

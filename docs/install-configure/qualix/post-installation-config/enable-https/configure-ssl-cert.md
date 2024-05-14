@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Configure SSL Certificate on QualiX 4.1 Docker Container
 
-This section explains how to configure your certificate on QualiX 4.1 Docker. For QualiX 5.0, see [Nginx proxy service options](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-Qualix-5.0.htm#Nginx).
+This section explains how to configure your certificate on QualiX 4.1 Docker. For QualiX 5.0, see [Nginx proxy service options](../qualix-config-for-5-and-up.md#nginx-proxy-service-options).
 
 **To configure the SSL certificate:**
 

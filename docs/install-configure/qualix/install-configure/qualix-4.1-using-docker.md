@@ -34,7 +34,7 @@ Make sure to have docker together with iptables when running containers on a lin
     sudo status
     ```
     
-6. After deploying QualiX on docker, continue with [](https://help.quali.com/Online%20Help/0.0/work/QualiSystems/Documentation/CloudShell/9.3/CloudShell%20Help%20Center/Content/QualiX/Post-Instl-Cnfg.htm#_Post_installation_configuration)[Post Installation Configuration](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Post-Instl-Cnfg.htm).
+6. After deploying QualiX on docker, continue with [Post Installation Configuration](../post-installation-config/index.md).
 
 ## Additional Options
 
@@ -52,7 +52,7 @@ sudo systemctl enable docker
 
 **To get the docker logs:**
 
-See [Docker logs (QualiX 4.1 and below)](https://help.quali.com/Online%20Help/0.0/Portal/Content/Troubleshooting/Collecting-logs.htm#QualiX2).
+See [Docker logs (QualiX 4.1 and below)](../../../troubleshooting/troubleshooting-overview/collecting-logs.md#docker-logs-qualix-41-and-below).
 
 **To attach the docker container to a shell:**
 

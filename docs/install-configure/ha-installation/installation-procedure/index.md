@@ -11,9 +11,7 @@ This section describes the installation and configuration procedure. Perform the
         </td>
         <td className="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
           <p>
-            <a href="https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Dwnld-HA-plgn.htm" className="MCXref xref">
-              Downloading the CloudShell HA Plugin
-            </a>
+            [Downloading the CloudShell HA Plugin](./download-the-ha-plugin.md)
           </p>
         </td>
       </tr>
@@ -23,14 +21,10 @@ This section describes the installation and configuration procedure. Perform the
         </td>
         <td className="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
           <p>
-            <a href="https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Cnfg-db-srv.htm" className="MCXref xref">
-              Configuring the SQL Database Server Cluster (AlwaysOn)
-            </a>
+            [Configuring the SQL Database Server Cluster (AlwaysOn)](./configure-sql-db-server-cluster.md)
           </p>
           <p>
-            <a href="https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Cnfg-Mongo-db-clstr.htm" className="MCXref xref">
-              Configure MongoDB in HA Mode (Cluster)
-            </a>
+            [Configure MongoDB in HA Mode (Cluster)](./configure-mongodb-in-ha-mode.md)
           </p>
         </td>
       </tr>
@@ -40,9 +34,7 @@ This section describes the installation and configuration procedure. Perform the
         </td>
         <td className="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
           <p>
-            <a href="https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Instl-Quali-srv.htm" className="MCXref xref">
-              Installing Quali Server
-            </a>
+            [Installing Quali Server](../install-configure-cs-server/installing-quali-server.md)
           </p>
         </td>
       </tr>
@@ -52,9 +44,7 @@ This section describes the installation and configuration procedure. Perform the
         </td>
         <td className="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
           <p>
-            <a href="https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Cnfg-Quali-srv-frst-clstr-node.htm" className="MCXref xref">
-              Configure Quali Server on the First Cluster Node
-            </a>
+            [Configure Quali Server on the First Cluster Node](../install-configure-cs-server/configure-quali-server/config-quali-server-on-first-node.md)
           </p>
         </td>
       </tr>
@@ -64,9 +54,7 @@ This section describes the installation and configuration procedure. Perform the
         </td>
         <td className="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
           <p>
-            <a href="https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Cnfg-db-srv.htm" className="MCXref xref">
-              Configuring the SQL Database Server Cluster (AlwaysOn)
-            </a>
+            [Configuring the SQL Database Server Cluster (AlwaysOn)](./configure-sql-db-server-cluster.md)
           </p>
         </td>
       </tr>
@@ -76,9 +64,7 @@ This section describes the installation and configuration procedure. Perform the
         </td>
         <td className="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
           <p>
-            <a href="https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Instl-cnfg-CS-Prtl.htm" className="MCXref xref">
-              Installing and Configuring CloudShell Portal
-            </a>
+            [Installing and Configuring CloudShell Portal](../install-configure-cs-server/install-configure-cs-portal/index.md)
           </p>
         </td>
       </tr>
@@ -88,9 +74,7 @@ This section describes the installation and configuration procedure. Perform the
         </td>
         <td className="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
           <p>
-            <a href="https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Mcsft-app-rqst-rt.htm" className="MCXref xref">
-              Microsoft Application Request Routing
-            </a>
+            [Microsoft Application Request Routing](../install-configure-cs-server/install-configure-cs-portal/config-web-server-load-balancing/ms-app-request-routing.md)
           </p>
         </td>
       </tr>
@@ -100,12 +84,11 @@ This section describes the installation and configuration procedure. Perform the
         </td>
         <td className="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
           <p>
-            <a href="https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Cnfg-CS-Prtl-for-SSL.htm" className="MCXref xref">
-              Configuring CloudShell Portal to Support SSL
-            </a>
+            [Configuring CloudShell Portal to Support SSL](../install-configure-cs-server/install-configure-cs-portal/configure-cs-portal-to-ssl.md)
           </p>
         </td>
       </tr>
     </tbody>
   </table>
 </div>
+

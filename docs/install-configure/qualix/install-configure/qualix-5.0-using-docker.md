@@ -16,9 +16,9 @@ Note that there are two versions of the deployment script:
 
 There are three ways to deploy Qualix 5.0 (and up):
 
-- [Deploy on a clean VM](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Instl-Cnfg-Docker-5.0.htm?Highlight=Deploy%20QualiX%205.0%20and%20up%20Using%20Docker#Deploy)
-- [Upgrade QualiX on an existing OVA VM](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Instl-Cnfg-Docker-5.0.htm?Highlight=Deploy%20QualiX%205.0%20and%20up%20Using%20Docker#Deploy2)
-- [Upgrade QualiX on an existing Docker machine](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Instl-Cnfg-Docker-5.0.htm?Highlight=Deploy%20QualiX%205.0%20and%20up%20Using%20Docker#Upgrade)
+- [Deploy on a clean VM](#deploy-on-a-clean-vm)
+- [Upgrade QualiX on an existing OVA VM](#upgrade-qualix-on-an-existing-ovavm)
+- [Upgrade QualiX on an existing Docker machine](#upgrade-qualix-on-an-existing-docker-machine)
 
 ### Prerequisites
 
@@ -47,7 +47,7 @@ There are three ways to deploy Qualix 5.0 (and up):
     deploy-qualix-docker-5.0.1.506.sh
     ```
     
-3. Set [QualiX Configuration for Version 5.0 and up](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-Qualix-5.0.htm).
+3. Set [QualiX Configuration for Version 5.0 and up](../post-installation-config/qualix-config-for-5-and-up.md).
     
 4. Start QualiX.
     
@@ -55,7 +55,7 @@ There are three ways to deploy Qualix 5.0 (and up):
     qualix_start
     ```
     
-5. [Run QualiX](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Instl-Cnfg-Docker-5.0.htm?Highlight=Deploy%20QualiX%205.0%20and%20up%20Using%20Docker#Run).
+5. [Run QualiX](#run-qualix).
 
 ### Upgrade QualiX on an existing OVA VM
 
@@ -95,7 +95,7 @@ There are three ways to deploy Qualix 5.0 (and up):
     deploy-qualix-docker-5.0.1.506.sh
     ```
     
-3. [Run QualiX](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Instl-Cnfg-Docker-5.0.htm?Highlight=Deploy%20QualiX%205.0%20and%20up%20Using%20Docker#Run).
+3. [Run QualiX](#run-qualix).
 
 ### Upgrade QualiX on an existing Docker machine
 
@@ -133,7 +133,7 @@ There are three ways to deploy Qualix 5.0 (and up):
     qualix_start
     ```
     
-5. [Run QualiX](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Instl-Cnfg-Docker-5.0.htm?Highlight=Deploy%20QualiX%205.0%20and%20up%20Using%20Docker#Run).
+5. [Run QualiX](#run-qualix).
 
 ## Run QualiX
 
@@ -155,8 +155,8 @@ Once QualiX deployment/upgrade completes, enable the appropriate services.
 4. **Guacamole Service** - Enable Guacamole service only. Nginx Proxy service is not used. This option could be useful when use the service in a cluster. For example, AWS or Azure.
 
 :::note Notes
-- Options 1 - 3 from the above list use Nginx Proxy service, which requires SSL options to be configured. For details, see [Nginx proxy service options](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-Qualix-5.0.htm#Nginx).
-- Option 4 uses the Guacamole service only. To configure SSL options for Guacamole, see [JKS Keystore options, SSL settings for Guacamole Tomcat](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Cnfg-Qualix-5.0.htm#JKS).
+- Options 1 - 3 from the above list use Nginx Proxy service, which requires SSL options to be configured. For details, see [Nginx proxy service options](../post-installation-config/qualix-config-for-5-and-up.md#nginx-proxy-service-options).
+- Option 4 uses the Guacamole service only. To configure SSL options for Guacamole, see [JKS Keystore options, SSL settings for Guacamole Tomcat](../post-installation-config/qualix-config-for-5-and-up.md#jks-keystore-options-ssl-settings-for-guacamole-tomcat).
 :::
 Example
 
@@ -175,4 +175,4 @@ qualix_start -g -n -w
 
 ## Docker logs
 
-See [Docker logs (QualiX 5.0 and above)](https://help.quali.com/Online%20Help/0.0/Portal/Content/Troubleshooting/Collecting-logs.htm#Docker).
+See [Docker logs (QualiX 5.0 and above)](../../../troubleshooting/troubleshooting-overview/collecting-logs.md#docker-logs-qualix-50-and-above).

@@ -27,6 +27,6 @@ QualiX provides two methods for remote access connectivity:
 
 ## Related Articles
 
-- [Downloading the QualiX Installation Files](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Dwnld-QualiX-instl.htm)
-- [Installation and Configuration](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Instl-Cnfg.htm)
-- [Post Installation Configuration](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Post-Instl-Cnfg.htm)
+- [Downloading the QualiX Installation Files](./qualix-overview/download-qualix.md)
+- [Installation and Configuration](../../install-configure/qualix/install-configure)
+- [Post Installation Configuration](./post-installation-config/index.md)
