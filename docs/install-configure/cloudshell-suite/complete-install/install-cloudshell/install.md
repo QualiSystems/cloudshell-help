@@ -20,5 +20,5 @@ sidebar_position: 1
     ![](/Images/IG2/licenseagreement.png)
     
 5. Select the **I accept the terms of the license agreement** check box.
-6. Optionally, to help us improve our product, make sure the **Help Quali improve its products and service** check box is selected to allow us to collect anonymous usage data and system health. For details, see [CloudShell Watcher Data Overview](https://help.quali.com/Online%20Help/2023.3/Portal/Content/CSP/LAB-MNG/Watcher.htm).
+6. Optionally, to help us improve our product, make sure the **Help Quali improve its products and service** check box is selected to allow us to collect anonymous usage data and system health. For details, see [CloudShell Watcher Data Overview](./cloudshell-watcher-data-overview.md).
 7. Click **Next** to choose the type of installation and proceed to [Select an Installation Option](./select-installation-option.md).

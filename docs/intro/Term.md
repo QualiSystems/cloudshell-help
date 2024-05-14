@@ -8,7 +8,7 @@ This article defines the following terms:
 
 ### Abstract resource
 
-Abstract resources are blueprint components that comprise the required settings of the resources you want to use in the sandbox. For example, device model, Firmware version, minimum number of ports, etc. When reserving a blueprint, CloudShell scans the inventory for matching candidates and dynamically allocates them to the sandbox. For details, see [Abstract Resources Overview](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/LAB-MNG/Features/Abstract-Resources.htm).
+Abstract resources are blueprint components that comprise the required settings of the resources you want to use in the sandbox. For example, device model, Firmware version, minimum number of ports, etc. When reserving a blueprint, CloudShell scans the inventory for matching candidates and dynamically allocates them to the sandbox. For details, see [Abstract Resources Overview](../intro/features/abstract-resources.md).
 
 ### Admin
 
@@ -16,15 +16,15 @@ The CloudShell admin is responsible for setting up CloudShell, creating resource
 
 ### App
 
-An App is a sandbox component that provides the definition of an application hosted on a specific cloud provider. When run in the sandbox, the App deploys a virtual machine (VM) and performs the specified configuration management on it. For details, see [Apps Overview](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/LAB-MNG/Features/Apps.htm).
+An App is a sandbox component that provides the definition of an application hosted on a specific cloud provider. When run in the sandbox, the App deploys a virtual machine (VM) and performs the specified configuration management on it. For details, see [Apps Overview](../intro/features/apps-overview.md).
 
 ### Automation
 
-Automation refers to script and driver processes/commands that are performed on the sandbox and/or the sandbox components. Examples include resource commands and orchestration scripts that run sandbox setup/teardown processes, as well as configuration management that is run on VMs as part of App deployment. For details, see [Automation Overview](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/MNG/Autom-Ovrvw.htm).
+Automation refers to script and driver processes/commands that are performed on the sandbox and/or the sandbox components. Examples include resource commands and orchestration scripts that run sandbox setup/teardown processes, as well as configuration management that is run on VMs as part of App deployment. For details, see [Automation Overview](../admin/cloudshell-manage-dashboard/managing-automation/automation-overview.md).
 
 ### Blueprint
 
-A blueprint is a template of an IT environment that can be reserved (i.e. brought online). It typically includes the required components (resources, services, Apps) and configurations, automation and networking. When reserving a blueprint, CloudShell creates a sandbox for the specified duration. For details, see [Blueprints](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/LAB-MNG/Bluprnt.htm).
+A blueprint is a template of an IT environment that can be reserved (i.e. brought online). It typically includes the required components (resources, services, Apps) and configurations, automation and networking. When reserving a blueprint, CloudShell creates a sandbox for the specified duration. For details, see [Blueprints](../portal/blueprints/index.md).
 
 ### Blueprint designer
 
@@ -39,13 +39,13 @@ CloudShell categories are elements that are used to organize and display differe
     1. Expose specific services and Apps to specific domains. This requires assigning, to the component, a service category that is linked to the domain.
     2. Organize services and Apps in the App / Service catalog. By default, Apps are assigned the Applications category while services are assigned the category defined in their Shell. The Applications and default service categories are linked to the Global domain.
 
-For details, see [Managing Categories](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/MNG/Mng-Blprnt-Ctlg-Ctgs.htm).
+For details, see [Managing Categories](../admin/cloudshell-manage-dashboard/managing-categories.md).
 
 ### Cloud provider
 
 Cloud providers are used by CloudShell Apps to deploy and manage VMs as part of the sandbox.
 
-Note that we're adding cloud provider shells to [Quali Repositories](https://github.com/orgs/QualiSystems/discussions/categories/integrations) all the time. For additional information, see [Cloud Provider Shells - Features and Capabilities Per Release](https://help.quali.com/Online%20Help/2022.2/Portal/Content/Admn/Clp-capabilities.htm). In addition, community developers can extend support for additional cloud providers using our Custom Cloud Provider shell. For details, see [Supported Cloud Providers in CloudShell](https://help.quali.com/Online%20Help/2022.2/Portal/Content/Admn/Sprtd-Cld-Prvdrs.htm).
+Note that we're adding cloud provider shells to [Quali Repositories](https://github.com/orgs/QualiSystems/discussions/categories/integrations) all the time. For additional information, see [Cloud Provider Shells - Features and Capabilities Per Release](../admin/supported-cloud-providers-in-cloudshell/cloud-provider-2g-shells-features-and-capabilities.md). In addition, community developers can extend support for additional cloud providers using our Custom Cloud Provider shell. For details, see [Supported Cloud Providers in CloudShell](../admin/supported-cloud-providers-in-cloudshell/).
 
 ### CloudShell Portal
 
@@ -53,17 +53,17 @@ CloudShell Portal is the CloudShell web client in which admins, designers and en
 
 ### Commands
 
-See [Automation](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/LAB-MNG/Features/Term.htm?tocpath=Introduction%7C_____2#Automati).
+See [Automation](#automation).
 
 ### Configuration Management
 
-See [Configuration Management Overview](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/LAB-MNG/Features/Configuration-Management.htm).
+See [Configuration Management Overview](../intro/features/configuration-management.md).
 
 ### Connectivity
 
 Connectivity routes represent a connectivity request between two components in the blueprint or sandbox workspace, which is resolved with the reservation of the blueprint. The type of connectivity can be a direct or indirect physical connection between two devices (route), or a network link (connector). CloudShell supports P2P connections (layer 1, 2, and 3) and many to many connections using VLAN or subnet services. Connectivity is established and torn down as part of the default sandbox setup and teardown orchestration and can be manually controlled by the user within the sandbox.
 
-For details, see [Physical Network Connectivity](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/LAB-MNG/Rsc-Cnct/Phys-Ntwrk-Cntnr.htm) and [Virtual Network Connectivity](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/LAB-MNG/App-Cnct/Vir-Ntwrk-Cnct-Cntnr.htm).
+For details, see [Physical Network Connectivity](../portal/sandboxes/sandbox-workspace/add-connectivity/add-physical-network/index.md) and [Virtual Network Connectivity](../portal/sandboxes/sandbox-workspace/add-connectivity/add-virtual-network/index.md).
 
 ### Domain
 
@@ -71,7 +71,7 @@ CloudShell domains are pools of CloudShell blueprints, resources, Apps and servi
 
 ### Email Notification
 
-Email notifications can be used to alert the admin, sandbox owner and permitted users of different sandbox lifecycle events. In addition, email notifications for customers using automation suites are also available, For details. See [Email Notifications Overview](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/LAB-MNG/Features/Notification-Emails.htm).
+Email notifications can be used to alert the admin, sandbox owner and permitted users of different sandbox lifecycle events. In addition, email notifications for customers using automation suites are also available, For details. See [Email Notifications Overview](../intro/features/email-notifications.md).
 
 ### Execution Server
 
@@ -84,7 +84,7 @@ CloudShell has two types of execution servers:
 
 ### Insight
 
-CloudShell Insight is CloudShell's BI and analytics tool. It provides visibility and business intelligence into CloudShell's inventory and user activity in the form of easy-to-understand graphs, charts and tables. For details, see [CloudShell Insight BI](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/BI/CS-Insight-BI.htm).
+CloudShell Insight is CloudShell's BI and analytics tool. It provides visibility and business intelligence into CloudShell's inventory and user activity in the form of easy-to-understand graphs, charts and tables. For details, see [CloudShell Insight BI](../install-configure/cs-insight-bi/index.md).
 
 ### Instance
 
@@ -97,7 +97,7 @@ In CloudShell Help, the term "instance" may refer to:
     
     ![](/Images/CloudShell-Portal/InstanceArchitecture.png)
     
-    That command as well as all future command executions for that resource, service or App will run on that instance as long as the instance is alive. Once the instance is live, subsequent commands will take less time to run, as the instance already exists and has the required dependencies. The instance idle time is 10 minutes. For additional information, see [Execution Servers - Executions Page](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/MNG/Mng-Exctn-Srv-Exct.htm) and [Virtual environment (venv)](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/LAB-MNG/Features/Term.htm?tocpath=Introduction%7C_____2#Virtual).
+    That command as well as all future command executions for that resource, service or App will run on that instance as long as the instance is alive. Once the instance is live, subsequent commands will take less time to run, as the instance already exists and has the required dependencies. The instance idle time is 10 minutes. For additional information, see [Execution Servers - Executions Page](../admin/cloudshell-manage-dashboard/managing-execution-servers/execution-servers-executions-page.md) and [Virtual environment (venv)](#virtual-environment-venv).
     
 
 ### License Server
@@ -112,15 +112,15 @@ The term "package" may refer to blueprint package, shell package or Python packa
     
     Useful links:
     
-    - [Import a Blueprint Package into CloudShell](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/LAB-MNG/Exprt-Imprt/Blprnt-Imprt.htm)
+    - [Import a Blueprint Package into CloudShell](../portal/blueprints/creating-blueprints/import-package.md)
         
-    - [Exporting a Blueprint Package](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/LAB-MNG/Exprt-Imprt/Blprnt-Exprt.htm)
+    - [Exporting a Blueprint Package](../portal/blueprints/creating-blueprints/export-blueprints/export-a-package.md)
         
-    - [Packaging API](https://help.quali.com/Online%20Help/2022.2/Portal/Content/API/Pckg-API/PackagingAPI.htm) (API for automating the creation and configuration of blueprint packages)
+    - [Packaging API](../api-guide/packaging-api/index.md) (API for automating the creation and configuration of blueprint packages)
         
     - [Export Package](pathname:///api-docs/2023.3/Quali-API/Quali%20API%20Library.html#Export%20Package) (export a blueprint package into CloudShell via Quali API )
         
-- Shell package contains the definition of a shell, which can be imported into CloudShell. For details, see [Shells Overview](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/LAB-MNG/Features/Shells.htm).
+- Shell package contains the definition of a shell, which can be imported into CloudShell. For details, see [Shells Overview](../intro/features/shells.md).
     
 - Python package contains Python dependencies that are required for the execution of specific shells and scripts. For details, [PyPi Server - Managing Python Shell and Script Dependencies](../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/pypi-server-managing-python-shell-and-script-dependencies.md).
     
@@ -135,11 +135,11 @@ Quali Server, which is also called CloudShell Server, is the "brain" of the Clou
 
 ### QualiX
 
-QualiX is a CloudShell program that allows in-browser connections to sandbox devices and VMs using a remote connection protocol such as RDP, Telnet and SSH. For details, see [QualiX Installation and Configuration](https://help.quali.com/Online%20Help/2022.2/Portal/Content/QualiX/Qualix.htm).
+QualiX is a CloudShell program that allows in-browser connections to sandbox devices and VMs using a remote connection protocol such as RDP, Telnet and SSH. For details, see [QualiX Installation and Configuration](../install-configure/qualix/index.md).
 
 ### Resource
 
-A resource is a sandbox component that models a physical or virtual device. For example, a switch, router, bridge or static VM. For details, see [Resources Overview](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/LAB-MNG/Features/Resources.htm).
+A resource is a sandbox component that models a physical or virtual device. For example, a switch, router, bridge or static VM. For details, see [Resources Overview](../intro/features/resources.md).
 
 ### Resource Manager Client
 
@@ -147,11 +147,11 @@ Resource Manager Client is a CloudShell desktop application that is used for Clo
 
 ### Route
 
-See [Connectivity](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/LAB-MNG/Features/Term.htm?tocpath=Introduction%7C_____2#Connecti).
+See [Connectivity](#connectivity).
 
 ### Sandbox
 
-A sandbox is an active, isolated instance of a blueprint, within a specific domain, which has been reserved for a specific period. For details, see [Sandboxes](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/LAB-MNG/Sndbx-Ovrv.htm).
+A sandbox is an active, isolated instance of a blueprint, within a specific domain, which has been reserved for a specific period. For details, see [Sandboxes](../portal/sandboxes/index.md).
 
 ### Sandbox end-user
 
@@ -159,31 +159,31 @@ The sandbox end-user is the consumer of the sandbox. This user typically logs in
 
 ### Script
 
-CloudShell scripts are Python scripts that provide automation commands that can run on the sandbox and on the component level. For details, see [Managing Assets](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/MNG/Mng-Scrpt.htm). If you're a developer and want to learn how to create and modify scripts, see [The CloudShell DevGuide](https://help.quali.com/Online%20Help/2022.2/Portal/Content/DevGuide/Intro/The-CS-DevGuide.htm).
+CloudShell scripts are Python scripts that provide automation commands that can run on the sandbox and on the component level. For details, see [Managing Assets](../admin/cloudshell-manage-dashboard/managing-automation/managing-assets.md). If you're a developer and want to learn how to create and modify scripts, see [The CloudShell DevGuide](../devguide/index.md).
 
 - Blueprint scripts: Blueprint scripts are scripts that run on the sandbox. For example, running a traffic test that involves several components, including the traffic generator chassis, controller service and DUT.
-- Orchestration scripts: Orchestration scripts are blueprint scripts that run automatically as part of the sandbox's lifecycle. You can use orchestration scripts to create setup and teardown procedures as well as other custom workflows that can be made available in the sandbox. CloudShell includes several out-of-the-box orchestration scripts, which are provided with our default blueprint template. For details about our out-of-the-box orchestration scripts, see [CloudShell Sandbox Template](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/MNG/Wrk-wth-Blprnt-Tmplt.htm#CloudShe) and [Configure Blueprint Orchestration](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/LAB-MNG/Crt-Blprnt/Blprnt-Blprnt-Orchs.htm#Configur).
-- Resource scripts: Resource scripts allow you to add automation to specific sandbox components. These scripts are intended to add simple functionality, or to be used for testing and debugging activities. Note that in order to add automation to a shell, the best practice is to use the component’s driver. For details, see [Resource Scripts](https://help.quali.com/Online%20Help/2022.2/Portal/Content/DevGuide/Reference/Resource-Scripts.htm).
+- Orchestration scripts: Orchestration scripts are blueprint scripts that run automatically as part of the sandbox's lifecycle. You can use orchestration scripts to create setup and teardown procedures as well as other custom workflows that can be made available in the sandbox. CloudShell includes several out-of-the-box orchestration scripts, which are provided with our default blueprint template. For details about our out-of-the-box orchestration scripts, see [CloudShell Sandbox Template](../admin/cloudshell-manage-dashboard/blueprint-templates.md#cloudshell-sandbox-template) and [Configure Blueprint Orchestration](../portal/blueprints/creating-blueprints/configure-orchestration.md#configure-blueprint-orchestration).
+- Resource scripts: Resource scripts allow you to add automation to specific sandbox components. These scripts are intended to add simple functionality, or to be used for testing and debugging activities. Note that in order to add automation to a shell, the best practice is to use the component’s driver. For details, see [Resource Scripts](../devguide/reference/resource-scripts.md).
 
 ### Service
 
-A service is a sandbox component that models a public cloud service or SaaS product. For details, see [Services Overview](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/LAB-MNG/Features/Services.htm).
+A service is a sandbox component that models a public cloud service or SaaS product. For details, see [Services Overview](../intro/features/services.md).
 
 ### Shell
 
-A shell enables CloudShell users to interact with different sandbox elements, like physical devices and virtual appliances. A shell models the sandbox element in CloudShell and provides commands that CloudShell users and automation processes can run on it, like Power On and Health Check. For details, see [Shells Overview](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/LAB-MNG/Features/Shells.htm).
+A shell enables CloudShell users to interact with different sandbox elements, like physical devices and virtual appliances. A shell models the sandbox element in CloudShell and provides commands that CloudShell users and automation processes can run on it, like Power On and Health Check. For details, see [Shells Overview](../intro/features/shells.md).
 
 ### Static VM
 
-Unlike CloudShell Apps, static VMs are VMs that are loaded into CloudShell as is from the cloud provider. CloudShell does not manage their lifecycle and the out of the box Setup and Teardown processes do not apply to these types of components. In CloudShell, static VMs are represented by resources. For details, see [Static VMs Overview](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/LAB-MNG/Features/Static-VMs.htm).
+Unlike CloudShell Apps, static VMs are VMs that are loaded into CloudShell as is from the cloud provider. CloudShell does not manage their lifecycle and the out of the box Setup and Teardown processes do not apply to these types of components. In CloudShell, static VMs are represented by resources. For details, see [Static VMs Overview](../intro/features/static-vms.md).
 
 ### System administrator (sysadmin)
 
-See [Admin](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/LAB-MNG/Features/Term.htm?tocpath=Introduction%7C_____2#Admin).
+See [Admin](#admin).
 
 ### Test
 
-CloudShell supports the management and execution of hardware and network tests. CloudShell tests are developed in [TestShell Studio](https://help.quali.com/Online%20Help/2022.2/TestShell), Quali's test development platform, and can be executed using CloudShell automation suites. For details, see [What Are Automation Suites?](https://help.quali.com/Online%20Help/2022.2/Portal/Content/CSP/JOB-SCHDL/Wrk-wth-Atmt-Suite.htm).
+CloudShell supports the management and execution of hardware and network tests. CloudShell tests are developed in [TestShell Studio](https://help.quali.com/Online%20Help/2023.3/TestShell), Quali's test development platform, and can be executed using CloudShell automation suites. For details, see [What Are Automation Suites?](../portal/job-scheduling/what-are-automation-suites.md).
 
 ### Virtual environment (venv)
 
@@ -191,9 +191,9 @@ A virtual environment (or "venv" for short) is a folder containing the Python pa
 
 In CloudShell, there are two types of virtual environments.
 
-- Virtual environments for Python shell drivers or scripts that are running in CloudShell. For details, see [What are Python Virtual Environments?](https://help.quali.com/Online%20Help/2022.2/Portal/Content/Admn/Wht-r-Pyth-VEnvs.htm).
+- Virtual environments for Python shell drivers or scripts that are running in CloudShell. For details, see [What are Python Virtual Environments?](../admin/cloudshell-execution-server-configurations/setting-up-python-virtual-environments/what-are-python-virtual-environments.md).
     
-- Virtual environments for jobs that execute Robot Framework tests as part of the New Job Scheduling. For details, see [Setting Up a Test Repository](https://help.quali.com/Online%20Help/2022.2/Portal/Content/IG/JSS/jss-tr-setup.htm).
+- Virtual environments for jobs that execute Robot Framework tests as part of the New Job Scheduling. For details, see [Setting Up a Test Repository](../install-configure/cloudshell-suite/new-jss-install-config/test-repository-config/set-up-repo.md).
     
 
 ### Virtualization

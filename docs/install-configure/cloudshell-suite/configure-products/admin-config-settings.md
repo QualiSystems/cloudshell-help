@@ -57,7 +57,7 @@ sidebar_position: 3
 
 ## Watcher utilization data
 
-This option allows CloudShell to share usage data and system health information with Quali. For details, see [CloudShell Watcher Data Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Watcher.htm).
+This option allows CloudShell to share usage data and system health information with Quali. For details, see [CloudShell Watcher Data Overview](../complete-install/install-cloudshell/cloudshell-watcher-data-overview.md).
 
 - Click **Watcher Utilization Data** and enable/disable the option, as appropriate.
     
