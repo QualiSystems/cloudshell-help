@@ -26,8 +26,8 @@ Both 1st and 2nd shells can coexist with each other in the same CloudShell sandb
 Depending on your organization, the system administrator and domain administrator may be the same employee.
 :::
 
-1. The system administrator imports the shell into CloudShell, as explained in [Importing Shells](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/Mng-Shells.htm#Adding).
-2. In the **Inventory** dashboard, the domain administrator creates a resource based on the shell. For additional information, see [Adding Inventory Resources](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/INVN/Add-Rsrc-Tmplt.htm).
+1. The system administrator imports the shell into CloudShell, as explained in [Importing Shells](../../admin/cloudshell-manage-dashboard/managing-shells.md#importing-shells).
+2. In the **Inventory** dashboard, the domain administrator creates a resource based on the shell. For additional information, see [Adding Inventory Resources](../../portal/inventory/managing-resources/adding-inventory-resources/index.md).
     
     The resource is available for the domain’s users.
     
@@ -35,7 +35,7 @@ Depending on your organization, the system administrator and domain administrato
     This step does not apply to shells that create services. If the shell creates services, the service is created in CloudShell when you import the shell and is available in the domains defined in the shell's service category.
     :::
     
-3. Blueprint designers add the resource to the blueprint, and if needed, configure connectivity to other elements in the blueprint. For additional information, see [Add Connectivity](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Blprnt-Conctivity.htm).
+3. Blueprint designers add the resource to the blueprint, and if needed, configure connectivity to other elements in the blueprint. For additional information, see [Add Connectivity](../../portal/blueprints/creating-blueprints/add-connectivity/index.md).
 
 ## Related Topics
 

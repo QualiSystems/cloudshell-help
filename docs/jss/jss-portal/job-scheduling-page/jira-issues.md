@@ -4,13 +4,13 @@ sidebar_position: 6
 
 # Associating Jira Issues to Test Executions
 
-*This feature requires [JIRA Integration with CloudShell](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Jira-Intg.htm).*
+*This feature requires [JIRA Integration with CloudShell](../../../admin/setting-up-cloudshell/jira-integration-with-cloudshell.md).*
 
 This article explains how to associate a New Job Scheduling test's execution with a JIRA issue. This includes associating a test execution with an existing Jira issue or creating a new JIRA bug on-the-fly for a test execution. This is useful if you want to use your JIRA platform to manage the troubleshooting process of failed tests.
 
 ## Prerequisites
 
-- [JIRA Integration with CloudShell](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Jira-Intg.htm)
+- [JIRA Integration with CloudShell](../../../admin/setting-up-cloudshell/jira-integration-with-cloudshell.md)
 
 ## Viewing a test execution's Jira issues
 

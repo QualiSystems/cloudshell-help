@@ -11,7 +11,7 @@ The New Job Scheduling is a high-performance test automation framework that allo
 Each test batch, called a suite, contains jobs. Each job can run multiple tests, sequentially using a defined blueprint. When a job starts running, a sandbox based on the job’s blueprint is created specifically for the job’s execution and torn down when the job completes. As such, a suite can have several jobs, each running tests on different sandbox environments.
 
 :::note Important
-Robot tests are supported out of the box, but the New Job Scheduling can be extended to support additional test types on request. To support a testing framework, you need to configure two dedicated services, a [Test Discovery Service](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/JSS/jss-tds.htm) for retrieving the tests from the test repository and a [Test Execution Service](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/JSS/jss-tes.htm) for running the tests of this type.
+Robot tests are supported out of the box, but the New Job Scheduling can be extended to support additional test types on request. To support a testing framework, you need to configure two dedicated services, a [Test Discovery Service](../install-configure/cloudshell-suite/new-jss-install-config/test-discovery-service/index.md) for retrieving the tests from the test repository and a [Test Execution Service](../install-configure/cloudshell-suite/new-jss-install-config/test-execution-service/index.md) for running the tests of this type.
 :::
 
 With the New Job Scheduling, you get:

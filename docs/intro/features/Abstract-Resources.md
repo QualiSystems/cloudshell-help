@@ -43,8 +43,8 @@ Additional info is information you can add to the abstract resource for automati
 
 The domains in which this abstract resource can be used. By default, the current domain is selected and cannot be removed from the abstract resource.
 
-For additional information about Requirements, Additional info and Domains, see [Abstract Resource Settings](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/INVN/Abst-Rsrc-Tmplt-Sttngs.htm).
+For additional information about Requirements, Additional info and Domains, see [Abstract Resource Settings](../../portal/inventory/managing-abstract-templates/create-abstract-template/abstract-resource-settings.md).
 
 ## Related Topics
 
-- [Add Abstract Resources](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/RSRC-n-SRVC-Wrk-wth-Abst-Rsrc.htm)
+- [Add Abstract Resources](../../portal/blueprints/creating-blueprints/abstract-resources.md)
