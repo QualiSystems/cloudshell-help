@@ -11,7 +11,7 @@ sidebar_position: 1
     :::note
     This parameter file configures the New Job Scheduling infrastructure deployment with the necessary values to connect to your CloudShell environment.
     :::
-3. Customize the following mandatory parameters inside the `customer.values.yaml` (parameter descriptions in the [Configuration parameters](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/JSS/jss-cstmz-dply-cnfg.htm?Highlight=Customize%20the%20Deployment%20Configuration%20Parameters#Configur) section that follows):
+3. Customize the following mandatory parameters inside the `customer.values.yaml` (parameter descriptions in the [Configuration parameters](./customize-deployment-config-params.md) section that follows):
     
     ```css
     cloudshell-core:

@@ -18,4 +18,3 @@ Due to Microsoft's limitations on the number of concurrent sessions, in order to
 - [Software and Utilities - Recommendations](./software-and-utilities.md)
 - [Network Recommendations](./network-recommendations.md)
 - [Security Recommendations](./security-recommendations.md)
-- [Performance Considerations](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Overview/pfrmc-cnsdrs.htm)

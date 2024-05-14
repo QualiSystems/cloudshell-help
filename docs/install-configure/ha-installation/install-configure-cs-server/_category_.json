@@ -2,6 +2,7 @@
   "label": "Installing and Configuring Quali Server",
   "position": 3,
   "link": {
+    "slug": "install-configure/ha-installation/install-configure-cs-server",
     "type": "generated-index",
     "description": "Use the following procedures to install and then configure Quali server to work in a cluster environment."
   }
