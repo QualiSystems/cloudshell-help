@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Upgrade Considerations for New Job Scheduling
 
-To upgrade the New Job Scheduling, run the `helm upgrade` command as explained in [Deploy the New Job Scheduling Infrastructure using Helm](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/JSS/jss-helm-install.htm).
+To upgrade the New Job Scheduling, run the `helm upgrade` command as explained in [Deploy the New Job Scheduling Infrastructure using Helm](./high-level-install-flow/deploy-jss-with-helm.md).
 
 Before upgrading from earlier versions of the New Job Scheduling, do the following. Please note that you only need to do this once, so if you already upgraded to a previous version of the New Job Scheduling, just run the `helm upgrade` command.
 

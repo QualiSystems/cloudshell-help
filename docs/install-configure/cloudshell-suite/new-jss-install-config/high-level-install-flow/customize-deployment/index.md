@@ -17,6 +17,6 @@ The CloudShell Kubernetes deployment is done via Helm, which deploys the above s
 
 ## Related Topics
 
-- [New Job Scheduling Architecture](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/JSS/jss-architecture.htm)
-- [Customize the Deployment Configuration Parameters](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/JSS/jss-cstmz-dply-cnfg.htm)
-- [Deploy the New Job Scheduling Infrastructure using Helm](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/JSS/jss-helm-install.htm)
+- [New Job Scheduling Architecture](../../new-jss-architecture.md)
+- [Customize the Deployment Configuration Parameters](./customize-deployment-config-params.md)
+- [Deploy the New Job Scheduling Infrastructure using Helm](../deploy-jss-with-helm.md)

@@ -36,7 +36,7 @@ Depending on your organization's security policy, you may want to have the New J
             default-ssl-certificate: $(POD_NAMESPACE)/jss-tls
     ```
     
-4. Save the file and redeploy the helm chart, as explained in [Deploy the New Job Scheduling Infrastructure using Helm](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/JSS/jss-helm-install.htm).
+4. Save the file and redeploy the helm chart, as explained in [Deploy the New Job Scheduling Infrastructure using Helm](../high-level-install-flow/deploy-jss-with-helm.md).
     
     All future HTTP traffic, by domain name and IP, should be redirected to HTTPS, as expected.
     :::note

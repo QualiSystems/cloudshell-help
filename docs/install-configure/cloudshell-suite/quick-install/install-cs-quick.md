@@ -7,7 +7,7 @@ sidebar_position: 2
 The Installation wizard checks for missing prerequisite components and installs them as part of the installation process.
 
 :::note
-This procedure is suitable for a standalone installation for testing, staging and POCs. To install a production environment, see [Complete Installation](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Complete%20Installation/cmplt-instl.htm).
+This procedure is suitable for a standalone installation for testing, staging and POCs. To install a production environment, see [Complete Installation](../complete-install/index.md).
 :::
 
 **To install CloudShell in a quick procedure:**
@@ -19,7 +19,7 @@ This procedure is suitable for a standalone installation for testing, staging an
 5. In the **Welcome** window, click **Next**.
 6. Accept the license agreement and click **Next**.
     
-    To apply a license using an activation code, see [Select a CloudShell License](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Configure%20CloudShell%20Products/slct-licns.htm#Getting).
+    To apply a license using an activation code, see [Select a CloudShell License](../configure-products/select-a-license.md).
     
 7. In the **Type of Installation** window, specify the **Standalone** installation type and click **Next**.
 8. In the **Component selection** window, select all the components and click **Next**.

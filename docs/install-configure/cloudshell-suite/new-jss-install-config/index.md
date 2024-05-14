@@ -10,5 +10,5 @@ Out of the box, CloudShell is installed on Windows along with the Sandbox Servic
 :::
 
 :::tip
-This section relates to the New Job Scheduling, which provides enhanced performance and support for different testing frameworks. For the original Job Scheduling, see [Job Scheduling](https://help.quali.com/Online%20Help/0.0/cloudshell/Content/CSP/JOB-SCHDL/Job-Schdl.htm). 
+This section relates to the New Job Scheduling, which provides enhanced performance and support for different testing frameworks. For the original Job Scheduling, see [Job Scheduling](../../../portal/job-scheduling/index.md). 
 :::

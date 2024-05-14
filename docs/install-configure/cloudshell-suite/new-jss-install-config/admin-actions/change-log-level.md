@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Change Log Levels for New Job Scheduling Services
 
-It is possible to change the log level for each New Job Scheduling component. The default log levels are detailed in [New Job Scheduling Service Logs](https://help.quali.com/Online%20Help/0.0/Portal/Content/JSS/jss-logs.htm).
+It is possible to change the log level for each New Job Scheduling component. The default log levels are detailed in [New Job Scheduling Service Logs](../../../../jss/new-jss-logs.md).
 
 **To change the New Job Scheduling Log Levels:**
 

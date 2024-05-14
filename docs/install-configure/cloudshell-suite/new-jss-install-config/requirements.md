@@ -4,8 +4,8 @@ sidebar_position: 3
 
 # Requirements (New Job Scheduling)
 
-- Quali Server installed and configured, with a working MongoDB instance or cluster and properly defined connection strings. For details, see [Install CloudShell](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Complete%20Installation/instl-cs-intro.htm) and [Configure the MongoDB Database Connection](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-db-conn-MongoDB.htm).
-- Kubernetes installation: The Docker containers that will host the New Job Scheduling components and services need to be deployed over Kubernetes. Therefore, before installation, you will need to prepare a Kubernetes cluster with the basic capabilities (Storage allocation, internal and external networking, etc.). For additional information, see [Hardware requirements for Kubernetes (for New Job Scheduling)](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Overview/srvrs.htm#Hardware2).
+- Quali Server installed and configured, with a working MongoDB instance or cluster and properly defined connection strings. For details, see [Install CloudShell](../complete-install/install-cloudshell/index.md) and [Configure the MongoDB Database Connection](../configure-products/config-mongodb-connection.md).
+- Kubernetes installation: The Docker containers that will host the New Job Scheduling components and services need to be deployed over Kubernetes. Therefore, before installation, you will need to prepare a Kubernetes cluster with the basic capabilities (Storage allocation, internal and external networking, etc.). For additional information, see [Hardware requirements for Kubernetes (for New Job Scheduling)](../../cs-system-requirements/min-requirements-for-cs.md#hardware-requirements-for-kubernetes-for-new-job-scheduling).
 - Load balancer:
     
     - A network load-balancer implementation.
