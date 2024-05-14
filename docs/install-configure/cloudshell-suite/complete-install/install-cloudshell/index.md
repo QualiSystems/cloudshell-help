@@ -14,6 +14,6 @@ When installing or upgrading your production environment, make sure to also revi
 - [Select the CloudShell Components to Install](./select-components.md)
 - [Select the Database Type](./select-database-type/index.md)
 - [Select Where to Install CloudShell](./select-install-location.md)
-- [Check for CloudShell Required Components](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Complete%20Installation/chk-cs-reqd-cmpnts.htm)
+- [Check for CloudShell Required Components](./check-cloudshell-required-components.md)
 - [Install Products](./install-products.md)
 - [Import User Definitions from an Active Directory (Optional)](./import-users-from-ad.md)
