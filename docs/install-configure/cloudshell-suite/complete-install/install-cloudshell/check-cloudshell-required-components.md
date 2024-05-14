@@ -52,4 +52,4 @@ sidebar_position: 6
     ![](/Images/IG2/Check-for-CloudShell-required_10.png)
     
 12. The prerequisites are installed.
-13. Click **Next** and proceed to [Install Products](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Complete%20Installation/instl-prdcts.htm).
+13. Click **Next** and proceed to [Install Products](./install-products.md).

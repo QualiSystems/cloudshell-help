@@ -30,4 +30,4 @@ sidebar_position: 7
 
         
     
-3. Click **Next** and proceed to [Check for CloudShell Required Components](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Complete%20Installation/chk-cs-reqd-cmpnts.htm).
+3. Click **Next** and proceed to [Check for CloudShell Required Components](./check-cloudshell-required-components.md).
