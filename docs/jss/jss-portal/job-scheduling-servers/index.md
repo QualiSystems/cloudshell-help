@@ -6,8 +6,8 @@ The Job Scheduling Servers page lists the test execution servers, discovery serv
 
 ## Related Topics
 
-- [Test Execution Servers Dashboard](https://help.quali.com/Online%20Help/0.0/Portal/Content/JSS/jss-job-scheduling-servers-tes.htm)
+- [Test Execution Servers Dashboard](./tes-dashboard.md)
     
-- [Discovery Servers Dashboard](https://help.quali.com/Online%20Help/0.0/Portal/Content/JSS/jss-job-scheduling-servers-tds.htm)
+- [Discovery Servers Dashboard](./discovery-servers-dashboard.md)
     
-- [Test Repositories Dashboard](https://help.quali.com/Online%20Help/0.0/Portal/Content/JSS/jss-job-scheduling-servers-tr.htm)
+- [Test Repositories Dashboard](./test-repositories.md)

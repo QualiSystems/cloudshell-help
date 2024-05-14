@@ -22,7 +22,7 @@ In the image below, hover over an area or option to learn more about it, or use 
 5. Select whether to display blueprints in a list or tiles.
 6. View and manage the different blueprints in the catalog. Click a tile to open the blueprint's workspace.
 
-   1. Reserve the blueprint (creates a sandbox). See [Reserving a blueprint](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Crt.htm#Reservin).
+   1. Reserve the blueprint (creates a sandbox). See [Reserving a blueprint](../sandboxes/creating-sandboxes.md#reserving-a-blueprint).
    2. Displays the blueprint's current status and whether any resources are unavailable.
    3. Display details about the blueprint and its status.
    4. Click to access the blueprint's diagram and properties page. Select Delete to remove the blueprint from CloudShell.
@@ -109,7 +109,7 @@ The last blueprint type that you selected is remembered and is displayed when yo
 
 ## Reserve a blueprint from the Catalog
 
-For additional information about sandboxes and sandbox conflicts, see [Creating Sandboxes](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Crt.htm).
+For additional information about sandboxes and sandbox conflicts, see [Creating Sandboxes](../sandboxes/creating-sandboxes.md).
 
 :::note
 Blueprints of type ‘view’ cannot be reserved.
@@ -131,7 +131,7 @@ Blueprints of type ‘view’ cannot be reserved.
     ![](/Images/CloudShell-Portal/Lab-Management/Environments/ReservePersistent.png)
     
     - Regular Sandbox to spin up a time-limited sandbox
-    - Persistent Sandbox to deploy a persistent sandbox with no end time. For details, see [Persistent Sandboxes Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Prmnt-Env.htm).
+    - Persistent Sandbox to deploy a persistent sandbox with no end time. For details, see [Persistent Sandboxes Overview](../../intro/features/persistent-sandboxes.md).
 3. In the Schedule field, you can set the required sandbox duration or specify the explicit start and/or end time. Use the Calendar button to set future dates.
     
 
@@ -210,7 +210,7 @@ Blueprints of type ‘view’ cannot be reserved.
     
         ![](/Images/CloudShell-Portal/Lab-Management/Reservations/SetupStageConfiguration.png)
         
-        Note that during the Setup process, the sandbox is locked in CloudShell Portal and cannot be modified - see [Unlocking sandboxes for use during the Setup process](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm#Locking2).  
+        Note that during the Setup process, the sandbox is locked in CloudShell Portal and cannot be modified - see [Unlocking sandboxes for use during the Setup process](../../admin/setting-up-cloudshell/cloudshell-configuration-options/advanced-cloudshell-customizations.md#unlocking-sandboxes-for-use-during-the-setup-process).  
         The default setup process has 4 stages:
         
         - Preparation \- Prepare network connections for the sandbox's Apps and any additional custom preparations.
@@ -223,7 +223,7 @@ Blueprints of type ‘view’ cannot be reserved.
         - Configuration - If any of the sandbox's Apps have configuration management operations that need to be run, CloudShell runs them in this stage.
     </details>
     
-    If any resource is unavailable for the scheduled time slot, the Conflicts dialog box is displayed, proposing an alternative time slot, as described in [Dealing with conflicts](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Crt.htm#Dealing).
+    If any resource is unavailable for the scheduled time slot, the Conflicts dialog box is displayed, proposing an alternative time slot, as described in [Dealing with conflicts](../sandboxes/creating-sandboxes.md#dealing-with-conflicts).
     
     The new sandbox is displayed in **Diagram** view with a blue Sandbox label at the top of the canvas and a green Active icon in the toolbar:
     
@@ -232,7 +232,7 @@ Blueprints of type ‘view’ cannot be reserved.
     :::note
     For persistent blueprints, the blue **Sandbox** label is replaced with a **Persistent Environment** label.
     :::
-    If you have a license for the Save and Restore paid add-on, you will see a Save Sandbox button. For more information, see the [Sandbox Save and Restore Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Sv-Rstr-Ovrvw.htm).
+    If you have a license for the Save and Restore paid add-on, you will see a Save Sandbox button. For more information, see the [Sandbox Save and Restore Overview](../sandboxes/sandbox-save-and-restore-overview.md).
     
 
 ## Request approval to reserve a blueprint
