@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Update the RabbitMQ Credentials in Kubernetes Environment
 
-This article explains how to change the RabbitMQ user's credentials and register the new credentials with CloudShell's Kubernetes services. *If you are not using the New Job Schedulings, perform the steps in [Update the RabbitMQ Credentials on Quali Server](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Appendices/update-default-rabbitmq-credentials.htm) instead*.
+This article explains how to change the RabbitMQ user's credentials and register the new credentials with CloudShell's Kubernetes services. *If you are not using the New Job Schedulings, perform the steps in [Update the RabbitMQ Credentials on Quali Server](../../appendix/upgrade-rabbitmq-creds.md) instead*.
 
 CloudShell configures a default user on RabbitMQ with user/password: quali/qualipassword. However, for security purposes, we strongly recommend changing the default user's password.
 

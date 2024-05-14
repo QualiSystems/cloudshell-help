@@ -2,6 +2,7 @@
   "label": "New Job Scheduling Administrative Actions",
   "position": 6,
   "link": {
+    "slug": "install-configure/cloudshell-suite/new-jss-install-config/admin-action",
     "type": "generated-index"
   }
 }

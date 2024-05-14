@@ -12,7 +12,7 @@ Please take the following under consideration when setting up a test repository:
 - Only Robot Framework tests are supported.
 - The New Job Scheduling does not currently support defining variables in external Python files.
 - Test parameters of type string scalar are supported and can be modified when adding the tests to the job.
-- Tests are associated to domains via a `.cs_domains` configuration file. For details, see [Associating Tests to Different Domains](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/JSS/jss-associate-tests-to-domain.htm).
+- Tests are associated to domains via a `.cs_domains` configuration file. For details, see [Associating Tests to Different Domains](./associate-tests-to-domains.md).
 - Test requirements must be defined in a `requirements.txt` file that resides in or above the folder containing the Robot tests.
     
     The following line must be included in the file, along with the rest of the tests' dependencies:
@@ -38,5 +38,5 @@ Please take the following under consideration when setting up a test repository:
 
 ## Related Topics
 
-- [Creating Suites](https://help.quali.com/Online%20Help/0.0/Portal/Content/JSS/jss-create-suite.htm)
-- [Test Repositories Dashboard](https://help.quali.com/Online%20Help/0.0/Portal/Content/JSS/jss-job-scheduling-servers-tr.htm)
+- [Creating Suites](../../../../jss/jss-portal/job-scheduling-page/managing-suites/create-suites.md)
+- [Test Repositories Dashboard](../../../../jss/jss-portal/job-scheduling-servers/test-repositories.md)

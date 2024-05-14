@@ -69,4 +69,4 @@ The services are:
     ```
     
 2. Save the file.
-3. Next, [Deploy the New Job Scheduling Infrastructure using Helm](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/JSS/jss-helm-install.htm).
+3. Next, [Deploy the New Job Scheduling Infrastructure using Helm](../deploy-jss-with-helm.md).

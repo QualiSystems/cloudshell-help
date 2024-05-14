@@ -4,7 +4,7 @@ The New Job Scheduling uses a microservices architecture, which includes several
 
 In order to deploy the New Job Scheduling, you will need the following:
 
-- kubectl Kubernetes management utility installed on a client machine and configured with admin access on the Kubernetes cluster. For details on the required Kubernetes cluster configuration, see [Requirements (New Job Scheduling)](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/JSS/jss-prerequisites.htm).
+- kubectl Kubernetes management utility installed on a client machine and configured with admin access on the Kubernetes cluster. For details on the required Kubernetes cluster configuration, see [Requirements (New Job Scheduling)](../requirements.md).
     
 - Helm CLI tool installed on the kubectl machine
     
@@ -14,9 +14,9 @@ In order to deploy the New Job Scheduling, you will need the following:
 The high-level installation flow is as follows:
 
 1. Install and configure CloudShell (CloudShell Server installation wizard, MSSQL Server, MongoDB server, etc.)
-2. [Customize the Deployment of the New Job Scheduling Infrastructure](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/JSS/jss-cstmz-dply.htm)
-    1. [Customize the Deployment Configuration Parameters](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/JSS/jss-cstmz-dply-cnfg.htm)
-    2. [Set the Mongo, Rabbit and Sandbox Services to Use Static IPs](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/JSS/jss-static-mongo-rbbt-sndbx.htm)
-3. [Modify CloudShell to Use the Kubernetes-based Services](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/JSS/jss-use-k8s-srvcs.htm)
-4. [Deploy the New Job Scheduling Infrastructure using Helm](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/JSS/jss-helm-install.htm)
-5. Review [New Job Scheduling Administrative Actions](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/JSS/jss-additional-actions.htm) for additional useful configurations.
+2. [Customize the Deployment of the New Job Scheduling Infrastructure](./customize-deployment/index.md)
+    1. [Customize the Deployment Configuration Parameters](./customize-deployment/customize-deployment-config-params.md)
+    2. [Set the Mongo, Rabbit and Sandbox Services to Use Static IPs](./customize-deployment/set-static-ip.md)
+3. [Modify CloudShell to Use the Kubernetes-based Services](./modify-cloudshell.md)
+4. [Deploy the New Job Scheduling Infrastructure using Helm](./deploy-jss-with-helm.md)
+5. Review [New Job Scheduling Administrative Actions](../../../install-configure/cloudshell-suite/new-jss-install-config/admin-action) for additional useful configurations.

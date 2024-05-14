@@ -92,14 +92,14 @@ Before installing CloudShell Portal, make sure you are using a machine that has 
 
 Manual Portal IIS website configuration is a three step process:
 
-- [Create a new website in IIS Manager](../configure-portal/index.md#create-a-new-website-in-iis-manager)
-- [Enter the port you configured](../configure-portal/index.md#enter-the-port-you-configured)
-- [Test portal settings](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-cs-portal.htm?tocpath=Installation%20and%20Configuration%7CCloudShell%20Suite%7CConfigure%20CloudShell%20Products%7CConfigure%20the%20Self-Service%20Portal%7C_____0#Test)
+- [Create a new website in IIS Manager](#create-a-new-website-in-iis-manager)
+- [Enter the port you configured](#enter-the-port-you-configured)
+- [Test portal settings](#test-portal-settings)
 
 Optional steps:
 
-- [Enable dynamic compression on your IIS settings](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/Bst-Prctcs-cs-portal.htm#(Optiona)): Enables dynamic compression to improve transmission times between IIS and CloudShell Portal.
-- [Enhance IIS website security](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/Bst-Prctcs-cs-portal.htm#Enhance): Enahnces the website's security by only allowing cookies that come from an HTTP source.
+- [Enable dynamic compression on your IIS settings](./best-practices.md#enable-dynamic-compression-on-your-iis-settings): Enables dynamic compression to improve transmission times between IIS and CloudShell Portal.
+- [Enhance IIS website security](./best-practices.md#enhance-iis-website-security): Enahnces the website's security by only allowing cookies that come from an HTTP source.
 
 ### Create a new website in IIS Manager
 
@@ -151,10 +151,10 @@ This procedure assumes that CloudShell Portal and Quali Server are installed on 
     Skype and perhaps other applications might block certain ports. For example, Skype blocks the default HTTPS port 443.
     :::
 
-**Troubleshooting Portal access errors:**
+#### Troubleshooting Portal access errors:
 
 - "403.14 Forbidden" error: Follow the steps in this Microsoft Support article: [https://docs.microsoft.com/en-us/troubleshoot/iis/http-403-14-forbidden-webpage](https://docs.microsoft.com/en-us/troubleshoot/iis/http-403-14-forbidden-webpage)
-- "CloudShell Portal could not be contacted" error: Follow the steps in [Manual IIS Installation Error](https://help.quali.com/Online%20Help/0.0/Portal/Content/Troubleshooting/Manual-IIS-installation-error.htm)
+- "CloudShell Portal could not be contacted" error: Follow the steps in [Manual IIS Installation Error](../../../../troubleshooting/installation/manual-iis-installation-error.md)
 - "HTTP Error 500.19" or "500 - Internal server error" errors: Open the **Server Manager** Windows application, under **Server Roles**, select **Web Server>Web Server>Application Development>ASP.NET 4.6** (If ASP.NET 4.6 is missing, select the latest available version).
     
     ![](/Images/IG2/ASP.NET-4.6.png)
@@ -171,15 +171,15 @@ In order to test connectivity, the CloudShell Configuration Wizard requires the 
     ![](/Images/IG2/Check-for-CloudShell-required_36.png)
     
 2. In the **Enter the port you configured** field, specify the port that you entered in the **Add Web Site** window.
-3. Next, optionally enable dynamic compression to speed up transmission times between the IIS website and CloudShell Portal or proceed to test the portal settings. For details, see [Best Practices for CloudShell Portal](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/Bst-Prctcs-cs-portal.htm).
+3. Next, optionally enable dynamic compression to speed up transmission times between the IIS website and CloudShell Portal or proceed to test the portal settings. For details, see [Best Practices for CloudShell Portal](./best-practices.md).
 
-**Test portal settings**
+#### Test portal settings
 
 **To test the portal settings:**
 
 1. In the CloudShell Portal configuration wizard's **IIS configuration** page, click **Check Now**.
     
-    If you see any errors, see [Troubleshooting Portal access errors:](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-cs-portal.htm?tocpath=Installation%20and%20Configuration%7CCloudShell%20Suite%7CConfigure%20CloudShell%20Products%7CConfigure%20the%20Self-Service%20Portal%7C_____0#Troubleshooting-portal-access-errors).
+    If you see any errors, see [Troubleshooting Portal access errors:](#troubleshooting-portal-access-errors).
     
 2. Click **Next**.
     
@@ -224,5 +224,5 @@ In older versions of Windows Server and IIS, you may need to add WebDAV manually
 
 ## Related Topics
 
-- [Set the Timeout Period for CloudShell Portal](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-cs-portal-timeout.htm)
-- [Configuring CloudShell Portal to Work in HTTPS Mode](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Appendices/cs-portal-https.htm)
+- [Set the Timeout Period for CloudShell Portal](./set-portal-timeout.md)
+- [Configuring CloudShell Portal to Work in HTTPS Mode](../../secure-communication/config-secured-portal.md)
