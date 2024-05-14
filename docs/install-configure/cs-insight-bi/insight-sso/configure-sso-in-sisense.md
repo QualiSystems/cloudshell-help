@@ -8,8 +8,8 @@ Use the instructions in the following procedure to configure Insight to work wit
 
 **Prerequisites:**
 
-- [Grant Data Security Permissions to ElastiCube Name](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/BI/Grnt-dtsec-prms.htm)
-- [Configure HTTPS Connection Between CloudShell Portal and Sisense](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/BI/sis-https.htm) (mandatory if the CloudShell Portal is configured to use HTTS)
+- [Grant Data Security Permissions to ElastiCube Name](../install-insight/insight-configuration/grant-permissions.md)
+- [Configure HTTPS Connection Between CloudShell Portal and Sisense](../install-insight/insight-configuration/configure-https.md) (mandatory if the CloudShell Portal is configured to use HTTS)
 
 **To configure Sisense to work with SSO:**
 

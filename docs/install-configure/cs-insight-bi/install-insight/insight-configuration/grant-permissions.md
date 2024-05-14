@@ -19,4 +19,4 @@ This procedure limits CloudShell Portal users to only see Insight data that appl
 
 ## Related Topics
 
-- [Configure Sisense SSO in CloudShell (Manage>Integrations page)](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/BI/sis-mng-sso.htm)
+- [Configure Sisense SSO in CloudShell (Manage>Integrations page)](../../insight-sso/configure-sso-in-cs.md)

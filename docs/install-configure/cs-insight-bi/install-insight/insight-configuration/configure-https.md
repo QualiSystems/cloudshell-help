@@ -10,7 +10,7 @@ Since Insight dashboards are based on iframes, you will need to configure CloudS
 
 To resolve the issue:
 
-1. Perform the steps in [Configuring CloudShell Portal to Work in HTTPS Mode](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Appendices/cs-portal-https.htm).
+1. Perform the steps in [Configuring CloudShell Portal to Work in HTTPS Mode](../../../cloudshell-suite/secure-communication/config-secured-portal.md).
 2. Open Sisense Configuration Manager (URL: `<sisense hostname/IP>:3030`) select the following 2 checkboxes:
     
     - Enable SSL

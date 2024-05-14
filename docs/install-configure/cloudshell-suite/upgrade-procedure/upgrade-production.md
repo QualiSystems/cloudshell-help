@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Upgrade the Production Environment
 
-When upgrading the production environment, the working procedures from the validation upgrade are repeated, see [Upgrade the Validation Environment](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Upgrade%20Procedure/upgrd-valid-env.htm).
+When upgrading the production environment, the working procedures from the validation upgrade are repeated, see [Upgrade the Validation Environment](./upgrade-staging.md).
 
 ## What you need for this stage
 
@@ -29,7 +29,7 @@ All users should be logged off from the production machine, and the work on this
 
 ### Acquire a permanent license
 
-To activate CloudShell on the validation environment, you need a license. For more information, see [Select a CloudShell License](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Configure%20CloudShell%20Products/slct-licns.htm).
+To activate CloudShell on the validation environment, you need a license. For more information, see [Select a CloudShell License](../configure-products/select-a-license.md).
 
 To acquire a permanent license:
 
@@ -42,5 +42,5 @@ To acquire a permanent license:
 
 ## Related Topics
 
-- [Upgrade the Validation Environment](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Upgrade%20Procedure/upgrd-valid-env.htm)
-- [Best Practices for CloudShell Production Environment](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Appendices/prod-bst-prctc.htm)
+- [Upgrade the Validation Environment](./upgrade-staging.md)
+- [Best Practices for CloudShell Production Environment](../appendix/best-practices-cs-prod/index.md)

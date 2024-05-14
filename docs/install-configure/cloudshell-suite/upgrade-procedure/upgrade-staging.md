@@ -15,11 +15,11 @@ Quali recommends that you validate the organization-specific environment before 
 
 ## What you need for this stage
 
-- [CloudShell installation files](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Upgrade%20Procedure/upgrd-valid-env.htm?TocPath=Installation%20and%20Configuration|CloudShell%20Suite|Upgrade%20Procedure|_____2#CloudShe)
-- [3rd party installation files](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Upgrade%20Procedure/upgrd-valid-env.htm?TocPath=Installation%20and%20Configuration|CloudShell%20Suite|Upgrade%20Procedure|_____2#3rd)
-- [Database management application](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Upgrade%20Procedure/upgrd-valid-env.htm?TocPath=Installation%20and%20Configuration|CloudShell%20Suite|Upgrade%20Procedure|_____2#Database)
-- [Standalone environment for validation](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Upgrade%20Procedure/upgrd-valid-env.htm?TocPath=Installation%20and%20Configuration|CloudShell%20Suite|Upgrade%20Procedure|_____2#Standalo)
-- [Temporary license](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Upgrade%20Procedure/upgrd-valid-env.htm?TocPath=Installation%20and%20Configuration|CloudShell%20Suite|Upgrade%20Procedure|_____2#Temporar)
+- [CloudShell installation files](#cloudshell-installation-files)
+- [3rd party installation files](#3rd-party-installation-files)
+- [Database management application](#database-management-application)
+- [Standalone environment for validation](#standalone-environment-for-validation)
+- [Temporary license](#temporary-license)
 
 ### CloudShell installation files
 
@@ -90,4 +90,4 @@ Make sure your validation environment is ready before continuing to the next ste
     
 8. Run the **setup.exe** file to perform the upgrade.
 
-Proceed to [Upgrade the Production Environment](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Upgrade%20Procedure/upgrd-prod-env.htm).
+Proceed to [Upgrade the Production Environment](./upgrade-production.md).

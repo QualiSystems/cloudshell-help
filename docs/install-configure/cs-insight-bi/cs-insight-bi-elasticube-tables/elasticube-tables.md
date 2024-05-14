@@ -238,7 +238,7 @@ Each row in the Reservation summary log table represents a single sandbox. Calen
 
 (Used in Legacy dashboards) The Resource attributes value summary table provides information about all the resources in CloudShell.
 
-Each record in this table represents a single resource in CloudShell. For each attribute that has the **Displayed in Insight** rule, a column is added to the table. This table is updated once a day. For more information, see [Displaying attributes in BI](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Attrb.htm#Display).
+Each record in this table represents a single resource in CloudShell. For each attribute that has the **Displayed in Insight** rule, a column is added to the table. This table is updated once a day. For more information, see [Displaying attributes in BI](../../../admin/setting-up-cloudshell/inventory-operations/resource-data-modeling-for-1st-gen-shells/attributes.md#displaying-attributes-in-bi).
 
 | Name | Type | Description |
 | --- | --- | --- |

@@ -1,6 +1,6 @@
 # CloudShell Insight BI ElastiCube Tables
 
-Insight ElastiCube's tables are provided with the CloudShell Insight BI package (see [Download the Installation Files](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/BI/dwnld-th-instln-fls.htm)).
+Insight ElastiCube's tables are provided with the CloudShell Insight BI package (see [Download the Installation Files](../install-insight/download-install-files.md)).
 
 Information is collected from CloudShell databases and the flexible Sisense platform presents the data in meaningful and useful dashboards. The Insight ElastiCube consists of tables and their relationships, as depicted in the following diagram.
 
@@ -12,5 +12,5 @@ Removing or changing fields or relationships in the ElastiCube may corrupt the E
 
 ## Related Topics
 
-- [ElastiCube Data Stores](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/BI/elsticub-dtastrs.htm)
-- [ElastiCube Tables](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/BI/eslticub-tbls.htm)
+- [ElastiCube Data Stores](./elasticube-data-stores.md)
+- [ElastiCube Tables](./elasticube-tables.md)

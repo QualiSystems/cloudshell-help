@@ -10,7 +10,7 @@ CloudShell Insight BI enables you to transform your raw data into meaningful bus
 
 ![](/Images/BI/CloudShell-Insight-BI-Overview.png)
 
-For details about each of the CloudShell Insight BI components in this diagram, see [Sisense BI Components](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/BI/sis-bi-cmpnts.htm).
+For details about each of the CloudShell Insight BI components in this diagram, see [Sisense BI Components](./sisense-bi-components.md).
 
 For details about Sisense user roles, see this official Sisense docs [article](https://documentation.sisense.com/latest/getting-started/user-roles.htm).
 

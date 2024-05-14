@@ -12,5 +12,5 @@ The Sisense license limits the number of user profiles. The creation process mig
 
 ## Related Topics
 
-- [Share Sisense Dashboards with Unregistered Users](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/BI/shrng-sis-dshbds.htm)
-- [Configure CloudShell to Enable Sharing Insight Dashboards](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/BI/cnfg-cs-to-enbl-sis-dshbds.htm)
+- [Share Sisense Dashboards with Unregistered Users](./share-with-unregistered-users.md)
+- [Configure CloudShell to Enable Sharing Insight Dashboards](./config-cs-to-enbl-sis-dashbds.md)

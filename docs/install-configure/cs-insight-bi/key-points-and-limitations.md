@@ -7,7 +7,7 @@ sidebar_position: 3
 - Insight dashboards require the logged in user to have an email defined in their user profile.
 - Utilization is only saved for connectable resources. Chassis or blade utilization is calculated according to the ports usage.
 - Utilization requires CloudShell inventory to have at least one connectable resource.
-- Resource utilization is updated once a day at 1:00 AM, according to the time zone of the CloudShell database server. At this time, resource utilization data is calculated and stored in the CloudShell database. The data is then streamed to Sisense based on the Sisense [Synchronization](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/BI/synchrnzn.htm) configuration.
+- Resource utilization is updated once a day at 1:00 AM, according to the time zone of the CloudShell database server. At this time, resource utilization data is calculated and stored in the CloudShell database. The data is then streamed to Sisense based on the Sisense [Synchronization](./install-insight/synchronization.md) configuration.
 - Insight dashboards display resource utilization data in a resolution of every few seconds.
 - Blueprint usage is determined according to the duration of sandboxes for the blueprint.
 - Where resources are shared in multiple sandboxes, the usage of such resources can be higher than 24 hours in a day.

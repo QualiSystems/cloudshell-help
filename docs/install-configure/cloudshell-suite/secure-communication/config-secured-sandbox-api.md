@@ -24,7 +24,7 @@ Before you begin make sure you have an SSL certificate installed on your CloudSh
     
     Replace the default port number of “3443” as required.
     :::note
-    To reset the CloudShell Sandbox API port number, see [Configure CloudShell Sandbox API](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Configure%20CloudShell%20Products/cfg-cs-sndbx-api.htm).
+    To reset the CloudShell Sandbox API port number, see [Configure CloudShell Sandbox API](../configure-products/config-sandbox-api.md).
     :::
 5. Make sure to keep a back up of these files as they may be overwritten/deleted when upgrading CloudShell to a new version or patch.
 6. Restart the **CloudShellSandboxAPIGateway** service.

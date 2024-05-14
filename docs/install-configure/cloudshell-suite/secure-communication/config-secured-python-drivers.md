@@ -10,10 +10,10 @@ Once HTTPS mode is enabled, Quali Server will only respond to HTTPS communicati
 :::
 This is a three-step process:
 
-- [Bind a new certificate to the Quali Server port](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Appendices/secure-md-Python.htm#Creating)
-- [Enable HTTPS mode on Quali Server](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Appendices/secure-md-Python.htm#Enable)
-- [Enable HTTPS mode on Linux Execution Servers](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Appendices/secure-md-Python.htm#Enable2)
-- [Set python drivers and scripts to create an HTTPS session](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Appendices/secure-md-Python.htm#Set)
+- [Bind a new certificate to the Quali Server port](#bind-a-new-certificate-to-the-quali-server-port)
+- [Enable HTTPS mode on Quali Server](#enable-https-mode-on-quali-server)
+- [Enable HTTPS mode on Linux Execution Servers](#enable-https-mode-on-linux-execution-servers)
+- [Set python drivers and scripts to create an HTTPS session](#set-python-drivers-and-scripts-to-create-an-https-session)
 
 ## Bind a new certificate to the Quali Server port
 
@@ -21,7 +21,7 @@ To bind a new certificate, first obtain the certificate and then bind it to the 
 
 ### Creating a mock certificate
 
-If you don't have a certificate, use the below procedure to create a mock certificate. If you already have a certificate, skip this section and continue with [Binding the certificate to the Quali Server port](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Appendices/secure-md-Python.htm#Binding).
+If you don't have a certificate, use the below procedure to create a mock certificate. If you already have a certificate, skip this section and continue with [Binding the certificate to the Quali Server port](#binding-the-certificate-to-the-quali-server-port).
 
 **To create a mock certificate:**
 

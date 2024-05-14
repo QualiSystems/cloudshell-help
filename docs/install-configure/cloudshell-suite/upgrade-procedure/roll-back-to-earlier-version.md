@@ -16,7 +16,7 @@ Upgrading the CloudShell version makes irreversible changes in the database, the
     
 2. Back up your current files and databases.
     
-    For more information about backing up CloudShell, see [Back Up and Restore CloudShell](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Backup%20and%20Restore/bkup-rstr-cs.htm).
+    For more information about backing up CloudShell, see [Back Up and Restore CloudShell](../../../install-configure/cloudshell-suite/backup-restore).
     
 3. Uninstall your current CloudShell version.
 4. Install an earlier version of CloudShell.

@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # Rebrand Insight (White Labeling)
 
-Use the steps described in this procedure to rebrand (white label) and customize the look and feel of your Insight dashboards, as well as the logos, icons and web text. The folders and files referred to in this article are those that were downloaded in [Download the Installation Files](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/BI/dwnld-th-instln-fls.htm).
+Use the steps described in this procedure to rebrand (white label) and customize the look and feel of your Insight dashboards, as well as the logos, icons and web text. The folders and files referred to in this article are those that were downloaded in [Download the Installation Files](./download-install-files.md).
 :::note
 White labeling must be enabled in your Sisense license. See this Sisense Docs [article](https://documentation.sisense.com/latest/administration/embedded-analytics/rebranding-sisense/white-label.htm) for details.
 :::
