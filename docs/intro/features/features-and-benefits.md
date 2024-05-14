@@ -1,8 +1,8 @@
 ---
 sidebar_position: 1
 ---
-CloudShell Features and Benefits
-================================
+
+# CloudShell Features and Benefits
 
 *   **Faster time to market:**
     *   Easy-to-use drag-and-drop blueprint editor allows you to set up operational blueprints in minutes

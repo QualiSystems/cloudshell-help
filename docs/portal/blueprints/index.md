@@ -15,6 +15,6 @@ A blueprint is an offline sandbox template. It contains physical and virtual res
 ### Designing blueprints
 
 1. Use the [Blueprint Catalog](./blueprints/blueprint-catalog)
-2. [Create a Blueprint](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Crt-Blprnt/Blprnt-New.htm)
-3. [Add Physical Network Connectivity Requirements](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Rsc-Cnct/Phys-Ntwrk-Crt.htm)
-4. [Add Virtual Network Connectivity Requirements](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/App-Cnct/Vir-Ntwrk-Cnct-Crt.htm)
+2. [Create a Blueprint](./creating-blueprints/index.md)
+3. [Add Physical Network Connectivity Requirements](./creating-blueprints/add-connectivity/add-physical-network/add-phy-net-req/index.md)
+4. [Add Virtual Network Connectivity Requirements](./creating-blueprints/add-connectivity/add-virtual-network/add-virtual-net-connectivity-req.md)

@@ -22,8 +22,8 @@ This option is not available in blueprints defined as "view-only."
 :::
 6. The workspace view mode. Diagram view provides a graphical representation of the blueprint. List view displays the blueprint's elements in a list. You can filter the list using the search field and sort the list by clicking the desired column name.
 7. Click the **Resource**, **App / Service**, or **Abstract** button to add the suitable resource to your blueprint.
-8. Review the blueprint’s instructions. This option is available only if the blueprint has instructions. See [Review Sandbox Instructions](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Instr.htm).
-9. Review the blueprint's commands. CloudShell's blueprint template includes preconfigured setup and teardown commands. See [Blueprint commands](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Run-Cmd.htm#Environm).
+8. Review the blueprint’s instructions. This option is available only if the blueprint has instructions. See [Review Sandbox Instructions](../../sandboxes/sandbox-workspace/review-sandbox-instructions.md).
+9. Review the blueprint's commands. CloudShell's blueprint template includes preconfigured setup and teardown commands. See [Blueprint commands](../../sandboxes/sandbox-workspace/run-commands.md#blueprint-commands).
 10.  Show the diagram in a mini-map on the workspace. You can drag the map to change the view in the workspace.
 11.  Zoom in or out of the workspace.
 12. Enter the zoom percentage. Default is 100%.
@@ -40,7 +40,7 @@ This option is not available in blueprints defined as "view-only."
     10. Use these options to arrange the elements in the diagram.
     11. Save the current diagram layout as the default for this blueprint.
     12. Reverts to the previous snapshot of the diagram layout that was previously saved. Note: Saving the layout of a sandbox will not affect the original blueprint. Saving a new layout for a blueprint will not affect any existing sandboxes.
-14. Displays labels that are currently being used in the diagram. See [Labels in Blueprints](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Blprnt-Labels.htm).
+14. Displays labels that are currently being used in the diagram. See [Labels in Blueprints](../creating-blueprints/labels.md).
 </details>
 
 
@@ -58,13 +58,13 @@ To move or delete multiple elements at once, hold down the \[Ctrl\] key, select 
 
 List view displays the blueprint's elements and their sub-resources in a list.
 
-For more information, see [Blueprint List View](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Blprnt-Lst-Vw.htm).
+For more information, see [Blueprint List View](../blueprint-workspace/blueprint-list-view.md).
 
 ## Reserve a blueprint from the blueprint workspace
 
 When reserving a blueprint, you can define certain properties of the sandbox and may need to provide information for resource provisioning and automation processes.
 
-If there's a resource or scheduling conflict, CloudShell will offer available time slots for the sandbox. For additional information about sandboxes and reservation conflicts, see [Creating Sandboxes](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Crt.htm).
+If there's a resource or scheduling conflict, CloudShell will offer available time slots for the sandbox. For additional information about sandboxes and reservation conflicts, see [Creating Sandboxes](../../sandboxes/creating-sandboxes.md).
 
 :::note
 Blueprints of type ‘view’ cannot be reserved.
@@ -86,7 +86,7 @@ Blueprints of type ‘view’ cannot be reserved.
     ![](/Images/CloudShell-Portal/Lab-Management/Environments/ReservePersistent.png)
     
     - Regular Sandbox to spin up a time-limited sandbox
-    - Persistent Sandbox to deploy a persistent sandbox with no end time. For details, see [Persistent Sandboxes Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Prmnt-Env.htm).
+    - Persistent Sandbox to deploy a persistent sandbox with no end time. For details, see [Persistent Sandboxes Overview](../../../intro/features/persistent-sandboxes.md).
 3. In the Schedule field, you can set the required sandbox duration or specify the explicit start and/or end time. Use the Calendar button to set future dates.
     
 :::note Notes
@@ -158,7 +158,7 @@ Blueprints of type ‘view’ cannot be reserved.
     
     ![](/Images/CloudShell-Portal/Lab-Management/Reservations/SetupStageConfiguration.png)
 
-    Note that during the Setup process, the sandbox is locked in CloudShell Portal and cannot be modified - see [Unlocking sandboxes for use during the Setup process](https://help.quali.com/Online%20Help/0.0/Portal/Content/Admn/Wrk-wth-Cnfg-Ky.htm#Locking2).  
+    Note that during the Setup process, the sandbox is locked in CloudShell Portal and cannot be modified - see [Unlocking sandboxes for use during the Setup process](../../../admin/setting-up-cloudshell/cloudshell-configuration-options/advanced-cloudshell-customizations.md#unlocking-sandboxes-for-use-during-the-setup-process).  
     
     The default setup process has 4 stages:
 
@@ -172,7 +172,7 @@ Blueprints of type ‘view’ cannot be reserved.
     - **Configuration** - If any of the sandbox's Apps have configuration management operations that need to be run, CloudShell runs them in this stage.
     </details>
     
-    If any resource is unavailable for the scheduled time slot, the Conflicts dialog box is displayed, proposing an alternative time slot, as described in [Dealing with conflicts](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Crt.htm#Dealing).
+    If any resource is unavailable for the scheduled time slot, the Conflicts dialog box is displayed, proposing an alternative time slot, as described in [Dealing with conflicts](../../sandboxes/creating-sandboxes.md#dealing-with-conflicts).
     
     The new sandbox is displayed in **Diagram** view with a blue Sandbox label at the top of the canvas and a green Active icon in the toolbar:
     
@@ -182,12 +182,12 @@ Blueprints of type ‘view’ cannot be reserved.
     For persistent blueprints, the blue **Sandbox** label is replaced with a **Persistent Environment** label.
     :::
     
-    If you have a license for the Save and Restore paid add-on, you will see a Save Sandbox button. For more information, see the [Sandbox Save and Restore Overview](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Sv-Rstr-Ovrvw.htm).
+    If you have a license for the Save and Restore paid add-on, you will see a Save Sandbox button. For more information, see the [Sandbox Save and Restore Overview](../../sandboxes/sandbox-save-and-restore-overview.md).
     
 
 ## Request approval to reserve a blueprint
 
-Some blueprints require a moderator's approval. This usually applies to high-cost blueprints or those using critical infrastructure. Such blueprints have a **Request** button instead of the traditional **Reserve** one. For details, see [Blueprint Approval Policy](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Blueprint-Approval.htm).
+Some blueprints require a moderator's approval. This usually applies to high-cost blueprints or those using critical infrastructure. Such blueprints have a **Request** button instead of the traditional **Reserve** one. For details, see [Blueprint Approval Policy](../../intro/features/blueprint-approval-policy).
 
 :::note
 Admins and blueprint owners have full permissions on their blueprints and can therefore reserve their approval blueprints without going through the approval process.
