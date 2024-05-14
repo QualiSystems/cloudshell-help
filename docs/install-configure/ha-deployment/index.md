@@ -1,6 +1,6 @@
 # High Availability Deployment
 
-This guide provides a high level overview of the CloudShell High Availability and the supported architectures. For the High Availability installation guide, see [High Availability Installation and Configuration](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/HA-Installation.htm).
+This guide provides a high level overview of the CloudShell High Availability and the supported architectures. For the High Availability installation guide, see [High Availability Installation and Configuration](../ha-installation/index.md).
 
 ## Related Topics
 

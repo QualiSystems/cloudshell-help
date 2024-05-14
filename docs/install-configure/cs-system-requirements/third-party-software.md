@@ -55,4 +55,4 @@ If any of the below 3rd Party components are missing from your computer, the Clo
 
 ## Related Topics
 
-- [Supported Tools and Technologies (New Job Scheduling)](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/JSS/jss-support.htm)
+- [Supported Tools and Technologies (New Job Scheduling)](../cloudshell-suite/new-jss-install-config/supported-tools.md)

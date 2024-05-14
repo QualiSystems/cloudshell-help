@@ -8,10 +8,10 @@ There are three legacy dashboards that are not yet included in the new versions 
 
 To set up the new dashboards, you need to do the following:
 
-- [Install Sisense Add-Ons](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/BI/instl-sis-addons.htm)
-- [Load the Insight ElastiCube](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/BI/cnfg-sis-db-connection.htm)
-- [Build the Insight ElastiCube](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/BI/bld-elasticube.htm)
-- [Import the Insight Dashboards](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/BI/imprt-dshbrds.htm)
-- [Map the Insight Dashboards to the Overview Dashboard](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/BI/map-dshbrds.htm)
-- [Grant Data Security Permissions to ElastiCube Name](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/BI/Grnt-dtsec-prms.htm)
-- [Configure HTTPS Connection Between CloudShell Portal and Sisense](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/BI/sis-https.htm)
+- [Install Sisense Add-Ons](./install-addons.md)
+- [Load the Insight ElastiCube](./install-sisense.md)
+- [Build the Insight ElastiCube](./build-elasticube.md)
+- [Import the Insight Dashboards](./import-dashboards.md)
+- [Map the Insight Dashboards to the Overview Dashboard](./map-dashboards.md)
+- [Grant Data Security Permissions to ElastiCube Name](./grant-permissions.md)
+- [Configure HTTPS Connection Between CloudShell Portal and Sisense](./configure-https.md)

@@ -6,7 +6,7 @@ sidebar_position: 2
 
 The Insight ElastiCube is a database containing all the data needed to successfully use our out-of-the-box dashboards.
 
-Download the CloudShell Insight BI package (see [Download the Installation Files](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/BI/dwnld-th-instln-fls.htm)) and follow the steps in the following procedure.
+Download the CloudShell Insight BI package (see [Download the Installation Files](../download-install-files.md)) and follow the steps in the following procedure.
 
 **To define the Insight Database Insight BI Dashboards:**
 

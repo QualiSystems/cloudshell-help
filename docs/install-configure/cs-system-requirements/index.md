@@ -10,12 +10,12 @@ Due to Microsoft's limitations on the number of concurrent sessions, in order to
 
 ## Related topics
 
-- [CloudShell Component Architecture](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Overview/cs-compnts.htm)
-- [CloudShell Port Requirements](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Overview/cs-reqd-ports.htm)
-- [Minimum Requirements for CloudShell Servers and Clients](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Overview/srvrs.htm)
-- [3rd Party Software](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Overview/3rd-prty-sw.htm)
-- [Database Prerequisites](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Overview/db-prereqs.htm)
-- [Software and Utilities - Recommendations](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Overview/sw-util-recmd.htm)
-- [Network Recommendations](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Overview/ntwrk-recmd.htm)
-- [Security Recommendations](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Overview/scrty-recmd.htm)
+- [CloudShell Component Architecture](./cs-component-architechture.md)
+- [CloudShell Port Requirements](./cs-port-requirements.md)
+- [Minimum Requirements for CloudShell Servers and Clients](./min-requirements-for-cs.md)
+- [3rd Party Software](./third-party-software.md)
+- [Database Prerequisites](./database-prereq.md)
+- [Software and Utilities - Recommendations](./software-and-utilities.md)
+- [Network Recommendations](./network-recommendations.md)
+- [Security Recommendations](./security-recommendations.md)
 - [Performance Considerations](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Overview/pfrmc-cnsdrs.htm)

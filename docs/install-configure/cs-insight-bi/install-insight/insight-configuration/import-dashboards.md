@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Import the Insight Dashboards
 
-Download the CloudShell Insight BI package (see [Download the Installation Files](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/BI/dwnld-th-instln-fls.htm)) and follow the steps in the following procedure.
+Download the CloudShell Insight BI package (see [Download the Installation Files](../download-install-files.md)) and follow the steps in the following procedure.
 
 **To configure the CloudShell Insight BI dashboards:**
 

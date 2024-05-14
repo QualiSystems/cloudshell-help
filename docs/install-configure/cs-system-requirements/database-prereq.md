@@ -10,7 +10,7 @@ CloudShell applications can work with SQL database.
 
 CloudShell uses MongoDB's official software and hardware requirements, as detailed in [https://docs.mongodb.com/manual/administration/production-notes/](https://docs.mongodb.com/manual/administration/production-notes/). For your convenience, we've listed the minimum hardware requirements below. In case of a discrepancy, please use MongoDB's recommendations.
 
-Minimum supported versions of MongoDB are detailed in [Select the Database Type](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Complete%20Installation/slct-db-typ.htm).
+Minimum supported versions of MongoDB are detailed in [Select the Database Type](../cloudshell-suite/complete-install/install-cloudshell/select-database-type/index.md).
 
 | Minimum Hardware Requirements | Description |
 | --- | --- |
@@ -35,7 +35,7 @@ When running CloudShell after installation, make sure your Windows users and the
 
 In addition, also provide a specific permission to "Connect to SQL" that is granted manually in the "Securables" section of the user's login properties.
 
-For a detailed list of SQL server roles, see the [Fixed Server Roles](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Appendices/appd-fxd-svr-rls.htm) appendix.
+For a detailed list of SQL server roles, see the [Fixed Server Roles](../cloudshell-suite/appendix/fixed-server-roles.md) appendix.
 
 ## Installation requirements for SQL databases
 
@@ -84,10 +84,10 @@ Quali Server, SQL server or SQL Express, and the CloudShell applications can be 
 
 - The **Distributed Transaction Coordinator** service must be running on the database server with specific configurations, as detailed in the Troubleshooting Guide:
     
-    - [MSDTC Security Configuration](https://help.quali.com/Online%20Help/2023.3/Portal/Content/Troubleshooting/MSDTC-security-configuration.htm)
-    - [MSDTC Firewall Settings](https://help.quali.com/Online%20Help/2023.3/Portal/Content/Troubleshooting/MSDTC-firewall-settings.htm)
+    - [MSDTC Security Configuration](../../troubleshooting/installation/msdtc-security-configuration.md)
+    - [MSDTC Firewall Settings](../../troubleshooting/installation/msdtc-firewall-settings.md)
 
 ## Related Topics
 
-- [Best Practices for CloudShell Production Environment](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Appendices/prod-bst-prctc.htm)
+- [Best Practices for CloudShell Production Environment](../cloudshell-suite/appendix/best-practices-cs-prod/index.md)
 

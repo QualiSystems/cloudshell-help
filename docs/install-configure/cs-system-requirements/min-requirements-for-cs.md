@@ -52,7 +52,7 @@ The Kubernetes cluster must have three 2GB memory pods. This is required for the
 
 ## Windows OS requirements
 
-The following table lists Windows OS requirements for each CloudShell server and client. For specific software requirements and 3rd party tools, see the [Related Topics](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Overview/srvrs.htm?TocPath=Start%20adhoc%20suite%20execution|CloudShell%20System%20Requirements|_____3#Related) section at the bottom of this page and the [3rd Party Software](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/Overview/3rd-prty-sw.htm) article.
+The following table lists Windows OS requirements for each CloudShell server and client. For specific software requirements and 3rd party tools, see the [Related Topics](#related-topics) section at the bottom of this page and the [3rd Party Software](./third-party-software.md) article.
 
 | Requirements | Description |
 | --- | --- |
@@ -63,9 +63,9 @@ The following table lists Windows OS requirements for each CloudShell server and
 | Resource Manager Client<br />TestShell Studio<br />CloudShell Authoring<br />TestShell Remote Runner<br />CloudShell Monitor | Any of the following Windows versions: <ul><li>10 Pro edition</li><li>11 Pro edition</li><li>Any of the above supported Windows Server versions</li></ul> |
 ## Related Topics
 
-- [Software Requirements (Linux VA)](https://help.quali.com/Online%20Help/0.0/Portal/Content/Linux/Require.htm)
-- [Requirements (High Availability Deployment)](https://help.quali.com/Online%20Help/0.0/Portal/Content/HA-Install/Reqs.htm)
-- [Requirements (QualiX)](https://help.quali.com/Online%20Help/0.0/Portal/Content/QualiX/Require.htm)
-- [Requirements (CloudShell SDK)](https://help.quali.com/Online%20Help/0.0/Portal/Content/CloudShell-SDK/Prrqsts.htm)
-- [Requirements (Insight BI)](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/BI/rqrmnts.htm)
-- [Requirements (New Job Scheduling)](https://help.quali.com/Online%20Help/0.0/Portal/Content/IG/JSS/jss-prerequisites.htm)
+- [Software Requirements (Linux VA)](../linux-virtual-appliance/linux-es-va-overview/sw-requirements.md)
+- [Requirements (High Availability Deployment)](../ha-installation/overview/requirements.md)
+- [Requirements (QualiX)](../qualix/qualix-overview/qualix-requirements.md)
+- [Requirements (CloudShell SDK)](../cloudshell-sdk/overview/requirements.md)
+- [Requirements (Insight BI)](../cs-insight-bi/install-insight/requirements.md)
+- [Requirements (New Job Scheduling)](../cloudshell-suite/new-jss-install-config/requirements.md)
