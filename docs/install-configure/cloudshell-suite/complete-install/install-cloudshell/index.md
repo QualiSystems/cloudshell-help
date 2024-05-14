@@ -10,7 +10,7 @@ When installing or upgrading your production environment, make sure to also revi
 
 - [Install CloudShell](./install.md)
 - [Select an Installation Option](./select-installation-option.md)
-- [Install CloudShell Sandbox API](https://help.quali.com/Online%20Help/2023.3/Portal/Content/IG/Complete%20Installation/instl-cs-sndbox-api.htm)
+- [Install CloudShell Sandbox API](./install-cloudshell-sandbox-api.md)
 - [Select the CloudShell Components to Install](./select-components.md)
 - [Select the Database Type](./select-database-type/index.md)
 - [Select Where to Install CloudShell](./select-install-location.md)
