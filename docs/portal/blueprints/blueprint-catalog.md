@@ -237,7 +237,7 @@ Blueprints of type ‘view’ cannot be reserved.
 
 ## Request approval to reserve a blueprint
 
-Some blueprints require a moderator's approval. This usually applies to high-cost blueprints or those using critical infrastructure. Such blueprints have a **Request** button instead of the traditional **Reserve** one. For details, see [Blueprint Approval Policy](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Features/Blueprint-Approval.htm).
+Some blueprints require a moderator's approval. This usually applies to high-cost blueprints or those using critical infrastructure. Such blueprints have a **Request** button instead of the traditional **Reserve** one. For details, see [Blueprint Approval Policy](../../intro/features/blueprint-approval-policy).
 
 :::note
 Admins and blueprint owners have full permissions on their blueprints and can therefore reserve their approval blueprints without going through the approval process.
