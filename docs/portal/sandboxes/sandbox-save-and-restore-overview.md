@@ -43,5 +43,5 @@ You can customize and manage certain aspects of the save and restore flow. For e
 
 ## Related Topics
 
-- [Save Sandbox Configurations](../../admin/setting-up-cloudshell/cloudshell-configuration-options/save-sandbox-configurations.md#save-sandbox-configurations)
+- [Save Sandbox Configurations](../../admin/setting-up-cloudshell/cloudshell-configuration-options/save-sandbox-configurations.md)
 - [Extending save and restore blueprint scripts](../../admin/setting-up-cloudshell/cloudshell-configuration-options/save-sandbox-configurations.md#extending-save-and-restore-blueprint-scripts)

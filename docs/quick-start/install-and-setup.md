@@ -79,7 +79,7 @@ Quali has a vibrant [developer’s community](https://github.com/orgs/QualiSyste
 - [Resources Overview](../intro/features/resources.md)
 - [Apps Overview](../intro/features/apps-overview.md)
 - [Services Overview](../intro/features/services.md)
-- [Abstract Resources Overview](../intro/features/abstract-resources.md)
+- [Abstract Resources Overview](../intro/features/Abstract-Resources.md)
 - [Migrating 1st Gen Shells to 2nd Gen](../devguide/reference/migrate-1st-gen-shell-to-2nd-gen-shell.md)
 
 ## Check components

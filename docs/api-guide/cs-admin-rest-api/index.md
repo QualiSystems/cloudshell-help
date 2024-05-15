@@ -30,7 +30,7 @@ Manage a domain's blueprints.
 
 Manage a domain's group associations.
 
-- [Get domain's groups](./get-domain-group)
+- [Get domain's groups](./get-domain-groups.md)
 - [Add groups to domain](./add-groups-to-domain.md)
 - [Remove groups from domain](./remove-groups-from-domain.md)
 

@@ -44,7 +44,7 @@ In order to add resources that are based on a Shell, the administrator needs to 
 
 ## Related Topics
 
-- [Inventory Dashboard](../../inventory-dashboard)
+- [Inventory Dashboard](../../inventory-dashboard.md)
 - [Traffic Generators Overview](../../../../intro/features/traffic-gens/index.md)
 - [Editing Resources from the Inventory Dashboard](../editing-resources-from-inventory-dashboard.md)
 - [Discovering Inventory Resources](../discovering-resources.md)

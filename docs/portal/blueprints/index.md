@@ -9,7 +9,7 @@ A blueprint is an offline sandbox template. It contains physical and virtual res
 ### Browsing and reserving blueprints
 
 1. Use the [Blueprint Catalog](./blueprints/blueprint-catalog)
-2. Browse the [Blueprint Workspace](.blueprints/blueprint-workspace)
+2. Browse the [Blueprint Workspace](./blueprints/blueprint-workspace)
 3. [Reserve a blueprint from the Catalog](./blueprints/blueprint-catalog#reserve-a-blueprint-from-the-catalog)
 
 ### Designing blueprints

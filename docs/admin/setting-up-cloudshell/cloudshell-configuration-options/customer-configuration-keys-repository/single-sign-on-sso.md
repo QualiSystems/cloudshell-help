@@ -179,11 +179,11 @@ sidebar_position: 20
 	</tbody>
 </table>
 
-# SAML Single Sign On (SSO)
+## SAML Single Sign On (SSO)
 
 *SSO/SLO configuration is available with CloudShell Premium Tier.*
 
-For step-by-step instructions on how to use these configuration keys, see [Configuring SAML Single Sign-On (SSO)](../../../cloudshell-identity-management/access-control-and-authentication/saml-authentication-configuration-sso-slo/configure-sso/index.md#configuring-saml-single-sign-on-sso).
+For step-by-step instructions on how to use these configuration keys, see [Configuring SAML Single Sign-On (SSO)](../../../cloudshell-identity-management/access-control-and-authentication/saml-authentication-configuration-sso-slo/configure-sso/index.md#configuring-samlsingle-sign-on-sso).
 :::note
 CloudShell supports SAML v2.0. If you encounter an error, please contact your SAML administrator.
 :::

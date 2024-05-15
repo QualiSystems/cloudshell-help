@@ -8,7 +8,7 @@ This article defines the following terms:
 
 ### Abstract resource
 
-Abstract resources are blueprint components that comprise the required settings of the resources you want to use in the sandbox. For example, device model, Firmware version, minimum number of ports, etc. When reserving a blueprint, CloudShell scans the inventory for matching candidates and dynamically allocates them to the sandbox. For details, see [Abstract Resources Overview](../intro/features/abstract-resources.md).
+Abstract resources are blueprint components that comprise the required settings of the resources you want to use in the sandbox. For example, device model, Firmware version, minimum number of ports, etc. When reserving a blueprint, CloudShell scans the inventory for matching candidates and dynamically allocates them to the sandbox. For details, see [Abstract Resources Overview](./features/Abstract-Resources.md).
 
 ### Admin
 
@@ -57,7 +57,7 @@ See [Automation](#automation).
 
 ### Configuration Management
 
-See [Configuration Management Overview](../intro/features/configuration-management.md).
+See [Configuration Management Overview](./features/Configuration-Management.md).
 
 ### Connectivity
 
@@ -151,7 +151,7 @@ See [Connectivity](#connectivity).
 
 ### Sandbox
 
-A sandbox is an active, isolated instance of a blueprint, within a specific domain, which has been reserved for a specific period. For details, see [Sandboxes](../portal/sandboxes/index.md).
+A sandbox is an active, isolated instance of a blueprint, within a specific domain, which has been reserved for a specific period. For details, see [Sandboxes](../portal/sandboxes/index.mdx).
 
 ### Sandbox end-user
 
@@ -162,7 +162,7 @@ The sandbox end-user is the consumer of the sandbox. This user typically logs in
 CloudShell scripts are Python scripts that provide automation commands that can run on the sandbox and on the component level. For details, see [Managing Assets](../admin/cloudshell-manage-dashboard/managing-automation/managing-assets.md). If you're a developer and want to learn how to create and modify scripts, see [The CloudShell DevGuide](../devguide/index.md).
 
 - Blueprint scripts: Blueprint scripts are scripts that run on the sandbox. For example, running a traffic test that involves several components, including the traffic generator chassis, controller service and DUT.
-- Orchestration scripts: Orchestration scripts are blueprint scripts that run automatically as part of the sandbox's lifecycle. You can use orchestration scripts to create setup and teardown procedures as well as other custom workflows that can be made available in the sandbox. CloudShell includes several out-of-the-box orchestration scripts, which are provided with our default blueprint template. For details about our out-of-the-box orchestration scripts, see [CloudShell Sandbox Template](../admin/cloudshell-manage-dashboard/blueprint-templates.md#cloudshell-sandbox-template) and [Configure Blueprint Orchestration](../portal/blueprints/creating-blueprints/configure-orchestration.md#configure-blueprint-orchestration).
+- Orchestration scripts: Orchestration scripts are blueprint scripts that run automatically as part of the sandbox's lifecycle. You can use orchestration scripts to create setup and teardown procedures as well as other custom workflows that can be made available in the sandbox. CloudShell includes several out-of-the-box orchestration scripts, which are provided with our default blueprint template. For details about our out-of-the-box orchestration scripts, see [CloudShell Sandbox Template](../admin/cloudshell-manage-dashboard/blueprint-templates.md#cloudshell-sandbox-template) and [Configure Blueprint Orchestration](../portal/blueprints/creating-blueprints/configure-orchestration.md).
 - Resource scripts: Resource scripts allow you to add automation to specific sandbox components. These scripts are intended to add simple functionality, or to be used for testing and debugging activities. Note that in order to add automation to a shell, the best practice is to use the component’s driver. For details, see [Resource Scripts](../devguide/reference/resource-scripts.md).
 
 ### Service
