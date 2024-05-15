@@ -1,0 +1,8 @@
+{
+  "label": "Installing CloudShell Insight BI",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "This section explains how to download the installation files, install and build the Insight ElastiCube."
+  }
+}

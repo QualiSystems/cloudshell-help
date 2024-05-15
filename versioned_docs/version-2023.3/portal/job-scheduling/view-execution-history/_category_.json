@@ -1,0 +1,9 @@
+{
+  "label": "Viewing Execution History and Test Reports",
+  "position": 7,
+  "link": {
+    "slug": "portal/job-scheduling/view-execution-history-and-reports/",
+    "type": "generated-index",
+    "description": "The following articles explain how to view the execution history of automation suite templates and ad hocs, and how to view reports for completed tests."
+  }
+}

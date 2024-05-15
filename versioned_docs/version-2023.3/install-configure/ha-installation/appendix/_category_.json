@@ -1,0 +1,9 @@
+{
+  "label": "Appendix",
+  "position": 10,
+  "link": {
+    "slug": "install-configure/ha-installation/appendix",
+    "type": "generated-index",
+    "description": "This appendix contains reference information and a glossary of terms."
+  }
+}

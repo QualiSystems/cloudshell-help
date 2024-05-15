@@ -1,0 +1,8 @@
+{
+  "label": "Appendix",
+  "position": 11,
+  "link": {
+    "type": "generated-index",
+    "description": "This article includes known issues and other topics to assist in installing CloudShell."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "label": "Apps",
+  "position": 3,
+  "link": {
+    "slug": "portal/sandboxes/sandbox-workspace/apps",
+    "type": "generated-index",
+    "description": "The following actions are available for Apps in the sandbox:"
+  }
+}

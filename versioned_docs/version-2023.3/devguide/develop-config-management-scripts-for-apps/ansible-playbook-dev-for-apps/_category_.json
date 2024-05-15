@@ -1,0 +1,9 @@
+{
+  "label": "Ansible Playbook Development for Apps",
+  "position": 3,
+  "link": {
+    "slug": "devguide/develop-config-management-scripts-for-apps/ansible-playbook-dev-for-apps",
+    "type": "generated-index",
+    "description": "This chapter will take you through the development process of an Ansible playbook for CloudShell App deployment."
+  }
+}

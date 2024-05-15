@@ -1,0 +1,8 @@
+{
+  "label": "Extending and Stopping Automation Suite Jobs",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "The following articles explain how to extend or stop active jobs, including running, pending and scheduled jobs in automation suite templates and adhoc automation suites."
+  }
+}

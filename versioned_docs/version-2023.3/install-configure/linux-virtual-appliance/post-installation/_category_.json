@@ -1,0 +1,9 @@
+{
+  "label": "Post Installation",
+  "position": 3,
+  "link": {
+    "slug": "install-configure/linux-virtual-appliance/post-installation",
+    "type": "generated-index",
+    "description": "After installing the VM, perform the post installation steps in the order described in this section." 
+  }
+}
