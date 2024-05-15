@@ -17,6 +17,9 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+      - name: Modify Config File
+        run: |
+          sed -i 's/includeCurrentVersion: true/includeCurrentVersion: false/' docusaurus.config.js
       - name: Build website
         run: npm run build
 
