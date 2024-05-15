@@ -7,7 +7,7 @@ sidebar_position: 1
 **To customize the deployment parameters:**
 
 1. Download the official CloudShell Helm chart package that corresponds to your CloudShell version from [Quali’s Download Center](https://support.quali.com/hc/en-us/articles/231613247-Quali-s-Download-Center).
-2. Download this example parameter file: [sample.customer.values.yaml.zip](https://help.quali.com/help%20versions/attachments/sample.customer.values.yaml.zip) and extract it to the folder containing the `CloudShell.tgz` package.
+2. Download this example parameter file: [sample.customer.values.yaml.zip](/attachments/sample.customer.values.yaml.zip) and extract it to the folder containing the `CloudShell.tgz` package.
     :::note
     This parameter file configures the New Job Scheduling infrastructure deployment with the necessary values to connect to your CloudShell environment.
     :::

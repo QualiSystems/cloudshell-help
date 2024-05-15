@@ -85,7 +85,7 @@ We recommend defragmenting the Quali DB on a weekly/monthly schedule or when the
 
 This database doesn't have a retention policy, which may cause unnecessary load in highly active CloudShell deployments over a long enough period. As such, we recommend trimming this database for unneeded data every 1-2 years.
 
-For example, this particular [script](https://help.quali.com/help%20versions/attachments/delete_old_insight_data.zip) clears data that is older than 12 months from the specified Insight DB.
+For example, this particular [script](/attachments/delete_old_insight_data.zip) clears data that is older than 12 months from the specified Insight DB.
 :::note
 To avoid loss of data, make sure the trimming process is completed before the Insight DB's nightly sync with CloudShell. For details, see [Synchronization](../../../cs-insight-bi/install-insight/synchronization.md).
 :::

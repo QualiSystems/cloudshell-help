@@ -39,7 +39,7 @@ To support physical endpoints, make sure your physical switches and routers use 
 
 1. Download the shell to a temporary location. See [Quali Repositories](https://github.com/orgs/QualiSystems/repositories).
     :::tip
-    Before you import, open the zip file and verify that it includes an `install_driver.bat` file. If it doesn't include this file, download this older version of [CloudShell Help](http://help.quali.com/help%20versions/8.3/CloudShell_8.3.zip) and follow the import procedure in the **L1 Switches** article.
+    Before you import, open the zip file and verify that it includes an `install_driver.bat` file.
     :::
 2. Copy the shell to the Quali Server’s `\Drivers` installation folder.
     

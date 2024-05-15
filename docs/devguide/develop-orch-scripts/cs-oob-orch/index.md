@@ -385,7 +385,7 @@ In the below examples, we used shell save/restore functions instead of `orchestr
 - Visual effect: `orchestration_save`/`orchestration_restore` are hidden functions. While they are running, there is no indication that anything is happening on the screen, while with shell save/restore functions, the user can see all physical resources spinning in the sandbox diagram and knows the action is taking place.
 - Easy testing/debugging: While `orchestration_save`/`orchestration_restore` encapsulates functionality and data very nicely, and the json data is helpful, it's easier to test with save/restore of a demo version shell which simply passes on restore and returns a valid string on save.
 :::tip
-For a more in-depth look, click [here](https://help.quali.com/help%20versions/attachments/save-restore-physical-resources/) to download the script packages.
+For a more in-depth look, click [here](/attachments/save-restore-physical-resources.zip) to download the script packages.
 :::
 **Save script (bundled with and called by orchestration\_save):**
 

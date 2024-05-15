@@ -140,8 +140,8 @@ session.ExecuteCommand(reservationId=reservation_id,
                        printOutput=False)
 ```
 
-Add the script as a blueprint script to CloudShell and attach it to your blueprint. If this is a setup script, set the script’s **Script Type** to **Setup** to ensure that CloudShell will execute it automatically when a user reserves the blueprint. For additional information, see CloudShell help’s [Configure Blueprint Orchestration](https://help.quali.com/Online%20Help/9.3/Portal/Content/CSP/LAB-MNG/Crt-Blprnt/Blprnt-Blprnt-Orchs.htm).
+Add the script as a blueprint script to CloudShell and attach it to your blueprint. If this is a setup script, set the script’s **Script Type** to **Setup** to ensure that CloudShell will execute it automatically when a user reserves the blueprint. For additional information, see CloudShell help’s [Configure Blueprint Orchestration](../../portal/blueprints/creating-blueprints/configure-orchestration.md).
 :::note
-You can have only one setup script attached to a blueprint and this will be the default for Azure that provisions and configures the resources. By overriding this script with another of type setup, you will potentially lose this functionality. Alternatively, you could create your own Setup script, which is based on the out-of-the-box one and includes the custom routing code - see [CloudShell’s OOB Orchestration](https://devguide.quali.com/orchestration/2020.1.0/the-oob-orchestration.html)
+You can have only one setup script attached to a blueprint and this will be the default for Azure that provisions and configures the resources. By overriding this script with another of type setup, you will potentially lose this functionality. Alternatively, you could create your own Setup script, which is based on the out-of-the-box one and includes the custom routing code - see [CloudShell’s OOB Orchestration](../develop-orch-scripts/cs-oob-orch/index.md)
 :::
 Future sandboxes based on this blueprint will use the defined custom routing for Azure VMs in the specified IPs/subnets.

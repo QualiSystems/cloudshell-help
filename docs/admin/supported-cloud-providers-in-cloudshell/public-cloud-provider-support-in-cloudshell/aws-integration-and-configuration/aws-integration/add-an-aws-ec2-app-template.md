@@ -164,7 +164,7 @@ The App template defines the settings and configurations of the VM to be deploye
             :::
             :::tip Tips:
             - To allow QualiX in-browser connections to the VM from the sandbox, include port "22".
-            - To set more specific security groups, it is recommended to use the TestShell API's `[SetAppsSecurityGroup](https://help.quali.com/Online%20Help/TestShell-API/TestShell%20XML%20RPC%20API.html)` method instead. Unlike the **Inbound Ports** attribute, it enables you to define different port settings per subnet and allow inbound access to specific source CIDRs. For additional information, see [SetAppSecurityGroups Code Example](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/MNG/SetAppSecurityGroups-code-sample.htm).
+            - To set more specific security groups, it is recommended to use the TestShell API's [SetAppsSecurityGroup](pathname:///api-docs/2023.3/TestShell-API/TestShell%20XML%20RPC%20API.html#SetAppSecurityGroups) method instead. Unlike the **Inbound Ports** attribute, it enables you to define different port settings per subnet and allow inbound access to specific source CIDRs. For additional information, see [SetAppSecurityGroups Code Example](../../setappsecuritygroups-code-example.md).
             :::
                         </td>
                     </tr>

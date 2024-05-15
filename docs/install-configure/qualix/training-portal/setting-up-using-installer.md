@@ -214,4 +214,4 @@ sidebar_position: 1
 
 ## Related Topics
 
-- [Welcome to your training session!](https://help.quali.com/Online%20Help/0.0/Portal/Content/CSP/LAB-MNG/Sndbx-Training-View.htm)
+- [Welcome to your training session!](./welcome-to-your-training-session.md)
