@@ -8,7 +8,7 @@ This article defines the following terms:
 
 ### Abstract resource
 
-Abstract resources are blueprint components that comprise the required settings of the resources you want to use in the sandbox. For example, device model, Firmware version, minimum number of ports, etc. When reserving a blueprint, CloudShell scans the inventory for matching candidates and dynamically allocates them to the sandbox. For details, see [Abstract Resources Overview](./features/Abstract-Resources.md).
+Abstract resources are blueprint components that comprise the required settings of the resources you want to use in the sandbox. For example, device model, Firmware version, minimum number of ports, etc. When reserving a blueprint, CloudShell scans the inventory for matching candidates and dynamically allocates them to the sandbox. For details, see [Abstract Resources Overview](./features/abstract-resources.md).
 
 ### Admin
 
