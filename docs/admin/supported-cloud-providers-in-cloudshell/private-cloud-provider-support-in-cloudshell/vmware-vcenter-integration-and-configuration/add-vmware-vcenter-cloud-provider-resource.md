@@ -29,7 +29,7 @@ We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which p
     
     ![](/Images/Admin-Guide/Inventory-Operations/AppsResourceDiscoveryInformation.png)
     
-8. Enter the required information. Unless specified differently, paths are relative to the datacenter so for example, to specify VM storage "datastore cluster" that is under datacenter "QualiSB", enter "datastore cluster" in the **VM Storage** field. For guidance on finding each element in your vCenter server, see [vCenter cheetsheet for versions 5.5-6.5](../../../../../static/attachments/VCenter_5.5_6.5_Cloud_Provider_Resource_Configuration_Cheetsheet.pdf) or [vCenter cheetsheet for version 6.7 and above](../../../../../static/attachments/VCenter_6.7_Cloud_Provider_Resource_Configuration_Cheetsheet.pdf).
+8. Enter the required information. Unless specified differently, paths are relative to the datacenter so for example, to specify VM storage "datastore cluster" that is under datacenter "QualiSB", enter "datastore cluster" in the **VM Storage** field. For guidance on finding each element in your vCenter server, see [vCenter cheetsheet for versions 5.5-6.5](/attachments/VCenter_5.5_6.5_Cloud_Provider_Resource_Configuration_Cheetsheet.pdf) or [vCenter cheetsheet for version 6.7 and above](/attachments/VCenter_6.7_Cloud_Provider_Resource_Configuration_Cheetsheet.pdf).
     :::note
     All vCenter elements must be located under the same data center.
     :::
