@@ -88,7 +88,7 @@ const config = {
           // },
           // Redirect from multiple old paths to the new path
           {
-            to: '/portal/blueprints/blueprint-catalog',
+            to: '/cloudshell-help/portal/blueprints/blueprint-catalog',
             from: ['/Portal/EnvironmentsCatalog'],
           },          
         ],
@@ -97,7 +97,7 @@ const config = {
             // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
             return [              
               //existingPath.replace('/community', '/docs/support'),
-              "/portal/inventory/inventory-dashboard"
+              "/cloudshell-help/portal/inventory/inventory-dashboard"
             ];
           }
           return undefined; // Return a falsy value: no redirect created
