@@ -93,18 +93,18 @@ const config = {
           },          
         ],
         createRedirects(existingPath) {
-          if (existingPath.includes('/Portal/Inventory')) {
-            // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
+          if (existingPath.includes('/portal/inventory/inventory-dashboard')) {
             return [              
-              //existingPath.replace('/community', '/docs/support'),
-              "/portal/inventory/inventory-dashboard"
+              "/Portal/Inventory",
+              "/0.0/Portal/Inventory",
+              "/2023.1/Portal/Inventory",
+              "/2023.2/Portal/Inventory",
+              "/2023.3/Portal/Inventory",
             ];
           }
-          if (existingPath.includes('/Portal/ReservationWorkspace')) {
-            // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
+          if (existingPath.includes('/portal/sandboxes/sandbox-workspace')) {
             return [              
-              //existingPath.replace('/community', '/docs/support'),
-              "/portal/sandboxes/sandbox-workspace"
+              "/Portal/ReservationWorkspace"
             ];
           }
           return undefined; // Return a falsy value: no redirect created
