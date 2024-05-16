@@ -80,33 +80,29 @@ const config = {
     [
       '@docusaurus/plugin-client-redirects',
       {
-        redirects: [
-          // /docs/oldDoc -> /docs/newDoc
-          // {
-          //   to: '/docs/newDoc',
-          //   from: '/docs/oldDoc',
-          // },
-          // Redirect from multiple old paths to the new path
-          {
-            to: '/portal/blueprints/blueprint-catalog',
-            from: ['/Portal/EnvironmentsCatalog'],
-          },          
-        ],
+        // redirects: [          
+        //   {
+        //     to: '/portal/blueprints/blueprint-catalog',
+        //     from: ['/Portal/EnvironmentsCatalog'],
+        //   },          
+        // ],
         createRedirects(existingPath) {
+          versions = ["0.0", "2022.1", "2022.2", "2023.1", "2023.2", "2023.3", "2024.1"];
+          
           if (existingPath.includes('/portal/inventory/inventory-dashboard')) {
-            return [              
-              "/Portal/Inventory",
-              "/0.0/Portal/Inventory",
-              "/2023.1/Portal/Inventory",
-              "/2023.2/Portal/Inventory",
-              "/2023.3/Portal/Inventory",
-            ];
+            return versions.map(version => `/${version}/Portal/Inventory`);
           }
-          if (existingPath.includes('/portal/sandboxes/sandbox-workspace')) {
-            return [              
-              "/Portal/ReservationWorkspace"
-            ];
+          else if (existingPath.includes('/portal/sandboxes/sandbox-workspace')) {
+            return versions.map(version => `/${version}/Portal/ReservationWorkspace`);
           }
+          else if (existingPath.includes('/portal/blueprints/blueprint-catalog')) {
+            return versions.map(version => `/${version}/Portal/EnvironmentsCatalog`);
+          }
+          else if (existingPath.includes('portal/sandboxes/sandboxes-dashboard')) {
+            return versions.flatMap(version => [`/${version}/Portal/ReservationsList`, `/${version}/Portal/ReservationsTimeline`]);            
+          }
+
+
           return undefined; // Return a falsy value: no redirect created
         },
       },
