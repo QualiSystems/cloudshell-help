@@ -60,7 +60,7 @@ const config = {
             keywords: ['danger-one-line', 'warning-one-line' , 'info-one-line', 'tip-one-line', 'note-one-line'],
             extendDefaults: true,
           },
-          routeBasePath: '/',
+          routeBasePath: '/cloudshell-help/',
           sidebarPath: './sidebars.js',
           includeCurrentVersion: true, //show the Next verions when working locally, this will be changed to false as part of the deployment process
           // Please change this to your repo.
