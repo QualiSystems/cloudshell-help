@@ -100,6 +100,13 @@ const config = {
               "/portal/inventory/inventory-dashboard"
             ];
           }
+          if (existingPath.includes('/Portal/ReservationWorkspace')) {
+            // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
+            return [              
+              //existingPath.replace('/community', '/docs/support'),
+              "/portal/sandboxes/sandbox-workspace"
+            ];
+          }
           return undefined; // Return a falsy value: no redirect created
         },
       },
