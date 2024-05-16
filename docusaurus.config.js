@@ -16,7 +16,7 @@ const config = {
   url: 'https://qualisystems.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/cloudshell-help/',
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
   // GitHub pages deployment config.
@@ -60,7 +60,7 @@ const config = {
             keywords: ['danger-one-line', 'warning-one-line' , 'info-one-line', 'tip-one-line', 'note-one-line'],
             extendDefaults: true,
           },
-          routeBasePath: '/cloudshell-help/',
+          routeBasePath: '/',
           sidebarPath: './sidebars.js',
           includeCurrentVersion: true, //show the Next verions when working locally, this will be changed to false as part of the deployment process
           // Please change this to your repo.
