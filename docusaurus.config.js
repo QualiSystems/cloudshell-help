@@ -67,7 +67,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/QualiSystems/cloudshell-help/tree/main/',
-          showLastUpdateTime: true
+          //showLastUpdateTime: false  // since we build everything on each update, the date will just show the same for all pages
         },
         theme: {
           customCss: './src/css/custom.css',
