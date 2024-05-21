@@ -13,15 +13,15 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://qualisystems.github.io/',
+  url: 'https://newhelp1.quali.com/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/cloudshell-help/',
+  baseUrl: '/',
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'QualiSystems/cloudshell-help', // Usually your GitHub org/user name.
+  organizationName: 'QualiSystems', // Usually your GitHub org/user name.
   projectName: 'cloudshell-help', // Usually your repo name.
 
   onBrokenLinks: 'warn',
@@ -87,7 +87,7 @@ const config = {
         //   },          
         // ],
         createRedirects(existingPath) {
-          versions = ["0.0", "2022.1", "2022.2", "2023.1", "2023.2", "2023.3", "2024.1"];
+          var versions = ["0.0", "2022.1", "2022.2", "2023.1", "2023.2", "2023.3", "2024.1"];
           
           if (existingPath.includes('/portal/inventory/inventory-dashboard')) {
             return versions.map(version => `/${version}/Portal/Inventory`);
