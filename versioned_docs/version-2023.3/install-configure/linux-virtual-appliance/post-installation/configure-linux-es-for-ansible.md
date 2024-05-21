@@ -20,7 +20,7 @@ To run Ansible configuration management on this Execution Server, several additi
     :::note
     **To install in an offline environment:**
     
-    1. Download the offline dependencies from [here](https://help.quali.com/help%20versions/attachments/PY39-linux-ansible-reqs-2.14.0.zip).
+    1. Download the offline dependencies from [here](https://help-archive.quali.com/help%20versions/attachments/PY39-linux-ansible-reqs-2.14.0.zip).
     2. Place them in the Quali Server offline repository:
         
         `C:\Program Files (x86)\QualiSystems\CloudShell\Server\Config\Pypi Server Repository`

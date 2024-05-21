@@ -47,7 +47,7 @@ If any of the below 3rd Party components are missing from your computer, the Clo
 - Virtualization: VMware vCenter. The supported versions are vSphere 5.5 - 6.5, 6.7, 7.
 - Source control: TortoiseSVN Version 1.7/1.7.9
 - BI tools: Sisense W2021.x (8.2 is supported for existing Insight deployments)
-- Quality control (For deployment information, see the [TestShell Studio](https://help.quali.com/Online%20Help/2023.3/TestShell/Content/TSS/TSS-Home.htm) help):
+- Quality control (For deployment information, see the [TestShell Studio](https://help-archive.quali.com/Online%20Help/2023.3/TestShell/Content/TSS/TSS-Home.htm) help):
     
     - HP Quality Center QC 10
     - HP Quality Center QC 11/11.5

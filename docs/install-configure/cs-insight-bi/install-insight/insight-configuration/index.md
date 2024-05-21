@@ -3,7 +3,7 @@
 It is possible to use both the new dashboards (released in CloudShell 2021.2) and our legacy dashboards. The new dashboards address much the same contents as the legacy dashboards but also contain several new KPIs.
 
 :::note
-There are three legacy dashboards that are not yet included in the new versions - Virtualization, Automation Suites and Automation Test. For details about the legacy dashboards, contact your Quali Account Manager. The installation and configuration of the legacy dashboards is explained in [CloudShell 2021.1 Help](https://help.quali.com/Online%20Help/2021.1/Portal/Content/CSP/BI/CS-Insight-BI.htm).
+There are three legacy dashboards that are not yet included in the new versions - Virtualization, Automation Suites and Automation Test. For details about the legacy dashboards, contact your Quali Account Manager. The installation and configuration of the legacy dashboards is explained in [CloudShell 2021.1 Help](https://help-archive.quali.com/Online%20Help/2021.1/Portal/Content/CSP/BI/CS-Insight-BI.htm).
 :::
 
 To set up the new dashboards, you need to do the following:

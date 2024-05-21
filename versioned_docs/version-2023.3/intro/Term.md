@@ -183,7 +183,7 @@ See [Admin](#admin).
 
 ### Test
 
-CloudShell supports the management and execution of hardware and network tests. CloudShell tests are developed in [TestShell Studio](https://help.quali.com/Online%20Help/2023.3/TestShell), Quali's test development platform, and can be executed using CloudShell automation suites. For details, see [What Are Automation Suites?](../portal/job-scheduling/what-are-automation-suites.md).
+CloudShell supports the management and execution of hardware and network tests. CloudShell tests are developed in [TestShell Studio](https://help-archive.quali.com/Online%20Help/2023.3/TestShell), Quali's test development platform, and can be executed using CloudShell automation suites. For details, see [What Are Automation Suites?](../portal/job-scheduling/what-are-automation-suites.md).
 
 ### Virtual environment (venv)
 

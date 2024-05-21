@@ -1000,7 +1000,7 @@ This key applies to the CloudShell Portal, TestShell Studio, and CloudShell Auth
         - `RM`
         - `RUN`
         - `ST`
-    4. Download the component's updated offline help package locally and unzip it. To download the offline help packages, see [All Help Versions](https://help.quali.com/help%20versions/All%20Versions%20Help/Content/Versions.htm).
+    4. Download the component's updated offline help package locally and unzip it. To download the offline help packages, see [All Help Versions](https://help-archive.quali.com/help%20versions/All%20Versions%20Help/Content/Versions.htm).
     5. Place the unzipped folder's contents in the appropriate sub-folder. The folder structure is as follows:
         
         - `DRB` - CloudShell Authoring help folder

@@ -15,7 +15,7 @@ sidebar_position: 1
     pip install <path_to_quali_utils_package>
     ```
     
-    Note: quali\_utils.3.3.0 is supported by CloudShell 2022.1 and above. For previous versions, see [earlier versions](https://help.quali.com/help%20versions/All%20Versions%20Help/Content/Versions.htm) of CloudShell Help.
+    Note: quali\_utils.3.3.0 is supported by CloudShell 2022.1 and above. For previous versions, see [earlier versions](https://help-archive.quali.com/help%20versions/All%20Versions%20Help/Content/Versions.htm) of CloudShell Help.
     
 
 ## Installation
