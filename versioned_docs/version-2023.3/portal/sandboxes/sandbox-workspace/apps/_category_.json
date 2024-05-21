@@ -4,6 +4,7 @@
   "link": {
     "slug": "portal/sandboxes/sandbox-workspace/apps",
     "type": "generated-index",
+    "title": "Apps in Sandboxes",
     "description": "The following actions are available for Apps in the sandbox:"
   }
 }
