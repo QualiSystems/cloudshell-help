@@ -110,16 +110,33 @@ const config = {
             return versions.map(version => `/${version}/Portal/Inventory`);
           }
           else if (existingPath.includes('/portal/sandboxes/sandbox-workspace')) {
-            return versions.map(version => `/${version}/Portal/ReservationWorkspace`);
+            return versions.flatMap(version => [`/${version}/Portal/EnvironmentWorkspace`, `/${version}/Portal/ReservationsTimeline`]);            
           }
           else if (existingPath.includes('/portal/blueprints/blueprint-catalog')) {
             return versions.map(version => `/${version}/Portal/EnvironmentsCatalog`);
           }
           else if (existingPath.includes('portal/sandboxes/sandboxes-dashboard')) {
-            return versions.flatMap(version => [`/${version}/Portal/ReservationsList`, `/${version}/Portal/ReservationsTimeline`]);            
+            return versions.flatMap(version => [`/${version}/Portal/ReservationsList`, `/${version}/Portal/ReservationsTimeline`]);
           }
-
-
+          else if (existingPath.includes('/portal/job-scheduling/job-scheduling-dashboard')) {
+            return versions.map(version => `/${version}/Portal/Scheduler`);
+          }
+          else if (existingPath.includes('/admin/cloudshell-manage-dashboard/manage-dashboard-overview')) {
+            return versions.map(version => `/${version}/Portal/Manage`);
+          }
+          else if (existingPath.includes('/admin/cloudshell-manage-dashboard/manage-app-templates')) {
+            return versions.map(version => `/${version}/Portal/ManageApps`);
+          }
+          else if (existingPath.includes('/portal/sandboxes/sandbox-workspace/apps')) {
+            return versions.map(version => `/${version}/Portal/UsingApps`);
+          }          
+          else if (existingPath.includes('/portal/sandboxes/saved-sandboxes')) {
+            return versions.map(version => `/${version}/Portal/SaveSandbox`);
+          }
+          else if (existingPath.includes('/portal/sandboxes/sandbox-save-and-restore-overview')) {
+            return versions.map(version => `/${version}/Portal/SaveSandboxOverview`);
+          }
+          
           return undefined; // Return a falsy value: no redirect created
         },
       },
