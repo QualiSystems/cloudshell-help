@@ -11,9 +11,9 @@ title: Welcome!
 Here you will find everything you need to know to set up and use CloudShell. We've also included some useful links on this page - make sure to check them out.
 
 ## What is CloudShell?
-Take a guided tour through CloudShell in this 6 minute video.
+Take a guided tour through CloudShell in this demo video.
 
-<iframe width="70%" height="500px" src="https://www.youtube.com/embed/nzhSpZCeYg8" title="CloudShell Cloud Sandboxing Overview Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe class="vidyard_iframe" title="Demo: Infrastructure Automation with Quali CloudShell" src="https://play.vidyard.com/sd2S8vuueHV6ac2XWQ7B1T.html?" width="70%" height="500px" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 ## Hybrid Cloud Demo
 
