@@ -104,7 +104,7 @@ const config = {
         //   },          
         // ],
         createRedirects(existingPath) {
-          var versions = ["0.0", "2022.1", "2022.2", "2023.1", "2023.2", "2023.3", "2024.1"];          
+          var versions = ["0.0", "2022.1", "2022.1.0.1858", "2022.2", "2022.2.0.1470", "2023.1", "2023.1.0.655", "2023.2", "2023.2.0.1763", "2023.3", "2023.3.0.979", "2024.1"];          
           
           if (existingPath.includes('/portal/inventory/inventory-dashboard')) {
             return versions.map(version => `/${version}/Portal/Inventory`);
