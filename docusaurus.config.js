@@ -104,13 +104,13 @@ const config = {
         //   },          
         // ],
         createRedirects(existingPath) {
-          var versions = ["0.0", "2022.1", "2022.2", "2023.1", "2023.2", "2023.3", "2024.1"];
+          var versions = ["0.0", "2022.1", "2022.2", "2023.1", "2023.2", "2023.3", "2024.1"];          
           
           if (existingPath.includes('/portal/inventory/inventory-dashboard')) {
             return versions.map(version => `/${version}/Portal/Inventory`);
           }
           else if (existingPath.includes('/portal/sandboxes/sandbox-workspace')) {
-            return versions.flatMap(version => [`/${version}/Portal/EnvironmentWorkspace`, `/${version}/Portal/ReservationsTimeline`]);            
+            return versions.flatMap(version => [`/${version}/Portal/EnvironmentWorkspace`, `/${version}/Portal/ReservationsTimeline`]);
           }
           else if (existingPath.includes('/portal/blueprints/blueprint-catalog')) {
             return versions.map(version => `/${version}/Portal/EnvironmentsCatalog`);
@@ -129,12 +129,15 @@ const config = {
           }
           else if (existingPath.includes('/portal/sandboxes/sandbox-workspace/apps')) {
             return versions.map(version => `/${version}/Portal/UsingApps`);
-          }          
+          }
           else if (existingPath.includes('/portal/sandboxes/saved-sandboxes')) {
             return versions.map(version => `/${version}/Portal/SaveSandbox`);
           }
           else if (existingPath.includes('/portal/sandboxes/sandbox-save-and-restore-overview')) {
             return versions.map(version => `/${version}/Portal/SaveSandboxOverview`);
+          }
+          else if (existingPath.includes('/')) {
+            return versions.map(version => `/Online%20Help/${version}/Portal/Default.htm`);
           }
           
           return undefined; // Return a falsy value: no redirect created
