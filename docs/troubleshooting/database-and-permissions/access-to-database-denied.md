@@ -10,9 +10,7 @@ When access to the database is denied, one of the following error messages is di
 
 :::danger-one-line
 - could not execute batch command.\[SQL: SQL not available\]
-
 - check\_cells\_configuration ended with status Failed with error: HTTP Error 500: The server encountered an error processing the request. Please see the server logs for more details.
-
 - close\_scenario ended with status Failed with error: HTTP Error 500: The server encountered an error processing the request. Please see the server logs for more detail
 :::
 

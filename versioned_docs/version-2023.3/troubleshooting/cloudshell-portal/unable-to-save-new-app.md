@@ -9,6 +9,7 @@ sidebar_position: 5
 :::danger-one-line
 HTTP 405 Error (Method Not Allowed)
 :::
+
 ## Description
 
 When creating a new App in the **Manage** section of CloudShell Portal, the user cannot save the App. When the user clicks **Done**, the operating system returns an error, the process is halted and the app is not saved. Note that this is an operating system error message and not an error message in CloudShell.

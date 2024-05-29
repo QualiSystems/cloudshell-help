@@ -8,7 +8,7 @@ sidebar_position: 8
 
 In Quali Server configuration wizard:
 
-:::danger-one-line
+:::danger &nbsp;
 Unexpected error.  
 Check the log file for more details:  
 Service 'Quali Server' status: 'Stopped', failed to set status: 'Running'

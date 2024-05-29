@@ -7,8 +7,7 @@ sidebar_position: 4
 ## Error Message
 
 :::danger-one-line
-Saving resource family changes Error:
-
+Saving resource family changes Error:   
 User 'NT AUTHORITY\\SYSTEM' does not have permission to run DBCC TRACEON.
 :::
 ## Description

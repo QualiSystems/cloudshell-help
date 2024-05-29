@@ -8,7 +8,7 @@ sidebar_position: 1
 
 Autoloading a L1 resource:
 
-:::danger-one-line
+:::danger &nbsp;
 Application Warning
 
 An error occurred trying to execute a command on a resource at this address: xx.x.xxx.xx.
@@ -22,7 +22,7 @@ at QualiSystems.ResourceManagement.Service.APIService.TclDriverTcpClient.SendMes
 
 Autoloading a 1st or 2nd Gen resource:
 
-:::danger-one-line
+:::danger &nbsp;
 Synchronization conflicts
 
 The operation completed with the following errors:
@@ -34,7 +34,7 @@ The operation completed with the following errors:
 Description: ('SessionManagerImpl', 'Failed to create new session for type SSH, TELNET, CONSOLE\_SSH, CONSOLE\_TELNET, see logs for details').
 :::
 
-:::danger-one-line
+:::danger &nbsp;
 Synchronization conflicts
 
 The operation completed with the following errors:

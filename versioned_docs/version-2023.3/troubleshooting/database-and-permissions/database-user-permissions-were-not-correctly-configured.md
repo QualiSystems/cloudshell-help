@@ -9,6 +9,7 @@ sidebar_position: 3
 :::danger-one-line
 Please check your database configuration on the server side
 :::
+
 ## Description
 
 When opening CloudShell portal or attempting to perform an action, such as reserving a Sandbox, the above error message is displayed.

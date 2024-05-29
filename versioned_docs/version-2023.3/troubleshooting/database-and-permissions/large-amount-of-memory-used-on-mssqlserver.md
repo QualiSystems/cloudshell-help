@@ -9,6 +9,7 @@ sidebar_position: 5
 :::danger-one-line
 MS SQL SERVER on the SQL database VM is utilizing a large amount of memory
 :::
+
 ## Description
 
 The MS SQL Server memory (RAM) increases to an unexpectedly high level.

@@ -6,7 +6,7 @@ sidebar_position: 5
 
 ## Error Message
 
-:::danger-one-line
+:::danger &nbsp;
 Windows Service Logon Info
 
 The service is unable to logon to the Database. The user “LocalSystem” does not have permission to connect to “TestShell” database.

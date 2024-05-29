@@ -8,7 +8,6 @@ sidebar_position: 2
 
 :::danger-one-line
 CloudShell Portal could not be contacted.
-
 Please check your settings.
 :::
 

@@ -306,6 +306,7 @@ By default, the command downloads the dependencies from public PyPi. However, if
 ### Packaging and importing a Shell into CloudShell
 
 This command creates a distributable zip file for the Shell and imports it into CloudShell using the CloudShell Portal and user defined by the `shellfoundry configure` command. For more information, see [Getting Started with Shell Development](../developing-shells/getting-started.md).
+
 :::danger-one-line
 **Note:** A shell update is not reversible(in other words, you cannot downgrade to an earlier shell version). Therefore, update the template version in the shell's `shell-definition.yaml` ONLY when something in the data model changes (new attributes added to `shell-definition.yaml`). Any changes in just the driver or underlying packages you can keep the template version number the same and then freely "roll back" to a previous version if the shell presents unexpected behavior.
 :::

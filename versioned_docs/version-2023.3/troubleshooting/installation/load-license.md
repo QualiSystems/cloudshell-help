@@ -6,7 +6,7 @@ sidebar_position: 7
 
 ## Error Message
 
-:::danger-one-line
+:::danger &nbsp;
 Some of the features in the license file were loaded successfully.
 
 However the following errors occurred:

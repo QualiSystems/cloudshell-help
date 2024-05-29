@@ -9,6 +9,7 @@ sidebar_position: 8
 :::danger-one-line
 No resource matches your search
 :::
+
 ## Description
 
 When searching in CloudShell Portal for a resource to add to a blueprint or sandbox, the user cannot locate the resource.
