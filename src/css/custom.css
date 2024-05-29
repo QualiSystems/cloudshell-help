@@ -13,7 +13,6 @@
   --ifm-color-primary-light: #000000;
   --ifm-color-primary-lighter: #000000;
   --ifm-color-primary-lightest: #000000;
-  --doc-sidebar-width: 400px;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -92,3 +91,16 @@ p {
 [data-theme='dark'] .details_node_modules-\@docusaurus-theme-classic-lib-theme-Details-styles-module {
   background-color: #193c47;
 } 
+
+/* change the sidebar width */
+.theme-doc-sidebar-container {
+  width: 380px !important;
+}
+
+.sidebar_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-styles-module {
+  width: 380px !important;
+}
+
+.theme-doc-sidebar-menu {
+  width: 370px !important;
+}
