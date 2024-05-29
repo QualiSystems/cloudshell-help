@@ -11,6 +11,9 @@ title: Welcome!
 Here you will find everything you need to know to set up and use CloudShell. We've also included some useful links on this page - make sure to check them out.
 
 ## What is CloudShell?
+
+CloudShell is a cloud automation platform that lets you deliver fully functional sandboxes over any combination of infrastructure, from legacy to public cloud, and eliminate resource conflicts. Creating an IT environment blueprint can be as simple as dragging the resources you need from the inventory and creating the connections between them.
+
 Take a guided tour through CloudShell in this demo video.
 
 <iframe class="vidyard_iframe" title="Demo: Infrastructure Automation with Quali CloudShell" src="https://play.vidyard.com/sd2S8vuueHV6ac2XWQ7B1T.html?" width="70%" height="500px" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
