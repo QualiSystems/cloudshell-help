@@ -13,7 +13,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://newhelp1.quali.com/',
+  url: 'https://help.quali.com/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -88,7 +88,7 @@ const config = {
       type: "text/javascript",
       "data-domain-script": "47d0fdb5-1ced-4a6a-a893-847e68cce066"
     },
-    {  src: 'http://newhelp1.quali.com/one-trust.js',
+    {  src: 'http://help.quali.com/one-trust.js',
       type: "text/javascript"
     }
   ],
