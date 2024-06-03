@@ -1,3 +1,5 @@
+# Creating and Customizing Dashboards
+
 You can create and customize dashboards and widgets, back up and restore ElastiCube and dashboards, add new data source tables, and define inner join connections between tables.
 
 :::warning
