@@ -76,22 +76,22 @@ const config = {
     ],
   ],
 
-  // scripts: [
-  //   // One Trust Cookie policy
-  //   {
-  //     src: 'https://cdn.cookielaw.org/consent/47d0fdb5-1ced-4a6a-a893-847e68cce066/OtAutoBlock.js',
-  //     type: "text/javascript",
-  //   },
-  //   {
-  //     src: 'https://cdn.cookielaw.org/scripttemplates/otSDKStub.js',
-  //     charset: 'UTF-8',
-  //     type: "text/javascript",
-  //     "data-domain-script": "47d0fdb5-1ced-4a6a-a893-847e68cce066"
-  //   },
-  //   {  src: 'http://help.quali.com/one-trust.js',
-  //     type: "text/javascript"
-  //   }
-  // ],
+  scripts: [
+    // One Trust Cookie policy
+    {
+      src: 'https://cdn.cookielaw.org/consent/47d0fdb5-1ced-4a6a-a893-847e68cce066/OtAutoBlock.js',
+      type: "text/javascript",
+    },
+    {
+      src: 'https://cdn.cookielaw.org/scripttemplates/otSDKStub.js',
+      charset: 'UTF-8',
+      type: "text/javascript",
+      "data-domain-script": "47d0fdb5-1ced-4a6a-a893-847e68cce066"
+    },
+    {  src: 'http://help.quali.com/one-trust.js',
+      type: "text/javascript"
+    }
+  ],
   
   plugins: [
     [
@@ -139,6 +139,10 @@ const config = {
           else if (existingPath.includes('/')) {
             return versions.map(version => `/Online%20Help/${version}/Portal/Default.htm`);
           }
+          else if (existingPath.includes('/help-versions-archive')) {
+            return "/help%20versions/"
+          }
+          
           
           return undefined; // Return a falsy value: no redirect created
         },
