@@ -329,7 +329,7 @@ Legacy dashboards:
 
 ## Resource utilization log
 
-The Resource utilization log table provides a daily usage summary of connectable resources in sandboxes.
+The Resource utilization log table provides a daily usage summary of **connectable** resources in sandboxes.
 :::note
 Connectable resources are basically ports that can be connected to other components, such ethernet, fiber, or other connectable ports.
 :::
