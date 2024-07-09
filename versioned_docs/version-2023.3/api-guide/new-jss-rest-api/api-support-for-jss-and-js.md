@@ -40,7 +40,7 @@ For brevity, the term "Job Scheduling (1st Gen)" denotes the original Job Schedu
 | Stop job execution | Not supported for specific job executions. Supported for suite executions via `/api/spaces/{space_name}/SuiteExecution/{id}/stop` API | Available via Stop Job Execution API |
 | Get jobs in queue |   | Available via Get Queued Jobs API |
 | Get running jobs |   | Available via Get Running Jobs API |
-| Deploy dedicated resrvation per job | Available | Available |
+| Deploy dedicated reservation per job | Available | Available |
 | Generate suite execution report | Available<br/>**Syntax:**<br/>`GET/api/spaces/{space_name}/TestExecution/{id}/Report` |   |
 | **Reservation operations:**<br/>The following APIs are available for both Job Scheduling features via Quali API. |
 | Get reservation attachment |   |   |

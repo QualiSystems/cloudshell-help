@@ -158,7 +158,7 @@ Example header format:
   </tr>
   <tr>
     <td>testTypeName</td>
-    <td>Testing framewor of suite's tests. (string)</td>
+    <td>Testing framework of suite's tests. (string)</td>
   </tr>
   <tr>
     <td>testTypeId</td>

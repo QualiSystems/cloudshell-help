@@ -266,7 +266,7 @@ Example header format:
         - **hasReport**: Test report, if generated. (bool)
       - **sandbox**: Details about the sandbox spun up for the job's execution.
         - **id**: Sandbox ID - included in the sandbox URL. (guid)
-        - **name**: Sandbox name, comosed of job name, dash and job execution number. (string) For example: "job 1 #1"
+        - **name**: Sandbox name, composed of job name, dash and job execution number. (string) For example: "job 1 #1"
         - **url**: Sandbox URL. (string)
         - **inputs**: Sandbox inputs, if defined. (string)
       - **errorCode**: Job error code. (numeric) For details, see [Statuses and results](./jss-rest-api-response-codes).
