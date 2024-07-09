@@ -124,7 +124,7 @@ sidebar_position: 1
     1. Open the Training Portal's live documentation page:
         
         ```javascript
-        http://[CloudShellPortalAddress]:82/api/explore/#/
+        http://\[CloudShellPortalAddress\]:82/api/explore/#/
         ```
         
     2. Log in to the user's domain.

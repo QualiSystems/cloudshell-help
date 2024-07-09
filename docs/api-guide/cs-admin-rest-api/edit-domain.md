@@ -44,6 +44,7 @@ Example header format:
 | EndTime | (string) End time of domain's validity. When the end time is reached, the domain will be accessible but no longer in use. |
 | Archived | (bool) **true** to archive the domain. |
 | LicensePoolId | (string) Id of the license pool. Can be retrieved via [Get all license pools](./get-all-license-pools.md). |
+| MinimumLeadTimeMinutes | (int) Determine how soon a sandbox can be ordered from the present time. For example, a minimum lead time of 60 would mean that the FROM field must be now + 60 minutes. |
 
 </details>
 
@@ -56,7 +57,8 @@ Example header format:
     "Description": "Updated domain",
     "EndTime": "05/20/2023 4:37:00 PM",  
     "Archived": true,
-    "LicensePoolId": "7932E56D-057E-47FE-8E37-B00600A97C7F"
+    "LicensePoolId": "7932E56D-057E-47FE-8E37-B00600A97C7F",
+    "MinimumLeadTimeMinutes": 120
 
 }
 ```
