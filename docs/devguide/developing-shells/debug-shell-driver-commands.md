@@ -89,7 +89,7 @@ token_id=context.connectivity.admin_auth_token,
 domain=context.reservation.domain)
 ```
 
-It is also possible to run your unitests using an authentication token, which provides the driver command with the required context objects from CloudShell. For example, injecting the authentication token into the connectivity object:
+It is also possible to run your unit tests using an authentication token, which provides the driver command with the required context objects from CloudShell. For example, injecting the authentication token into the connectivity object:
 
 ```python
 from cloudshell.api.cloudshell_api import CloudShellAPISession

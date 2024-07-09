@@ -181,7 +181,7 @@ Sequential execution is the default mode mainly because it simplifies the driver
 
 You should decide whether to enable concurrent execution by balancing the usage requirements for the driver and the complexity of supporting concurrency.
 
-- **Driver usage**: Sometimes the driver commands not called very often so it is likely that staying with sequential execution will not affect the user experience or increate wait times. This is especially true if the Shell resource is used exclusively within each sandbox. In such a scenario, it is being used by a single user at a time which may not require parallelism.
+- **Driver usage**: Sometimes the driver commands are not called very often so it is likely that staying with sequential execution will not affect the user experience or increase wait times. This is especially true if the Shell resource is used exclusively within each sandbox. In such a scenario, it is being used by a single user at a time which may not require parallelism.
     
 - **Complexity of supporting concurrency**: Supporting concurrent executions can be more complex if the driver is not stateless or if the API or CLI the driver is communicating with does not itself support concurrency well or is limited to a specific number of sessions. In those situations there will be additional cost in terms of driver complexity to support concurrent execution.
     

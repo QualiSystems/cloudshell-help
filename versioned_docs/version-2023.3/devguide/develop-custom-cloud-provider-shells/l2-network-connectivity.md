@@ -68,7 +68,7 @@ class ResourceCommandContext:
     
 - If the cloud provider supports VXLAN or both VLAN and VXLAN, it is required to expose a discoverable attribute on the cloud provider’s **VLAN Type** call. The default value is **VLAN** and cloudshell permits VLAN ids in the 2-4096 range. If the **VLAN Type** attribute is set to **VXLAN**, CloudShell will permit VLAN ids to be allocated in the 2-16,000,000 range.
     
-- *customAttributes* is a list of special attributes for a specific action. The *setVlan* action can get a custom attribute called **Vnic Name**. When this attribute exists, we can use it in custom logic that will allocate a specific VNIC to the App’s VM. For example, the **Vnic Name** value is 1 and the cloud provider shell needs to create the VLAN connection on eth1. [Code example](https://github.com/QualiSystems/Custom-L2-Cloud-Provider-Shell-Example/blob/ac94224fd2368aaa9b589bcdfd30e449a53c90ce/src/heavenly_cloud_service_wrapper.py#L299).
+- *customAttributes* is a list of special attributes for a specific action. The *setVlan* action can get a custom attribute called **vNIC Name**. When this attribute exists, we can use it in custom logic that will allocate a specific VNIC to the App’s VM. For example, the **vNIC Name** value is 1 and the cloud provider shell needs to create the VLAN connection on eth1. [Code example](https://github.com/QualiSystems/Custom-L2-Cloud-Provider-Shell-Example/blob/ac94224fd2368aaa9b589bcdfd30e449a53c90ce/src/heavenly_cloud_service_wrapper.py#L299).
     
 
 **removeVlan action request:**

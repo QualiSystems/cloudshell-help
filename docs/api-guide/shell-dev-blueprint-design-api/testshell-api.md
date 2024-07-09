@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # TestShell API
 
-TestShell API allows you to automate CloudShell (in a similar manner as in [CloudShell Automation API](./cs-automation-api.md)), and is especially useful for writing drivers or tests, and to get information about CloudShell resources and blueprints. Administrators can use this API to create scripts and automations that run administrative tasks, such as moving resources between domains or updating relationships between user groups.
+TestShell API allows you to automate CloudShell (in a similar manner as in [CloudShell Automation API](./cs-automation-api.md)), and is especially useful for writing drivers or tests, and to get information about CloudShell resources and blueprints. Administrators can use this API to create scripts and automation that run administrative tasks, such as moving resources between domains or updating relationships between user groups.
 
 The TestShell API library is the main library of the lab management API. It supports most of the actions available in CloudShell Portal and in Resource Manager. The default port for TestShell API Library and TestShell C# API in the Quali Server is 8028. The default port for TestShell XML RPC API and TestShell TCL API in the Quali Server is 8029.
 

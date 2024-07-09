@@ -224,6 +224,6 @@ JSON string contains single *CleanupSandboxInfra* action.
     
 2. [Retrieve the CleanupSandboxInfra action](https://github.com/QualiSystems/Custom-L3-Cloud-Provider-Shell-Example/blob/4666a14a0634e82a01692a60a3da1314cd4d863c/src/driver.py#L286-L290).
     
-    \* [Clean the sandbx-created infrastructure resources and return a success result](https://github.com/QualiSystems/Custom-L3-Cloud-Provider-Shell-Example/blob/4666a14a0634e82a01692a60a3da1314cd4d863c/src/heavenly_cloud_service_wrapper.py#L477-L479).
+    \* [Clean the sandbox-created infrastructure resources and return a success result](https://github.com/QualiSystems/Custom-L3-Cloud-Provider-Shell-Example/blob/4666a14a0634e82a01692a60a3da1314cd4d863c/src/heavenly_cloud_service_wrapper.py#L477-L479).
     
 3. [Return result](https://github.com/QualiSystems/Custom-L3-Cloud-Provider-Shell-Example/blob/4666a14a0634e82a01692a60a3da1314cd4d863c/src/driver.py#L296).

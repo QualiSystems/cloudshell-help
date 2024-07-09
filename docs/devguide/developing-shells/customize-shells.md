@@ -407,7 +407,7 @@ In the `drivermetadata.xml` file, add a category for the command and a display
 </Category>
 ```
 
-In a CloudShell sandbox, hover over the resource and click **Commmands**. The command is displayed in the resource’s commands pane.
+In a CloudShell sandbox, hover over the resource and click **Commands**. The command is displayed in the resource’s commands pane.
 
 ![](/Images/Devguide-shells/Customizing-Shells_6_624x377.png)
 
