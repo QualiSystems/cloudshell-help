@@ -34,6 +34,12 @@ Each capability set can specifically allow or block certain capabilities, overri
 
 [Read more here](../admin/setting-up-cloudshell/cloudshell-configuration-options/capabilities/index.md)
 
+### Display attributes in Resource Search directly on cards
+
+[Configure specific attributes](../admin/setting-up-cloudshell/cloudshell-configuration-options/resource-search-customizations.md) to appear directly on resource search results.
+
+![SearchResultsWithAttribute](../../static/Images/Admin-Guide/ResourceSearchCustomization/SearchResultsWithLocation.png)
+
 ### Filter sandboxes by user input and display the user input in Sandboxes Dashboard
 
 - Configure an attribute to be displayed in sandbox dashboard
