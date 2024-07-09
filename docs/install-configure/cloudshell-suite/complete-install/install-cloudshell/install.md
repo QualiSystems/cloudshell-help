@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Install CloudShell
 
-**To install CloudShell Version: 2023.3 GA:**
+**To install CloudShell Version: 2024.1 GA:**
 
 1. From the installation package, double-click the setup.exe file.
 2. If Microsoft .NET Framework 4.7.1 is not installed on your machine, the installation procedure prompts you to install it.
