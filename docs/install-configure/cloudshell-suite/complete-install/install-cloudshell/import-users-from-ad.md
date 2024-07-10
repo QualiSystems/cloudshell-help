@@ -35,7 +35,7 @@ Before importing user definitions from the active directory, ensure that the log
 
 ## Import new users into CloudShell
 
-You can manage the user's setttings in **Resource Management Client** except for the username and password, which are provided by the Active Directory service provider.
+You can manage the user's settings in **Resource Management Client** except for the username and password, which are provided by the Active Directory service provider.
 :::note
 Before importing user definitions from the active directory, the logon user of the server must be in the same domain as the Active Directory.
 :::

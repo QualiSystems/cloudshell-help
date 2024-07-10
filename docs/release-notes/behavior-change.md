@@ -34,7 +34,7 @@ The following list includes capabilities that have been removed from CloudShell 
 
 | Capability | Change Description | Changed in Release |
 | --- | --- | --- |
-| RabbitMQ upgrade and new location | The embedded RabbitMQ will be upgraded to version 3.12.0 and relocated from …\\Cloudshell\\Server\\SandboxService\\RabbitMQ\\rabbitmq\_server\\ to …\\Cloudsell\\Server\\Rabbit. <br/> Any custom settings like password must be manually relocated to the new destination files. Previous versions of RabbitMQ can be uninistalled.  | 2023.2 EA |
+| RabbitMQ upgrade and new location | The embedded RabbitMQ will be upgraded to version 3.12.0 and relocated from …\\Cloudshell\\Server\\SandboxService\\RabbitMQ\\rabbitmq\_server\\ to …\\Cloudshell\\Server\\Rabbit. <br/> Any custom settings like password must be manually relocated to the new destination files. Previous versions of RabbitMQ can be uninstalled.  | 2023.2 EA |
 | Partial search in sandboxes dashboard | The **Sandboxes** dashboard does not support searching by partial sandbox id. | 2021.2 EA |
 | Blueprint Build Type - Deprecation | It is no longer possible to reserve blueprints of type _Build_. | 2020.2 GA |
 | Licensing |  As of version 9.3, customers that have a Team Tier license will not be able to:  <ul><li> 1.  Have more than 50 concurrent licenses </li><li> 2.  Use white labeling </li><li> 3.  SSO to the system </li></ul> | 9.3 GA |

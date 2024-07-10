@@ -12,7 +12,7 @@ After you configure the log4net appenders, install and configure Elastic Stack t
 2. If Elasticsearch is installed outside the New Job Scheduling Kubernetes cluster, ensure connectivity between Elasticsearch and the cluster.
 3. Install FileBeat version 7.14 as explained in this official Elastic doc: [https://www.elastic.co/guide/en/beats/filebeat/current/running-on-kubernetes.html](https://www.elastic.co/guide/en/beats/filebeat/current/running-on-kubernetes.html). FileBeat allows the transmission of logs from the Kubernetes-based New Job Scheduling services to Elastic Stack.
     :::tip Important
-    Make sure to specify your Elastisearch host and username/password in the `filebeat-kubernetes.yaml`.
+    Make sure to specify your Elasticsearch host and username/password in the `filebeat-kubernetes.yaml`.
     :::
 4. In the Elastic application, go to **Manage>Index Management** and make sure some log data has been collected.
     

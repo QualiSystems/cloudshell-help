@@ -112,7 +112,7 @@ Make sure that your version of the `Fingerprint.exe` file matches the CloudShell
 To select an installed license file (License file)
 </summary>
 1. For a single station (“seat”) license, you can either specify an installed license, or request a license based on your computer’s ID.
-2. If you already have a license installed, click **Browse** to search for and select the license file. The path to the selected license file is displayed in the s**pecify the location of your license file** field.
+2. If you already have a license installed, click **Browse** to search for and select the license file. The path to the selected license file is displayed in the **specify the location of your license file** field.
     
     ![](/Images/IG2/Configuring-CloudShell-Sandbox_2.png)
 </details>    

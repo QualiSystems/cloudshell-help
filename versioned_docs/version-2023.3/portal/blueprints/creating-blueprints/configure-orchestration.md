@@ -60,7 +60,7 @@ You can also create your own scripts that will setup and teardown a sandbox or c
     :::note Notes
     
     - Setting either of these values to a duration of '0' hours and minutes will disable the **Setup** and **Teardown** script's execution.
-    - The Setup phase is included in the sendbox's duration while Teardown is scheduled to start when the sandbox duration ends.
+    - The Setup phase is included in the sandbox's duration while Teardown is scheduled to start when the sandbox duration ends.
     - The estimated Setup duration will allow the Setup process to run as long as it needs to.
     - If the Teardown process takes longer than the Teardown's defined duration, it will be cancelled in both regular and Job Scheduling sandboxes. This is the designed behavior in order to ensure that any sandboxes scheduled ahead will start on time. The Teardown duration defined in the blueprint should be longer so it will allow the Teardown script to complete in time.
     :::
