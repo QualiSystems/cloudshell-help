@@ -570,7 +570,7 @@ The App template defines the settings and configurations of the VM to be deploye
             
             - To use parameters, specify the parameter name in curly brackets (for example: **\{branch\}**).
             - If the App has this parameter, CloudShell will replace the **\{branch\}** with its value during execution.
-            - If the parameter is missing, CloudShell will replace **\{branch\}** with emptystring.
+            - If the parameter is missing, CloudShell will replace **\{branch\}** with an empty string.
             - If you are using a global input, customers would be well advised to set a default value on the global input
             :::
             **For GitHub, specify the raw URL. For example:**

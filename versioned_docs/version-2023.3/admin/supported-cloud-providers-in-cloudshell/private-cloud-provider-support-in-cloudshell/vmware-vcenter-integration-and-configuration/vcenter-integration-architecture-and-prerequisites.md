@@ -67,7 +67,7 @@ Please consult your resident vSphere expert before performing these configuratio
 
 ### VMware
 
-- Datacenter: Since CloudShell does not provide out-of-the-box support for connectivity between VMs on multiple datacenters, it is recommeded to designate a single datacenter to be used for CloudShell App deployments. The datacenter doesn't have to be dedicated only to CloudShell activity.
+- Datacenter: Since CloudShell does not provide out-of-the-box support for connectivity between VMs on multiple datacenters, it is recommended to designate a single datacenter to be used for CloudShell App deployments. The datacenter doesn't have to be dedicated only to CloudShell activity.
     
     - Host cluster – including all ESXi hosts (1 or more) to be managed by CloudShell
     - Datastore or datastore (DS) cluster that includes all data stores (1 or more) to be managed by CloudShell:
