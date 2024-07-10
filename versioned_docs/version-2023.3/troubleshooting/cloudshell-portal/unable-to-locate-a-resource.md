@@ -71,7 +71,7 @@ When searching in CloudShell Portal for a resource to add to a blueprint or sand
 
 **To sync the search engine with the database, reset the resource indexing in one of two ways:**
 
-1. Using CloudShell Montior:
+1. Using CloudShell Monitor:
     1. Open CloudShell Monitor.
     2. Select the **Quali Server** component.
     3. In the right pane, click the **Search** tab.
@@ -79,7 +79,7 @@ When searching in CloudShell Portal for a resource to add to a blueprint or sand
         
         ![](/Images/Troubleshoot/LogMonitor-QualiServer.png)
         
-        When refresh has finished, the status will change to **Completed** and the number of refreshed resources is inidicated.
+        When refresh has finished, the status will change to **Completed** and the number of refreshed resources is indicated.
         
 2. Using CloudShell configuration:
     

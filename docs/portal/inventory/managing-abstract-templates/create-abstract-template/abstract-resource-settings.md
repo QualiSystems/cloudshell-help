@@ -142,14 +142,14 @@ In the example below, you can see the Juniper switch abstract resource structure
 :::
 ### Connectivity
 
-Unless the main abstract resource is also connectible (doubles as a port), adding abstract sub-resources is crucial in order to later define connectivity with other resources (abstract or specific) in the blueprint.
+Unless the main abstract resource is also connectable (doubles as a port), adding abstract sub-resources is crucial in order to later define connectivity with other resources (abstract or specific) in the blueprint.
 
 ![](/Images/CloudShell-Portal/Lab-Management/Working-with-Resources/Connectivity.png)
 
 Creating connectivity requirements between an abstract resource and another endpoint in the blueprint diagram follows the same process as with any other resource. However, the following need to be considered:
 
 - CloudShell does not take into account VLAN connectivity requirements when resolving an abstract resource in the sandbox. It is therefore recommended to use physical layer connectivity for connections involving one or more abstract resources. For additional information, see [Add Physical Network Connectivity Requirements](../../../sandboxes/sandbox-workspace/add-connectivity/add-physical-network/add-phy-net-req/index.md).
-- Abstract resources and sub-resources assigned a quantity value greater than one are not connectible to other devices in the blueprint via routes.
+- Abstract resources and sub-resources assigned a quantity value greater than one are not connectable to other devices in the blueprint via routes.
 - Shared ports cannot be used for connectivity. Therefore, make sure each sub-resource that represents a port in the abstract resource is unshared. To do this, in the abstract resource dialog box, select the sub-resource and select the **I need the entire resource** option.
     
     ![](/Images/CloudShell-Portal/INVN/AbstractResourceUnshareSubresource.png)
@@ -170,7 +170,7 @@ If the number of required resources is not available, the abstract resource will
     ![](/Images/CloudShell-Portal/Lab-Management/Environments/AbstractResourceQuantity.png)
     
 
-The quantity feature has one important limitation, though. Abstract resources and sub-resources assigned a quantity value greater than one are not connectible to other devices in the blueprint via routes. This limitation should be considered when debating whether to use the 'duplicate' functionality to create a couple of ports of the quantity restriction.
+The quantity feature has one important limitation, though. Abstract resources and sub-resources assigned a quantity value greater than one are not connectable to other devices in the blueprint via routes. This limitation should be considered when debating whether to use the 'duplicate' functionality to create a couple of ports of the quantity restriction.
 
 ## Defining Additional Info
 

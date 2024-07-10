@@ -25,4 +25,4 @@ Quick video showing how to build hybrid environments containing lab equipment an
 <iframe width="70%" height="500px" src="https://www.youtube.com/embed/B7uRHlLwkDo" title="Hybrid Cloud Demo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
-[Check out our Youtube channel for more](https://www.youtube.com/user/QualiSystems)
+[Check out our YouTube channel for more](https://www.youtube.com/user/QualiSystems)

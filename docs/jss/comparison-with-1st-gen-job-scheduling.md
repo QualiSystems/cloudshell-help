@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# Comparison Between Cloudshell's Job Scheduling Offerings
+# Comparison Between CloudShell's Job Scheduling Offerings
 
 This article lists special considerations, known issues and limitations with the New Job Scheduling, and provides a comparison between the two Job Scheduling offerings.
 
