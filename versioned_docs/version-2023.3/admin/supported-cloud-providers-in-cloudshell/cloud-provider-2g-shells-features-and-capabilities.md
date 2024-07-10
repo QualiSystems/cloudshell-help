@@ -231,7 +231,7 @@ This version is supported for CloudShell 2022.1 and up.
             <td>
             - Official release
 :::note    
-Works with cloud provider resource based on vCenter MWare shell 4.1.0 and above.
+Works with cloud provider resource based on vCenter VMWare shell 4.1.0 and above.
 :::
 - Based on python 3
 </td>

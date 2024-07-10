@@ -62,7 +62,7 @@ Example header format:
       "description": "",
       "durationBufferInMinutes": 0,
       "blueprint": {
-        "id": "0efe151f-a581-4e6d-b9e2-7473bbcf297e",
+        "id": "0e1e151f-a581-4e6d-b9e2-7473b1d2297e",
         "name": "CloudShell Sandbox Template",
         "inputs": []
       },
@@ -200,7 +200,7 @@ Example header format:
             <br/>
             For example:
             <br/>
-            http://192.168.30.6/RM/Diagram/Index/<b>0efe151f-a581-4e6d-b9e2-7473bbcf297e</b>?diagramType=Topology
+            http://192.168.30.6/RM/Diagram/Index/<b>0e1e151f-a581-4e6d-b9e2-7473b1d2297e</b>?diagramType=Topology
         - **name**: Blueprint name. (string)
         - **inputs**: Inputs defined on the job's blueprint. (string) (string)
       - **tests**: Details of the job's tests.
