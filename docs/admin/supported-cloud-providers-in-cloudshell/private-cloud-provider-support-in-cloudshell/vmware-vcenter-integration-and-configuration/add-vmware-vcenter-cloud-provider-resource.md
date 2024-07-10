@@ -22,7 +22,7 @@ We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which p
     :::note
     The resource's name has a limit of 100 characters and can only contain alpha-numeric characters, spaces, and the following characters: | . - \_ \] \[
     :::
-6. Enter the **IP Addres**s of the vCenter server that will be used to deploy the virtual machines.
+6. Enter the **IP Address**s of the vCenter server that will be used to deploy the virtual machines.
 7. Click **Create**.
     
     The Resource dialog box is displayed.

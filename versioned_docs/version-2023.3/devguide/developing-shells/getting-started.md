@@ -47,7 +47,7 @@ To learn more about the different versions of the Shells used by CloudShell and 
 To create the Shell project, we’ll use [Shellfoundry](../reference/shellfoundry.md), a CLI tool for generating and distributing Shells.
 
 :::note
-Shellfoundary cannot work if there’s a proxy server present between the shellfoundry machine and the remote Quali Server machine.
+Shellfoundry cannot work if there’s a proxy server present between the shellfoundry machine and the remote Quali Server machine.
 :::
 
 **To install Shellfoundry:**

@@ -5,7 +5,7 @@ sidebar_position: 3
 # Upgrading to a New Version of CloudShell (with the latest HA Plugin)
 
 :::note
-Prior to performing this upgrade procedure, make sure you are familiar with CloudShells's installation procedure. For more information see the ["CloudShell Suite Installation and Configuration"](../../index.md).
+Prior to performing this upgrade procedure, make sure you are familiar with CloudShells' installation procedure. For more information see the ["CloudShell Suite Installation and Configuration"](../../index.md).
 :::
 
 This section describes the required steps to upgrade the Quali server clustering environment to a new version of CloudShell with the latest official HA Plugin.

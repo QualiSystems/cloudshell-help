@@ -8,7 +8,7 @@ Shellfoundry is a command-line utility that allows you to easily create, package
 
 :::note Notes:
 - In order to use shellfoundry on an offline computer, you will need to first download the shellfoundry templates locally and configure shellfoundry to run in offline mode. For details, see [Downloading shellfoundry templates](#downloading-shellfoundry-templates).
-- Shellfoundary cannot work if there’s a proxy server present between the shellfoundry machine and the remote Quali Server machine.
+- Shellfoundry cannot work if there’s a proxy server present between the shellfoundry machine and the remote Quali Server machine.
 :::
 
 ## Usage
@@ -31,7 +31,7 @@ For the version history, click [Version History](#version-history).
 
 If you already have shellfoundry installed on your computer, run this command to upgrade it to the latest version. For more information, see [Installing or Updating Shellfoundry](../developing-shells/getting-started.md#installing-or-updating-shellfoundry).
 :::note-one-line
-**Note:** To prevent backwards compatibility issues, old versions of shellFoundry are disabled with every new shellfoundry release.
+**Note:** To prevent backwards compatibility issues, old versions of Shellfoundry are disabled with every new shellfoundry release.
 :::
 #### Syntax:
 

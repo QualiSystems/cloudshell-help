@@ -50,7 +50,7 @@ The **Azure Resource Template** deployment process creates the CloudShell manage
         | On Premise CIDR | Optional | The IP range (in CIDR notation) of the private network in which the Quali Server resides (outside of the CloudShell Management VNet). |
         | VPN Address | Optional | The public IP address of the router on the network in which Quali Server resides. |
         | Sandbox Vnet CIDR | Optional | The IP range (in CIDR notation) to be used for the Sandbox VNet. |
-        | Sandbox Vnet Subnet CIDR | Optional | The IP range (in CIDR notation) of the deafult subnet that will be created for the Sandbox VNet. This range must be included in the Sandbox VNet’s range. Note that after the template is deployed you can delete this redundant subnet manually. |
+        | Sandbox Vnet Subnet CIDR | Optional | The IP range (in CIDR notation) of the default subnet that will be created for the Sandbox VNet. This range must be included in the Sandbox VNet’s range. Note that after the template is deployed you can delete this redundant subnet manually. |
         
 7. Click **Review + create**, and then **Create**.
     

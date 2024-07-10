@@ -11,7 +11,7 @@ In this section, we’ll look at different recipes for creating and using CloudS
 CloudShell currently supports two different sets of APIs which can be used to automate and integrate Sandboxes with DevOps.
 
 - The CloudShell Automation API (cloudshell\-automation-api package) - This Python package contains a comprehensive set of APIs for anything from managing inventory and connections to administrating users and groups as well as managing sandboxes and blueprints. The package allows developers to use the TestShell API in shell drivers and Python scripts.
-- The CloudShell Sandbox APIs - This RESTful API is intended for automating the consumption of sandboxes oustide of CloudShell. As such, it provides a specific set of commands focused on the workflow of starting and ending sandboxes, and running automation.
+- The CloudShell Sandbox APIs - This RESTful API is intended for automating the consumption of sandboxes outside of CloudShell. As such, it provides a specific set of commands focused on the workflow of starting and ending sandboxes, and running automation.
 
 ### Which API to choose?
 

@@ -66,7 +66,7 @@ We strongly recommend using the new and improved [AWS 2nd Gen shell](https://git
             </tr>
             <tr>
                 <td>Instance Type</td>
-                <td>The instance type to be used for the execution server and QuailX instances. The minimum recommended instance type is c4.large.</td>
+                <td>The instance type to be used for the execution server and QualiX instances. The minimum recommended instance type is c4.large.</td>
             </tr>
             <tr>
                 <td>High Availability Mode</td>

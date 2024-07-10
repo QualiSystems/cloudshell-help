@@ -544,7 +544,7 @@ def GetVmDetails(self, context, requests, cancellation_context):
     
 - reservation – reservation details
     
-- connectors – details of any visual connectors between the Cloud Provider App and other endppoints in the sandbox
+- connectors – details of any visual connectors between the Cloud Provider App and other endpoints in the sandbox
     
 
 [This Github Sample](https://github.com/QualiSystems/cloudshell-shell-core/blob/36009fdec45134ae38cb9273328b7686be66e553/cloudshell/shell/core/driver_context.py) is by [QualiSystems](https://github.com/QualiSystems)

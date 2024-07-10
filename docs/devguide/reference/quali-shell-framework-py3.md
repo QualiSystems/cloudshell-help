@@ -116,7 +116,7 @@ For reference, see [cisco\_snmp\_handler](https://github.com/QualiSystems/cloud
 
 ## Flows
 
-A flow is an organized sequence of Command Actions. Each flow has interfaces, which contain commands that are triggered by the resource driver. All the base flows are located in the [cloudshell\-shell\-flows](https://github.com/QualiSystems/cloudshell-shell-flows/tree/dev/cloudshell/shell/flows) Python package, except for the connectivity flow which is detailed below. They are based on the BaseFlow interfaces, which are also located in the corresponding packages (*cloudshell\-shell\-flows* or *cloudshel-shell\-connectivity-flow*).
+A flow is an organized sequence of Command Actions. Each flow has interfaces, which contain commands that are triggered by the resource driver. All the base flows are located in the [cloudshell\-shell\-flows](https://github.com/QualiSystems/cloudshell-shell-flows/tree/dev/cloudshell/shell/flows) Python package, except for the connectivity flow which is detailed below. They are based on the BaseFlow interfaces, which are also located in the corresponding packages (*cloudshell\-shell\-flows* or *cloudshell-shell\-connectivity-flow*).
 
 This is an abstract class that includes generic implementations for preparing and validating the required parameters. For example, when running the Save command in CloudShell Portal, the flow must validate the folder path provided by the sandbox end-user.
 

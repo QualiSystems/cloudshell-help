@@ -10,9 +10,9 @@ To add support for L3 subnet connectivity in a custom cloud provider, we’ll ne
 
 - *PrepareSandboxInfra* is used to prepare the infrastructure required for a sandbox operating with L3 connectivity.
     
-- *Deploy* should be extended to support *connetToSubnet* action requests.
+- *Deploy* should be extended to support *connectToSubnet* action requests.
     
-- *CleanupSandboxInfra* cleans any sandbox-level entities created in the cloud provider, usualy entities created by the *PrepareSandboxInfra* command. This is the last command to be called in the orchestration flow.
+- *CleanupSandboxInfra* cleans any sandbox-level entities created in the cloud provider, usually entities created by the *PrepareSandboxInfra* command. This is the last command to be called in the orchestration flow.
     
 
 ## PrepareSandboxInfra method
@@ -71,7 +71,7 @@ def PrepareSandboxInfra(self, context, request, cancellation_context)
     
 - reservation - current reservation details
     
-- connectors – details of any visual connectors between the Cloud Provider App and other endppoints in the sandbox.
+- connectors – details of any visual connectors between the Cloud Provider App and other endpoints in the sandbox.
     
 
 [This Github Sample](https://github.com/QualiSystems/cloudshell-shell-core/blob/36009fdec45134ae38cb9273328b7686be66e553/cloudshell/shell/core/driver_context.py) is by [QualiSystems](https://github.com/QualiSystems)
@@ -194,7 +194,7 @@ def CleanupSandboxInfra(self, context, request):
     
 - reservation - current reservation details
     
-- connectors – details of any visual connectors between the Cloud Provider App and other endppoints in the sandbox.
+- connectors – details of any visual connectors between the Cloud Provider App and other endpoints in the sandbox.
     
 
 [This Github Sample](https://github.com/QualiSystems/cloudshell-shell-core/blob/36009fdec45134ae38cb9273328b7686be66e553/cloudshell/shell/core/driver_context.py) is by [QualiSystems](https://github.com/QualiSystems)

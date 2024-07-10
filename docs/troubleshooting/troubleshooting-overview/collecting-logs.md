@@ -65,7 +65,7 @@ You will need the logs from the Quali Server machine and the relevant client mac
     | TestShell QSMQ Server | File folder |
     | TestShell Studio | File folder |
     | RunningProcesses.txt | Text Document |
-    | SytemInfo.exe.txt | Text Document |
+    | SystemInfo.exe.txt | Text Document |
     | SystemInformation.txt | Text Document |
     | QualisystemsRegistry.txt | Text Document |
     | InstallInfo.txt | Text Document |
@@ -175,7 +175,7 @@ journalctl -u qualix-guacd
 
 ### Docker logs (QualiX 5.0 and above)
 
-- Get logs of quacamole:
+- Get logs of guacamole:
     
     ```javascript
     docker logs -f qualix-guacamole

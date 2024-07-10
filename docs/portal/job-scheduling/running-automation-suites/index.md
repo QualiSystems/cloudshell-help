@@ -3,7 +3,7 @@
 There are three types of automation suites that can be run: automation suite templates that can be run multiple times, customized versions of an automation suite template, and an ad-hoc automation suite which you define on the fly and run once.
 
 :::note
-Ad hoc automation suites are available for all user types while automation suite templates are only accessible to admins and to non-admin users that have permission to access those templates.
+Ad-hoc automation suites are available for all user types while automation suite templates are only accessible to admins and to non-admin users that have permission to access those templates.
 :::
 
 These are explained in detail in the following articles:

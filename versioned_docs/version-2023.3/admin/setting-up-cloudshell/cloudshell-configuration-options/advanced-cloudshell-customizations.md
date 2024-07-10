@@ -1840,7 +1840,7 @@ Starting with 2022.1, the **Output** console opens whenever a new sandbox event 
 
 ### Enabling users to create ad-hoc sandboxes
 
-Administrators can enable CloudShell users to start a new sandbox from scratch (ad-hoc). Ad hoc sandboxes can be based on existing blueprints or by starting a blank sandbox, to which components such as resources and services can be added.
+Administrators can enable CloudShell users to start a new sandbox from scratch (ad-hoc). Ad-hoc sandboxes can be based on existing blueprints or by starting a blank sandbox, to which components such as resources and services can be added.
 
 By default, sandboxes can only be created from existing blueprints.
 :::note

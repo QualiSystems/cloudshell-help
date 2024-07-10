@@ -8,7 +8,7 @@ sidebar_position: 2
 
 An asset is a script that runs automation in CloudShell sandboxes. CloudShell supports two types of scripts:
 
-- **Python scripts** that run on the resource/App/bluperint level: A script is a single command on the blueprint or resource/App level. You can add many scripts to your blueprint or resources. CloudShell runs the scripts, which actually are processed in an external environment such as Python, which then returns the results to CloudShell.
+- **Python scripts** that run on the resource/App/blueprint level: A script is a single command on the blueprint or resource/App level. You can add many scripts to your blueprint or resources. CloudShell runs the scripts, which actually are processed in an external environment such as Python, which then returns the results to CloudShell.
     
 *Sandbox environment automation and enhanced orchestration is available with CloudShell Premium Tier.*
     

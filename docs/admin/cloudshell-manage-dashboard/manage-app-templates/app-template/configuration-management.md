@@ -3,7 +3,7 @@ sidebar_position: 3
 hide_table_of_contents: true
 ---
 
-# App Configuraion Management Settings
+# App Configuration Management Settings
 
 When adding or editing an App, click **Configuration Management** and configure the application to be installed on the VM
 
