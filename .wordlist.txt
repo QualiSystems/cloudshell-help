@@ -1540,10 +1540,12 @@ Docusaurus
 ngnix
 mongo
 Qwer
-gdi32.dll
+gdi
 xxxx
 XXXX
 SavedSandboxes
 unassociated
 sessionState
 multiline
+GWithAutoload
+aaa
