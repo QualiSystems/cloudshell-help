@@ -42,7 +42,7 @@ The OpenStack 2<sup>nd</sup> Gen cloud provider enables the deployment of OpenSt
             <tr>
                 <td>Controller URL</td>
                 <td>
-                OpenStack Keystone Controller URL endpoint address. For example: http://controler:5000/v3.
+                OpenStack Keystone Controller URL endpoint address. For example: http://controller:5000/v3.
 
     Displayed in OpenStack portal>**API Access** page>**Identity** value).
                 </td>

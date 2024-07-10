@@ -1838,15 +1838,15 @@ Starting with 2022.1, the **Output** console opens whenever a new sandbox event 
 2. Save the file.
 3. Restart the **CloudShell Portal IIS** service.
 
-### Enabling users to create ad hoc sandboxes
+### Enabling users to create ad-hoc sandboxes
 
-Administrators can enable CloudShell users to start a new sandbox from scratch (ad hoc). Ad hoc sandboxes can be based on existing blueprints or by starting a blank sandbox, to which components such as resources and services can be added.
+Administrators can enable CloudShell users to start a new sandbox from scratch (ad-hoc). Ad hoc sandboxes can be based on existing blueprints or by starting a blank sandbox, to which components such as resources and services can be added.
 
 By default, sandboxes can only be created from existing blueprints.
 :::note
-Apps based on a public cloud provider, such as AWS EC2 and Azure, cannot be used when creating an ad hoc sandbox. For additional information, see [Apps in Blueprints](../../../portal/blueprints/creating-blueprints/apps/).
+Apps based on a public cloud provider, such as AWS EC2 and Azure, cannot be used when creating an ad-hoc sandbox. For additional information, see [Apps in Blueprints](../../../portal/blueprints/creating-blueprints/apps/).
 :::
-**To enable users to create ad hoc sandboxes:**
+**To enable users to create ad-hoc sandboxes:**
 
 1. Open the C:\Program Files (x86)\QualiSystems\CloudShell\Server\customer.config file, and add the following key:
     
@@ -1955,7 +1955,7 @@ This does not apply to "External" users, which do not have blueprint "Create" an
 
 To avoid unintended stops of a persistent sandbox by non-admin users, while still permitting them to create or be designated as permitted users in such sandboxes, you can activate the following key. Enabling this key restricts the ability to stop a persistent sandbox solely to domain admin and system admin users. As a result, other users, including sandbox owners, won't have the permission to stop it.
 
-**To block non-admin users (even owners) from ending persistent sandboexs:**
+**To block non-admin users (even owners) from ending persistent sandboxes:**
 
 1. Open the `C:\Program Files (x86)\QualiSystems\CloudShell\Server\customer.config` file, and add the following key:
     
@@ -2122,7 +2122,7 @@ The default is 10,000.
 1. Open the appropriate file:
     
     - For reports created in TestShell Studio and Runner: `C:\Program Files (x86)\QualiSystems\TestShell\Studio\customer.config` file.
-    - For reports created in CloudShell Portall automation suites: `C:\Program Files (x86)\QualiSystems\CloudShell\Portal\customer.config` file.
+    - For reports created in CloudShell Portal automation suites: `C:\Program Files (x86)\QualiSystems\CloudShell\Portal\customer.config` file.
 2. Add the following key:
     
     `<add key="MaxReportStepCount" value="10000"/>`
@@ -2258,7 +2258,7 @@ As the user searches the resources database, automatic attribute filters appear 
 
 **To control the maximum number of possible values per attribute:**
 
-1. Open the `C:\Program Files (x86)\QualiSystems\CloudShell\Server\customer.config` file, and addAdd the following key and set the value (the default is 5):
+1. Open the `C:\Program Files (x86)\QualiSystems\CloudShell\Server\customer.config` file, and add the following key and set the value (the default is 5):
     
     `<add key="NumberOfTopAttributeValues" value="5"/>`
     

@@ -4,13 +4,13 @@ sidebar_position: 3
 
 # Running AdHoc Automation Suites
 
-Ad hoc automation suites can be used to define and execute an automation suite on the fly. Ad hoc suites are intended for one time use and therefore do not have recurrence settings or the capability to publish inputs. The job and test results are saved in the ad hoc automation suite's execution history, but the ad hoc suite's settings are not saved and cannot be reused.
+Ad hoc automation suites can be used to define and execute an automation suite on the fly. Ad hoc suites are intended for one time use and therefore do not have recurrence settings or the capability to publish inputs. The job and test results are saved in the ad-hoc automation suite's execution history, but the ad-hoc suite's settings are not saved and cannot be reused.
 
 :::note
-Regular users who are permitted to access a test can run it as part of an ad hoc suite. The test is not visible to users who are not permitted to view and run it. For information about adding permitted users to a test, see Adding users and groups to a test.
+Regular users who are permitted to access a test can run it as part of an ad-hoc suite. The test is not visible to users who are not permitted to view and run it. For information about adding permitted users to a test, see Adding users and groups to a test.
 :::
 
-**To add an ad hoc automation suite:**
+**To add an ad-hoc automation suite:**
 
 1. In the **Executions** page, in the **AdHoc** automation suite's row, click **Run**.    
 2. In the **Name** field, enter a name for the suite.

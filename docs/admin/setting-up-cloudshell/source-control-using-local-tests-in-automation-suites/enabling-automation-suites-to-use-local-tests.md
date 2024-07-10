@@ -111,7 +111,7 @@ For example:
         <tr>
             <td>`LocalEnvironmentGetBatchFileOutPutPath`</td>
             <td>
-            Set the path to the file that will contain the log files and outputs of the **Update local tests** process. CloudShell will overwritethe log file every time the admin initiates the process.
+            Set the path to the file that will contain the log files and outputs of the **Update local tests** process. CloudShell will overwrite the log file every time the admin initiates the process.
 
 For example:
 

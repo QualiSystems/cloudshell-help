@@ -361,7 +361,7 @@ CloudShell supports SAML v2.0. If you encounter an error, please contact your SA
 		</tr>
 	</tbody>
 </table>
-## SAML SSO – Configure the HTTP method to use when issuing the SAML request ot the Identity Provider
+## SAML SSO – Configure the HTTP method to use when issuing the SAML request to the Identity Provider
 <table>
 	<tbody>
 		<tr>

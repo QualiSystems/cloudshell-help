@@ -112,7 +112,7 @@ sidebar_position: 1
         <key name="RDP - ReadWrite" pattern="http://<Qualix IP>/remote/#/client/c/rdp{qid}shared?qtoken={qtoken}&amp;hostname={Address}&amp;protocol=rdp&amp;port=3389&amp;username={User}&amp;password={Password}&amp;security=any&amp;ignore-cert=true&amp;shared=true&amp;readonly=false" icon-key="RDP"/>
         ```
         
-    3. In each link, eplace `<QualiX IP>` with the QualiX Server hostname or IP address.
+    3. In each link, replace `<QualiX IP>` with the QualiX Server hostname or IP address.
 3. Save the file.
 4. Restart the **Quali Server** service.
 5. In Resource Manager Client, create a user for the trainee with access to the appropriate domain.
