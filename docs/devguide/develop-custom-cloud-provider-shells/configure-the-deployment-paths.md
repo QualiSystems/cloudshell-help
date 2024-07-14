@@ -29,7 +29,7 @@ Let’s start by configuring a new deployment path.
     ![Resource information](/Images/Devguide-cloud-providers/Configuring-Deployment-Paths_624x380.png)
     
 
-We can also change the icon of the deployment path by placing the new image file in the **Deployments** folder and replacing **shell-icon.png** in the yaml’s `artifacts:` section with the new file name.
+We can also change the icon of the deployment path by placing the new image file in the **Deployments** folder and replacing **shell-icon.png** in the yaml's `artifacts:` section with the new file name.
 
 For example, setting image file “my-icon.png”:
 

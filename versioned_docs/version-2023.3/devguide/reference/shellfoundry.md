@@ -41,7 +41,7 @@ python -m pip install shellfoundry ––upgrade
 
 ### Configuring CloudShell settings
 
-(Required) This command sets the Quali Server settings and user access credentials in Shellfoundry. Note that in offline mode, the `shellfoundry list` command lists the shell templates residing locally in the folder defined in the shellfoundry config’s template\_location attribute. For more information, see [Configuring CloudShell Connection Settings](../developing-shells/getting-started.md#configuring-cloudshell-connection-settings).
+(Required) This command sets the Quali Server settings and user access credentials in Shellfoundry. Note that in offline mode, the `shellfoundry list` command lists the shell templates residing locally in the folder defined in the shellfoundry config's template\_location attribute. For more information, see [Configuring CloudShell Connection Settings](../developing-shells/getting-started.md#configuring-cloudshell-connection-settings).
 
 #### Syntax:
 
@@ -245,7 +245,7 @@ shellfoundry delete "Juniper JunOS Switch Shell 2G"
 
 This command lists the 1st and 2nd generation Shell templates you can use for your new Shell. For more information, see [Modeling Shells with TOSCA](../developing-shells/modeling-shells-with-tosca.md).
 
-Note that in offline mode, the command lists the shell templates residing locally in the folder defined in the shellfoundry config’s `template_location` attribute.
+Note that in offline mode, the command lists the shell templates residing locally in the folder defined in the shellfoundry config's `template_location` attribute.
 
 #### Syntax:
 

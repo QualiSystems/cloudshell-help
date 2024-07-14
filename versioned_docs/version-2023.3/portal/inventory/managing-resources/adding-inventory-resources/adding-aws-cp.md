@@ -168,7 +168,7 @@ We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which p
             <td>Shared VPC ID</td>
             <td>AWS 2<sup>nd</sup> Gen shell only</td>
             <td>
-                (Mandatory for Shared VPC mode) Shared VPC’s ID (can be found in the output of the shared VPC CloudFormation stack, in the **SharedVPCId** key). For example: `vpc-0bf24b1ebrd855e30`.
+                (Mandatory for Shared VPC mode) Shared VPC's ID (can be found in the output of the shared VPC CloudFormation stack, in the **SharedVPCId** key). For example: `vpc-0bf24b1ebrd855e30`.
             </td>            
         </tr>
         <tr>
