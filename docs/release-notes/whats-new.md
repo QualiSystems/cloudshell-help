@@ -2,21 +2,56 @@
 sidebar_position: 2
 ---
 
-What's New in Version 2023.3
+What's New in Version 2024.1
 ============================
 
 ## Features and enhancements
 
 This release includes the following features and enhancements.
 
-### CloudShell Events to Message Queue
+### Assembly Lab
 
-CloudShell can now send asynchronous events to a message queue to be consumed and handled by custom implementations. For details, please reach out to your account manager.
+A radically different mode of operation for Cloudshell is now available!
 
-### Password Policy
+- Manage devices on a part by part basis
+    - Move sub resources from one device to another
+    - Solve abstracts using parts from different devices
 
-We are introducing a new feature that allows CloudShell administrators to configure a password policy for enhanced security. This policy enables the definition of specific criteria for password strength when Single Sign-On (SSO) is not in use. For details, see [Setting password policies for CloudShell user accounts](../admin/setting-up-cloudshell/cloudshell-configuration-options/advanced-cloudshell-customizations.md#setting-password-policies-for-cloudshell-user-accounts).
+- Sandboxes can be partially solved by algorithm and partially by human involvement
+    - Select solutions for abstract requests
+    - Change solutions
 
-### Brute-Force Protection on Login
 
-Introducing 'Brute-Force Protection' on Login for enhanced security. This feature applies exponential delays after defined failed login attempts. Enhance your system's security with proactive measures against brute force attacks. For details, see [Enabling brute-force protection for logins](../admin/setting-up-cloudshell/cloudshell-configuration-options/advanced-cloudshell-customizations.md#enabling-brute-force-protection-for-logins).
+#### For more information on Assembly lab, follow these links
+
+- [Assembly Lab Overview](../admin/setting-up-cloudshell/cloudshell-configuration-options/assembly-lab/index.md)
+- [Configure an Assembly Lab domain](../admin/setting-up-cloudshell/cloudshell-configuration-options/assembly-lab/configure-assembly-lab-domain.md)
+
+### Capabilities
+
+Cloudshell's RBAC implementation, you can now associate user groups with capability sets.
+Each capability set can specifically allow or block certain capabilities, overriding the defaults provided by the group role.
+
+[Read more here](../admin/setting-up-cloudshell/cloudshell-configuration-options/capabilities/index.md)
+
+### Display attributes in Resource Search directly on cards
+
+[Configure specific attributes](../admin/setting-up-cloudshell/cloudshell-configuration-options/resource-search-customizations.md) to appear directly on resource search results.
+
+![SearchResultsWithAttribute](../../static/Images/Admin-Guide/ResourceSearchCustomization/SearchResultsWithLocation.png)
+
+### Filter sandboxes by user input and display the user input in Sandboxes Dashboard
+
+- Configure an attribute to be displayed in sandbox dashboard
+- Show only sandboxes which passed a particular value
+
+![Sandbox Dashboard Customization](../../static/Images/Admin-Guide/CustomizingSandboxesDashboard/filter.gif)
+
+[For more details](../admin/setting-up-cloudshell/cloudshell-configuration-options/customizing-sandboxes-dashboard.md)
+
+### Minimum Lead Time
+
+Configure a domain to set a minimum lead time for reserving Sandboxes.
+When configured, sandboxes can only be ordered for a future date.
+
+To configure it, set MinimumLeadTimeMinutes using [this](../api-guide/cs-admin-rest-api/edit-domain.md) API call.

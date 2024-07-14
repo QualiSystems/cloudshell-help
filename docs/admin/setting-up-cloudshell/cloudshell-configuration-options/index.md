@@ -9,3 +9,4 @@ The customer configuration keys enable you to customize different aspects of the
 - [Advanced CloudShell Customizations](./advanced-cloudshell-customizations.md)
 - [Customer Configuration Keys Repository](./customer-configuration-keys-repository/index.md)
 - [Rebranding CloudShell Portal (White Labeling)](./rebranding-cloudshell-portal-white-labeling.md)
+- [Customizing Sandboxes Dashboard](./rebranding-cloudshell-portal-white-labeling.md)

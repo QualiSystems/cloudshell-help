@@ -62,7 +62,7 @@ const config = {
           },
           routeBasePath: '/',
           sidebarPath: './sidebars.js',
-          includeCurrentVersion: false, //show the Next verions when working locally, this will be changed to false as part of the deployment process
+          includeCurrentVersion: true, //we want to show our next version work in progress
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:

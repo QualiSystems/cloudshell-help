@@ -11,7 +11,7 @@ This release includes the following features and enhancements.
 
 ### CloudShell Events to Message Queue
 
-CloudShell can now send asynchronous events to a message queue to be consumed and handled by custom implementations. For details, please reach out to your account manager.
+CloudShell can now send asynchronous events to a message queue to be consumed and handled by custom implementations. [More details](../admin/cloudshell-event-queue/index.md).
 
 ### Password Policy
 

@@ -121,10 +121,10 @@ An "over the shoulder" connection requires an existing "full access" session to 
 
 1. In REST API, create an access token for the training session:
     
-    1. Open the Training Porta's live documentation page:
+    1. Open the Training Portal's live documentation page:
         
         ```javascript
-        http://[CloudShellPortalAddress]:82/api/explore/#/
+        http://\[CloudShellPortalAddress\]:82/api/explore/#/
         ```
         
     2. Log in to the user's domain.

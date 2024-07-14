@@ -1,6 +1,6 @@
 # CloudShell Suite Installation Overview
 
-This guide provides the installation requirements, hardware and software specifications, and the procedures for installing or upgrading to CloudShell Version: 2023.3 GA.
+This guide provides the installation requirements, hardware and software specifications, and the procedures for installing or upgrading to CloudShell Version: 2024.1 GA.
 
 This guide leads you through the installation wizard and directs you to the configuration options that need to be modified for your particular installation. It includes the following main topics:
 
