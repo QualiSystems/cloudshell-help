@@ -38,7 +38,7 @@ If you need to set or re-set the CloudShell License Server after CloudShell inst
             
             The license token starts with "Quali.com". For example:
             
-            Quali.com-358649-1931B3E97G5347CCA02FC678CC32BD49
+            Quali.com-358649-1931B3E97G5347C2A02FC678CC32B249
             
         2. Click **OK** when you see the registration activation confirmation message.
             
