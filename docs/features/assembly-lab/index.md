@@ -4,35 +4,6 @@
 
 Assembly Lab revolutionizes traditional lab management by introducing a dynamic and flexible system for managing resources and fulfilling orders. Unlike conventional labs where the configuration of devices remains static, Assembly Lab enables the fluid movement of sub-resources between different resources to meet specific blueprint requirements. This document outlines the core principles, operational workflow, rules, and benefits of the Assembly Lab model.
 
-## Core Principles
-
-### Dynamic Resource Allocation
-
-Assembly Lab operates on the principle of dynamic resource allocation, where sub-resources can be reallocated as needed to fulfill specific orders. This flexibility ensures that the lab can adapt to varying requirements and optimize the use of available resources.
-
-### Resource Fluidity
-
-In contrast to regular lab management, where resources and devices are fixed, Assembly Lab promotes the fluidity of sub-resources. Sub-resources can be moved between different resources to achieve the desired configuration, enhancing the lab's ability to meet diverse and complex requirements.
-
-### Work Orders and Abstract Resources
-
-Each user request is represented by a work order, detailing the set of requirements needed for the desired environment. These requirements are also referred to as abstract resources.
-
-## Configure an Assembly Lab Domain
-
-To leverage the capabilities of Assembly Lab, a domain must be configured to the Assembly Lab domain. Once the domain is configured, all sandboxes created within this domain will adhere to the specific rules of Assembly Lab.
-
-:::note
-Once a domain has been configured as an assembly lab domain, do not try to change it back to a non-assembly lab domain. Assembly Lab domains have a different set of rules for resource management and blueprint resolution which are not compatible with standard domain operation.
-:::
-
-To set a domain to be an Assembly Lab domain, open the [domain's properties page in Resource Management Client](../../../cloudshell-identity-management/cloudshell-domains/domains-window.md).
-
-1. Press Edit next to the domain name.
-2. Tick the checkbox Assemble Lab and press `Ctrl+S`.
-
-![configure domain](../../../static/Images/Admin-Guide/AssembleLab/configure-domain.png)
-
 ## Assembly Lab Rules
 
 ### Route Handling
@@ -55,6 +26,19 @@ If a requirement cannot be met with an entire resource, the system will attempt 
 
 If a requirement involves a port (from the "connectable" family), matching the parent resource will automatically match the child resource. Ports will not be drawn from different resources but from within the same resource where they reside. This rule maintains the logical integrity of connections.
 
+### Abstract Resources Modification
+
+Abstract resources can now also be added directly to a sandbox and modified therein. This allows requirements to change during the lifetime of the sandbox.
+
+### Abstract Quantity
+
+:::warning[Quantity in Abstract Resources is not supported for Assembly Lab]
+:::
+
+### Fixed devices
+
+Fixed devices are never selected as parts, only as complete resources. [Read more](#fixed-devices-1)
+
 ## Operational Workflow
 
 ### Reserving Blueprints
@@ -76,25 +60,6 @@ If the resolution engine cannot match all the requirements, the sandbox environm
 ### Assembling the Environment
 
 The selected resources are assembled step-by-step to match the blueprint. This piecemeal approach ensures that each component is correctly configured and integrated into the final environment.
-
-## Work Order Management
-
-In Assembly Lab, work orders are crucial for managing routes and resources within the sandbox. The work order consists of two main tabs: Resources and Routes.
-
-### Resources Tab
-
-The Resources tab maintains a record for each abstract resource or sub-resource. Each record can have a concrete resource that matches it and a "state" indicating its progress (Not Started, In Progress, Completed).
-
-Until each work order resource has a concrete resource that matches the abstract requirement and is marked as Completed, the sandbox diagram will display the abstract resource rather than the concrete resource.
-
-### Routes Tab
-
-The Routes tab displays either cable routes or logical routes used to apply Layer 1 connectivity.
-
-Each record in the Routes tab represents a single route.
-
-- For cable routes (known as "direct" in the work order), if both work order resources at the terminus have been selected, users can apply "connect" to indicate that the devices have been wired together in the lab (or "disconnect" for the inverse).
-- For Layer 1 routes, users can assign the work order resource to be connected to another device in the lab.
 
 ## Completing Work Order Resources
 
@@ -154,27 +119,16 @@ Sticky notes can be placed in blueprints and sandboxes to clarify requirements a
 
 Lab managers can leave comments on each record in the work order, allowing customers to track progress and stay informed about the status of their requests.
 
-## Benefits of Assembly Lab
+## Fixed Devices
 
-### Increased Flexibility
+Administrators can configure devices to not be used as partial solutions in other devices.
+This is done by adding an boolean attribute with the tag Fixed to resources.
 
-The ability to move sub-resources between different resources provides greater flexibility in managing and fulfilling orders. This ensures that the lab can quickly adapt to changing requirements and optimize the use of available resources.
+Make sure to set this value to True for all resources who are never supposed to be used as parts in other resources.
 
-### Enhanced Efficiency
-
-Piecemeal order resolution allows for more efficient resource allocation and utilization. By assembling environments step-by-step, Assembly Lab can ensure that each component is correctly configured and integrated, reducing the risk of errors and improving overall efficiency.
-
-### Optimized Resource Utilization
-
-The fluid movement of sub-resources ensures that resources are used optimally, minimizing waste and maximizing the lab's capacity to fulfill orders. This leads to cost savings and improved resource management.
-
-### Scalability
-
-Assembly Lab's dynamic and flexible approach makes it highly scalable. The lab can easily expand or contract its operations to meet changing demands, ensuring that it remains responsive and adaptable.
-
-### User Empowerment
-
-By allowing sandboxes to go live even with unmatched requirements, users have the power to make adjustments and optimizations in real-time. This empowers users to take control of their environments and ensure they meet their specific needs.
+:::note
+Fixed resources can never be solutions for requests that are part of a cable route. This is so they maintain their current setup
+:::
 
 ## Conclusion
 
