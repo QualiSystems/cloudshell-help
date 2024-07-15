@@ -1,3 +1,4 @@
+jobs: 2
 matrix:
 - name: Markdown
   aspell:
@@ -5,6 +6,7 @@ matrix:
   dictionary:
     wordlists:
     - .wordlist.txt
+    output: wordlist.dic
     encoding: utf-8
   pipeline:
   - pyspelling.filters.markdown:
@@ -17,4 +19,5 @@ matrix:
       - pre
   sources:
   - '**/*.md'
+  - '**/*.mdx'
   default_encoding: utf-8
