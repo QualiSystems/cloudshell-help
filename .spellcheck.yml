@@ -12,8 +12,12 @@ matrix:
   - pyspelling.filters.markdown:
       markdown_extensions:
         - pymdownx.superfences
-        - markdown.extensions.extra:
-  - pyspelling.filters.url:
+  - pyspelling.filters.context:
+      context_visible_first: true
+      delimiters:    
+      # Ignore URL in hyperlinks [title](url)
+      - open: '\]\('
+        close: '\)'
   - pyspelling.filters.html:
       comments: false
       ignores:
