@@ -38,14 +38,14 @@ Each capability set can specifically allow or block certain capabilities, overri
 
 [Configure specific attributes](../admin/setting-up-cloudshell/cloudshell-configuration-options/resource-search-customizations.md) to appear directly on resource search results.
 
-![SearchResultsWithAttribute](../../static/Images/Admin-Guide/ResourceSearchCustomization/SearchResultsWithLocation.png)
+![SearchResultsWithAttribute](/Images/Admin-Guide/ResourceSearchCustomization/SearchResultsWithLocation.png)
 
 ### Filter sandboxes by user input and display the user input in Sandboxes Dashboard
 
 - Configure an attribute to be displayed in sandbox dashboard
 - Show only sandboxes which passed a particular value
 
-![Sandbox Dashboard Customization](../../static/Images/Admin-Guide/CustomizingSandboxesDashboard/filter.gif)
+![Sandbox Dashboard Customization](/Images/Admin-Guide/CustomizingSandboxesDashboard/filter.gif)
 
 [For more details](../admin/setting-up-cloudshell/cloudshell-configuration-options/customizing-sandboxes-dashboard.md)
 
