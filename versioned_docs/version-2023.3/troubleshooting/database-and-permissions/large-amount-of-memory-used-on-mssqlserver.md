@@ -35,16 +35,16 @@ It is recommended that you refer to the Microsoft website for the most up-to-dat
     1. Connect to your target MS SQL Server instance.
     2. Open a new query page, pointing to "master”(one of the System Databases).
     3. Type/Run the following commands, one at a time:
-        1. sp\_configure 'show advanced options', 1;
-        2. GO
-        3. RECONFIGURE;
-        4. GO
-        5. sp\_configure 'max server memory', XXXX;  
+        1. `sp_configure 'show advanced options', 1;`
+        2. `GO`
+        3. `RECONFIGURE;`
+        4. `GO`
+        5. `sp_configure 'max server memory', XXXX;`  
         :::note
         "XXXX” can be any number up to 17674, i.e. 17.674GB
         :::
-        6. GO
-        7. RECONFIGURE;
-        8. GO
-        9. sp\_configure 'show advanced options', 0;
+        6. `GO`
+        7. `RECONFIGURE;`
+        8. `GO`
+        9. `sp_configure 'show advanced options', 0;`
     4. Exit MS SQL Server Management Studio (you do not need to save anything).
