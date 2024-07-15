@@ -42,8 +42,8 @@ vCenter 5.0.0 and above works only with CloudShell 2022.1 EA and above.
 The new attributes are:
 
 - **Forged Transmits**: (Boolean) Enables to configure the port groups on the virtual switch to allow forged transmits. [VMware Docs](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-7DC6486F-5400-44DF-8A62-6273798A2F80.html) article.
-- **Promiscuous Mode**: (Boolean) Enables to configure the port groups on the virtual switch to allow promiscuous mode. [VMware Docs](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-92F3AB1F-B4C5-4F25-A010-8820D7250350.html?hWord=N4IghgNiBcIAoCcD2BbAlgZwMYFck4wAIBZJAEwFMQBfIA) article
-- **MAC Address Changes**: (Boolean) Enables to configure the port groups on the virtual switch to allow MAC address changes. [VMware Docs](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-942BD3AA-731B-4A05-8196-66F2B4BF1ACB.html?hWord=N4IghgNiBcILIEEDCACBATdAnApgZzxSQAswA7Ac3xAF8g) article
+- **Promiscuous Mode**: (Boolean) Enables to configure the port groups on the virtual switch to allow promiscuous mode. [VMware Docs](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-92F3AB1F-B4C5-4F25-A010-8820D7250350.html) article
+- **MAC Address Changes**: (Boolean) Enables to configure the port groups on the virtual switch to allow MAC address changes. [VMware Docs](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-942BD3AA-731B-4A05-8196-66F2B4BF1ACB.html) article
 - **Switch Name**: (String/Lookup) Allows you to choose the switch to use. The switch can be hard-coded in the attribute or set as a **User input** on the VLAN model, allowing the sandbox end-user to specify the desired switch.
     
     ![](/Images/Admin-Guide/switch-name_2022.2.png)

@@ -1595,3 +1595,9 @@ ReservationCreatedEvent
 ReservationDeleteEvent
 ReservationEndEvent
 ReservationEndTimeChangedEvent
+docusaurus
+DocCardList
+useCurrentSidebarCategory
+sa-east-1
+eu-central-1
+eu-west-1
