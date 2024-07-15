@@ -37,6 +37,9 @@ matrix:
       # Ignore possessive endings
       - open: '(?<=\w)''s(?!\w)'
         close: '\b'
+      # Ignore hex strings
+      - open: '0x[a-fA-F0-9]'
+        close: '[^a-fA-F0-9]'
   - pyspelling.filters.html:
       comments: false
       ignores:
