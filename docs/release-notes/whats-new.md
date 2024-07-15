@@ -51,7 +51,6 @@ Each capability set can specifically allow or block certain capabilities, overri
 
 ### Minimum Lead Time
 
-Configure a domain to set a minimum lead time for reserving Sandboxes.
-When configured, sandboxes can only be ordered for a future date.
+You now have the ability to establish a minimum lead time for reserving Sandboxes within a specific domain. This means that when this setting is configured, any sandbox reservations must be made for a date in the future, not for immediate use.
 
-To configure it, set MinimumLeadTimeMinutes using [this](../api-guide/cs-admin-rest-api/edit-domain.md) API call.
+To implement this, you need to adjust the `MinimumLeadTimeMinutes` parameter via a specific API call. Detailed instructions on how to make this API call can be found in [this guide](../api-guide/cs-admin-rest-api/edit-domain.md).
