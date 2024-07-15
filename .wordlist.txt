@@ -1606,3 +1606,8 @@ AAD
 esn
 DisplayOnSearchCardRule
 SearchResultsWithAttribute
+NX
+Ki
+Ei
+Gi
+Dpa
