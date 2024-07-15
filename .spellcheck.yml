@@ -22,8 +22,8 @@ matrix:
       - open: '[*]+'
         close: '[*]+'
       # Inside HTML tags
-      - open: '(?s)(?P<open>[<])'
-        close: '[>]'
+      #- open: '(?s)(?P<open>[<])'
+      #  close: '[>]'
   - pyspelling.filters.html:
       comments: false
       ignores:
