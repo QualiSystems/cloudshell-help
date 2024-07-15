@@ -22,6 +22,9 @@ matrix:
       # Ignore text between inline back ticks
       - open: '(?P<open>`+)'
         close: '(?P=open)'
+      # Ignore text between quotes
+      - open: '(?P<open>"+)'
+        close: '(?P=open)'
       # Ignore URL in hyperlinks [title](url)
       - open: '\]\('
         close: '\)'
