@@ -30,7 +30,7 @@ This article explains how to save a sandbox.
     
 2. Enter a meaningful **Name**.
     
-    The default is the sandbox name with a "- Save" added to the end of the name. For example: “Traffic Test with additional configurations – Save”.
+    The default is the sandbox name with a "- Save" added to the end of the name. For example: "Traffic Test with additional configurations – Save”.
     
     :::note
     The saved sandbox name has a limit of 60 characters.
@@ -198,7 +198,7 @@ When restoring a saved sandbox, the Restore script will deploy these Apps, even 
 
 - If the VLAN service in the original sandbox is a **VLAN Manual** service, it is copied as is, with the VLAN defined in the service.
     
-    If the VLAN service in the originalting sandbox is a **VLAN Auto** service, it is copied without the allocated VLAN. Therefore, in this case, the restored saved sandbox might get a different VLAN than the one assigned in the original sandbox.
+    If the VLAN service in the original sandbox is a **VLAN Auto** service, it is copied without the allocated VLAN. Therefore, in this case, the restored saved sandbox might get a different VLAN than the one assigned in the original sandbox.
     
     :::note
     If you save a sandbox that has a **VLAN Manual** service, restoring the saved sandbox will fail if the requested VLAN is used in another active sandbox.

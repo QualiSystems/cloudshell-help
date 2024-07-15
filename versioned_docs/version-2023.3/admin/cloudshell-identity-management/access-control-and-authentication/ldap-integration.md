@@ -111,7 +111,7 @@ This procedure requires good working knowledge of LDAP servers.
     <add key="LDAP.UserRootDn" value="dc=maxcrc,dc=com"/>
     <!--Filter for finding user nodes-->
     <add key="LDAP.UsersFilter" value="(&amp;(objectClass=inetOrgPerson))"/>
-    <!--Note – the below attributes “mail” or “uid” must have values in the LDAP.-->
+    <!--Note – the below attributes "mail” or "uid” must have values in the LDAP.-->
     <!--Filter template for finding a specific user node by id, where {0} is the user's unique id-->
     <add key="LDAP.UserFilter" value="(&amp;(objectClass=inetOrgPerson)(uid={0}))"/>
     <!--Filter template for finding a specific user node by e-mail, where {0} is the user's e-mail-->

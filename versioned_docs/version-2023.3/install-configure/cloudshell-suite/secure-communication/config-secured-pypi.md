@@ -21,7 +21,7 @@ In this example, we are using nginx-1.12.2 as this was the latest suitable Windo
     
     The folder should contain the `nginx.exe` file and some other folders with config files and related docs.
     
-3. Make sure you have a certificate pair for SSL connection - a file for the key and a file for the certificate (they can be PEM files). For illustration purposes, we’ll use the names “MyKey.pem” and “MyCert.crt”.
+3. Make sure you have a certificate pair for SSL connection - a file for the key and a file for the certificate (they can be PEM files). For illustration purposes, we’ll use the names "MyKey.pem” and "MyCert.crt”.
 4. Create a new folder, `C:\nginx\nginx-1.12.2\pypi-config`.
 5. Create a new file called `pypiConfig.conf` and save it with this content:
     
@@ -47,7 +47,7 @@ In this example, we are using nginx-1.12.2 as this was the latest suitable Windo
     
     There are many more options that can be done with an nginx configuration, but this is the basic configuration.
     
-    Note that “8036” is the default port for communication between PyPi Server and CloudShell. If you change this value using the `PypiServerPort` key, you must set the same value here.
+    Note that "8036” is the default port for communication between PyPi Server and CloudShell. If you change this value using the `PypiServerPort` key, you must set the same value here.
     
 6. To activate nginx, run the following in command-line:
     
@@ -63,7 +63,7 @@ To verify the configuration is working, open `https://localhost` in your browser
 ## Troubleshooting
 
 - The page in `https://localhost` still indicates that the connection is not secured. To correct this, add the certificate to the local certificate bank on the machine.
-- If the certificates are not valid, try to create them using `openssl` and not `MakeCrt`, and use them as “PEM” files.
+- If the certificates are not valid, try to create them using `openssl` and not `MakeCrt`, and use them as "PEM” files.
 - If you get an error when starting the nginx, check your indentation in the `pypiConfig.conf` file. You can also verify the configuration file by running the following in command-line:
     
     ```javascript

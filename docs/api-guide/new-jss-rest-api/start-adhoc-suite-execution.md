@@ -99,7 +99,7 @@ Suite details. The parameters of the adhoc suite execution method include:
 <summary>Request example</summary>
 ```javascript
 {
-	"name": "my ad hoc robot execution",
+	"name": "my ad-hoc robot execution",
 	"description": "string",
 	"testTypeName": "Robot",
 	"jobs": [

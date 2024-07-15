@@ -39,7 +39,7 @@ This section explains how to indicate that the Execution Server installation has
     **To set a specific Execution Server for Ansible configuration management:**
     
     1. Select the attribute and specify a value.
-    2. Specify the same value on the **Execution Server Selector** attrribute in the cloud provider resource and/or in the **Resource Manager Client \> Configuration Services \> Ansible Configuration** service model.
+    2. Specify the same value on the **Execution Server Selector** attribute in the cloud provider resource and/or in the **Resource Manager Client \> Configuration Services \> Ansible Configuration** service model.
         
         By default, CloudShell will use the Execution Server defined in the cloud provider resource. If it is not available, CloudShell will use the Execution Server defined in the **Ansible Configuration** model. Execution Servers specified on the deployed App shell/resource are not used for configuration management.
         :::note

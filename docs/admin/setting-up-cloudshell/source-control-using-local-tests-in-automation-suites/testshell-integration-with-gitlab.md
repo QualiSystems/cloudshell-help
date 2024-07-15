@@ -8,7 +8,7 @@ This article guides you on how to configure GitLab as the source control solutio
 
 This integration provides test users with the latest version of the desired test(s) and assets and also allows test developers to push updates to GitLab. In this process, you will link your CloudShell clients (CloudShell Portal, TestShell Studio and Runner) and Execution Server(s) to a specific GitLab repository, which will contain the tests and assets, and make them available to these clients.
 :::note
-For brevity, the terms “Portal”, “Studio” and “Runner” are used to denote “CloudShell Portal”, “TestShell Studio” and “TestShell Runner”, respectively.
+For brevity, the terms "Portal”, "Studio” and "Runner” are used to denote "CloudShell Portal”, "TestShell Studio” and "TestShell Runner”, respectively.
 :::
 For this to work, you need to follow these basic steps:
 

@@ -29,7 +29,7 @@ This feature is supported for JIRA version 7.4.0 and above.
         <tr>
             <td>`<add key="JiraBaseUrl" value="<URL>"/>`</td>
             <td>
-            JIRA server base URL. Make sure you include “http://” or https://, as appropriate.
+            JIRA server base URL. Make sure you include "http://” or https://, as appropriate.
 
 For example, http://jira-srv:8080/jira.
             </td>

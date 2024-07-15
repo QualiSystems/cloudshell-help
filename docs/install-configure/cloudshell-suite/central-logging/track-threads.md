@@ -18,7 +18,7 @@ For example:
 ![](/Images/IG2/centalLoggingTraceidFilter.png)
 
 :::warning Limitation
-Some logs are “internal”. In other words, they don’t originate from another service and therefore will either have a unique trace id, maybe even "null". This simply means that these logs are not part of a sequence of calls between different services.
+Some logs are "internal”. In other words, they don’t originate from another service and therefore will either have a unique trace id, maybe even "null". This simply means that these logs are not part of a sequence of calls between different services.
 :::
 ## Log parameters
 

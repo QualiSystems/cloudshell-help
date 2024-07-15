@@ -25,7 +25,7 @@ Additional points to consider when a maintenance window is defined:
 
 ## Setting a maintenance window
 
-The **Maintenence Window** page is only displayed for system administrators in the **Global** domain.
+The **Maintenance Window** page is only displayed for system administrators in the **Global** domain.
 
 **To set a maintenance window:**
 

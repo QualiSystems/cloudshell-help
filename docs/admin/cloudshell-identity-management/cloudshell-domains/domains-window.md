@@ -72,7 +72,7 @@ The **Diagram** page displays the domain's resources and blueprints. You can use
 - Drag and drop resources from the Resource Explorer or from the search results to allocate the resources to the domain.
 - Drag and drop a blueprint from the Resource Explorer to add the blueprint and its associated routes and resources to the domain.
 
-Resource Manager resolves blueprints that are added via the domain diagram. If any of the blueprints's connected resources are connected via an L1 switch or a patch panel, these will be added automatically to the blueprint.
+Resource Manager resolves blueprints that are added via the domain diagram. If any of the blueprints' connected resources are connected via an L1 switch or a patch panel, these will be added automatically to the blueprint.
 
 **To toggle display of the blueprint's L1 switches and patch panels:**
 
@@ -84,4 +84,3 @@ Resource Manager resolves blueprints that are added via the domain diagram. If a
     
     ![](/Images/Admin-Guide/User-Management/The-Domain-window_5.png)
 
-[asdfasdaf](./)

@@ -47,7 +47,7 @@ To learn more about the different versions of the Shells used by CloudShell and 
 To create the Shell project, we’ll use [Shellfoundry](../reference/shellfoundry.md), a CLI tool for generating and distributing Shells.
 
 :::note
-Shellfoundary cannot work if there’s a proxy server present between the shellfoundry machine and the remote Quali Server machine.
+Shellfoundry cannot work if there’s a proxy server present between the shellfoundry machine and the remote Quali Server machine.
 :::
 
 **To install Shellfoundry:**
@@ -88,7 +88,7 @@ In order to use Shellfoundry, we’ll need to first configure your CloudShell co
     
 2. To update a default setting, run the config command with two arguments: the parameter name and the new value.
     
-    For example, changing the username to “John”:
+    For example, changing the username to "John”:
     
     ```python
     shellfoundry config username John
@@ -218,7 +218,7 @@ The Shell is installed in your development CloudShell. We can now create resourc
     
 3. In the **Inventory** dashboard, click **Add New**, select the **LinuxServerShell**.  
     
-4. Provide a name and an address for the shell resource, for example “HelloWorld\_Shell”. For now, since we don’t have an address of an actual server, you can provide any value for the address.  
+4. Provide a name and an address for the shell resource, for example "HelloWorld\_Shell”. For now, since we don’t have an address of an actual server, you can provide any value for the address.  
     
 5. Click **Create**.  
     

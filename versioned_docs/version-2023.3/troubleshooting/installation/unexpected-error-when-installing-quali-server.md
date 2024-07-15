@@ -28,7 +28,7 @@ The Erlang version installed with Quali Server is incompatible with the machine'
 
 ## Solution
 
-To fix this issue, you need to install Erlang version 23.3 (or above) and reconfige RabbitMQ to work with the new version.
+To fix this issue, you need to install Erlang version 23.3 (or above) and reconfigure RabbitMQ to work with the new version.
 
 **To resolve this issue:**
 

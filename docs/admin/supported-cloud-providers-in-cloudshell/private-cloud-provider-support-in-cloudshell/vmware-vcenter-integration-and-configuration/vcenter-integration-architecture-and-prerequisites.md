@@ -67,7 +67,7 @@ Please consult your resident vSphere expert before performing these configuratio
 
 ### VMware
 
-- Datacenter: Since CloudShell does not provide out-of-the-box support for connectivity between VMs on multiple datacenters, it is recommeded to designate a single datacenter to be used for CloudShell App deployments. The datacenter doesn't have to be dedicated only to CloudShell activity.
+- Datacenter: Since CloudShell does not provide out-of-the-box support for connectivity between VMs on multiple datacenters, it is recommended to designate a single datacenter to be used for CloudShell App deployments. The datacenter doesn't have to be dedicated only to CloudShell activity.
     
     - Host cluster – including all ESXi hosts (1 or more) to be managed by CloudShell
     - Datastore or datastore (DS) cluster that includes all data stores (1 or more) to be managed by CloudShell:
@@ -93,4 +93,4 @@ To help you organize your CloudShell activity on vSphere, we've come up with the
 - "Base Templates" folder – for all App templates to be deployed on CloudShell sandboxes:
     - Must have VMware tools installed (needs to be included with image or VM template with which CloudShell creates the App VM)
     - DHCP IP settings
-    - A snapshot called “clean” – after VM is powered off
+    - A snapshot called "clean” – after VM is powered off

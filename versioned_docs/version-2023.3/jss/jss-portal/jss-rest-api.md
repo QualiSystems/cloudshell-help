@@ -37,8 +37,7 @@ To get started, you need to first obtain an accessToken and pass it to the REST 
     
     ![](/Images/JSS/JssAvailableAuthorizations_535x352.png)
     
-3. In the **Value** field, specify **Bearer \<accessToken\>**. For example: "Bearer m\_\_qK-cjl8lvedWbBtJ0PRzkVvbwrmPIq5opAM9cKt0".
-4. Click **Authorize**.
+3. Click **Authorize**.
     
     The **accessToken** is sent with every new request to the server as an authorization header to validate the user.
     

@@ -17,7 +17,7 @@ sidebar_position: 7
 | `script_file_path` | In | Yes | To replace the current script file with another one, specify the full path to the script file (including file name). py files and zip packages are supported. |
 | `version` | In | No | Set a version number for the script |
 | `script_alias` | In | No | Specify an alias for the service |
-| `parameters` | In | No | Specify a list of inputs required by the script. For example: \[“key1, value1”, “key2, value2”\] |
+| `parameters` | In | No | Specify a list of inputs required by the script. For example: \["key1, value1”, "key2, value2”\] |
 | `category` | In | No | Script's category. The script will be arranged under this category in the resource/App/service's Commands pane |
 
 **Sample**:

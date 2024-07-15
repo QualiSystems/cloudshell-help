@@ -11,7 +11,7 @@ This release includes the following features and enhancements.
 
 ### Assembly Lab
 
-A radically different mode of operation for Cloudshell is now available!
+A radically different mode of operation for CloudShell is now available!
 
 - Manage devices on a part by part basis
     - Move sub resources from one device to another
@@ -29,7 +29,7 @@ A radically different mode of operation for Cloudshell is now available!
 
 ### Capabilities
 
-Cloudshell's RBAC implementation, you can now associate user groups with capability sets.
+CloudShell's RBAC implementation, you can now associate user groups with capability sets.
 Each capability set can specifically allow or block certain capabilities, overriding the defaults provided by the group role.
 
 [Read more here](../admin/setting-up-cloudshell/cloudshell-configuration-options/capabilities/index.md)

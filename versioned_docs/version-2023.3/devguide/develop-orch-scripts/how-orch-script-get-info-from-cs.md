@@ -131,7 +131,7 @@ A common use case for a script is to get a list of the different Apps and resour
     session = sandbox.automation_api
     ```
     
-    **sandbox.automation\_api** is a CloudShell API session object. You can use the IDE’s autocomplete capabilities to explore the available functions:
+    **sandbox.automation\_api** is a CloudShell API session object. You can use the IDE's autocomplete capabilities to explore the available functions:
     
     ![Sandbox information](/Images/Devguide-orchestration-scripts/Scripts-Getting-Information_2_624x129.png)
     

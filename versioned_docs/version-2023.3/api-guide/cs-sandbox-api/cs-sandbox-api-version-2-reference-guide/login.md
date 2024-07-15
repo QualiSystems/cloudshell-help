@@ -57,7 +57,7 @@ Example request input for the `login` method in JSON format:
 ### Response
 
 <details>
-<summary>Response exaple</summary>
+<summary>Response example</summary>
 
 The following is a sample authorization token returned by the `login` method:
 

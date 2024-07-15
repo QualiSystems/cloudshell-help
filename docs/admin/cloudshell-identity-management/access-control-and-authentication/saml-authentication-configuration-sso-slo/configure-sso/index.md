@@ -251,7 +251,7 @@ Expand for a description of the requirements in the sample file:
 5. Restart **Quali Server** and **CloudShell Portal IIS** services.
 6. Open your browser and navigate to your portal.
     
-    You are redirected to the IdP’s login page instead of CloudShell Portal.
+    You are redirected to the IdP's login page instead of CloudShell Portal.
     :::note
     When trying to access the login page, if you receive a "Missing BASE64 Value" error message, make sure you have configured all the required application details correctly in the IdP.
     :::

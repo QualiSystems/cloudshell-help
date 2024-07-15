@@ -8,7 +8,7 @@ The Shell driver commands are accessible to CloudShell users via the portal as w
 
 - [Changing the shell’s Python version](#changing-the-shells-python-version)
 - [Changing the function’s display name and description](#changing-the-functions-display-name-and-description)
-- [Setting “admin only” functions](#setting-admin-only-functions)
+- [Setting "admin only” functions](#setting-admin-only-functions)
 - [Optional parameters and default values](#optional-parameters-and-default-values)
 - [Restricting input to a specific set of possible values](#restricting-input-to-a-specific-set-of-possible-values)
 - [Adding categories](#adding-categories)
@@ -95,7 +95,7 @@ The shell commands should now look like this:
 
 Please note that changing the display name of a function will affect only how its visually rendered in the UI. Code trying to execute this command using the CloudShell API will need to still refer to it by the command *name*.
 
-## Setting “admin only” functions
+## Setting "admin only” functions
 
 It is also possible to set certain functions to only be accessible to admins. This is done using the **Visibility** attribute, which determines which user types can see the command in the blueprint or sandbox. Options are **AdminOnly** and **Everyone**. By default, all commands are accessible to everyone.
 

@@ -30,7 +30,7 @@ Note that if you create your own methods in the driver, you will need to manuall
 
 ![docstrings-manual-2](/Images/Devguide-reference/Intellisense-in-Shells-and_2_624x98.png)
 
-At this point, intellisense still doesn’t recognize the object, as context can be any one of the driver’s imported “context” objects:
+At this point, intellisense still doesn’t recognize the object, as context can be any one of the driver’s imported "context” objects:
 
 ![docstrings-context-2](/Images/Devguide-reference/Intellisense-in-Shells-and_3_624x66.png)
 
@@ -38,7 +38,7 @@ So, let’s fill in the object’s type (in our case, **ResourceCommandContext*
 
 ![docstrings-manual-3](/Images/Devguide-reference/Intellisense-in-Shells-and_4_624x96.png)
 
-Now when you write “context” in the method, intellisense will identify it as a **ResourceCommandContext** object and display the appropriate information:
+Now when you write "context” in the method, intellisense will identify it as a **ResourceCommandContext** object and display the appropriate information:
 
 ![docstrings-manual-4](/Images/Devguide-reference/Intellisense-in-Shells-and_5_624x219.png)
 
@@ -54,7 +54,7 @@ Note that the type doesn’t have to be a class. It can also be a string or inte
 
 ## Docstrings in resource scripts
 
-In CloudShell resource scripts, we mainly use the **cloudshell\_script\_helpers** object. Since **cloudshell\_script\_helpers** is a module of functions and variables, you can access its contents directly from your method without having to create a docstring. The object is provided with the *cloudshell-automation-api* python package so include it in your `requirements.txt` file and import the object as “script\_help” into the `main.py` file and you’re good to go.
+In CloudShell resource scripts, we mainly use the **cloudshell\_script\_helpers** object. Since **cloudshell\_script\_helpers** is a module of functions and variables, you can access its contents directly from your method without having to create a docstring. The object is provided with the *cloudshell-automation-api* python package so include it in your `requirements.txt` file and import the object as "script\_help” into the `main.py` file and you’re good to go.
 
 For example:
 

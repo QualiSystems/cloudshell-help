@@ -8,7 +8,7 @@ In this article, we will familiarize ourselves with the CloudShell shell framewo
 
 ## Introduction
 
-Every CloudShell shell consists of a data model and a driver. The driver is written in python and can have Python package dependencies. Quali’s officially released shells use a common set of Python packages developed by Quali, which contain most of the logic of Quali shells, while the driver itself (the “.py” file inside the shell) is the thin layer that defines the interface with CloudShell along with the driver’s Python requirements.
+Every CloudShell shell consists of a data model and a driver. The driver is written in python and can have Python package dependencies. Quali’s officially released shells use a common set of Python packages developed by Quali, which contain most of the logic of Quali shells, while the driver itself (the ".py” file inside the shell) is the thin layer that defines the interface with CloudShell along with the driver’s Python requirements.
 
 Quali’s official shells have a granularity level of Vendor and OS. This means that each official shell supports all devices of a specific vendor and OS. The exact functionality that is exposed by the shell is defined in the relevant [shell standard](https://github.com/QualiSystems/cloudshell-standards/tree/master/Documentation). The structure of the Python packages reflects this granularity – for example, any logic that is common to all networking devices resides in *cloudshell\-networking*, while any Cisco-specific logic resides in *cloudshell\-networking-cisco*, and any Cisco IOS-specific logic resides in *cloudshell\-networking-cisco-ios*. It is possible to use Quali’s shell framework when creating your own shells or customizing existing ones.
 
@@ -188,7 +188,7 @@ A Command Template is a constant object of the *CommandTemplate* class, which 
     copy {src} {dst} [vrf {vrf}]
     ```
     
-- **action map** – A dictionary of regex patterns (as keys) and lambda functions (as values). To illustrate this, when you get a “(yes/no)” prompt, you can send an appropriate command by specifying the required lambda function. For example:
+- **action map** – A dictionary of regex patterns (as keys) and lambda functions (as values). To illustrate this, when you get a "(yes/no)” prompt, you can send an appropriate command by specifying the required lambda function. For example:
     
     ```javascript
     r'\(y/n\)': lambda session, logger: session.send_line('y', logger)
@@ -197,7 +197,7 @@ A Command Template is a constant object of the *CommandTemplate* class, which 
 - **error map** – Similar to action map but for errors. It is a dictionary of regexp pattern and error message test pairs. For example:
     
     ```javascript
-    r"[Ii]nvalid\s*([Ii]nput|[Cc]ommand ":  “Override mode is not supported”
+    r"[Ii]nvalid\s*([Ii]nput|[Cc]ommand ":  "Override mode is not supported”
     ```
     
 

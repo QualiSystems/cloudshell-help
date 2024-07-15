@@ -9,7 +9,7 @@ Use the instructions in the following procedure to configure Insight to work wit
 **Prerequisites:**
 
 - [Grant Data Security Permissions to ElastiCube Name](../install-insight/insight-configuration/grant-permissions.md)
-- [Configure HTTPS Connection Between CloudShell Portal and Sisense](../install-insight/insight-configuration/configure-https.md) (mandatory if the CloudShell Portal is configured to use HTTS)
+- [Configure HTTPS Connection Between CloudShell Portal and Sisense](../install-insight/insight-configuration/configure-https.md) (mandatory if the CloudShell Portal is configured to use HTTPS)
 
 **To configure Sisense to work with SSO:**
 

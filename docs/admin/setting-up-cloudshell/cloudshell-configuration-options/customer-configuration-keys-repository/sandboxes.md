@@ -1022,7 +1022,7 @@ False - send an email notification according to the sandbox end-user's settings 
 		</tr>
 	</tbody>
 </table>
-## Enable users to create ad hoc sandboxes
+## Enable users to create ad-hoc sandboxes
 <table>
 	<tbody>
 		<tr>

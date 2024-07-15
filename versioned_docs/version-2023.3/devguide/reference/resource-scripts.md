@@ -41,14 +41,14 @@ resource_address = script_help.get_resource_context_details().address
 
 Or to get information from attributes on the component:
 
-- For global attributes, use the attributes element. For example, “Region” and “Execution Server Selector”:
+- For global attributes, use the attributes element. For example, "Region” and "Execution Server Selector”:
     
     ```python
     resource_region = script_help.get_resource_context_details().attributes.Region
     resource_ess = script_help.get_resource_context_details().attributes["Execution Server Selector"]
     ```
     
-- For namespaced attributes (i.e. attributes that exist on a 2nd Gen shell only), provide the full attribute name, including the namespace. For example, “Vendor” and “OS Version”:
+- For namespaced attributes (i.e. attributes that exist on a 2nd Gen shell only), provide the full attribute name, including the namespace. For example, "Vendor” and "OS Version”:
     
     ```python
     resource_vendor = script_help.get_resource_context_details().attributes['CS_Switch.Vendor']

@@ -15,7 +15,7 @@ In this article, we’ll learn how to share our shell with the Quali Community, 
 3. The Shell repository owner will review and test the submitted pull request and decide whether to accept, modify or reject the request.
     
 
-## Publishing a new shell as a “Community” shell
+## Publishing a new shell as a "Community” shell
 
 To share a shell with the Quali Community, all you need to do is post it in our community. Sign in to [Quali Repositories](https://github.com/orgs/QualiSystems/discussions/categories/integrations) page with a community user, click the **Share an Integration** button and fill in the details.
 

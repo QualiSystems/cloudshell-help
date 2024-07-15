@@ -8,7 +8,7 @@ Shellfoundry is a command-line utility that allows you to easily create, package
 
 :::note Notes:
 - In order to use shellfoundry on an offline computer, you will need to first download the shellfoundry templates locally and configure shellfoundry to run in offline mode. For details, see [Downloading shellfoundry templates](#downloading-shellfoundry-templates).
-- Shellfoundary cannot work if there’s a proxy server present between the shellfoundry machine and the remote Quali Server machine.
+- Shellfoundry cannot work if there’s a proxy server present between the shellfoundry machine and the remote Quali Server machine.
 :::
 
 ## Usage
@@ -31,7 +31,7 @@ For the version history, click [Version History](#version-history).
 
 If you already have shellfoundry installed on your computer, run this command to upgrade it to the latest version. For more information, see [Installing or Updating Shellfoundry](../developing-shells/getting-started.md#installing-or-updating-shellfoundry).
 :::note-one-line
-**Note:** To prevent backwards compatibility issues, old versions of shellFoundry are disabled with every new shellfoundry release.
+**Note:** To prevent backwards compatibility issues, old versions of Shellfoundry are disabled with every new shellfoundry release.
 :::
 #### Syntax:
 
@@ -41,7 +41,7 @@ python -m pip install shellfoundry ––upgrade
 
 ### Configuring CloudShell settings
 
-(Required) This command sets the Quali Server settings and user access credentials in Shellfoundry. Note that in offline mode, the `shellfoundry list` command lists the shell templates residing locally in the folder defined in the shellfoundry config’s template\_location attribute. For more information, see [Configuring CloudShell Connection Settings](../developing-shells/getting-started.md#configuring-cloudshell-connection-settings).
+(Required) This command sets the Quali Server settings and user access credentials in Shellfoundry. Note that in offline mode, the `shellfoundry list` command lists the shell templates residing locally in the folder defined in the shellfoundry config's template\_location attribute. For more information, see [Configuring CloudShell Connection Settings](../developing-shells/getting-started.md#configuring-cloudshell-connection-settings).
 
 #### Syntax:
 
@@ -59,9 +59,9 @@ shellfoundry config username admin
 
 The following keys are available:
 
-- **username**: CloudShell username. For example: “admin”. Colons (:) are not supported.
+- **username**: CloudShell username. For example: "admin”. Colons (:) are not supported.
     
-- **domain**: CloudShell domain. Note that for 2nd Generation Shells, the domain must be “Global”. Colons (:) are not supported.
+- **domain**: CloudShell domain. Note that for 2nd Generation Shells, the domain must be "Global”. Colons (:) are not supported.
     
 - **github\_login**: GitHub username. To be used to download shellfoundry templates via `shellfoundry get_templates`.
     
@@ -73,13 +73,13 @@ The following keys are available:
     
 - **author**: The author to be specified on the shell (in the shell’s metadata).
     
-- **template\_location**: (Required if `online_mode` is set to `False`) File system path to the folder containing the offline shell templates. Alternatively, you can specify the template location using “local:” when running ‘shellfoundry new’ in command-line.
+- **template\_location**: (Required if `online_mode` is set to `False`) File system path to the folder containing the offline shell templates. Alternatively, you can specify the template location using "local:” when running ‘shellfoundry new’ in command-line.
     
 - **password**: CloudShell password (encrypted). Colons (:) are not supported.
     
 - **host**: The hostname or IP address of the Quali Server machine.
     
-- **port**: The port to be used for Quali API. Default is “9000”.
+- **port**: The port to be used for Quali API. Default is "9000”.
     
 
 ### Creating a Shell
@@ -102,7 +102,7 @@ shellfoundry new <Shell-name>
     :::
 - **\--version**: Creates a shell based on a specific shell template version. If you don’t specify the version, shellfoundry will create the shell using the latest shell version that is supported by your CloudShell installation. For details about each version release, see [CloudShell Standards](https://github.com/QualiSystems/cloudshell-standards).
     
-- **\--python**: Determines the python version of the shell. Options are “2” or “3” (Default is 2).
+- **\--python**: Determines the python version of the shell. Options are "2” or "3” (Default is 2).
     
 
 #### Examples:
@@ -245,7 +245,7 @@ shellfoundry delete "Juniper JunOS Switch Shell 2G"
 
 This command lists the 1st and 2nd generation Shell templates you can use for your new Shell. For more information, see [Modeling Shells with TOSCA](../developing-shells/modeling-shells-with-tosca.md).
 
-Note that in offline mode, the command lists the shell templates residing locally in the folder defined in the shellfoundry config’s `template_location` attribute.
+Note that in offline mode, the command lists the shell templates residing locally in the folder defined in the shellfoundry config's `template_location` attribute.
 
 #### Syntax:
 
@@ -279,7 +279,7 @@ Run this command from the Shell’s root folder.
 shellfoundry pack
 ```
 
-A ZIP package is created in the Shell’s dist directory with the name “nutshell.zip”.
+A ZIP package is created in the Shell’s dist directory with the name "nutshell.zip”.
 :::note-one-line
 **Note:** The pack command requires the presence of a shell.yml file, which is created by default in Shells created using Shellfoundry. However, if your shell was created elsewhere, make sure to add a shell.yml file with the following structure:
 :::

@@ -145,7 +145,7 @@ These parameters are used by CloudShell's **Setup** and **Teardown** scripts. Fo
 #### AWS EC2 parameters:
 
 - **Root Volume Name**: The available device names for the volume. Depending on the block device driver of the selected AMI's kernel, the device may be attached with a different name than what you specify. If left empty, the default defined in the AMI is used. For example: "/dev/xvda".
-- **Storage IOPS**: The default number of I/O operations per second that the root volume can support. For example "240". This parameter is used only for storage of type io1, in which you can provision up to 30 IOPS per GiB. If set to zero, the default defined in the image is used.
+- **Storage IOPS**: The default number of I/O operations per second that the root volume can support. For example "240". This parameter is used only for storage of type *io1*, in which you can provision up to 30 IOPS per GiB. If set to zero, the default defined in the image is used.
 - **Storage Size**: The root volume size. For example "30". The value must be greater or equal to the size of the root snapshot used. If set to zero, the default defined in the image is used.
 - **Storage Type**: The type of the storage volume. In AWS, there are several EBS Volume types that can be used: **gp2** and **io1** for SSD, **st1** and **sc1** for HDD or the standard type, which is the old generation EBS volume type. If **Auto** is selected, the storage type defined in the image is used.
 

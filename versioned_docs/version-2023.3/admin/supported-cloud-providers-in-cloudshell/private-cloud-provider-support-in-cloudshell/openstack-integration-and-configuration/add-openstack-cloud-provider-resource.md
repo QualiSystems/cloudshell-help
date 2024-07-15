@@ -42,7 +42,7 @@ The OpenStack 2<sup>nd</sup> Gen cloud provider enables the deployment of OpenSt
             <tr>
                 <td>Controller URL</td>
                 <td>
-                OpenStack Keystone Controller URL endpoint address. For example: http://controler:5000/v3.
+                OpenStack Keystone Controller URL endpoint address. For example: http://controller:5000/v3.
 
     Displayed in OpenStack portal>**API Access** page>**Identity** value).
                 </td>
@@ -58,7 +58,7 @@ The OpenStack 2<sup>nd</sup> Gen cloud provider enables the deployment of OpenSt
             <tr>
                 <td>OpenStack Management Network ID</td>
                 <td>
-                UUID of the manually created CloudShell management network (for assistance identifying your management network, contact your OpenStack admin). This network will be used to configure the communication between the Sandbox instances and the CloudShell components. For example: c14241d2-376c-4fb3-8d1e-61f5c1408448
+                UUID of the manually created CloudShell management network (for assistance identifying your management network, contact your OpenStack admin). This network will be used to configure the communication between the Sandbox instances and the CloudShell components. For example: "c14241d2-376c-4fb3-8d1e-61f5c1408448"
 
     The UUID can be found in the Horizon user interface or in OpenStack portal>**Network**\>**Networks** page>click the network and copy the **ID**.
                 </td>

@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Viewing Execution History
 
-This section explains how to view the execution history of an ad hoc automation suite and automation suite templates. The execution history of an automation suite template includes customized executions of the template.
+This section explains how to view the execution history of an ad-hoc automation suite and automation suite templates. The execution history of an automation suite template includes customized executions of the template.
 
 **To view an automation suite's execution history:**
 

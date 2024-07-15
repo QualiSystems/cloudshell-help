@@ -24,7 +24,7 @@ To get the full picture, search for the sandbox ID in the Quali Server and Execu
 
 Each suite execution, job, test, sandbox and sandbox request has a unique ID. For example:
 
-`[2021-01-18 11:01:16.9069] [4] [INFO] [229a41efd8ef] [] [Quali.CloudShell.Job.Scheduling.Api.ConsumptionService.RabbitMqConsumptionServiceSandboxConsumer] -- Begin processing {"result": true, "``sandbox_id``": "1ae1e266-1512-412c-bd82-031d3bd7fa45", "retries": 0, "errors": [], "error_code": 0, "``request_id``": "0f045b2f-a15f-4a81-9a11-e1af3c2faee4" [2021-01-18 11:01:47.2871] [9] [INFO] [229a41efd8ef] []`
+`[2021-01-18 11:01:16.9069] [4] [INFO] [229a41efd8ef] [] [Quali.CloudShell.Job.Scheduling.Api.ConsumptionService.RabbitMQConsumptionServiceSandboxConsumer] -- Begin processing {"result": true, "``sandbox_id``": "1ae1e266-1512-412c-bd82-031d3bd7fa45", "retries": 0, "errors": [], "error_code": 0, "``request_id``": "0f045b2f-a15f-4a81-9a11-e1af3c2faee4" [2021-01-18 11:01:47.2871] [9] [INFO] [229a41efd8ef] []`
 
 `[Quali.CloudShell.Job.Scheduling.Api.TestExecutionManagement.SandboxExecutionHandler] --` `Test execution id``: 9e9801db-9703-46dc-a687-ba898cf23e87 ended with result Passed`
 

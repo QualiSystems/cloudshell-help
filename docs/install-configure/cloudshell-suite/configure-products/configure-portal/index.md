@@ -99,7 +99,7 @@ Manual Portal IIS website configuration is a three step process:
 Optional steps:
 
 - [Enable dynamic compression on your IIS settings](./best-practices.md#enable-dynamic-compression-on-your-iis-settings): Enables dynamic compression to improve transmission times between IIS and CloudShell Portal.
-- [Enhance IIS website security](./best-practices.md#enhance-iis-website-security): Enahnces the website's security by only allowing cookies that come from an HTTP source.
+- [Enhance IIS website security](./best-practices.md#enhance-iis-website-security): Enhances the website's security by only allowing cookies that come from an HTTP source.
 
 ### Create a new website in IIS Manager
 

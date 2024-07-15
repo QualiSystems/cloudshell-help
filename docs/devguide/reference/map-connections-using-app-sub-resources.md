@@ -20,7 +20,7 @@ In this procedure, we will guide you on how to enable sub-resource mapping betwe
     
 3. Modify the `get_inventory` command to include the sub-resources you want to support and the vNIC names.
     
-    For example, 2 sub-resources with vNIC names “Port 1” and “Port 2”:
+    For example, 2 sub-resources with vNIC names "Port 1” and "Port 2”:
     
     ```python
     def get_inventory(self, context):
@@ -39,7 +39,7 @@ In this procedure, we will guide you on how to enable sub-resource mapping betwe
             #return AutoLoadDetails([],[])
     ```
     
-    Note that for AWS EC2 Apps, the vNICs must be sequential and start with “0”. For example, 0, 1, 2.
+    Note that for AWS EC2 Apps, the vNICs must be sequential and start with "0”. For example, 0, 1, 2.
     
 4. Create a shell model for the App in Resource Manager Client>Resource Families>Generic App Family.
     
@@ -64,5 +64,5 @@ In this procedure, we will guide you on how to enable sub-resource mapping betwe
     
 5. Edit the connector line and in the Requested Source vNIC Name attribute, enter the vNIC name to use.
     :::note
-    The vNIC name must be defined in the driver’s `get_inventory` command. In our case, “Port 1” or “Port 2”.
+    The vNIC name must be defined in the driver’s `get_inventory` command. In our case, "Port 1” or "Port 2”.
     :::

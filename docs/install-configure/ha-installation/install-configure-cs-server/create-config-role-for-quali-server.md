@@ -40,5 +40,5 @@ sidebar_position: 4
     ![](/Images/HA1/Creating-a-Configuration-Role_1.jpg)
     
     :::tip
-    If the role fails to start with an “incorrect function” error, see [CloudShell Troubleshooting](../../../troubleshooting/installation/powershell-execution-policy-high-availability.md).
+    If the role fails to start with an "incorrect function” error, see [CloudShell Troubleshooting](../../../troubleshooting/installation/powershell-execution-policy-high-availability.md).
     :::

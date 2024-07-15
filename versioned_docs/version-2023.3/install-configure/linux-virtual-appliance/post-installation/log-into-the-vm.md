@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## Overview
 
-Note that the Linux Execution Server cannot execute TeshShell commands and therefore does not require a license.
+Note that the Linux Execution Server cannot execute TestShell commands and therefore does not require a license.
 
 **To start and login to the new VM:**
 

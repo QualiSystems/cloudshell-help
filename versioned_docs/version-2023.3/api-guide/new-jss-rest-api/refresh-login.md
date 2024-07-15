@@ -53,7 +53,7 @@ Example header format:
 | Parameter | Description/Comments |
 | --- | --- |
 | accessToken | Token for authorizing REST API calls. (guid) |
-| refreshtoken | Token for refreshing expries accessToken. (guid) |
+| refreshtoken | Token for refreshing expires accessToken. (guid) |
 | tokenType | Token type. (string) |
 | expiresIn | Validity period in seconds. (Numeric) |
 </details>

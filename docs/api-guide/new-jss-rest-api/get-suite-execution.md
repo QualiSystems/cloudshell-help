@@ -68,9 +68,9 @@ Example header format:
       "statusDescription": "Succeeded",
       "testExecutionServerName": "My TES2",
       "blueprint": {
-        "id": "0efe151f-a581-4e6d-b9e2-7473bbcf297e",
+        "id": "0e1e151f-a581-4e6d-b9e2-7473b1d2297e",
         "name": "CloudShell Sandbox Template",
-        "url": "http://192.168.30.6/RM/Diagram/Index/0efe151f-a581-4e6d-b9e2-7473bbcf297e?diagramType=Topology"
+        "url": "http://192.168.30.6/RM/Diagram/Index/0e1e151f-a581-4e6d-b9e2-7473b1d2297e?diagramType=Topology"
       },
       "tests": [
         {
@@ -181,7 +181,7 @@ Example header format:
             <br/>
             For example:
             <br/>
-            http://192.168.30.6/RM/Diagram/Index/<b>0efe151f-a581-4e6d-b9e2-7473bbcf297e</b>?diagramType=Topology
+            http://192.168.30.6/RM/Diagram/Index/<b>0e1e151f-a581-4e6d-b9e2-7473b1d2297e</b>?diagramType=Topology
         - **Name**: Blueprint name. (string)
         - **URL**: Blueprint URL. (string)
       - **tests**: Details of the job's tests.
@@ -202,7 +202,7 @@ Example header format:
         - **hasReport**: Test report, if generated. (bool)
       - **sandbox**: Details about the sandbox spun up for the job's execution.
         - **id**: Sandbox ID - included in the sandbox URL. (guid)
-        - **name**: Sandbox name, comosed of job name, dash and job execution number. (string) For example: "job 1 #1"
+        - **name**: Sandbox name, composed of job name, dash and job execution number. (string) For example: "job 1 #1"
         - **url**: Sandbox URL. (string)
         - **inputs**: Sandbox inputs, if defined. (string)
       - **errorCode**: Job error code. (numeric) For details, see [Statuses and results](./jss-rest-api-response-codes).

@@ -13,7 +13,7 @@ This article explains how to configure Quali API to run over HTTPS.
     
     `<add key="QualiApi.Address" value="https://{Quali Server Address}"/>`
     
-    Where `{Quali Server Address}` is the Quali Server's hosname or IP
+    Where `{Quali Server Address}` is the Quali Server's hostname or IP
     
 3. Restart **Quali Server** service.
 4. If you don’t have an SSL certificate on the Quali Server, create a self-signed certificate for port 9000 using this PowerShell script:

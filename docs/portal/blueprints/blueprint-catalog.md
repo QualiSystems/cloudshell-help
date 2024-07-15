@@ -257,7 +257,7 @@ To request approval:
     
     :::note Notes
     
-    - Once the request is approved, you will be able to start the sandbox at any time within the period as long as the sandbox also ends within the alloted time frame.
+    - Once the request is approved, you will be able to start the sandbox at any time within the period as long as the sandbox also ends within the allotted time frame.
     - The approval applies to a single sandbox reservation. In other words, you cannot start the sandbox, end it and start a new one on the same approval.
     :::
     

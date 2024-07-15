@@ -25,7 +25,7 @@ You can both customize the default access terminals, and add and customize your 
     
     ![](/Images/QualiX/Customizing-remote-access.png)
     
-    When you click the (“Web”) link in an active sandbox, the desired URL (quali.com for example) is displayed.
+    When you click the ("Web”) link in an active sandbox, the desired URL (quali.com for example) is displayed.
     
 
 ## Customizing access terminals based on specific equipment
@@ -58,7 +58,7 @@ Furthermore, only components that have all of the connection string's attributes
     1. For each access to the device, create a unique set of attributes:
         
         - \{access type\} User (for example, SSH User)
-        - \{access type\} Password (for examle, SSH Password)
+        - \{access type\} Password (for example, SSH Password)
     2. Attach the attributes to the specific resource models for which you would like to have this access option.
     :::
 
