@@ -14,13 +14,13 @@ Note that since Cloud Provider is a 2nd Gen shell, the deployment paths are not 
 
 Let’s start by configuring a new deployment path.
 
-1. In the **Deployments** folder, rename the **deployment\-path.yaml** to the name of the deployment option. For example, “my-deployment\-path.yaml”.
+1. In the **Deployments** folder, rename the **deployment\-path.yaml** to the name of the deployment option. For example, "my-deployment\-path.yaml”.
     
 2. Open the yaml and locate the following line:
     
     `vendor.resource.MyDeploymentPath:`
     
-3. Replace “MyDeploymentPath” with the new display name of the deployment path (spaces are supported). For example: “My Test Path”.
+3. Replace "MyDeploymentPath” with the new display name of the deployment path (spaces are supported). For example: "My Test Path”.
     
     `vendor.resource.My Test Path:`
     
@@ -29,9 +29,9 @@ Let’s start by configuring a new deployment path.
     ![Resource information](/Images/Devguide-cloud-providers/Configuring-Deployment-Paths_624x380.png)
     
 
-We can also change the icon of the deployment path by placing the new image file in the **Deployments** folder and replacing **shell-icon.png** in the yaml’s `artifacts:` section with the new file name.
+We can also change the icon of the deployment path by placing the new image file in the **Deployments** folder and replacing **shell-icon.png** in the yaml's `artifacts:` section with the new file name.
 
-For example, setting image file “my-icon.png”:
+For example, setting image file "my-icon.png”:
 
 ```css
 artifacts:
@@ -48,7 +48,7 @@ Next, add the required attributes.
 - You cannot modify an attribute's type and name, nor any attributes that are associated with the shell’s family as this will affect other shells that use this family.
 - CloudShell allows upgrading shells with old/deprecated attributes. For details, see [Overriding Old/Deprecated Shell Attributes](../developing-shells/override-old-shell-attributes.md).
 :::
-Place the cursor at the end of the `derived_from:` line and press the **\[Enter\]** key. Type “properties:” and press **\[Enter\]** again. Press the **\[Tab\]** key and add the attribute. ***To make the attribute visible to the user in CloudShell, make sure to include the “tags: \[user\_input\]” line.*** For example, adding a string attribute called “My attribute”:
+Place the cursor at the end of the `derived_from:` line and press the **\[Enter\]** key. Type "properties:” and press **\[Enter\]** again. Press the **\[Tab\]** key and add the attribute. ***To make the attribute visible to the user in CloudShell, make sure to include the "tags: \[user\_input\]” line.*** For example, adding a string attribute called "My attribute”:
 
 ```css
 node_types:

@@ -8,7 +8,7 @@ sidebar_position: 2
 This article explains how to set static IPs for the CloudShell services in a local Kubernetes deployment. For cloud-managed Kubernetes: Specify empty values `loadBalancerIP: ""`, and in the mongodb section, specify an empty array: `loadBalancerIPs: []`.
 :::
 
-Network providers such as Calico and MetalLB are used out-of-the-box to provide CloudShell's Kubernetes-based services with basic networking and to expose their external endpoints to the “outside” network. However, whenever one of these services is deleted and then recreated, there is a chance that the external address will change. To ensure this does not happen, make sure to set these CloudShell services to use static IPs.
+Network providers such as Calico and MetalLB are used out-of-the-box to provide CloudShell's Kubernetes-based services with basic networking and to expose their external endpoints to the "outside” network. However, whenever one of these services is deleted and then recreated, there is a chance that the external address will change. To ensure this does not happen, make sure to set these CloudShell services to use static IPs.
 
 The services are:
 

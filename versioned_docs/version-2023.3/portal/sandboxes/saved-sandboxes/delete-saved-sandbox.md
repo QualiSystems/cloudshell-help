@@ -23,6 +23,6 @@ In order to delete a saved sandbox that is associated with an active or pending 
 
 ## Deletion failure
 
-If deleting a saved sandbox fails, CloudShell will keep the saved sandbox in the **Saved Sandboxes** dashboard and mark it as “Deletion failed". Such a sandbox cannot be restored, since some of its components may have already been deleted. You are advised to try again to delete the saved sandbox.
+If deleting a saved sandbox fails, CloudShell will keep the saved sandbox in the **Saved Sandboxes** dashboard and mark it as "Deletion failed". Such a sandbox cannot be restored, since some of its components may have already been deleted. You are advised to try again to delete the saved sandbox.
 
 To display a detailed error log of the deletion process, click on the **Deletion failed** button.

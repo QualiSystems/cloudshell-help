@@ -48,6 +48,6 @@ By default, QualiX VMs use a dynamic IP, which may change from time to time. To 
     
 9. To verify, run `ifconfig` in command-line.
     
-    The static IP addess is displayed in the command output.
+    The static IP address is displayed in the command output.
     
     ![](/Images/QualiX/QualiXVerifyStaticVM.png)

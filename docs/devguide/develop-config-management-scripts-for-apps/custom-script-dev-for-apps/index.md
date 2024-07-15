@@ -49,7 +49,7 @@ Since this script uses parameters defined on the App template, it will not work 
 
 - Update the CloudShell settings passed to the `session` variable, if needed.
 - Specify the ID of an active sandbox (in the `reservationId` field of the Python code).
-- Replace ‘LinuxVmApp\_9cb2-72d6’ with the App’s name.
+- Replace `LinuxVmApp_9cb2-72d6` with the App’s name.
 :::
 ### Linux privilege escalation
 

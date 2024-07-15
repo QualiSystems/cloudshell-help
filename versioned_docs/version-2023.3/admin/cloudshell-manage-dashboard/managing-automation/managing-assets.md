@@ -8,7 +8,7 @@ sidebar_position: 2
 
 An asset is a script that runs automation in CloudShell sandboxes. CloudShell supports two types of scripts:
 
-- **Python scripts** that run on the resource/App/bluperint level: A script is a single command on the blueprint or resource/App level. You can add many scripts to your blueprint or resources. CloudShell runs the scripts, which actually are processed in an external environment such as Python, which then returns the results to CloudShell.
+- **Python scripts** that run on the resource/App/blueprint level: A script is a single command on the blueprint or resource/App level. You can add many scripts to your blueprint or resources. CloudShell runs the scripts, which actually are processed in an external environment such as Python, which then returns the results to CloudShell.
     
 *Sandbox environment automation and enhanced orchestration is available with CloudShell Premium Tier.*
     
@@ -261,7 +261,7 @@ The URL can accept parameters defined on the App, enabling you to test new versi
 
 - To use parameters, specify the parameter name in curly brackets (for example: \{branch\}).
 - If the App has this parameter, CloudShell will replace the \{branch\} with its value during execution.
-- If the parameter is missing, CloudShell will replace \{branch\} with emptystring.
+- If the parameter is missing, CloudShell will replace \{branch\} with an empty string.
 - If you are using a global input, customers would be well advised to set a default value on the global input
 :::
 <details>
@@ -284,7 +284,7 @@ https://gitlab.com/api/v4/projects/{Project ID}/repository/files/testsharding%2E
 
 Where:
 
-- Each special character that the file contains has to be encoded. In the example above - “%2E” is an encoded point (“.”)
+- Each special character that the file contains has to be encoded. In the example above - "%2E” is an encoded point (".”)
     
 - The ref value is the branch name (master for this example)
 </details>  

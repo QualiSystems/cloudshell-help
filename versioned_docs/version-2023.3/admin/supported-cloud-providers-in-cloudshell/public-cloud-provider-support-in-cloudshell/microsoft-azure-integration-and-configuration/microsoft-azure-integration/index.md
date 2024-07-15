@@ -17,7 +17,7 @@ The deployment architecture in Azure requires a management resource group to be 
         
     - **QualiX-VM**: QualiX Server used to enable in-browser connections, such as RDP, Telnet and SSH access to Apps in the sandbox
 
-- **CloudShell-Sandbox-VNet**: VNet containing a subnet for each CloudShell sandbox, which hosts all Azure App virtual machines created within the sandbox and allows them to communicate with each other. The CloudShell Management VNet’s QualiX Server and Execution Server have access both to this VNet and each virtual machine's operating system to run commands and installations on the sandboxes.
+- **CloudShell-Sandbox-VNet**: VNet containing a subnet for each CloudShell sandbox, which hosts all Azure App virtual machines created within the sandbox and allows them to communicate with each other. The CloudShell Management VNet's QualiX Server and Execution Server have access both to this VNet and each virtual machine's operating system to run commands and installations on the sandboxes.
 :::note
 Keeping Azure resources, like the CloudShell Management VNet's virtual machines, running at all times entails a fixed monthly rate.
 :::

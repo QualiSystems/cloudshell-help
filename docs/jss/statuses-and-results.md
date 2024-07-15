@@ -143,7 +143,7 @@ In the above response, **1006** is the internal application error code for the s
         <td>
         Possible reasons are:
 
-        - Test execution was stopped by the user or job status is “Automatically Cancelled”
+        - Test execution was stopped by the user or job status is "Automatically Cancelled”
         - The Test execution service failed to start the test:
         - API request failed
         - Test execution service failed to clone/pull repository (failed to create workspace)

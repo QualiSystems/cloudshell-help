@@ -88,7 +88,7 @@ We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which p
             <td>Azure Tenant ID</td>
             <td>All</td>
             <td>
-            The ID of the Azure tenant that is associated with your Azure Active Directory (AAD) instance - called **Directory (tenant) ID** in Azure. For example: ccd13026-98e3-4e90-01f4-28e2afdf3213.
+            The ID of the Azure tenant that is associated with your Azure Active Directory (AAD) instance - called **Directory (tenant) ID** in Azure. For example: "ccd13026-98e3-4e90-01f4-28e2afdf3213".
 
             The tenant ID can be retrieved when creating the Azure API web application or from Azure CLI. For more information, see [Configure Azure API to work with CloudShell](../../../../admin/supported-cloud-providers-in-cloudshell/public-cloud-provider-support-in-cloudshell/microsoft-azure-integration-and-configuration/microsoft-azure-integration/configure-azure-api-to-work-with-cloudshell.md).
             </td>

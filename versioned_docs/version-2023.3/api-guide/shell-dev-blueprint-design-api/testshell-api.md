@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # TestShell API
 
-TestShell API allows you to automate CloudShell (in a similar manner as in [CloudShell Automation API](./cs-automation-api.md)), and is especially useful for writing drivers or tests, and to get information about CloudShell resources and blueprints. Administrators can use this API to create scripts and automations that run administrative tasks, such as moving resources between domains or updating relationships between user groups.
+TestShell API allows you to automate CloudShell (in a similar manner as in [CloudShell Automation API](./cs-automation-api.md)), and is especially useful for writing drivers or tests, and to get information about CloudShell resources and blueprints. Administrators can use this API to create scripts and automation that run administrative tasks, such as moving resources between domains or updating relationships between user groups.
 
 The TestShell API library is the main library of the lab management API. It supports most of the actions available in CloudShell Portal and in Resource Manager. The default port for TestShell API Library and TestShell C# API in the Quali Server is 8028. The default port for TestShell XML RPC API and TestShell TCL API in the Quali Server is 8029.
 
@@ -48,6 +48,6 @@ Once the scenario is created, it can be run automatically.
 :::note General notes about TestShell API:
 
 - Some actions that are possible in Resource Manager and in CloudShell Portal are not supported in TestShell API. For example, you cannot create and edit a blueprint using TestShell API. There are other solutions for that, such as creating and editing a sandbox and then saving it as a blueprint or importing a Quali package.
-- Many operations have two versions, a “single” version and a “bulk” version. For example, it is possible to create a single resource using the "CreateResource" method or to create many resources at once using the “CreateResources” operation. This is not always the fastest way performance-wise, but it is sometime easier to write and edit. The bulk operation usually gets a matrix as an input, and sometimes has special rules (such as the fact you cannot have the sub-resource creation line before the resource line).
+- Many operations have two versions, a "single” version and a "bulk” version. For example, it is possible to create a single resource using the "CreateResource" method or to create many resources at once using the "CreateResources” operation. This is not always the fastest way performance-wise, but it is sometime easier to write and edit. The bulk operation usually gets a matrix as an input, and sometimes has special rules (such as the fact you cannot have the sub-resource creation line before the resource line).
 - Any function that requires a resource full path can also get the resource name without the folders it is located in.
 :::

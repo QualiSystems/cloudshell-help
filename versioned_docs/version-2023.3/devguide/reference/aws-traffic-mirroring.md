@@ -43,11 +43,11 @@ Mandatory parameters are indicated.
         
         - **actionId**: (Str)
             
-        - **type**: (Mandatory, Str) Must be “CreateTrafficMirroring”
+        - **type**: (Mandatory, Str) Must be "CreateTrafficMirroring”
             
         - **actionParams**: List containing the following:
             
-            - **type**: (Mandatory, Str) Must be “CreateTrafficMirroringParams”
+            - **type**: (Mandatory, Str) Must be "CreateTrafficMirroringParams”
                 
             - **sourceNicId**: (Mandatory, Str) Network interface ID of the source EC2 instance
                 
@@ -57,7 +57,7 @@ Mandatory parameters are indicated.
                 
             - **filterRules**: List of the following:
                 
-                - **type**: (Mandatory, Str) Must be “TrafficFilterRule”
+                - **type**: (Mandatory, Str) Must be "TrafficFilterRule”
                     
                 - **direction**: (Mandatory, Str) Defines the traffic direction on the source NIC. Valid values are **ingress** (inbound) and **egress** (outbound)
                     
@@ -80,7 +80,7 @@ Mandatory parameters are indicated.
         
     - **actionId**: (Str)
         
-    - **type**: (Mandatory, Str) Must be “RemoveTrafficMirroring”
+    - **type**: (Mandatory, Str) Must be "RemoveTrafficMirroring”
         
     - **targetNicId**: (Mandatory, Str) Network interface ID of the target EC2 instance (the traffic mirror target)
         

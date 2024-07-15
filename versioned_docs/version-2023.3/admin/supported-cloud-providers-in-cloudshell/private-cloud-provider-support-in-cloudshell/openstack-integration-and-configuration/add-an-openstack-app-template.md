@@ -145,7 +145,7 @@ The App template defines the settings and configurations of the VM to be deploye
                 <tr>
                     <td>Inbound Ports</td>
                     <td>
-                    Semi-colon spearated list of CIDRs, ports and protocols on which to open inbound traffic from outside of the sandbox.  
+                    Semi-colon separated list of CIDRs, ports and protocols on which to open inbound traffic from outside of the sandbox.  
         The syntax is `[cidr:][protocol:]port-or-port-range`. For example: `0.0.0.0/0:tcp:80;443;udp:200-220`.  
         Default CIDR is "0.0.0.0/0". Default protocol is "tcp".
                     </td>
@@ -221,7 +221,7 @@ The URL can accept parameters defined on the App, enabling you to test new versi
 
 - To use parameters, specify the parameter name in curly brackets (for example: **\{branch\}**).
 - If the App has this parameter, CloudShell will replace the **\{branch\}** with its value during execution.
-- If the parameter is missing, CloudShell will replace **\{branch\}** with emptystring.
+- If the parameter is missing, CloudShell will replace **\{branch\}** with an empty string.
 - If you are using a global input, customers would be well advised to set a default value on the global input
 :::
     **For GitHub, specify the raw URL. For example:**
@@ -238,7 +238,7 @@ The URL can accept parameters defined on the App, enabling you to test new versi
     
     Where:
     
-    - Each special character that the file contains has to be encoded. In the example above - “%2E” is an encoded point (“.”)
+    - Each special character that the file contains has to be encoded. In the example above - "%2E” is an encoded point (".”)
         
     - The ref value is the branch name (master for this example)
         

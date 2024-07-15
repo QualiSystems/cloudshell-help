@@ -20,7 +20,7 @@ sidebar_position: 1
     
         
 *   **Application layer configuration management:**
-    *   Ability to apply configuration management to VM's OSand applications
+    *   Ability to apply configuration management to VM's OS and applications
     *   Ability to load configurations on device OS
 *   **Ease of use:**
     *   Web-based self-service portal and inventory catalog

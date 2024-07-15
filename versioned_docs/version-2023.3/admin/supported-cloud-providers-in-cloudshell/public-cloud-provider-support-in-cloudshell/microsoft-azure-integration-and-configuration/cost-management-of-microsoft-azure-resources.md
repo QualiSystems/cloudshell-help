@@ -10,7 +10,7 @@ These tags should not be altered as this may result in inaccurate usage data rep
 :::
 ## Download usage data from the Azure billing center
 
-This procedure explains how to download an Azure subscription’s usage data from the Azure billing center. The data is provided in a SCV file.
+This procedure explains how to download an Azure subscription’s usage data from the Azure billing center. The data is provided in a CSV file.
 
 **To download Microsoft Azure usage data:**
 

@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# CloudShell RabbitMq Service Fails to Start during Quali Server Installation
+# CloudShell RabbitMQ Service Fails to Start during Quali Server Installation
 
 ## Error Message
 

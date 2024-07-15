@@ -27,8 +27,8 @@ sidebar_position: 1
 3. Modify the settings accordingly.
     
     :::note Notes   
-    - You need to provide a unique name to the new Test Execution Service (in the above example: “test\-execution\-service1”). This name will be used to identify the service in Kubernetes. Make sure to specify the same name in the `TES_API_HOST` environment variable as well, followed by `-svc`.
-    - Make sure to use the same image tag (in the above example: “1.0.0.116”) as in the main CloudShell helm chart.
+    - You need to provide a unique name to the new Test Execution Service (in the above example: "test\-execution\-service1”). This name will be used to identify the service in Kubernetes. Make sure to specify the same name in the `TES_API_HOST` environment variable as well, followed by `-svc`.
+    - Make sure to use the same image tag (in the above example: "1.0.0.116”) as in the main CloudShell helm chart.
     - It is possible to add additional environment variables to the list for additional customization, as listed in [Parameters](../config-test-execution-service.md#parameters).
     :::
 4. To create a new deployment, run the following from your command-line or terminal:

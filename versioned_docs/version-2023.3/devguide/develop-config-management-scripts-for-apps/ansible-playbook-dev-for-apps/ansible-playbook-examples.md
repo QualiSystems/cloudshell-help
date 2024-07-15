@@ -63,12 +63,12 @@ Since this script uses parameters defined on the App template, it will not work 
     
 - Specify the ID of an active sandbox (in the `reservationId` field of the Python code).
     
-- Replace ‘LinuxVmApp\_9cb2-72d6’ with the App’s name.
+- Replace `LinuxVmApp_9cb2-72d6` with the App’s name.
     
 
 ### Inventory Groups
 
-In some cases, a playbook contains plays that target many different VMs that require configuration. In order to have the playbook run only the plays that are relevant to a specific VM, or to a group of hosts (VMs) that your VM belongs to, you can use the Inventory Groups field in the App template. In this field, specify the groups that your VM belongs to (more than one group can be provided). Use semicolons “;” to separate multiple groups.
+In some cases, a playbook contains plays that target many different VMs that require configuration. In order to have the playbook run only the plays that are relevant to a specific VM, or to a group of hosts (VMs) that your VM belongs to, you can use the Inventory Groups field in the App template. In this field, specify the groups that your VM belongs to (more than one group can be provided). Use semicolons ";” to separate multiple groups.
 
 For example , specifying groups “servers/http” and servers/sql”:
 

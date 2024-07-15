@@ -4,7 +4,7 @@ sidebar_position: 8
 
 # The Cloud Provider Interface
 
-The rest of this chapter is dedicated to implementing the cloud provider driver that will be called by the server when interaction with the cloud provider is needed. This includes setting up communication between CloudShell and the cloud provider of choice, implementing the driver commands required from the resource, such as Deploy App, Power On and Refresh IP, and setting the resource’s live status icon (for example, “online” and “offline”).
+The rest of this chapter is dedicated to implementing the cloud provider driver that will be called by the server when interaction with the cloud provider is needed. This includes setting up communication between CloudShell and the cloud provider of choice, implementing the driver commands required from the resource, such as Deploy App, Power On and Refresh IP, and setting the resource’s live status icon (for example, "online” and "offline”).
 
 The articles are:
 

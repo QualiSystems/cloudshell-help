@@ -50,7 +50,7 @@ The following attributes would be used to define the vCenter VM From Template:
 
 For storage purposes, these VM clones can be stored in a different data storage than the one configured in the **VM Storage** attribute defined on the vCenter cloud provider resource. The storage can be either a datastore or a datastore cluster. For example: datastore1 or clustername/datastore1.
 :::note
-Setting a value in the App template’s attribute will override the value in the Saved Sandbox Storageattribute on the vCenter resource. See [Add VMware vCenter Cloud Provider Resource](../../../../supported-cloud-providers-in-cloudshell/private-cloud-provider-support-in-cloudshell/vmware-vcenter-integration-and-configuration/add-vmware-vcenter-cloud-provider-resource.md).
+Setting a value in the App template’s attribute will override the value in the Saved Sandbox Storage attribute on the vCenter resource. See [Add VMware vCenter Cloud Provider Resource](../../../../supported-cloud-providers-in-cloudshell/private-cloud-provider-support-in-cloudshell/vmware-vcenter-integration-and-configuration/add-vmware-vcenter-cloud-provider-resource.md).
 :::
             </td>
         </tr>

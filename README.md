@@ -30,7 +30,7 @@ You can check for other options on the [following page](https://docusaurus.io/do
 ```
 $ npm install
 ```
-3. Once all the packages are installed, you can start the local server using the follwing command:
+3. Once all the packages are installed, you can start the local server using the following command:
 ```
 $ npm run start
 ```
@@ -57,7 +57,7 @@ While working on updates/fixes, make sure you review how things look like on the
 
 If you link to other pages, make sure to use relative links, so they would work well between versions.
 
-If you need to add a new image/screenshot, make sure to place them under the static/Images folder, and keep the naming convension of using a dash instead of spaces in the file names. Also, try to find a relevant folder based on the area of this image.
+If you need to add a new image/screenshot, make sure to place them under the static/Images folder, and keep the naming convention of using a dash instead of spaces in the file names. Also, try to find a relevant folder based on the area of this image.
 
 There are many examples of how to use tables/images/links/admonitions (notes/warning/etc) - so don't try to reinvent the wheel and try to be in-line with other examples.
 

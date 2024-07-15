@@ -10,7 +10,7 @@ CloudShell supports the creation of custom routes in Azure sandboxes, allowing y
 
 To do this, you need to use a blueprint or custom setup script that will tell the Azure cloud provider resource to define the custom routing (using the resource’s CreateRouteTable hidden command).
 
-The custom routing needs to be supplied in JSON format. Let’s create a JSON file and add the following code, which routes incoming communications from CIDR “10.0.1.0/28” to a VM that has the address “10.0.1.15”.
+The custom routing needs to be supplied in JSON format. Let’s create a JSON file and add the following code, which routes incoming communications from CIDR "10.0.1.0/28” to a VM that has the address "10.0.1.15”.
 
 ```javascript
 {
@@ -48,7 +48,7 @@ Next, let’s define the custom routing.
             
         - **address\_prefix**: Specify the target CIDR. Communication to an address in this CIDR will be diverted to our route.
             
-        - **next\_hop\_type**: Specify “VirtualAppliance” as the value.
+        - **next\_hop\_type**: Specify "VirtualAppliance” as the value.
             
         - **next\_hop\_address**: The IP that the traffic will be directed to. For example, to connect VM 1 to VM 2 through VM 5, set VM 5 as the next\_hop.
             

@@ -61,7 +61,7 @@ The Shared VPC option is supported in the AWS 2G shell and enables you to deplo
                     <td>
                     Default CIDR to be used by CloudShell. This CIDR range must be included in the defined VPC CIDR. Default is 10.1.254.0/24.
         :::note
-        CloudShell cannot differentiate between this CIDR and the VPC CIDR, which can cause overlap. To avoid this from happening, we recommend specifying a limited default subnet CIDR. For example, “10.1.254.0/24” or “10.1.253.0/24”.
+        CloudShell cannot differentiate between this CIDR and the VPC CIDR, which can cause overlap. To avoid this from happening, we recommend specifying a limited default subnet CIDR. For example, "10.1.254.0/24” or "10.1.253.0/24”.
         :::
                     </td>
                 </tr>

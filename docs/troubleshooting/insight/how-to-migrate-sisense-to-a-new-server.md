@@ -8,7 +8,7 @@ sidebar_position: 4
 
 Due to a RabbitMQ coexistence issue, Sisense server cannot be installed on the Quali Server machine.
 
-Starting with version 2020.2, Quali Server comes with a built-in RabbitMQ service. Sisense also uses RabbitM and therefore cannot coexist with Quali Server on the same machine, so if you’re upgrading from an older CloudShell version and your Sisense server is hosted on your Quali Server machine, you will need to move Sisense to a different server.
+Starting with version 2020.2, Quali Server comes with a built-in RabbitMQ service. Sisense also uses RabbitMQ and therefore cannot coexist with Quali Server on the same machine, so if you’re upgrading from an older CloudShell version and your Sisense server is hosted on your Quali Server machine, you will need to move Sisense to a different server.
 
 ## Solution
 

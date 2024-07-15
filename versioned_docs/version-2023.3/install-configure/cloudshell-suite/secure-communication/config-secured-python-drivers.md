@@ -95,4 +95,4 @@ session = api.CloudShellAPISession(context.connectivity.server_address, context.
 
 Alternatively, you can use the `cloudshell_scripts_helpers.get_api_session()` out-of-the-box script helper that uses the orchestration script context from the Execution Server and connects with the suitable method.
 
-To know the correct API scheme (HTTP or HTTPS), we extended the driver context and orchestration script context to include the `tsAPIScheme` property. This propery is placed in the connectivity info JSON and will be populated by the Execution Server according to the server configuration method.
+To know the correct API scheme (HTTP or HTTPS), we extended the driver context and orchestration script context to include the `tsAPIScheme` property. This property is placed in the connectivity info JSON and will be populated by the Execution Server according to the server configuration method.

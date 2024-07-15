@@ -47,7 +47,7 @@ sidebar_position: 1
     - Red Hat Enterprise Linux: [https://docs.microsoft.com/en-us/dotnet/core/install/linux-rhel](https://docs.microsoft.com/en-us/dotnet/core/install/linux-rhel)
     - SLES: [https://docs.microsoft.com/en-us/dotnet/core/install/linux-sles](https://docs.microsoft.com/en-us/dotnet/core/install/linux-sles)
     
-    Please note that the required version in “dotnet-runtime-5.0” is not as listed in the documentation - “dotnet-runtime-6.0”
+    Please note that the required version in "dotnet-runtime-5.0” is not as listed in the documentation - "dotnet-runtime-6.0”
     
    **<span style={{ color: 'blue' }}>Example: Installing Packaging API on Ubuntu 18.04:</span>** 
 
@@ -108,7 +108,7 @@ The following code sample provides an example of how to create new blueprints us
 
 ![](/Images/API/Packaging-API/code-sample.png)
 
-This example uses the “requests” python module.
+This example uses the "requests” python module.
 
 ```python
 from quali_utils.quali_packaging import PackageEditor

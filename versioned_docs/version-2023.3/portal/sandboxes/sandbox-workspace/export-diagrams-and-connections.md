@@ -21,5 +21,5 @@ This topic describes how to export a CSV file of the connections between the res
 **To export the connections file:**
 
 1. In CloudShell Portal, reserve the required blueprint.
-2. In the sandbox workspace, click the **Sandbox** menu and click **Export Conections (csv)**.
+2. In the sandbox workspace, click the **Sandbox** menu and click **Export Connections (csv)**.
 3. Save the CSV file in the required location.

@@ -55,7 +55,7 @@ When searching in CloudShell Portal for a resource to add to a blueprint or sand
     
 2. Check if the resource family is set as visible.
     1. In Resource Manager, click the **Admin** button and select **Resource Families**.
-    2. Choose the relevant **Resource Family** and in the **Parameters** section, verify that the **Admin only** check box has been de-selected.
+    2. Choose the relevant **Resource Family** and in the **Parameters** section, verify that the **Admin only** check box has been unchecked.
 3. If not, unselect the **Admin only** check box.
 
 ### Resource is "Excluded"
@@ -71,7 +71,7 @@ When searching in CloudShell Portal for a resource to add to a blueprint or sand
 
 **To sync the search engine with the database, reset the resource indexing in one of two ways:**
 
-1. Using CloudShell Montior:
+1. Using CloudShell Monitor:
     1. Open CloudShell Monitor.
     2. Select the **Quali Server** component.
     3. In the right pane, click the **Search** tab.
@@ -79,7 +79,7 @@ When searching in CloudShell Portal for a resource to add to a blueprint or sand
         
         ![](/Images/Troubleshoot/LogMonitor-QualiServer.png)
         
-        When refresh has finished, the status will change to **Completed** and the number of refreshed resources is inidicated.
+        When refresh has finished, the status will change to **Completed** and the number of refreshed resources is indicated.
         
 2. Using CloudShell configuration:
     

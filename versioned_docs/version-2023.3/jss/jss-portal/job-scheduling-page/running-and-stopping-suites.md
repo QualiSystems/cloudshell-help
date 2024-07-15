@@ -10,7 +10,7 @@ sidebar_position: 3
 
 CloudShell does the following for every job in the suite (in parallel):
 
-1. If the **SuiteExecutionSettings\_\_ValidateJobDataBeforeRun** environment variable is set to “true”, validate that the blueprints data and tests data is correct (= blueprints/tests were not deleted/modified since last suite edition). If validation fails, automatically cancel the job.
+1. If the **SuiteExecutionSettings\_\_ValidateJobDataBeforeRun** environment variable is set to "true”, validate that the blueprints data and tests data is correct (= blueprints/tests were not deleted/modified since last suite edition). If validation fails, automatically cancel the job.
 2. Lease the next available (free) test slot from the pool of available test execution servers (only included test execution servers that belong to the suite’s space and support the suite’s test type).
     
     :::note
@@ -19,7 +19,7 @@ CloudShell does the following for every job in the suite (in parallel):
     
 3. Send a sandbox reservation request to the sandbox service.
 4. Wait for the response until timeout (See Define sandbox creation retries). If sandbox creation fails or timeout was reached, automatically cancel the job
-5. Mark the test execution server’s slot as “Running”.
+5. Mark the test execution server’s slot as "Running”.
 6. Send the test for execution to the test execution server. Once the test ends, send the next test in the job for execution on the same test execution server’s slot, using the same sandbox already created. In the same way, execute the job’s tests. If the job’s duration is reached and there is still a test running, stop the test and automatically cancel the job.
 7. Once all tests have completed their execution, free the test execution slot and end the sandbox.
 

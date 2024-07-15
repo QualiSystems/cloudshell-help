@@ -107,7 +107,7 @@ print ("You are using Python: " + str(sys.version_info[0]))
 
 ## Debugging scripts
 
-CloudShell includes some helper functions to make it easier to debug a script by running it on real sandbox reservation data. The helper functions allow the script to be “attached” to a CloudShell sandbox, by filling in all of the script’s environment variables so that the same information is available to it as if it were launched by CloudShell.
+CloudShell includes some helper functions to make it easier to debug a script by running it on real sandbox reservation data. The helper functions allow the script to be "attached” to a CloudShell sandbox, by filling in all of the script’s environment variables so that the same information is available to it as if it were launched by CloudShell.
 
 **To attach a script to a CloudShell sandbox:**
 

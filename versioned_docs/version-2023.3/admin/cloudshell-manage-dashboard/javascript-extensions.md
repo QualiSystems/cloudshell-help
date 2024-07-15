@@ -98,7 +98,7 @@ For example:
 
 ## Using JavaScript Extensibility to configure dependencies between test parameters
 
-As an administrator can configure the possible parameters displayed to the user in a test, and define dependencies between the variable fields. For example, in the code samples presented in the **Custom JavaScript Modules extensions** page, in the **Test input - all parameters** module, the possible values for the **log\_level** parameter field are only available after selecting the values inthe **test\_type** parameter field. Since the script defines a set of possible log level values for each test type, the code updates the **log\_level** field's possible values according to the selected value for the **test\_type**.
+As an administrator can configure the possible parameters displayed to the user in a test, and define dependencies between the variable fields. For example, in the code samples presented in the **Custom JavaScript Modules extensions** page, in the **Test input - all parameters** module, the possible values for the **log\_level** parameter field are only available after selecting the values in the **test\_type** parameter field. Since the script defines a set of possible log level values for each test type, the code updates the **log\_level** field's possible values according to the selected value for the **test\_type**.
 
 **To configure possible values for a test parameter:**
 

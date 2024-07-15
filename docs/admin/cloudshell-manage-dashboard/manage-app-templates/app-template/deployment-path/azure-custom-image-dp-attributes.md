@@ -34,7 +34,7 @@ The following attributes would be used to define the Azure VM From Custom Image:
             <td>VM Size</td>
             <td>All</td>
             <td>
-            (Optional) Size of the Microsoft Azure computing resources, including CPU, memory and networking capacity of the VM. Leave it empty to use the default VM Size that was set in the cloud provider resource. For example: “Standard\_A1\_v2”.
+            (Optional) Size of the Microsoft Azure computing resources, including CPU, memory and networking capacity of the VM. Leave it empty to use the default VM Size that was set in the cloud provider resource. For example: "Standard\_A1\_v2”.
 
             Make sure the VM size you specify is supported by the image you defined in the App.
 :::important
@@ -65,7 +65,7 @@ Azure 2G shell:
             <td>Disk Size</td>
             <td>All</td>
             <td>
-            (Optional) Disk size (in GB) of the VM's operating system. For example, “17” or “35”.
+            (Optional) Disk size (in GB) of the VM's operating system. For example, "17” or "35”.
 
             If you leave it empty, CloudShell will determine the disk size according to the App's VM Size.  
             </td>
@@ -222,7 +222,7 @@ If not specified, the protocol defaults to TCP.
             <td>Custom Tags</td>
             <td>2G</td>
             <td>
-            Semi-colon separated list of up to 9 tags to be applied to all related Azure objects created during the App deployment, such as the sandbox's resource group, VNETs, subnets, NSGs and VMs. Attribute supports the following syntax: [TagName]=[TagValue]; [TagName]=[TagValue]. For example: “Tag1=Val1;Tag2=Val2”
+            Semi-colon separated list of up to 9 tags to be applied to all related Azure objects created during the App deployment, such as the sandbox's resource group, VNETs, subnets, NSGs and VMs. Attribute supports the following syntax: [TagName]=[TagValue]; [TagName]=[TagValue]. For example: "Tag1=Val1;Tag2=Val2”
             </td>
         </tr>
         <tr>

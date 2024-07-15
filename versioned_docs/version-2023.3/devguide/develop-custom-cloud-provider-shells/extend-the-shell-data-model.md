@@ -51,7 +51,7 @@ properties:
     tags: [setting, configuration]      # supported tags are: configuration, setting, search_filter, abstract_filter, include_in_insight, readonly_to_users, display_in_diagram, connection_attribute, read_only
 ```
 
-However, if the attribute is not included in the shell’s family, you will need to set it both in the `properties:` section, and in the `capabilities:` section’s `properties`. We’ll add an attribute called “my discovery attribute”.
+However, if the attribute is not included in the shell’s family, you will need to set it both in the `properties:` section, and in the `capabilities:` section’s `properties`. We’ll add an attribute called "my discovery attribute”.
 
 First we’ll add it to the `capabilities` section:
 

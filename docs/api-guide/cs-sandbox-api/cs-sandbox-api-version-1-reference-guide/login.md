@@ -67,7 +67,7 @@ The following is a sample authorization token returned by the `login` method:
 </details>
 
 <details>
-<summary>Response summry</summary>
+<summary>Response summary</summary>
 
 The `login` method returns an authorization token that must be added to the header of each API method.
 

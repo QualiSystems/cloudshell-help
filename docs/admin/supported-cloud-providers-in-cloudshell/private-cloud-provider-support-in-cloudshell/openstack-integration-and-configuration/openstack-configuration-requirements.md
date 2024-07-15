@@ -53,7 +53,7 @@ To enable CloudShell to deploy and manage the lifecycle of OpenStack instances, 
             <td>Floating IP subnet network</td>
             <td>
             - The subnet network must be **external**.
-- The network should be “flat” – no need for segmentation.
+- The network should be "flat” – no need for segmentation.
 - The network must be connected to a router.
 - The floating IP is saved on the deployed app in the Public IP attribute
 </td>

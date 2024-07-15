@@ -13,7 +13,7 @@ The CloudShell CloudFormation process installs two Execution Servers on the AWS 
 
 ## Accessing the Execution Server instances
 
-- Use username “centos” and the key used during the CloudFormation deployment.
+- Use username "centos” and the key used during the CloudFormation deployment.
 
 ## Connecting the Execution Server to Quali Server
 

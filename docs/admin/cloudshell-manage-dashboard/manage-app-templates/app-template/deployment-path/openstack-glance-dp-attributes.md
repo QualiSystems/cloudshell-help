@@ -66,7 +66,7 @@ To support the deployment of 'all' OpenStack instances using the same hypervisor
         <tr>
             <td>Inbound Ports</td>
             <td>
-            Semi-colon spearated list of CIDRs, ports and protocols on which to open inbound traffic from outside of the sandbox.  
+            Semi-colon separated list of CIDRs, ports and protocols on which to open inbound traffic from outside of the sandbox.  
 The syntax is `[cidr:][protocol:]port-or-port-range`. For example: `0.0.0.0/0:tcp:80;443;udp:200-220`.  
 Default CIDR is "0.0.0.0/0". Default protocol is "tcp".
             </td>

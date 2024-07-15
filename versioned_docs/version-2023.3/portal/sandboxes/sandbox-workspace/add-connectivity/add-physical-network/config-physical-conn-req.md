@@ -92,7 +92,7 @@ In the blueprint, you can change port attributes in the route's **Resource Conne
    3. Select the attribute's target. Options are:  
        
        - **Source**: Updates the attribute's value on the L1 resource port that is connected to the source endpoint
-       - **Target**: Updatse the attribute value on the L1 resource port that is connected to the target endpoint
+       - **Target**: Updates the attribute value on the L1 resource port that is connected to the target endpoint
        - **All**: Updates all L1 resource ports in the route
    4. Click **Save** (or **Activate** in the **Resource Connections** side pane to apply the changes to the L1 resource ports).
     

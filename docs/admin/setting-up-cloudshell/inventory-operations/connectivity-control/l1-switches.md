@@ -93,7 +93,7 @@ To support physical endpoints, make sure your physical switches and routers use 
         
     3. Select the switch's **Family**, **Model** and **Driver**.
         :::note
-        The updated Family, Model and Drivers are added when you import the shell to **Resource Manager Client**. The driver contains the device's relevant commands, enables connectivity, and enables you to autoload/syncronize the switch with the updated settings. More about autoload and synchronizations in [Sync between the L1 switch and CloudShell](./l1-switches.md#sync-between-the-l1-switch-and-cloudshell).
+        The updated Family, Model and Drivers are added when you import the shell to **Resource Manager Client**. The driver contains the device's relevant commands, enables connectivity, and enables you to autoload/synchronize the switch with the updated settings. More about autoload and synchronizations in [Sync between the L1 switch and CloudShell](./l1-switches.md#sync-between-the-l1-switch-and-cloudshell).
         :::
     4. Click **OK**.
 4. In **Resource Explorer**, right-click the new resource and select **Configuration**.

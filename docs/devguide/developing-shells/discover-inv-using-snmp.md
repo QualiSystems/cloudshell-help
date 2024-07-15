@@ -10,7 +10,7 @@ The [cloudshell-snmp](https://github.com/QualiSystems/cloudshell-snmp) package
 
 Here’s a short explanation of the MIBs typically used in discovery:
 
-- IF-MIB: In this MIB we are using the table called “ifTable”, which contains information about the ports like interface full address (e.g. GigabitEthrnet0/0/1), the type of the port, speed etc.
+- IF-MIB: In this MIB we are using the table called "ifTable”, which contains information about the ports like interface full address (e.g. GigabitEthrnet0/0/1), the type of the port, speed etc.
     
 - Entity-MIB: Contains information about Chassis, modules, ports and describes the structure of the entities. It also contains the physical index of each entity, using the index we can then map between port to its associated interface.
     
@@ -70,7 +70,7 @@ def get_inventory(self, context):
 
 ### Compiling and downloading the vendor MIBs
 
-Some vendors will use their own custom MIBs which you’ll want to include in the discovery. For example, this CISCO site provides access to some common MIBS you can download: [http://tools.cisco.com/ITDIT/MIBS/MainServlet?ReleaseSel=3&PlatformSel=236&fsSel=368](http://tools.cisco.com/ITDIT/MIBS/MainServlet?ReleaseSel=3&PlatformSel=236&fsSel=368). Other vendors have their own MIBs download links.
+Some vendors will use their own custom MIBs which you’ll want to include in the discovery. For example, this CISCO site provides access to some common MIBs you can download: [http://tools.cisco.com/ITDIT/MIBS/MainServlet?ReleaseSel=3&PlatformSel=236&fsSel=368](http://tools.cisco.com/ITDIT/MIBS/MainServlet?ReleaseSel=3&PlatformSel=236&fsSel=368). Other vendors have their own MIBs download links.
 
 To compile the MIBs we recommend using the [mibdump.py](https://github.com/etingof/pysmi/blob/master/scripts/mibdump.py) script which is part of the [PySMI](https://pypi.org/project/pysmi/) SNMP libraries and tools. The **mibdump.py** script supports both compiling MIB sources you’ve downloaded locally as well as using remote MIB sources. For example, the [snmplabs](http://mibs.snmplabs.com/asn1/) repository provides a wealth of publicly available MIBs. Notice, if you are trying to compile MIB sources you’ve downloaded locally, you should be sure to download all of the dependencies to the same folder (e.g. IF-MIB depends on SNMPV2-MIB). However, you can specify more than one MIB source, so you can include both your local MIB sources and remote repositories.
 

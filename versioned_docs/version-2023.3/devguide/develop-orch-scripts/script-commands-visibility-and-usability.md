@@ -82,7 +82,7 @@ Our script expects two parameters, but CloudShell has no way of knowing that. We
     
 3. Then, enter a meaningful **Description**.
     
-4. Repeat the process, this time for the second param, which the script expects to be named “second\_param”.
+4. Repeat the process, this time for the second param, which the script expects to be named "second\_param”.
     
 
 ## Test the new look and feel

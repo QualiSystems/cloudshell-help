@@ -12,7 +12,7 @@ Before you begin make sure you have an SSL certificate installed on your CloudSh
 
 1. Make sure you have the `server.key` and `server.crt` Portal IIS certificate files or convert file/s you have to these two files (using the `openssl` tool, for example).
 2. Open the `C:\Program Files (x86)\QualiSystems\CloudShell\SandboxApiGateway\win64\ssl` folder, and place the `server.key` and `server.crt` IIS certificate files in this folder (If the folder does not exist, create it).
-3. In the `C:\Program Files (x86)\QualiSystems\CloudShell\SandboxApiGateway\conf\httpd.conf` file, uncomment the “Define UseSSL” line:
+3. In the `C:\Program Files (x86)\QualiSystems\CloudShell\SandboxApiGateway\conf\httpd.conf` file, uncomment the "Define UseSSL” line:
     
     ![](/Images/IG2/Snbx-api-httpd.conf.png)
     :::tip Important
@@ -22,7 +22,7 @@ Before you begin make sure you have an SSL certificate installed on your CloudSh
     
     `<add key="Frost.PortSSL" value="3443"/>`
     
-    Replace the default port number of “3443” as required.
+    Replace the default port number of "3443” as required.
     :::note
     To reset the CloudShell Sandbox API port number, see [Configure CloudShell Sandbox API](../configure-products/config-sandbox-api.md).
     :::

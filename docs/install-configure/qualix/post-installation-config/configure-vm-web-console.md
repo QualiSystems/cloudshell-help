@@ -21,7 +21,7 @@ vCenter Apps include a **Get VM Console** command, which allows the end-user to 
 
 1. Create a **VM Console Link** attribute.
     1. In Resource Manager Client, open **Admin > Attributes**.
-    2. Create a new “Password” attribute named **VM Console Link** with the **Setting** rule.
+    2. Create a new "Password” attribute named **VM Console Link** with the **Setting** rule.
     3. Leave the attribute value empty.
         
         CloudShell automatically fills in the attribute’s value with a link to the VM console when (1) deploying the App in the sandbox, or (2) running the App’s **Get VM Console** command on a static VM.

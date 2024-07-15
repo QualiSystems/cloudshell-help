@@ -5,7 +5,7 @@ sidebar_position: 3
 # Upgrading to a New Version of CloudShell (with the latest HA Plugin)
 
 :::note
-Prior to performing this upgrade procedure, make sure you are familiar with CloudShells's installation procedure. For more information see the ["CloudShell Suite Installation and Configuration"](../../index.md).
+Prior to performing this upgrade procedure, make sure you are familiar with CloudShells' installation procedure. For more information see the ["CloudShell Suite Installation and Configuration"](../../index.md).
 :::
 
 This section describes the required steps to upgrade the Quali server clustering environment to a new version of CloudShell with the latest official HA Plugin.
@@ -57,7 +57,7 @@ Do not perform this procedure in parallel. Upgrade each node separately.
     1. Install the new version of CloudShell. If the latest version is already installed on all nodes, skip this step.
     2. Configure the CloudShell portal by running the Configuration Wizard.
     3. If other products are installed on this machine, close all other configuration wizards.
-    4. Validate portal is accessible using “localhost” address.
+    4. Validate portal is accessible using "localhost” address.
 12. Repeat step 11 for each of the CloudShell Portal nodes.
 13. Start the **CloudShell Portal Role** in Windows Cluster.
 14. Configure all other products in all clusters' nodes (Execution servers, Runtime, Sandbox API etc.)

@@ -10,7 +10,7 @@ CloudShell's SQL Server maintains three databases:
 
 - **Quali**: Database for storing CloudShell inventory and blueprint data, including resources, Apps, services, blueprints, scripts, shells, etc. Note that starting with 2020.2, sandbox events data is stored in Quali Server’s MongoDB.
     
-- **Insight**: Database for storing CloudShell data to be used by Inisight. Specifically, it stores admin/user activity in real time, and receives daily resource utilization and attribute updates from the Quali Server. This information is then passed periodically to the Sisense ElastiCube database.
+- **Insight**: Database for storing CloudShell data to be used by Insight. Specifically, it stores admin/user activity in real time, and receives daily resource utilization and attribute updates from the Quali Server. This information is then passed periodically to the Sisense ElastiCube database.
     
 - **Results**: Database for storing the execution results of TestShell Studio tests that were executed in CloudShell Portal’s old Job Scheduling, TestShell Studio and TestShell Runner. Note that data related to the New Job Scheduling is stored in MongoDB.
     

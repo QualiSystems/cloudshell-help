@@ -29,7 +29,7 @@ For this procedure, you will need the IP address of your Quali Server VPN endpoi
     | Parameter | Description |
     | --- | --- |
     | IP address | The IP address defined in the Azure template's **VPN Address** parameter. of the Quali Server's VPN endpoint specified in the Azure Template. |
-    | Address space | The IP range (in CIDR notation) defined in the Azure tempalte's **On Premise CIDR** parameter. This range will be used by the CloudShell Management VNet and by the virtual machines that will be created by CloudShell. |
+    | Address space | The IP range (in CIDR notation) defined in the Azure template's **On Premise CIDR** parameter. This range will be used by the CloudShell Management VNet and by the virtual machines that will be created by CloudShell. |
     
 6. Click **Save**.
 7. Click **Connections**.

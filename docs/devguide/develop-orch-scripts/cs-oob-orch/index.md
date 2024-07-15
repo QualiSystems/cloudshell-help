@@ -339,7 +339,7 @@ server.sendmail("<sender_email>", "<target_email>", msg)
 
 ### Extending the OOB Restore Orchestration Script
 
-You can also extend the OOB Restore script to execute custom functionality at any point during the default sandbox restore process. The Restore script is a part of the sandbox setup process, and actually replaces the setup. Out of the box, the setup and restore logic are identical. However, if you customized the Setup script and you want the same customized script to be launched when restoring a sandbox, you should customize the Restore script as well, as the Restore script is the one that is being launched in a restored sandbox’s setup phase. It is also possible to customize the Restore script to have a different logic than the Setup script, to create a logic that is relevant only for restored sandboxes. For detailed explanations on how to extend the script’s stages and use its extension methods, see the [Setup and Teardown Orchestration](../cs-oob-orch/index.md#setup-and-teardown-orchestration) section above. For deails about the OOB Restore script's operations, see [Restore a Saved Sandbox](../../../portal/sandboxes/saved-sandboxes/restore-saved-sandbox.md).
+You can also extend the OOB Restore script to execute custom functionality at any point during the default sandbox restore process. The Restore script is a part of the sandbox setup process, and actually replaces the setup. Out of the box, the setup and restore logic are identical. However, if you customized the Setup script and you want the same customized script to be launched when restoring a sandbox, you should customize the Restore script as well, as the Restore script is the one that is being launched in a restored sandbox’s setup phase. It is also possible to customize the Restore script to have a different logic than the Setup script, to create a logic that is relevant only for restored sandboxes. For detailed explanations on how to extend the script’s stages and use its extension methods, see the [Setup and Teardown Orchestration](../cs-oob-orch/index.md#setup-and-teardown-orchestration) section above. For details about the OOB Restore script's operations, see [Restore a Saved Sandbox](../../../portal/sandboxes/saved-sandboxes/restore-saved-sandbox.md).
 :::note
 CloudShell does not support executing the Setup command directly via the Restore script using APIs, such as **ExecuteEnvironmentCommand** or **EnqueueEnvironmentCommand**.
 :::
@@ -376,7 +376,7 @@ In many cases, the sandbox's resources include configurations that apply to that
     
     1. Creates a loop that runs `save` or `orchestration_save` on each physical resource in the sandbox.
     2. Gets each physical resource’s configurations (artifact names).
-    3. Sets the “resource-artifact name” key pairs in the sandbox data.
+    3. Sets the "resource-artifact name” key pairs in the sandbox data.
 
 - Restore script that uses this sandbox data to restore each resource to its saved configuration.
 

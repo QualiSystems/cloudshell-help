@@ -168,7 +168,7 @@ To run configuration management on a Windows VM, the VM must have WinRM enabled.
     
     - To use parameters, specify the parameter name in curly brackets (for example: **\{branch\}**).
     - If the App has this parameter, CloudShell will replace the **\{branch\}** with its value during execution.
-    - If the parameter is missing, CloudShell will replace **\{branch\}** with emptystring.
+    - If the parameter is missing, CloudShell will replace **\{branch\}** with an empty string.
     - If you are using a global input, customers would be well advised to set a default value on the global input
     :::
     **For GitHub, specify the raw URL. For example:**
@@ -185,7 +185,7 @@ To run configuration management on a Windows VM, the VM must have WinRM enabled.
     
     Where:
     
-    - Each special character that the file contains has to be encoded. In the example above - “%2E” is an encoded point (“.”)
+    - Each special character that the file contains has to be encoded. In the example above - "%2E” is an encoded point (".”)
         
     - The ref value is the branch name (master for this example)
         

@@ -58,7 +58,7 @@ sidebar_position: 5
 
 ## Creating a dbOwner user on the MongoDB databases
 
-When using an external Mongo DB that requires authentication, you must create a user with “dbOwner” rights on the Mongo DB databases. Note that you don’t need to create the databases beforehand as Quali will do that for you.
+When using an external Mongo DB that requires authentication, you must create a user with "dbOwner” rights on the Mongo DB databases. Note that you don’t need to create the databases beforehand as Quali will do that for you.
 
 **To create the dbOwner user on the Mongo DB databases:**
 

@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Adding Automation Suites
 
-You can create automation suite templates that users are able to run many times, or an ad hoc automation suite that runs only once. For additional information about ad hoc automation suites, see [Running AdHoc Automation Suites](../running-automation-suites/run-adhoc-suites.md).
+You can create automation suite templates that users are able to run many times, or an ad-hoc automation suite that runs only once. For additional information about ad-hoc automation suites, see [Running AdHoc Automation Suites](../running-automation-suites/run-adhoc-suites.md).
 
 :::note
 Admins can enable non-admin users to edit and create suite templates using the `AllowRegularUsersToEditSnQ` key - see [Advanced CloudShell Customizations](../../../admin/setting-up-cloudshell/cloudshell-configuration-options/advanced-cloudshell-customizations.md#enabling-non-admin-users-to-edit-and-create-suite-templates).
