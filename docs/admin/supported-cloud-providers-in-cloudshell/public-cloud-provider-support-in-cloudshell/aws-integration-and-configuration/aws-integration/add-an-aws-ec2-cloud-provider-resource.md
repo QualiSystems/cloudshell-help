@@ -78,7 +78,7 @@ We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which p
                 <td>AWS Mgmt VPC ID</td>
                 <td>All</td>
                 <td>
-                ID of the Management VPC. Used by the **Setup** process to set up the VPC and subnet for the sandbox (use the **ManagementVPCID** output when configuring the Management VPC for the region). For example “vpc-633fb904”.
+                ID of the Management VPC. Used by the **Setup** process to set up the VPC and subnet for the sandbox (use the **ManagementVPCID** output when configuring the Management VPC for the region). For example "vpc-633fb904".
 
     This value is created when configuring the Management VPC for the region.
                 </td>
