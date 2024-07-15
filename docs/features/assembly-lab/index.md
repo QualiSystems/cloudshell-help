@@ -43,7 +43,7 @@ Fixed devices are never selected as parts, only as complete resources. [Read mor
 
 ### Reserving Blueprints
 
-Customers order a blueprint, which does not have to be solveable with the current devices in the lab.
+Customers order a blueprint, which does not have to be solvable with the current devices in the lab.
 
 ### Analyzing Requirements
 
