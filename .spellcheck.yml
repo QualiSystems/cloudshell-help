@@ -18,6 +18,12 @@ matrix:
       # Ignore URL in hyperlinks [title](url)
       - open: '\]\('
         close: '\)'
+      # Bolded words are usually terms
+      - open: '[*]+'
+        close: '[*]+'
+      # Inside HTML tags
+      - open: '(?s)(?P<open>[<])'
+        close: '[>]'
   - pyspelling.filters.html:
       comments: false
       ignores:
