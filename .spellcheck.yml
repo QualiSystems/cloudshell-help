@@ -9,12 +9,19 @@ matrix:
     output: wordlist.dic
     encoding: utf-8
   pipeline:
-  - pyspelling.filters.markdown:
-      markdown_extensions:
-        - pymdownx.superfences
+  - pyspelling.filters.url:
+  # - pyspelling.filters.markdown:
+  #     markdown_extensions:
+  #       - pymdownx.superfences
   - pyspelling.filters.context:
       context_visible_first: true
-      delimiters:    
+      delimiters:
+      # Ignore multiline content between fences
+      - open: '(?s)^(?P<open> *```)[a-z]*$'
+        close: '^(?P=open)$'
+      # Ignore text between inline back ticks
+      - open: '(?P<open>`+)'
+        close: '(?P=open)'
       # Ignore URL in hyperlinks [title](url)
       - open: '\]\('
         close: '\)'
