@@ -1,4 +1,4 @@
-jobs: 2
+jobs: 4
 matrix:
 - name: Markdown
   aspell:
@@ -11,10 +11,13 @@ matrix:
   pipeline:
   - pyspelling.filters.markdown:
       markdown_extensions:
-      - pymdownx.superfences
+        - pymdownx.superfences
+        - markdown.extensions.extra:
+  - pyspelling.filters.url:
   - pyspelling.filters.html:
       comments: false
       ignores:
+      - ':matches(code, pre)'
       - code
       - pre
   sources:
