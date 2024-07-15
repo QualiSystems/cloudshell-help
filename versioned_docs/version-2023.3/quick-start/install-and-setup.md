@@ -44,7 +44,7 @@ The basic components are:
 
 Depending on your organization, you might want to set up domains for your different teams or sites. A domain is basically a space that includes the resources, Apps and blueprints that apply to a specific team, project or geographically-distributed site in your organization, and the users that belong to that team or site.
 
-Groups are the link that connects users to a domain. Each group has a role, which is delegated to that group’s members in the domain. As such, you could have a single user with different roles in different domains. That user could be a “regular user” in one domain but a “domain admin” in another.
+Groups are the link that connects users to a domain. Each group has a role, which is delegated to that group’s members in the domain. As such, you could have a single user with different roles in different domains. That user could be a "regular user” in one domain but a "domain admin” in another.
 
 This diagram illustrates how users, groups and domains work together:
 

@@ -26,7 +26,7 @@ The playbook runs once during the **Setup** phase for all of the sandbox's Apps 
     :::
 7. If the URL is protected, specify the **Username** and **Password**, or **Token**.
     
-8. In the **Inventory Groups** field, specify the inventory groups, separated by semicolons “;”. For details, see the [Inventory Groups](./ansible-playbook-examples.md#inventory-groups) example.
+8. In the **Inventory Groups** field, specify the inventory groups, separated by semicolons ";”. For details, see the [Inventory Groups](./ansible-playbook-examples.md#inventory-groups) example.
     
 9. To add parameters to the playbook, click **Add Parameter**, and enter each parameter’s name and value. Repeat for additional parameters.
     
@@ -39,7 +39,7 @@ You can add parameters to the App template in the following ways:
 
 - Provide the value as part of the App template, making it the default value for every instance of this App template.
 - Specify a static value in the App in the blueprint.
-- Specify a dynamic value in the App in the blueprint, linking the parameter to one of the blueprint’s Global Inputs. To do so, just enter the global input’s name in curly brackets as the parameter value, or click the “plus” button to select an available Global Input.
+- Specify a dynamic value in the App in the blueprint, linking the parameter to one of the blueprint’s Global Inputs. To do so, just enter the global input’s name in curly brackets as the parameter value, or click the "plus” button to select an available Global Input.
 - Pass a value using the API, as illustrated in this [Parameters](./ansible-playbook-examples.md#parameters). This will replace any value provided in the App template or in the blueprint.
 
 1.  Open the **App Resource** tab, and enter the VM’s access credentials.

@@ -70,7 +70,7 @@ The required inputs are:
 - **restrictedValues** \= \[optional\] Comma-separated list of possible values
     
 
-In this example, we are adding an Execution Server Selector attribute named “Domain\_ESS” to a Shell named “ExampleShell” with “Test NY” as the default value:
+In this example, we are adding an Execution Server Selector attribute named "Domain\_ESS” to a Shell named "ExampleShell” with "Test NY” as the default value:
 
 ![](/Images/Devguide-shells/Deploying-to-Production_624x304.png)
 

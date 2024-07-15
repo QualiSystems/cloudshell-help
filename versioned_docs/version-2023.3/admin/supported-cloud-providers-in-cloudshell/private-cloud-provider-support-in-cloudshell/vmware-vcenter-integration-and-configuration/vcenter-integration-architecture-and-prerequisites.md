@@ -93,4 +93,4 @@ To help you organize your CloudShell activity on vSphere, we've come up with the
 - "Base Templates" folder – for all App templates to be deployed on CloudShell sandboxes:
     - Must have VMware tools installed (needs to be included with image or VM template with which CloudShell creates the App VM)
     - DHCP IP settings
-    - A snapshot called “clean” – after VM is powered off
+    - A snapshot called "clean” – after VM is powered off

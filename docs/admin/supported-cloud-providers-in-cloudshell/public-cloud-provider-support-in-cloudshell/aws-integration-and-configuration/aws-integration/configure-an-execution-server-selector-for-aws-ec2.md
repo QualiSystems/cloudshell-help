@@ -20,7 +20,7 @@ The below procedure assumes you're using the out-of-the-box **Execution Server S
     
     1. Open the **Manage>Execution Servers>Servers** page.
     2. Click the **es-shells** Execution Server.
-    3. Select the **Execution Server Selector** check box and enter a unique value, such as “us-east-1-es1”.
+    3. Select the **Execution Server Selector** check box and enter a unique value, such as "us-east-1-es1”.
         
         ![](/Images/Admin-Guide/AWS-deployment-type/AWS-deployment-type-Installation_1_428x153.png)
         

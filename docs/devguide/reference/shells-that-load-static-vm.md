@@ -67,7 +67,7 @@ Install the shell on CloudShell by running the following command-line from the s
 shellfoundry install
 ```
 
-When creating the resource in CloudShell Portal’s **Inventory** dashboard, specify “na” as the **Address** if you don’t know the VM’s address or if the VM has a dynamic one:
+When creating the resource in CloudShell Portal’s **Inventory** dashboard, specify "na" as the **Address** if you don’t know the VM’s address or if the VM has a dynamic one:
 
 ![Shell Commands](/Images/Devguide-reference/Shells-that-Load-a-Static_624x410.png)
 

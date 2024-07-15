@@ -48,7 +48,7 @@ defexecute():
 
 ## Connecting L2 routes
 
-While connecting L1 routes is done via the CreateRouteInReservation API (example above), L2 “Connector” routes are established using the SetConnectorRequest API.
+While connecting L1 routes is done via the CreateRouteInReservation API (example above), L2 "Connector” routes are established using the SetConnectorRequest API.
 
 ```python
 import time

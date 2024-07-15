@@ -21,7 +21,7 @@ If the functionality you’re looking for is covered in the Sandbox APIs, it is 
 
 #### CloudShell Sandbox API
 
-The Sandbox API live documentation page is installed with CloudShell. To access it, simply browse to the following default address: [http://\[CloudShellPortalAddress\]:82/api/v2/explore/]. If you’re accessing the link from the CloudShell Portal machine itself, or from the CloudShell SDK edition machine, you can simply use “localhost” or “127.0.0.1”. The API documentation page allows you to test and experiment with the APIs as well as provide information on the different operations and parameters.
+The Sandbox API live documentation page is installed with CloudShell. To access it, simply browse to the following default address: [http://\[CloudShellPortalAddress\]:82/api/v2/explore/]. If you’re accessing the link from the CloudShell Portal machine itself, or from the CloudShell SDK edition machine, you can simply use "localhost” or "127.0.0.1”. The API documentation page allows you to test and experiment with the APIs as well as provide information on the different operations and parameters.
 
 #### CloudShell Automation API
 

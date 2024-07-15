@@ -22,7 +22,7 @@ Blueprint designers can configure new Virtual Network connectivity requirements 
     
 3. If an endpoint is an App or a deployed App and a vNIC is not specified, CloudShell will use the first available vNIC (in the holding network specified in the App's cloud provider resource) to make the connection.
     
-    You can specify the vNIC to use in the **Requested Source vNIC Name** and **Requested Target vNIC Name** attributes (the source and target endpoints are identified on the diagram at the top of the **Connector Attributes** side pane). Use commas to specify multiple vNIC names. For private cloud Apps, you can specify the full name or index number of the vNIC (for example, "Network adapter 2" or simply “2”). For public cloud Apps, specify the device index number (for example, "2").
+    You can specify the vNIC to use in the **Requested Source vNIC Name** and **Requested Target vNIC Name** attributes (the source and target endpoints are identified on the diagram at the top of the **Connector Attributes** side pane). Use commas to specify multiple vNIC names. For private cloud Apps, you can specify the full name or index number of the vNIC (for example, "Network adapter 2" or simply "2”). For public cloud Apps, specify the device index number (for example, "2").
     
     CloudShell also allows mapping sub-resources that reside on the deployed App, like blades and ports, to other endpoints, but this requires some configuration. For details, see the CloudShell Dev Guide's [Mapping Connections using App Sub-resources](../../../../../devguide/reference/map-connections-using-app-sub-resources.md) article.
     

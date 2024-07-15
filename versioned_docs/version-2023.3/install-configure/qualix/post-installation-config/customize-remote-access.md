@@ -25,7 +25,7 @@ You can both customize the default access terminals, and add and customize your 
     
     ![](/Images/QualiX/Customizing-remote-access.png)
     
-    When you click the (“Web”) link in an active sandbox, the desired URL (quali.com for example) is displayed.
+    When you click the ("Web”) link in an active sandbox, the desired URL (quali.com for example) is displayed.
     
 
 ## Customizing access terminals based on specific equipment

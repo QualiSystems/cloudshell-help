@@ -112,14 +112,14 @@ In AWS EC2 Apps, this setting is mandatory if the App is connected to more than 
             <td>Storage IOPS</td>
             <td>2nd Gen only</td>
             <td>
-            The default number of I/O operations per second that the root volume can support. This parameter is used only for storage of type io1, in which you can provision up to 30 IOPS per GiB. If set to 0, the default in the image is used. For example: 240.
+            The default number of I/O operations per second that the root volume can support. This parameter is used only for storage of type *io1*, in which you can provision up to 30 IOPS per GiB. If set to 0, the default in the image is used. For example: 240.
             </td>
         </tr>
         <tr>
             <td>Storage Type</td>
             <td>2nd Gen only</td>
             <td>
-            The type of storage volume. In AWS, there are several EBS Volume types that can be used, gp2 and io1 for SSD, st1 and sc1 for HDD or the standard type which is the old generation EBS volume type. If auto is selected, the storage type defined in the image is used.
+            The type of storage volume. In AWS, there are several EBS Volume types that can be used, *gp2* and *io1* for SSD, *st1* and *sc1* for HDD or the standard type which is the old generation EBS volume type. If auto is selected, the storage type defined in the image is used.
             </td>
         </tr>
         <tr>

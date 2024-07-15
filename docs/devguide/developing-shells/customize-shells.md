@@ -47,13 +47,13 @@ When customizing an official shell you can add new commands, and also modify or 
 
 The command’s logic should be placed either in the driver itself or in a separate Python package.
 
-Modifications to a command can include adding some logic either before or after the command or changing the command logic itself. In order to do that, **copy the command code** from the original Quali Python package to the shell driver or to the custom Python package you created (*the command logic resides either in the vendor package or vendor-os package - for example in “cloudshell-cisco” or “cloudshell-cisco-ios”*).
+Modifications to a command can include adding some logic either before or after the command or changing the command logic itself. In order to do that, **copy the command code** from the original Quali Python package to the shell driver or to the custom Python package you created (*the command logic resides either in the vendor package or vendor-os package - for example in "cloudshell-cisco” or "cloudshell-cisco-ios”*).
 
 When modifying an existing command, you can add optional input parameters. Just make sure that the implementation is backwards compatible. Note that adding mandatory inputs or removing one of the original inputs is not supported. In these cases, it is recommended to create an additional command with a different name, instead of modifying an existing one.
 
 For example, in this customized [Cisco NXOS shell](https://github.com/QualiSystemsLab/Extended-Cisco-NXOS-Shell), we modified the commands that configure VLANs on multiple ports and port channels.
 
-It is also possible to hide or remove a command. Hiding a command is done by placing it in a hidden or “admin” category in the `drivermetadata.xml` - see [Commands Visibility and Usability](./commands-visibility-and-usability.md). Note that removing a command might affect how the shell is used since CloudShell and/or some orchestration scripts might depend on the existing driver’s commands.
+It is also possible to hide or remove a command. Hiding a command is done by placing it in a hidden or "admin” category in the `drivermetadata.xml` - see [Commands Visibility and Usability](./commands-visibility-and-usability.md). Note that removing a command might affect how the shell is used since CloudShell and/or some orchestration scripts might depend on the existing driver’s commands.
 
 When adding or modifying a command, you can leverage Quali’s shell framework to ease the development process. For details, see [Quali’s Shell Framework (Python 2)](../reference/quali-shell-framework-py2.md) and [Quali’s Shell Framework (Python 3)](../reference/quali-shell-framework-py3.md).
 
@@ -108,7 +108,7 @@ This section explains how to add attributes to the shell’s root model and to s
     shellfoundry extend <URL/path-to-shell>
     ```
     
-    The path can be a URL to the source code of the shell’s desired release in [Quali Repositories](https://github.com/orgs/QualiSystems/discussions/categories/integrations) or the filesystem path (prefixed by local:) to the extracted source code folder (like “local:C:\\temp\\Cisco-NXOS-Switch-Shell-2G-2.0.1”).
+    The path can be a URL to the source code of the shell’s desired release in [Quali Repositories](https://github.com/orgs/QualiSystems/discussions/categories/integrations) or the filesystem path (prefixed by local:) to the extracted source code folder (like "local:C:\\temp\\Cisco-NXOS-Switch-Shell-2G-2.0.1”).
     
     **To create a new shell based on a specific shell standard:**
     
@@ -141,11 +141,11 @@ This section explains how to add attributes to the shell’s root model and to s
         
     - **property\_name**: (Relevant when adding an attribute) Replace **my\_property** with the new attribute’s display name if you want to add a root level attribute. Attribute name must begin with a letter and can contain alpha numeric characters, spaces and underscores.
         
-        To add an attribute to a sub-model, replace **my\_property** with the sub-model name (<span style={{ color: 'green' }}>remove any spaces from the name</span>), followed by the name of the new attribute. For example: “Chassis.My new attribute:”. For the sub-models of a specific shell, see the [documentation page](https://github.com/QualiSystems/cloudshell-standards/tree/master/Documentation) of your shell’s standard. <span style={{ color: 'green' }}>Do not remove the colon (:) from the end of the line.</span>
+        To add an attribute to a sub-model, replace **my\_property** with the sub-model name (<span style={{ color: 'green' }}>remove any spaces from the name</span>), followed by the name of the new attribute. For example: "Chassis.My new attribute:”. For the sub-models of a specific shell, see the [documentation page](https://github.com/QualiSystems/cloudshell-standards/tree/master/Documentation) of your shell’s standard. <span style={{ color: 'green' }}>Do not remove the colon (:) from the end of the line.</span>
         
     - **type**: (Relevant when adding an attribute) Type of attribute. Optional values: string, integer, float, boolean, cloudshell.datatypes.Password.
         
-    - **default**: The default value of the attribute. If you don’t specify a default value, CloudShell will use the default value according to the data type: empty string for string attributes, ‘0’ for integers, and false for boolean attributes. Wrap the value in single quotes if it contains one of the following characters: :, \{, \}, \[, \], ,, &, \*, #, ?, |, -, \< \>, =, !, %, @, \`, and use double quotes if your value contains a backslash “\\” to avoid escaping it.
+    - **default**: The default value of the attribute. If you don’t specify a default value, CloudShell will use the default value according to the data type: empty string for string attributes, ‘0’ for integers, and false for boolean attributes. Wrap the value in single quotes if it contains one of the following characters: :, \{, \}, \[, \], ,, &, \*, #, ?, |, -, \< \>, =, !, %, @, \`, and use double quotes if your value contains a backslash "\\” to avoid escaping it.
         
     - **description**: Attribute’s description.
         
@@ -179,7 +179,7 @@ Customizing a service shell’s commands is the same as for resource shells, whi
 
 Publishing an attribute displays that attribute in the service’s settings dialog box when a CloudShell user adds or edits a service in a blueprint or sandbox diagram. This is done by adding the `user_input` tag to the attribute.
 
-Note that starting with CloudShell 9.1 GA, when adding a custom attribute to an already installed service shell (via CloudShell Portal’s **Shells** management page or the API), the attribute is defined as “user input” by default.
+Note that starting with CloudShell 9.1 GA, when adding a custom attribute to an already installed service shell (via CloudShell Portal’s **Shells** management page or the API), the attribute is defined as "user input” by default.
 
 **To publish a service shell’s attribute:**
 
@@ -212,7 +212,7 @@ This procedure explains how to add service categories to a 2nd Gen service Shell
     shellfoundry extend <URL/path-to-shell-template>
     ```
     
-    The path can be a URL to the source code of the shell’s desired release in [Quali Repositories](https://github.com/orgs/QualiSystems/discussions/categories/integrations) or the filesystem path (prefixed by local:) to the extracted source code folder (like “local:C:\\temp\\Cisco-NXOS-Switch-Shell-2G-2.0.1”).
+    The path can be a URL to the source code of the shell’s desired release in [Quali Repositories](https://github.com/orgs/QualiSystems/discussions/categories/integrations) or the filesystem path (prefixed by local:) to the extracted source code folder (like "local:C:\\temp\\Cisco-NXOS-Switch-Shell-2G-2.0.1”).
     
     **To create a new shell based on a specific shell standard:**
     
@@ -320,7 +320,7 @@ The image should be displayed on the resource.
 
 ![](/Images/Devguide-shells/Customizing-Shells_2.png)
 
-Next, create an attribute on the root model of the resource. Attributes are created in the `properties` section of the `shell-definition.yaml`. We’ll add a string attribute called “my attribute” with a default value and some rules.
+Next, create an attribute on the root model of the resource. Attributes are created in the `properties` section of the `shell-definition.yaml`. We’ll add a string attribute called "my attribute” with a default value and some rules.
 
 ```css
 node_types:
@@ -341,9 +341,9 @@ The attribute is added to resources created from this shell. To see the attribut
 
 ![](/Images/Devguide-shells/Customizing-Shells_3_624x553.png)
 
-Let’s say you want to create an attribute on the shell’s port. Starting with CloudShell 8.3, this capability is supported. Sub-model attributes are added the same way as root model attributes. The only difference is that for sub-model attributes, you need to include the sub-model before the property name (in our case, the sub-model is “Generic Port”). If the sub-model consists of several words, remove any spaces between them.
+Let’s say you want to create an attribute on the shell’s port. Starting with CloudShell 8.3, this capability is supported. Sub-model attributes are added the same way as root model attributes. The only difference is that for sub-model attributes, you need to include the sub-model before the property name (in our case, the sub-model is "Generic Port”). If the sub-model consists of several words, remove any spaces between them.
 
-For example, adding an attribute called “my port speed” to the Generic Port sub-model:
+For example, adding an attribute called "my port speed” to the Generic Port sub-model:
 
 ```css
 node_types:
@@ -367,11 +367,11 @@ node_types:
         tags: [setting, configuration]
 ```
 
-To see the new attribute, in the **Inventory** dashboard, find the resource’s ports (you can use the search field), click a port’s “more info” button and in the window that pops up, scroll down until you see the attribute.
+To see the new attribute, in the **Inventory** dashboard, find the resource’s ports (you can use the search field), click a port’s "more info” button and in the window that pops up, scroll down until you see the attribute.
 
 ![](/Images/Devguide-shells/Customizing-Shells_4_624x284.png)
 
-You can also add attributes that are required for the resource’s discovery. While non-discovery attributes only need to be added to the `properties` section, new discovery attributes are added both to the `properties` section of the `shell-definition.yaml`, and to the `capabilities` section’s `properties`. We’ll add an attribute called “my discovery attribute”.
+You can also add attributes that are required for the resource’s discovery. While non-discovery attributes only need to be added to the `properties` section, new discovery attributes are added both to the `properties` section of the `shell-definition.yaml`, and to the `capabilities` section’s `properties`. We’ll add an attribute called "my discovery attribute”.
 
 ```css
 capabilities:
@@ -391,7 +391,7 @@ Let’s make sure the attribute was added to the shell. In the **Inventory** d
 
 Note that if we’re adding a discovery attribute that is already included in the shell’s standard, we only need to define it in the `capabilities` section.
 
-Now let’s add a simple command that prints “hello world” to the **Output** console. In the `driver.py` file, add the command.
+Now let’s add a simple command that prints "hello world” to the **Output** console. In the `driver.py` file, add the command.
 
 ```python
 def hello_world(self):

@@ -22,7 +22,7 @@ MongoDB does not support Windows Server 2012. For details, see [Windows OS requi
 
 ## Getting the files
 
-1. Obtain the following MongoDB official files and place them in a temporary folder (referred to as “Downloads” in this guide) on the Cloudshell server:
+1. Obtain the following MongoDB official files and place them in a temporary folder (referred to as "Downloads” in this guide) on the Cloudshell server:
     - [mongodb-windows-x86_64-4.4.22.zip](https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-4.4.22.zip)
     - [mongodb-windows-x86_64-5.0.18.zip](https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-5.0.18.zip)
     - [mongodb-windows-x86_64-6.0.6.zip](https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-6.0.6.zip)
@@ -35,7 +35,7 @@ MongoDB does not support Windows Server 2012. For details, see [Windows OS requi
 1. Start the MongoDB shell.
     - Navigate to `Downloads\mongosh-1.9.0-win32-x64\bin`
     - Double click the `mongosh.exe` executable.
-    - Follow the instructions to connect to “localhost” (press enter).
+    - Follow the instructions to connect to "localhost” (press enter).
 
 2. Validate dependencies by running in the shell:
     ```js
@@ -92,7 +92,7 @@ MongoDB does not support Windows Server 2012. For details, see [Windows OS requi
 1. Start the MongoDB shell.
     - Navigate to `Downloads\mongosh-1.9.0-win32-x64\bin`
     - Double click the `mongosh.exe` executable.
-    - Follow the instructions to connect to “localhost” (press enter).
+    - Follow the instructions to connect to "localhost” (press enter).
 
 2. Validate dependencies by running in the shell:
     ```js
@@ -157,7 +157,7 @@ MongoDB does not support Windows Server 2012. For details, see [Windows OS requi
 1. Start the MongoDB shell.
     - Navigate to `Downloads\mongosh-1.9.0-win32-x64\bin`
     - Double click the `mongosh.exe` executable.
-    - Follow the instructions to connect to “localhost” (press enter).
+    - Follow the instructions to connect to "localhost” (press enter).
 2. Validate dependencies by running in the shell:
     ```js
     db.adminCommand( { getParameter: 1, featureCompatibilityVersion: 1 } )

@@ -19,7 +19,7 @@ Now that we understand the general concept, let's drill down to the technical pa
 - The **Job Scheduling** dashboard's **Update local tests** button (available for admins only) runs a batch script file. This file pulls the latest version from the repository to the Quali Server machine (the files on the Quali Server are used for listing only) and allows CloudShell Portal to show which tests exists/get inputs/etc.
     
     :::warning Important
-    - **Update local tests** applies to ALL execution servers in your CloudShell deployment. As such, when running **Update local tests**, execution servers that do not have a batch file configured will go into “Waiting for update” mode and become excluded. For details on how to add a passing script, see [Batch scripts](#batch-scripts).
+    - **Update local tests** applies to ALL execution servers in your CloudShell deployment. As such, when running **Update local tests**, execution servers that do not have a batch file configured will go into "Waiting for update” mode and become excluded. For details on how to add a passing script, see [Batch scripts](#batch-scripts).
     - **Update local tests** only applies to included execution servers. Therefore, if your execution servers are excluded, ensure that the batch script passes with "exit code 0" and include them, as explained in [Including/excluding execution servers](../../cloudshell-manage-dashboard/managing-execution-servers/execution-servers-servers-page.md#includingexcluding-execution-servers).
     :::
 - Once the batch file completes:
@@ -63,7 +63,7 @@ On the CloudShell Portal, enable admins to browse the local tests folder and set
     
     ![](/Images/Admin-Guide/Setting-Up-CloudShell/JobSchedulingUpdateLocalTests.png)
     :::note
-    Values of arguments that have the word “password” in the name are displayed as asterisks.
+    Values of arguments that have the word "password” in the name are displayed as asterisks.
     :::
 4. Restart the **CloudShell Portal IIS** service.
 

@@ -30,7 +30,7 @@ The ElastiCube Calendar component table provides date and time at which any item
 
 ## Executions
 
-(Used in Legacy dashboards) The ElastiCube Executions table provides details of tests that were executed from CloudShell’s job scheduling module and that had logging profile of “All”.
+(Used in Legacy dashboards) The ElastiCube Executions table provides details of tests that were executed from CloudShell’s job scheduling module and that had logging profile of "All”.
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -157,7 +157,7 @@ Each row in the Reservation daily log table represents a single sandbox that was
 | PlannedEndDate | Date-Time | The planned end date for the sandbox according to the value specified during sandbox creation |
 | ReservationCount | Integer | (Used in legacy dashboards) The number of concurrent sandboxes in CloudShell when this sandbox was created |
 | StartDate | Date-Time | The date and time at which the sandbox started |
-| StartDateId | Integer | (Used in new dashboards) Integer that indicates the date in which the sandbox started. Format: \|YEAR\| \|MONTH\| \|DAY\|. For example: "20210720" indicates “7/20/2021” |
+| StartDateId | Integer | (Used in new dashboards) Integer that indicates the date in which the sandbox started. Format: \|YEAR\| \|MONTH\| \|DAY\|. For example: "20210720" indicates "7/20/2021” |
 | DailyDuration | Integer | Daily sandbox duration (in minutes) |
 | DailyDuration\_days | Integer | (Used in new dashboards) Daily sandbox duration (in days) |
 | TotalDuration | Integer | (Used in legacy dashboards) Total sandbox duration (in minutes) |
@@ -220,7 +220,7 @@ Each row in the Reservation summary log table represents a single sandbox. Calen
 | Type | Integer | Type of blueprint used. Options are: **Regular**, **View** and **Template**. |
 | ReservationCount | Integer | The number of concurrent sandboxes in CloudShell when this sandbox was created |
 | StartDate | Date-Time | The date and time at which the sandbox was started |
-| StartDateId | Integer | The unique identifier of the sandbox's start date. Format: \|YEAR\| \|MONTH\| \|DAY\|. For example: "20210720" indicates “7/20/2021” |
+| StartDateId | Integer | The unique identifier of the sandbox's start date. Format: \|YEAR\| \|MONTH\| \|DAY\|. For example: "20210720" indicates "7/20/2021” |
 | OvertimeMinutes | Integer | (Relevant for sandboxes that went into overtime) The sandbox's overtime duration in minutes |
 | Duration | Integer | Total sandbox duration (in minutes) |
 | ReservationId | Text | The unique identifier of the sandbox |
@@ -231,7 +231,7 @@ Each row in the Reservation summary log table represents a single sandbox. Calen
 | UserId | Text | The unique identifier of the user. Used for improving query performance. |
 | SavedSandboxId | Text | The unique identifier of the saved sandbox from which the reservation was launched |
 | OwnerName | Text | The name of the sandbox owner |
-| EndDateId | Integer | Unique identifier of the sandbox's end date. Format: \|YEAR\| \|MONTH\| \|DAY\|. For example: "20210720" indicates “7/20/2021” |
+| EndDateId | Integer | Unique identifier of the sandbox's end date. Format: \|YEAR\| \|MONTH\| \|DAY\|. For example: "20210720" indicates "7/20/2021” |
 | EndDate | Date-Time | The estimated end date of the sandbox, of the actual end date in case the sandbox had already ended |
 
 ## Resource attributes value summary
@@ -287,7 +287,7 @@ Legacy dashboards:
 | root\_1 | Integer | Indicates a root resource |
 | Leaf\_1 | Integer | Indicates an edge sub-resource. For example, port. |
 | Created | Date-Time | (Used in old dashboards) The time at which the resource was created |
-| Dateid | Integer | Unique identifier of the resource's creation date. Format: \|YEAR\| \|MONTH\| \|DAY\|. For example: "20210720" indicates “7/20/2021” |
+| Dateid | Integer | Unique identifier of the resource's creation date. Format: \|YEAR\| \|MONTH\| \|DAY\|. For example: "20210720" indicates "7/20/2021” |
 | CalculatedResourceModel | Text | (Used in old dashboards) By default the value is the CloudShell Model name. If the resource has a **Model** attribute, this field contains the attribute value. |
 | Calculated RootModel | Text | (Used in old dashboards) By default the value is the CloudShell Model name. If the resource has a **Model** attribute, this field contains the attribute value. |
 | Deleted | Date-Time | (Used in old dashboards) The time at which the resource was deleted |
@@ -296,26 +296,26 @@ Legacy dashboards:
 | ResourceFullName | Text | (Used in old dashboards) The full name of the resource. The full name contains the resource name and the hierarchy.<br/>For example: Switch 1\\Blade 2\\Port 34 |
 | ResourceModelId | Big Integer | (Used in old dashboards) The unique identifier of the model |
 | ResourceName | Text | The name of the resource |
-| RootId | Text | The unique identifier of the root resource that contains the resource.<br/>For example: the identifier of “Switch 1” in the following port “Switch 1\\Blade 2\\Port 34”<br/>Note that for root resources the value is the resource's unique identifier. |
-| RootName | Text | The name of the root resource that contains this resource.<br/>For example: the value of “Switch 1” in the following port “Switch 1\\Blade 2\\Port 34”<br/>Note that for root resources the value is the resource's name. |
-| ParentName | Text | (Used in old dashboards) The unique identifier of the parent resource.<br/>For example: the identifier of “Blade 2” in the following port: “Switch 1\\Blade 2\\Port 34”<br/>Note that for root resources the value is empty because they do not have a parent. |
+| RootId | Text | The unique identifier of the root resource that contains the resource.<br/>For example: the identifier of "Switch 1” in the following port "Switch 1\\Blade 2\\Port 34”<br/>Note that for root resources the value is the resource's unique identifier. |
+| RootName | Text | The name of the root resource that contains this resource.<br/>For example: the value of "Switch 1” in the following port "Switch 1\\Blade 2\\Port 34”<br/>Note that for root resources the value is the resource's name. |
+| ParentName | Text | (Used in old dashboards) The unique identifier of the parent resource.<br/>For example: the identifier of "Blade 2” in the following port: "Switch 1\\Blade 2\\Port 34”<br/>Note that for root resources the value is empty because they do not have a parent. |
 | RootFamilyName | Text | The family name of the root resource |
 | RootModelName | Text | The model name of the root resource |
 | ResourceFamilyName |   | (Used in new dashboards) Family of the resource |
 | ResourceModelName |   | (Used in new dashboards) Model of the resource |
 | IsConnectable | Text | This value specifies whether the resource can be connected to other resources |
-| ParentPath | Text | The path of the parent resource from the root.<br/>For example: the value for the port “Switch 1\\Blade 2\\Port 34” is “Switch 1\\Blade 2”.<br/>Note that for root resources the value is empty. |
+| ParentPath | Text | The path of the parent resource from the root.<br/>For example: the value for the port "Switch 1\\Blade 2\\Port 34” is "Switch 1\\Blade 2”.<br/>Note that for root resources the value is empty. |
 | BladePath | Text | (Used in old dashboards) (Relevant for connectable resources only) The parent path of the parent resource |
 | AppTemplateName | Text | (Used in old dashboards) The name of the App template on which the App is based |
 | CloudProviderName | Text | (Used in old dashboards) The name of the cloud provider resource on which the App is hosted |
 | CreatedInReservationName | Text | (Used in old dashboards) The name of the sandbox in which the resource or App was created |
 | CreatedInDomain | Text | (Used in old dashboards) The name of the domain in which the App was deployed |
 | RootDeleted | Date-Time | The time at which the root resource was deleted |
-| root\_deleted\_txt | Text | (Used in new dashboards) If the root of the resource is deleted, the value is “Deleted”. Otherwise null. |
+| root\_deleted\_txt | Text | (Used in new dashboards) If the root of the resource is deleted, the value is "Deleted”. Otherwise null. |
 | root\_created | Date-Time | (Used in new dashboards) Data and time at which the root resource was created. |
 | resource\_created | Date-Time | (Used in new dashboards) Date and time at which the resource was created. |
 | resource\_deleted | Date-Time | (Used in new dashboards) Date and time at which the resource was deleted. |
-| resource\_deleted\_txt | Text | (Used in new dashboards) If the resource is deleted, the value is “Deleted”. Otherwise null. |
+| resource\_deleted\_txt | Text | (Used in new dashboards) If the resource is deleted, the value is "Deleted”. Otherwise null. |
 
 ## Resource model log
 
@@ -338,11 +338,11 @@ Connectable resources are basically ports that can be connected to other compone
 | EntryDate | Date-Time | The date of entry that this log record represents (specific day within a sandbox) |
 | Id | Big Integer | The unique identifier of each record |
 | Lock1 | Integer | (Used in legacy dashboards) Daily lock status log, the day is divided into 6 segments, each value can be either 0 or 1:<br/>0 = The resource was not locked in the sandbox in this segment<br/>1 = The resource was locked in the sandbox in this segment |
-| Lock2 | Integer | (Used in legacy dashboards) 4 hour day intervals for resources marked “in use” in the sandbox |
-| Lock3 | Integer | (Used in legacy dashboards) 4 hour day intervals for resources marked “in use” in the sandbox |
-| Lock4 | Integer | (Used in legacy dashboards) 4 hour day intervals for resources marked “in use” in the sandbox |
-| Lock5 | Integer | (Used in legacy dashboards) 4 hour day intervals for resources marked “in use” in the sandbox |
-| Lock6 | Integer | (Used in legacy dashboards) 4 hour day intervals for resources marked “in use” in the sandbox |
+| Lock2 | Integer | (Used in legacy dashboards) 4 hour day intervals for resources marked "in use” in the sandbox |
+| Lock3 | Integer | (Used in legacy dashboards) 4 hour day intervals for resources marked "in use” in the sandbox |
+| Lock4 | Integer | (Used in legacy dashboards) 4 hour day intervals for resources marked "in use” in the sandbox |
+| Lock5 | Integer | (Used in legacy dashboards) 4 hour day intervals for resources marked "in use” in the sandbox |
+| Lock6 | Integer | (Used in legacy dashboards) 4 hour day intervals for resources marked "in use” in the sandbox |
 | Res1 | Integer | Daily sandbox status log, the day is divided into 6 segments, each value can be either 0 or 1:<br/>0 = The resource was not reserved in the sandbox in this segment<br/>1 = The resource was reserved in the sandbox in this segment |
 | Res2 | Integer | 4 hour day intervals for resources in a sandbox |
 | Res3 | Integer | 4 hour day intervals for resources in a sandbox |

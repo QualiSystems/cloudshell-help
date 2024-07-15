@@ -8,7 +8,7 @@ In this article, we’ll learn how to customize the App’s behavior during the 
 
 Customizing the App’s orchestration is done through the use of attributes, which are included with the App.
 
-- **Auto Power On** powers on the VM at setup. Note that this attributes will affect the live status icon, so setting “Auto Power On = False” will result in the App not being powered on in the sandbox, and the App will have an offline live status icon.
+- **Auto Power On** powers on the VM at setup. Note that this attributes will affect the live status icon, so setting "Auto Power On = False” will result in the App not being powered on in the sandbox, and the App will have an offline live status icon.
     
 - **Autoload** discovers the deployed App. This includes attribute values and the VM’s structure, if the VM represents a virtual device that has a resource structure like blades and ports. For example, vRouters and vSwitches.
     

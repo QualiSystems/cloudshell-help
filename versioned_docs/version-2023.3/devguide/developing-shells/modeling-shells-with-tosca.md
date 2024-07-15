@@ -214,7 +214,7 @@ The format is aligned with the TOSCA representation:
     
 - **type**: This is a mandatory definition. Specify the data type of the attribute: *string*, *integer*, *float*, *boolean* or *cloudshell.datatypes.Password*.
     
-- **default**: The default value of the attribute. If you don’t specify a default value, CloudShell will use the default value according to the data type: empty string for string attributes, ‘0’ for integers, and false for boolean attributes. Wrap the value in single quotes if it contains one of the following characters: :, \{, \}, \[, \], ,, &, \*, #, ?, |, -, < >, =, !, %, @, \`, and use double quotes if your value contains a backslash “\\” to avoid escaping it.
+- **default**: The default value of the attribute. If you don’t specify a default value, CloudShell will use the default value according to the data type: empty string for string attributes, ‘0’ for integers, and false for boolean attributes. Wrap the value in single quotes if it contains one of the following characters: :, \{, \}, \[, \], ,, &, \*, #, ?, |, -, < >, =, !, %, @, \`, and use double quotes if your value contains a backslash "\\” to avoid escaping it.
     
 - **description**: A short explanation that will be displayed in CloudShell Portal next to the attribute.
     

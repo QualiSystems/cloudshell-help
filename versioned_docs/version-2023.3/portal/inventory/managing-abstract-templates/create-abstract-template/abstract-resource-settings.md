@@ -226,7 +226,7 @@ This capability does not apply to abstract resources.
 
 When creating an abstract resource, you can select to publish some of those requirements to the user. Any quantity, attribute or model selection for abstract resources can be published. When reserving the blueprint, the user will be asked to provide a value for these inputs.
 
-For example, an abstract resource can have a requirement for a resource of “Model A” or “Model B”. If this requirement is published, the user reserving the blueprint that contains this abstract resource is required to select “Model A” or “Model B”. If the user selects “Model A”, the server will search only for resources of that model, which are available in the required time slot.
+For example, an abstract resource can have a requirement for a resource of "Model A” or "Model B”. If this requirement is published, the user reserving the blueprint that contains this abstract resource is required to select "Model A” or "Model B”. If the user selects "Model A”, the server will search only for resources of that model, which are available in the required time slot.
 
 **To publish a value as an input:**
 

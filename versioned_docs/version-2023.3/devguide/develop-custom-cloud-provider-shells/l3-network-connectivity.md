@@ -32,9 +32,9 @@ It must support these three action types:
     
     *prepareSubnet* gets one or more actions from this type. When handling this action, you need to create/allocate a subnet for each action according to the CIDR and **Subnet** service attributes in the blueprint. A subnet can be declared as public or private by the blueprint designer. A subnet is considered private if it is not accessible from outside the sandbox, and is considered public if it is possible to access the subnet from outside the sandbox. As a general best practice, it is recommended to allow outbound traffic from private subnets to elements outside of the sandbox.
     
-    CloudShell sends a *prepareSubnet* action for each **Subnet** service in the blueprint. If there are no **Subnet** services in the blueprint, CloudShell will create a single subnet for the sandbox, by sending a *prepareSubnet* action with the default values. In a “single subnet” scenario, it is assumed that the sandbox components are all located in the same default subnet. Note that the driver still needs to create/allocate a subnet in “single subnet” mode.
+    CloudShell sends a *prepareSubnet* action for each **Subnet** service in the blueprint. If there are no **Subnet** services in the blueprint, CloudShell will create a single subnet for the sandbox, by sending a *prepareSubnet* action with the default values. In a "single subnet” scenario, it is assumed that the sandbox components are all located in the same default subnet. Note that the driver still needs to create/allocate a subnet in "single subnet” mode.
     
-    The result for this action must include a *subnetId* property. This must be an id that can be used to uniquely identify the subnet in the cloud provider. The “subnet id” will be passed as part of *connectToSubnet* actions in the *Deploy* method and should be used to identify the subnets that the App wants to connect to.
+    The result for this action must include a *subnetId* property. This must be an id that can be used to uniquely identify the subnet in the cloud provider. The "subnet id” will be passed as part of *connectToSubnet* actions in the *Deploy* method and should be used to identify the subnets that the App wants to connect to.
     
 - **createKey**
     
@@ -45,7 +45,7 @@ It must support these three action types:
     The *Deploy* method is responsible to create the VM with the sandbox ssh key that was generated in the *prepareSandboxInfra* method. Cloudshell does not pass the ssh key to the *Deploy* method and it’s the responsibility of the shell developer to store this ssh key in a secure place that is accessible during the *Deploy* method. An example for this implementation for an aws shell is to use an S3 bucket that is used only by the sandbox.
     
 :::note
-*PrepareSandboxInfra* can be called multiple times in a sandbox. Setup can be called multiple times in the sandbox, and every time setup is called, the *PrepareSandboxInfra* method will be called again. So your implementation needs to support this use case and take under consideration that the cloud resource might already exist. It’s recommended to follow the “get or create” pattern when implementing this method.
+*PrepareSandboxInfra* can be called multiple times in a sandbox. Setup can be called multiple times in the sandbox, and every time setup is called, the *PrepareSandboxInfra* method will be called again. So your implementation needs to support this use case and take under consideration that the cloud resource might already exist. It’s recommended to follow the "get or create” pattern when implementing this method.
 :::
 ### Called when
 
@@ -53,7 +53,7 @@ This command is called for L3 Networking type implementations in the beginning o
 
 ### Error handling
 
-If failure occurs, return a “success false” action result.
+If failure occurs, return a "success false” action result.
 
 ### Signature
 
@@ -176,7 +176,7 @@ This method is the last method to be called during the sandbox’s teardown (bef
 
 ### Error handling
 
-If a failure occurs, return a “success false” action result.
+If a failure occurs, return a "success false” action result.
 
 ### Signature
 

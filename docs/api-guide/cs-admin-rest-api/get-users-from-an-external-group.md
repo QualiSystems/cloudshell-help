@@ -14,7 +14,7 @@ Get users from a group in your active directory/LDAP.
 
 | Parameter | Description/Comments |
 | --- | --- |
-| groupName | Name of the group (e.g. “Azure\_DevOps\_Cloud\_Admins”). Can be retrieved via [Get all external groups](./get-all-external-groups.md). |
+| groupName | Name of the group (e.g. "Azure\_DevOps\_Cloud\_Admins”). Can be retrieved via [Get all external groups](./get-all-external-groups.md). |
 
 ### HTTP method
 

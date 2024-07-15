@@ -16,7 +16,7 @@ However, unlike 2nd Gen Shells, 1st Gen Shells carry several limitations:
 - Data model is shared, which may cause conflicts between shells
     
 
-Today you can still find 1st Gen Shells in our community but all new official shells are released as 2nd Gen Shells only. “2nd Gen” is the “code name” for shell entity, a new feature introduced in 8.0. For more information about 2nd Gen Shells, see [Shells Overview](../../intro/features/shells.md).
+Today you can still find 1st Gen Shells in our community but all new official shells are released as 2nd Gen Shells only. "2nd Gen” is the "code name” for shell entity, a new feature introduced in 8.0. For more information about 2nd Gen Shells, see [Shells Overview](../../intro/features/shells.md).
 
 Note that the same 2nd Gen Shell standards apply to 1st Gen (but are not enforced by CloudShell). There are 1st Gen Shell templates available for Shell development in [Shellfoundry](../reference/shellfoundry.md). However, it is recommended to develop only 2nd Gen Shells using the official Shell templates and guidelines.
 

@@ -57,7 +57,7 @@ Do not perform this procedure in parallel. Upgrade each node separately.
     1. Install the new version of CloudShell. If the latest version is already installed on all nodes, skip this step.
     2. Configure the CloudShell portal by running the Configuration Wizard.
     3. If other products are installed on this machine, close all other configuration wizards.
-    4. Validate portal is accessible using “localhost” address.
+    4. Validate portal is accessible using "localhost” address.
 12. Repeat step 11 for each of the CloudShell Portal nodes.
 13. Start the **CloudShell Portal Role** in Windows Cluster.
 14. Configure all other products in all clusters' nodes (Execution servers, Runtime, Sandbox API etc.)

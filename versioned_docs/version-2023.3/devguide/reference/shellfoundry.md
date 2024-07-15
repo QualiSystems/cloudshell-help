@@ -59,9 +59,9 @@ shellfoundry config username admin
 
 The following keys are available:
 
-- **username**: CloudShell username. For example: “admin”. Colons (:) are not supported.
+- **username**: CloudShell username. For example: "admin”. Colons (:) are not supported.
     
-- **domain**: CloudShell domain. Note that for 2nd Generation Shells, the domain must be “Global”. Colons (:) are not supported.
+- **domain**: CloudShell domain. Note that for 2nd Generation Shells, the domain must be "Global”. Colons (:) are not supported.
     
 - **github\_login**: GitHub username. To be used to download shellfoundry templates via `shellfoundry get_templates`.
     
@@ -73,13 +73,13 @@ The following keys are available:
     
 - **author**: The author to be specified on the shell (in the shell’s metadata).
     
-- **template\_location**: (Required if `online_mode` is set to `False`) File system path to the folder containing the offline shell templates. Alternatively, you can specify the template location using “local:” when running ‘shellfoundry new’ in command-line.
+- **template\_location**: (Required if `online_mode` is set to `False`) File system path to the folder containing the offline shell templates. Alternatively, you can specify the template location using "local:” when running ‘shellfoundry new’ in command-line.
     
 - **password**: CloudShell password (encrypted). Colons (:) are not supported.
     
 - **host**: The hostname or IP address of the Quali Server machine.
     
-- **port**: The port to be used for Quali API. Default is “9000”.
+- **port**: The port to be used for Quali API. Default is "9000”.
     
 
 ### Creating a Shell
@@ -102,7 +102,7 @@ shellfoundry new <Shell-name>
     :::
 - **\--version**: Creates a shell based on a specific shell template version. If you don’t specify the version, shellfoundry will create the shell using the latest shell version that is supported by your CloudShell installation. For details about each version release, see [CloudShell Standards](https://github.com/QualiSystems/cloudshell-standards).
     
-- **\--python**: Determines the python version of the shell. Options are “2” or “3” (Default is 2).
+- **\--python**: Determines the python version of the shell. Options are "2” or "3” (Default is 2).
     
 
 #### Examples:
@@ -279,7 +279,7 @@ Run this command from the Shell’s root folder.
 shellfoundry pack
 ```
 
-A ZIP package is created in the Shell’s dist directory with the name “nutshell.zip”.
+A ZIP package is created in the Shell’s dist directory with the name "nutshell.zip”.
 :::note-one-line
 **Note:** The pack command requires the presence of a shell.yml file, which is created by default in Shells created using Shellfoundry. However, if your shell was created elsewhere, make sure to add a shell.yml file with the following structure:
 :::

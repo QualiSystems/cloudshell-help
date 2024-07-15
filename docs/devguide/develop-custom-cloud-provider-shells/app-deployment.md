@@ -205,7 +205,7 @@ if cancellation_context.is_cancelled:
 
 ### Error handling
 
-If App deployment fails, return a “success false” action result.
+If App deployment fails, return a "success false” action result.
 
 ### Deploy method implementation
 
@@ -217,7 +217,7 @@ The deploy method should perform the following steps:
     
 3. [Call the Deploy logic of the selected deployment type](https://github.com/QualiSystems/Custom-L2-Cloud-Provider-Shell-Example/blob/a9a14e87570fdc52d9994950e161b104c62401fb/src/driver.py#L99-L106).
     
-4. *(Steps 4 - 8 are performed within the deploy logic)* [Generate a unique name for the App. For example, “My-App\_968e-a950”](https://github.com/QualiSystems/Custom-L3-Cloud-Provider-Shell-Example/blob/4aa0c863da205686952e414e16a0baea954b2bfa/src/heavenly_cloud_service_wrapper.py#L22). Deployed Apps are classified as resources in CloudShell and therefore must have a unique name.
+4. *(Steps 4 - 8 are performed within the deploy logic)* [Generate a unique name for the App. For example, "My-App\_968e-a950”](https://github.com/QualiSystems/Custom-L3-Cloud-Provider-Shell-Example/blob/4aa0c863da205686952e414e16a0baea954b2bfa/src/heavenly_cloud_service_wrapper.py#L22). Deployed Apps are classified as resources in CloudShell and therefore must have a unique name.
     
 5. [Create a VM instance using the deployment path attributes](https://github.com/QualiSystems/Custom-L2-Cloud-Provider-Shell-Example/blob/a9a14e87570fdc52d9994950e161b104c62401fb/src/heavenly_cloud_service_wrapper.py#L47-L48) (the HeavenlyCloud service represents your custom cloud SDK).
     
@@ -227,7 +227,7 @@ The deploy method should perform the following steps:
     - Optionally, [override App resource attribute values](https://github.com/QualiSystems/Custom-L2-Cloud-Provider-Shell-Example/blob/a9a14e87570fdc52d9994950e161b104c62401fb/src/heavenly_cloud_service_wrapper.py#L59-L62). For [example](https://github.com/QualiSystems/Custom-L2-Cloud-Provider-Shell-Example/blob/a9a14e87570fdc52d9994950e161b104c62401fb/src/heavenly_cloud_service_wrapper.py#L51-L58), if we generate a unique password for each VM instance, we will also want to update this password in the Password attribute on the Deployed App Resource for future use (to allow the sandbox end-user to connect to the VM).
     - If needed, [add additional data to the action result](https://github.com/QualiSystems/Custom-L2-Cloud-Provider-Shell-Example/blob/a9a14e87570fdc52d9994950e161b104c62401fb/src/heavenly_cloud_service_wrapper.py#L84-L88). This key-value data will be available from all API resource queries. It can be useful for implementing custom logic during the lifecycle of the sandbox. [Example](https://github.com/QualiSystems/Custom-L2-Cloud-Provider-Shell-Example/blob/a9a14e87570fdc52d9994950e161b104c62401fb/src/heavenly_cloud_service_wrapper.py#L245-L249).
 
-7. If VM deployment fails, [return a “fail” result](https://github.com/QualiSystems/Custom-L2-Cloud-Provider-Shell-Example/blob/a9a14e87570fdc52d9994950e161b104c62401fb/src/heavenly_cloud_service_wrapper.py#L74-L76).
+7. If VM deployment fails, [return a "fail” result](https://github.com/QualiSystems/Custom-L2-Cloud-Provider-Shell-Example/blob/a9a14e87570fdc52d9994950e161b104c62401fb/src/heavenly_cloud_service_wrapper.py#L74-L76).
     
 8. [*Return DeployAppResult*](https://github.com/QualiSystems/Custom-L2-Cloud-Provider-Shell-Example/blob/a9a14e87570fdc52d9994950e161b104c62401fb/src/heavenly_cloud_service_wrapper.py#L92-L99).
     
@@ -360,7 +360,7 @@ Note that the links in the above workflow pertain to a driver of an L2 implement
 
 The *PowerOn* method spins up the VM. It is run automatically when reserving the sandbox, as part of CloudShell’s default sandbox setup script, and can also be run manually by the sandbox end-user from the deployed App’s commands pane. During *PowerOn*, the VM’s IP address and a green live status icon are displayed on the App in sandbox.
 
-You don’t have to implement this method if the *deploy* method has been configured to spin up the VM. If *PowerOn* does not fail, CloudShell will set resource state to “online” once the VM is up.
+You don’t have to implement this method if the *deploy* method has been configured to spin up the VM. If *PowerOn* does not fail, CloudShell will set resource state to "online” once the VM is up.
 
 ### Signature
 
@@ -492,7 +492,7 @@ def __init__(self):
 
 None.
 
-Unlike other methods that update data using the result, *remote\_refresh\_ip* updates the deployed App resource with the IP by calling *cloudshell-automation-api*. However, if you implemented a return output, make sure to convert the *remote\_refresh\_ip* object to a string and pass the value to the “IP” attribute on the deployed App.
+Unlike other methods that update data using the result, *remote\_refresh\_ip* updates the deployed App resource with the IP by calling *cloudshell-automation-api*. However, if you implemented a return output, make sure to convert the *remote\_refresh\_ip* object to a string and pass the value to the "IP” attribute on the deployed App.
 
 ### Error handling
 

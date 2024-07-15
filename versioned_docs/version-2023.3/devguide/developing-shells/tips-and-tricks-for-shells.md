@@ -67,7 +67,7 @@ logger.warn("warning message"
 logger.error("error message")
 ```
 
-Only messages that are greater than the log level currently set for the driver will be saved to file. For example, if the log level is “info”, only log levels “warning” and “error” apply.
+Only messages that are greater than the log level currently set for the driver will be saved to file. For example, if the log level is "info”, only log levels "warning” and "error” apply.
 
 Typically, changing the log level to a more verbose value would be done only in order to debug an issue, as writing too much to the logs can be expensive. You can change the logging level on the ES or driver level.
 
@@ -89,7 +89,7 @@ Typically, changing the log level to a more verbose value would be done only in 
     - `/usr/share/QualiSystems/venv/<shell-name>/lib/python3.7/site-packages/cloudshell/logging/qs_config.ini`
 2. Change the log level value.
     
-    For example, changing the log level to “WARNING”:
+    For example, changing the log level to "WARNING”:
     
     ```javascript
     [Logging]

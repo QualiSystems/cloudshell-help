@@ -10,7 +10,7 @@ The [cloudshell-snmp](https://github.com/QualiSystems/cloudshell-snmp) package
 
 Here’s a short explanation of the MIBs typically used in discovery:
 
-- IF-MIB: In this MIB we are using the table called “ifTable”, which contains information about the ports like interface full address (e.g. GigabitEthrnet0/0/1), the type of the port, speed etc.
+- IF-MIB: In this MIB we are using the table called "ifTable”, which contains information about the ports like interface full address (e.g. GigabitEthrnet0/0/1), the type of the port, speed etc.
     
 - Entity-MIB: Contains information about Chassis, modules, ports and describes the structure of the entities. It also contains the physical index of each entity, using the index we can then map between port to its associated interface.
     

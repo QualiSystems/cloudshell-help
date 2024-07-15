@@ -284,7 +284,7 @@ https://gitlab.com/api/v4/projects/{Project ID}/repository/files/testsharding%2E
 
 Where:
 
-- Each special character that the file contains has to be encoded. In the example above - “%2E” is an encoded point (“.”)
+- Each special character that the file contains has to be encoded. In the example above - "%2E” is an encoded point (".”)
     
 - The ref value is the branch name (master for this example)
 </details>  

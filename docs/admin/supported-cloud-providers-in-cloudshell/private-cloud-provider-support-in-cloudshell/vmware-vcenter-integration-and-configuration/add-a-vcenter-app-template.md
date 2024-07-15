@@ -587,7 +587,7 @@ The App template defines the settings and configurations of the VM to be deploye
             
             Where:
             
-            - Each special character that the file contains has to be encoded. In the example above - “%2E” is an encoded point (“.”)
+            - Each special character that the file contains has to be encoded. In the example above - "%2E” is an encoded point (".”)
                 
             - The ref value is the branch name (master for this example)
                 

@@ -26,7 +26,7 @@ Before running the playbook in an App, it is recommended to test it manually. To
     :::
     ![Discovery Dialog](/Images/Devguide-configuration-management/Ansible_11_484x265.png)
     
-5. (Optional) Add a “roles” folder.
+5. (Optional) Add a "roles” folder.
     
     ![Discovery Dialog](/Images/Devguide-configuration-management/Ansible_12_624x319.png)
     

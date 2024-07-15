@@ -30,7 +30,7 @@ This article explains how to save a sandbox.
     
 2. Enter a meaningful **Name**.
     
-    The default is the sandbox name with a "- Save" added to the end of the name. For example: “Traffic Test with additional configurations – Save”.
+    The default is the sandbox name with a "- Save" added to the end of the name. For example: "Traffic Test with additional configurations – Save”.
     
     :::note
     The saved sandbox name has a limit of 60 characters.

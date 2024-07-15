@@ -376,7 +376,7 @@ In many cases, the sandbox's resources include configurations that apply to that
     
     1. Creates a loop that runs `save` or `orchestration_save` on each physical resource in the sandbox.
     2. Gets each physical resource’s configurations (artifact names).
-    3. Sets the “resource-artifact name” key pairs in the sandbox data.
+    3. Sets the "resource-artifact name” key pairs in the sandbox data.
 
 - Restore script that uses this sandbox data to restore each resource to its saved configuration.
 

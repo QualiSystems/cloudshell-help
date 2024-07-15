@@ -364,7 +364,7 @@ These keys control whether to display the **Featured** section in the **Blueprin
 3. Save the file.
 4. Restart the **Quali Server** service and the **CloudShell Portal IIS** service.
 
-### Hiding the “Status” filter
+### Hiding the "Status” filter
 
 As of CloudShell 6.2.3, an administrator can show/hide the **Status** filter from the **Blueprint Catalog**.
 
@@ -378,9 +378,9 @@ As of CloudShell 6.2.3, an administrator can show/hide the **Status** filter fro
 3. Save the file.
 4. Restart the **CloudShell Portal IIS** service.
 
-### Enabling blueprints of “view” type
+### Enabling blueprints of "view” type
 
-An administrator can enable users to set blueprints to type “view”. Blueprints of type “view” cannot be edited, deleted or reserved by users with view permissions.
+An administrator can enable users to set blueprints to type "view”. Blueprints of type "view” cannot be edited, deleted or reserved by users with view permissions.
 
 **To enable View blueprints:**
 
@@ -443,7 +443,7 @@ The default maximum value for setup time for blueprints is 48 hours.
 2. Save the file.
 3. Restart the **Quali Server** service.
 
-### Hiding the “More Info” option
+### Hiding the "More Info” option
 
 An administrator can enable the option to show/hide the **More Info** option from blueprints.
 
@@ -1168,7 +1168,7 @@ Before a new user can register, you need to create the default group and configu
     :::note
     DefaultRole is relevant when the group does not exist.
     :::
-    In this case, the default group is called “Registered Users”.
+    In this case, the default group is called "Registered Users”.
     
 2. Save the file and restart the **CloudShell Portal IIS** service.
 3. In the `C:\Program Files (x86)\QualiSystems\CloudShell\Server\customer.config` file, define the default role, the group’s name, the domain of the group, and the admin’s email address (according to the address set for a system administrator level user in the Resource Manager):
@@ -1742,7 +1742,7 @@ It is possible to specify that either the instructions side pane or the blueprin
 
 ### Controlling whether sandboxes should end automatically
 
-The server can end sandboxes automatically when their end time arrives, or allow them to go into overtime. Sandboxes that have resources that are marked “in use” can go into overtime when their time ends. Using this configuration key, you can enable sandboxes to go into overtime when their time ends. By default, sandboxes end automatically without going into overtime.
+The server can end sandboxes automatically when their end time arrives, or allow them to go into overtime. Sandboxes that have resources that are marked "in use” can go into overtime when their time ends. Using this configuration key, you can enable sandboxes to go into overtime when their time ends. By default, sandboxes end automatically without going into overtime.
 :::note Important
 It is not recommended to enable Overtime since it makes managing and troubleshooting conflicts more difficult.
 :::

@@ -80,7 +80,7 @@ For some of these variables, the information provided depends on the type of exe
 - **EndDate**: Job/suite execution end date, depending on the notification.
 - **Result**: Job/suite execution result, depending on the notification.
 - **Owner**: Owner of the job or suite.
-- **TriggeredBy**: Indicates how the Automation Suite was triggered: Manual (“User”), API or Scheduled.
+- **TriggeredBy**: Indicates how the Automation Suite was triggered: Manual ("User”), API or Scheduled.
 - **Description**
 - **TopologyName**: Blueprint attached to the job.
 - **TotalNumberOfTests**: Number of tests in the job.

@@ -6,7 +6,7 @@ sidebar_position: 2
 
 | Application | Description |
 | --- | --- |
-| All | There are two known issues for installing CloudShell on a “clean” PC with no existing components:<ul><li>Setup may require a reboot. Make sure to log back in as the same user that started the installation.</li><li>If setup does not restart automatically, you have to restart it manually.</li></ul> |
+| All | There are two known issues for installing CloudShell on a "clean” PC with no existing components:<ul><li>Setup may require a reboot. Make sure to log back in as the same user that started the installation.</li><li>If setup does not restart automatically, you have to restart it manually.</li></ul> |
 | All | A new installation should run between 10-30 minutes. The installation itself takes less than 10 minutes. Initial configuration should not take more than 20 minutes. |
 | All | Installing CloudShell prerequisites requires administration privileges on the installation machine. |
 | All | There is a filename length limitation in CloudShell that forces the user to locate the installation files on a non-deep location (for example, c:\\temp) before executing the installer. |

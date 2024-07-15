@@ -55,11 +55,11 @@ Show/hide the main navigation bar components (HideSnQ, HideReservations, HideTop
 		<tr>
 			<td>Possible values</td>
 			<td>
-            Scheduling and queueing: “SnQ/Scheduler/"
+            Scheduling and queueing: "SnQ/Scheduler/"
 
-Topologies: “RM/Topology"
+Topologies: "RM/Topology"
 
-Reservations: “RM/"
+Reservations: "RM/"
 
 Any other page relative address.
             </td>
@@ -70,7 +70,7 @@ Any other page relative address.
 		</tr>
 		<tr>
 			<td>Default value</td>
-			<td>The topologies dashboard URL (“/RM/Topology")</td>
+			<td>The topologies dashboard URL ("/RM/Topology")</td>
 		</tr>
 		<tr>
 			<td>Affected CloudShell Component</td>

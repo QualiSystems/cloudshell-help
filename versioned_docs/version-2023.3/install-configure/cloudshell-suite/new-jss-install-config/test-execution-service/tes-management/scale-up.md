@@ -34,4 +34,4 @@ Scaling up the Test Execution Servers StatefulSet can be done using the Kubernet
 
 If you no longer need certain replicas, it is possible to scale down the StatefulSet to a lower number.
 
-Note that scaling down removes the pods from Kubernetes but does not delete the Test Execution Servers from the Job Scheduling Portal. The deleted Test Execution Services will be set to “Offline” and will not execute new tests.
+Note that scaling down removes the pods from Kubernetes but does not delete the Test Execution Servers from the Job Scheduling Portal. The deleted Test Execution Services will be set to "Offline” and will not execute new tests.

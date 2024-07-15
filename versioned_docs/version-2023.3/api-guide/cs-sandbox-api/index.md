@@ -23,7 +23,7 @@ The API live documentation pages for both API versions are installed with CloudS
 - Login method (for both versions): **http://\[CloudShellPortalAddress\]:82/api/explore/.**
 - Blueprint and sandbox methods: **http://\[CloudShellPortalAddress\]:82/api/v1/explore/** (for version 1) <br/> and **http://\[CloudShellPortalAddress\]:82/api/v2/explore/ (for version 2).**
 
-If you are accessing the links from the machine on which CloudShell Portal is installed, or from the CloudShell SDK edition machine, you can use “localhost” or “127.0.0.1”.
+If you are accessing the links from the machine on which CloudShell Portal is installed, or from the CloudShell SDK edition machine, you can use "localhost” or "127.0.0.1”.
 
 :::note
 The default port for the CloudShell Sandbox API on the CloudShell Portal machine is 82. You can customize this port number, as required, in the CloudShell Configuration wizard - CloudShell Sandbox API configuration page.  
