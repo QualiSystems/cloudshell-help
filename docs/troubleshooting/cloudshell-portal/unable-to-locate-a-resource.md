@@ -54,7 +54,7 @@ When searching in CloudShell Portal for a resource to add to a blueprint or sand
     
 2. Check if the resource family is set as visible.
     1. In Resource Manager, click the **Admin** button and select **Resource Families**.
-    2. Choose the relevant **Resource Family** and in the **Parameters** section, verify that the **Admin only** check box has been de-selected.
+    2. Choose the relevant **Resource Family** and in the **Parameters** section, verify that the **Admin only** check box has been unchecked.
 3. If not, unselect the **Admin only** check box.
 
 ### Resource is "Excluded"

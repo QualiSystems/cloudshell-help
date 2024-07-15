@@ -11,7 +11,7 @@ Some of the features in the license file were loaded successfully.
 
 However the following errors occurred:
 
-Error\[0xc800100d\]" Feature "UNKNOWN" cannot run anymore because the license expiration date has reached. Check your machine's date, then contact your software source.
+Error\[0xc800100d\]: Feature "UNKNOWN" cannot run anymore because the license expiration date has reached. Check your machine's date, then contact your software source.
 
 Error\[93\]: The given license code is already added to the "Unknown" license server.
 :::
