@@ -106,40 +106,40 @@ const config = {
         createRedirects(existingPath) {
           var versions = ["0.0", "2022.1", "2022.1.0.1858", "2022.2", "2022.2.0.1470", "2023.1", "2023.1.0.655", "2023.2", "2023.2.0.1763", "2023.3", "2023.3.0.979", "2024.1"];          
           
-          if (existingPath.includes('/portal/inventory/inventory-dashboard')) {
+          if (existingPath.startsWith('/portal/inventory/inventory-dashboard')) {
             return versions.map(version => `/${version}/Portal/Inventory`);
           }
-          else if (existingPath.includes('/portal/sandboxes/sandbox-workspace')) {
+          else if (existingPath.startsWith('/portal/sandboxes/sandbox-workspace')) {
             return versions.flatMap(version => [`/${version}/Portal/EnvironmentWorkspace`, `/${version}/Portal/ReservationsTimeline`]);
           }
           else if (existingPath.startsWith('/portal/blueprints/blueprint-catalog')) {
             return versions.map(version => `/${version}/Portal/EnvironmentsCatalog`);
           }
-          else if (existingPath.includes('portal/sandboxes/sandboxes-dashboard')) {
+          else if (existingPath.startsWith('portal/sandboxes/sandboxes-dashboard')) {
             return versions.flatMap(version => [`/${version}/Portal/ReservationsList`, `/${version}/Portal/ReservationsTimeline`]);
           }
-          else if (existingPath.includes('/portal/job-scheduling/job-scheduling-dashboard')) {
+          else if (existingPath.startsWith('/portal/job-scheduling/job-scheduling-dashboard')) {
             return versions.map(version => `/${version}/Portal/Scheduler`);
           }
-          else if (existingPath.includes('/admin/cloudshell-manage-dashboard/manage-dashboard-overview.md')) {
+          else if (existingPath.startsWith('/admin/cloudshell-manage-dashboard/manage-dashboard-overview.md')) {
             return versions.map(version => `/${version}/Portal/Manage`);
           }
-          else if (existingPath.includes('/admin/cloudshell-manage-dashboard/manage-app-templates/index.md')) {
+          else if (existingPath.startsWith('/admin/cloudshell-manage-dashboard/manage-app-templates/index.md')) {
             return versions.map(version => `/${version}/Portal/ManageApps`);
           }
-          else if (existingPath.includes('/portal/sandboxes/sandbox-workspace/apps')) {
+          else if (existingPath.startsWith('/portal/sandboxes/sandbox-workspace/apps')) {
             return versions.map(version => `/${version}/Portal/UsingApps`);
           }
-          else if (existingPath.includes('/portal/sandboxes/saved-sandboxes')) {
+          else if (existingPath.startsWith('/portal/sandboxes/saved-sandboxes')) {
             return versions.map(version => `/${version}/Portal/SaveSandbox`);
           }
-          else if (existingPath.includes('/portal/sandboxes/sandbox-save-and-restore-overview')) {
+          else if (existingPath.startsWith('/portal/sandboxes/sandbox-save-and-restore-overview')) {
             return versions.map(version => `/${version}/Portal/SaveSandboxOverview`);
           }
-          else if (existingPath.includes('/intro.md')) {
+          else if (existingPath.startsWith('/intro.md')) {
             return versions.map(version => `/Online%20Help/${version}/Portal/Default.htm`);
           }
-          else if (existingPath.includes('/help-versions-archive')) {
+          else if (existingPath.startsWith('/help-versions-archive')) {
             return "/help%20versions/"
           }
           
