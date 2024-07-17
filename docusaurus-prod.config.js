@@ -115,7 +115,7 @@ const config = {
           else if (existingPath.startsWith('/portal/blueprints/blueprint-catalog.md')) {
             return versions.map(version => `/${version}/Portal/EnvironmentsCatalog`);
           }
-          else if (existingPath.startsWith('portal/sandboxes/sandboxes-dashboard.md')) {
+          else if (existingPath.startsWith('/portal/sandboxes/sandboxes-dashboard.md')) {
             return versions.flatMap(version => [`/${version}/Portal/ReservationsList`, `/${version}/Portal/ReservationsTimeline`]);
           }
           else if (existingPath.startsWith('/portal/job-scheduling/job-scheduling-dashboard.md')) {
