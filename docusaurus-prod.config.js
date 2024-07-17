@@ -121,10 +121,10 @@ const config = {
           else if (existingPath.includes('/portal/job-scheduling/job-scheduling-dashboard')) {
             return versions.map(version => `/${version}/Portal/Scheduler`);
           }
-          else if (existingPath.includes('/admin/cloudshell-manage-dashboard/manage-dashboard-overview')) {
+          else if (existingPath.includes('/admin/cloudshell-manage-dashboard/manage-dashboard-overview.md')) {
             return versions.map(version => `/${version}/Portal/Manage`);
           }
-          else if (existingPath.includes('/admin/cloudshell-manage-dashboard/manage-app-templates')) {
+          else if (existingPath.includes('/admin/cloudshell-manage-dashboard/manage-app-templates/index.md')) {
             return versions.map(version => `/${version}/Portal/ManageApps`);
           }
           else if (existingPath.includes('/portal/sandboxes/sandbox-workspace/apps')) {
