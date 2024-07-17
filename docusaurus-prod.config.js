@@ -112,7 +112,7 @@ const config = {
           else if (existingPath.includes('/portal/sandboxes/sandbox-workspace')) {
             return versions.flatMap(version => [`/${version}/Portal/EnvironmentWorkspace`, `/${version}/Portal/ReservationsTimeline`]);
           }
-          else if (existingPath.includes('/portal/blueprints/blueprint-catalog')) {
+          else if (existingPath.startsWith('/portal/blueprints/blueprint-catalog')) {
             return versions.map(version => `/${version}/Portal/EnvironmentsCatalog`);
           }
           else if (existingPath.includes('portal/sandboxes/sandboxes-dashboard')) {
