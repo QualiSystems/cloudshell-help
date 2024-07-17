@@ -136,7 +136,7 @@ const config = {
           else if (existingPath.includes('/portal/sandboxes/sandbox-save-and-restore-overview')) {
             return versions.map(version => `/${version}/Portal/SaveSandboxOverview`);
           }
-          else if (existingPath.includes('/')) {
+          else if (existingPath.includes('/intro.md')) {
             return versions.map(version => `/Online%20Help/${version}/Portal/Default.htm`);
           }
           else if (existingPath.includes('/help-versions-archive')) {
