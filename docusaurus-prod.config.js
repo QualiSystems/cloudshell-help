@@ -127,7 +127,7 @@ const config = {
           else if (existingPath.startsWith('/admin/cloudshell-manage-dashboard/manage-app-templates/index.md')) {
             return versions.map(version => `/${version}/Portal/ManageApps`);
           }
-          else if (existingPath.startsWith('/portal/sandboxes/sandbox-workspace/apps')) {
+          else if (existingPath.startsWith('/intro/features/apps-overview.md')) {
             return versions.map(version => `/${version}/Portal/UsingApps`);
           }
           else if (existingPath.startsWith('/portal/sandboxes/saved-sandboxes/index.md')) {
