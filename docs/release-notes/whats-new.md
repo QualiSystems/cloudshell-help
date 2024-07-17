@@ -24,15 +24,15 @@ A radically different mode of operation for CloudShell is now available!
 
 #### For more information on Assembly lab, follow these links
 
-- [Assembly Lab Overview](../admin/setting-up-cloudshell/cloudshell-configuration-options/assembly-lab/index.md)
-- [Configure an Assembly Lab domain](../admin/setting-up-cloudshell/cloudshell-configuration-options/assembly-lab/configure-assembly-lab-domain.md)
+- [Assembly Lab Overview](../admin/setting-up-cloudshell/assembly-lab/index.md)
+- [Configure an Assembly Lab domain](../admin/setting-up-cloudshell/assembly-lab/configure-assembly-lab-domain.md)
 
 ### Capabilities
 
 CloudShell's RBAC implementation, you can now associate user groups with capability sets.
 Each capability set can specifically allow or block certain capabilities, overriding the defaults provided by the group role.
 
-[Read more here](../admin/setting-up-cloudshell/cloudshell-configuration-options/capabilities/index.md)
+[Read more here](../admin/cloudshell-identity-management/managing-cloudshell-permissions/capabilities/index.md)
 
 ### Display attributes in Resource Search directly on cards
 
