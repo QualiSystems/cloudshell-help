@@ -106,19 +106,19 @@ const config = {
         createRedirects(existingPath) {
           var versions = ["0.0", "2022.1", "2022.1.0.1858", "2022.2", "2022.2.0.1470", "2023.1", "2023.1.0.655", "2023.2", "2023.2.0.1763", "2023.3", "2023.3.0.979", "2024.1"];          
           
-          if (existingPath.startsWith('/portal/inventory/inventory-dashboard')) {
+          if (existingPath.startsWith('/portal/inventory/inventory-dashboard.md')) {
             return versions.map(version => `/${version}/Portal/Inventory`);
           }
-          else if (existingPath.startsWith('/portal/sandboxes/sandbox-workspace')) {
+          else if (existingPath.startsWith('/portal/sandboxes/sandbox-workspace/index.md')) {
             return versions.flatMap(version => [`/${version}/Portal/EnvironmentWorkspace`, `/${version}/Portal/ReservationsTimeline`]);
           }
-          else if (existingPath.startsWith('/portal/blueprints/blueprint-catalog')) {
+          else if (existingPath.startsWith('/portal/blueprints/blueprint-catalog.md')) {
             return versions.map(version => `/${version}/Portal/EnvironmentsCatalog`);
           }
-          else if (existingPath.startsWith('portal/sandboxes/sandboxes-dashboard')) {
+          else if (existingPath.startsWith('portal/sandboxes/sandboxes-dashboard.md')) {
             return versions.flatMap(version => [`/${version}/Portal/ReservationsList`, `/${version}/Portal/ReservationsTimeline`]);
           }
-          else if (existingPath.startsWith('/portal/job-scheduling/job-scheduling-dashboard')) {
+          else if (existingPath.startsWith('/portal/job-scheduling/job-scheduling-dashboard.md')) {
             return versions.map(version => `/${version}/Portal/Scheduler`);
           }
           else if (existingPath.startsWith('/admin/cloudshell-manage-dashboard/manage-dashboard-overview.md')) {
@@ -130,7 +130,7 @@ const config = {
           else if (existingPath.startsWith('/portal/sandboxes/sandbox-workspace/apps')) {
             return versions.map(version => `/${version}/Portal/UsingApps`);
           }
-          else if (existingPath.startsWith('/portal/sandboxes/saved-sandboxes')) {
+          else if (existingPath.startsWith('/portal/sandboxes/saved-sandboxes/index.md')) {
             return versions.map(version => `/${version}/Portal/SaveSandbox`);
           }
           else if (existingPath.startsWith('/portal/sandboxes/sandbox-save-and-restore-overview')) {
