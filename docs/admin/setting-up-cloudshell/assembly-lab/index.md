@@ -61,24 +61,3 @@ The matching resource must be of the same model as the requirement and have valu
 ### Hierarchical Completion
 
 Each of the work order resources in their hierarchy must also be marked as "completed" for the entire resource to be considered completed.
-
-
-### User Interaction and Negotiation
-
-#### Sandbox Interaction
-
-The sandbox environment enables lab managers and customers to negotiate over requirements and make adjustments as needed. This can involve shifting devices around or changing requirements to something more feasible.
-
-#### Capability Sets
-
-User groups can be managed through capability sets, ensuring that each group has the appropriate access levels and permissions.
-
-#### Sticky Notes
-
-Sticky notes can be placed in blueprints and sandboxes to clarify requirements and communicate important information.
-
-#### Work Order Comments
-
-Lab managers can leave comments on each record in the work order, allowing customers to track progress and stay informed about the status of their requests.
-
-
