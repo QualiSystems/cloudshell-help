@@ -4,7 +4,7 @@ sidebar_position: 20
 
 # API Support for New Job Scheduling and Job Scheduling (1st Gen)
 
-The section compares the APIs for the different Job Scheduling features. The New Job Scheduling has a dedicated RESTful API while the original Job Scheduling uses the [Quali API](pathname:///api-docs/2023.3/Quali-API/Quali%20API%20Library.html).
+The section compares the APIs for the different Job Scheduling features. The New Job Scheduling has a dedicated RESTful API while the original Job Scheduling uses the [Quali API](pathname:///api-docs/2024.1/Quali-API/Quali%20API%20Library.html).
 
 :::note
 For brevity, the term "Job Scheduling (1st Gen)" denotes the original Job Scheduling which is accessed via CloudShell Portal.
