@@ -8,22 +8,13 @@ The table below lists all the bugs reported by customers, that were resolved in 
 
 | Support Case # | Internal WI # | Description | Fixed in Version |
 | --- | --- | --- | --- |
-| 55094 | 12132 | Impossible to search by attribute value that contains hyphen | 2023.3 |
-| 56437 | 13076 | Unable to delete blueprint copies | 2023.3 |
-| 55588 | 12745 | Portal inventory search "Available Now" incorrectly shows booked and unshared resources | 2023.3 |
-| 55410 | 12310 | Cannot set SupportConcurrentCommand on custom service shell | 2023.3 |
-| 55120 | 12268 | Sandbox attachments won't show in Portal without a refresh | 2023.3 |
-| 54862 | 11925 | Search fails in Resource Manager for Domain Admins | 2023.3 |
-| 54555 | 11835 | Cannot use dev\_helpers.attach\_to\_cloudshell in scripts | 2023.3 |
-| 54421 | 11755 | Sandbox output does not show ansible's command response | 2023.3 |
-| 54352 | 11710 | Irrelevant conflict list if there are several resources in a blueprint and only one is in conflict | 2023.3 |
-| 54053 | 11367 | Ansible shell commands are not cancelable | 2023.3 |
-| 54348, 56826 | 11697 | CloudShell's Windows services will should have the application path enclosed in quotes. | 2023.3 |
-| 55697 | 11053 | Job automatically cancelled with reason "An unexpected error occurred trying to create reservation" | 2023.2 |
-| 54401 | 11814 | GetReservationDetails date output is not consistent | 2023.2 |
-| 55499 | 12371 | Sandbox Setup failed and returned the following error: "General Execution. Failed to start execution: Server is unavailable". | 2023.2 |
-| 55312 | 12262 | Resources in blueprint are not displayed if there are too many sub-resources. | 2023.2 |
-| 54496 | 12239 | Suite fails with "does not have sufficient permissions to be the sandbox owner". | 2023.2 |
-| 54315 | 12027 | CloudShell installation granted elevated privileges to Authenticated Users. The elevated privileges are rolled back automatically by the installation process when they're no longer needed. | 2023.2 |
-| 52848 | 10909 | Naming convention for New Job Scheduling suite executions is different from the old Job Scheduling. | 2023.2 |
-| 52321 | 9975 | Cannot delete deployed app after cloud provider resource has been deleted. | 2023.2 |
+| 59700 | 15551	| Shellfoundry has a dependence on setuptools, but newer versions of python no longer include setuptools by default. Setuptools will be required when python version is 3.12 and higher	| 2024.1 |
+| 59770 | 15484	| Fixed  Sandbox API throws error when reserving a blueprint with abstracts running Cloudshell with UseRabbitServer=false	| 2024.1 |
+| 59534 | 15393	| Fixed Custom attribute used to filter in abstract resources fails	| 2024.1 |
+| 59715 | 15357	| Improved error message on import datamodel	| 2024.1 |
+| 58273 | 14672	| ZeroMQ socket pool to fix TooManyOpenSockets	| 2024.1 |
+| 57578 | 14633	|  Sandbox end time no longer getting updated when a permitted user is added	| 2024.1 |
+| 57211 | 14562	| better error messages for Sisense integration	| 2024.1 |
+| 57821 | 14311	| Reserve will no longer fail due to encoding of certain characters in username  	| 2024.1 |
+| 57436 | 14028	| fixed number of sub resources in SB is not updated when adding additional blades to a resource (when there are more than 900 sub resources)	| 2024.1 |
+| 57390 | 13936	| loosened urllib3 requirements in Cloudshell Automation API to provide more flexibility for developers.	| 2024.1 |
