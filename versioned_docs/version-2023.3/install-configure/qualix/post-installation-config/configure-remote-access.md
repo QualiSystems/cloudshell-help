@@ -8,7 +8,6 @@ This section explains how to enable end-users to create "full access" connection
 :::note Notes
 - To set up connections to vCenter App VMs using vCenter Console protocol, see [Configure VM Web Console Access to vCenter App VMs (QualiX)](./configure-vm-web-console.md).
 - In order to connect to a device or VM from CloudShell Portal, the resource of the element must include the User and Password attributes. To connect using a service, the service must include an Address. For details about adding such attributes, see [Prepare and Reserve Blueprint](../prepare-and-reserve-blueprint.md).
-- This article explains how to set up remote access connections to vCenter App VMs using QualiX' vCenter Console Proxy service and requires the [Configure Remote Access to Sandbox Components Using SSH, RDP, Telnet, VNC (QualiX)](./configure-remote-access.md) listed below. For other VMs or resources, see [Configure Remote Access to Sandbox Components Using SSH, RDP, Telnet, VNC (QualiX)](./configure-remote-access.md).
 :::
 **To enable remote connection from CloudShell Portal:**
 
