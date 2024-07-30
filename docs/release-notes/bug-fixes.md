@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Bugs Fixed
 
-The table below lists all the bugs reported by customers, that were resolved in version 2023.3. All releases may include additional resolved issues, which are not included in this list.
+The table below lists all the bugs reported by customers, that were resolved in version 2024.1. All releases may include additional resolved issues, which are not included in this list.
 
 | Support Case # | Internal WI # | Description | Fixed in Version |
 | --- | --- | --- | --- |

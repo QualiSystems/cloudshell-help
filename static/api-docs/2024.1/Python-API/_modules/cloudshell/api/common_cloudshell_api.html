@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>cloudshell.api.common_cloudshell_api &mdash; CloudShell Python API 2022.3.0.185573 documentation</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <title>cloudshell.api.common_cloudshell_api &mdash; CloudShell Python API 2024.1.0.187973 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+
+  
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js?v=7adfad2a"></script>
+        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" /> 
@@ -32,7 +36,7 @@
               <img src="../../../_static/just_logo.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                2022.3
+                2024.1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
@@ -79,12 +83,15 @@
 <span class="kn">import</span> <span class="nn">ssl</span>
 <span class="kn">import</span> <span class="nn">sys</span>
 <span class="kn">import</span> <span class="nn">urllib3</span>
+<span class="kn">import</span> <span class="nn">http</span>
 <span class="kn">import</span> <span class="nn">urllib3.util</span> <span class="k">as</span> <span class="nn">urllib_util</span>
+<span class="kn">from</span> <span class="nn">urllib3.exceptions</span> <span class="kn">import</span> <span class="n">HTTPError</span>
 <span class="kn">import</span> <span class="nn">xml.etree.ElementTree</span> <span class="k">as</span> <span class="nn">etree</span>
 
 <span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">OrderedDict</span>
 <span class="kn">from</span> <span class="nn">xml.sax.saxutils</span> <span class="kn">import</span> <span class="n">escape</span>
-
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">from</span> <span class="nn">urllib3.exceptions</span> <span class="kn">import</span> <span class="n">ProtocolError</span><span class="p">,</span> <span class="n">MaxRetryError</span><span class="p">,</span> <span class="n">ReadTimeoutError</span>
 
 <span class="n">urllib3</span><span class="o">.</span><span class="n">disable_warnings</span><span class="p">(</span><span class="n">urllib3</span><span class="o">.</span><span class="n">exceptions</span><span class="o">.</span><span class="n">InsecureRequestWarning</span><span class="p">)</span>
 
@@ -246,7 +253,7 @@
             <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
                 <span class="k">return</span> <span class="kc">False</span>
 
-            <span class="k">if</span> <span class="n">value</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span> <span class="ow">and</span> <span class="n">value</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
                 <span class="k">return</span> <span class="kc">False</span>
 
         <span class="k">return</span> <span class="kc">True</span>
@@ -262,13 +269,23 @@
                 <span class="n">data</span> <span class="o">=</span> <span class="n">attr_type_instance</span><span class="p">(</span><span class="n">list_node</span><span class="p">,</span> <span class="n">find_prefix</span><span class="p">)</span>
 
             <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="nb">hasattr</span><span class="p">(</span><span class="n">list_node</span><span class="p">,</span> <span class="s2">&quot;attrib&quot;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">list_node</span><span class="o">.</span><span class="n">attrib</span><span class="p">):</span>
-                <span class="nb">setattr</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s2">&quot;is_empty_object&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_set_is_empty_to_true_if_not_set</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 
-        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s2">&quot;is_empty_object&quot;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">data</span><span class="o">.</span><span class="n">is_empty_object</span><span class="p">:</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_empty_true</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
             <span class="k">return</span> <span class="kc">None</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">data</span>
 
+    <span class="k">def</span> <span class="nf">_set_is_empty_to_true_if_not_set</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s2">&quot;is_empty_object&quot;</span><span class="p">):</span>
+            <span class="nb">setattr</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s2">&quot;is_empty_object&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_set_is_empty_to_false</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="nb">setattr</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s2">&quot;is_empty_object&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+        
+    <span class="k">def</span> <span class="nf">_is_empty_true</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s2">&quot;is_empty_object&quot;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">data</span><span class="o">.</span><span class="n">is_empty_object</span>
+    
     <span class="k">def</span> <span class="nf">_parseAttributesData</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">class_type</span><span class="p">,</span> <span class="n">xml_object</span><span class="p">,</span> <span class="n">find_prefix</span><span class="p">):</span>
         <span class="n">attrib_data_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
 
@@ -321,6 +338,10 @@
                             <span class="n">child_count</span> <span class="o">+=</span> <span class="mi">1</span>
 
                     <span class="c1"># I think that it is a logical bug, but ...</span>
+                    <span class="c1"># DannyK: In my opinion, this is done for backwards compatibility with element names that</span>
+                    <span class="c1">#         originally represented a single item and later on changed to a list.</span>
+                    <span class="c1">#         If a bug related to ghost objects is discovered in the future,</span>
+                    <span class="c1">#         this is the first place I would start debugging.        </span>
                     <span class="k">if</span> <span class="n">child_count</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
                         <span class="k">for</span> <span class="n">list_node</span> <span class="ow">in</span> <span class="n">xml_object</span><span class="p">:</span>
                             <span class="k">if</span> <span class="n">XMLWrapper</span><span class="o">.</span><span class="n">getNodeName</span><span class="p">(</span><span class="n">list_node</span><span class="p">)</span> <span class="o">==</span> <span class="n">name</span><span class="p">:</span>
@@ -333,10 +354,11 @@
                 <span class="n">attrib_data_dict</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_list</span>
 
         <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_empty_object</span><span class="p">(</span><span class="n">attrib_data_dict</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_set_is_empty_to_false</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
             <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">attrib_data_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
                 <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
         <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">)</span> <span class="o">==</span> <span class="n">empty_object_size</span><span class="p">:</span>
-            <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;is_empty_object&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span></div>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_set_is_empty_to_true_if_not_set</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="CommonApiResult"><a class="viewcode-back" href="../../../cloudshell.api.html#cloudshell.api.common_cloudshell_api.CommonApiResult">[docs]</a><span class="k">class</span> <span class="nc">CommonApiResult</span><span class="p">:</span>
@@ -431,21 +453,33 @@
         <span class="k">except</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">unicode</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">))</span>
 
-    <span class="k">def</span> <span class="nf">_sendRequest</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">operation</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="n">request_headers</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">_sendRequest</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">operation</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="n">request_headers</span><span class="p">,</span> <span class="n">attempts</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot; Sending http POST request through URLLIB package</span>
 
 <span class="sd">        :param operation: operation name</span>
 <span class="sd">        :param message: request body</span>
 <span class="sd">        :param request_headers: header of the request</span>
 
-<span class="sd">        :return: responce string data</span>
+<span class="sd">        :return: http response</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">operation_url</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">url</span> <span class="o">+</span> <span class="n">operation</span><span class="p">)</span>
-        <span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_http</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">&quot;POST&quot;</span><span class="p">,</span> <span class="n">operation_url</span><span class="p">,</span> <span class="n">body</span><span class="o">=</span><span class="n">message</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">),</span> <span class="n">headers</span><span class="o">=</span><span class="n">request_headers</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">retry</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_http</span><span class="o">.</span><span class="n">request</span><span class="p">,</span> <span class="n">ProtocolError</span><span class="p">,</span> <span class="n">attempts</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span>
+                         <span class="n">method</span><span class="o">=</span><span class="s2">&quot;POST&quot;</span><span class="p">,</span> <span class="n">url</span><span class="o">=</span><span class="n">operation_url</span><span class="p">,</span> <span class="n">body</span><span class="o">=</span><span class="n">message</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">),</span> <span class="n">headers</span><span class="o">=</span><span class="n">request_headers</span><span class="p">)</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">_check_http_response</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+        
+        <span class="k">return</span> <span class="n">response</span>
+
+    <span class="k">def</span> <span class="nf">_check_http_response</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="mi">200</span> <span class="o">&lt;=</span> <span class="n">response</span><span class="o">.</span><span class="n">status</span> <span class="o">&lt;</span> <span class="mi">300</span><span class="p">):</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">status_description</span> <span class="o">=</span> <span class="n">http</span><span class="o">.</span><span class="n">HTTPStatus</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">status</span><span class="p">)</span><span class="o">.</span><span class="n">phrase</span>
+            <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+                <span class="n">status_description</span> <span class="o">=</span> <span class="s1">&#39;Unknown&#39;</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;(</span><span class="si">{</span><span class="n">status_description</span><span class="si">}</span><span class="s2">) [</span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">status</span><span class="si">}</span><span class="s2">] reason:</span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">reason</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        
         <span class="k">if</span> <span class="ow">not</span> <span class="n">response</span><span class="o">.</span><span class="n">data</span><span class="p">:</span>
             <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">reason</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">data</span>
-
 
     <span class="k">def</span> <span class="nf">_new_serializeRequestData</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">root_node</span><span class="p">,</span> <span class="n">object_data</span><span class="p">,</span> <span class="n">prev_type</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Generate xml from received request data using etree.xml</span>
@@ -505,21 +539,26 @@
         <span class="n">method_name</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;method_name&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
 
         <span class="n">message</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_serialize_request</span><span class="p">(</span><span class="n">kwargs</span><span class="p">,</span> <span class="n">method_name</span><span class="p">)</span>
-
-        <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_handle_api_response</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_sendRequest</span><span class="p">(</span><span class="n">method_name</span><span class="p">,</span> <span class="n">message</span><span class="p">))</span>
+        <span class="n">http_response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sendRequest</span><span class="p">(</span><span class="n">method_name</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_handle_api_response</span><span class="p">(</span><span class="n">http_response</span><span class="p">)</span>
 
         <span class="k">return</span> <span class="n">result</span></div>
 
-    <span class="k">def</span> <span class="nf">_handle_api_response</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response_str</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">_handle_api_response</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">        :param str response_str:</span>
+<span class="sd">        :param http response:</span>
 <span class="sd">        :return: either string or deserialized instance representing the api response</span>
 <span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">response_str</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">data</span>
         <span class="n">response_str</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_remove_xml_namespace</span><span class="p">(</span><span class="n">response_str</span><span class="p">)</span>
         <span class="k">try</span><span class="p">:</span>
             <span class="n">api_response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_deserialize_response</span><span class="p">(</span><span class="n">response_str</span><span class="p">)</span>
         <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;Invalid Request: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">response_str</span><span class="p">))</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">status_description</span> <span class="o">=</span> <span class="n">http</span><span class="o">.</span><span class="n">HTTPStatus</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">status</span><span class="p">)</span><span class="o">.</span><span class="n">phrase</span>
+            <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+                <span class="n">status_description</span> <span class="o">=</span> <span class="s1">&#39;Unknown&#39;</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">reason</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">status_description</span><span class="si">}</span><span class="s2">) [</span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">status</span><span class="si">}</span><span class="s2">] reason:</span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">reason</span><span class="si">}</span><span class="s2"> data:</span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">response_str</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">api_response</span><span class="o">.</span><span class="n">success</span><span class="p">:</span>
             <span class="k">raise</span> <span class="n">CloudShellAPIError</span><span class="p">(</span><span class="n">api_response</span><span class="o">.</span><span class="n">error_code</span><span class="p">,</span> <span class="n">api_response</span><span class="o">.</span><span class="n">error</span><span class="p">,</span> <span class="n">response_str</span><span class="p">)</span>
         <span class="n">result</span> <span class="o">=</span> <span class="n">response_str</span>
@@ -552,6 +591,18 @@
         <span class="n">rough_string</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">tostring</span><span class="p">(</span><span class="n">elem</span><span class="p">,</span> <span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
         <span class="n">reparsed</span> <span class="o">=</span> <span class="n">parseString</span><span class="p">(</span><span class="n">rough_string</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">reparsed</span><span class="o">.</span><span class="n">toprettyxml</span><span class="p">(</span><span class="n">indent</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="retry"><a class="viewcode-back" href="../../../cloudshell.api.html#cloudshell.api.common_cloudshell_api.retry">[docs]</a><span class="k">def</span> <span class="nf">retry</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">exception</span><span class="p">,</span> <span class="n">attempts</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">delay</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">attempts</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">except</span> <span class="p">(</span><span class="n">MaxRetryError</span><span class="p">,</span> <span class="n">ProtocolError</span><span class="p">,</span> <span class="n">ReadTimeoutError</span><span class="p">,</span> <span class="n">HTTPError</span><span class="p">)</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">attempts</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">e</span>
+            <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">delay</span><span class="p">)</span>
+            <span class="n">delay</span> <span class="o">*=</span> <span class="mi">2</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">e</span></div>
 </pre></div>
 
            </div>
