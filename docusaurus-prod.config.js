@@ -62,7 +62,7 @@ const config = {
           },
           routeBasePath: '/',
           sidebarPath: './sidebars.js',
-          includeCurrentVersion: true, //we want to show our next version work in progress
+          includeCurrentVersion: false, //this will be enabled only when we'll have a wip version that we would like to show
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
