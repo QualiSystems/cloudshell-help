@@ -14,4 +14,4 @@ To set a domain to be an Assembly Lab domain, open the [domain's properties page
 1. Press Edit next to the domain name.
 2. Tick the checkbox Assemble Lab and press `Ctrl+S`.
 
-![configure domain](../../../../static/Images/Admin-Guide/AssembleLab/configure-domain.png)
+![configure domain](/Images/Admin-Guide/AssembleLab/configure-domain.png)
