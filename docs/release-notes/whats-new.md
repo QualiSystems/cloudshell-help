@@ -54,3 +54,17 @@ Each capability set can specifically allow or block certain capabilities, overri
 You now have the ability to establish a minimum lead time for reserving Sandboxes within a specific domain. This means that when this setting is configured, any sandbox reservations must be made for a date in the future, not for immediate use.
 
 To implement this, you need to adjust the `MinimumLeadTimeMinutes` parameter via a specific API call. Detailed instructions on how to make this API call can be found in [this guide](../api-guide/cs-admin-rest-api/edit-domain.md).
+
+### API Changes
+
+#### GetResourcesAttributeValues 
+Receives a list of resources and returns the values of all the attributes in bulk. This method can be more performant than calling GetResourceAttributeValues or GetResourceDetails in a loop.
+Available in Cloudshell Automation API.
+
+#### GetExecutionServers & DeleteExecutionServer
+
+API calls for getting Execution Servers and removing them using automation.
+
+#### GetResourceDetails changes
+
+GetResourceDetails will now show Create & Modified Date for the resource.

@@ -12,19 +12,19 @@ The TestShell API provided implementations are available from the following link
 
 - **TestShell API Library**: The TestShell API library is available by default in TestShell Authoring tools, and can be added as a DLL asset to a project in CloudShell Authoring, the driver builder.
 
-For the complete list of TestShell API Library functions, see [TestShell API Library Reference Guide](pathname:///api-docs/2023.3/TestShell-API/TestShell%20API%20Library.html).
+For the complete list of TestShell API Library functions, see [TestShell API Library Reference Guide](pathname:///api-docs/2024.1/TestShell-API/TestShell%20API%20Library.html).
 
 - **TestShell C# API**: It is possible to add the TestShell API library to a C# project and use its methods.
     
-    For the complete list of TestShell API C# functions, see [TestShell API C# Reference Guide](pathname:///api-docs/2023.3/TestShell-API/TestShell%20cSharp%20API.html).
+    For the complete list of TestShell API C# functions, see [TestShell API C# Reference Guide](pathname:///api-docs/2024.1/TestShell-API/TestShell%20cSharp%20API.html).
     
 - **TestShell TCL API**: Each CloudShell version comes with a TCL client that supports all the TestShell API methods using TCL syntax. The TCL client can be found in `%InstallationFolder%\Integration\TestShell API\TestShell TCL API`.  
     
-    For the complete list of TestShell API TCL functions, see [TestShell API TCL Reference Guide](pathname:///api-docs/2023.3/TestShell-API/TestShell%20TCL%20API.html "TestShell API TCL Reference Guide")
+    For the complete list of TestShell API TCL functions, see [TestShell API TCL Reference Guide](pathname:///api-docs/2024.1/TestShell-API/TestShell%20TCL%20API.html "TestShell API TCL Reference Guide")
     
 - **TestShell XML RPC API**: Direct XML (Remote Procedure Call) RPC commands are also supported for TestShell API methods. When using XML RPC API, the data needs to be wrapped in a specific way and sent to the relevant port in the server. To test XML RPC API, Quali uses an internal tool that creates this wrap automatically, and so you only need to insert the parameters for the various methods.  
     
-    For the complete list of TestShell API XML RPC functions, see [TestShell API XML RPC Reference Guide](pathname:///api-docs/2023.3/TestShell-API/TestShell%20XML%20RPC%20API.html "TestShell API XML RPC Reference Guide").
+    For the complete list of TestShell API XML RPC functions, see [TestShell API XML RPC Reference Guide](pathname:///api-docs/2024.1/TestShell-API/TestShell%20XML%20RPC%20API.html "TestShell API XML RPC Reference Guide").
     
 
 The TestShell API library is a DLL file that is loaded to the database. (You can view and edit the library file and version in the **Libraries** tab in the TestShell Studio while logged as an admin.)

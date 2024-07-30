@@ -48,11 +48,17 @@ To do so, create a file titled ServerEventsWhiteList.csv in the application dire
 Typically this is `%Program Files(x86)%\Qualisystems\Server`
 The contents of the CSV should be the events you *allow* to be published
 
+:::note
+ServerEventsWhiteList.csv should be line-break separated, not comma separated.
+:::
+
 [See](#supported-events) which [events](#supported-events) are supported (all are sent by default)
 
 :::info[Example csv]
-``` csv
-UserCreatedEvent, UserGroupsListUpdatedEvent, LoginEvent
+```
+UserCreatedEvent
+UserGroupsListUpdatedEvent
+LoginEvent
 ```
 :::
 

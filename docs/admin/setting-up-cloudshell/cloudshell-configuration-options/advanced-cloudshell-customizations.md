@@ -1860,7 +1860,7 @@ Apps based on a public cloud provider, such as AWS EC2 and Azure, cannot be used
 
 By default, when trying to open a URL to a sandbox from a domain you can access but are not currently logged into, CloudShell prompts the user to switch to the domain (assuming the blueprint is public and the user is permitted to access the sandbox/blueprint). If the user confirms the switch, CloudShell will then open the sandbox/blueprint in its domain. However, you can choose to prevent this domain switch by setting the `AutoSwitchDomain` key. For additional information, see [Opening Sandboxes](../../../portal/sandboxes/opening-sandboxes.md).
 :::note
-When opening a blueprint from a URL, the domain switch only works if the blueprint URL includes the domain ID. To obtain a blueprint URL with the domain ID, use the CloudShell Automation API's [GetTopologyUrls](pathname:///api-docs/2023.3/python-api/cloudshell.api.html?#cloudshell.api.cloudshell_api.CloudShellAPISession.GetTopologyUrls) method.
+When opening a blueprint from a URL, the domain switch only works if the blueprint URL includes the domain ID. To obtain a blueprint URL with the domain ID, use the CloudShell Automation API's [GetTopologyUrls](pathname:///api-docs/2024.1/python-api/cloudshell.api.html?#cloudshell.api.cloudshell_api.CloudShellAPISession.GetTopologyUrls) method.
 :::
 **To disable the domain switch when accessing a sandbox/blueprint link:**
 
@@ -2305,3 +2305,4 @@ Shared tests and assets are stored in the MS SQL database
 ## Related topics
 
 - [Customer Configuration Keys Repository](./customer-configuration-keys-repository)
+    

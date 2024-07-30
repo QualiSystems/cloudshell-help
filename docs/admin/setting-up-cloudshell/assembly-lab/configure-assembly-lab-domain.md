@@ -5,7 +5,7 @@ sidebar_position: 2
 
 To leverage the capabilities of Assembly Lab, a domain must be configured to the Assembly Lab domain. Once the domain is configured, all sandboxes created within this domain will adhere to the specific rules of Assembly Lab.
 
-:::note
+:::warning
 Once a domain has been configured as an assembly lab domain, do not try to change it back to a non-assembly lab domain. Assembly Lab domains have a different set of rules for resource management and blueprint resolution which are not compatible with standard domain operation.
 :::
 

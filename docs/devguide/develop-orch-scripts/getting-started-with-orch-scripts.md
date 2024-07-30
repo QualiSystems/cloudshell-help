@@ -133,6 +133,7 @@ If you wish to develop an orchestration script from scratch or develop a script 
 | 2023.1 | \>=4.2.0.0,\<4.3.0.0 |
 | 2023.2 | \>=4.3.0.0,\<4.4.0.0 |
 | 2023.3 | \>=4.4.0.0,\<4.5.0.0 |
+| 2024.1 | \>=4.5.0.0,\<4.6.0.0 |
 
 To set a range for a package, add a line to the script's `requirements.txt` that states the minimum and maximum versions. For example:
 

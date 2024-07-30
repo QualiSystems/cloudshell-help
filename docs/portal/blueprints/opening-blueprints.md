@@ -27,7 +27,7 @@ Both methods only apply to blueprints you are permitted to access. These include
 To allow CloudShell users to conveniently share and collaborate on blueprints and sandboxes, we implemented support for opening blueprint and sandbox URLs in the diagram's domain, even if CloudShell Portal is currently open in a different domain. This option is enabled by default and can be disabled using the `AutoSwitchDomain` admin key.
 
 :::note
-Since blueprint URLs do not include the blueprint's domain, the URLs need to be generated using the `GetTopologyUrls` API method, which includes this information in the link. The method is available in the [CloudShell Automation API](pathname:///api-docs/2023.3/Python-API/cloudshell.api.html?highlight=gettopologyurls#cloudshell.api.cloudshell_api.CloudShellAPISession.GetTopologyUrls) and [TestShell API](pathname:///api-docs/2023.3/TestShell-API/TestShell%20XML%20RPC%20API.html#GetTopologyUrls).
+Since blueprint URLs do not include the blueprint's domain, the URLs need to be generated using the `GetTopologyUrls` API method, which includes this information in the link. The method is available in the [CloudShell Automation API](pathname:///api-docs/2024.1/Python-API/cloudshell.api.html?highlight=gettopologyurls#cloudshell.api.cloudshell_api.CloudShellAPISession.GetTopologyUrls) and [TestShell API](pathname:///api-docs/2024.1/TestShell-API/TestShell%20XML%20RPC%20API.html#GetTopologyUrls).
 :::
 
 **To open a blueprint link:**

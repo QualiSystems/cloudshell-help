@@ -662,3 +662,33 @@ Python 3 automation requires Microsoft Visual C++ Redistributable 2015 x86 and x
 		</tr>
 	</tbody>
 </table>
+
+## Keep ports in reservation when removing visual connectors
+<table>
+	<tbody>
+		<tr>
+			<td>Key</td>
+			<td>`<add key="EnableVisualConnectorDisconnectRemovePorts" value="false"/>`</td>
+		</tr>
+		<tr>
+			<td>Possible values</td>
+			<td>Boolean</td>
+		</tr>
+		<tr>
+			<td>Where to add/change</td>
+			<td>`customer.config` CloudShell Server installation directory</td>
+		</tr>
+		<tr>
+			<td>true</td>
+			<td>false</td>
+		</tr>
+		<tr>
+			<td>Affected CloudShell Component</td>
+			<td>CloudShell Server</td>
+		</tr>
+		<tr>
+			<td>Version</td>
+			<td>2024.1 and above</td>
+		</tr>
+	</tbody>
+</table>
