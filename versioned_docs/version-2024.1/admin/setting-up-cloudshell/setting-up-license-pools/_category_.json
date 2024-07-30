@@ -1,0 +1,8 @@
+{
+  "label": "Setting Up License Pools",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "The number of concurrent sandboxes in the system is managed using License Pools. A license pool defines the maximum number of active concurrent sandboxes that can be created by users. License pools are defined by the system administrator and can be assigned to a single or multiple domains."
+  }
+}
