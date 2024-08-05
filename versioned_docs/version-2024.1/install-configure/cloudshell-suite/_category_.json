@@ -1,0 +1,9 @@
+{
+  "label": "CloudShell Suite Installation and Configuration",
+  "position": 2,
+  "link": {
+    "slug": "install-configure/cloudshell-suite",
+    "type": "generated-index",
+    "description": "This guide explains how to install CloudShell suite, its components and configurations."
+  }
+}

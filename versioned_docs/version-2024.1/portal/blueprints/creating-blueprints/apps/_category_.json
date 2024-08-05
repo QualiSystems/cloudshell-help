@@ -1,0 +1,9 @@
+{
+  "label": "Apps",
+  "position": 5,
+  "link": {
+    "slug": "portal/blueprints/creating-blueprints/apps",
+    "type": "generated-index",
+    "description": "The following actions are available for Apps in the blueprint:"
+  }
+}

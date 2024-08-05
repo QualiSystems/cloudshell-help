@@ -1,0 +1,9 @@
+{
+  "label": "Test Repository Configuration",
+  "position": 9,
+  "link": {
+    "slug": "/install-configure/cloudshell-suite/new-jss-install-config/test-repository-config",
+    "type": "generated-index",
+    "description": "This section explains how to set up the online test repository, which contains the tests to be executed in the New Job Scheduling. The test repository is associated to a test discovery server, which is responsible for making them available to the New Job Scheduling."
+  }
+}

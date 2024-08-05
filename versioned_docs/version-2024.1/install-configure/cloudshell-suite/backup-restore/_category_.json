@@ -1,0 +1,9 @@
+{
+  "label": "Back Up and Restore CloudShell",
+  "position": 10,
+  "link": {
+    "slug": "install-configure/cloudshell-suite/backup-restore",
+    "type": "generated-index",
+    "description": "As a best practice, it is recommended to periodically back up your CloudShell databases, especially when you add a new development, production or staging environment, or when you upgrade CloudShell to a new version."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "label": "Export Blueprint Packages and Configurations",
+  "position": 19,
+  "link": {
+    "slug": "portal/blueprints/creating-blueprints/export-blueprints",
+    "type": "generated-index",
+    "description": "The following articles discus how to export blueprint packages, diagrams and connections from CloudShell."
+  }
+}
