@@ -28,7 +28,7 @@ To learn more about the different versions of the Shells used by CloudShell and 
 
 ## Prerequisites
 
-- [Get CloudShell](http://info.quali.com/cloudshell-developer-edition-download): Download the latest CloudShell SDK and run it on your machine.
+- [Get CloudShell](http://info.quali.com/cloudshell-developer-edition-download): Download the latest CloudShell SDK VM and deploy it.
 - [Python](https://www.python.org/downloads/): Make sure the appropriate Python version - 2.7.x and/or 3.x - (latest recommended) is installed on your machine. *Starting with CloudShell 9.3, CloudShell comes with out-of-the-box support for Python 3 for shells*.
     
     Python 3 automation requires Microsoft Visual C++ Redistributable 2015 x86 and x64 to be installed on the Execution Server(s).

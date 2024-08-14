@@ -39,7 +39,7 @@ As of version 9.0, CloudShell supports the ability to define custom cloud provid
 
 ## Prerequisites
 
-- [Get CloudShell](http://info.quali.com/cloudshell-developer-edition-download): Download the latest CloudShell SDK and run it on your machine.
+- [Get CloudShell](http://info.quali.com/cloudshell-developer-edition-download): Download the latest CloudShell SDK VM and deploy it.
     
 - [Python](https://www.python.org/downloads/): Make sure the appropriate Python version - 2.7.x and/or 3.x - (latest recommended) is installed on your machine.  
     Starting with CloudShell 9.3, CloudShell comes with out-of-the-box support for Python 3 for shells.

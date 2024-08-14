@@ -6,10 +6,8 @@ sidebar_position: 1
 
 **To download the installation files:**
 
-1. In the [CloudShell Community](https://community.quali.com/) page, click **CloudShell Developer's SDK**.
-    
-    ![](/Images/SDK2/DownloadSDKButton.png)
-    
+1. [Get CloudShell](http://info.quali.com/cloudshell-developer-edition-download): Download the latest CloudShell SDK files.
+        
 2. Fill in the details in the download form and click **Download**.
     
     ![](/Images/SDK2/SdkDownloadForm.png)
