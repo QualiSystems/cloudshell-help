@@ -44,7 +44,7 @@ Abstract resources can now also be added directly to a sandbox and modified ther
 
 ### Fixed devices
 
-Fixed devices are never selected as parts, only as complete resources. [Read more](#fixed-devices-1)
+Fixed devices are never selected as parts, only as complete resources. [Read more](./fixed-devices.md)
 
 ## Completing Work Order Resources
 
