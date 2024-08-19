@@ -121,7 +121,7 @@ const config = {
             return versions.map(version => `/${version}/Portal/Inventory`);
           }
           else if (existingPath.startsWith('/portal/sandboxes/sandbox-workspace/index.md')) {
-            return versions.flatMap(version => [`/${version}/Portal/EnvironmentWorkspace`, `/${version}/Portal/ReservationsTimeline`]);
+            return versions.flatMap(version => [`/${version}/Portal/EnvironmentWorkspace`, `/${version}/Portal/ReservationWorkspace`]);
           }
           else if (existingPath.startsWith('/portal/blueprints/blueprint-catalog.md')) {
             return versions.map(version => `/${version}/Portal/EnvironmentsCatalog`);
@@ -144,7 +144,7 @@ const config = {
           else if (existingPath.startsWith('/portal/sandboxes/saved-sandboxes/index.md')) {
             return versions.map(version => `/${version}/Portal/SaveSandbox`);
           }
-          else if (existingPath.startsWith('/portal/sandboxes/sandbox-save-and-restore-overview')) {
+          else if (existingPath.startsWith('/portal/sandboxes/sandbox-save-and-restore-overview.md')) {
             return versions.map(version => `/${version}/Portal/SaveSandboxOverview`);
           }
           else if (existingPath.startsWith('/intro.md')) {

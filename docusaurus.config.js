@@ -67,7 +67,8 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/QualiSystems/cloudshell-help/tree/main/',
-          //showLastUpdateTime: false  // since we build everything on each update, the date will just show the same for all pages
+          showLastUpdateTime: false,
+          showLastUpdateAuthor: false,
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -117,37 +118,37 @@ const config = {
         createRedirects(existingPath) {
           var versions = ["0.0", "2022.1", "2022.1.0.1858", "2022.2", "2022.2.0.1470", "2023.1", "2023.1.0.655", "2023.2", "2023.2.0.1763", "2023.3", "2023.3.0.979", "2024.1"];          
           
-          if (existingPath.includes('/portal/inventory/inventory-dashboard')) {
+          if (existingPath.includes('/portal/inventory/inventory-dashboard.md')) {
             return versions.map(version => `/${version}/Portal/Inventory`);
           }
-          else if (existingPath.includes('/portal/sandboxes/sandbox-workspace')) {
-            return versions.flatMap(version => [`/${version}/Portal/EnvironmentWorkspace`, `/${version}/Portal/ReservationsTimeline`]);
+          else if (existingPath.includes('/portal/sandboxes/sandbox-workspace/index.md')) {
+            return versions.flatMap(version => [`/${version}/Portal/EnvironmentWorkspace`, `/${version}/Portal/ReservationWorkspace`]);
           }
-          else if (existingPath.includes('/portal/blueprints/blueprint-catalog')) {
+          else if (existingPath.includes('/portal/blueprints/blueprint-catalog.md')) {
             return versions.map(version => `/${version}/Portal/EnvironmentsCatalog`);
           }
-          else if (existingPath.includes('portal/sandboxes/sandboxes-dashboard')) {
+          else if (existingPath.includes('portal/sandboxes/sandboxes-dashboard.md')) {
             return versions.flatMap(version => [`/${version}/Portal/ReservationsList`, `/${version}/Portal/ReservationsTimeline`]);
           }
-          else if (existingPath.includes('/portal/job-scheduling/job-scheduling-dashboard')) {
+          else if (existingPath.includes('/portal/job-scheduling/job-scheduling-dashboard.md')) {
             return versions.map(version => `/${version}/Portal/Scheduler`);
           }
-          else if (existingPath.includes('/admin/cloudshell-manage-dashboard/manage-dashboard-overview')) {
+          else if (existingPath.includes('/admin/cloudshell-manage-dashboard/manage-dashboard-overview.md')) {
             return versions.map(version => `/${version}/Portal/Manage`);
           }
-          else if (existingPath.includes('/admin/cloudshell-manage-dashboard/manage-app-templates')) {
+          else if (existingPath.includes('/admin/cloudshell-manage-dashboard/manage-app-templates/index.md')) {
             return versions.map(version => `/${version}/Portal/ManageApps`);
           }
-          else if (existingPath.includes('/portal/sandboxes/sandbox-workspace/apps')) {
+          else if (existingPath.includes('/intro/features/apps-overview.md')) {
             return versions.map(version => `/${version}/Portal/UsingApps`);
           }
           else if (existingPath.includes('/portal/sandboxes/saved-sandboxes/index.md')) {
             return versions.map(version => `/${version}/Portal/SaveSandbox`);
           }
-          else if (existingPath.includes('/portal/sandboxes/sandbox-save-and-restore-overview')) {
+          else if (existingPath.includes('/portal/sandboxes/sandbox-save-and-restore-overview.md')) {
             return versions.map(version => `/${version}/Portal/SaveSandboxOverview`);
           }
-          else if (existingPath.includes('/')) {
+          else if (existingPath.includes('/intro.md')) {
             return versions.map(version => `/Online%20Help/${version}/Portal/Default.htm`);
           }
           
