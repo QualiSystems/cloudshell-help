@@ -130,7 +130,7 @@ const config = {
           else if (existingPath.includes('/portal/sandboxes/sandbox-workspace/apps')) {
             return versions.map(version => `/${version}/Portal/UsingApps`);
           }
-          else if (existingPath.includes('/portal/sandboxes/saved-sandboxes')) {
+          else if (existingPath.includes('/portal/sandboxes/saved-sandboxes/index.md')) {
             return versions.map(version => `/${version}/Portal/SaveSandbox`);
           }
           else if (existingPath.includes('/portal/sandboxes/sandbox-save-and-restore-overview')) {
