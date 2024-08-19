@@ -105,13 +105,13 @@ In the above example, Cloudshell Server would only emit events related to new us
 
 **ResourceAvailabilityChangedDomainEvent**:   This event is triggered when the availability of a resource changes.
 
-**TopologyCreatedEvent**:   This event occurs when a new blueprint is created.
+**BlueprintCreatedEvent**:   This event occurs when a new blueprint is created.
 
-**TopologyUpdatedEvent**:   This event is fired when a blueprint is updated.
+**BlueprintUpdatedEvent**:   This event is fired when a blueprint is updated.
 
-**TopologyDeletedEvent**:   This event is triggered when a blueprint is deleted.
+**BlueprintDeletedEvent**:   This event is triggered when a blueprint is deleted.
 
-**TopologyRenamedEvent**:   This event happens when a blueprint is renamed.
+**BlueprintRenamedEvent**:   This event happens when a blueprint is renamed.
 
 **DeployResourceEvent**:   This event occurs when a resource is deployed.
 
@@ -135,23 +135,23 @@ In the above example, Cloudshell Server would only emit events related to new us
 
 **BulkResourcesAddedEvent**:   This event is fired when multiple resources are added in bulk.
 
-**ReservationCreatedEvent**:   This event is triggered when a sandbox is created.
+**SandboxCreatedEvent**:   This event is triggered when a sandbox is created.
 
-**ReservationDeleteEvent**:   This event occurs when a sandbox is deleted.
+**SandboxDeleteEvent**:   This event occurs when a sandbox is deleted.
 
-**ReservationEndEvent**:   This event is fired when a sandbox ends.
+**SandboxEndEvent**:   This event is fired when a sandbox ends.
 
-**ReservationEndTimeChangedEvent**:   This event is triggered when the end time of a sandbox is changed.
+**SandboxEndTimeChangedEvent**:   This event is triggered when the end time of a sandbox is changed.
 
-**ReservationRejectedEvent**:   This event happens when a sandbox is rejected (typically due to user or license restrictions).
+**SandboxRejectedEvent**:   This event happens when a sandbox is rejected (typically due to user or license restrictions).
 
-**ReservationRenamedEvent**:   This event occurs when a sandbox is renamed.
+**SandboxRenamedEvent**:   This event occurs when a sandbox is renamed.
 
-**ReservationSetupEndedEvent**:   This event is fired when the setup of a sandbox ends.
+**SandboxSetupEndedEvent**:   This event is fired when the setup of a sandbox ends.
 
-**ReservationStartTimeChangedEvent**:   This event is triggered when the start time of a sandbox is changed.
+**SandboxStartTimeChangedEvent**:   This event is triggered when the start time of a sandbox is changed.
 
-**ReservationUpdateEvent**:   This event happens when a sandbox is updated.
+**SandboxUpdateEvent**:   This event happens when a sandbox is updated.
 
 **WorkOrderResourceUpdatedEvent**:   This event is fired when a work order resource is updated in an assembly lab sandbox.
 
