@@ -1,14 +1,1 @@
-var DOCUMENTATION_OPTIONS = {
-    URL_ROOT: document.getElementById("documentation_options").getAttribute('data-url_root'),
-    VERSION: '2024.1.0.187973',
-    LANGUAGE: 'en',
-    COLLAPSE_INDEX: false,
-    BUILDER: 'html',
-    FILE_SUFFIX: '.html',
-    LINK_SUFFIX: '.html',
-    HAS_SOURCE: true,
-    SOURCELINK_SUFFIX: '.txt',
-    NAVIGATION_WITH_KEYS: false,
-    SHOW_SEARCH_SUMMARY: true,
-    ENABLE_SEARCH_SHORTCUTS: true,
-};
+var DOCUMENTATION_OPTIONS={URL_ROOT:document.getElementById("documentation_options").getAttribute("data-url_root"),VERSION:"2024.1.0.187973",LANGUAGE:"en",COLLAPSE_INDEX:!1,BUILDER:"html",FILE_SUFFIX:".html",LINK_SUFFIX:".html",HAS_SOURCE:!0,SOURCELINK_SUFFIX:".txt",NAVIGATION_WITH_KEYS:!1,SHOW_SEARCH_SUMMARY:!0,ENABLE_SEARCH_SHORTCUTS:!0};
