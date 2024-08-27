@@ -153,12 +153,3 @@ In the above example, Cloudshell Server would only emit events related to new us
 
 **ReservationUpdateEvent**:   This event happens when a sandbox is updated.
 
-**WorkOrderResourceUpdatedEvent**:   This event is fired when a work order resource is updated in an assembly lab sandbox.
-
-**WorkOrderResourceSolvedEvent**:   This event occurs when a concrete resource is selected for a work order resource in an assembly lab sandbox.
-
-**WorkOrderResourceCreatedEvent**:   This event is triggered when a work order resource is created in an assembly lab sandbox.
-
-**WorkOrderResourceUnsolvedEvent**:   This event is fired when a concrete match for a work order resource is unselected in an assembly lab sandbox.
-
-**WorkOrderResourceRemovedEvent**:   This event happens when a work order resource is removed in an assembly lab sandbox.
