@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Database Prerequisites
 
-CloudShell applications can work with SQL database.
+CloudShell applications can work with MS SQL database.
 
 ## MongoDB database permissions and installation requirements
 
@@ -43,17 +43,26 @@ The required components must be installed in the following order:
 
 ### Database
 
-Supported Standard editions:
+**Supported Standard editions:**
 - SQL Server 2012
 - SQL Server 2014
 - SQL Server 2016
 - SQL Server 2019
 
-Supported Express editions:
+**Supported Express editions:**
 
 - SQL Server 2016 SP1
 
-Installation instructions:
+**Hardware requirements for SQL Server: **
+
+|   | POC environment | Team Tier | Premium Tier |
+| --- | --- | --- | --- |
+| CPU | 4 logical cores | 8 logical cores | 16 logical cores |
+| Memory | 8 GB | 16 GB | 32 GB |
+| Storage (hard disk) | 20 GB | 40 GB (SSD) | 100 GB (SSD) |
+| Network card |   | 1/10 GB, according to network load | 1/10 GB, according to network load |
+
+**Installation instructions:**
 
 - For production environments, use SQL Server in an AlwaysOn availability group configuration.
 - SQL Express edition should only be used for POCs. For details, see this Microsoft docs article [https://www.microsoft.com/en-us/sql-server/sql-server-downloads](https://www.microsoft.com/en-us/sql-server/sql-server-downloads).
