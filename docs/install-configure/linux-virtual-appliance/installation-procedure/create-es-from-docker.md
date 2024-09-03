@@ -16,7 +16,7 @@ In the docker run command, we use "--name ExecutionServer" for the container nam
 ## Online Steps to Install Execution Server Using Docker
 
 1. Install Docker on your Linux Server machine
-2. Enable Docker Ipv6 support:
+2. Enable Docker IPv6 support:
     1. **Create** a file /etc/docker/daemon.json:
         ```javascript
         sudo touch /etc/docker/daemon.json
