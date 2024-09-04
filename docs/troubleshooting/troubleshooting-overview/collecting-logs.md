@@ -217,6 +217,10 @@ If you are using a Windows machine to extract logs from the Linux execution serv
 - `./opt/ExecutionServer/Logs`
 - `/var/log/qualiSystems/`
 
+## Linux execution server logs (Docker)
+
+If you set up an Execution Server using Docker, see [Steps to Collect and Share Logs on Linux Using Docker](../../install-configure/linux-virtual-appliance/installation-procedure/create-es-from-docker.md#steps-to-collect-and-share-logs-on-linux-using-docker).
+
 ## Windows execution server logs
 
 When a Windows-based execution server runs a Python command, either shell-based or an orchestration script, the execution server's logs will be saved here: `C:\ProgramData\QualiSystems\logs`.
