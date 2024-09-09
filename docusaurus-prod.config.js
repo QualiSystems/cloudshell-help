@@ -114,7 +114,7 @@ const config = {
             from: ['/help versions/All Versions Help/Content/Versions.htm', '/help%20versions/All%20Versions%20Help/Content/Versions.htm'],
           },
           {
-            to: 'https://help-archive.quali.com/Online%20Help/0.0/TestShell/Content/TSS/TSS.htm',
+            to: 'https://help-archive.quali.com/Online Help/0.0/TestShell/Content/TSS/TSS.htm',
             from: ['/2022.1.0.1858/ST/', '/2022.2.0.1470/ST/', '/2023.1.0.655/ST/', '/2023.2.0.1763/ST/', '/2023.3.0.979/ST/', '/2024.1.0.2508/ST/'],
           },
           {
@@ -159,7 +159,7 @@ const config = {
             return versions.map(version => `/Online%20Help/${version}/Portal/Default.htm`);
           }
           else if (existingPath.startsWith('/admin/setting-up-cloudshell/cloudshell-resource-management-client.md')) {
-            return versions.map(version => `/${version}/RM`);
+            return versions.map(version => `/${version}/RM/`);
           }
           else if (existingPath.startsWith('/help-versions-archive')) {
             return "/help%20versions/"
