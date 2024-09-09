@@ -112,10 +112,18 @@ const config = {
           {
             to: 'https://help-archive.quali.com/help versions/All Versions Help/Content/Versions.htm',
             from: ['/help versions/All Versions Help/Content/Versions.htm', '/help%20versions/All%20Versions%20Help/Content/Versions.htm'],
-          },          
+          },
+          {
+            to: 'https://help-archive.quali.com/Online%20Help/0.0/TestShell/Content/TSS/TSS.htm',
+            from: ['/2022.1.0.1858/ST/', '/2022.2.0.1470/ST/', '/2023.1.0.655/ST/', '/2023.2.0.1763/ST/', '/2023.3.0.979/ST/', '2024.1.0.2508/ST/'],
+          },
+          {
+            to: 'https://help-archive.quali.com/Online Help/0.0/TestShell/Content/TSR/Tst-Run.htm',
+            from: ['/2022.1.0.1858/RUN/', '/2022.2.0.1470/RUN/', '/2023.1.0.655/RUN/', '/2023.2.0.1763/RUN/', '/2023.3.0.979/RUN/', '2024.1.0.2508/RUN/'],
+          },
         ],
         createRedirects(existingPath) {
-          var versions = ["0.0", "2022.1", "2022.1.0.1858", "2022.2", "2022.2.0.1470", "2023.1", "2023.1.0.655", "2023.2", "2023.2.0.1763", "2023.3", "2023.3.0.979", "2024.1"];          
+          var versions = ["0.0", "2022.1", "2022.1.0.1858", "2022.2", "2022.2.0.1470", "2023.1", "2023.1.0.655", "2023.2", "2023.2.0.1763", "2023.3", "2023.3.0.979", "2024.1", "2024.1.0.2508"];          
           
           if (existingPath.startsWith('/portal/inventory/inventory-dashboard.md')) {
             return versions.map(version => `/${version}/Portal/Inventory`);
@@ -149,6 +157,9 @@ const config = {
           }
           else if (existingPath.startsWith('/intro.md')) {
             return versions.map(version => `/Online%20Help/${version}/Portal/Default.htm`);
+          }
+          else if (existingPath.startsWith('/admin/setting-up-cloudshell/cloudshell-resource-management-client.md')) {
+            return versions.map(version => `/${version}/RM`);
           }
           else if (existingPath.startsWith('/help-versions-archive')) {
             return "/help%20versions/"
