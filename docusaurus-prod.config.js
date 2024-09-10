@@ -121,17 +121,17 @@ const config = {
             to: 'https://help-archive.quali.com/Online Help/0.0/TestShell/Content/TSR/Tst-Run.htm',
             from: ['/2022.1.0.1858/RUN/', '/2022.2.0.1470/RUN/', '/2023.1.0.655/RUN/', '/2023.2.0.1763/RUN/', '/2023.3.0.979/RUN/', '/2024.1.0.2508/RUN/'],
           },
-          {
-            to: '/',
-            from: [
-              '/Online%20Help/2022.1.0.1858/Portal/',
-              '/Online%20Help/2022.2.0.1470/Portal/',
-              '/Online%20Help/2023.1.0.655/Portal/',
-              '/Online%20Help/2023.2.0.1763/Portal/',
-              '/Online%20Help/2023.3.0.979/Portal/',
-              '/Online%20Help/2024.1.0.2508/Portal/',
-              ],
-          },
+          // {
+          //   to: '/',
+          //   from: [
+          //     '/Online%20Help/2022.1.0.1858/Portal/',
+          //     '/Online%20Help/2022.2.0.1470/Portal/',
+          //     '/Online%20Help/2023.1.0.655/Portal/',
+          //     '/Online%20Help/2023.2.0.1763/Portal/',
+          //     '/Online%20Help/2023.3.0.979/Portal/',
+          //     '/Online%20Help/2024.1.0.2508/Portal/',
+          //     ],
+          // },
         ],
         createRedirects(existingPath) {
           var versions = ["0.0", "2022.1", "2022.1.0.1858", "2022.2", "2022.2.0.1470", "2023.1", "2023.1.0.655", "2023.2", "2023.2.0.1763", "2023.3", "2023.3.0.979", "2024.1", "2024.1.0.2508"];          
