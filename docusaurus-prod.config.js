@@ -129,12 +129,14 @@ const config = {
               '/Online%20Help/2023.1.0.655/Portal/',
               '/Online%20Help/2023.2.0.1763/Portal/',
               '/Online%20Help/2023.3.0.979/Portal/',
+              '/Online%20Help/2024.1.0.2480/Portal/',
               '/Online%20Help/2024.1.0.2508/Portal/',
+              '/Online%20Help/2024.1.0.2515/Portal/',
               ],
           },
         ],
         createRedirects(existingPath) {
-          var versions = ["0.0", "2022.1", "2022.1.0.1858", "2022.2", "2022.2.0.1470", "2023.1", "2023.1.0.655", "2023.2", "2023.2.0.1763", "2023.3", "2023.3.0.979", "2024.1", "2024.1.0.2508"];          
+          var versions = ["0.0", "2022.1", "2022.1.0.1858", "2022.2", "2022.2.0.1470", "2023.1", "2023.1.0.655", "2023.2", "2023.2.0.1763", "2023.3", "2023.3.0.979", "2024.1", "2024.1.0.2480", "2024.1.0.2508", "2024.1.0.2515"];          
 
           if (existingPath.startsWith('/portal/inventory/inventory-dashboard')) {
             return versions.map(version => `/${version}/Portal/Inventory`);
