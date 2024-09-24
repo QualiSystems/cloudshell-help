@@ -5,9 +5,13 @@ sidebar_position: 7
 # Customizing Email Notification Templates
 
 CloudShell email notifications are based on HTML templates, which can be customized as appropriate.
+
 :::note Important
 Make backup copies of any templates you want to customize just in case you need to revert back. Upgrading CloudShell will override any custom templates you have so make sure to keep backups.
+
+After modifying these files, restart the Quali Server service for the changes to take effect.
 :::
+
 These templates reside on the Quali Server machine at `C:\Program Files (x86)\QualiSystems\CloudShell\Server\EmailTemplates` and use a combination of text and CloudShell variables that pass information from CloudShell.
 
 For example, the "Sandbox Ending" email template:
