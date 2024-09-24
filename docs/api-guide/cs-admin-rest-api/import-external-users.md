@@ -36,6 +36,7 @@ Example header format:
 | --- | --- |
 | UserName | External user name. Can be retrieved via [Get users from an external group](./get-users-from-an-external-group.md) |
 | GroupName | External group name. Can be retrieved via [Get all external groups](./get-all-external-groups.md). <br/> TIP: You should import by group name for larger organizations containing hundreds of users as importing all users may fail due to active directory/LDAP limitations. |
+| AllowUpdate | Determines if the details of an existing user can be updated during the import process. |
 
 </details>
 
@@ -45,6 +46,13 @@ Example header format:
 ```javascript
 {
   "UserName": "James Porter",
+}
+```
+
+```javascript
+{
+  "UserName": "James Porter",
+  "AllowUpadte": true,
 }
 ```
 
