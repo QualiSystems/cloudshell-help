@@ -14,7 +14,7 @@ The CloudShell Insight BI package includes the following components:
     - **Sandboxes**: Sandbox and consumption licenses, including number of activated/denied/ended sandboxes
     - **Users**: User activity (logins, sandbox launches)
     - **Utilization**: Resource utilization data. Helps to identify bottlenecks and unused resources
-    -  **Yearly Utilization**: Monthly resource utilization over the last 12 months
+    - **Yearly Utilization**: Monthly resource utilization over the last 12 months
 
 :::note Notes
 - Data related to **Sandbox Save and Restore** is stored in the **Insight** database and can be displayed in customized dashboards.
