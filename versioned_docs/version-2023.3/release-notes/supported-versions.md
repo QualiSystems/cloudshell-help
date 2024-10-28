@@ -16,9 +16,9 @@ CloudShell offers two support phases:
 | --- | --- | --- | --- |
 | 2023.3 | December 2023 | July 1, 2025 | July 1, 2026 |
 | 2023.2 | July 2023 | Feb 1, 2025 | Feb 1, 2026 |
-| 2023.1 | March 2023 | Oct 1, 2024 | Oct 1, 2025 |
-| 2022.2 | September 2022 | Apr 1, 2024 | Apr 1, 2025 |
-| 2022.1 | February 2022 | <span style={{ color:"gray" }}>Sept 1, 2023</span> | Sept 1, 2024 |
+| 2023.1 | March 2023 | <span style={{ color:"gray" }}>Oct 1, 2024</span> | Oct 1, 2025 |
+| 2022.2 | September 2022 | <span style={{ color:"gray" }}>Apr 1, 2024</span> | Apr 1, 2025 |
+| <span style={{ color:"gray" }}>2022.1</span> | <span style={{ color:"gray" }}>February 2022</span> | <span style={{ color:"gray" }}>Sept 1, 2023</span> | <span style={{ color:"gray" }}>Sept 1, 2024</span> |
 | <span style={{ color:"gray" }}>2021.2</span> | <span style={{ color:"gray" }}>August 2021</span> | <span style={{ color:"gray" }}>Jan 1, 2023</span> | <span style={{ color:"gray" }}>Jan 1, 2024</span> |
 | <span style={{ color:"gray" }}>2021.1</span> | <span style={{ color:"gray" }}>April 2021</span> | <span style={{ color:"gray" }}>Nov 1, 2022</span> | <span style={{ color:"gray" }}>Nov 1, 2023</span> |
 | <span style={{ color:"gray" }}>2020.2</span> | <span style={{ color:"gray" }}>October 2020</span> | <span style={{ color:"gray" }}>May 1, 2022</span> | <span style={{ color:"gray" }}>May 1, 2023</span> |
