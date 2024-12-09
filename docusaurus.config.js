@@ -77,7 +77,7 @@ const config = {
         sitemap: {
           lastmod: 'date',
           priority: 0.5,
-          ignorePatterns: ['/tags/**'],
+          ignorePatterns: ['/tags/**', '/2023.3/**'],
           filename: 'sitemap.xml',
           createSitemapItems: async (params) => {
             const {defaultCreateSitemapItems, ...rest} = params;
@@ -117,11 +117,11 @@ const config = {
           },
           {
             to: 'https://help-archive.quali.com/Online Help/0.0/TestShell/Content/TSS/TSS.htm',
-            from: ['/2022.1.0.1858/ST/', '/2022.2.0.1470/ST/', '/2023.1.0.655/ST/', '/2023.2.0.1763/ST/', '/2023.3.0.979/ST/', '/2024.1.0.2508/ST/'],
+            from: ['/2022.1.0.1858/ST/', '/2022.2.0.1470/ST/', '/2023.1.0.655/ST/', '/2023.2.0.1763/ST/', '/2023.3.0.979/ST/', '/2024.1.0.2480/ST/', '/2024.1.0.2508/ST/', '/2024.1.0.2515/ST/'],
           },
           {
             to: 'https://help-archive.quali.com/Online Help/0.0/TestShell/Content/TSR/Tst-Run.htm',
-            from: ['/2022.1.0.1858/RUN/', '/2022.2.0.1470/RUN/', '/2023.1.0.655/RUN/', '/2023.2.0.1763/RUN/', '/2023.3.0.979/RUN/', '/2024.1.0.2508/RUN/'],
+            from: ['/2022.1.0.1858/RUN/', '/2022.2.0.1470/RUN/', '/2023.1.0.655/RUN/', '/2023.2.0.1763/RUN/', '/2023.3.0.979/RUN/', '/2024.1.0.2480/RUN/', '/2024.1.0.2508/RUN/', '/2024.1.0.2515/RUN/'],
           },
           {
             to: '/',
@@ -131,12 +131,14 @@ const config = {
               '/Online%20Help/2023.1.0.655/Portal/',
               '/Online%20Help/2023.2.0.1763/Portal/',
               '/Online%20Help/2023.3.0.979/Portal/',
+              '/Online%20Help/2024.1.0.2480/Portal/',
               '/Online%20Help/2024.1.0.2508/Portal/',
+              '/Online%20Help/2024.1.0.2515/Portal/',
               ],
           },
         ],
         createRedirects(existingPath) {
-          var versions = ["0.0", "2022.1", "2022.1.0.1858", "2022.2", "2022.2.0.1470", "2023.1", "2023.1.0.655", "2023.2", "2023.2.0.1763", "2023.3", "2023.3.0.979", "2024.1", "2024.1.0.2508"];          
+          var versions = ["0.0", "2022.1", "2022.1.0.1858", "2022.2", "2022.2.0.1470", "2023.1", "2023.1.0.655", "2023.2", "2023.2.0.1763", "2023.3", "2023.3.0.979", "2024.1", "2024.1.0.2480", "2024.1.0.2508", "2024.1.0.2515"];          
 
           if (existingPath.startsWith('/portal/inventory/inventory-dashboard')) {
             return versions.map(version => `/${version}/Portal/Inventory`);
