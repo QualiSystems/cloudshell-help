@@ -182,6 +182,12 @@ sidebar_position: 16
 		</tr>
 	</tbody>
 </table>
+:::note
+When this key is enabled, an administrator will still be able to reserve with conflicts.
+This is also the behavior when using the CloudShell automation api.
+If however, the logged in admin is trying to create a reservation for a regular user (set the owner to a regular user), this will fail as well if there are conflicts.
+:::
+
 ## Enable regular users to view sandboxes of other users in their domain
 <table>
 	<tbody>

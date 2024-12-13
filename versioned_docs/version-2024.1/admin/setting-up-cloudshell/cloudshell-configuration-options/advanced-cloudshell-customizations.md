@@ -1601,6 +1601,12 @@ In some cases, it may be undesirable to allow users to use the **Reserve Anyway*
 2. Save the file.
 3. Restart the **Quali Server** service.
 
+:::note
+When this key is enabled, an administrator will still be able to reserve with conflicts.
+This is also the behavior when using the CloudShell automation api.
+If however, the logged in admin is trying to create a reservation for a regular user (set the owner to a regular user), this will fail as well if there are conflicts.
+:::
+
 ### Allowing regular users to view sandboxes of other users in their domain
 
 By default, all users in the same domain have visibility of each other’s sandboxes. You can disable this with the following key.
