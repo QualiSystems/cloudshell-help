@@ -48,10 +48,13 @@ The required components must be installed in the following order:
 - SQL Server 2014
 - SQL Server 2016
 - SQL Server 2019
+- SQL Server 2022
 
 **Supported Express editions:**
 
 - SQL Server 2016 SP1
+- SQL Server 2019
+- SQL Server 2022
 
 **Hardware requirements for SQL Server: **
 
@@ -70,7 +73,7 @@ The required components must be installed in the following order:
 - When selecting the **Standalone** option in the CloudShell installer, if the CloudShell installer cannot find Microsoft SQL Server or Microsoft SQL Server Express on the destination environment, Microsoft SQL Server Express is installed automatically as part of the installation procedure.
 
 :::note Notes
-- There is a limitation of the maximum database size, per database - 10 GB for SQL Server 2016 SP1.
+- There is a limitation of the maximum database size, per database - 10 GB for SQL Server Express 2016 and above.
 - SQL Server 2012 Enterprise, SQL Server 2014 Enterprise and SQL Server 2016 Standard Edition are supported for High Availability (HA) solutions.
 :::
 
