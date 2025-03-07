@@ -56,7 +56,7 @@ The required components must be installed in the following order:
 - SQL Server 2019
 - SQL Server 2022
 
-**Hardware requirements for SQL Server: **
+**Hardware requirements for SQL Server:**
 
 |   | POC environment | Team Tier | Premium Tier |
 | --- | --- | --- | --- |

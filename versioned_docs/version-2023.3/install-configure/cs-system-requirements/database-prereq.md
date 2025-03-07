@@ -53,7 +53,7 @@ The required components must be installed in the following order:
 
 - SQL Server 2016 SP1
 
-**Hardware requirements for SQL Server: **
+**Hardware requirements for SQL Server:**
 
 |   | POC environment | Team Tier | Premium Tier |
 | --- | --- | --- | --- |
