@@ -51,21 +51,25 @@ The `component command name` method returns details about a specific component c
       {
          "name":"param1",
          "description":"",
-         "type":"numeric""possible values":[
+         "type":"numeric",
+         "possible values":[
             
          ],
-         "default value":"""mandatory":false
+         "default value":"",
+         "mandatory":false
       }
-   ]"executions":[
+   ],
+   "executions":[
       {
          "id":"0daead01-8e57-4064-81d4-84911effa911",
          "status":"Pending",
-         "supports_Cancelation":"false",
+         "supports_cancellation":"false",
          "_links":{
             "self":{
                "href":"/executions/0daead01-8e57-4064-81d4-84911effa911",
                "method":"GET"
-            }"stop":{
+            },
+            "stop":{
                "href":"/executions/0daead01-8e57-4064-81d4-84911effa911",
                "method":"DELETE"
             }

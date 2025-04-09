@@ -51,16 +51,19 @@ The `sandbox component commands` method returns details about all the commands p
          {
             "name":"param1",
             "description":"",
-            "type":"numeric""possible values":[
+            "type":"numeric",
+            "possible values":[
                
             ],
-            "default value":"""mandatory":false
+            "default value":"",
+            "mandatory":false
          }
-      ]"executions":[
+      ],
+      "executions":[
          {
             "id":"0daead01-8e57-4064-81d4-84911effa911",
             "status":"Pending",
-            "supports_Cancelation":"false",
+            "supports_cancellation":"false",
             "_links":{
                
             }
@@ -77,6 +80,7 @@ The `sandbox component commands` method returns details about all the commands p
          }
       }
    }
+]
 ```
 </details>
 

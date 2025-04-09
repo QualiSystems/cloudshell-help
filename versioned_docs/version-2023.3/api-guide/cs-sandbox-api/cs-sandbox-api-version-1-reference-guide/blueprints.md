@@ -49,7 +49,8 @@ The `blueprints` method returns a list of all the blueprints associated with the
       "categories":[
          
       ],
-      "estimated_setup_duration":"PT25M""_links":{
+      "estimated_setup_duration":"PT25M",
+      "_links":{
          "self":{
             "href":"/blueprints/c6abccb6-71eb-423b-b754-477c11d6bc2a",
             "method":"GET",

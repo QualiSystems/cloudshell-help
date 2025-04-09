@@ -50,25 +50,28 @@ The `sandboxes` method returns a list of all the sandboxes and the actions that 
       "description":"This is a list of sandboxes in this user domain",
       "state":"Ready",
       "blueprint":{
-         "name":"Test Blprnt2""id":"2f4c972b-5c64-4b08-bae4-73408d7b171d"
-      }"_links":{
+         "name":"Test Blprnt2",
+         "id":"2f4c972b-5c64-4b08-bae4-73408d7b171d"
+      },
+      "_links":{
          "self":{
             "href":"/sandboxes/11491c80-6f79-4e9c-b592-78242c6dc698",
-            "method":"GET""</code><MadCap":"conditionalText MadCap":"conditions=""REST-API.REST API&#160;V1"">""name":"get a sandbox' details",
-            "templated":"true</code></MadCap":"conditionalText><code class=""language-javascript"">"
+            "method":"GET",
+            "name":"get a sandbox' details"            
          },
-         "</code><MadCap":"conditionalText MadCap":"conditions=""REST-API.REST API&#160;V2"">""components":{
+         "components":{
             "href":"/sandboxes/11491c80-6f79-4e9c-b592-78242c6dc698/components",
-            "method":"GET""</code></MadCap":"conditionalText>"
+            "method":"GET"
          },
          "stop":{
             "href":"/sandboxes/11491c80-6f79-4e9c-b592-78242c6dc698/stop",
-            "method":"POST""</code><MadCap":"conditionalText MadCap":"conditions=""REST-API.REST API&#160;V1"">""name":"stop a sandbox",
-            "templated":"true</code></MadCap":"conditionalText>"
+            "method":"POST",
+            "name":"stop a sandbox"
          },
          "all":{
             "href":"/sandboxes",
-            "method":"GET""</code></pre><pre xml":"space=""preserve"">""name":"get all sandboxes"
+            "method":"GET",
+            "name":"get all sandboxes"
          }
       }
    }

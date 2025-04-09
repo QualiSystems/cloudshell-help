@@ -46,7 +46,8 @@ The `sandbox identifier` method returns details about a particular sandbox (as o
    "name":"Test Blprnt 2",
    "id":"994bd534-740a-45f5-851f-ff452f2a17a2",
    "state":"Ready",
-   "setup_stage":"Provisioning""type":"Sandbox",
+   "setup_stage":"Provisioning",
+   "type":"Sandbox",
    "components":[
       {
          "name":"MySwitch",
@@ -57,7 +58,7 @@ The `sandbox identifier` method returns details about a particular sandbox (as o
             {
                "type":"string",
                "name":"vendor",
-               "value":" """
+               "value":""
             }
          ],
          "connection_interfaces":[
@@ -75,13 +76,14 @@ The `sandbox identifier` method returns details about a particular sandbox (as o
          "description":""
       }
    ],
-   ]"permitted_users":[
+   "permitted_users":[
       {
          "john.s",
          "emily.b",
          "lucas.w"
       }
-   ]"_links":{
+   ],
+   "_links":{
       "self":{
          "href":"/sandboxes/994bd534-740a-45f5-851f-ff452f2a17a2",
          "method":"GET",
@@ -98,7 +100,7 @@ The `sandbox identifier` method returns details about a particular sandbox (as o
          "href":"/sandboxes",
          "method":"GET",
          "name":"get all sandboxes"
-
+      }
    }
 }
 ```

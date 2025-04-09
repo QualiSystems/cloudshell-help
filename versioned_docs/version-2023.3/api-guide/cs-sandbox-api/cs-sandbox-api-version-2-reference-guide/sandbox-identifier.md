@@ -49,7 +49,8 @@ The `sandbox identifier` method returns details about a particular sandbox (as o
    "start_time":"2017-01-01T10:30:00Z",
    "end_time":"2017-01-01T12:00:00Z",
    "state":"Ready",
-   "setup_stage":"Provisioning""type":"Sandbox",
+   "setup_stage":"Provisioning",
+   "type":"Sandbox",
    "components":[
       {
          "id":"82159835-2d95-46a9-95ec-9251963d203d",
@@ -74,13 +75,15 @@ The `sandbox identifier` method returns details about a particular sandbox (as o
          "name":"Param2",
          "value":""
       }
-   ]"permitted_users":[
+   ],
+   "permitted_users":[
       {
          "john.s",
          "emily.b",
          "lucas.w"
       }
-   ]"_links":{
+   ],
+   "_links":{
       "self":{
          "href":"/sandboxes/994bd534-740a-45f5-851f-ff452f2a17a2",
          "method":"GET",
@@ -100,7 +103,8 @@ The `sandbox identifier` method returns details about a particular sandbox (as o
       "all":{
          "href":"/sandboxes",
          "method":"GET",
-      }"blueprint":{
+      },
+      "blueprint":{
          "href":"/blueprints/44ec66d1-4ac8-4e4b-a3e8-c733482ea176",
          "method":"GET"
       }

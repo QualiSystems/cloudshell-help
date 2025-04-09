@@ -51,7 +51,8 @@ The `sandbox components` method returns details about all the components of a pa
       "description":"",
       "active_deployment_name":"",
       "template_name":"",
-      "app_lifecycle":"undeployed""attributes":[
+      "app_lifecycle":"undeployed",
+      "attributes":[
          {
             "type":"string",
             "name":"user",
@@ -63,13 +64,15 @@ The `sandbox components` method returns details about all the components of a pa
             "name":"SSH",
             "url":""
          }
-      ]"_links":{
+      ],
+      "_links":{
          "self":{
             "href":"/sandboxes/0daead01-8e57-4064-81d4-84911effa000/components/0daead01-8e57-4064-81d4-84911effa933",
             "method":"GET"
          }
       }
-   }{
+   },
+   {
       "id":"0daead01-8e57-4064-81d4-84911effa911",
       "name":"MySwitch",
       "type":"Resource",
@@ -87,7 +90,8 @@ The `sandbox components` method returns details about all the components of a pa
             "name":"Telnet",
             "url":""
          }
-      ]"_links":{
+      ],
+      "_links":{
          "self":{
             "href":"/sandboxes/0daead01-8e57-4064-81d4-84911effa000/components/0daead01-8e57-4064-81d4-84911effa911",
             "method":"GET"

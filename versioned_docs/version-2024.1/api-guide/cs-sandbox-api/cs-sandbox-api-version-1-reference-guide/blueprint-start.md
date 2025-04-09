@@ -98,6 +98,7 @@ The `blueprint start` method returns details about the new sandbox. The output i
    "state":"Ready",
    "type":"Sandbox",
    "components":[
+      {
          "name":"MySwitch",
          "type":"Resource",
          "component_type":"Generic Switch Model",
@@ -106,7 +107,7 @@ The `blueprint start` method returns details about the new sandbox. The output i
             {
                "type":"string",
                "name":"vendor",
-               "value":" """
+               "value":""
             }
          ],
          "connection_interfaces":[
@@ -143,6 +144,7 @@ The `blueprint start` method returns details about the new sandbox. The output i
          "name":"get all sandboxes"
       }
    }
+}
 ```
 </details>
 

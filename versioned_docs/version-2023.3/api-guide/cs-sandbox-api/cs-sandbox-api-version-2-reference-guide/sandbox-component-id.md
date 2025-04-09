@@ -51,7 +51,8 @@ The `sandbox component id` method returns details about a specific component of 
    "description":"",
    "active_deployment_name":"",
    "template_name":"",
-   "app_lifecycle":"undeployed""attributes":[
+   "app_lifecycle":"undeployed",
+   "attributes":[
       {
          "type":"string",
          "name":"user",
@@ -63,7 +64,8 @@ The `sandbox component id` method returns details about a specific component of 
          "name":"RDP",
          "url":""
       }
-   ]"_links":{
+   ],
+   "_links":{
       "self":{
          "href":"/sandboxes/0daead01-8e57-4064-81d4-84911effa000/components/0daead01-8e57-4064-81d4-84911effa933",
          "method":"GET"

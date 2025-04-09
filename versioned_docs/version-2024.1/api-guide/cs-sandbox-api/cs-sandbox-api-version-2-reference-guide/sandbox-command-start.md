@@ -70,7 +70,8 @@ The `sandbox command start` method returns details about a specific execution of
 ```javascript
 {
    "executionId":"1DEB29BF-22B0-4CF6-B7BE-02173520EB81",
-   "supports_cancellation":true"_links":{
+   "supports_cancellation":true,
+   "_links":{
       "self":{
          "href":"/execution/1DEB29BF-22B0-4CF6-B7BE-02173520EB81",
          "method":"GET"

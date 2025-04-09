@@ -65,16 +65,16 @@ The `sandbox activity` method returns the events from the Activity Feed of a par
          "event_type":"success",
          "event_text":"Sandbox 'MyBlueprint' has started",
          "output":"Null",
-         "time":"2017-01-15T09:51:17Z"
-	  "execution_server": null
+         "time":"2017-01-15T09:51:17Z",
+	      "execution_server": null
       },
       {
          "id":"79549eaf-7f1a-4180-a88b-e7da27e5075b",
          "event_type":"success",
          "event_text":"'Deploy' resource command on 'vCenter VM From...' started",
          "output":"Null",
-         "time":"2017-01-15T09:51:17Z"
-	  "execution_server": "WIN-ES-NY"
+         "time":"2017-01-15T09:51:17Z",
+	      "execution_server": "WIN-ES-NY"
       }
    ]
 }
