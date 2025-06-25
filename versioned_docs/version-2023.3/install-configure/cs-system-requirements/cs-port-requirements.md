@@ -29,7 +29,7 @@ Port 27017 is mostly used while port 27020 is used in very specific use cases wh
 :::
 | Server/Machine                     | Protocol/Port      | Description |
 |------------------------------------|--------------------|-------------|
-| CloudShell Execution Server        | HTTPS/443          | Used by the execution servers in an online CloudShell environment. |
+| CloudShell Execution Server        | HTTPS/443          | Outbound. Used by the execution servers in an online CloudShell environment. |
 |                                    | None               | No configuration required for offline CloudShell environments. |
 | CloudShell Insight (BI Server)     | TCP/8081           | Default Sisense Portal. |
 |                                    | HTTPS/443          | Used by Sisense Portal SSL (if SSL is configured). |
@@ -47,10 +47,10 @@ Port 27017 is mostly used while port 27020 is used in very specific use cases wh
 |                                    | 27019              | Used by Identity Service to store CloudShell user data for access control within Job Scheduling Services. |
 |                                    | 27020              | Used by Sandbox Service to store sandbox events data related to historic, active and future sandboxes. |
 |                                    |                    | **Note:** These are the default ports, but you can change them as appropriate (see Configure the MongoDB Database Connection). Or, you can use a hosted MongoDB solution (on Kubernetes or your organization’s managed MongoDB solution) for the different CloudShell services. |
-| Quali Server                       | TCP/8028           | Used by all CloudShell components to communicate with the Quali Server (CloudShell Portal, Authoring, Resource Manager Client, TestShell Studio, TestShell Runner). |
+| Quali Server                       | TCP/8028           | Used by all CloudShell components to communicate with the Quali Server (CloudShell Portal, Execution Server, Authoring, Resource Manager Client, TestShell Studio, TestShell Runner). |
 |                                    | TCP/8029 TCP/9000  | Used by API clients to communicate with the Quali Server. <br />Quali API port TCP/9000 can be changed using the `QualiApi.Port` configuration key. |
 |                                    | HTTP/8034          | Used by the Sandbox API Web server (internal). |
-|                                    | TCP/8031 TCP/8029  | Used by Execution Servers to communicate with the Quali Server. |
+|                                    | TCP/8031 TCP/8029 TCP/8028  | Used by Execution Servers to communicate with the Quali Server. |
 |                                    | HTTP/8030 TCP/8023 | Used by Studio and Runner. <ul><li>8023 is a file streamer service used by Quali Server to provide access to shared tests and assets. </li><li>8030 is a centralized HTTP service that Quali Server provides. It grants access to centralized Testshell reports (Used for sharing and downloading test reports).</li></ul> |
 |                                    | HTTP – TCP/8036    | (PyPi Server) Used by the execution servers to access the local PyPi Server. |
 |                                    | HTTPS/443          | Used in an online CloudShell environment to access the public Python repository. |
