@@ -692,3 +692,33 @@ Python 3 automation requires Microsoft Visual C++ Redistributable 2015 x86 and x
 		</tr>
 	</tbody>
 </table>
+
+## Resource Enrichment Cache
+<table>
+	<tbody>
+		<tr>
+			<td>Key</td>
+			<td>`<add key="EnableResourceEnrichmentCache" value="false"/>`</td>
+		</tr>
+		<tr>
+			<td>Possible values</td>
+			<td>True/False (True - This cache promotes faster retrieval of resource details when rendering diagrams. False - disables for specific problematic scenarios - very large diagrams)</td>
+		</tr>
+		<tr>
+			<td>Where to add/change</td>
+			<td>`customer.config` CloudShell Server installation directory</td>
+		</tr>
+		<tr>
+			<td>true</td>
+			<td>false</td>
+		</tr>
+		<tr>
+			<td>Affected CloudShell Component</td>
+			<td>CloudShell Server</td>
+		</tr>
+		<tr>
+			<td>Version</td>
+			<td>2024.1 and above</td>
+		</tr>
+	</tbody>
+</table>
