@@ -48,7 +48,7 @@ The scheduling and input parameters of the sandbox in JSON format. The elements
 | --- | --- |
 | `name` | The name of the sandbox. `(string)` <br/> If you do not specify a name, you will get the following error message: "Reservation name and duration must be specified in request body". |
 | `duration` | The duration for this sandbox. Time must be specified in ISO 8601 format (for example PT23H). `(string)` <br/> If you do not specify the duration, you will get the following error message: "Duration format must be a valid 'ISO 8601' (e.g 'PT23H' or 'PT4H2M')". |
-| `start_time` | Optional parameter, if not provided the sandbox will start immediatly. Must conform to ISO 8601 standard, which means that a timezone offset is passed with the value. For UTC: 2039-09-07T15:50+00Z. For UTC+2: 2039-09-26T07:58:30.996+0200". |
+| `start_time` | Optional parameter, if not provided the sandbox will start immediately. Must conform to ISO 8601 standard, which means that a timezone offset is passed with the value. For UTC: 2039-09-07T15:50+00Z. For UTC+2: 2039-09-26T07:58:30.996+0200". |
 | `params` | Any published input parameters defined for the blueprint and its abstract resources. Input parameters that have no default must be included in the request. Abstract resource input parameters must be associated to global inputs (specify the global inputs in the request). `(Array)` <br/> If you do not specify the input parameters, you will get the following error message: "Blueprint has invalid inputs". |
 | `permitted_users` | Users permitted to use the sandbox. Permitted users must have access to the logged-in domain. |
 

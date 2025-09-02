@@ -48,7 +48,7 @@ The offline installation script supports CentOS, RedHat and Ubuntu.
     - RHEL/CentOS 8.x
     - Ubuntu 22.04
 - Python installed on the VM or in the base image
-- Latest stable Mono 6.12 version installaed on the VM ([Download Mono](https://www.mono-project.com/download/stable/#download-lin))
+- Latest stable Mono 6.12 version installed on the VM ([Download Mono](https://www.mono-project.com/download/stable/#download-lin))
 - Create the following folder structure on the execution server machine:
     
     - `/tmp/ExecutionServerInstall`
