@@ -115,11 +115,11 @@ const config = {
           },
           {
             to: 'https://help-archive.quali.com/Online Help/0.0/TestShell/Content/TSS/TSS.htm',
-            from: ['/2022.1.0.1858/ST/', '/2022.2.0.1470/ST/', '/2023.1.0.655/ST/', '/2023.2.0.1763/ST/', '/2023.3.0.979/ST/', '/2024.1.0.2480/ST/', '/2024.1.0.2508/ST/', '/2024.1.0.2515/ST/'],
+            from: ['/2022.1.0.1858/ST/', '/2022.2.0.1470/ST/', '/2023.1.0.655/ST/', '/2023.2.0.1763/ST/', '/2023.3.0.979/ST/', '/2024.1.0.2480/ST/', '/2024.1.0.2508/ST/', '/2024.1.0.2515/ST/', '/2024.1.0.2534/ST/', '/2024.1.0.2540/ST/', '/2024.1.0.2596/ST/', '/2024.1.0.2603/ST/', '/2024.1.0.2624/ST/', '/2024.1.0.2634/ST/', '/2024.1.0.2650/ST/', '/2024.1.0.2653/ST/', '/2024.1.0.2669/ST/', '/2024.1.0.2682/ST/'],
           },
           {
             to: 'https://help-archive.quali.com/Online Help/0.0/TestShell/Content/TSR/Tst-Run.htm',
-            from: ['/2022.1.0.1858/RUN/', '/2022.2.0.1470/RUN/', '/2023.1.0.655/RUN/', '/2023.2.0.1763/RUN/', '/2023.3.0.979/RUN/', '/2024.1.0.2480/RUN/', '/2024.1.0.2508/RUN/', '/2024.1.0.2515/RUN/'],
+            from: ['/2022.1.0.1858/RUN/', '/2022.2.0.1470/RUN/', '/2023.1.0.655/RUN/', '/2023.2.0.1763/RUN/', '/2023.3.0.979/RUN/', '/2024.1.0.2480/RUN/', '/2024.1.0.2508/RUN/', '/2024.1.0.2515/RUN/', '/2024.1.0.2534/RUN/', '/2024.1.0.2540/RUN/', '/2024.1.0.2596/RUN/', '/2024.1.0.2603/RUN/', '/2024.1.0.2624/RUN/', '/2024.1.0.2634/RUN/', '/2024.1.0.2650/RUN/', '/2024.1.0.2653/RUN/', '/2024.1.0.2669/RUN/', '/2024.1.0.2682/RUN/'],
           },
           {
             to: '/',
@@ -132,16 +132,26 @@ const config = {
               '/Online%20Help/2024.1.0.2480/Portal/',
               '/Online%20Help/2024.1.0.2508/Portal/',
               '/Online%20Help/2024.1.0.2515/Portal/',
+              '/Online%20Help/2024.1.0.2534/Portal/',
+              '/Online%20Help/2024.1.0.2540/Portal/',
+              '/Online%20Help/2024.1.0.2596/Portal/',
+              '/Online%20Help/2024.1.0.2603/Portal/',
+              '/Online%20Help/2024.1.0.2624/Portal/',
+              '/Online%20Help/2024.1.0.2634/Portal/',
+              '/Online%20Help/2024.1.0.2650/Portal/',
+              '/Online%20Help/2024.1.0.2653/Portal/',
+              '/Online%20Help/2024.1.0.2669/Portal/',
+              '/Online%20Help/2024.1.0.2682/Portal/',
               ],
           },
         ],
         createRedirects(existingPath) {
-          var versions = ["0.0", "2022.1", "2022.1.0.1858", "2022.2", "2022.2.0.1470", "2023.1", "2023.1.0.655", "2023.2", "2023.2.0.1763", "2023.3", "2023.3.0.979", "2024.1", "2024.1.0.2480", "2024.1.0.2508", "2024.1.0.2515"];          
+          var versions = ["0.0", "2022.1", "2022.1.0.1858", "2022.2", "2022.2.0.1470", "2023.1", "2023.1.0.655", "2023.2", "2023.2.0.1763", "2023.3", "2023.3.0.979", "2024.1", "2024.1.0.2480", "2024.1.0.2508", "2024.1.0.2515", "2024.1.0.2534", "2024.1.0.2540", "2024.1.0.2596", "2024.1.0.2603", "2024.1.0.2624", "2024.1.0.2634", "2024.1.0.2650", "2024.1.0.2653", "2024.1.0.2669", "2024.1.0.2682"];          
 
           if (existingPath.startsWith('/portal/inventory/inventory-dashboard')) {
             return versions.map(version => `/${version}/Portal/Inventory`);
           }
-          else if (existingPath.startsWith('/portal/sandboxes/sandbox-workspace')) {
+          else if (existingPath.startsWith('/portal/sandboxes/sandbox-workspac.md')) {
             return versions.flatMap(version => [`/${version}/Portal/EnvironmentWorkspace`, `/${version}/Portal/ReservationWorkspace`]);
           }
           else if (existingPath.startsWith('/portal/blueprints/blueprint-catalog')) {
@@ -156,13 +166,13 @@ const config = {
           else if (existingPath.startsWith('/admin/cloudshell-manage-dashboard/manage-dashboard-overview')) {
             return versions.map(version => `/${version}/Portal/Manage`);
           }
-          else if (existingPath.startsWith('/admin/cloudshell-manage-dashboard/manage-app-templates')) {
+          else if (existingPath.startsWith('/admin/cloudshell-manage-dashboard/manage-app-templates/index.md')) {
             return versions.map(version => `/${version}/Portal/ManageApps`);
           }
           else if (existingPath.startsWith('/intro/features/apps-overview')) {
             return versions.map(version => `/${version}/Portal/UsingApps`);
           }
-          else if (existingPath.startsWith('/portal/sandboxes/saved-sandboxes')) {
+          else if (existingPath.startsWith('/portal/sandboxes/saved-sandboxes/index.md')) {
             return versions.map(version => `/${version}/Portal/SaveSandbox`);
           }
           else if (existingPath.startsWith('/portal/sandboxes/sandbox-save-and-restore-overview')) {
