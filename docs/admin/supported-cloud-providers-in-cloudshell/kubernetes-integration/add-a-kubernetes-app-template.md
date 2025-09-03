@@ -29,9 +29,11 @@ CloudShell does not manage Kubernetes App connectivity at this time. This can be
 
 <table>
     <thead>
+        <tr>
         <th>Field</th>
         <th>Required</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>
@@ -122,8 +124,10 @@ Select a category from the dropdown list. You can select additional categories. 
         
 <table>
     <thead>
+        <tr>
         <th>Attribute</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>
@@ -283,8 +287,10 @@ To configure Ansible to connect to certified hosts only (Linux VMs with a valid 
     
 <table>
     <thead>
+        <tr>
         <th>Attribute</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>

@@ -69,8 +69,10 @@ In the following tables, you will find a detailed explanation of the sandbox com
 
 <table>
     <thead>
+        <tr>
         <th>Element</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>
@@ -122,8 +124,10 @@ In the following tables, you will find a detailed explanation of the sandbox com
 
 <table>
     <thead>
+        <tr>
         <th>Element</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>
@@ -163,8 +167,10 @@ When restoring a saved sandbox, the Restore script will deploy these Apps, even 
 
 <table>
     <thead>
+        <tr>
         <th>Element</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>

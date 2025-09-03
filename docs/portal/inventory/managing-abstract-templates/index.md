@@ -8,7 +8,7 @@ The Abstract Templates page in the Inventory dashboard enables you to control wh
 
 ## Related Topics
 
-- [Abstract Resources Overview](../../../intro/features/abstract-resources.md)
+- [Abstract Resources Overview](../../../intro/features/abstract-resources)
 - [Viewing Abstract Resource Templates](../managing-abstract-templates/viewing-abstract-templates.md)
 - [Creating Abstract Resource Templates](../managing-abstract-templates/create-abstract-template/index.md)
 - [Editing Abstract Resource Templates](../managing-abstract-templates/editing-abstract-templates.md)

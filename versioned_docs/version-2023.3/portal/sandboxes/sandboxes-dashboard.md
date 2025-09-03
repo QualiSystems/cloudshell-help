@@ -113,8 +113,10 @@ The following actions can be performed on the selected sandbox:
 
 <table>
 <thead>
+    <tr>
     <th>Tool</th>
     <th>Action</th>
+    </tr>
 </thead>
 <tbody>
     <tr>

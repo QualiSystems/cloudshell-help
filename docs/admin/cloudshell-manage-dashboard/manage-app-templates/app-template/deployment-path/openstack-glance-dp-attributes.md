@@ -10,8 +10,10 @@ The following attributes would be used to define the OpenStack Deploy Glance Ima
 
 <table>
     <thead>
-        <th>Attribute</th>
-        <th>Description</th>
+        <tr>
+            <th>Attribute</th>
+            <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>

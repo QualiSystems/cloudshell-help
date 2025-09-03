@@ -22,8 +22,10 @@ This feature does not apply to cloud provider resources.
     
     <table>
     <thead>
+        <tr>
         <th>Attribute</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>

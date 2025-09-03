@@ -14,17 +14,17 @@ To help sandbox end-users connect to the VM, it is recommended to include the **
     
 <table>
     <thead>
-        <th>Attribute</th>
-        <th>Description</th>
+        <tr>
+            <th>Attribute</th>
+            <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>
             <td>Shell</td>
             <td>
                 <p>The Shell on which the App's VMs are based. When an App is deployed in a sandbox, it changes into a "deployed App resource", which is based on the selected Shell. By default, the "Generic App Model" Shell is used.</p>
-                <p>
-                Deployed Apps include a default set of commands such as Power On and Refresh IP, and the VM's User and Password attributes, as explained below.
-                </p>
+                <p>Deployed Apps include a default set of commands such as Power On and Refresh IP, and the VM's User and Password attributes, as explained below.</p>
 :::note
 Changing the Shell might cause additional fields to become visible and you may need to enter further information.
 :::

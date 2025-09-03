@@ -10,9 +10,11 @@ The following attributes would be used to define the vCenter VM From Image:
 
 <table>
     <thead>
-        <th>Attribute</th>
-        <th>vCenter shell version</th>
-        <th>Description</th>
+        <tr>
+            <th>Attribute</th>
+            <th>vCenter shell version</th>
+            <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>

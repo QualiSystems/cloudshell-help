@@ -43,8 +43,10 @@ The Shared VPC option is supported in the AWS 2G shell and enables you to deplo
         
         <table>
             <thead>
+                <tr>
                 <th>Parameter</th>
                 <th>Description</th>
+                </tr>
             </thead>
             <tbody>
                 <tr>
