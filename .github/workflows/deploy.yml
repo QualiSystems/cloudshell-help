@@ -30,10 +30,10 @@ jobs:
       - name: Build website
         run: npm run build
 
+      - name: Make redirect script runnable
+        run: chmod +x ./build_redirects/generate_redirects.sh
       - name: Generate redirects
-        run: |
-          chmod +x ./build_redirects/generate_redirects.sh
-          ./build_redirects/generate_redirects.sh build ./build_redirects/redirects.txt ./build_redirects/redirects.ver
+        run: ./build_redirects/generate_redirects.sh build ./build_redirects/redirects.txt ./build_redirects/redirects.ver
 
       - name: Post build renames
         run: |
