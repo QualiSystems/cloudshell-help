@@ -1,0 +1,25 @@
+# add specific redirects or dynamic ones (using {version})
+# comments start with #
+# list of versions will be taken from redirects.ver
+# format of this file is: from/path|to/path 
+
+/help versions/All Versions Help/Content/Versions.htm|https://help-archive.quali.com/help versions/All Versions Help/Content/Versions.htm
+/help%20versions/All%20Versions%20Help/Content/Versions.htm|https://help-archive.quali.com/help versions/All Versions Help/Content/Versions.htm
+/{version}/ST/|https://help-archive.quali.com/Online Help/0.0/TestShell/Content/TSS/TSS.htm
+/{version}/RUN/|https://help-archive.quali.com/Online Help/0.0/TestShell/Content/TSR/Tst-Run.htm
+/Online%20Help/{version}/Portal/|/
+
+/{version}/Portal/Inventory|/portal/inventory/inventory-dashboard
+/{version}/Portal/EnvironmentWorkspace|/portal/sandboxes/sandbox-workspace
+/{version}/Portal/ReservationWorkspace|/portal/sandboxes/sandbox-workspace
+/{version}/Portal/EnvironmentsCatalog|/portal/blueprints/blueprint-catalog
+/{version}/Portal/ReservationsList|/portal/sandboxes/sandboxes-dashboard
+/{version}/Portal/ReservationsTimeline|/portal/sandboxes/sandboxes-dashboard
+/{version}/Portal/Scheduler|/portal/job-scheduling/job-scheduling-dashboard
+/{version}/Portal/Manage|/admin/cloudshell-manage-dashboard/manage-dashboard-overview
+/{version}/Portal/ManageApps|/admin/cloudshell-manage-dashboard/manage-app-templates
+/{version}/Portal/UsingApps|/intro/features/apps-overview
+/{version}/Portal/SaveSandbox|/portal/sandboxes/saved-sandboxes
+/{version}/Portal/SaveSandboxOverview|/portal/sandboxes/sandbox-save-and-restore-overview
+/{version}/RM|/admin/setting-up-cloudshell/cloudshell-resource-management-client
+/help%20versions/|https://help-archive.quali.com/help versions/All Versions Help/Content/Versions.htm
