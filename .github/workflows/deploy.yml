@@ -29,6 +29,12 @@ jobs:
           cp docusaurus-prod.config.js docusaurus.config.js
       - name: Build website
         run: npm run build
+
+      - name: Generate redirects
+        run: |
+          chmod +x ./build_redirects/generate_redirects.sh
+          ./build_redirects/generate_redirects.sh build ./build_redirects/redirects.txt ./build_redirects/redirects.ver
+
       - name: Post build renames
         run: |
           find build/Online%20Help -type f -name "index.html" -execdir cp {} Default.htm \;
