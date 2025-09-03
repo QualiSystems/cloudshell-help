@@ -106,83 +106,83 @@ const config = {
   //   }
   // ],
   
-  plugins: [
-    [
-      '@docusaurus/plugin-client-redirects',
-      {
-        redirects: [          
-          {
-            to: 'https://help-archive.quali.com/help versions/All Versions Help/Content/Versions.htm',
-            from: ['/help versions/All Versions Help/Content/Versions.htm', '/help%20versions/All%20Versions%20Help/Content/Versions.htm'],
-          },
-          {
-            to: 'https://help-archive.quali.com/Online Help/0.0/TestShell/Content/TSS/TSS.htm',
-            from: ['/2022.1.0.1858/ST/', '/2022.2.0.1470/ST/', '/2023.1.0.655/ST/', '/2023.2.0.1763/ST/', '/2023.3.0.979/ST/', '/2024.1.0.2480/ST/', '/2024.1.0.2508/ST/', '/2024.1.0.2515/ST/'],
-          },
-          {
-            to: 'https://help-archive.quali.com/Online Help/0.0/TestShell/Content/TSR/Tst-Run.htm',
-            from: ['/2022.1.0.1858/RUN/', '/2022.2.0.1470/RUN/', '/2023.1.0.655/RUN/', '/2023.2.0.1763/RUN/', '/2023.3.0.979/RUN/', '/2024.1.0.2480/RUN/', '/2024.1.0.2508/RUN/', '/2024.1.0.2515/RUN/'],
-          },
-          {
-            to: '/',
-            from: [
-              '/Online%20Help/2022.1.0.1858/Portal/',
-              '/Online%20Help/2022.2.0.1470/Portal/',
-              '/Online%20Help/2023.1.0.655/Portal/',
-              '/Online%20Help/2023.2.0.1763/Portal/',
-              '/Online%20Help/2023.3.0.979/Portal/',
-              '/Online%20Help/2024.1.0.2480/Portal/',
-              '/Online%20Help/2024.1.0.2508/Portal/',
-              '/Online%20Help/2024.1.0.2515/Portal/',
-              ],
-          },
-        ],
-        createRedirects(existingPath) {
-          var versions = ["0.0", "2022.1", "2022.1.0.1858", "2022.2", "2022.2.0.1470", "2023.1", "2023.1.0.655", "2023.2", "2023.2.0.1763", "2023.3", "2023.3.0.979", "2024.1", "2024.1.0.2480", "2024.1.0.2508", "2024.1.0.2515"];          
+  // plugins: [
+  //   [
+  //     '@docusaurus/plugin-client-redirects',
+  //     {
+  //       redirects: [          
+  //         {
+  //           to: 'https://help-archive.quali.com/help versions/All Versions Help/Content/Versions.htm',
+  //           from: ['/help versions/All Versions Help/Content/Versions.htm', '/help%20versions/All%20Versions%20Help/Content/Versions.htm'],
+  //         },
+  //         {
+  //           to: 'https://help-archive.quali.com/Online Help/0.0/TestShell/Content/TSS/TSS.htm',
+  //           from: ['/2022.1.0.1858/ST/', '/2022.2.0.1470/ST/', '/2023.1.0.655/ST/', '/2023.2.0.1763/ST/', '/2023.3.0.979/ST/', '/2024.1.0.2480/ST/', '/2024.1.0.2508/ST/', '/2024.1.0.2515/ST/'],
+  //         },
+  //         {
+  //           to: 'https://help-archive.quali.com/Online Help/0.0/TestShell/Content/TSR/Tst-Run.htm',
+  //           from: ['/2022.1.0.1858/RUN/', '/2022.2.0.1470/RUN/', '/2023.1.0.655/RUN/', '/2023.2.0.1763/RUN/', '/2023.3.0.979/RUN/', '/2024.1.0.2480/RUN/', '/2024.1.0.2508/RUN/', '/2024.1.0.2515/RUN/'],
+  //         },
+  //         {
+  //           to: '/',
+  //           from: [
+  //             '/Online%20Help/2022.1.0.1858/Portal/',
+  //             '/Online%20Help/2022.2.0.1470/Portal/',
+  //             '/Online%20Help/2023.1.0.655/Portal/',
+  //             '/Online%20Help/2023.2.0.1763/Portal/',
+  //             '/Online%20Help/2023.3.0.979/Portal/',
+  //             '/Online%20Help/2024.1.0.2480/Portal/',
+  //             '/Online%20Help/2024.1.0.2508/Portal/',
+  //             '/Online%20Help/2024.1.0.2515/Portal/',
+  //             ],
+  //         },
+  //       ],
+  //       createRedirects(existingPath) {
+  //         var versions = ["0.0", "2022.1", "2022.1.0.1858", "2022.2", "2022.2.0.1470", "2023.1", "2023.1.0.655", "2023.2", "2023.2.0.1763", "2023.3", "2023.3.0.979", "2024.1", "2024.1.0.2480", "2024.1.0.2508", "2024.1.0.2515"];          
 
-          if (existingPath.startsWith('/portal/inventory/inventory-dashboard')) {
-            return versions.map(version => `/${version}/Portal/Inventory`);
-          }
-          else if (existingPath.startsWith('/portal/sandboxes/sandbox-workspace')) {
-            return versions.flatMap(version => [`/${version}/Portal/EnvironmentWorkspace`, `/${version}/Portal/ReservationWorkspace`]);
-          }
-          else if (existingPath.startsWith('/portal/blueprints/blueprint-catalog')) {
-            return versions.map(version => `/${version}/Portal/EnvironmentsCatalog`);
-          }
-          else if (existingPath.startsWith('/portal/sandboxes/sandboxes-dashboard')) {
-            return versions.flatMap(version => [`/${version}/Portal/ReservationsList`, `/${version}/Portal/ReservationsTimeline`]);
-          }
-          else if (existingPath.startsWith('/portal/job-scheduling/job-scheduling-dashboard')) {
-            return versions.map(version => `/${version}/Portal/Scheduler`);
-          }
-          else if (existingPath.startsWith('/admin/cloudshell-manage-dashboard/manage-dashboard-overview')) {
-            return versions.map(version => `/${version}/Portal/Manage`);
-          }
-          else if (existingPath.startsWith('/admin/cloudshell-manage-dashboard/manage-app-templates')) {
-            return versions.map(version => `/${version}/Portal/ManageApps`);
-          }
-          else if (existingPath.startsWith('/intro/features/apps-overview')) {
-            return versions.map(version => `/${version}/Portal/UsingApps`);
-          }
-          else if (existingPath.startsWith('/portal/sandboxes/saved-sandboxes')) {
-            return versions.map(version => `/${version}/Portal/SaveSandbox`);
-          }
-          else if (existingPath.startsWith('/portal/sandboxes/sandbox-save-and-restore-overview')) {
-            return versions.map(version => `/${version}/Portal/SaveSandboxOverview`);
-          }
-          else if (existingPath.startsWith('/admin/setting-up-cloudshell/cloudshell-resource-management-client')) {
-            return versions.map(version => `/${version}/RM`);
-          }
-          else if (existingPath.startsWith('/help-versions-archive')) {
-            return "/help%20versions/"
-          }
+  //         if (existingPath.startsWith('/portal/inventory/inventory-dashboard')) {
+  //           return versions.map(version => `/${version}/Portal/Inventory`);
+  //         }
+  //         else if (existingPath.startsWith('/portal/sandboxes/sandbox-workspace')) {
+  //           return versions.flatMap(version => [`/${version}/Portal/EnvironmentWorkspace`, `/${version}/Portal/ReservationWorkspace`]);
+  //         }
+  //         else if (existingPath.startsWith('/portal/blueprints/blueprint-catalog')) {
+  //           return versions.map(version => `/${version}/Portal/EnvironmentsCatalog`);
+  //         }
+  //         else if (existingPath.startsWith('/portal/sandboxes/sandboxes-dashboard')) {
+  //           return versions.flatMap(version => [`/${version}/Portal/ReservationsList`, `/${version}/Portal/ReservationsTimeline`]);
+  //         }
+  //         else if (existingPath.startsWith('/portal/job-scheduling/job-scheduling-dashboard')) {
+  //           return versions.map(version => `/${version}/Portal/Scheduler`);
+  //         }
+  //         else if (existingPath.startsWith('/admin/cloudshell-manage-dashboard/manage-dashboard-overview')) {
+  //           return versions.map(version => `/${version}/Portal/Manage`);
+  //         }
+  //         else if (existingPath.startsWith('/admin/cloudshell-manage-dashboard/manage-app-templates')) {
+  //           return versions.map(version => `/${version}/Portal/ManageApps`);
+  //         }
+  //         else if (existingPath.startsWith('/intro/features/apps-overview')) {
+  //           return versions.map(version => `/${version}/Portal/UsingApps`);
+  //         }
+  //         else if (existingPath.startsWith('/portal/sandboxes/saved-sandboxes')) {
+  //           return versions.map(version => `/${version}/Portal/SaveSandbox`);
+  //         }
+  //         else if (existingPath.startsWith('/portal/sandboxes/sandbox-save-and-restore-overview')) {
+  //           return versions.map(version => `/${version}/Portal/SaveSandboxOverview`);
+  //         }
+  //         else if (existingPath.startsWith('/admin/setting-up-cloudshell/cloudshell-resource-management-client')) {
+  //           return versions.map(version => `/${version}/RM`);
+  //         }
+  //         else if (existingPath.startsWith('/help-versions-archive')) {
+  //           return "/help%20versions/"
+  //         }
           
           
-          return undefined; // Return a falsy value: no redirect created
-        },
-      },
-    ],
-  ],
+  //         return undefined; // Return a falsy value: no redirect created
+  //       },
+  //     },
+  //   ],
+  // ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
