@@ -36,9 +36,11 @@ Note: Some commands, like Refresh IP, do not apply to static VMs.
     
 <table>
     <thead>
+        <tr>
         <th>Command</th>
         <th>Deployed App</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>

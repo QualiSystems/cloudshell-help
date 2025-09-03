@@ -130,7 +130,7 @@ Example header format:
 <summary>Response summary</summary>
 
 <table>
-<thead><th>Parameter</th><th>Description/Comments</th></thead>
+<thead><tr><th>Parameter</th><th>Description/Comments</th></tr></thead>
 <tbody>
   <tr>
     <td>id</td>

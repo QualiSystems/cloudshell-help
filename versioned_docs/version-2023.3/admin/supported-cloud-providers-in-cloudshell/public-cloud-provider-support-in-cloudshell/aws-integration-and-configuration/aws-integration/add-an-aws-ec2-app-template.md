@@ -33,9 +33,11 @@ The App template defines the settings and configurations of the VM to be deploye
 
     <table>
         <thead>
+            <tr>
             <th>Field</th>
             <th>Required</th>
             <th>Description</th>
+            </tr>
         </thead>
         <tbody>
             <tr>
@@ -93,9 +95,11 @@ The App template defines the settings and configurations of the VM to be deploye
 
             <table>
                 <thead>
+                    <tr>
                     <th>Attribute</th>
                     <th>AWS EC2 shell version</th>
                     <th>Description</th>
+                    </tr>
                 </thead>
                 <tbody>
                     <tr>
@@ -299,8 +303,10 @@ The App template defines the settings and configurations of the VM to be deploye
 
         <table>
             <thead>
+                <tr>
                 <th>Attribute</th>
                 <th>Description</th>
+                </tr>
             </thead>
             <tbody>
                 <tr>
@@ -456,8 +462,10 @@ The App template defines the settings and configurations of the VM to be deploye
 
     <table>
         <thead>
+            <tr>
             <th>Attribute</th>
             <th>Description</th>
+            </tr>
         </thead>
         <tbody>
             <tr>

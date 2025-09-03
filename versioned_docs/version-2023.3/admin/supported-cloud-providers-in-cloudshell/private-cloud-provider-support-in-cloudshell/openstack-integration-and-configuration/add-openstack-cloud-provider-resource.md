@@ -35,8 +35,10 @@ The OpenStack 2<sup>nd</sup> Gen cloud provider enables the deployment of OpenSt
     
     <table>
         <thead>
+            <tr>
             <th>Attribute</th>
             <th>Description</th>
+            </tr>
         </thead>
         <tbody>
             <tr>

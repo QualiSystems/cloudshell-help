@@ -37,8 +37,10 @@ Regular users who are permitted to access a test can run it as part of an ad-hoc
         
         <table>
         <thead>
+            <tr>
             <th>Option</th>
             <th>Description</th>
+            </tr>
         </thead>
         <tbody>
             <tr>
@@ -78,8 +80,10 @@ Regular users who are permitted to access a test can run it as part of an ad-hoc
 
     <table>
     <thead>
+        <tr>
         <th>Option</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>

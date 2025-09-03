@@ -39,7 +39,7 @@ Example header format:
 
 Suite details. The parameters of the adhoc suite execution method include:
 <table>
-<thead><th>Parameter</th><th>Description/Comments</th></thead>
+<thead><tr><th>Parameter</th><th>Description/Comments</th></tr></thead>
 <tbody>
   <tr>
     <td>name</td>
@@ -167,7 +167,7 @@ Suite details. The parameters of the adhoc suite execution method include:
 <summary>Response summary</summary>
 
 <table>
-<thead><th>Parameter</th><th>Description/Comments</th></thead>
+<thead><tr><th>Parameter</th><th>Description/Comments</th></tr></thead>
 <tbody>
   <tr>
     <td>id</td>

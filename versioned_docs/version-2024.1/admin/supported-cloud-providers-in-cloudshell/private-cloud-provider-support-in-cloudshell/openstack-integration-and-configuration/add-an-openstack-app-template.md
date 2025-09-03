@@ -29,9 +29,11 @@ The App template defines the settings and configurations of the VM to be deploye
 
     <table>
         <thead>
+            <tr>
             <th>Field</th>
             <th>Required</th>
             <th>Description</th>
+            </tr>
         </thead>
         <tbody>
             <tr>
@@ -87,8 +89,10 @@ The App template defines the settings and configurations of the VM to be deploye
 
         <table>
             <thead>
+                <tr>
                 <th>Attribute</th>
                 <th>Description</th>
+                </tr>
             </thead>
             <tbody>
                 <tr>
@@ -175,8 +179,10 @@ The App template defines the settings and configurations of the VM to be deploye
 
 <table>
     <thead>
+        <tr>
         <th>Attribute</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>
@@ -331,8 +337,10 @@ To configure Ansible to connect to certified hosts only (Linux VMs with a valid 
     :::
 <table>
     <thead>
+        <tr>
         <th>Attribute</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>

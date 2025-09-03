@@ -26,8 +26,10 @@ To learn how to develop custom scripts and Ansible playbooks, including examples
 
 <table>
     <thead>
-        <th>Attribute</th>
-        <th>Description</th>
+        <tr>
+            <th>Attribute</th>
+            <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>

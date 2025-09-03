@@ -22,8 +22,10 @@ This feature is supported for JIRA version 7.4.0 and above.
     
 <table>
     <thead>
+        <tr>
         <th>Key</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>

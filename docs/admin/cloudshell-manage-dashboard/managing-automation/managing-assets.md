@@ -92,8 +92,10 @@ Global admins can edit any script in CloudShell while domain admins can only edi
     
 <table>
     <thead>
+        <tr>
         <th>Field</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>
@@ -203,8 +205,10 @@ Associate App installation scripts to the relevant **Installation Options** mode
     
 <table>
     <thead>
+        <tr>
         <th>Field</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>

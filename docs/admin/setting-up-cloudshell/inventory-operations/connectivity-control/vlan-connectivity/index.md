@@ -78,8 +78,10 @@ Additional VLAN services can be created. For example, you could set up multiple 
 
 <table>
     <thead>
+        <tr>
         <th>Attribute</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>

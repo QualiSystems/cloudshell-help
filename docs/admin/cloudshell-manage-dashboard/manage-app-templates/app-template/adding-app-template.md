@@ -36,9 +36,11 @@ If your CloudShell deployment includes multiple sites, it is recommended to conf
     
 <table>
     <thead>
-        <th>Field</th>
-        <th>Required</th>
-        <th>Description</th>
+        <tr>
+            <th>Field</th>
+            <th>Required</th>
+            <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>

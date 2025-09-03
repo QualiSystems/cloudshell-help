@@ -18,8 +18,10 @@ For hardware/OS requirements for CloudShell servers and clients, see [Minimum R
 
 <table>
 <thead>
+    <tr>
     <th>Component</th>
     <th>Requirements</th>
+    </tr>
 </thead>
 <tbody>
     <tr>
@@ -46,8 +48,10 @@ For hardware/OS requirements for CloudShell servers and clients, see [Minimum R
 
 <table>
 <thead>
+    <tr>
     <th>Component</th>
     <th>Requirements</th>
+    </tr>
 </thead>
 <tbody>
     <tr>

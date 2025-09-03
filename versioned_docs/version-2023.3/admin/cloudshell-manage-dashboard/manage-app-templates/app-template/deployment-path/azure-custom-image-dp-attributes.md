@@ -10,9 +10,11 @@ The following attributes would be used to define the Azure VM From Custom Image:
 
 <table>
     <thead>
+        <tr>
         <th>Attribute</th>
         <th>Azure shell version</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>

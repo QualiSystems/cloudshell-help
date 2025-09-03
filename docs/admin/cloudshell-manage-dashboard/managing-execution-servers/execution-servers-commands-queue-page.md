@@ -12,8 +12,10 @@ The information available for each command execution in the **Commands Queue** p
 
 <table>
     <thead>
+        <tr>
         <th>Property</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>
@@ -54,8 +56,10 @@ If additional information is available, an exclamation mark (!) is displayed nex
 
 <table>
     <thead>
+        <tr>
         <th>Status</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>
@@ -113,8 +117,10 @@ To fix the issue, do one of the following:
 
 <table>
     <thead>
+        <tr>
         <th>Status</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>

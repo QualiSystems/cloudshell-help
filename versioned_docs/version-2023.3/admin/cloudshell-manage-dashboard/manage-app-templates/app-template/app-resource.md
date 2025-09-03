@@ -14,8 +14,10 @@ To help sandbox end-users connect to the VM, it is recommended to include the **
     
 <table>
     <thead>
+        <tr>
         <th>Attribute</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>

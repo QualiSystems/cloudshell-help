@@ -10,9 +10,11 @@ The following attributes would be used to define the AWS EC2 Instance deployment
 
 <table>
     <thead>
+        <tr>
         <th>Attribute</th>
         <th>AWS shell version</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>
