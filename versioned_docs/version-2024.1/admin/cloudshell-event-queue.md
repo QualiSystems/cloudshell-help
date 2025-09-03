@@ -56,9 +56,9 @@ ServerEventsWhiteList.csv should be line-break separated, not comma separated.
 
 :::info[Example csv]
 ```
-UserCreatedEvent
-UserGroupsListUpdatedEvent
-LoginEvent
+UserCreated
+UserGroupsListUpdated
+Login
 ```
 :::
 
@@ -81,84 +81,84 @@ In the above example, Cloudshell Server would only emit events related to new us
 
 
 ## Supported Events
-**UserCreatedEvent**:   This event is triggered when a new user is created.
+**UserCreated**:   This event is triggered when a new user is created.
 
-**UserDeletedEvent**:   This event occurs when a user is deleted.
+**UserDeleted**:   This event occurs when a user is deleted.
 
-**UserGroupsListUpdatedEvent**:   This event is fired when the list of user groups is updated.
+**UserGroupsListUpdated**:   This event is fired when the list of user groups is updated.
 
-**UserUpdatedEvent**:   This event happens when a user's details are updated.
+**UserUpdated**:   This event happens when a user's details are updated.
 
-**LoginEvent**:   This event is triggered when a user logs in.
+**Login**:   This event is triggered when a user logs in.
 
-**UserGroupAddedEvent**:   This event occurs when a new user group is added.
+**GroupAdded**:   This event occurs when a new user group is added.
 
-**UserGroupDeletedEvent**:   This event is fired when a user group is deleted.
+**GroupDeleted**:   This event is fired when a user group is deleted.
 
-**UserGroupDomainsUpdatedEvent**:   This event is triggered when the domains of a user group are updated.
+**GroupDomainsUpdated**:   This event is triggered when the domains of a user group are updated.
 
-**UserGroupUpdatedEvent**:   This event happens when a user group is updated.
+**GroupUpdated**:   This event happens when a user group is updated.
 
-**JobEndedEvent**:   This event occurs when a job ends.
+**JobEnded**:   This event occurs when a job ends.
 
-**JobSetEndedEvent**:   This event is fired when a job suite ends.
+**JobSetEnded**:   This event is fired when a job suite ends.
 
-**ResourceAvailabilityChangedDomainEvent**:   This event is triggered when the availability of a resource changes.
+**ResourceAvailabilityChanged**:   This event is triggered when the availability of a resource changes.
 
-**BlueprintCreatedEvent**:   This event occurs when a new blueprint is created.
+**BlueprintCreated**:   This event occurs when a new blueprint is created.
 
-**BlueprintUpdatedEvent**:   This event is fired when a blueprint is updated.
+**BlueprintUpdated**:   This event is fired when a blueprint is updated.
 
-**BlueprintDeletedEvent**:   This event is triggered when a blueprint is deleted.
+**BlueprintDeleted**:   This event is triggered when a blueprint is deleted.
 
-**BlueprintRenamedEvent**:   This event happens when a blueprint is renamed.
+**BlueprintRenamed**:   This event happens when a blueprint is renamed.
 
-**DeployResourceEvent**:   This event occurs when a resource is deployed.
+**DeployResource**:   This event occurs when a resource is deployed.
 
-**ResourceEnabledEvent**:   This event is fired when a resource is enabled.
+**ResourceIncluded**:   This event is fired when a resource is enabled.
 
-**ResourceDisabledEvent**:   This event is triggered when a resource is disabled.
+**ResourceExcluded**:   This event is triggered when a resource is disabled.
 
-**ResourceAddedEvent**:   This event occurs when a resource is added.
+**ResourceAdded**:   This event occurs when a resource is added.
 
-**ResourceDeletedEvent**:   This event is fired when a resource is deleted.
+**ResourceDeleted**:   This event is fired when a resource is deleted.
 
-**ResourceMovedEvent**:   This event happens when a resource is moved.
+**ResourceMoved**:   This event happens when a resource is moved.
 
-**ResourceRenamedEvent**:   This event occurs when a resource is renamed.
+**ResourceRenamed**:   This event occurs when a resource is renamed.
 
-**ResourceUpdatedEvent**:   This event is fired when a resource is updated.
+**ResourceUpdated**:   This event is fired when a resource is updated.
 
-**ResourcesReservedEvent**:   This event is triggered when resources are reserved.
+**ResourcesReserved**:   This event is triggered when resources are reserved.
 
-**ResourceUnlockedEvent**:   This event occurs when a resource is unlocked.
+**ResourceUnlocked**:   This event occurs when a resource is unlocked.
 
-**BulkResourcesAddedEvent**:   This event is fired when multiple resources are added in bulk.
+**BulkResourcesAdded**:   This event is fired when multiple resources are added in bulk.
 
-**SandboxCreatedEvent**:   This event is triggered when a sandbox is created.
+**SandboxCreated**:   This event is triggered when a sandbox is created.
 
-**SandboxDeleteEvent**:   This event occurs when a sandbox is deleted.
+**SandboxDeleted**:   This event occurs when a sandbox is deleted.
 
-**SandboxEndEvent**:   This event is fired when a sandbox ends.
+**SandboxEnd**:   This event is fired when a sandbox ends.
 
-**SandboxEndTimeChangedEvent**:   This event is triggered when the end time of a sandbox is changed.
+**SandboxEndTimeChanged**:   This event is triggered when the end time of a sandbox is changed.
 
-**SandboxRejectedEvent**:   This event happens when a sandbox is rejected (typically due to user or license restrictions).
+**SandboxRejected**:   This event happens when a sandbox is rejected (typically due to user or license restrictions).
 
-**SandboxRenamedEvent**:   This event occurs when a sandbox is renamed.
+**SandboxRenamed**:   This event occurs when a sandbox is renamed.
 
-**SandboxSetupEndedEvent**:   This event is fired when the setup of a sandbox ends.
+**SandboxSetupEnded**:   This event is fired when the setup of a sandbox ends.
 
-**SandboxStartTimeChangedEvent**:   This event is triggered when the start time of a sandbox is changed.
+**SandboxStartTimeChanged**:   This event is triggered when the start time of a sandbox is changed.
 
-**SandboxUpdateEvent**:   This event happens when a sandbox is updated.
+**SandboxUpdated**:   This event happens when a sandbox is updated.
 
-**WorkOrderResourceUpdatedEvent**:   This event is fired when a work order resource is updated in an assembly lab sandbox.
+**WorkOrderResourceUpdated**:   This event is fired when a work order resource is updated in an assembly lab sandbox.
 
-**WorkOrderResourceSolvedEvent**:   This event occurs when a concrete resource is selected for a work order resource in an assembly lab sandbox.
+**WorkOrderResourceSolved**:   This event occurs when a concrete resource is selected for a work order resource in an assembly lab sandbox.
 
-**WorkOrderResourceCreatedEvent**:   This event is triggered when a work order resource is created in an assembly lab sandbox.
+**WorkOrderResourceCreated**:   This event is triggered when a work order resource is created in an assembly lab sandbox.
 
-**WorkOrderResourceUnsolvedEvent**:   This event is fired when a concrete match for a work order resource is unselected in an assembly lab sandbox.
+**WorkOrderResourceUnsolved**:   This event is fired when a concrete match for a work order resource is unselected in an assembly lab sandbox.
 
-**WorkOrderResourceRemovedEvent**:   This event happens when a work order resource is removed in an assembly lab sandbox.
+**WorkOrderResourceRemoved**:   This event happens when a work order resource is removed in an assembly lab sandbox.
