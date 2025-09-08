@@ -2,8 +2,7 @@
 sidebar_position: 2
 ---
 
-What's New in Version 2024.1
-============================
+# What's New
 
 ## Features and enhancements
 

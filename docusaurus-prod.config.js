@@ -27,6 +27,11 @@ const config = {
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
+  future: {
+    v4: true,
+    experimental_faster: true,
+  },
+
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -62,7 +67,13 @@ const config = {
           },
           routeBasePath: '/',
           sidebarPath: './sidebars.js',
-          includeCurrentVersion: false, //this will be enabled only when we'll have a wip version that we would like to show
+          includeCurrentVersion: true, //this will be enabled only when we'll have a wip version that we would like to show
+          lastVersion: 'current', 
+          versions: {
+            current: {
+              label: 'Latest',
+            },
+          },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:

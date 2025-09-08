@@ -11,8 +11,8 @@ The following attributes would be used to define the OpenStack Deploy Glance Ima
 <table>
     <thead>
         <tr>
-        <th>Attribute</th>
-        <th>Description</th>
+            <th>Attribute</th>
+            <th>Description</th>
         </tr>
     </thead>
     <tbody>

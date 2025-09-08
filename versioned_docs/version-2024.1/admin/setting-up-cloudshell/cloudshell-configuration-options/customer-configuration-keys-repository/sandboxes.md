@@ -182,7 +182,6 @@ sidebar_position: 16
 		</tr>
 	</tbody>
 </table>
-
 :::note
 When this key is enabled, an administrator will still be able to reserve with conflicts.
 This is also the behavior when using the CloudShell automation api.

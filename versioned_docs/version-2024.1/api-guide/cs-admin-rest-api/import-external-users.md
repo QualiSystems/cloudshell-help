@@ -49,6 +49,13 @@ Example header format:
 }
 ```
 
+```javascript
+{
+  "UserName": "James Porter",
+  "AllowUpadte": true,
+}
+```
+
 By group name:
 
 ```javascript
