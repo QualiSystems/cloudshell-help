@@ -69,7 +69,7 @@ This section explains how to set App creation and orchestration parameters as us
 
 This section explains how to modify the default settings of certain App creation and orchestration parameters that are used when creating Apps in the **Manage** dashboard.
 :::note
-These parameters are used by CloudShell's **Setup** and **Teardown** scripts. For additional information, see [Configure Blueprint Orchestration](../../portal/blueprints/creating-blueprints/configure-orchestration.md).
+These parameters are used by CloudShell's **Setup** and **Teardown** scripts. For additional information, see [Configure Blueprint Orchestration](../../portal/blueprints/creating-blueprints/blueprint-properties/configure-orchestration.md).
 :::
 ### Modifying App parameter defaults for 1<sup>st</sup> Gen shells
 

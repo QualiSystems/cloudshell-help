@@ -117,5 +117,5 @@ The stack trace error log is located in: `...ExecutionServer\Logs\QsPythonDriver
 
 - [Apps in Sandboxes](../../../portal/sandboxes/sandbox-workspace/apps)
 - [Creating Blueprints](../../blueprints/creating-blueprints/index.md)
-- [Create Blueprint Commands](../../blueprints/creating-blueprints/create-blueprint-commands.md)
-- [Configure Blueprint Orchestration](../../blueprints/creating-blueprints/configure-orchestration.md)
+- [Create Blueprint Commands](../../blueprints/creating-blueprints/blueprint-properties/create-blueprint-commands.md)
+- [Configure Blueprint Orchestration](../../blueprints/creating-blueprints/blueprint-properties/configure-orchestration.md)

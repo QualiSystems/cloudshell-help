@@ -156,8 +156,8 @@ For additional information, see [What are Python Virtual Environments?](../../..
 ## Related Topics
 
 - [Creating Blueprints](../../../portal/blueprints/creating-blueprints/index.md)
-- [Create Blueprint Commands](../../../portal/blueprints/creating-blueprints/create-blueprint-commands.md)
-- [Configure Blueprint Orchestration](../../../portal/blueprints/creating-blueprints/configure-orchestration.md)
+- [Create Blueprint Commands](../../../portal/blueprints/creating-blueprints/blueprint-properties/create-blueprint-commands.md)
+- [Configure Blueprint Orchestration](../../../portal/blueprints/creating-blueprints/blueprint-properties/configure-orchestration.md)
 - [Run Commands](../../../portal/sandboxes/sandbox-workspace/run-commands.md)
 - [Run App Commands](../../../portal/sandboxes/sandbox-workspace/apps/run-app-commands.md)
 - [CloudShell Sandbox Template](../../../admin/cloudshell-manage-dashboard/blueprint-templates.md#cloudshell-sandbox-template)

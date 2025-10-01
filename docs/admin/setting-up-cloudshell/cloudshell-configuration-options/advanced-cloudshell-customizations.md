@@ -776,7 +776,7 @@ By default, Quali Server runs orchestration scripts directly in the sandbox, ign
     
 2. Save the file.
 3. Restart the **Quali Server** service.
-4. Make sure a driver is added to all blueprints in CloudShell. For details, see [Add Setup and Teardown scripts](../../../portal/blueprints/creating-blueprints/configure-orchestration.md#add-setup-and-teardown-scripts).
+4. Make sure a driver is added to all blueprints in CloudShell. For details, see [Add Setup and Teardown scripts](../../../portal/blueprints/creating-blueprints/blueprint-properties/configure-orchestration.md#add-setup-and-teardown-scripts).
 
 ### Increasing the time allowed for Quali Server to stop gracefully
 

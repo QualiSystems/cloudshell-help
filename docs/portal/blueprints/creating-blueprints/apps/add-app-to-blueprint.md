@@ -10,7 +10,7 @@ You can also add deployed Apps (Apps deployed in another sandbox) to your sandbo
 :::
 
 :::note
-To enable the deployment of Apps based on a public cloud like AWS EC2 or Azure, make sure the blueprint is configured to run a setup script that can prepare connectivity in the sandbox, like CloudShell's out-of-the-box Default Sandbox Setup script, and add at least one public cloud App to the blueprint to initiate the script's connectivity process for the cloud provider during the Setup phase of the sandbox. For additional information, see [Configure Blueprint Orchestration](../configure-orchestration.md).
+To enable the deployment of Apps based on a public cloud like AWS EC2 or Azure, make sure the blueprint is configured to run a setup script that can prepare connectivity in the sandbox, like CloudShell's out-of-the-box Default Sandbox Setup script, and add at least one public cloud App to the blueprint to initiate the script's connectivity process for the cloud provider during the Setup phase of the sandbox. For additional information, see [Configure Blueprint Orchestration](../blueprint-properties/configure-orchestration.md).
 :::
 **To add an App to the diagram:**
 

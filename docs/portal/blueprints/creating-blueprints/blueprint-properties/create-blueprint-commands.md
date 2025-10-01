@@ -1,5 +1,5 @@
 ---
-sidebar_position: 13
+sidebar_position: 3
 ---
 
 # Create Blueprint Commands
@@ -15,7 +15,7 @@ Use the steps in the following procedure to add blueprint and resource scripts t
 :::note Notes
 
 - The script is added to the domain you are currently in. To expose the script to all domains, add the script in the **Global** domain
-- By default, new scripts are added into CloudShell as Python 3 scripts. Therefore, if you're adding a Python 2 script, make sure to change the script's **Type**, as explained in [Editing scripts](../../../admin/cloudshell-manage-dashboard/managing-automation/managing-assets.md#editing-scripts).
+- By default, new scripts are added into CloudShell as Python 3 scripts. Therefore, if you're adding a Python 2 script, make sure to change the script's **Type**, as explained in [Editing scripts](../../../../admin/cloudshell-manage-dashboard/managing-automation/managing-assets.md#editing-scripts).
 :::
 **To add blueprint and resource scripts:**
 
@@ -29,14 +29,14 @@ Use the steps in the following procedure to add blueprint and resource scripts t
     
 3. Browse and select a script file to upload to CloudShell, and click **Open**.
     
-    The **Uploading Completed** message is displayed at the top of the script catalog, indicating the upload status. When completed, the Edit button is displayed on the right. For more information, see [Editing scripts](../../../admin/cloudshell-manage-dashboard/managing-automation/managing-assets.md#editing-scripts).
+    The **Uploading Completed** message is displayed at the top of the script catalog, indicating the upload status. When completed, the Edit button is displayed on the right. For more information, see [Editing scripts](../../../../admin/cloudshell-manage-dashboard/managing-automation/managing-assets.md#editing-scripts).
     
 
 ## Related Topics
 
 - [Configure Blueprint Orchestration](./configure-orchestration.md)
-- [Managing Drivers](../../../admin/cloudshell-manage-dashboard/managing-automation/managing-drivers.md)
-- [Managing Assets](../../../admin/cloudshell-manage-dashboard/managing-automation/managing-assets.md)
-- [Run Commands](../../sandboxes/sandbox-workspace/run-commands.md)
-- [Run App Commands](../../sandboxes/sandbox-workspace/apps/run-app-commands.md)
-- [CloudShell Sandbox Template](../../../admin/cloudshell-manage-dashboard/blueprint-templates.md#cloudshell-sandbox-template)
+- [Managing Drivers](../../../../admin/cloudshell-manage-dashboard/managing-automation/managing-drivers.md)
+- [Managing Assets](../../../../admin/cloudshell-manage-dashboard/managing-automation/managing-assets.md)
+- [Run Commands](../../../sandboxes/sandbox-workspace/run-commands.md)
+- [Run App Commands](../../../sandboxes/sandbox-workspace/apps/run-app-commands.md)
+- [CloudShell Sandbox Template](../../../../admin/cloudshell-manage-dashboard/blueprint-templates.md#cloudshell-sandbox-template)

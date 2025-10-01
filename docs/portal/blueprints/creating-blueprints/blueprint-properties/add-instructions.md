@@ -1,5 +1,5 @@
 ---
-sidebar_position: 15
+sidebar_position: 4
 ---
 
 # Add Instructions
@@ -11,7 +11,7 @@ The instruction sidebar can be helpful in explaining the concepts and usage of t
 The instructions editor is a full featured rich text editor that can include embedded video links, presentations and images and can even contain custom HTML code. Any instructions you create will be visible to the end user in the Instructions sidebar when viewing the blueprint's diagram or the sandbox diagram.
 
  :::note
- CloudShell admins can configure the **Instruction** pane to open by default and change the pane's width - see [Specifying which side panes should be open by default](../../../admin/setting-up-cloudshell/cloudshell-configuration-options/advanced-cloudshell-customizations.md#specifying-which-side-panes-should-be-open-by-default-blueprints) and [Defining the Instructions pane size](../../../admin/setting-up-cloudshell/cloudshell-configuration-options/advanced-cloudshell-customizations.md#defining-the-instructions-pane-size).
+ CloudShell admins can configure the **Instruction** pane to open by default and change the pane's width - see [Specifying which side panes should be open by default](../../../../admin/setting-up-cloudshell/cloudshell-configuration-options/advanced-cloudshell-customizations.md#specifying-which-side-panes-should-be-open-by-default-blueprints) and [Defining the Instructions pane size](../../../../admin/setting-up-cloudshell/cloudshell-configuration-options/advanced-cloudshell-customizations.md#defining-the-instructions-pane-size).
  :::
 
 **To add instructions to your blueprint**:
@@ -59,4 +59,4 @@ Using an external HTML file allows you to utilize additional HTML capabilities. 
 
 ## Related Topics
 
-- [Creating Blueprints](./index.md)
+- [Creating Blueprints](../index.md)

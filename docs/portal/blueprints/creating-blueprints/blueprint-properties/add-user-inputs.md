@@ -1,5 +1,5 @@
 ---
-sidebar_position: 16
+sidebar_position: 5
 ---
 
 # Add User Inputs
@@ -46,11 +46,11 @@ Global inputs are a simple way to request information from the user when they re
 - A **Password** input accepts a freetext password value. The value is displayed as a masked value (\*\*\*\*\*). This type of global input cannot be linked to other inputs. Note that the value can be decrypted using the CloudShell Automation API's [DecryptPassword](pathname:///api-docs/2024.1/Python-API/cloudshell.api.html?highlight=decryptpassword#cloudshell.api.cloudshell_api.CloudShellAPISession.DecryptPassword) method.
 
 :::tip Tip for admins
-It is possible to resize the global text boxes of the global inputs. For details, see [Resizing the value box of "text" global inputs](../../../admin/setting-up-cloudshell/cloudshell-configuration-options/resizing-the-value-box-of-text-global-inputs.md).
+It is possible to resize the global text boxes of the global inputs. For details, see [Resizing the value box of "text" global inputs](../../../../admin/setting-up-cloudshell/cloudshell-configuration-options/resizing-the-value-box-of-text-global-inputs.md).
 :::
 ## Resource requirements and additional info
 
-Some blueprint inputs are directly related to resource requirements and information that are defined as user inputs. These inputs are displayed in the right hand section of this page. If you have abstract resource templates in your blueprint, and those templates have inputs, they will be listed here. For additional information about setting inputs for blueprint resources, see [Add Abstract Resources](./abstract-resources.md).
+Some blueprint inputs are directly related to resource requirements and information that are defined as user inputs. These inputs are displayed in the right hand section of this page. If you have abstract resource templates in your blueprint, and those templates have inputs, they will be listed here. For additional information about setting inputs for blueprint resources, see [Add Abstract Resources](../abstract-resources.md).
 
 ## Grouping together resource requirements and information
 

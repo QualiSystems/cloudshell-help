@@ -37,7 +37,7 @@ Alternatively, you can choose to share the resource. This strategy is especially
 
 This setting determines how the abstract resource will behave when saving the sandbox. The abstract resource's template determines the abstract resource's behavior in the blueprint, but blueprint designers can change it.
 :::note
-The blueprint's abstract template save behavior policy determines the behavior of the abstract resources in the blueprint. For additional information, see [Define the Blueprint's Properties](../../../blueprints/creating-blueprints/blueprint-properties.md).
+The blueprint's abstract template save behavior policy determines the behavior of the abstract resources in the blueprint. For additional information, see [Define the Blueprint's Properties](../../../blueprints/creating-blueprints/blueprint-properties/blueprint-properties.md).
 :::
 **To change the save behavior for an abstract resource:**
 
