@@ -7,7 +7,9 @@
 /help%20versions/All%20Versions%20Help/Content/Versions.htm|https://help-archive.quali.com/help versions/All Versions Help/Content/Versions.htm
 /{version}/ST/|https://help-archive.quali.com/Online Help/0.0/TestShell/Content/TSS/TSS.htm
 /{version}/RUN/|https://help-archive.quali.com/Online Help/0.0/TestShell/Content/TSR/Tst-Run.htm
+/{version}/TestShell/|https://help-archive.quali.com/Online Help/0.0/TestShell/Content/TSS/TSS-Home.htm
 /Online%20Help/{version}/Portal/|/
+/Online%20Help/{version}/CloudShell/|/
 
 /{version}/Portal/Inventory|/portal/inventory/inventory-dashboard
 /{version}/Portal/EnvironmentWorkspace|/portal/sandboxes/sandbox-workspace
