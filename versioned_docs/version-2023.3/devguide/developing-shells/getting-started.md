@@ -6,8 +6,6 @@ sidebar_position: 1
 
 In this section, we’ll go through the basic steps of creating a new Shell and customizing an existing one. The goal is to demonstrate the end-to-end cycle, from generating a new Shell project to creating Shell resources and running commands in CloudShell.
 
-Before developing shells, please familiarize yourself with CloudShell by taking [Quali U courses](http://courses.quali.com/). These courses also include installation instructions for the CloudShell SDK package that deploys a developer edition of CloudShell on which you can perform your training and development activities.
-
 ## What is a shell?
 
 A Shell enables CloudShell users to interact with different sandbox elements, like physical devices and virtual appliances. A Shell models the sandbox element in CloudShell and provides commands that CloudShell users and automation processes can run on it, like Power On and Health Check. Each 2nd Gen Shell is modeled after a CloudShell standard, from which the shell inherits its default settings, attributes and driver.
@@ -28,7 +26,7 @@ To learn more about the different versions of the Shells used by CloudShell and 
 
 ## Prerequisites
 
-- [Get CloudShell](http://info.quali.com/cloudshell-developer-edition-download): Download the latest CloudShell SDK VM and deploy it.
+- CloudShell
 - [Python](https://www.python.org/downloads/): Make sure the appropriate Python version - 2.7.x and/or 3.x - (latest recommended) is installed on your machine. *Starting with CloudShell 9.3, CloudShell comes with out-of-the-box support for Python 3 for shells*.
     
     Python 3 automation requires Microsoft Visual C++ Redistributable 2015 x86 and x64 to be installed on the Execution Server(s).

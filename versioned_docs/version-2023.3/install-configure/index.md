@@ -11,4 +11,3 @@ The following guides are included in this help:
 - [Linux Execution Server Installation and Configuration](./install-configure/linux-virtual-appliance)
 - [High Availability Deployment](./ha-deployment/index.md)
 - [High Availability Installation and Configuration](./ha-installation/index.md)
-- [CloudShell SDK Installation](./cloudshell-sdk/index.md)

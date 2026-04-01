@@ -116,7 +116,7 @@ In order to help with this process, we will use CloudShell’s Pycharm plugin, w
 
 1. Install [JetBrains PyCharm](https://www.jetbrains.com/pycharm/) and [CloudShell’s Pycharm plugin](https://github.com/QualiSystemsLab/CloudShell-PyCharm-Plugin).
     
-2. Have a CloudShell SDK developer edition set up. Have an execution server running on the same machine as your IDE.
+2. Have CloudShell set up. Have an execution server running on the same machine as your IDE.
     
 
 ### Setting up

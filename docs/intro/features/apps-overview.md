@@ -8,8 +8,6 @@ Apps enable you to deploy, as part of your sandbox lifecycle, virtual applicatio
 
 Note that we're adding cloud provider shells to [Quali Repositories](https://github.com/orgs/QualiSystems/discussions/categories/integrations) all the time. For additional information, see [Cloud Provider Shells - Features and Capabilities Per Release](../../admin/supported-cloud-providers-in-cloudshell/cloud-provider-2g-shells-features-and-capabilities.md). For unsupported cloud providers, we provide the Custom Cloud Provider Shell which you can use to develop support for your cloud provider. To learn how to load static VMs from vCenter Server into CloudShell as inventory resources, see [Static VMs Overview](./static-vms.md).
 
-![](/Images/OLH-Images/video-icon.jpg)For video tutorials on Apps, please visit [Quali U Courses portal](https://courses.quali.com/).
-
 ## What is an App?
 
 An App is a CloudShell component that provides the definition of an application hosted on a VM. When run in the sandbox, the App deploys a virtual machine (VM) and performs the specified configuration management on it. The CloudShell user can add specific Apps from the App / Service catalog to a blueprint, for example a virtual router or a PostgreSQL database, and connect them to other resources/Apps. Once the App is deployed, an App resource is created, which behaves according to the deployed App Shell specified in the App template. Multiple Apps based on the same App template can run in parallel.

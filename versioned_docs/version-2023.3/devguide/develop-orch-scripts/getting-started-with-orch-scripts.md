@@ -6,11 +6,9 @@ sidebar_position: 1
 
 Orchestration scripts can enable automating sandbox workflows. You can use orchestration scripts to create setup and teardown procedures as well as other custom workflows that can be made available in the sandbox. Examples include saving and restoring state, starting test traffic, running failover scenarios and more. *Please note that sandbox environment automation and enhanced orchestration is available with CloudShell Premium Tier.*
 
-***Before developing scripts, please familiarize yourself with CloudShell by taking [Quali U courses](http://courses.quali.com/). These courses also include installation instructions for the CloudShell SDK package that deploys a developer edition of CloudShell on which you can perform your training and development activities.***
-
 ## Prerequisites
 
-- [Get CloudShell](http://info.quali.com/cloudshell-developer-edition-download): Download the latest CloudShell SDK VM and deploy it.
+- CloudShell
     
 - [Python](https://www.python.org/downloads/): Make sure the appropriate Python version - 2.7.x and/or 3.x - (latest recommended) is installed on your machine.  
     Starting with CloudShell 9.2, CloudShell comes with out-of-the-box support for python 3 for orchestration scripts.
