@@ -4,8 +4,8 @@
 
 This section explains how to:
 
-- [Add a Blueprint](./add-env.md)
-- [Remove a Blueprint](./rmv-env.md)
+- [Add a Blueprint](./add-blueprint.md)
+- [Remove a Blueprint](./rmv-blueprint.md)
 - [Add Global Blueprint Inputs](./add-glbl-input.md)
 - [Remove a Global Blueprint Input](./rmv-glbl-input.md)
 - [Add a Driver to a Blueprint](./add-drv-to-bluebrint.md)
