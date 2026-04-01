@@ -17,5 +17,5 @@ sidebar_position: 10
 **Sample**:
 
 ```javascript
-`packageEditor.remove_driver_from_model('Generic Chassis Model','ResDriver')`
+packageEditor.remove_driver_from_model('Generic Chassis Model','ResDriver')
 ```

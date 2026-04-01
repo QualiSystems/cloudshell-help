@@ -21,5 +21,5 @@ sidebar_position: 2
 **Sample**:
 
 ```javascript
-`packageEditor.attach_attribute_to_family('Generic Chassis','attribute1',False,'')`
+packageEditor.attach_attribute_to_family('Generic Chassis','attribute1',False,'')
 ```

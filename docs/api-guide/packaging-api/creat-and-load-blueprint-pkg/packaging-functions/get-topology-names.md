@@ -17,7 +17,7 @@ sidebar_position: 4
 **Sample:**
 
 ```javascript
-`packageEditor.get_topology_names()`
+packageEditor.get_topology_names()
 ```
 
 ```javascript

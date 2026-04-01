@@ -18,5 +18,5 @@ sidebar_position: 6
 **Sample**:
 
 ```javascript
-`packageEditor.remove_parent_model('Generic Ethernet Port',['Generic Chassis Model'])`
+packageEditor.remove_parent_model('Generic Ethernet Port',['Generic Chassis Model'])
 ```

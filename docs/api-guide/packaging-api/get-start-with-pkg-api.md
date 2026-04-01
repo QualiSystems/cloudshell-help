@@ -123,9 +123,6 @@ p = PackageEditor()
 
 p.create("c:\\myfolder\\mypack.zip")
 
-
-
-
 #Load the package and prepare for edit
 
 p.load("c:\\myfolder\\mypack.zip")

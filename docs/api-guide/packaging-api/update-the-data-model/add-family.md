@@ -26,7 +26,7 @@ When importing the package into CloudShell, if the family doesn’t exist, it wi
 
 **Sample**:
 ```javascript
-`packageEditor.add_family("Family1",'This is a test',[],True,True,False,False,False)`
+packageEditor.add_family("Family1",'This is a test',[],True,True,False,False,False)
 
-`packageEditor.add_family("ServiceFamily1",'This is a test',[‘Cat1’,’Cat2/Sub1’], False, False,False,True,False)`
+packageEditor.add_family("ServiceFamily1",'This is a test',[‘Cat1’,’Cat2/Sub1’], False, False,False,True,False)
 ```

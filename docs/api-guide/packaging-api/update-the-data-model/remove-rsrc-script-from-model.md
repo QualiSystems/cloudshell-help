@@ -19,5 +19,5 @@ sidebar_position: 8
 **Sample**:
 
 ```javascript
-`packageEditor.remove_script_from_model('Generic Chassis Model','Debugging script')`
+packageEditor.remove_script_from_model('Generic Chassis Model','Debugging script')
 ```

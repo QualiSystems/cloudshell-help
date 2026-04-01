@@ -24,9 +24,9 @@ sidebar_position: 11
 **Sample**:
 
 ```javascript
-`packageEditor.add_or_update_attribute('AttString','','String Attribute','String','','')`
+packageEditor.add_or_update_attribute('AttString','','String Attribute','String','','')
 
-`packageEditor.add_or_update_attribute('AttLookup','A','Lookup Attribute','Lookup',['A','B','C'],'')`
+packageEditor.add_or_update_attribute('AttLookup','A','Lookup Attribute','Lookup',['A','B','C'],'')
 
-`packageEditor.add_or_update_attribute('AttString','AAA','String Attribute1','String','',['Editable After Run (System Administrators)','Editable After Run (Everyone)','Configuration','Setting','Displayed In Diagram','Link Configurations','Variable Capability','Constant Capability','Displayed In Route Creation','Available For Abstract Resources','Displayed In Search Filters','Execution Server Selector','Monitor Modifications','Admin Only','Editable After Run'])`
+packageEditor.add_or_update_attribute('AttString','AAA','String Attribute1','String','',['Editable After Run (System Administrators)','Editable After Run (Everyone)','Configuration','Setting','Displayed In Diagram','Link Configurations','Variable Capability','Constant Capability','Displayed In Route Creation','Available For Abstract Resources','Displayed In Search Filters','Execution Server Selector','Monitor Modifications','Admin Only','Editable After Run'])
 ```

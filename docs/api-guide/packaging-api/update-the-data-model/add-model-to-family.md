@@ -21,5 +21,5 @@ When importing the package into CloudShell, if the model doesn’t exist it will
 **Sample**:
 
 ```javascript
-`packageEditor.add_model_to_family('Generic Chassis', 'Special Chassis','This is a special Chassis model')`
+packageEditor.add_model_to_family('Generic Chassis', 'Special Chassis','This is a special Chassis model')
 ```
