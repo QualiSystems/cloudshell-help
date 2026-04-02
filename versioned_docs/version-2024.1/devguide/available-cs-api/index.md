@@ -28,13 +28,13 @@ The **TestShell API** allows designing orchestration and automation using C#, 
 
 For additional information, see the appropriate TestShell API Reference Guide:
 
-- [TestShell API Library Reference Guide](pathname:///api-docs/2024.1/testshell-api/TestShell%20API%20Library.html)
+- [TestShell API Library Reference Guide](pathname:///api-docs/2024.1/TestShell-API/TestShell%20API%20Library.html)
     
-- [TestShell API C# Reference Guide](pathname:///api-docs/2024.1/testshell-api/TestShell%20cSharp%20API.html)
+- [TestShell API C# Reference Guide](pathname:///api-docs/2024.1/TestShell-API/TestShell%20cSharp%20API.html)
     
-- [TestShell API TCL Reference Guide](pathname:///api-docs/2024.1/testshell-api/TestShell%20TCL%20API.html)
+- [TestShell API TCL Reference Guide](pathname:///api-docs/2024.1/TestShell-API/TestShell%20TCL%20API.html)
     
-- [TestShell API XML RPC Reference Guide](pathname:///api-docs/2024.1/testshell-api/TestShell%20XML%20RPC%20API.html)
+- [TestShell API XML RPC Reference Guide](pathname:///api-docs/2024.1/TestShell-API/TestShell%20XML%20RPC%20API.html)
     
 
 ## Quali API
