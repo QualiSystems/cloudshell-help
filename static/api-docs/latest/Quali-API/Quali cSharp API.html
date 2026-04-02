@@ -1,0 +1,744 @@
+<html><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><link href="../../../Resources/Stylesheets/QualiStyle.css" rel="stylesheet" /><link href="../../../Resources/Stylesheets/API-REF-Guides.css" rel="stylesheet" /><style type="text/css">
+        body
+        {
+        font-family: 'Segoe UI';
+        font-size: .813em;
+        color: rgb(0,60,105);
+        font-style: normal;
+        }
+
+        p
+        {
+        text-transform: none;
+        text-indent: 5px;
+        }
+
+        a.cmd_link:visited, a.cmd_link:link, a.cmd_link:hover, a.cmd_link:active
+        {
+        padding-left: 10px;
+        color: rgb(0,60,105);
+        font-family: Arial;
+        font-style: normal;
+        font-variant: normal;
+        text-transform: none;
+        font-weight: normal;
+        }
+
+        h1, h2, h3, h4, h5, h6
+        {
+        background-color: rgb(221,221,221);
+        color: rgb(0,60,105);
+        font-family: Arial;
+        font-style: normal;
+        font-variant: normal;
+        text-transform: none;
+        font-weight: normal;
+        }
+
+        h3
+        {
+        font-weight: Bold;
+        font-size: x-large;
+        }
+
+        .commandTitle
+        {
+        font-weight: normal;
+        font-size: medium;
+        padding-left: 25px;
+        }
+
+
+        a.iref
+        {
+        background-color: rgb(230,230,230);
+        color: rgb(60,60,60);
+        font-family: Arial;
+        font-style: normal;
+        font-variant: normal;
+        text-transform: none; /*font-size: 80%;*/
+        }
+
+        .tableOfContent
+        {
+        -moz-column-count: 1; /* Firefox */
+        -webkit-column-count: 1; /* Safari and Chrome */
+        column-count: 1;
+        }
+
+        .description
+        {
+        white-space: pre-line;
+        }
+
+        .moreDescription
+        {
+        white-space: pre-line;
+        }
+
+        .syntax
+        {
+        white-space: pre-line;
+        }
+
+        .mainBody
+        {
+        }
+
+        .out
+        {
+        font-weight: bold;
+        }
+
+        .header
+        {
+        color: #898989;
+        font-size: xx-large;
+        text-align: center;
+        }
+
+        .folderFirst
+        {
+        font-weight: bold;
+        padding-top: 10px;
+        }
+
+        .commandTOC
+        {
+        color: #003C69;
+        text-indent: 20px;
+        }
+
+        li
+        {
+			margin-left: 0;
+			margin-bottom: 0;
+			padding: 2px 3px 5px;
+			list-style-type: circle;
+        }
+
+        table
+        {
+        border-style: solid;
+        border-width: 1px;
+        border-color: #BBB;
+        border-collapse: collapse; /* 'cellspacing' equivalent */
+        width: 100%;
+        }
+
+        table th
+        {
+        background-color: #E5E5E5;
+        height: 21px;
+        font-family: 'Segoe UI';
+        font-size: .813em;
+        color: black;
+        font-style: normal;
+        font-weight: normal;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #BBB;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: .2pt;
+        font-weight: bold;
+        text-align: left;
+        border-style: solid;
+        border-color: rgb(153, 153, 153) silver silver;
+        border-width: 1pt 1pt 1pt;
+        padding: 0.7pt 1.45pt 0.7pt 2.9pt;
+        background: rgb(0, 60, 105) none repeat scroll 0%;
+        -moz-background-clip: initial;
+        -moz-background-origin: initial;
+        -moz-background-inline-policy: initial;
+        height: 18pt;
+        }
+
+        table td
+        {
+        border-style: solid;
+        border-width: 1px;
+        border-color: #BBB;
+        font-size: .813em;
+        padding-right: 4px;
+        padding-left: 4px;
+        padding-bottom: 4px;
+        padding-top: 4px;
+        text-align: left;
+        }
+
+        table td, table th
+        {
+        padding-left: 4px; /* 'cellpadding' equivalent */
+        padding-right: 4px;
+        padding-bottom: 4px;
+        padding-top: 4px;
+        text-align: left;
+        white-space: nowrap;
+        }
+
+        .mandatory
+        {
+        }
+
+        .command
+        {
+        padding-top: 15px;
+        padding-bottom: 25px;
+        }
+
+        .preStyle
+        {
+        /*font-family: 'Segoe UI';
+        font-size: .95em;
+        color: black;*/
+        }
+		.syntaxPreStyle
+        {
+        /*font-family: 'Segoe UI';
+        font-size: .95em;
+        color: black;*/
+        }
+
+        .codeSnippetContainerCodeContainer
+        {
+        /*border-left: solid 1px #939393;
+        border-bottom: solid 1px #939393;
+        border-right: solid 1px #939393;
+        border-top: solid 1px #939393;
+        clear: both;
+        margin-bottom: 12px;
+        position: relative;
+        top: -1px;*/
+        }
+
+        .codeSnippetContainerCode
+        {
+        border-left: solid 1px #939393;
+        border-bottom: solid 1px #939393;
+        border-right: solid 1px #939393;
+        border-top: solid 1px #939393;
+        clear: both;
+        margin-bottom: 5px;
+        position: relative;
+        top: -1px;
+        overflow: auto;
+        margin: 1;
+        padding-right: 21px;
+        padding-left: 21px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        color:Black;
+
+        }
+pre code {
+  display: block; padding: 0.5em;
+}
+
+pre .comment,
+pre .annotation,
+pre .template_comment,
+pre .diff .header,
+pre .chunk,
+pre .apache .cbracket {
+  color: rgb(0, 128, 0);
+}
+
+pre .keyword,
+pre .id,
+pre .built_in,
+pre .smalltalk .class,
+pre .winutils,
+pre .bash .variable,
+pre .tex .command,
+pre .request,
+pre .status,
+pre .nginx .title,
+pre .xml .tag,
+pre .xml .tag .value {
+  color: rgb(0, 0, 255);
+}
+
+pre .string,
+pre .title,
+pre .parent,
+pre .tag .value,
+pre .rules .value,
+pre .rules .value .number,
+pre .ruby .symbol,
+pre .ruby .symbol .string,
+pre .aggregate,
+pre .template_tag,
+pre .django .variable,
+pre .addition,
+pre .flow,
+pre .stream,
+pre .apache .tag,
+pre .date,
+pre .tex .formula {
+  color: rgb(163, 21, 21);
+}
+
+pre .ruby .string,
+pre .decorator,
+pre .filter .argument,
+pre .localvars,
+pre .array,
+pre .attr_selector,
+pre .pseudo,
+pre .pi,
+pre .doctype,
+pre .deletion,
+pre .envvar,
+pre .shebang,
+pre .preprocessor,
+pre .userType,
+pre .apache .sqbracket,
+pre .nginx .built_in,
+pre .tex .special,
+pre .prompt {
+  color: rgb(43, 145, 175);
+}
+
+pre .phpdoc,
+pre .javadoc,
+pre .xmlDocTag {
+  color: rgb(128, 128, 128);
+}
+
+pre .vhdl .typename { font-weight: bold; }
+pre .vhdl .string { color: #666666; }
+pre .vhdl .literal { color: rgb(163, 21, 21); }
+pre .vhdl .attribute { color: #00B0E8; }
+
+pre .xml .attribute { color: rgb(255, 0, 0); }
+	
+	
+      </style><head><title>Quali C# API Guide</title><script><!--
+		var hljs=new function(){function l(o){return o.replace(/&/gm,"&amp;").replace(/</gm,"&lt;").replace(/>/gm,"&gt;")}function b(p){for(var o=p.firstChild;o;o=o.nextSibling){if(o.nodeName=="CODE"){return o}if(!(o.nodeType==3&&o.nodeValue.match(/\s+/))){break}}}function h(p,o){return Array.prototype.map.call(p.childNodes,function(q){if(q.nodeType==3){return o?q.nodeValue.replace(/\n/g,""):q.nodeValue}if(q.nodeName=="BR"){return"\n"}return h(q,o)}).join("")}function a(q){var p=(q.className+" "+q.parentNode.className).split(/\s+/);p=p.map(function(r){return r.replace(/^language-/,"")});for(var o=0;o<p.length;o++){if(e[p[o]]||p[o]=="no-highlight"){return p[o]}}}function c(q){var o=[];(function p(r,s){for(var t=r.firstChild;t;t=t.nextSibling){if(t.nodeType==3){s+=t.nodeValue.length}else{if(t.nodeName=="BR"){s+=1}else{if(t.nodeType==1){o.push({event:"start",offset:s,node:t});s=p(t,s);o.push({event:"stop",offset:s,node:t})}}}}return s})(q,0);return o}function j(x,v,w){var p=0;var y="";var r=[];function t(){if(x.length&&v.length){if(x[0].offset!=v[0].offset){return(x[0].offset<v[0].offset)?x:v}else{return v[0].event=="start"?x:v}}else{return x.length?x:v}}function s(A){function z(B){return" "+B.nodeName+'="'+l(B.value)+'"'}return"<"+A.nodeName+Array.prototype.map.call(A.attributes,z).join("")+">"}while(x.length||v.length){var u=t().splice(0,1)[0];y+=l(w.substr(p,u.offset-p));p=u.offset;if(u.event=="start"){y+=s(u.node);r.push(u.node)}else{if(u.event=="stop"){var o,q=r.length;do{q-=1;o=r[q];y+=("</"+o.nodeName.toLowerCase()+">")}while(o!=u.node);r.splice(q,1);while(q<r.length){y+=s(r[q]);q++}}}}return y+l(w.substr(p))}function f(q){function o(s,r){return RegExp(s,"m"+(q.cI?"i":"")+(r?"g":""))}function p(y,w){if(y.compiled){return}y.compiled=true;var s=[];if(y.k){var r={};function z(A,t){t.split(" ").forEach(function(B){var C=B.split("|");r[C[0]]=[A,C[1]?Number(C[1]):1];s.push(C[0])})}y.lR=o(y.l||hljs.IR,true);if(typeof y.k=="string"){z("keyword",y.k)}else{for(var x in y.k){if(!y.k.hasOwnProperty(x)){continue}z(x,y.k[x])}}y.k=r}if(w){if(y.bWK){y.b="\\b("+s.join("|")+")\\s"}y.bR=o(y.b?y.b:"\\B|\\b");if(!y.e&&!y.eW){y.e="\\B|\\b"}if(y.e){y.eR=o(y.e)}y.tE=y.e||"";if(y.eW&&w.tE){y.tE+=(y.e?"|":"")+w.tE}}if(y.i){y.iR=o(y.i)}if(y.r===undefined){y.r=1}if(!y.c){y.c=[]}for(var v=0;v<y.c.length;v++){if(y.c[v]=="self"){y.c[v]=y}p(y.c[v],y)}if(y.starts){p(y.starts,w)}var u=[];for(var v=0;v<y.c.length;v++){u.push(y.c[v].b)}if(y.tE){u.push(y.tE)}if(y.i){u.push(y.i)}y.t=u.length?o(u.join("|"),true):{exec:function(t){return null}}}p(q)}function d(D,E){function o(r,M){for(var L=0;L<M.c.length;L++){var K=M.c[L].bR.exec(r);if(K&&K.index==0){return M.c[L]}}}function s(K,r){if(K.e&&K.eR.test(r)){return K}if(K.eW){return s(K.parent,r)}}function t(r,K){return K.i&&K.iR.test(r)}function y(L,r){var K=F.cI?r[0].toLowerCase():r[0];return L.k.hasOwnProperty(K)&&L.k[K]}function G(){var K=l(w);if(!A.k){return K}var r="";var N=0;A.lR.lastIndex=0;var L=A.lR.exec(K);while(L){r+=K.substr(N,L.index-N);var M=y(A,L);if(M){v+=M[1];r+='<span class="'+M[0]+'">'+L[0]+"</span>"}else{r+=L[0]}N=A.lR.lastIndex;L=A.lR.exec(K)}return r+K.substr(N)}function z(){if(A.sL&&!e[A.sL]){return l(w)}var r=A.sL?d(A.sL,w):g(w);if(A.r>0){v+=r.keyword_count;B+=r.r}return'<span class="'+r.language+'">'+r.value+"</span>"}function J(){return A.sL!==undefined?z():G()}function I(L,r){var K=L.cN?'<span class="'+L.cN+'">':"";if(L.rB){x+=K;w=""}else{if(L.eB){x+=l(r)+K;w=""}else{x+=K;w=r}}A=Object.create(L,{parent:{value:A}});B+=L.r}function C(K,r){w+=K;if(r===undefined){x+=J();return 0}var L=o(r,A);if(L){x+=J();I(L,r);return L.rB?0:r.length}var M=s(A,r);if(M){if(!(M.rE||M.eE)){w+=r}x+=J();do{if(A.cN){x+="</span>"}A=A.parent}while(A!=M.parent);if(M.eE){x+=l(r)}w="";if(M.starts){I(M.starts,"")}return M.rE?0:r.length}if(t(r,A)){throw"Illegal"}w+=r;return r.length||1}var F=e[D];f(F);var A=F;var w="";var B=0;var v=0;var x="";try{var u,q,p=0;while(true){A.t.lastIndex=p;u=A.t.exec(E);if(!u){break}q=C(E.substr(p,u.index-p),u[0]);p=u.index+q}C(E.substr(p));return{r:B,keyword_count:v,value:x,language
+:D}}catch(H){if(H=="Illegal"){return{r:0,keyword_count:0,value:l(E)}}else{throw H}}}function g(s){var o={keyword_count:0,r:0,value:l(s)};var q=o;for(var p in e){if(!e.hasOwnProperty(p)){continue}var r=d(p,s);r.language=p;if(r.keyword_count+r.r>q.keyword_count+q.r){q=r}if(r.keyword_count+r.r>o.keyword_count+o.r){q=o;o=r}}if(q.language){o.second_best=q}return o}function i(q,p,o){if(p){q=q.replace(/^((<[^>]+>|\t)+)/gm,function(r,v,u,t){return v.replace(/\t/g,p)})}if(o){q=q.replace(/\n/g,"<br>")}return q}function m(r,u,p){var v=h(r,p);var t=a(r);if(t=="no-highlight"){return}var w=t?d(t,v):g(v);t=w.language;var o=c(r);if(o.length){var q=document.createElement("pre");q.innerHTML=w.value;w.value=j(o,c(q),v)}w.value=i(w.value,u,p);var s=r.className;if(!s.match("(\\s|^)(language-)?"+t+"(\\s|$)")){s=s?(s+" "+t):t}r.innerHTML=w.value;r.className=s;r.result={language:t,kw:w.keyword_count,re:w.r};if(w.second_best){r.second_best={language:w.second_best.language,kw:w.second_best.keyword_count,re:w.second_best.r}}}function n(){if(n.called){return}n.called=true;Array.prototype.map.call(document.getElementsByTagName("pre"),b).filter(Boolean).forEach(function(o){m(o,hljs.tabReplace)})}function k(){window.addEventListener("DOMContentLoaded",n,false);window.addEventListener("load",n,false)}var e={};this.LANGUAGES=e;this.highlight=d;this.highlightAuto=g;this.fixMarkup=i;this.highlightBlock=m;this.initHighlighting=n;this.initHighlightingOnLoad=k;this.IR="[a-zA-Z][a-zA-Z0-9_]*";this.UIR="[a-zA-Z_][a-zA-Z0-9_]*";this.NR="\\b\\d+(\\.\\d+)?";this.CNR="(\\b0[xX][a-fA-F0-9]+|(\\b\\d+(\\.\\d*)?|\\.\\d+)([eE][-+]?\\d+)?)";this.BNR="\\b(0b[01]+)";this.RSR="!|!=|!==|%|%=|&|&&|&=|\\*|\\*=|\\+|\\+=|,|\\.|-|-=|/|/=|:|;|<|<<|<<=|<=|=|==|===|>|>=|>>|>>=|>>>|>>>=|\\?|\\[|\\{|\\(|\\^|\\^=|\\||\\|=|\\|\\||~";this.BE={b:"\\\\[\\s\\S]",r:0};this.ASM={cN:"string",b:"'",e:"'",i:"\\n",c:[this.BE],r:0};this.QSM={cN:"string",b:'"',e:'"',i:"\\n",c:[this.BE],r:0};this.CLCM={cN:"comment",b:"//",e:"$"};this.CBLCLM={cN:"comment",b:"/\\*",e:"\\*/"};this.HCM={cN:"comment",b:"#",e:"$"};this.NM={cN:"number",b:this.NR,r:0};this.CNM={cN:"number",b:this.CNR,r:0};this.BNM={cN:"number",b:this.BNR,r:0};this.inherit=function(q,r){var o={};for(var p in q){o[p]=q[p]}if(r){for(var p in r){o[p]=r[p]}}return o}}();hljs.LANGUAGES.cs=function(a){return{k:"abstract as base bool break byte case catch char checked class const continue decimal default delegate do double else enum event explicit extern false finally fixed float for foreach goto if implicit in int interface internal is lock long namespace new null object operator out override params private protected public readonly ref return sbyte sealed short sizeof stackalloc static string struct switch this throw true try typeof uint ulong unchecked unsafe ushort using virtual volatile void while ascending descending from get group into join let orderby partial select set value var where yield",c:[{cN:"comment",b:"///",e:"$",rB:true,c:[{cN:"xmlDocTag",b:"///|<!-|->"},{cN:"xmlDocTag",b:"</?",e:">"}]},a.CLCM,a.CBLCLM,{cN:"preprocessor",b:"#",e:"$",k:"if else elif endif define undef warning error line region endregion pragma checksum"},{cN:"string",b:'@"',e:'"',c:[{b:'""'}]},a.ASM,a.QSM,a.CNM]}}(hljs);hljs.LANGUAGES.xml=function(a){var c="[A-Za-z0-9\\._:-]+";var b={eW:true,c:[{cN:"attribute",b:c,r:0},{b:'="',rB:true,e:'"',c:[{cN:"value",b:'"',eW:true}]},{b:"='",rB:true,e:"'",c:[{cN:"value",b:"'",eW:true}]},{b:"=",c:[{cN:"value",b:"[^\\s/>]+"}]}]};return{cI:true,c:[{cN:"pi",b:"<\\?",e:"\\?>",r:10},{cN:"doctype",b:"<!DOCTYPE",e:">",r:10,c:[{b:"\\[",e:"\\]"}]},{cN:"comment",b:"<!-",e:"->",r:10},{cN:"cdata",b:"<\\!\\[CDATA\\[",e:"\\]\\]>",r:10},{cN:"tag",b:"<style(?=\\s|>|$)",e:">",k:{title:"style"},c:[b],starts:{e:"</style>",rE:true,sL:"css"}},{cN:"tag",b:"<script(?=\\s|>|$)",e:">",k:{title:"script"},c:[b],starts:{e:"<\/script>",rE:true,sL:"javascript"}},{b:"<\%",e:"\%>",sL:"vbscript"},{cN:"tag",b:"</?",e:"/?>",c:[{cN:"title",b:"[^ />]+"},b]}]}}(hljs);
+//--></script><script>
+		  hljs.tabReplace = '    ';
+		  hljs.initHighlightingOnLoad();
+		  </script></head><body><a name="TOC" /><div class="header">
+          2024.1.0 Quali API C# Reference Guide
+        </div><HR /><div class="tableOfContent"><ul><div class="folderFirst"><li>Authentication</li></div><div class="commandTOC"><a href="&#xA;          #Login">Login</a></div><div class="commandTOC"><a href="&#xA;          #SecureLogon">SecureLogon</a></div><div class="folderFirst"><li>Automation Suites</li></div><div class="commandTOC"><a href="&#xA;          #Get Available Suite Templates">Get Available Suite Templates</a></div><div class="commandTOC"><a href="&#xA;          #Get Suite Template Details">Get Suite Template Details</a></div><div class="commandTOC"><a href="&#xA;          #Enqueue Custom Suite">Enqueue Custom Suite</a></div><div class="commandTOC"><a href="&#xA;          #Get Suite Details">Get Suite Details</a></div><div class="commandTOC"><a href="&#xA;          #Stop Suite Execution">Stop Suite Execution</a></div><div class="folderFirst"><li>Configuration</li></div><div class="commandTOC"><a href="&#xA;          #Import Package">Import Package</a></div><div class="commandTOC"><a href="&#xA;          #Export Package">Export Package</a></div><div class="folderFirst"><li>Jobs</li></div><div class="commandTOC"><a href="&#xA;          #Enqueue Custom Job">Enqueue Custom Job</a></div><div class="commandTOC"><a href="&#xA;          #Get Job Details">Get Job Details</a></div><div class="commandTOC"><a href="&#xA;          #Get Queued Jobs">Get Queued Jobs</a></div><div class="commandTOC"><a href="&#xA;          #Get Running Jobs">Get Running Jobs</a></div><div class="commandTOC"><a href="&#xA;          #Stop Job Execution">Stop Job Execution</a></div><div class="folderFirst"><li>Reservation operations</li></div><div class="commandTOC"><a href="&#xA;          #Get Reservation Attachment">Get Reservation Attachment</a></div><div class="commandTOC"><a href="&#xA;          #Get Reservation Attachments Details">Get Reservation Attachments Details</a></div><div class="commandTOC"><a href="&#xA;          #Delete File From Reservation">Delete File From Reservation</a></div><div class="commandTOC"><a href="&#xA;          #Attach File To Reservation">Attach File To Reservation</a></div></ul></div><HR /><div class="mainBody"><div class="command"><a name="Login" /><h3>Login</h3><div class="description">Starts a new session in Quali Server using the requested user credentials.</div><p><b>
+          Syntax
+        </b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">void Login(string serverMachine, int serverPort, string username, string password, string domain)</pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>string</td><td><b>serverMachine</b></td><td><div class="description">IP address or host name of the Quali Server machine, i.e.: 192.100.1.2 or QsServer.</div></td></tr><tr><td>string</td><td><b>serverPort</b></td><td><div class="description">The TCP port that the Portal is configured to work on.</div></td></tr><tr><td>string</td><td><b>username</b></td><td><div class="description">Username to login with.</div></td></tr><tr><td>string</td><td><b>password</b></td><td><div class="description">Specify the user's login password.</div></td></tr><tr><td>string</td><td><b>domain</b></td><td><div class="description">Specify the name of the domain.</div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code>
+        QualiAPI.QualiAPI api = new QualiAPI.QualiAPI();
+        api.Login("localhost", 9000, "admin", "admin", "Global");
+      </code></pre></div></div></div></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="SecureLogon" /><h3>SecureLogon</h3><div class="description">Starts a new session in Quali Server using the requested user credentials.</div><p><b>
+          Syntax
+        </b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">void SecureLogon(string serverMachine, int serverPort, string token, string domain)</pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>string</td><td><b>serverMachine</b></td><td><div class="description">IP address or host name of the Quali Server machine, i.e.: 192.100.1.2 or QsServer.</div></td></tr><tr><td>string</td><td><b>serverPort</b></td><td><div class="description">The TCP port that the Portal is configured to work on.</div></td></tr><tr><td>string</td><td><b>token</b></td><td><div class="description">Token to login with.</div></td></tr><tr><td>string</td><td><b>domain</b></td><td><div class="description">Specify the name of the domain.</div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code>
+        QualiAPI.QualiAPI api = new QualiAPI.QualiAPI();
+        api.SecureLogon("localhost", 9000, "authToken", "Global");
+      </code></pre></div></div></div></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Get Available Suite Templates" /><h3>Get Available Suite Templates</h3><div class="description">Retrieves the list of all available automation suites.</div><p><b>
+          Syntax
+        </b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">void GetAvailableSuiteTemplates(out string[,] templates)</pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td><span class="out">out </span>string[,]</td><td><b>templates</b></td><td><div class="description">Provides an array of available automation suites.
+          Each suite is composed of: Name, Description, Owner, Create Date, Modification Date.
+          The name attribute indicates the name of the suite template.
+          The description attribute indicates the description of the suite.
+          The owner attribute indicates the name of the user who created the suite.
+          The create date attribute indicates the create date and time of the suite.
+          The modification date attributes indicate the last modification date and time.          
+        </div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code>
+        string [,] templates;
+        api.GetAvailableSuiteTemplates(out templates);
+      </code></pre></div></div></div></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Get Suite Template Details" /><h3>Get Suite Template Details</h3><div class="description">Retrieves properties of the specified automation suite template.</div><p><b>
+          Syntax
+        </b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">void GetSuiteTemplateDetails(string suiteTemplateName, out string description, out string type, out string owner, out DateTime createDate, out DateTime modificationDate, out EmailNotifications emailNotifications, out double removeJobsFromQueueAfter, out bool endReservationOnEnd, out string[,] jobsDetails, out string[,] jobExecutionServers, out string[,] topologyGlobalInputs, out string[,] topologyRequirementsInputs, out string[,] topologyAdditionalInputs, out string[,] jobsTestPaths, out string[,] jobsTestParameters)</pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>string</td><td><b>Suite Template Name</b></td><td><div class="description">the name of the suite template that is used as a container for the suite</div></td></tr><tr><td><span class="out">out </span>string</td><td><b>Description</b></td><td><div class="description">Displays the automation suite description.</div></td></tr><tr><td><span class="out">out </span>string</td><td><b>Type </b></td><td><div class="description">Indicates the automation suite type.</div></td></tr><tr><td><span class="out">out </span>string</td><td><b>Owner  </b></td><td><div class="description">Indicates the name of the user who created the automation suite.</div></td></tr><tr><td><span class="out">out </span>DateTime</td><td><b>Create Date</b></td><td><div class="description">Indicates the create date and time of the automation suite.</div></td></tr><tr><td><span class="out">out </span>DateTime</td><td><b>Modification Date</b></td><td><div class="description">Indicates the last update date and time of the automation suite.</div></td></tr><tr><td><span class="out">out </span>string</td><td><b>Email Notifications</b></td><td><div class="description">Indicates notification trigger settings:  None, Errors, Suite and Errors, or All.</div></td></tr><tr><td><span class="out">out </span>int</td><td><b>Remove Jobs From Queue After</b></td><td><div class="description">
+          Indicates the number of minutes for the suite's execution queue timeout. Suites are automatically removed from the queue upon timing out.
+          -1 Indicates that queue timeout is disabled.
+        </div></td></tr><tr><td><span class="out">out </span>bool</td><td><b>End Reservation On End</b></td><td><div class="description">Indicates if the suite's reservation was set to end automatically upon execution completion.</div></td></tr><tr><td><span class="out">out </span>string[,]</td><td><b>Jobs Details</b></td><td><div class="description">Output is a 9 column matrix with Job Index, Name, Description, Logging Profile, Estimated Duration, Stop On Fail, Stop On Error, Topology Name, and Duration Time Buffer as the column headings.
+          The Index column will display a run of unique numbers.
+          The suite Name column indicates the name of the parent automation suite.
+          The Name column indicates the name of each job.
+          The Description column indicates the description of each job.
+          The Logging Profile column indicates the selected logging profile for this job. (None, All, Results, Measurements and Results)
+          The Estimated Duration column Indicates the number of minutes entered as the job's estimated duration.
+          -1 indicates that the duration will be calculated automatically according to the test durations.
+          The Stop On Fail column indicates whether the job was set to stop execution if any of its tests failed.
+          The Stop On Error column indicates whether the job was set to stop execution if any of its tests ended with an error.
+          The Topology Name column indicates the name of attached topology.
+          Duration Time Buffer indicates the number of minutes to be added to the duration estimation.
+        </div></td></tr><tr><td><span class="out">out </span>string[,]</td><td><b>Job Execution Servers</b></td><td><div class="description">Indicates the execution servers for each job
+          Output is a two column matrix with Job Index and Execution Server as the column headings.
+          The Job Index column corresponds to the value in the Jobs Details matrix.
+          If a job has multiple execution servers, there will be a row with the same index value for each required execution server.
+        </div></td></tr><tr><td><span class="out">out </span>string[,]</td><td><b>Topology Global Inputs</b></td><td><div class="description">Indicates the topology’s input parameters and parameter values.
+          Output is a four column matrix with Job Index, Name, Value, and Possible Values as the column headings.
+          The Job Index column corresponds to the value in the Jobs Details matrix.
+          If any of the parameters have predefined values, they will be displayed in the Possible Values column.
+        </div></td></tr><tr><td><span class="out">out </span>string[,]</td><td><b>Topology Requirements Inputs</b></td><td><div class="description">Indicates requirements for specific topology resources.
+          Output is a six column matrix with Job Index, Resource Path, Name, Value, Type, and Possible Values as the column headings.
+          The Job Index column corresponds to the value in the Jobs Details matrix. The Resource Path column indicates the full path to the added topology resources.
+          The Type column indicates whether the Name and Value fields refer to resource model, quantity, or attribute.
+          If any of the parameters have predefined values, they will be displayed in the Possible Values column.
+        </div></td></tr><tr><td><span class="out">out </span>string[,]</td><td><b>Topology Additional Inputs</b></td><td><div class="description">Indicates additional resource input parameters and values for the attached topology.
+          Output is a five column matrix with Job Index, Resource Path, Name, Value, and Possible Values as the column headings.
+          The Job Index column corresponds to the value in the Jobs Details matrix.
+          The Resource Path column indicates the full path to the added topology resources.
+          If any of the parameters have predefined values, they will be displayed in the Possible Values column.
+        </div></td></tr><tr><td><span class="out">out </span>string[,]</td><td><b>Jobs Test Paths</b></td><td><div class="description">Provide the full path to each of the job's tests.
+          Output is a four column matrix with Job Index, Test Index, Test Path and Test Estimated Duration as the column headers.
+          The Job Index column corresponds to the value in the Jobs Details matrix.
+          The Test Index column should be a run of unique numbers that specifies the order of the tests. The test index will be used as the test identifier in the Test Parameters input matrix.
+          The test path column should contain the full details about the location of the test, for example: TestShell\Tests\Shared\Validation\TestCase1.
+          The Test Estimated Duration is the estimated number of minutes for the execution of the test, This value will be used to calculate the job duration.
+        </div></td></tr><tr><td><span class="out">out </span>string[,]</td><td><b>Jobs Test Parameters</b></td><td><div class="description">Parameter information for each of the job's tests.
+          Output is a four column matrix with Job Index, Test Index, Parameter Name and Parameter Value as the column headings.
+          The Job Index column corresponds to the value in the Jobs Details matrix.
+          The Test Index column corresponds to the value in the Test Paths matrix.
+          Tests with multiple parameters will have a row for each parameter, with the same Test Index value over multiple rows.
+        </div></td></tr><tr><td><span class="out">out </span>string</td><td><b>Existing Reservation ID</b></td><td><div class="description">Specify existing reservation ID to use for the created suite.
+          This will only be possible for suites with one job and no topologies.
+          Note that the system doesn’t validate the number of jobs attached to the same reservation id. Validation if needed should be applied by the clients of the API.
+        </div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code>
+        string description, type, owner;
+        DateTime createDate, modificationDate;
+        EmailNotifications emailNotifications;
+        double removeJobsFromQueueAfter;
+        bool endReservationOnEnd;
+        string[,] jobsDetails, jobExecutionServers, topologyGlobalInputs, topologyRequirementsInputs, topologyAdditionalInputs, jobsTestPaths, jobsTestParameters;
+
+        api.GetSuiteTemplateDetails("testcase 10", out description, out type, out owner, out createDate, out modificationDate, out emailNotifications, out removeJobsFromQueueAfter, out endReservationOnEnd, out jobsDetails, out jobExecutionServers, out topologyGlobalInputs, out topologyRequirementsInputs, out topologyAdditionalInputs, out jobsTestPaths, out jobsTestParameters);
+      </code></pre></div></div></div></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Enqueue Custom Suite" /><h3>Enqueue Custom Suite<span class="commandTitle">Enqueue Custom Suite</span></h3><div class="description">Create a new custom automation suite and add it to queue</div><p><b>
+          Syntax
+        </b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">void EnqueueCustomSuite(string suiteTemplateName, string suiteName, string description, string type, EmailNotifications emailNotification, double removeJobsFromQueueAfter, bool endReservationOnEnd, string[,] jobsDetails, string[,] jobExecutionServers, string[,] topologyGlobalInputs, string[,] topologyRequirementsInputs, string[,] topologyAdditionalInputs, string[,] jobsTestPaths, string[,] jobsTestParameters, string existingReservationId, out string suiteId)</pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>string</td><td><b>Suite Template Name</b></td><td><div class="description">Specify the name of the suite template to use as a container for the suite. Empty value indicates an adHoc suite.</div></td></tr><tr><td>string</td><td><b>Suite Name</b></td><td><div class="description">Specify the name of the suite template to use as a container for the suite. Empty value indicates an adHoc suite.</div></td></tr><tr><td>string</td><td><b>Description</b></td><td><div class="description">Specify the automation suite description.</div></td></tr><tr><td>string</td><td><b>Type </b></td><td><div class="description">Specify the automation suite type. Default value: TestShell</div></td></tr><tr><td>string</td><td><b>Email Notifications</b></td><td><div class="description">Specify notification trigger settings:  None, Errors Only, Suite and Errors, or All.</div></td></tr><tr><td>int</td><td><b>Remove Jobs From Queue After</b></td><td><div class="description">Indicates the number of minutes for the suite's execution queue timeout. Suites are automatically removed from the queue upon timing out. -1 Indicates that queue timeout is disabled.</div></td></tr><tr><td>bool</td><td><b>End Reservation On End</b></td><td><div class="description">Specify if the suite's reservation should end automatically upon execution completion.</div></td></tr><tr><td>string[,]</td><td><b>Jobs Details</b></td><td><div class="description">Input is an 9 column matrix with Job Index, name, Description, Logging Profile, Estimated Duration, Stop On Fail, Stop On Error, Topology Name, and Duration Time Buffer as the column headings.
+          The Index column will display a run of unique numbers.
+          The Suite Name column indicates the name of the parent automation suite.
+          The Name column indicates the name of each job.
+          The Description column indicates the description of each job.
+          The Logging Profile column indicates the selected logging profile for this job. (None, All, Results, Measurements and Results)
+          The Estimated Duration column Indicates the number of minutes entered as the job's estimated duration.
+          -1 indicates that the duration will be calculated automatically according to the test durations.
+          The Stop On Fail column indicates whether the job was set to stop execution if any of its tests failed.
+          The Stop On Error column indicates whether the job was set to stop execution if any of its tests ended with an error.
+          The Topology Name column indicates the name of attached topology.
+          Duration Time Buffer indicates the number of minutes to be added to the duration estimation.
+        </div></td></tr><tr><td>string[,]</td><td><b>Job Execution Servers</b></td><td><div class="description">Input should be a two column matrix with Job Index and Execution Server as the column headings.
+          The Job Index column corresponds to the value in the Jobs Details matrix.
+          In the Job Execution Server column, specify the selected execution server that ran the job.
+          If a job has multiple execution servers, there will be a row with the same index value for each required execution server.
+        </div></td></tr><tr><td>string[,]</td><td><b>Topology Global Inputs</b></td><td><div class="description">Provide an optional list of input parameters and parameter values for the attached topology.
+          Input should be a four column matrix with Job Index, Name, Value, and Possible Values as the column headings.
+          The Job Index column corresponds to the value in the Jobs Details matrix.
+          If any of the parameters have predefined values, they will be displayed in the Possible Values column.
+        </div></td></tr><tr><td>string[,]</td><td><b>Topology Requirements Inputs</b></td><td><div class="description">Specify requirements for specific resources that must be included in the topology (Optional).
+          Input should be a six column matrix with Job Index, Resource Path, Name, Value, Type, and Possible Values as the column headings.
+          The Job Index column corresponds to the value in the Jobs Details matrix.
+          The Resource Path column indicates the full path to the added topology resources.
+          The Type column indicates whether the Name and Value fields refer to resource model, quantity, or attribute.
+          If any of the parameters have predefined values, they will be displayed in the Possible Values column.
+        </div></td></tr><tr><td>string[,]</td><td><b>Topology Additional Inputs</b></td><td><div class="description">Specify an optional list of additional input parameters and values for the attached topology.
+          Input is a five column matrix with Job Index, Resource Path, Name, Value, and Possible Values as the column headings.
+          The Job Index column corresponds to the value in the Jobs Details matrix.
+          The Resource Path column indicates the full path to the added topology resources.
+          If any of the parameters have predefined values, they will be displayed in the Possible Values column.
+        </div></td></tr><tr><td>string[,]</td><td><b>Jobs Test Paths</b></td><td><div class="description">Specify the full path to each of the job's tests.
+          Input is a four column matrix with Job Index, Test Index, Test Path and Test Estimated Duration.
+          The Job Index column corresponds to the value in the Jobs Details matrix.
+          The Test Index column should be a run of unique numbers that specifies the order of the tests. The test index will be used as the test identifier in the Test Parameters input matrix.
+          The test path column should contain the full details about the location of the test, for example: TestShell\Tests\Shared\Validation\TestCase1.
+          The Test Estimated Duration is the estimated number of minutes for the execution of the test, This value will be used to calculate the job duration.
+        </div></td></tr><tr><td>string[,]</td><td><b>Jobs Test Parameters</b></td><td><div class="description">Specify parameter information for each of the job's tests.
+          Input is a four column matrix with Job Index, Test Index, Parameter Name and Parameter Value as the column headings.
+          The Job Index column corresponds to the value in the Jobs Details matrix.
+          The Test Index column corresponds to the value in the Test Paths matrix.
+          Tests with multiple parameters will have a row for each parameter, with the same Test Index value over multiple rows.
+        </div></td></tr><tr><td>string</td><td><b>Existing Reservation ID</b></td><td><div class="description">Specify existing reservation ID to use for the created suite.
+          This will only be possible for suites with one job and no topologies.
+          Note that the system doesn’t validate the number of jobs attached to the same reservation id. Validation if needed should be applied by the clients of the API.
+        </div></td></tr><tr><td><span class="out">out </span>string</td><td><b>Suite Id</b></td><td><div class="description">The ID of the automation suite that was created.</div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code>
+        string suiteId;
+
+        api.EnqueueCustomSuite("", "Ad Hoc 1", "This is a one time network test", "TestShell", EmailNotifications.ErrorsOnly, 5, true,
+        // Jobs Details
+        new string[,] { { "Job Index", "Name", "Description", "Logging Profile", "Estimated Duration", "Stop On Fail", "Stop On Error", "Topology Name", "Duration Time Buffer"},
+        { "1", "job1", "", "None", "5", "false", "false", "", "10" }  },
+        // Job Execution Servers
+        new string[,] { { "Job Index", "Execution Server"} },
+        //Topology Global Inputs
+        new string[,] { {"Job Index", "Name", "Value", "Possible Values"} },
+        //Topology Requirements Inputs
+        new string[,] { {"Job Index", "Resource Path", "Name", "Value", "Type", "Possible Values" } },
+        // Topology Additional Inputs
+        new string[,] { { "Job Index", "Resource Path", "Name", "Value", "Possible Values" } },
+        // Job Test Paths
+        new string[,] { {"Job Index", "Test Index", "Test Path", "Test Estimated Duration" },
+        {"1", "1", "TestShell\\Tests\\Shared\\TestWithInputs", "5" }},
+        // Job Test Parameters
+        new string[,] { {"Job Index", "Test Index", "Parameter Name", "Parameter Value" },
+                        { "1",        "1",          "InStr",          "a"},
+                        { "1",        "1",          "InNum",          "1"},
+                        { "1",        "1",          "InStrVect",      "['b', 'c', 'd']"},
+                        { "1",        "1",          "InNumVect",      "[2, 3, 4]"},
+                        { "1",        "1",          "InStrMat",       "['e', 'f', 'g';'h', 'i', 'j';]"},
+                        { "1",        "1",          "InNumMat",       "[5, 6, 7;8, 9, 10;]"}},
+        null, out suiteId);
+      </code></pre></div></div></div><p><b>Output</b><br /><li><b>suiteId</b></li><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        d071cd61-f958-4002-8149-a433c6fc458a
+      </code></pre></div></div></div></p></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Get Suite Details" /><h3>Get Suite Details</h3><div class="description">Retrieves the full details of a specific automation suite instance</div><p><b>
+          Syntax
+        </b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">void GetSuiteDetails(string suiteId, out string suiteTemplateName, out string suiteName, out string description, out string type, out string owner, out double removeJobsFromQueueAfter, out bool endReservationOnEnd, out string[,] jobsDetails, out string[,] jobExecutionServers, out string[,] topologyGlobalInputs, out string[,] topologyRequirementsInputs, out string[,] topologyAdditionalInputs, out string[,] jobsTestDetails, out string[,] jobsTestParameters, out string suiteStatus, out string suiteResult, out int remainingJobs, out DateTime startTime, out DateTime endTime)</pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>string</td><td><b>Suite Id</b></td><td><div class="description">Specify the ID of the automation suite.</div></td></tr><tr><td><span class="out">out </span>string</td><td><b>Suite Template Name</b></td><td><div class="description">the name of the suite template that is used as a container for the suite</div></td></tr><tr><td><span class="out">out </span>string</td><td><b>Suite Name</b></td><td><div class="description">Indicates the name of the automation suite.</div></td></tr><tr><td><span class="out">out </span>string</td><td><b>Description</b></td><td><div class="description">Displays the automation suite description.</div></td></tr><tr><td><span class="out">out </span>string</td><td><b>Type </b></td><td><div class="description">Indicates the automation suite type.</div></td></tr><tr><td><span class="out">out </span>string</td><td><b>Owner  </b></td><td><div class="description">Indicates the name of the user who created the automation suite.</div></td></tr><tr><td><span class="out">out </span>string</td><td><b>Email Notifications</b></td><td><div class="description">Indicates notification trigger settings:  None, Errors, Suite and Errors, or All.</div></td></tr><tr><td><span class="out">out </span>int</td><td><b>Remove Jobs From Queue After</b></td><td><div class="description">Indicates the number of minutes for the suite's execution queue timeout. Suites are automatically removed from the queue upon timing out.
+          -1 Indicates that queue timeout is disabled.
+        </div></td></tr><tr><td><span class="out">out </span>bool</td><td><b>End Reservation On End</b></td><td><div class="description">Indicates if the suite's reservation was set to end automatically upon execution completion.</div></td></tr><tr><td><span class="out">out </span>string[,]</td><td><b>Jobs Details</b></td><td><div class="description">Output is an 11 column matrix with Job Index, Name, Description, Logging Profile, Estimated Duration, Stop On Fail, Stop On Error, Topology Name, Duration Time Buffer, Job State and Job Result as the column headings.
+          The Index column will display a run of unique numbers.
+          The Suite Name column indicates the name of the parent automation suite.
+          The Name column indicates the name of each job.
+          The Description column indicates the description of each job.
+          The Logging Profile column indicates the selected logging profile for this job. (None, All, Results, Measurements and Results)
+          The Estimated Duration column indicates the number of minutes entered as the job's estimated duration. -1 indicates that the duration will be calculated automatically according to the test durations.
+          The Stop On Fail column indicates whether the job was set to stop execution if any of its tests failed.
+          The Stop On Error column indicates whether the job was set to stop execution if any of its tests ended with an error.
+          The Topology Name column indicates the name of attached topology.
+          Duration Time Buffer indicates the number of minutes to be added to the duration estimation.
+          The job state indicates the current state of the job.
+          The job result indicates the result of the job execution.
+        </div></td></tr><tr><td><span class="out">out </span>string[,]</td><td><b>Job Execution Servers</b></td><td><div class="description">Indicates the execution servers for each job
+          Output is a two column matrix with Job Index and Execution Server as the column headings.
+          The Job Index column corresponds to the value in the Jobs Details matrix.
+          If a job has multiple execution servers, there will be a row with the same index value for each required execution server.
+        </div></td></tr><tr><td><span class="out">out </span>string[,]</td><td><b>Topology Global Inputs</b></td><td><div class="description">Indicates the topology’s input parameters and parameter values.
+          Output is a four column matrix with Job Index, Name, Value, and Possible Values as the column headings.
+          The Job Index column corresponds to the value in the Jobs Details matrix.
+          If any of the parameters have predefined values, they will be displayed in the Possible Values column.
+        </div></td></tr><tr><td><span class="out">out </span>string[,]</td><td><b>Topology Requirements Inputs</b></td><td><div class="description">Indicates requirements for specific topology resources.
+          Output is a 6 column matrix with Job Index, Resource Path, Name, Value, Type, and Possible Values as the column headings.
+          The Job Index column corresponds to the value in the Jobs Details matrix. The Resource Path column indicates the full path to the added topology resources.
+          The Type column indicates whether the Name and Value fields refer to resource model, quantity, or attribute.
+          If any of the parameters have predefined values, they will be displayed in the Possible Values column.
+        </div></td></tr><tr><td><span class="out">out </span>string[,]</td><td><b>Topology Additional Inputs</b></td><td><div class="description">Indicates additional resource input parameters and values for the attached topology.
+          Output is a five column matrix with Job Index, Resource Path, Name, Value, and Possible Values as the column headings.
+          The Job Index column corresponds to the value in the Jobs Details matrix.
+          The Resource Path column indicates the full path to the added topology resources.
+          If any of the parameters have predefined values, they will be displayed in the Possible Values column.
+        </div></td></tr><tr><td><span class="out">out </span>string[,]</td><td><b>Jobs Test Details</b></td><td><div class="description">Information about the tests that were selected for this job.
+          Output is a nine column matrix with Job Index, Test Index, Test Path, Test Estimated Duration, State, Start Time, End Time, Result, and Report ID as the column headings.
+          The Job Index column corresponds to the value in the Jobs Details matrix.
+          The Test Index column should be a run of unique numbers that specifies the order of the tests. The test index will be used as the test identifier in the Test Parameters input matrix.
+          The Test Path column indicates the location of each test.
+          The State column indicates the current status for each test.
+          The Start Time and End Time columns indicate the execution start and end times for each test.
+          The Result column indicates the test status.
+          Concatenate the Report ID column value to the relevant IP address to create a URL to the test report.
+          The Test Estimated Duration is the estimated number of minutes for the execution of the test, This value will be used to calculate the job duration.
+        </div></td></tr><tr><td><span class="out">out </span>string[,]</td><td><b>Jobs Test Parameters</b></td><td><div class="description">Parameter information for each of the job's tests.
+          Output is a four column matrix with Job Index, Test Index, Parameter Name and Parameter Value as the column headings.
+          The Job Index column corresponds to the value in the Jobs Details matrix.
+          The Test Index column corresponds to the value in the Test Paths matrix.
+          Tests with multiple parameters will have a row for each parameter, with the same Test Index value over multiple rows.
+        </div></td></tr><tr><td><span class="out">out </span>string</td><td><b>Suite Status</b></td><td><div class="description">Indicates the current status of the automation suite: Pending, Started, Ended or Failed to Start</div></td></tr><tr><td><span class="out">out </span>string</td><td><b>Suite Result</b></td><td><div class="description">Indicate the result of the suite: Error, Failed, Succeeded</div></td></tr><tr><td><span class="out">out </span>string</td><td><b>Remaining Jobs</b></td><td><div class="description">Indicates the number of uncompleted jobs</div></td></tr><tr><td><span class="out">out </span>DateTime</td><td><b>Start Time</b></td><td><div class="description">Indicates the date and time when the suite began execution.</div></td></tr><tr><td><span class="out">out </span>DateTime</td><td><b>End Time</b></td><td><div class="description">Indicates the date and time when the suite completed its execution. The value will be null if the execution hasn't yet ended.</div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code>
+        string suiteTemplateName, suiteName, description, type, owner, suiteStatus, suiteResult;
+        double removeJobsFromQueueAfter;
+        bool endReservationOnEnd;
+        string[,] jobsDetails, jobExecutionServers, topologyGlobalInputs, topologyRequirementsInputs, topologyAdditionalInputs, jobsTestDetails, jobsTestParameters;
+        int remainingJobs;
+        DateTime startTime, endTime;
+
+        api.GetSuiteDetails("d071cd61-f958-4002-8149-a433c6fc458a", out suiteTemplateName, out suiteName, out description, out type, out owner, out removeJobsFromQueueAfter, out endReservationOnEnd, out jobsDetails, out jobExecutionServers, out topologyGlobalInputs, out topologyRequirementsInputs, out topologyAdditionalInputs, out jobsTestDetails, out jobsTestParameters, out suiteStatus, out suiteResult, out remainingJobs, out startTime, out endTime);
+      </code></pre></div></div></div></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Stop Suite Execution" /><h3>Stop Suite Execution</h3><div class="description">Stops the execution of all the suite's jobs</div><p><b>
+          Syntax
+        </b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">void StopSuiteExecution(string suiteId)</pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>string</td><td><b>Suite Id</b></td><td><div class="description">Specify the ID of the automation suite to stop.</div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code>
+        api.StopSuiteExecution("d071cd61-f958-4002-8149-a433c6fc458a");
+      </code></pre></div></div></div></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Import Package" /><h3>Import Package</h3><div class="description">Imports a quali package into the system.</div><p><b>
+          Syntax
+        </b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">void ImportPackage(string pacakgePath)</pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>string</td><td><b>Package Path</b></td><td><div class="description">Full path to the location of the package that is going to be imported</div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code>
+        string packagePath  = @"c:\temp\package.zip";
+
+        api.ImportPackage(packagePath);
+      </code></pre></div></div></div></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Export Package" /><h3>Export Package</h3><div class="description">Export a quali package into the system.</div><p><b>
+          Syntax
+        </b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">void ExportPackage(string packageSavePath, string[] topologiesNames)</pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>string</td><td><b>Save Path</b></td><td><div class="description">Full file path to the location to where the package is going to be exported. Overwrites the file if exists.</div></td></tr><tr><td>string[,]</td><td><b>Topologies</b></td><td><div class="description">Names of the topologies to include in the package</div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code>
+        string packageSavePath  = @"c:\temp\package.zip";
+
+        api.ExportPackage(packageSavePath, new[] {"topo1","topo2"} );
+      </code></pre></div></div></div></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Enqueue Custom Job" /><h3>Enqueue Custom Job</h3><div class="description">Creates a new custom job, attaches it to a new AdHoc suite, and adds it to the job queue.</div><p><b>
+          Syntax
+        </b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">void EnqueueCustomJob(string name, string description, string[] executionServers, LoggingProfile loggingProfile, double estimatedDuration, bool stopOnFail, bool stopOnError, string[,] testPaths, string[,] testParameters, string topologyName, string[,] topologyGlobalInputs, string[,] topologyRequirementsInputs, string[,] topologyAdditionalInputs, double durationTimeBuffer, EmailNotifications emailNotifications, string type, out string jobId)</pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>string</td><td><b>Job Name</b></td><td><div class="description">Specify the name of the job. (Limited to 50 characters)</div></td></tr><tr><td>string</td><td><b>Description</b></td><td><div class="description">Provide a short description of the job. (Limited to 500 characters)</div></td></tr><tr><td>string[,]</td><td><b>Execution Servers</b></td><td><div class="description">Specify a list of one or more execution servers for running the job.
+          Leave empty to run the job on any available execution server.
+        </div></td></tr><tr><td>string</td><td><b>Logging Profile</b></td><td><div class="description">Indicate which logging profile to use when executing the job's tests.
+          None, All, Results, Measurements and Results
+        </div></td></tr><tr><td>int</td><td><b>Estimated Duration</b></td><td><div class="description">Specify the time (in minutes) it will take to complete the job
+          -1 indicates that the duration will be calculated automatically according to the test durations.
+        </div></td></tr><tr><td>bool</td><td><b>Stop On Fail</b></td><td><div class="description">Indicate whether to stop the job execution if one of the tests fails.</div></td></tr><tr><td>bool</td><td><b>Stop On Error</b></td><td><div class="description">Indicate whether to abort the job if any test ends with an error.</div></td></tr><tr><td>string[,]</td><td><b>Test Paths</b></td><td><div class="description">Provide the full path to each of the job's tests.
+          The input should be a three column matrix with Index, Test Path, and Test Estimated Duration as the column headings.
+          If you omit the column headings, use empty values for the top row.
+          The index column should be a run of unique numbers that specifies the order of the tests. The test index will be used as the test identifier in the Test Parameters input matrix.
+          The test path column should contain the full details about the location of the test, for example: TestShell\Tests\Shared\Validation\TestCase1.
+          The Test Estimated Duration is the estimated number of minutes for the execution of the test, This value will be used to calculate the job duration.
+        </div></td></tr><tr><td>string[,]</td><td><b>Test Parameters</b></td><td><div class="description">Specify the input parameters for each of the job's tests.
+          Input should be a three column matrix with Index, Parameter Name, and Parameter Value as the column headings.
+          If you omit the column headings, leave an empty row.
+          The Index column corresponds to the test index from the Test Path matrix.
+          If a test has multiple inputs, there will be a row with the same index value for each required parameter.
+        </div></td></tr><tr><td>string</td><td><b>Topology Name</b></td><td><div class="description">Specify which topology to attach to the job (Optional)</div></td></tr><tr><td>string[,]</td><td><b>Topology Global Inputs</b></td><td><div class="description">Provide a List of input parameters and parameter values for the attached topology (Optional).
+          Input should be a three column matrix with Name, Value, and Possible Values as the column headings.
+          If you omit the column headings, use empty values for the top row.
+          If any of the parameters have predefined values, they will be displayed in the Possible Values column. This column is only relevant when retrieving information.
+        </div></td></tr><tr><td>string[,]</td><td><b>Topology Requirements Inputs</b></td><td><div class="description">Provide requirements for specific resources that must be included in the topology (Optional).
+          Input should be a five column matrix with Resource Path, Name, Value, Type, and Possible Values as the column headings.
+          If you omit the column headings, use empty values for the top row.
+          In the Resource Path column, specify the full path to the required resources.
+          In the Type column, indicate whether the Name and Value fields refer to resource model, quantity, or attribute.
+          If any of the parameters have predefined values, they will be displayed in the Possible Values column. This column is only relevant when retrieving information.
+        </div></td></tr><tr><td>string[,]</td><td><b>Topology Additional Inputs</b></td><td><div class="description">Provide a list of additional input parameters and values for the attached topology (Optional).
+          Input should be a four column matrix with Resource Path, Name, Value, and Possible Values as the column headings.
+          If you omit the column headings, use empty values for the top row.
+          In the Resource Path column, specify the full path to the required resources.
+          If any of the parameters have predefined values, they will be displayed in the Possible Values column. This column is only relevant when retrieving information.
+        </div></td></tr><tr><td>int</td><td><b>Duration Time Buffer</b></td><td><div class="description">Indicates the number of minutes to be added to the duration estimation.
+          Note that this parameter is used only when "Estimated Duration" is calculated automatically.
+        </div></td></tr><tr><td>string</td><td><b>Email Notification</b></td><td><div class="description">Specify notification trigger settings:  None, Errors Only, Suite and Errors, or All.</div></td></tr><tr><td>string</td><td><b>Type</b></td><td><div class="description">Indicates the automation suite type. Default value: TestShell</div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code>
+        string jobId;
+
+        api.EnqueueCustomJob("job1", "job description", null, QualiAPI.UserModel.LoggingProfile.Results, 5, false, false,
+        // test paths
+        new string[,] { { "Index", "Test Path" }, { "1", "TestShell\\Tests\\Shared\\TestWithInputs" }},
+        // test params
+        new string[,] { { "Index", "Parameter Name", "Parameter Value" },
+                        { "1"    , "InStr",          "a"},
+                        { "2"    , "InNum",          "1"},
+                        { "3"    , "InStrVect",      "['b', 'c', 'd']"},
+                        { "4"    , "InNumVect",      "[2, 3, 4]"},
+                        { "5"    , "InStrMat",       "['e', 'f', 'g';'h', 'i', 'j';]"},
+                        { "6"    , "InNumMat",       "[5, 6, 7;8, 9, 10;]"}
+        },
+        null,
+        // topology global inputs
+        new string[,] { { "Name", "Value", "Possible Values" } },
+        // topology requirements inputs
+        new string[,] { { "Resource Path", "Name", "Value", "Type", "Possible Values" } },
+        // topology additional inputs
+        new string[,] { { "Resource Path", "Name", "Value", "Possible Values" } },
+        3, QualiAPI.UserModel.EmailNotifications.None, "TestShell",out jobId);
+      </code></pre></div></div></div><p><b>Output</b><br /><li><b>jobId</b></li><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre class="preStyle"><code>
+        "001f4d30-31e1-4e56-b02e-d332c6fb91e4"	
+      </code></pre></div></div></div></p></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Get Job Details" /><h3>Get Job Details</h3><div class="description">Retrieves all details and parameters for a specified job.</div><p><b>
+          Syntax
+        </b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">void GetJobDetails(string jobId, out string suiteId, out string name, out string description, out string ownerName, out JobState jobState, out JobResult jobResult, out string jobFailureDescription, out DateTime enqueueTime, out DateTime startTime, out DateTime endTime, out double elapsedTime, out double estimatedDuration, out double durationTimeBuffer, out bool useAnyExecutionServer, out string[] executionServers, out string selectedExecutionServer, out LoggingProfile loggingProfile, out bool stopOnFail, out bool stopOnError, out DateTime expectedStartTime, out string[,] testDetails, out string[,] testParameters, out string topologyName, out string[,] topologyGlobalInputs, out string[,] topologyRequirementsInputs, out string[,] topologyAdditionalInputs)</pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>string</td><td><b>Job Id</b></td><td><div class="description">Specify the ID of the job to retrieve</div></td></tr><tr><td><span class="out">out </span>string</td><td><b>Job Name</b></td><td><div class="description">The name of the job associated with the specified job ID. (Limited to 50 characters)</div></td></tr><tr><td><span class="out">out </span>string</td><td><b>Description</b></td><td><div class="description">The description of the job associated with the specified job ID. (Limited to 500 characters)</div></td></tr><tr><td><span class="out">out </span>string</td><td><b>Owner Name</b></td><td><div class="description">The name of the user who created this job.</div></td></tr><tr><td><span class="out">out </span>string</td><td><b>Job State</b></td><td><div class="description">The current state of the job. Pending, Scheduled, Running, Done, Stopped, Cancelled or Failed to Start.</div></td></tr><tr><td><span class="out">out </span>string</td><td><b>Job Result</b></td><td><div class="description">The result of the job execution: Completed, Passed, Failed, Ended With Error, Ended With An Exception, Manually Stopped, Terminated, or Not Started</div></td></tr><tr><td><span class="out">out </span>string</td><td><b>Job Failure Description</b></td><td><div class="description">A short description of the reason for a failed execution. This value will be empty for a running job or for completed jobs that ran without problems.</div></td></tr><tr><td><span class="out">out </span>DateTime</td><td><b>Enqueue Time</b></td><td><div class="description">The date and time when the job was enqueued.</div></td></tr><tr><td><span class="out">out </span>DateTime</td><td><b>Start Time</b></td><td><div class="description">The date and time when the job started running. The value will be null if the job is still Pending or Failed to Start.</div></td></tr><tr><td><span class="out">out </span>DateTime</td><td><b>End Time</b></td><td><div class="description">The date and time when the job stopped running. The value will be null if the job has not yet ended.</div></td></tr><tr><td><span class="out">out </span>int</td><td><b>Elapsed Time</b></td><td><div class="description">The number of minutes that have elapsed since the job started.
+          Returns -1 if the job hasn't started yet.
+          Returns the job duration (in minutes) if the job has already finished.
+        </div></td></tr><tr><td><span class="out">out </span>bool</td><td><b>Use Any Execution Server</b></td><td><div class="description">Indicates that the job owner allowed the job to run on any available server.</div></td></tr><tr><td><span class="out">out </span>string[,]</td><td><b>Execution Servers</b></td><td><div class="description">A list of Execution server names that were selected by the user for this job. This parameter will have values only if the job is still pending.</div></td></tr><tr><td><span class="out">out </span>string</td><td><b>Selected Execution Server</b></td><td><div class="description">The execution server that was selected to run the job.</div></td></tr><tr><td><span class="out">out </span>string</td><td><b>Logging Profile</b></td><td><div class="description">The selected logging profile for this job’s tests. None, All, Results, Measurements and Results</div></td></tr><tr><td><span class="out">out </span>bool</td><td><b>Stop On Fail</b></td><td><div class="description">Indicate whether to stop the job execution if one of the tests fails.</div></td></tr><tr><td><span class="out">out </span>bool</td><td><b>Stop On Error</b></td><td><div class="description">Indicate whether to abort the job if any test ends with an error.</div></td></tr><tr><td><span class="out">out </span>string[,]</td><td><b>Test Details</b></td><td><div class="description">Information about the tests that were selected for this job.
+          Output is an eight column matrix with Index, Test Path, Test Estimated Duration, State, Start Time, End Time, Result, and Report ID as the column headings.
+          The Index column will display a run of unique numbers.
+          The Test Path column indicates the location of each test.
+          The Test Estimated Duration is the estimated number of minutes for the execution of the test, This value will be used to calculate the job duration.
+          The State column indicates the current status for each test.
+          The Start Time and End Time columns indicate the execution start and end times for each test.
+          The Result column indicates the test status.
+          Concatenate the Report ID column value to the relevant IP address to create a URL to the test report.
+        </div></td></tr><tr><td><span class="out">out </span>string[,]</td><td><b>Test Parameters</b></td><td><div class="description">Parameter information for each of the job's tests.
+          Output will be a three column matrix with Index, Parameter Name and Parameter Value as the column headings.
+          The Index column corresponds to the index value in the Test Details matrix.
+          Tests with multiple parameters will have a row for each parameter, with the same index value over multiple rows.
+        </div></td></tr><tr><td><span class="out">out </span>string</td><td><b>Topology Name</b></td><td><div class="description">Indicates the name of the attached topology.</div></td></tr><tr><td><span class="out">out </span>string[,]</td><td><b>Topology Global Inputs</b></td><td><div class="description">Indicates the topology’s input parameters and parameter values.
+          Output is a three column matrix with Name, Value, and Possible Values as the column headings.
+          If any of the parameters have predefined values, they will be displayed in the Possible Values column.
+        </div></td></tr><tr><td><span class="out">out </span>string[,]</td><td><b>Topology Requirements Inputs</b></td><td><div class="description">Indicates requirements for specific topology resources.
+          Output is a five column matrix with Resource Path, Name, Value, Type, and Possible Values as the column headings.
+          The Resource Path column indicates the full path to the added topology resources.
+          The Type column indicates whether the Name and Value fields refer to resource model, quantity, or attribute.
+          If any of the parameters have predefined values, they will be displayed in the Possible Values column.
+        </div></td></tr><tr><td><span class="out">out </span>string[,]</td><td><b>Topology Additional Inputs</b></td><td><div class="description">Indicates additional resource input parameters and values for the attached topology.
+          Output is a four column matrix with Resource Path, Name, Value, and Possible Values as the column headings.
+          The Resource Path column indicates the full path to the added topology resources.
+          If any of the parameters have predefined values, they will be displayed in the Possible Values column.
+        </div></td></tr><tr><td><span class="out">out </span>int</td><td><b>Duration Time Buffer</b></td><td><div class="description">Indicates the number of minutes to be added to the duration estimation.</div></td></tr><tr><td><span class="out">out </span>DateTime</td><td><b>Expected Start Time</b></td><td><div class="description">The expected execution start date and time for a job that is currently pending.</div></td></tr><tr><td><span class="out">out </span>string</td><td><b>Suite Id</b></td><td><div class="description">The ID of the suite that was used to create this job.</div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code>
+        string suiteId, name, description, ownerName, jobFailureDescription, selectedExecutionServer, topologyName;
+        JobState jobState;
+        JobResult jobResult;
+        DateTime enqueueTime, startTime, endTime, expectedStartTime;
+        double elapsedTime, estimatedDuration, durationTimeBuffer;
+        bool useAnyExecutionServer, stopOnFail, stopOnError;
+        string[] executionServers;
+        LoggingProfile loggingProfile;
+        string[,] testDetails, testParameters, topologyGlobalInputs, topologyRequirementsInputs, topologyAdditionalInputs;
+
+        api.GetJobDetails("c0b859fb-554b-43c5-be04-9d3d55b818f0", out suiteId, out name, out description, out ownerName, out jobState, out jobResult, out jobFailureDescription, out enqueueTime, out startTime, out endTime, out elapsedTime, out estimatedDuration, out durationTimeBuffer, out useAnyExecutionServer, out executionServers, out selectedExecutionServer, out loggingProfile, out stopOnFail, out stopOnError, out expectedStartTime, out testDetails, out testParameters, out topologyName, out topologyGlobalInputs, out topologyRequirementsInputs, out topologyAdditionalInputs);
+      </code></pre></div></div></div></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Get Queued Jobs" /><h3>Get Queued Jobs</h3><div class="description">Retrieves the list of all jobs that are currently in the job queue.</div><p><b>
+          Syntax
+        </b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">void GetQueuedJobs(out string[,] queuedJobs)</pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td><span class="out">out </span>string[,]</td><td><b>Queued Jobs</b></td><td><div class="description">Output is an seven column matrix with Job ID, Job Name, Owner, Enqueue Time, Job Details Url, Expected Start Time, and Suite Id as the column headings.
+          Job ID indicates the ID of each job.
+          Job Name indicates the name of the job.
+          Suite Id indicates the ID of the automation suite that was used to create each job.
+          Owner indicates name of the user who initiated each job.
+          Enqueue Time indicates the date and time that each job was added to the queue.
+          Expected Start Time indicates each job's expected execution start date and time.
+          Job Details Url indicates the link address to the REST function that retrieves the full details of the job.
+        </div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code>
+        string[,] queuedJobs;
+        api.GetQueuedJobs(out queuedJobs);
+      </code></pre></div></div></div></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Get Running Jobs" /><h3>Get Running Jobs</h3><div class="description">Retrieves the list of all jobs that are currently running</div><p><b>
+          Syntax
+        </b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">void GetRunningJobs(out string[,] runningJobs)</pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td><span class="out">out </span>string[,]</td><td><b>Running Jobs</b></td><td><div class="description">Output is a nine column matrix with Job ID, JobName, Owner, Start Time, Execution Server, Current Test, Current Test ID, Total Tests, and suiteId as the column headings.
+          Job ID indicates the ID of each running job.
+          JobName indicates the name of the job.
+          suiteId indicates the ID of the automation suite that was used to create each job.
+          Owner indicates name of the user who initiated each job.
+          Start Time indicates when each job was started.
+          Execution Server indicates the name of the execution server running each job.
+          Current Test indicates the test that is currently being executed for each running job.
+          Current Test ID indicates the ID of the currently running test.
+          Total Tests indicates the number of tests for each running job.
+        </div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code>
+        string[,] runningJobs;
+        api.GetRunningJobs(out runningJobs);
+      </code></pre></div></div></div></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Stop Job Execution" /><h3>Stop Job Execution</h3><div class="description">Stops the execution of the job</div><p><b>
+          Syntax
+        </b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">void StopJobExecution(string jobId)</pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>string</td><td><b>Job Id</b></td><td><div class="description">Specify the ID of the job to stop.</div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code>
+          api.StopJobExecution("c0b859fb-554b-43c5-be04-9d3d55b818f0");
+      </code></pre></div></div></div></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Get Reservation Attachment" /><h3>Get Reservation Attachment</h3><div class="description">Get Reservation Attachment</div><p><b>
+          Syntax
+        </b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">void GetReservationAttachment(string reservationId, string fileName, string saveToFolderPath)</pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>string</td><td><b>Reservation Id</b></td><td><div class="description">Specify the id of the reservation.</div></td></tr><tr><td>string</td><td><b>Filename</b></td><td><div class="description">Specify the requested filename in the reservation.</div></td></tr><tr><td>string</td><td><b>Save Path</b></td><td><div class="description">Specify the path where the file will be saved</div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code>
+          api.GetReservationAttachment("c0b859fb-554b-43c5-be04-9d3d55b818f0","report","c:\");
+      </code></pre></div></div></div></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Get Reservation Attachments Details" /><h3>Get Reservation Attachments Details</h3><div class="description">Get Reservation Attachments Details</div><p><b>
+          Syntax
+        </b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">void GetReservationAttachmentsDetails(string reservationId, out string[] filenames)</pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>string</td><td><b>Reservation Id</b></td><td><div class="description">Specify the id of the reservation.</div></td></tr><tr><td><span class="out">out </span>string[,]</td><td><b>Filenames</b></td><td><div class="description">List of reservation's saved attachments.</div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code>
+		  string[] filenames;
+          api.GetReservationAttachmentsDetails("c0b859fb-554b-43c5-be04-9d3d55b818f0",out filenames);
+      </code></pre></div></div></div></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Attach File To Reservation" /><h3>Attach File To Reservation</h3><div class="description">Attach File To Reservation</div><p><b>
+          Syntax
+        </b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">void AttachFileToReservation(string reservationId, string filePath, string saveFileAs, bool overwriteIfExists)</pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>string</td><td><b>Reservation Id</b></td><td><div class="description">Specify the id of the reservation.</div></td></tr><tr><td>string</td><td><b>File path</b></td><td><div class="description">Specify the path of the file that needs to be uploaded as a form-data param named ‘QualiPackage’.</div></td></tr><tr><td>string</td><td><b>Save file as</b></td><td><div class="description">Save file as</div></td></tr><tr><td>string</td><td><b>Overwrite If Exists</b></td><td><div class="description">Overwrite If Exists</div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code>
+          api.AttachFileToReservation("c0b859fb-554b-43c5-be04-9d3d55b818f0","c:\report.ext","report1",true);
+      </code></pre></div></div></div></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /><div class="command"><a name="Delete File From Reservation" /><h3>Delete File From Reservation</h3><div class="description">Delete File From Reservation</div><p><b>
+          Syntax
+        </b></p><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code><p class="syntax"><div style="color:Black;"><pre class="syntaxPreStyle">void DeleteFileFromReservation(string reservationId, string fileName)</pre></div></p></code></pre></div></div></div><p><b>
+        Parameters
+      </b></p><table><tr><th style="width: 60pt;">Type</th><th style="width: 150pt;">Name</th><th>Description</th></tr><tr><td>string</td><td><b>Reservation Id</b></td><td><div class="description">Specify the id of the reservation.</div></td></tr><tr><td>string</td><td><b>Filename</b></td><td><div class="description">Specify the fullname of the file to delete</div></td></tr></table><div><p><b>Example</b><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetContainerCode" dir="ltr"><div style="color:Black;"><pre><code>
+          api.DeleteFileFromReservation("c0b859fb-554b-43c5-be04-9d3d55b818f0","report1");
+      </code></pre></div></div></div></p></div></div><a class="iref" href="#TOC">back to TOC</a><HR /></div></body></html>
