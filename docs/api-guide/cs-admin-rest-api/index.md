@@ -18,6 +18,13 @@ Manage CloudShell domains.
 - [Edit domain](./edit-domain.md)
 - [Delete domain](./delete-domain.md)
 
+**DomainSettings:**
+
+Manage per-domain settings (e.g., notification preferences).
+
+- [Get domain settings](./get-domain-settings.md)
+- [Update domain setting](./update-domain-setting.md)
+
 **DomainBlueprints:**
 
 Manage a domain's blueprints.

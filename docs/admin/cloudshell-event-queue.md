@@ -162,3 +162,5 @@ In the above example, Cloudshell Server would only emit events related to new us
 **WorkOrderResourceUnsolvedEvent**:   This event is fired when a concrete match for a work order resource is unselected in an assembly lab sandbox.
 
 **WorkOrderResourceRemovedEvent**:   This event happens when a work order resource is removed in an assembly lab sandbox.
+
+**AttributeChangedEvent** *(Added in CloudShell 2024.1)*:   This event is triggered when an attribute value is changed on a resource. Useful for monitoring attribute changes via MQ integration for audit or automation purposes.
