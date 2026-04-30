@@ -4,6 +4,8 @@ sidebar_position: 4
 
 # Create Execution Server On Any Linux VM Using Docker
 
+*Since CloudShell 2026.1*, the Docker Execution Server image uses a consolidated Dockerfile with Python 3 virtualenv support and TLS/Kerberos compatibility fixes, providing a more robust and consistent deployment.
+
 **Prerequisites:**
 
 - Docker installed on any Docker supported Linux VM: https://docs.docker.com/engine/install/
@@ -48,6 +50,24 @@ sudo docker run -d --name ExecutionServer --restart unless-stopped -p 5093:5093 
     :::warning
     Inside PARAMS="" you need to specify your Cloudshell server IP, Cloudshell Admin username, password, desirable name for the Execution Server. Example: -e PARAMS="192.168.25.4,admin,admin,ES-Docker"
     :::
+
+## Passing Attributes to the Docker Execution Server
+
+*Added in CloudShell 2026.1*
+
+The Docker Execution Server supports passing CloudShell attributes to containers via environment variables. This allows you to configure driver behavior through CloudShell attributes when running in Docker.
+
+To pass attributes, add `-e` flags to the `docker run` command using the format `ATTRIBUTE_<AttributeName>=<Value>`:
+
+```javascript
+sudo docker run -d --name ExecutionServer --restart unless-stopped -p 5093:5093 \
+  -e PARAMS="192.168.25.4,admin,admin,ES-Docker" \
+  -e ATTRIBUTE_MyAttribute="MyValue" \
+  -e ATTRIBUTE_Region="US-East" \
+  -v ~/customer.config:/opt/ExecutionServer/customer.config qualihub/executionserver
+```
+
+These attributes are then available to drivers and scripts running on this Execution Server, enabling environment-specific configuration without modifying the driver code.
 :::info
 - If you want to specify the version, you can edit the end of the command to include the version number. Example: qualihub/executionserver:2024.1 
 - See what versions are available here: https://hub.docker.com/r/qualihub/executionserver/tags
