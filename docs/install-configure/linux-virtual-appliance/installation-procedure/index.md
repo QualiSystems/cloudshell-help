@@ -10,6 +10,6 @@ This chapter explains how to install **CloudShell Execution Server Linux Virtual
    - For Linux KVM users: [Create VM using the qcow2 Image File (KVM)](./create-es-from-qcow2.md)
    - If you already have an available Linux VM: 
       - [Create the Linux Execution Server from a Script](./create-es-from-script.md)
-      - [Create Execution Server On Any Linux VM Using Docker](./create-es-from-docker.md)(CloudShell 2024.1 and above)
+      - [Create Execution Server On Any Linux VM Using Docker](./create-es-from-docker.md)
 
 2. Perform the post installation procedures described here: [Post Installation](../../install-configure/linux-virtual-appliance/post-installation).
