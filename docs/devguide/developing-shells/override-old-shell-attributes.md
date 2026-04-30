@@ -6,6 +6,10 @@ sidebar_position: 13
 
 By default, CloudShell does not allow updating a shell if the newer version is missing attributes that exist on the old version. However, you can remove this limitation to allow the update of an old shell containing attributes that have been deprecated or are no longer in use.
 
+:::tip Supported Standards (2026.1+)
+Starting with CloudShell 2026.1, the `deprecate_properties` capability is supported across **all** CloudShell resource standards, including broadband media, cloud provider, custom service, generic resource, traffic generator, and others. Previously, this capability only worked on a subset of core standards, which could cause `shellfoundry install` to fail when using deprecated property definitions on other standards.
+:::
+
 ## Allowing overriding attributes on the shell's root
 
 1. Open the `shell-definition.yaml` in your preferred IDE:
