@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Sandboxes Dashboard
 
-The Sandboxes dashboard displays current, future and historic sandboxes that either you created or were created by users within domains you are permitted to access. It provides an overview of the current state of each sandbox, and a central place from which you can view and access sandboxes. Sandboxes are colored according to their present state - see [Filtering sandbox state (Administrators only)](#filtering-sandbox-state-administrators-only).
+The Sandboxes dashboard displays current, future and historic sandboxes that either you created or were created by users within domains you are permitted to access. It provides an overview of the current state of each sandbox, and a central place from which you can view and access sandboxes. Sandboxes are colored according to their present state - see [Filtering sandbox state](#filtering-sandbox-state).
 
 There are two types of environments in CloudShell Pro and both are displayed and managed from the Sandboxes dashboard: regular time-limited sandbox environments and persistent environments that have no end time. For details, see [Persistent Sandboxes Overview](../../intro/features/persistent-sandboxes.md).
 
@@ -65,9 +65,9 @@ The **Sandboxes** filter group in the left sidebar allows users to select one or
 - Scheduled - Shows only sandboxes scheduled for a future time
 - Historic - Shows only completed sandboxes
 
-#### Filtering sandbox state (Administrators only)
+#### Filtering sandbox state
 
-The State filter group is visible to administrators only. It enables you to filter sandboxes by their current state. The sandbox state can be one of the following:
+The State filter group enables you to filter sandboxes by their current state. It is visible for all domain types. The sandbox state can be one of the following:
 
 | State | Description |
 | --- | --- |

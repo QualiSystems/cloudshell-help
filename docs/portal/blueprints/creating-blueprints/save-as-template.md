@@ -17,6 +17,8 @@ This article explains how to create a template from an existing blueprint. This 
     
     ![](/Images/CloudShell-Portal/Lab-Management/Environments/BlueprintSaveAsTemplate.png)
     
+3. In the confirmation dialog, click **OK** to proceed.
+    
     The new blueprint template is displayed.
     
 3. Make the necessary changes.

@@ -89,7 +89,7 @@ In the above example, Cloudshell Server would only emit events related to new us
 
 **UserUpdatedEvent**:   This event happens when a user's details are updated.
 
-**LoginEvent**:   This event is triggered when a user logs in.
+**LoginEvent**:   This event is triggered when a user logs in. *Since CloudShell 2024.1.0.2596*, login events are also generated for SSO (Single Sign-On) logins. Previously, login events were only created for direct authentication.
 
 **UserGroupAddedEvent**:   This event occurs when a new user group is added.
 
@@ -164,3 +164,9 @@ In the above example, Cloudshell Server would only emit events related to new us
 **WorkOrderResourceRemovedEvent**:   This event happens when a work order resource is removed in an assembly lab sandbox.
 
 **AttributeChangedEvent** *(Added in CloudShell 2024.1)*:   This event is triggered when an attribute value is changed on a resource. Useful for monitoring attribute changes via MQ integration for audit or automation purposes.
+
+## Domain ID in Events
+
+*Added in CloudShell 2024.1.0.2596*
+
+Certain server events now include a `DomainId` field in their message payload. This simplifies event handling and filtering by domain in MQ consumers, allowing subscribers to process only events relevant to a specific domain without additional API lookups.

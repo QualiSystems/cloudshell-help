@@ -27,6 +27,18 @@ If any of the below 3rd Party components are missing from your computer, the Clo
 - VCTools++ (For all users. Required for compiling Python dependencies)
 - Apache HTTP Server 2.4.66
 
+:::info Version updates in CloudShell 2026.1
+The following bundled prerequisites were updated:
+- **Apache httpd**: 2.4.65 → 2.4.66 (OpenSSL security fixes)
+- **Node.js**: 22.15.0 → 24.14.0 LTS (used by Sandbox API Gateway and Server Proxy)
+- **Erlang OTP**: 25.2.3 → 26.2.3 (RabbitMQ prerequisite)
+- **MongoDB**: 6.0.4 → 7.0.30
+
+The CloudShell installer handles these upgrades automatically. Standalone MongoDB deployments must be upgraded manually to 7.0 before upgrading CloudShell.
+
+**Breaking change**: Node.js 24 dropped 32-bit (x86) Windows support. The x86 Node.js prerequisite has been removed from the CloudShell installer. Only 64-bit Windows is supported.
+:::
+
 ## Optional
 
 - Studio, Authoring: LabView runtime and LabView tools are available as separate installations. For details, contact your Quali Account Manager.

@@ -13,6 +13,10 @@ The **Activity Feed** also enables you to display information for a specific com
 - The retention period for sandbox events data is controlled by the `SandboxLogAndOutputSaveDuration` admin configuration key.
 :::
 
+:::tip
+Text in the Activity Feed pane is selectable and can be copied to the clipboard. This also applies to other side panels such as resource information and connection properties.
+:::
+
 **To open the Activity Feed:**
 
 1. In the **Diagram** toolbar of the Sandbox workspace, click the ![](/Images/CloudShell-Portal/Lab-Management/Reservations/ResActivityPaneButton.png) button.
