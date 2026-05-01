@@ -17,8 +17,8 @@ This article explains how to create an exact copy of an existing blueprint, incl
     
     The new blueprint's properties page is displayed.
     
-3. Rename the blueprint as appropriate and make the necessary changes.
-4. Click **Update** at the bottom right of the page.
+4. Rename the blueprint as appropriate and make the necessary changes.
+5. Click **Update** at the bottom right of the page.
 
 ## Related Topics
 

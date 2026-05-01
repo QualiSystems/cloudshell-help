@@ -21,7 +21,7 @@ This article explains how to create a template from an existing blueprint. This 
     
     The new blueprint template is displayed.
     
-3. Make the necessary changes.
+4. Make the necessary changes.
 
 ## Related Topics
 
