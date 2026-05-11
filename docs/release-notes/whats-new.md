@@ -5,19 +5,6 @@ sidebar_position: 2
 What's New
 ==========
 
-## What's New in Version 2026.2
-
-### Export Diagram as PNG
-Export sandbox diagrams as PNG images directly from the browser. Available in the diagram toolbar under Export → PNG.
-
-### AI Chat Integration
-Configurable AI Assistant menu item in the Portal. Administrators can set a URL template to integrate with AI chat services.
-
-### Server Default Changes
-- `UseRabbitServer` now defaults to `false`
-- `UseEmbeddedSandboxService` now defaults to `false`
-
-
 ## What's New in Version 2026.1
 
 ### Maintenance Window By Domain
@@ -39,9 +26,19 @@ Updated bundled third-party components:
 Node.js 24 dropped 32-bit (x86) Windows support. The x86 Node.js prerequisite has been removed from the installer.
 :::
 
+### Export Diagram as PNG
+Export sandbox diagrams as PNG images directly from the browser. Available in the diagram toolbar under Export → PNG.
+
+### AI Chat Integration
+Configurable AI Assistant menu item in the Portal. Administrators can set a URL template to integrate with AI chat services.
+
+### Server Default Changes
+- `UseRabbitServer` now defaults to `false`
+- `UseEmbeddedSandboxService` now defaults to `false`
+
 ### Docker Execution Server
 - Consolidated Dockerfile with Python 3 virtualenv and TLS/Kerberos compatibility
-- Support for passing attributes to Docker Execution Server containers
+- Support for passing Execution Server Selector attributes to Docker containers
 
 ---
 

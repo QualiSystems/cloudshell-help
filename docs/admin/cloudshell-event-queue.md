@@ -26,6 +26,10 @@ To experiment with this, it is possible to emit messages to the RabbitMQ service
 In RabbitMQ, make sure you have an exchange, and a queue.
 Bind the queue to the exchange, with a routing key.
 
+:::warning
+Starting with CloudShell 2026.1, the `UseRabbitServer` key defaults to `false`. If you are using the Server Events Queue, you must ensure `UseRabbitServer` is set to `True` in your `customer.config`.
+:::
+
 In Cloudshell Server `customer.config`, set the following keys:
 
 :::info[customer.config]

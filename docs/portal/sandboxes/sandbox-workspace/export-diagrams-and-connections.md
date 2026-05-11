@@ -16,7 +16,7 @@ This topic describes how to export a PDF file illustrating the diagram. This in
 
 ## Exporting Diagram as PNG
 
-*New in CloudShell 2026.2*
+*New in CloudShell 2026.1*
 
 You can export the sandbox diagram as a PNG image file:
 

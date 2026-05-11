@@ -55,19 +55,19 @@ sudo docker run -d --name ExecutionServer --restart unless-stopped -p 5093:5093 
 
 *Added in CloudShell 2026.1*
 
-The Docker Execution Server supports passing CloudShell attributes to containers via environment variables. This allows you to configure driver behavior through CloudShell attributes when running in Docker.
+The Docker Execution Server supports passing **Execution Server Selector** attributes via environment variables. This allows CloudShell to route commands to the correct Execution Server based on attribute matching (e.g., by region or capability).
 
 To pass attributes, add `-e` flags to the `docker run` command using the format `ATTRIBUTE_<AttributeName>=<Value>`:
 
 ```javascript
 sudo docker run -d --name ExecutionServer --restart unless-stopped -p 5093:5093 \
   -e PARAMS="192.168.25.4,admin,admin,ES-Docker" \
-  -e ATTRIBUTE_MyAttribute="MyValue" \
   -e ATTRIBUTE_Region="US-East" \
+  -e ATTRIBUTE_Location="SiteA" \
   -v ~/customer.config:/opt/ExecutionServer/customer.config qualihub/executionserver
 ```
 
-These attributes are then available to drivers and scripts running on this Execution Server, enabling environment-specific configuration without modifying the driver code.
+These attributes function as Execution Server Selectors — when a resource or App has matching selector attributes, CloudShell will route its commands to this Execution Server. For more on Execution Server selection, see [Setting Up Execution Servers to Run Commands](../../../admin/cloudshell-execution-server-configurations/setting-up-execution-servers-to-run-commands.md).
 :::info
 - If you want to specify the version, you can edit the end of the command to include the version number. Example: qualihub/executionserver:2024.1 
 - See what versions are available here: https://hub.docker.com/r/qualihub/executionserver/tags

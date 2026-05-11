@@ -826,7 +826,7 @@ The URL template can include placeholders that are replaced with context values 
 		</tr>
 		<tr>
 			<td>Version</td>
-			<td>2026.2 and above</td>
+			<td>2026.1 and above</td>
 		</tr>
 	</tbody>
 </table>

@@ -25,7 +25,7 @@ False: Use Kubernetes-based Sandbox Service
 		</tr>
 		<tr>
 			<td>Default value</td>
-			<td>False (changed from True in 2026.2). Deployments that rely on the embedded sandbox service must explicitly set this to `True`.</td>
+			<td>False (changed from True in 2026.1). Deployments that rely on the embedded sandbox service must explicitly set this to `True`.</td>
 		</tr>
 		<tr>
 			<td>Affected CloudShell Component</td>
@@ -135,7 +135,7 @@ False: Disable RabbitMQ-based server events
 		</tr>
 		<tr>
 			<td>Default value</td>
-			<td>False (changed from True in 2026.2). Deployments that rely on RabbitMQ for server events must explicitly set this to `True`.</td>
+			<td>False (changed from True in 2026.1). Deployments that rely on RabbitMQ for server events must explicitly set this to `True`.</td>
 		</tr>
 		<tr>
 			<td>Affected CloudShell Component</td>

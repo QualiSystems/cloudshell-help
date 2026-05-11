@@ -40,7 +40,7 @@ The following list includes capabilities that have been removed from CloudShell 
 | Licensing |  As of version 9.3, customers that have a Team Tier license will not be able to:  <ul><li> 1.  Have more than 50 concurrent licenses </li><li> 2.  Use white labeling </li><li> 3.  SSO to the system </li></ul> | 9.3 GA |
 | Licensing | Customers that will not have a job scheduling add-on license will not see the job scheduling tab in the portal, and will not be able to start jobs using API calls. | 9.3 GA |
 
-## Version 2026.2
+## Version 2026.1
 
 ### Server Defaults Changed
 - `UseRabbitServer` now defaults to `false` (previously `true`)
@@ -48,12 +48,10 @@ The following list includes capabilities that have been removed from CloudShell 
 
 If your deployment relies on RabbitMQ for server events or the embedded sandbox service, you must explicitly set these to `true` in your `customer.config` after upgrading.
 
-## Version 2026.1
-
 ### Node.js x86 Support Removed
 Node.js 24 dropped 32-bit (x86) Windows support. The x86 Node.js prerequisite has been removed from the CloudShell installer. Environments running 32-bit Windows for CloudShell components that require Node.js (Sandbox API Gateway) must migrate to 64-bit.
 
 ### Third-Party Component Major Version Changes
 - **Erlang OTP**: 25.2.3 → 26.2.3 — If you have custom Erlang or RabbitMQ configurations, verify compatibility after upgrade
-- **MongoDB**: 6.0.4 → 7.0.30 — If using standalone MongoDB (not installer-managed), upgrade MongoDB to 7.0.x before upgrading CloudShell
+- **MongoDB**: 6.0.4 → 7.0.30 — If using standalone MongoDB (not installer-managed), verify compatibility after upgrading CloudShell
 - **Node.js**: 22.15.0 → 24.14.0 — Major version jump; custom JS scripts in Sandbox API Gateway should be verified
