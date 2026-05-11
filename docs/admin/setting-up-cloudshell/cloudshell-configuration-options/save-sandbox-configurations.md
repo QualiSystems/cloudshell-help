@@ -46,7 +46,7 @@ You can only save a sandbox if its blueprint has the **Enable Sandbox Save** che
 - In the **Save Sandbox** area, ensure that the **Enable Sandbox Save** is checked.
 - In the **Scripts** area, ensure that **Default Sandbox Save** and **Default Sandbox Restore** scripts are included in the blueprint properties.
 
-For more information, see [Add save and restore orchestration scripts](../../../portal/blueprints/creating-blueprints/configure-orchestration.md#add-save-and-restore-orchestration-scripts).
+For more information, see [Add save and restore orchestration scripts](../../../portal/blueprints/creating-blueprints/blueprint-properties/configure-orchestration.md#add-save-and-restore-orchestration-scripts).
 
 ## vCenter/OpenStack advanced saving configurations
 

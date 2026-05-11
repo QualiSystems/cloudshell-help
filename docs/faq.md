@@ -44,12 +44,11 @@ Yes. Our All Help Versions help page is provided specifically for this purpose. 
 
 We have an extensive videos library featuring everything from introduction videos to webinars and customer interviews. These videos can be found in the following online resources:
 
-- [Quali's Courses U Portal](https://courses.quali.com/): Role-based courses featuring video tutorials, exercises and quizzes.
 - [Quali's YouTube channel](https://www.youtube.com/user/QualiSystems/playlists): Instructional videos, demos, product implementations, case studies, chalk sessions and more
 - [Quali's Resource Center](https://www.quali.com/resource-center/): Webinars, presentations, customer testimonials, use cases, integrations
 - CloudShell Help: [Short Development Videos](./devguide/reference/short-dev-videos.md)
 
-**How do I get access to the Support portal, Download Center, Quali U Courses portal, forums and idea box?**
+**How do I get access to the Support portal and Download Center?**
 
 Quali Services registration is available for Quali customers, partners and employees. Registration approval may take up to 48 hours. Once approved, you will have access to the different Quali services.
 

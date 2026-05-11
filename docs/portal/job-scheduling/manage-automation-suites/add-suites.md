@@ -33,8 +33,10 @@ An automation suite must have at least one job that has a test. However, an auto
     
     <table>
     <thead>
+        <tr>
         <th>Option</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>
@@ -160,8 +162,10 @@ Jobs do not run in parallel if they exceed the number of available job slots in 
     
     <table>
         <thead>
+            <tr>
             <th>Option</th>
             <th>Description</th>
+            </tr>
         </thead>
         <tbody>
             <tr>

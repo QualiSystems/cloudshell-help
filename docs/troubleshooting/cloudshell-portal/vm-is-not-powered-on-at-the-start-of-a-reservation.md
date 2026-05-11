@@ -25,7 +25,7 @@ When starting the sandbox, the setup orchestration doesn't automatically power o
 
 **To configure your blueprint to deploy App VMs:**
 
-- Configure your **Setup** script to deploy Apps, see [Use scripts to set up and tear down blueprints](../../portal/blueprints/creating-blueprints/configure-orchestration.md#use-scripts-to-set-up-and-tear-down-blueprints)
+- Configure your **Setup** script to deploy Apps, see [Use scripts to set up and tear down blueprints](../../portal/blueprints/creating-blueprints/blueprint-properties/configure-orchestration.md#use-scripts-to-set-up-and-tear-down-blueprints)
 
 ## Related Topics
 

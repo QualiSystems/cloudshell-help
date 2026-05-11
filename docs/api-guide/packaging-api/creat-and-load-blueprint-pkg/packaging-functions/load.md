@@ -17,5 +17,5 @@ sidebar_position: 2
 **Sample:**
 
 ```javascript
-`packageEditor.load('c:\\temp\\TestPackage.zip')`
+packageEditor.load('c:\\temp\\TestPackage.zip')
 ```

@@ -38,9 +38,11 @@ In the above response, **1006** is the internal application error code for the s
 
 <table>
 <thead>
+    <tr>
     <th>API Status</th>
     <th>Status</th>
     <th>Description</th>
+    </tr>
 </thead>
 <tbody>
     <tr>
@@ -117,9 +119,11 @@ In the above response, **1006** is the internal application error code for the s
 
 <table>
 <thead>
+    <tr>
     <th>API Result</th>
     <th>Result</th>
     <th>Description</th>
+    </tr>
 </thead>
 <tbody>
     <tr>

@@ -16,8 +16,10 @@ To change the sandbox properties:
 
 <table>
     <thead>
+        <tr>
         <th>Field</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>

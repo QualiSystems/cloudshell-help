@@ -19,5 +19,5 @@ sidebar_position: 9
 
 **Sample**:
 ```javascript
-`packageEditor.add_driver_to_model('Generic Chassis Model','ResDriver' ,'C:\\Work\\Drivers\\Resource-Service\\ResourceDriver.Compilation\\ResourceDriver.dll')`
+packageEditor.add_driver_to_model('Generic Chassis Model','ResDriver' ,'C:\\Work\\Drivers\\Resource-Service\\ResourceDriver.Compilation\\ResourceDriver.dll')
 ```

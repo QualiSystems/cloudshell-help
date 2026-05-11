@@ -10,8 +10,10 @@ The following attributes would be used to define the Azure VM From Gallery Image
 
 <table>
     <thead>
+        <tr>
         <th>Attribute</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>

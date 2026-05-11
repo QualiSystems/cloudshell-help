@@ -28,4 +28,4 @@ The main files in the script are:
 - [Managing Assets](./../../admin/cloudshell-manage-dashboard/managing-automation/managing-assets.md)
 - [Managing App Templates](../../admin/cloudshell-manage-dashboard/manage-app-templates/index.md)
 - [Create a Blueprint](../../portal/blueprints/creating-blueprints/create-blueprint.md)
-- [Configure Blueprint Orchestration](../../portal/blueprints/creating-blueprints/configure-orchestration.md)
+- [Configure Blueprint Orchestration](../../portal/blueprints/creating-blueprints/blueprint-properties/configure-orchestration.md)

@@ -18,5 +18,5 @@ sidebar_position: 5
 
 **Sample**:
 ```javascript
-`packageEditor.add_parent_model('Generic Ethernet Port',['Generic Chassis Model', 'Bridge Generic Model'])`
+packageEditor.add_parent_model('Generic Ethernet Port',['Generic Chassis Model', 'Bridge Generic Model'])
 ```

@@ -23,8 +23,10 @@ Components based on 2nd Gen Shells inherit their settings from their Shells. For
 
 <table>
     <thead>
+        <tr>
         <th>Attribute</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>
@@ -66,9 +68,11 @@ The following table explains how to configure each attribute type:
 
 <table>
     <thead>
+        <tr>
         <th>Attribute Type</th>
         <th>Description</th>
         <th>Valid Values</th>
+        </tr>
     </thead>
     <tbody>
         <tr>
@@ -141,8 +145,10 @@ The following table details the attribute rules:
 
 <table>
     <thead>
+        <tr>
         <th>Rule</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>

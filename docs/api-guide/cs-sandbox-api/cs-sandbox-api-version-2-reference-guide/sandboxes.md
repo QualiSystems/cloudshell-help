@@ -57,7 +57,8 @@ The `sandboxes` method returns a list of all the sandboxes and the actions that 
          "self":{
             "href":"/sandboxes/11491c80-6f79-4e9c-b592-78242c6dc698",
             "method":"GET",
-            "name":"get a sandbox' details"            
+            "name":"get a sandbox' details",
+            "templated":true
          },
          "components":{
             "href":"/sandboxes/11491c80-6f79-4e9c-b592-78242c6dc698/components",
@@ -66,7 +67,8 @@ The `sandboxes` method returns a list of all the sandboxes and the actions that 
          "stop":{
             "href":"/sandboxes/11491c80-6f79-4e9c-b592-78242c6dc698/stop",
             "method":"POST",
-            "name":"stop a sandbox"
+            "name":"stop a sandbox",
+            "templated":true
          },
          "all":{
             "href":"/sandboxes",

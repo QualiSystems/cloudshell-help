@@ -20,8 +20,10 @@ It is possible to configure new connectivity requirements or modify the properti
     
 <table>
     <thead>
+        <tr>
         <th>Field</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>

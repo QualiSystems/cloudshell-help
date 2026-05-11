@@ -49,12 +49,6 @@ python -m pip install shellfoundry
 
 For additional information, see [Shellfoundry](./reference/shellfoundry.md).
 
-## Install and setup the CloudShell SDK
-
-![CloudShell](/Images/Devguide-intro/Intro-Setting-up-the-Development_2.png)
-
-To deploy, test and debug your automation you’ll need to have a working CloudShell SDK. The CloudShell SDK is free for developers and can be downloaded from our [community website](https://info.quali.com/cloudshell-developer-edition-download). Follow the instructions on the [download page](http://info.quali.com/cloudshell-developer-edition-download) to get a local development installation of CloudShell up and running. Please make sure you use an SDK version that matches your CloudShell production version for which you are developing Shells and Orchestration.
-
 ## (Optional) Install the CloudShell PyCharm plugin (PyCharm)
 
 If you’ve selected to use PyCharm as your IDE, you can take advantage of the community contributed CloudShell plugin. Follow the installation instructions on the [project repo](https://github.com/QualiSystemsLab/CloudShell-PyCharm-Plugin). From the *Step-by-step installation guide* section perform steps 1-6 only. Don’t continue to configure the plugin usage further yet, we’ll get to that part later in this guide.

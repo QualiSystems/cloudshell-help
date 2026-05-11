@@ -17,8 +17,10 @@ vCenter 5.0.0 and above works only with CloudShell 2022.1 EA and above.
 :::
 <table>
     <thead>
+        <tr>
         <th>Release</th>
         <th>Capabilities added</th>
+        </tr>
     </thead>
     <tbody>
         <tr>
@@ -222,8 +224,10 @@ This version is supported for CloudShell 2022.1 and up.
 
 <table>
     <thead>
+        <tr>
         <th>Release</th>
         <th>Capabilities added</th>
+        </tr>
     </thead>
     <tbody>
         <tr>
@@ -246,8 +250,10 @@ Works with cloud provider resource based on vCenter VMWare shell 4.1.0 and above
 
 <table>
     <thead>
+        <tr>
         <th>Release</th>
         <th>Capabilities added</th>
+        </tr>
     </thead>
     <tbody>
         <tr>
@@ -332,8 +338,10 @@ Works with cloud provider resource based on vCenter VMWare shell 4.1.0 and above
 
 <table>
     <thead>
+        <tr>
         <th>Release</th>
         <th>Capabilities added</th>
+        </tr>
     </thead>
     <tbody>
         <tr>
@@ -387,8 +395,10 @@ Works with cloud provider resource based on vCenter VMWare shell 4.1.0 and above
 
 <table>
     <thead>
+        <tr>
         <th>Release</th>
         <th>Capabilities added</th>
+        </tr>
     </thead>
     <tbody>
         <tr>
@@ -450,8 +460,10 @@ Supported on CloudShell 2022.2 GA and up
 
 <table>
     <thead>
+        <tr>
         <th>Release</th>
         <th>Capabilities added</th>
+        </tr>
     </thead>
     <tbody>
         <tr>
@@ -472,8 +484,10 @@ Supported on CloudShell 2022.2 GA and up
 
 <table>
     <thead>
+        <tr>
         <th>Release</th>
         <th>Capabilities added</th>
+        </tr>
     </thead>
     <tbody>
         <tr>
@@ -511,8 +525,10 @@ Supported on CloudShell 2022.2 GA and up
 
 <table>
     <thead>
+        <tr>
         <th>Release</th>
         <th>Capabilities added</th>
+        </tr>
     </thead>
     <tbody>
         <tr>

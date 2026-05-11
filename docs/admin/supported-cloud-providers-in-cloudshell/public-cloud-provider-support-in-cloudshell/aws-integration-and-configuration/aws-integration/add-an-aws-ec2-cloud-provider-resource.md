@@ -34,9 +34,11 @@ We strongly recommend using the 2<sup>nd</sup> Gen version of the shell, which p
 
     <table>
         <thead>
+            <tr>
             <th>Attribute</th>
             <th>Supporting shell version</th>
             <th>Description</th>
+            </tr>
         </thead>
         <tbody>
             <tr>

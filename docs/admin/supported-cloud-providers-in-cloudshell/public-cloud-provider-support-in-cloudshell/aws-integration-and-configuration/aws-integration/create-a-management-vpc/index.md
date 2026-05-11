@@ -25,8 +25,10 @@ We strongly recommend using the new and improved [AWS 2nd Gen shell](https://git
     
     <table>
         <thead>
+            <tr>
             <th>Parameter</th>
             <th>Description</th>
+            </tr>
         </thead>
         <tbody>
             <tr>

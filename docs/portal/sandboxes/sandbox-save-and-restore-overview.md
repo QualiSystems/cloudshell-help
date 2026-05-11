@@ -28,7 +28,7 @@ Since **Save and Restore** is a CloudShell paid add-on, you are required to purc
 
 ## Recommended workflow
 
-1. Enable Save and Restore in a blueprint. See [Define the Blueprint's Properties](../blueprints/creating-blueprints/blueprint-properties.md).
+1. Enable Save and Restore in a blueprint. See [Define the Blueprint's Properties](../blueprints/creating-blueprints/blueprint-properties/blueprint-properties.md).
 2. [Reserve a blueprint from the Catalog](../blueprints/blueprint-catalog.md#reserve-a-blueprint-from-the-catalog)
 3. [Save a Sandbox](./sandbox-workspace/save-sandbox.md)
 4. Manage saved sandboxes in the [Saved Sandboxes Dashboard](./saved-sandboxes/index.md)

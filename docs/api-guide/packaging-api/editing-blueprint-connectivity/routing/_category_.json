@@ -1,0 +1,8 @@
+{
+  "label": "Routing",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "This section provides an overview of the APIs available for editing blueprint connectivity using routes. To learn more about these APIs, check out the following articles:"
+  }
+}

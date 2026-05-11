@@ -10,9 +10,11 @@ The following attributes would be used to define the VCenter Deploy VM From Link
 
 <table>
     <thead>
+        <tr>
         <th>Attribute</th>
         <th>vCenter shell version</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>

@@ -15,9 +15,11 @@ If you want to deploy a third party application from a Marketplace image, make s
 :::
 <table>
     <thead>
+        <tr>
         <th>Attribute</th>
         <th>Azure shell version</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>

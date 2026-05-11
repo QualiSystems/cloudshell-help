@@ -140,7 +140,7 @@ session.ExecuteCommand(reservationId=reservation_id,
                        printOutput=False)
 ```
 
-Add the script as a blueprint script to CloudShell and attach it to your blueprint. If this is a setup script, set the script’s **Script Type** to **Setup** to ensure that CloudShell will execute it automatically when a user reserves the blueprint. For additional information, see CloudShell help’s [Configure Blueprint Orchestration](../../portal/blueprints/creating-blueprints/configure-orchestration.md).
+Add the script as a blueprint script to CloudShell and attach it to your blueprint. If this is a setup script, set the script’s **Script Type** to **Setup** to ensure that CloudShell will execute it automatically when a user reserves the blueprint. For additional information, see CloudShell help’s [Configure Blueprint Orchestration](../../portal/blueprints/creating-blueprints/blueprint-properties/configure-orchestration.md).
 :::note
 You can have only one setup script attached to a blueprint and this will be the default for Azure that provisions and configures the resources. By overriding this script with another of type setup, you will potentially lose this functionality. Alternatively, you could create your own Setup script, which is based on the out-of-the-box one and includes the custom routing code - see [CloudShell’s OOB Orchestration](../develop-orch-scripts/cs-oob-orch/index.md)
 :::

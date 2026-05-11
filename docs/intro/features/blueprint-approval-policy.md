@@ -37,4 +37,4 @@ Blueprint designers can configure certain blueprints to require approval before 
 ## Related Topics
 
 - [Blueprint Catalog](../../portal/blueprints/blueprint-catalog.md)
-- [Define the Blueprint's Properties](../../portal/blueprints/creating-blueprints/blueprint-properties.md)
+- [Define the Blueprint's Properties](../../portal/blueprints/creating-blueprints/blueprint-properties/blueprint-properties.md)

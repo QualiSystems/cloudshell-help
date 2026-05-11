@@ -8,8 +8,10 @@ To enable CloudShell to deploy and manage the lifecycle of OpenStack instances, 
 
 <table>
     <thead>
+        <tr>
         <th>Requirement</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>

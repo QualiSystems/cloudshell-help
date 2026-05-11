@@ -62,8 +62,10 @@ The **Name** field is mandatory. The **Description** field is optional. Resource
     
 <table>
     <thead>
+        <tr>
         <th>Property</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>

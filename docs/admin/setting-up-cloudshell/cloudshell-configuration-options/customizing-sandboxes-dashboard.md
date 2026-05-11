@@ -4,14 +4,14 @@ sidebar_position: 9
 
 # Customizing The Sandboxes Dashboard
 
-You can display [sandbox inputs](../../../portal/blueprints/creating-blueprints/add-user-inputs.md) in the [sandboxes dashboard](../../../portal/sandboxes/sandboxes-dashboard.md), and use them to filter sandboxes.
+You can display [sandbox inputs](../../../portal/blueprints/creating-blueprints/blueprint-properties/add-user-inputs.md) in the [sandboxes dashboard](../../../portal/sandboxes/sandboxes-dashboard.md), and use them to filter sandboxes.
 
 Requirements:
 - [Configure an attribute](../../../admin/setting-up-cloudshell/inventory-operations/resource-data-modeling-for-1st-gen-shells/attributes.md) to have the following rules:
     - For an [attribute sandbox filter](#sandbox-filter): *Sandbox Filter*
     - For custom column: *Custom Sandbox Column*
     ![attribute rules](/Images/Admin-Guide/CustomizingSandboxesDashboard/AttributeRules.png)
-- Sandbox inputs must be [bound to an attribute](../../../portal/blueprints/creating-blueprints/link-global-input-to-attribute.md)
+- Sandbox inputs must be [bound to an attribute](../../../portal/blueprints/creating-blueprints/blueprint-properties/link-global-input-to-attribute.md)
 
 ## Sandbox Filter
 

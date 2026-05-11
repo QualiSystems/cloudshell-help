@@ -66,6 +66,5 @@ The following table lists Windows OS requirements for each CloudShell server and
 - [Software Requirements (Linux VA)](../linux-virtual-appliance/linux-es-va-overview/sw-requirements.md)
 - [Requirements (High Availability Deployment)](../ha-installation/overview/requirements.md)
 - [Requirements (QualiX)](../qualix/qualix-overview/qualix-requirements.md)
-- [Requirements (CloudShell SDK)](../cloudshell-sdk/overview/requirements.md)
 - [Requirements (Insight BI)](../cs-insight-bi/install-insight/requirements.md)
 - [Requirements (New Job Scheduling)](../cloudshell-suite/new-jss-install-config/requirements.md)

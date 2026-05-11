@@ -18,8 +18,10 @@ The information available for each driver or test in the **Executions** page inc
 
 <table>
     <thead>
+        <tr>
         <th>Property</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>

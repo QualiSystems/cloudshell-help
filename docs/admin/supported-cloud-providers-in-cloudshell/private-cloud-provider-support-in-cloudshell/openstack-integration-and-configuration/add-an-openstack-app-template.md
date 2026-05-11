@@ -29,9 +29,11 @@ The App template defines the settings and configurations of the VM to be deploye
 
     <table>
         <thead>
+            <tr>
             <th>Field</th>
             <th>Required</th>
             <th>Description</th>
+            </tr>
         </thead>
         <tbody>
             <tr>
@@ -87,8 +89,10 @@ The App template defines the settings and configurations of the VM to be deploye
 
         <table>
             <thead>
+                <tr>
                 <th>Attribute</th>
                 <th>Description</th>
+                </tr>
             </thead>
             <tbody>
                 <tr>
@@ -175,8 +179,10 @@ The App template defines the settings and configurations of the VM to be deploye
 
 <table>
     <thead>
+        <tr>
         <th>Attribute</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>
@@ -327,12 +333,14 @@ To configure Ansible to connect to certified hosts only (Linux VMs with a valid 
     
     ![](/Images/CloudShell-Portal/Manage/AppResource.png)
     :::important
-    To help sandbox end-users connect to the VM, it is recommended to include the **User** and **Password** in the blueprint's instructions. For additional information, see [Add Instructions](../../../../portal/blueprints/creating-blueprints/add-instructions.md).
+    To help sandbox end-users connect to the VM, it is recommended to include the **User** and **Password** in the blueprint's instructions. For additional information, see [Add Instructions](../../../../portal/blueprints/creating-blueprints/blueprint-properties/add-instructions.md).
     :::
 <table>
     <thead>
+        <tr>
         <th>Attribute</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>

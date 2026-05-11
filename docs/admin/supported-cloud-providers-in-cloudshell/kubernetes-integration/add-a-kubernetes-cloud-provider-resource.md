@@ -30,8 +30,10 @@ The Kubernetes Cloud Provider 2nd Gen shell enables the deployment of Kubernetes
     
 <table>
     <thead>
+        <tr>
         <th>Attribute</th>
         <th>Description</th>
+        </tr>
     </thead>
     <tbody>
         <tr>

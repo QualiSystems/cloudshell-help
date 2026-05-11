@@ -18,5 +18,5 @@ sidebar_position: 1
 
 **Sample:**
 ```javascript
-`packageEditor.create('c:\\temp\\TestPackage.zip')`
+packageEditor.create('c:\\temp\\TestPackage.zip')
 ```

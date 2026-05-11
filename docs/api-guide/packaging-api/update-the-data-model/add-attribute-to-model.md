@@ -20,5 +20,5 @@ Description: Attach an existing attribute to a specific model.
 **Sample**:
 
 ```javascript
-`packageEditor.attach_attribute_to_model('Generic Chassis Model','attribute1',False,'')`
+packageEditor.attach_attribute_to_model('Generic Chassis Model','attribute1',False,'')
 ```
