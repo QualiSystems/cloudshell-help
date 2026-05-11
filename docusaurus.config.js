@@ -68,7 +68,8 @@ const config = {
           },
           routeBasePath: '/',
           sidebarPath: './sidebars.js',
-          includeCurrentVersion: true, //show the Next verions when working locally, this will be changed to false as part of the deployment process
+          includeCurrentVersion: true,
+          onlyIncludeVersions: ['current'],
           lastVersion: 'current', 
           versions: {
             current: {
@@ -135,12 +136,12 @@ const config = {
             className: 'header-github-link',
             position: 'right',
           },
-          {
-            type: 'docsVersionDropdown',
-            position: 'left',
-            //dropdownItemsAfter: [{to: '/versions'}],
-            dropdownActiveClassDisabled: true,
-          },
+          // Version dropdown removed - single "current" version strategy
+          // {
+          //   type: 'docsVersionDropdown',
+          //   position: 'left',
+          //   dropdownActiveClassDisabled: true,
+          // },
         ],
       },
       footer: {
