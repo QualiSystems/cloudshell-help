@@ -40,6 +40,22 @@ Configurable AI Assistant menu item in the Portal. Administrators can set a URL 
 - Consolidated Dockerfile with Python 3 virtualenv and TLS/Kerberos compatibility
 - Support for passing Execution Server Selector attributes to Docker containers
 
+### Application Links Management API
+New TestShell API methods for managing application links (SSH, Telnet, RDP, etc.) on resources programmatically. Administrators can disable specific links per resource or set family-wide defaults:
+- `SetResourceApplicationLinks` — Set which application links are disabled for a specific resource
+- `GetResourceApplicationLinks` — Get the current application links configuration for a resource
+- `SetFamilyDefaultApplicationLinks` — Set default disabled links for an entire resource family
+- `GetFamilyDefaultApplicationLinks` — Get the family-level default configuration
+
+### GetResourceReservations API
+New TestShell API method that returns the list of reservations (current and historical) associated with a given resource.
+
+### Improved Abstract Resource Resolution Diagnostics
+When a blueprint reservation fails due to unresolvable abstract resources or route conflicts, the error message now includes detailed diagnostics — showing which resources could not be resolved, which routes failed, and the specific conflicts that prevented resolution.
+
+### Bug Fixes
+- Fixed an issue where App deployment could retry unnecessarily on certain internal errors instead of failing fast with clear diagnostics.
+
 ---
 
 ## Version 2025.1
