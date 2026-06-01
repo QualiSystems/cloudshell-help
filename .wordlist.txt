@@ -1627,3 +1627,17 @@ performant
 executionserver
 ipv
 AllowUpdate
+lookups
+auditable
+unsolving
+unicode
+Dockerfile
+LTS
+FolderName
+TopologyApp
+ServiceName
+GetResourceReservations
+RemoveEntitiesFromTopology
+copiable
+dialogs
+unresolvable
