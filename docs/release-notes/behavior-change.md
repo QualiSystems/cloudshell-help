@@ -12,6 +12,7 @@ The following list includes changes in behavior introduced into CloudShell by ve
 
 | Capability | Change Description | Changed in Release |
 | --- | --- | --- |
+| Server defaults changed | `UseRabbitServer` now defaults to `false` (previously `true`). `UseEmbeddedSandboxService` now defaults to `false` (previously `true`). If your deployment relies on these, explicitly set them to `true` in `customer.config` after upgrading. | 2026.1 |
 | Erlang version | To accommodate the upgraded RabbitMQ version (3.12.0) explained in [Breaking Changes](#breaking-changes), Erlang will be upgraded to newer version 25.2.3. This version is the maximum supported Erlang for RabbitMQ 3.12.0. Environment variables will be updated accordingly to suite the new Erlang version. | 2023.2 EA |
 | Python versions | In 2022.1, we updated CloudShell's Python versions as follows: <ul><li>2.7.10 to 2.7.18</li><li>3.7.1 to 3.9.9</li></ul> This may cause unexpected behavior if your automation is constrained to use specific Python versions.  | 2022.1 EA |
 | API tokens | To increase security and to allow time-based token access to the system, CloudShell 2022.1 generates a time-based token for our product APIs. In previous versions, only some of the APIs used such a system. By default, the token validity period is 5 hours. Notes: <ul><li>For security reasons, we recommend upgrading to the latest version of CloudShell.</li><li> Existing automation code utilizing Quali API may need to be updated to regenerate a token whenever an existing token expires.</li></ul> | 2022.1 EA |
@@ -34,6 +35,8 @@ The following list includes capabilities that have been removed from CloudShell 
 
 | Capability | Change Description | Changed in Release |
 | --- | --- | --- |
+| Node.js x86 support removed | Node.js 24 dropped 32-bit (x86) Windows support. The x86 Node.js prerequisite has been removed from the CloudShell installer. Environments running 32-bit Windows for components requiring Node.js (Sandbox API Gateway) must migrate to 64-bit. | 2026.1 |
+| Third-party component upgrades | Erlang OTP 25.2.3 → 26.2.3, MongoDB 6.0.4 → 7.0.30, Node.js 22.15.0 → 24.14.0. If using standalone MongoDB (not installer-managed), verify compatibility after upgrading CloudShell. | 2026.1 |
 | RabbitMQ upgrade and new location | The embedded RabbitMQ will be upgraded to version 3.12.0 and relocated from …\\Cloudshell\\Server\\SandboxService\\RabbitMQ\\rabbitmq\_server\\ to …\\Cloudshell\\Server\\Rabbit. <br/> Any custom settings like password must be manually relocated to the new destination files. Previous versions of RabbitMQ can be uninstalled.  | 2023.2 EA |
 | Partial search in sandboxes dashboard | The **Sandboxes** dashboard does not support searching by partial sandbox id. | 2021.2 EA |
 | Blueprint Build Type - Deprecation | It is no longer possible to reserve blueprints of type _Build_. | 2020.2 GA |

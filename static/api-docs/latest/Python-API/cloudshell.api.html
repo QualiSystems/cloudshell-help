@@ -1,24 +1,22 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>cloudshell.api package &mdash; CloudShell Python API 2024.1.0.187973 documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+  <title>cloudshell.api package &mdash; CloudShell Python API 2026.1.0.189799 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
 
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="_static/jquery.js?v=5d32c60e"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=7adfad2a"></script>
-        <script src="_static/doctools.js?v=888ff710"></script>
-        <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=5ab1c360"></script>
+      <script src="_static/doctools.js?v=888ff710"></script>
+      <script src="_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -30,16 +28,13 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-
-          
-          
-          <a href="index.html" class="icon icon-home">
-            CloudShell Python API
-              <img src="_static/just_logo.png" class="logo" alt="Logo"/>
-          </a>
-              <div class="version">
-                2024.1
-              </div>
+  <a href="index.html" class="icon icon-home">
+    CloudShell Python API
+      <img src="_static/just_logo.png" class="logo" alt="Logo"/>
+  </a>
+    <div class="version">
+      2026.1
+    </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
@@ -47,6 +42,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
+
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">cloudshell.api package</a><ul>
@@ -149,6 +145,11 @@
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.AppVisualConnector.Attributes"><code class="docutils literal notranslate"><span class="pre">AppVisualConnector.Attributes</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.AppVisualConnector.Source"><code class="docutils literal notranslate"><span class="pre">AppVisualConnector.Source</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.AppVisualConnector.Target"><code class="docutils literal notranslate"><span class="pre">AppVisualConnector.Target</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#cloudshell.api.cloudshell_api.ApplicationLinksListInfo"><code class="docutils literal notranslate"><span class="pre">ApplicationLinksListInfo</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.ApplicationLinksListInfo.DisabledApplicationLinks"><code class="docutils literal notranslate"><span class="pre">ApplicationLinksListInfo.DisabledApplicationLinks</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.ApplicationLinksListInfo.InheritingFromFamily"><code class="docutils literal notranslate"><span class="pre">ApplicationLinksListInfo.InheritingFromFamily</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#cloudshell.api.cloudshell_api.Attribute"><code class="docutils literal notranslate"><span class="pre">Attribute</span></code></a></li>
@@ -288,8 +289,10 @@
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetCategoriesOfTopology"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetCategoriesOfTopology()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetCurrentReservations"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetCurrentReservations()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetDomainDetails"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetDomainDetails()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetDomainSettings"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetDomainSettings()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetEnvironmentCommands"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetEnvironmentCommands()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetExecutionServers"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetExecutionServers()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetFamilyDefaultApplicationLinks"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetFamilyDefaultApplicationLinks()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetFolderContent"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetFolderContent()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetGroupDomains"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetGroupDomains()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetGroupsDetails"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetGroupsDetails()</span></code></a></li>
@@ -304,6 +307,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetReservationStatus"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetReservationStatus()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetReservationWorkOrderDetails"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetReservationWorkOrderDetails()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetReservationsLiveStatus"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetReservationsLiveStatus()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetResourceApplicationLinks"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetResourceApplicationLinks()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetResourceAvailability"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetResourceAvailability()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetResourceAvailabilityInTimeRange"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetResourceAvailabilityInTimeRange()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetResourceCommands"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetResourceCommands()</span></code></a></li>
@@ -312,6 +316,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetResourceList"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetResourceList()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetResourceLiveStatus"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetResourceLiveStatus()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetResourceMappings"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetResourceMappings()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetResourceReservations"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetResourceReservations()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetResourcesAttributeValues"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetResourcesAttributeValues()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetResourcesLabelsInReservation"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetResourcesLabelsInReservation()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetResourcesLabelsInTopology"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetResourcesLabelsInTopology()</span></code></a></li>
@@ -361,6 +366,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.RemoveAttributeRestrictedValues"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.RemoveAttributeRestrictedValues()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.RemoveConnectorsFromReservation"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.RemoveConnectorsFromReservation()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.RemoveCustomShellAttribute"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.RemoveCustomShellAttribute()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.RemoveEntitiesFromTopology"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.RemoveEntitiesFromTopology()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.RemoveGroupsFromDomain"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.RemoveGroupsFromDomain()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.RemovePermittedEditorsFromTopology"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.RemovePermittedEditorsFromTopology()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.RemovePermittedUsersFromReservation"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.RemovePermittedUsersFromReservation()</span></code></a></li>
@@ -390,10 +396,12 @@
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.SetConnectorsInReservation"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.SetConnectorsInReservation()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.SetConsoleForXModem"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.SetConsoleForXModem()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.SetCustomShellAttribute"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.SetCustomShellAttribute()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.SetFamilyDefaultApplicationLinks"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.SetFamilyDefaultApplicationLinks()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.SetGroupDomainPermissions"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.SetGroupDomainPermissions()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.SetReservationLiveStatus"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.SetReservationLiveStatus()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.SetReservationResourcePosition"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.SetReservationResourcePosition()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.SetReservationServicePosition"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.SetReservationServicePosition()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.SetResourceApplicationLinks"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.SetResourceApplicationLinks()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.SetResourceLiveStatus"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.SetResourceLiveStatus()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.SetResourceShareLevel"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.SetResourceShareLevel()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.SetResourceSharedState"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.SetResourceSharedState()</span></code></a></li>
@@ -415,11 +423,13 @@
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.TerminateReservation"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.TerminateReservation()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.UnMapPorts"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.UnMapPorts()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.UnarchiveDomain"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.UnarchiveDomain()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.UndeployApps"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.UndeployApps()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.UnlockResource"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.UnlockResource()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.UnlockResources"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.UnlockResources()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.UnselectWorkOrderResource"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.UnselectWorkOrderResource()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.UpdateConnectionWeight"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.UpdateConnectionWeight()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.UpdateConnectorAliasInReservation"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.UpdateConnectorAliasInReservation()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.UpdateDomainSetting"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.UpdateDomainSetting()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.UpdateDomainTopologiesFolder"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.UpdateDomainTopologiesFolder()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.UpdateDriver"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.UpdateDriver()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.UpdateGroup"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.UpdateGroup()</span></code></a></li>
@@ -442,6 +452,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.UpdateUsersLimitations"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.UpdateUsersLimitations()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.WriteMessageToReservationOutput"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.WriteMessageToReservationOutput()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.create_headers"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.create_headers()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.login_required"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.login_required()</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CommandExecutionCancelledResultInfo"><code class="docutils literal notranslate"><span class="pre">CommandExecutionCancelledResultInfo</span></code></a><ul>
@@ -542,6 +553,10 @@
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.DeploymentServiceInfo.Driver"><code class="docutils literal notranslate"><span class="pre">DeploymentServiceInfo.Driver</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.DeploymentServiceInfo.Model"><code class="docutils literal notranslate"><span class="pre">DeploymentServiceInfo.Model</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.DeploymentServiceInfo.Name"><code class="docutils literal notranslate"><span class="pre">DeploymentServiceInfo.Name</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#cloudshell.api.cloudshell_api.DictionaryInfo"><code class="docutils literal notranslate"><span class="pre">DictionaryInfo</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.DictionaryInfo.Settings"><code class="docutils literal notranslate"><span class="pre">DictionaryInfo.Settings</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#cloudshell.api.cloudshell_api.Domain"><code class="docutils literal notranslate"><span class="pre">Domain</span></code></a><ul>
@@ -713,6 +728,12 @@
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.GetResourceLabelResponseInfo.Type"><code class="docutils literal notranslate"><span class="pre">GetResourceLabelResponseInfo.Type</span></code></a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#cloudshell.api.cloudshell_api.GetResourceReservationsResponseInfo"><code class="docutils literal notranslate"><span class="pre">GetResourceReservationsResponseInfo</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.GetResourceReservationsResponseInfo.Reservations"><code class="docutils literal notranslate"><span class="pre">GetResourceReservationsResponseInfo.Reservations</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.GetResourceReservationsResponseInfo.ResourceName"><code class="docutils literal notranslate"><span class="pre">GetResourceReservationsResponseInfo.ResourceName</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.GetResourceReservationsResponseInfo.TotalCount"><code class="docutils literal notranslate"><span class="pre">GetResourceReservationsResponseInfo.TotalCount</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#cloudshell.api.cloudshell_api.GetResourcesLabelsInReservationResponseInfo"><code class="docutils literal notranslate"><span class="pre">GetResourcesLabelsInReservationResponseInfo</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.GetResourcesLabelsInReservationResponseInfo.Resources"><code class="docutils literal notranslate"><span class="pre">GetResourcesLabelsInReservationResponseInfo.Resources</span></code></a></li>
 </ul>
@@ -770,6 +791,11 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#cloudshell.api.cloudshell_api.InputNameValue"><code class="docutils literal notranslate"><span class="pre">InputNameValue</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cloudshell.api.cloudshell_api.Item"><code class="docutils literal notranslate"><span class="pre">Item</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.Item.Key"><code class="docutils literal notranslate"><span class="pre">Item.Key</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.Item.Value"><code class="docutils literal notranslate"><span class="pre">Item.Value</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#cloudshell.api.cloudshell_api.LogicalResourceInfo"><code class="docutils literal notranslate"><span class="pre">LogicalResourceInfo</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.LogicalResourceInfo.Attributes"><code class="docutils literal notranslate"><span class="pre">LogicalResourceInfo.Attributes</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.LogicalResourceInfo.Description"><code class="docutils literal notranslate"><span class="pre">LogicalResourceInfo.Description</span></code></a></li>
@@ -1098,6 +1124,15 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#cloudshell.api.cloudshell_api.ResourceMappingsInfo"><code class="docutils literal notranslate"><span class="pre">ResourceMappingsInfo</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.ResourceMappingsInfo.Mapping"><code class="docutils literal notranslate"><span class="pre">ResourceMappingsInfo.Mapping</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#cloudshell.api.cloudshell_api.ResourceReservationEntry"><code class="docutils literal notranslate"><span class="pre">ResourceReservationEntry</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.ResourceReservationEntry.EndTime"><code class="docutils literal notranslate"><span class="pre">ResourceReservationEntry.EndTime</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.ResourceReservationEntry.OwnerName"><code class="docutils literal notranslate"><span class="pre">ResourceReservationEntry.OwnerName</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.ResourceReservationEntry.ReservationId"><code class="docutils literal notranslate"><span class="pre">ResourceReservationEntry.ReservationId</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.ResourceReservationEntry.ReservationName"><code class="docutils literal notranslate"><span class="pre">ResourceReservationEntry.ReservationName</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.ResourceReservationEntry.StartTime"><code class="docutils literal notranslate"><span class="pre">ResourceReservationEntry.StartTime</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.ResourceReservationEntry.Status"><code class="docutils literal notranslate"><span class="pre">ResourceReservationEntry.Status</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#cloudshell.api.cloudshell_api.ResourceShortInfo"><code class="docutils literal notranslate"><span class="pre">ResourceShortInfo</span></code></a><ul>
@@ -1467,8 +1502,10 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#cloudshell.api.cloudshell_api.WorkOrderResourceInfo"><code class="docutils literal notranslate"><span class="pre">WorkOrderResourceInfo</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.WorkOrderResourceInfo.Comment"><code class="docutils literal notranslate"><span class="pre">WorkOrderResourceInfo.Comment</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.WorkOrderResourceInfo.Family"><code class="docutils literal notranslate"><span class="pre">WorkOrderResourceInfo.Family</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.WorkOrderResourceInfo.LastUpdateTime"><code class="docutils literal notranslate"><span class="pre">WorkOrderResourceInfo.LastUpdateTime</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.WorkOrderResourceInfo.LastUpdateUsername"><code class="docutils literal notranslate"><span class="pre">WorkOrderResourceInfo.LastUpdateUsername</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.WorkOrderResourceInfo.Models"><code class="docutils literal notranslate"><span class="pre">WorkOrderResourceInfo.Models</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.WorkOrderResourceInfo.ResolvedResourceFullName"><code class="docutils literal notranslate"><span class="pre">WorkOrderResourceInfo.ResolvedResourceFullName</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.WorkOrderResourceInfo.ResourceRequestFullName"><code class="docutils literal notranslate"><span class="pre">WorkOrderResourceInfo.ResourceRequestFullName</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.WorkOrderResourceInfo.State"><code class="docutils literal notranslate"><span class="pre">WorkOrderResourceInfo.State</span></code></a></li>
@@ -1497,6 +1534,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#cloudshell.api.common_cloudshell_api.CommonResponseInfo"><code class="docutils literal notranslate"><span class="pre">CommonResponseInfo</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cloudshell.api.common_cloudshell_api.UnauthorizedError"><code class="docutils literal notranslate"><span class="pre">UnauthorizedError</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#cloudshell.api.common_cloudshell_api.XMLWrapper"><code class="docutils literal notranslate"><span class="pre">XMLWrapper</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.common_cloudshell_api.XMLWrapper.getAllChildNode"><code class="docutils literal notranslate"><span class="pre">XMLWrapper.getAllChildNode()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.common_cloudshell_api.XMLWrapper.getAllChildNodeByAttr"><code class="docutils literal notranslate"><span class="pre">XMLWrapper.getAllChildNodeByAttr()</span></code></a></li>
@@ -1511,6 +1549,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.common_cloudshell_api.XMLWrapper.parseXML"><code class="docutils literal notranslate"><span class="pre">XMLWrapper.parseXML()</span></code></a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#cloudshell.api.common_cloudshell_api.get_http_status_message"><code class="docutils literal notranslate"><span class="pre">get_http_status_message()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#cloudshell.api.common_cloudshell_api.retry"><code class="docutils literal notranslate"><span class="pre">retry()</span></code></a></li>
 </ul>
 </li>
@@ -1989,6 +2028,24 @@
 </dd></dl>
 
 <dl class="py class">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.ApplicationLinksListInfo">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cloudshell.api.cloudshell_api.</span></span><span class="sig-name descname"><span class="pre">ApplicationLinksListInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xml_object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">find_prefix</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#ApplicationLinksListInfo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.ApplicationLinksListInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cloudshell.api.common_cloudshell_api.CommonResponseInfo" title="cloudshell.api.common_cloudshell_api.CommonResponseInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommonResponseInfo</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.ApplicationLinksListInfo.DisabledApplicationLinks">
+<span class="sig-name descname"><span class="pre">DisabledApplicationLinks</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.ApplicationLinksListInfo.DisabledApplicationLinks" title="Permalink to this definition">¶</a></dt>
+<dd><p>:type : list[str]</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.ApplicationLinksListInfo.InheritingFromFamily">
+<span class="sig-name descname"><span class="pre">InheritingFromFamily</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.ApplicationLinksListInfo.InheritingFromFamily" title="Permalink to this definition">¶</a></dt>
+<dd><p>:type : bool</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
 <dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.Attribute">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cloudshell.api.cloudshell_api.</span></span><span class="sig-name descname"><span class="pre">Attribute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">RestrictedValue</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#Attribute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.Attribute" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#cloudshell.api.common_cloudshell_api.CommonAPIRequest" title="cloudshell.api.common_cloudshell_api.CommonAPIRequest"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommonAPIRequest</span></code></a></p>
@@ -2156,7 +2213,7 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.CloudShellAPISession">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cloudshell.api.cloudshell_api.</span></span><span class="sig-name descname"><span class="pre">CloudShellAPISession</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">host</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">username</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">domain</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timezone</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'UTC'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datetimeformat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'MM/dd/yyyy</span> <span class="pre">HH:mm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">token_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8029</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">uri</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/ResourceManagerApiService/'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cloudshell_api_scheme</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'http'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quali_api_scheme</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'http'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quali_api_port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">9000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quali_api_uri</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/Api/'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_webapi_endpoint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_attempts</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cloudshell.api.cloudshell_api.</span></span><span class="sig-name descname"><span class="pre">CloudShellAPISession</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">host</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">username</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">domain</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timezone</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'UTC'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datetimeformat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'MM/dd/yyyy</span> <span class="pre">HH:mm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">token_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8029</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">uri</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/ResourceManagerApiService/'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cloudshell_api_scheme</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'http'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quali_api_scheme</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'http'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quali_api_port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">9000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quali_api_uri</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/Api/'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_webapi_endpoint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_attempts</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#cloudshell.api.common_cloudshell_api.CommonAPISession" title="cloudshell.api.common_cloudshell_api.CommonAPISession"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommonAPISession</span></code></a></p>
 <dl class="py method">
 <dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.CloudShellAPISession.ActivateTopology">
@@ -3777,6 +3834,20 @@ Important: DeleteReservation does not perform teardown and therefore does not re
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.CloudShellAPISession.GetDomainSettings">
+<span class="sig-name descname"><span class="pre">GetDomainSettings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">domainName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.GetDomainSettings"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetDomainSettings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get domain settings</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>domainName</strong> (<em>str</em>) – </p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#cloudshell.api.cloudshell_api.DictionaryInfo" title="cloudshell.api.cloudshell_api.DictionaryInfo">DictionaryInfo</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.CloudShellAPISession.GetEnvironmentCommands">
 <span class="sig-name descname"><span class="pre">GetEnvironmentCommands</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reservationId</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.GetEnvironmentCommands"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetEnvironmentCommands" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieves driver commands and parameters for a specified reservation.</p>
@@ -3797,6 +3868,20 @@ Important: DeleteReservation does not perform teardown and therefore does not re
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.CloudShellAPISession.GetFamilyDefaultApplicationLinks">
+<span class="sig-name descname"><span class="pre">GetFamilyDefaultApplicationLinks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">familyName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.GetFamilyDefaultApplicationLinks"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetFamilyDefaultApplicationLinks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the default disabled application links for a resource family. Returns the list of application link names that are disabled by default for resources of this family.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>familyName</strong> (<em>str</em>) – The name of the resource family.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#cloudshell.api.cloudshell_api.ApplicationLinksListInfo" title="cloudshell.api.cloudshell_api.ApplicationLinksListInfo">ApplicationLinksListInfo</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -3991,7 +4076,7 @@ Important: DeleteReservation does not perform teardown and therefore does not re
 </ul>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p>str</p>
+<dd class="field-even"><p><a class="reference internal" href="#cloudshell.api.cloudshell_api.GetReservationWorkOrderDescriptionResponseInfo" title="cloudshell.api.cloudshell_api.GetReservationWorkOrderDescriptionResponseInfo">GetReservationWorkOrderDescriptionResponseInfo</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -4006,6 +4091,20 @@ Important: DeleteReservation does not perform teardown and therefore does not re
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="#cloudshell.api.cloudshell_api.ReservationLiveStatusInfo" title="cloudshell.api.cloudshell_api.ReservationLiveStatusInfo">ReservationLiveStatusInfo</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.CloudShellAPISession.GetResourceApplicationLinks">
+<span class="sig-name descname"><span class="pre">GetResourceApplicationLinks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resourceFullPath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.GetResourceApplicationLinks"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetResourceApplicationLinks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the current application links configuration for a resource. Returns the list of disabled application link names and whether the resource is inheriting from its family default.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>resourceFullPath</strong> (<em>str</em>) – Specify the full path of the resource. You can also include the full path from the root to the resource before the resource name, separated by slashes. For example: FolderName/RouterA/Port1.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#cloudshell.api.cloudshell_api.ApplicationLinksListInfo" title="cloudshell.api.cloudshell_api.ApplicationLinksListInfo">ApplicationLinksListInfo</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -4129,6 +4228,24 @@ Important: DeleteReservation does not perform teardown and therefore does not re
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="#cloudshell.api.cloudshell_api.ResourceMappingsInfo" title="cloudshell.api.cloudshell_api.ResourceMappingsInfo">ResourceMappingsInfo</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.CloudShellAPISession.GetResourceReservations">
+<span class="sig-name descname"><span class="pre">GetResourceReservations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resourceFullPath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">includeHistorical</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxResults</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.GetResourceReservations"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetResourceReservations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets reservations that include the specified resource. Returns reservation details including ID, name, status, owner, start time, and end time.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>resourceFullPath</strong> (<em>str</em>) – Specify the full path of the resource. You can also include the full path from the root to the resource before the resource name, separated by slashes. For example: FolderName/RouterA/Port1.</p></li>
+<li><p><strong>includeHistorical</strong> (<em>bool</em>) – Whether to include completed/historical reservations. Default is false (only active and future reservations).</p></li>
+<li><p><strong>maxResults</strong> (<em>int</em>) – Maximum number of reservations to return. Default is 50, maximum is 200.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#cloudshell.api.cloudshell_api.GetResourceReservationsResponseInfo" title="cloudshell.api.cloudshell_api.GetResourceReservationsResponseInfo">GetResourceReservationsResponseInfo</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -4897,6 +5014,23 @@ Important: DeleteReservation does not perform teardown and therefore does not re
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.CloudShellAPISession.RemoveEntitiesFromTopology">
+<span class="sig-name descname"><span class="pre">RemoveEntitiesFromTopology</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topologyName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entityIds</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.RemoveEntitiesFromTopology"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.RemoveEntitiesFromTopology" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes elements from a topology, including services and abstract resources.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>topologyName</strong> (<em>str</em>) – </p></li>
+<li><p><strong>entityIds</strong> (<em>list</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.CloudShellAPISession.RemoveGroupsFromDomain">
 <span class="sig-name descname"><span class="pre">RemoveGroupsFromDomain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">domainName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groupNames</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.RemoveGroupsFromDomain"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.RemoveGroupsFromDomain" title="Permalink to this definition">¶</a></dt>
 <dd><p>Remove groups from a domain.</p>
@@ -5412,6 +5546,23 @@ Important: DeleteReservation does not perform teardown and therefore does not re
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.CloudShellAPISession.SetFamilyDefaultApplicationLinks">
+<span class="sig-name descname"><span class="pre">SetFamilyDefaultApplicationLinks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">familyName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">disableApplicationLinks</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.SetFamilyDefaultApplicationLinks"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.SetFamilyDefaultApplicationLinks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the default disabled application links for a resource family. This is a replace-all operation: the provided list completely replaces the current family default. Resources that have not been individually configured will inherit this default. Pass an empty list to clear the family default (all links enabled by default).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>familyName</strong> (<em>str</em>) – The name of the resource family.</p></li>
+<li><p><strong>disableApplicationLinks</strong> (<em>list</em><em>[</em><em>str</em><em>]</em>) – List of application link names to disable by default for resources of this family.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.CloudShellAPISession.SetGroupDomainPermissions">
 <span class="sig-name descname"><span class="pre">SetGroupDomainPermissions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">domainName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groupName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">viewOnly</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.SetGroupDomainPermissions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.SetGroupDomainPermissions" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the permission level of a group in domain.</p>
@@ -5477,6 +5628,23 @@ Important: DeleteReservation does not perform teardown and therefore does not re
 <li><p><strong>serviceAlias</strong> (<em>str</em>) – Specify the alias of the service.</p></li>
 <li><p><strong>x</strong> (<em>float</em>) – Specify the x coordinate of the resource’s top left corner.</p></li>
 <li><p><strong>y</strong> (<em>float</em>) – Specify the y coordinate of the resource’s top left corner.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.CloudShellAPISession.SetResourceApplicationLinks">
+<span class="sig-name descname"><span class="pre">SetResourceApplicationLinks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resourceFullPath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">disableApplicationLinks</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.SetResourceApplicationLinks"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.SetResourceApplicationLinks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets which application links are disabled for a specific resource. Pass an empty list to enable all links (overriding family default). Pass null/omit to inherit from the family default.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>resourceFullPath</strong> (<em>str</em>) – Specify the full path of the resource. You can also include the full path from the root to the resource before the resource name, separated by slashes. For example: FolderName/RouterA/Port1.</p></li>
+<li><p><strong>disableApplicationLinks</strong> (<em>list</em><em>[</em><em>str</em><em>]</em>) – List of application link names to disable for this resource.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
@@ -5845,6 +6013,20 @@ Important: DeleteReservation does not perform teardown and therefore does not re
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.CloudShellAPISession.UndeployApps">
+<span class="sig-name descname"><span class="pre">UndeployApps</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resourcesFullPath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.UndeployApps"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.UndeployApps" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes the specified resources.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>resourcesFullPath</strong> (<em>list</em><em>[</em><em>str</em><em>]</em>) – Specify a list of resource names. You can also include the full path from the root to the resource before the resource name, separated by slashes. For example: FolderName/ResourceName</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.CloudShellAPISession.UnlockResource">
 <span class="sig-name descname"><span class="pre">UnlockResource</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reservationId</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resourceFullPath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.UnlockResource"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.UnlockResource" title="Permalink to this definition">¶</a></dt>
 <dd><p>Unlocks the specified resource.</p>
@@ -5925,6 +6107,24 @@ Important: DeleteReservation does not perform teardown and therefore does not re
 <li><p><strong>targetResourceFullName</strong> (<em>str</em>) – Specify the resource name. You can also include the full path from the root to the resource before the resource name, separated by slashes. For example: FolderName/RouterA/Port1.</p></li>
 <li><p><strong>direction</strong> (<em>str</em>) – Specify bidirectional or unidirectional as the connector direction.</p></li>
 <li><p><strong>alias</strong> (<em>str</em>) – Specify the connector’s alias.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.CloudShellAPISession.UpdateDomainSetting">
+<span class="sig-name descname"><span class="pre">UpdateDomainSetting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">domainName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.UpdateDomainSetting"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.UpdateDomainSetting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates or updates a domain setting.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>domainName</strong> (<em>str</em>) – </p></li>
+<li><p><strong>name</strong> (<em>str</em>) – </p></li>
+<li><p><strong>value</strong> (<em>str</em>) – </p></li>
 </ul>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
@@ -6297,6 +6497,11 @@ Important: DeleteReservation does not perform teardown and therefore does not re
 <dl class="py method">
 <dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.CloudShellAPISession.create_headers">
 <span class="sig-name descname"><span class="pre">create_headers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timezone</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datetimeformat</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.create_headers"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.create_headers" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.CloudShellAPISession.login_required">
+<span class="sig-name descname"><span class="pre">login_required</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.login_required"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.login_required" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -6693,6 +6898,18 @@ Important: DeleteReservation does not perform teardown and therefore does not re
 <dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.DeploymentServiceInfo.Name">
 <span class="sig-name descname"><span class="pre">Name</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.DeploymentServiceInfo.Name" title="Permalink to this definition">¶</a></dt>
 <dd><p>:type : str</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.DictionaryInfo">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cloudshell.api.cloudshell_api.</span></span><span class="sig-name descname"><span class="pre">DictionaryInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xml_object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">find_prefix</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#DictionaryInfo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.DictionaryInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cloudshell.api.common_cloudshell_api.CommonResponseInfo" title="cloudshell.api.common_cloudshell_api.CommonResponseInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommonResponseInfo</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.DictionaryInfo.Settings">
+<span class="sig-name descname"><span class="pre">Settings</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.DictionaryInfo.Settings" title="Permalink to this definition">¶</a></dt>
+<dd><p>:type : list[Item]</p>
 </dd></dl>
 
 </dd></dl>
@@ -7400,6 +7617,30 @@ Important: DeleteReservation does not perform teardown and therefore does not re
 </dd></dl>
 
 <dl class="py class">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.GetResourceReservationsResponseInfo">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cloudshell.api.cloudshell_api.</span></span><span class="sig-name descname"><span class="pre">GetResourceReservationsResponseInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xml_object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">find_prefix</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#GetResourceReservationsResponseInfo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.GetResourceReservationsResponseInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cloudshell.api.common_cloudshell_api.CommonResponseInfo" title="cloudshell.api.common_cloudshell_api.CommonResponseInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommonResponseInfo</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.GetResourceReservationsResponseInfo.Reservations">
+<span class="sig-name descname"><span class="pre">Reservations</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.GetResourceReservationsResponseInfo.Reservations" title="Permalink to this definition">¶</a></dt>
+<dd><p>:type : list[ResourceReservationEntry]</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.GetResourceReservationsResponseInfo.ResourceName">
+<span class="sig-name descname"><span class="pre">ResourceName</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.GetResourceReservationsResponseInfo.ResourceName" title="Permalink to this definition">¶</a></dt>
+<dd><p>:type : str</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.GetResourceReservationsResponseInfo.TotalCount">
+<span class="sig-name descname"><span class="pre">TotalCount</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.GetResourceReservationsResponseInfo.TotalCount" title="Permalink to this definition">¶</a></dt>
+<dd><p>:type : int</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
 <dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.GetResourcesLabelsInReservationResponseInfo">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cloudshell.api.cloudshell_api.</span></span><span class="sig-name descname"><span class="pre">GetResourcesLabelsInReservationResponseInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xml_object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">find_prefix</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#GetResourcesLabelsInReservationResponseInfo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.GetResourcesLabelsInReservationResponseInfo" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#cloudshell.api.common_cloudshell_api.CommonResponseInfo" title="cloudshell.api.common_cloudshell_api.CommonResponseInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommonResponseInfo</span></code></a></p>
@@ -7598,6 +7839,24 @@ Important: DeleteReservation does not perform teardown and therefore does not re
 </dd></dl>
 
 <dl class="py class">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.Item">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cloudshell.api.cloudshell_api.</span></span><span class="sig-name descname"><span class="pre">Item</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xml_object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">find_prefix</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#Item"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.Item" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cloudshell.api.common_cloudshell_api.CommonResponseInfo" title="cloudshell.api.common_cloudshell_api.CommonResponseInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommonResponseInfo</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.Item.Key">
+<span class="sig-name descname"><span class="pre">Key</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.Item.Key" title="Permalink to this definition">¶</a></dt>
+<dd><p>:type : str</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.Item.Value">
+<span class="sig-name descname"><span class="pre">Value</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.Item.Value" title="Permalink to this definition">¶</a></dt>
+<dd><p>:type : str</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
 <dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.LogicalResourceInfo">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cloudshell.api.cloudshell_api.</span></span><span class="sig-name descname"><span class="pre">LogicalResourceInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xml_object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">find_prefix</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#LogicalResourceInfo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.LogicalResourceInfo" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#cloudshell.api.common_cloudshell_api.CommonResponseInfo" title="cloudshell.api.common_cloudshell_api.CommonResponseInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommonResponseInfo</span></code></a></p>
@@ -7790,7 +8049,7 @@ Important: DeleteReservation does not perform teardown and therefore does not re
 
 <dl class="py class">
 <dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.QualiApiClient">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cloudshell.api.cloudshell_api.</span></span><span class="sig-name descname"><span class="pre">QualiApiClient</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">host</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quali_api_scheme</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">http</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">api_response_handler</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">credentials</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attempts</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#QualiApiClient"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.QualiApiClient" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cloudshell.api.cloudshell_api.</span></span><span class="sig-name descname"><span class="pre">QualiApiClient</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">host</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quali_api_scheme</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">http</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">api_response_handler</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">credentials</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attempts</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#QualiApiClient"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.QualiApiClient" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <dl class="py method">
 <dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.QualiApiClient.enrich_logon">
@@ -9017,6 +9276,48 @@ Important: DeleteReservation does not perform teardown and therefore does not re
 <dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.ResourceMappingsInfo.Mapping">
 <span class="sig-name descname"><span class="pre">Mapping</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.ResourceMappingsInfo.Mapping" title="Permalink to this definition">¶</a></dt>
 <dd><p>:type : Mapping</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.ResourceReservationEntry">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cloudshell.api.cloudshell_api.</span></span><span class="sig-name descname"><span class="pre">ResourceReservationEntry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xml_object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">find_prefix</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#ResourceReservationEntry"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.ResourceReservationEntry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cloudshell.api.common_cloudshell_api.CommonResponseInfo" title="cloudshell.api.common_cloudshell_api.CommonResponseInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommonResponseInfo</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.ResourceReservationEntry.EndTime">
+<span class="sig-name descname"><span class="pre">EndTime</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.ResourceReservationEntry.EndTime" title="Permalink to this definition">¶</a></dt>
+<dd><p>:type : dateTime</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.ResourceReservationEntry.OwnerName">
+<span class="sig-name descname"><span class="pre">OwnerName</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.ResourceReservationEntry.OwnerName" title="Permalink to this definition">¶</a></dt>
+<dd><p>:type : str</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.ResourceReservationEntry.ReservationId">
+<span class="sig-name descname"><span class="pre">ReservationId</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.ResourceReservationEntry.ReservationId" title="Permalink to this definition">¶</a></dt>
+<dd><p>:type : str</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.ResourceReservationEntry.ReservationName">
+<span class="sig-name descname"><span class="pre">ReservationName</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.ResourceReservationEntry.ReservationName" title="Permalink to this definition">¶</a></dt>
+<dd><p>:type : str</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.ResourceReservationEntry.StartTime">
+<span class="sig-name descname"><span class="pre">StartTime</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.ResourceReservationEntry.StartTime" title="Permalink to this definition">¶</a></dt>
+<dd><p>:type : dateTime</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.ResourceReservationEntry.Status">
+<span class="sig-name descname"><span class="pre">Status</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.ResourceReservationEntry.Status" title="Permalink to this definition">¶</a></dt>
+<dd><p>:type : str</p>
 </dd></dl>
 
 </dd></dl>
@@ -10634,6 +10935,12 @@ Important: DeleteReservation does not perform teardown and therefore does not re
 </dd></dl>
 
 <dl class="py attribute">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.WorkOrderResourceInfo.Family">
+<span class="sig-name descname"><span class="pre">Family</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.WorkOrderResourceInfo.Family" title="Permalink to this definition">¶</a></dt>
+<dd><p>:type : str</p>
+</dd></dl>
+
+<dl class="py attribute">
 <dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.WorkOrderResourceInfo.LastUpdateTime">
 <span class="sig-name descname"><span class="pre">LastUpdateTime</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.WorkOrderResourceInfo.LastUpdateTime" title="Permalink to this definition">¶</a></dt>
 <dd><p>:type : str</p>
@@ -10642,6 +10949,12 @@ Important: DeleteReservation does not perform teardown and therefore does not re
 <dl class="py attribute">
 <dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.WorkOrderResourceInfo.LastUpdateUsername">
 <span class="sig-name descname"><span class="pre">LastUpdateUsername</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.WorkOrderResourceInfo.LastUpdateUsername" title="Permalink to this definition">¶</a></dt>
+<dd><p>:type : str</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.WorkOrderResourceInfo.Models">
+<span class="sig-name descname"><span class="pre">Models</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.WorkOrderResourceInfo.Models" title="Permalink to this definition">¶</a></dt>
 <dd><p>:type : str</p>
 </dd></dl>
 
@@ -10711,7 +11024,7 @@ Important: DeleteReservation does not perform teardown and therefore does not re
 
 <dl class="py class">
 <dt class="sig sig-object py" id="cloudshell.api.common_cloudshell_api.CommonAPISession">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cloudshell.api.common_cloudshell_api.</span></span><span class="sig-name descname"><span class="pre">CommonAPISession</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">host</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">username</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">domain</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connection_pool_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">25</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/common_cloudshell_api.html#CommonAPISession"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.common_cloudshell_api.CommonAPISession" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cloudshell.api.common_cloudshell_api.</span></span><span class="sig-name descname"><span class="pre">CommonAPISession</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">host</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">username</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">domain</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connection_pool_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">25</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/common_cloudshell_api.html#CommonAPISession"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.common_cloudshell_api.CommonAPISession" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <dl class="py method">
 <dt class="sig sig-object py" id="cloudshell.api.common_cloudshell_api.CommonAPISession.generateAPIRequest">
@@ -10747,6 +11060,12 @@ Important: DeleteReservation does not perform teardown and therefore does not re
 <dt class="sig sig-object py" id="cloudshell.api.common_cloudshell_api.CommonResponseInfo">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cloudshell.api.common_cloudshell_api.</span></span><span class="sig-name descname"><span class="pre">CommonResponseInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xml_object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">find_prefix</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/common_cloudshell_api.html#CommonResponseInfo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.common_cloudshell_api.CommonResponseInfo" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="cloudshell.api.common_cloudshell_api.UnauthorizedError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cloudshell.api.common_cloudshell_api.</span></span><span class="sig-name descname"><span class="pre">UnauthorizedError</span></span><a class="reference internal" href="_modules/cloudshell/api/common_cloudshell_api.html#UnauthorizedError"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.common_cloudshell_api.UnauthorizedError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
 </dd></dl>
 
 <dl class="py class">
@@ -10809,6 +11128,11 @@ Important: DeleteReservation does not perform teardown and therefore does not re
 <dd></dd></dl>
 
 </dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cloudshell.api.common_cloudshell_api.get_http_status_message">
+<span class="sig-prename descclassname"><span class="pre">cloudshell.api.common_cloudshell_api.</span></span><span class="sig-name descname"><span class="pre">get_http_status_message</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">status_code</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/common_cloudshell_api.html#get_http_status_message"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.common_cloudshell_api.get_http_status_message" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="cloudshell.api.common_cloudshell_api.retry">

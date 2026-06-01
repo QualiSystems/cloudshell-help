@@ -61,6 +61,26 @@ The maintenance window's areas are arranged as follows:
 | 9 | Warning on Reserve | The message shown to non-admin users who try in advance to create a sandbox that starts and ends outside the maintenance window. The user is presented with the option to either **Continue** or **Cancel**. If they select to continue, the sandbox will be created and remain active during the maintenance period, but it will be inaccessible.<br/>In the API, there is no warning, and the action is allowed. |
 | 10 | Delete button | <ul><li>**PLANNED** or **NEW** state: deletes the maintenance window</li><li>**ACTIVE** state: ends and deletes the maintenance window</li></ul> |
 
+## Maintenance Window By Domain
+
+*New in CloudShell 2026.1*
+
+In addition to the system-wide maintenance window described above, administrators can define maintenance windows scoped to individual domains. During a domain-scoped maintenance window, sandbox creation and modifications are restricted in that domain, while other domains continue operating normally.
+
+This is useful for planned infrastructure maintenance, upgrades, or other activities that require temporarily restricting access to specific lab resources without affecting other teams.
+
+### Configuring a Domain Maintenance Window
+
+To set a maintenance window for a specific domain, use the API:
+
+- **UpdateDomainSetting** — Set maintenance window parameters for a specific domain
+- **GetDomainSettings** — Retrieve current domain settings including maintenance window configuration
+
+:::note
+The system-wide maintenance window (configured from the **Manage** dashboard) takes precedence over domain-level maintenance windows. If both are active, the system-wide restrictions apply.
+:::
+
 ## Related Topics
 
 - [Manage Dashboard Overview](../../admin/cloudshell-manage-dashboard/manage-dashboard-overview.md)
+- [CloudShell Domains](../../admin/cloudshell-identity-management/cloudshell-domains/index.md)

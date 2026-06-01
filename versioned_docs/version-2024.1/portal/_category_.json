@@ -1,8 +1,0 @@
-{
-  "label": "CloudShell Portal",
-  "position": 4,
-  "link": {
-    "type": "generated-index",
-    "description": "CloudShell Portal is the web client interface in which admins, blueprint designers and end-users set up and consume sandboxes."
-  }
-}

@@ -28,10 +28,12 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   onDuplicateRoutes: 'throw',
 
-  future: {
-    v4: true,
-    experimental_faster: true,
-  },
+  // v4 and experimental_faster disabled: incompatible with single-version (no versioned_docs) setup
+  // Re-enable when Docusaurus v4 is GA and properly handles empty versions.json
+  // future: {
+  //   v4: true,
+  //   experimental_faster: true,
+  // },
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -68,7 +70,8 @@ const config = {
           },
           routeBasePath: '/',
           sidebarPath: './sidebars.js',
-          includeCurrentVersion: true, //show the Next verions when working locally, this will be changed to false as part of the deployment process
+          includeCurrentVersion: true,
+          onlyIncludeVersions: ['current'],
           lastVersion: 'current', 
           versions: {
             current: {
@@ -135,12 +138,12 @@ const config = {
             className: 'header-github-link',
             position: 'right',
           },
-          {
-            type: 'docsVersionDropdown',
-            position: 'left',
-            //dropdownItemsAfter: [{to: '/versions'}],
-            dropdownActiveClassDisabled: true,
-          },
+          // Version dropdown removed - single "current" version strategy
+          // {
+          //   type: 'docsVersionDropdown',
+          //   position: 'left',
+          //   dropdownActiveClassDisabled: true,
+          // },
         ],
       },
       footer: {

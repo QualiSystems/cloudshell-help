@@ -723,3 +723,110 @@ Python 3 automation requires Microsoft Visual C++ Redistributable 2015 x86 and x
 		</tr>
 	</tbody>
 </table>
+
+## Environment variable configuration overrides
+
+*Starting with CloudShell 2024.1*, CloudShell supports overriding `customer.config` values using environment variables. This enables configuration management without modifying files directly, which is useful for containerized deployments and automation scenarios.
+
+To override a configuration key, set an environment variable with the prefix `QS_` followed by the key name (with dots replaced by underscores). For example, to override `<add key="MyKey" value="SomeValue"/>`, set the environment variable `QS_MyKey`.
+
+<table>
+	<tbody>
+		<tr>
+			<td>Key</td>
+			<td>N/A (environment variable prefix: `QS_`)</td>
+		</tr>
+		<tr>
+			<td>Possible values</td>
+			<td>Any value that would be valid in the corresponding `customer.config` key</td>
+		</tr>
+		<tr>
+			<td>Where to add/change</td>
+			<td>System environment variables on the machine running the CloudShell component</td>
+		</tr>
+		<tr>
+			<td>Default value</td>
+			<td>N/A</td>
+		</tr>
+		<tr>
+			<td>Affected CloudShell Component</td>
+			<td>All (Quali Server, Portal, Execution Server)</td>
+		</tr>
+		<tr>
+			<td>Version</td>
+			<td>2024.1 and above</td>
+		</tr>
+	</tbody>
+</table>
+
+:::note
+Environment variable overrides take precedence over values defined in `customer.config`. This allows you to manage configuration centrally (e.g., via orchestration tools or container runtime) without modifying config files on disk.
+:::
+
+## Allow unicode characters in script command context
+
+When set to `true`, allows passing unicode characters to script environment variables. This is useful when usernames or other context values contain unicode characters.
+
+<table>
+	<tbody>
+		<tr>
+			<td>Key</td>
+			<td>`<add key="AllowUnicodeForCommandContext" value="True"/>`</td>
+		</tr>
+		<tr>
+			<td>Possible values</td>
+			<td>True/False</td>
+		</tr>
+		<tr>
+			<td>Where to add/change</td>
+			<td>`customer.config` CloudShell Server installation directory</td>
+		</tr>
+		<tr>
+			<td>Default value</td>
+			<td>False</td>
+		</tr>
+		<tr>
+			<td>Affected CloudShell Component</td>
+			<td>CloudShell Server</td>
+		</tr>
+		<tr>
+			<td>Version</td>
+			<td>2024.1 and above</td>
+		</tr>
+	</tbody>
+</table>
+
+## Configure AI Assistant chat menu item in Portal
+
+Administrators can configure an AI Assistant menu item in the Portal by setting a URL template. This adds a menu item that opens an AI chat interface, optionally passing context about the current page or resource.
+
+The URL template can include placeholders that are replaced with context values at runtime, such as `{resource}` or `{page}`.
+
+<table>
+	<tbody>
+		<tr>
+			<td>Key</td>
+			<td>`<add key="AIChatURL" value="https://your-ai-chat-url.com?context={page}"/>`</td>
+		</tr>
+		<tr>
+			<td>Possible values</td>
+			<td>A URL template. Supported placeholders: `{page}`, `{resource}`, `{sandbox}`</td>
+		</tr>
+		<tr>
+			<td>Where to add/change</td>
+			<td>`customer.config` CloudShell Portal installation directory</td>
+		</tr>
+		<tr>
+			<td>Default value</td>
+			<td>N/A (disabled)</td>
+		</tr>
+		<tr>
+			<td>Affected CloudShell Component</td>
+			<td>CloudShell Portal</td>
+		</tr>
+		<tr>
+			<td>Version</td>
+			<td>2026.1 and above</td>
+		</tr>
+	</tbody>
+</table>

@@ -13,10 +13,12 @@ This article explains how to create an exact copy of an existing blueprint, incl
     
     ![](/Images/CloudShell-Portal/Lab-Management/Environments/BlueprintSaveCopy.png)
     
+3. In the confirmation dialog, click **OK** to proceed.
+    
     The new blueprint's properties page is displayed.
     
-3. Rename the blueprint as appropriate and make the necessary changes.
-4. Click **Update** at the bottom right of the page.
+4. Rename the blueprint as appropriate and make the necessary changes.
+5. Click **Update** at the bottom right of the page.
 
 ## Related Topics
 

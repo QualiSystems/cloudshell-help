@@ -135,6 +135,15 @@ Downloading attached files is available only to permitted users.
 
 The file is downloaded to your local drive. If the file type is identified, it will automatically open once the download is complete.
 
+### Sticky notes
+
+You can add sticky notes to the sandbox diagram canvas to clarify requirements and communicate important information to other sandbox users.
+
+Sticky notes support the following features:
+
+- **Color selection**: Choose a color for each sticky note to visually categorize or prioritize notes in the sandbox.
+- **Activity feed notifications**: When a sticky note is updated, a notification appears in the sandbox's activity feed, keeping collaborators informed of changes.
+
 ### Custom sandbox data
 
 Starting with CloudShell 9.2, it is possible to add custom data to the sandbox to be used by automation processes running in the sandbox. Note that this information is not presented in CloudShell Portal and can only be managed via the API. For additional information, see CloudShell Dev Guide's [Custom Sandbox Metadata](../../../devguide/reference/custom-sandbox-metadata.md).
