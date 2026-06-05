@@ -16,7 +16,7 @@ CloudShell offers two support phases:
 | --- | --- | --- | --- |
 | 2026.1 | March 2026 | September 1, 2027 | September 1, 2028 |
 | 2025.1 | November 2025 | May 1, 2027 | May 1, 2028 |
-| 2024.1 | August 2024 | February 1, 2026 | February 1, 2027 |
+| 2024.1 | August 2024 | <span style={{ color:"gray" }}>February 1, 2026</span> | February 1, 2027 |
 | 2023.3 | December 2023 | <span style={{ color:"gray" }}>July 1, 2025</span> | July 1, 2026 |
 | <span style={{ color:"gray" }}>2023.2</span> | <span style={{ color:"gray" }}>July 2023</span> | <span style={{ color:"gray" }}>February 1, 2025</span> | <span style={{ color:"gray" }}>February 1, 2026</span> |
 | <span style={{ color:"gray" }}>2023.1</span> | <span style={{ color:"gray" }}>March 2023</span> | <span style={{ color:"gray" }}>October 1, 2024</span> | <span style={{ color:"gray" }}>October 1, 2025</span> |
