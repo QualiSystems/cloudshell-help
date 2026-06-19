@@ -798,19 +798,48 @@ When set to `true`, allows passing unicode characters to script environment vari
 
 ## Configure AI Assistant chat menu item in Portal
 
-Administrators can configure an AI Assistant menu item in the Portal by setting a URL template. This adds a menu item that opens an AI chat interface, optionally passing context about the current page or resource.
+Administrators can configure an AI Assistant menu item in the Portal by setting a URL template. This adds a menu item that opens an AI chat interface in a new browser tab, passing context about the current Portal page (and the current sandbox, when applicable) to the external AI chat service.
 
-The URL template can include placeholders that are replaced with context values at runtime, such as `{resource}` or `{page}`.
+The URL template can include placeholders, wrapped in curly braces, that are replaced with the actual context values at runtime. For example, the template `https://your-ai-chat-url.com?page={pageUrl}&amp;user={user}` opens the chat URL with the current page path and the logged-in user's name filled in.
+
+Because the template is set as the value of an XML attribute in `customer.config`, any literal `&` that separates URL query parameters must be written as `&amp;`. You can also use commas instead.
+
+The following placeholders are supported:
+
+**Always available** (provided on every Portal page):
+
+| Placeholder | Description |
+| --- | --- |
+| `{user}` | Username of the logged-in user. |
+| `{domain}` | Name of the current domain (empty if none). |
+| `{version}` | CloudShell version (without the build number). |
+| `{pageType}` | Identifier of the current Portal page (empty if not available). |
+| `{pageUrl}` | Path and query string of the current Portal page. |
+
+**Available only inside a sandbox or blueprint page** (replaced with empty values on all other pages, such as the catalog or inventory):
+
+| Placeholder | Description |
+| --- | --- |
+| `{sandboxId}` | ID of the current sandbox/blueprint. |
+| `{sandboxName}` | Name of the current sandbox/blueprint. |
+| `{status}` | Reservation status of the sandbox. |
+| `{setupStage}` | Current setup stage of the sandbox. |
+| `{resourceList}` | Comma-separated list of resource names in the sandbox/blueprint. |
+| `{resourceCount}` | Number of resources in the sandbox/blueprint. |
+
+:::note
+Sandbox placeholders (`{sandboxId}`, `{sandboxName}`, `{status}`, `{setupStage}`, `{resourceList}`, `{resourceCount}`) are only populated when the user opens the AI Assistant from within a sandbox or blueprint diagram. On any other page they are replaced with empty values.
+:::
 
 <table>
 	<tbody>
 		<tr>
 			<td>Key</td>
-			<td>`<add key="AIChatURL" value="https://your-ai-chat-url.com?context={page}"/>`</td>
+			<td>`<add key="AIChatURL" value="https://your-ai-chat-url.com?page={pageUrl}&amp;sandbox={sandboxId}"/>`</td>
 		</tr>
 		<tr>
 			<td>Possible values</td>
-			<td>A URL template. Supported placeholders: `{page}`, `{resource}`, `{sandbox}`</td>
+			<td>A URL template containing any of the supported placeholders listed above.</td>
 		</tr>
 		<tr>
 			<td>Where to add/change</td>
