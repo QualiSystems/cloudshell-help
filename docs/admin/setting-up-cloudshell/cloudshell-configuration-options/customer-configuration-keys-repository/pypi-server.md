@@ -4,6 +4,10 @@ sidebar_position: 14
 
 # PyPi Server
 
+:::note
+*Starting with CloudShell 2026.1*, the `RequirementsRepository`, `RequirementsTrustedHost`, and `RequirementsExtraRepository` keys are also honored during Execution Server **setup** and default-environment bootstrap — not only when running driver commands. This lets an Execution Server that must use a private or HTTPS-only PyPI index complete setup against that index without a workaround. Set the keys before running Execution Server setup.
+:::
+
 ## Set the online computer's name and port
 :::note
 This applies to CloudShell deployments using PyPi Server to retrieve and serve Python dependencies from a dedicated online computer.

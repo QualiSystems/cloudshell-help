@@ -32,9 +32,16 @@ Export sandbox diagrams as PNG images directly from the browser. Available in th
 ### AI Chat Integration
 Configurable AI Assistant menu item in the Portal. Administrators can set a URL template to integrate with AI chat services.
 
+### Portal Session Resilience
+Portal users — including those signing in via SSO/SAML — are no longer logged out when the Portal application pool recycles. CloudShell rebuilds the session from the existing sign-in cookie, so open tabs and background page refreshes keep working without a forced re-login, and a transient CloudShell Server outage no longer signs users out. Controlled by the `EnableSessionRehydration` setting (enabled by default).
+
+### Custom PyPI Repository Honored at Execution Server Setup
+A configured custom PyPI repository (`RequirementsRepository`, `RequirementsTrustedHost`, `RequirementsExtraRepository`) is now used during Execution Server setup and default-environment bootstrap, not only when running driver commands. Environments with a private or HTTPS-only PyPI index can complete Execution Server setup against a reachable custom index without a workaround.
+
 ### Server Default Changes
 - `UseRabbitServer` now defaults to `false`
 - `UseEmbeddedSandboxService` now defaults to `false`
+- Job Scheduling now follows the global `UseRabbitServer` setting instead of an independent default, so scheduled and manually launched reservations take the same messaging path
 
 ### Docker Execution Server
 - Consolidated Dockerfile with Python 3 virtualenv and TLS/Kerberos compatibility
@@ -55,6 +62,13 @@ When a blueprint reservation fails due to unresolvable abstract resources or rou
 
 ### Bug Fixes
 - Fixed an issue where App deployment could retry unnecessarily on certain internal errors instead of failing fast with clear diagnostics.
+- Fixed SSO (SAML) users being bounced to the login page in a loop, instead of seeing the maintenance page, when signing in during a maintenance window. Aborted logins no longer leave a half-authenticated session.
+- Fixed an active maintenance window being left stranded open when its end time was edited to a past time. Such edits are now rejected — use **Stop** to end an active window immediately.
+- Fixed the RabbitMQ messaging service failing to start after an Erlang upgrade. CloudShell now validates and refreshes stale Erlang location settings automatically.
+- Fixed abstract resource port names in Assembly Lab work order fields and route tooltips intermittently truncating to the leaf port name instead of the full path.
+- Fixed the Sandbox API crashing on the Node.js 24 runtime when handling conditional (cache-revalidation) requests to the explore endpoints.
+- Restored the full Ansible package (with bundled collections) in the Docker Execution Server image, fixing playbooks that failed with missing-module errors.
+- The About dialog now shows the full four-part product version, including the build number (for example, `2026.1.0.52`).
 
 ---
 

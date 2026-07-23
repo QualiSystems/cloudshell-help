@@ -859,3 +859,36 @@ Sandbox placeholders (`{sandboxId}`, `{sandboxName}`, `{status}`, `{setupStage}`
 		</tr>
 	</tbody>
 </table>
+
+## Keep Portal users signed in across application-pool recycles
+
+When enabled, the Portal rebuilds a user's session from the sign-in cookie after an application-pool recycle instead of forcing a re-login. This applies to standard and SSO/SAML users, and lets background page refreshes recover silently. Set to `False` to restore the previous behavior of signing users out on recycle.
+
+<table>
+	<tbody>
+		<tr>
+			<td>Key</td>
+			<td>`<add key="EnableSessionRehydration" value="True"/>`</td>
+		</tr>
+		<tr>
+			<td>Possible values</td>
+			<td>True/False</td>
+		</tr>
+		<tr>
+			<td>Where to add/change</td>
+			<td>`customer.config` CloudShell Portal installation directory</td>
+		</tr>
+		<tr>
+			<td>Default value</td>
+			<td>True</td>
+		</tr>
+		<tr>
+			<td>Affected CloudShell Component</td>
+			<td>CloudShell Portal</td>
+		</tr>
+		<tr>
+			<td>Version</td>
+			<td>2026.1 and above</td>
+		</tr>
+	</tbody>
+</table>
