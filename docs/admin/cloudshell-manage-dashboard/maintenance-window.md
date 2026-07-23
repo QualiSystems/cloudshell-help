@@ -40,6 +40,10 @@ The **Maintenance Window** page is only displayed for system administrators in t
     
 6. Click **Save**.
 
+:::note
+When editing an **active** maintenance window, you cannot set its end time to a time that is not in the future (at or before the current time). To end an active maintenance window immediately, use the **Stop** action rather than editing its end time.
+:::
+
 ## Navigating the maintenance window
 
 In the image below, hover over an area or option to learn more about it, or use the table that follows. You can edit any of the messages presented in the **Maintenance Window**. Click **Save** to apply your changes.
