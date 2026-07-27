@@ -51,3 +51,31 @@ Once the scenario is created, it can be run automatically.
 - Many operations have two versions, a "single” version and a "bulk” version. For example, it is possible to create a single resource using the "CreateResource" method or to create many resources at once using the "CreateResources” operation. This is not always the fastest way performance-wise, but it is sometime easier to write and edit. The bulk operation usually gets a matrix as an input, and sometimes has special rules (such as the fact you cannot have the sub-resource creation line before the resource line).
 - Any function that requires a resource full path can also get the resource name without the folders it is located in.
 :::
+
+## Working with persistent reservations
+
+In addition to standard timed reservations, TestShell API can work with **persistent reservations** (persistent sandboxes). A persistent sandbox does not have a fixed end time and remains reserved until you explicitly end it or convert it back to a timed reservation.
+
+Persistence is controlled through the **`UpdateReservationEndTime`** method rather than a dedicated create method. The method takes the following parameters:
+
+- **`reservationId`** – The ID of the reservation to update.
+- **`isPersistent`** – A `Yes`/`No` value that sets whether the sandbox is persistent.
+- **`endTime`** – The new end time for the reservation.
+
+### Making a reservation persistent
+
+To convert an existing timed reservation into a persistent one, call `UpdateReservationEndTime` with `isPersistent` set to `Yes`. Since a persistent sandbox has no fixed end time, the `endTime` value is not applied and can be left empty.
+
+Note the following behavior:
+
+- A sandbox that is already persistent cannot be set to persistent again. Attempting to do so returns an error, because a persistent sandbox's end time cannot be changed.
+
+### Converting a persistent reservation back to a timed reservation
+
+To turn a persistent sandbox back into a standard timed reservation, call `UpdateReservationEndTime` with `isPersistent` set to `No` and provide a valid `endTime`. The end time must be later than the current time; otherwise the call fails.
+
+After this operation, the reservation is no longer persistent and ends at the specified end time.
+
+:::note
+The `CreateReservation` and `CreateImmediateReservation` methods do not include a persistence flag. To make a sandbox persistent, first create the reservation and then update it with `UpdateReservationEndTime` as described above. The exact method availability may depend on your CloudShell version.
+:::

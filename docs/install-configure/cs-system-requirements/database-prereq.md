@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Database Prerequisites
 
-CloudShell applications can work with MS SQL database.
+CloudShell applications work with Microsoft SQL Server as the primary relational database backend. Starting with CloudShell 2025.1, **PostgreSQL is also available as an alternative relational database backend, in Beta**. For details, see [PostgreSQL database support (Beta)](#postgresql-database-support-beta) below.
 
 ## MongoDB database permissions and installation requirements
 
@@ -91,6 +91,19 @@ Installation instructions:
 
 Quali Server, SQL server or SQL Express, and the CloudShell applications can be installed on the same machine, or on separate machines in the same network.
 
+
+## PostgreSQL database support (Beta)
+
+:::note Beta
+Starting with CloudShell 2025.1, PostgreSQL is supported as an alternative relational database backend, **in Beta (evaluation only)**. It is intended for evaluation and is not yet recommended for production deployments. Microsoft SQL Server remains the default, fully supported relational database backend.
+:::
+
+To evaluate CloudShell on PostgreSQL, or to migrate an existing CloudShell SQL Server database to PostgreSQL, **contact Quali Support for evaluation access**. Quali Support will provide the required components, supported-version details, and setup and migration guidance for your CloudShell version.
+
+Notes:
+
+- PostgreSQL replaces only the SQL Server relational backend. CloudShell still uses MongoDB for the data described in [Select the Database Type](../cloudshell-suite/complete-install/install-cloudshell/select-database-type/index.md), regardless of whether the relational backend is SQL Server or PostgreSQL.
+- Because this feature is in Beta, the exact supported PostgreSQL versions and configuration steps depend on your CloudShell version and are provided by Quali Support as part of evaluation access.
 
 ## Additional requirements
 

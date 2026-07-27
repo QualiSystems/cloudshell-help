@@ -65,6 +65,10 @@ Blueprints of type ‘view’ cannot be reserved.
         
     3. Instead of changing the owner of the sandbox, you can permit additional users to use the sandbox. Click the **Permitted Users** section and select the users you wish to add.
         
+        :::note
+        In the **Owner** and **Permitted Users** pickers, the list of users is scoped to your current domain. When the domain has a large number of users, the picker loads users incrementally instead of loading them all up front - start typing a user name to search for and add users that are not shown in the initial list.
+        :::
+        
     4. To prevent users from ending the sandbox before its scheduled end time, enable **Termination Protection**. This option ensures your sandbox isn't ended accidentally or prematurely. And when you are ready to manually end the sandbox, disable the option in the sandbox's properties window and then end it.
     5. You can configure CloudShell to send email notifications to the owner of the sandbox and permitted users.
         
