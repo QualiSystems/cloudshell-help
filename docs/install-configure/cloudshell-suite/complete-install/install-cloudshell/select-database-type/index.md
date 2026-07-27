@@ -30,10 +30,10 @@ For more information, see [New Job Scheduling Architecture](../../../new-jss-ins
     - If your system administrator has a centralized MongoDB instance or cluster that can be utilized for CloudShell, select the **Mongo DB Server or cluster** option (Supported for MongoDB 4.2 and above).
         
         :::tip
-        If you want to use a higher version of MongoDB, make sure to first upgrade to the relevant MongoDB version, as explained in [How to Upgrade MongoDB From 4.2 to 6.0](./how-to-upgrade-4.2-6.md).
+        If you want to use a higher version of MongoDB, make sure to first upgrade to the relevant MongoDB version, as explained in [How to Upgrade MongoDB From 4.2 to 7.0](./how-to-upgrade-4.2-6.md). CloudShell 2026.1 uses MongoDB Server 7.0; if you manage MongoDB yourself, upgrade it to 7.0 before upgrading CloudShell.
         :::
         
-    - If there is no external MongoDB, select **Local MongoDB instance** to enable CloudShell installer to use an existing instance of MongoDB. If you don't have an existing MongoDB instance or cluster, select **Install MongoDB Server 6.0.4** to install and configure a local MongoDB Server 6.0.4 instance (Community edition).
+    - If there is no external MongoDB, select **Local MongoDB instance** to enable CloudShell installer to use an existing instance of MongoDB. If you don't have an existing MongoDB instance or cluster, select the option to install a local MongoDB Server instance (Community edition). The CloudShell installer bundles and installs the MongoDB Server version certified for the release you are installing (MongoDB Server 7.0.30 in CloudShell 2026.1).
     
     :::tip
     For high load systems, we recommend using a cluster/instance that is hosted on a separate machine (not Quali Server). For additional information, see [Best Practices for MongoDB](./best-practices-for-mongodb.md).

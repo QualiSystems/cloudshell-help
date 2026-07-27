@@ -41,8 +41,11 @@ After search results are returned, you can further filter results in order to lo
 
 - By connectivity
 - By domain
+- By L1 ports
 
 Additional filters are provided in order to further narrow results by connectivity or domain. Choose the connectivity filter to find resources which are currently disconnected, currently connected, or choose "any status" to locate resources of either status. Choose the domain filter to find resources in the current domain, all domains corresponding to the current user, or resources which are not yet allocated to a domain.
+
+Select the **L1 Connectable** check box to limit the results to resources that have L1 (Layer 1) ports, so you can quickly locate resources that can be connected through an L1 switch. Clear the check box to include resources regardless of whether they have L1 ports.
 
 ### Finding the right resources
 

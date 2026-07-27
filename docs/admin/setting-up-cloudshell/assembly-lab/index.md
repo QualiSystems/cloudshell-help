@@ -29,6 +29,36 @@ When creating routes between concrete devices in the sandbox, the system priorit
 
 If no valid route can be established through existing L1 infrastructure, a provisional direct connection (device-to-device) is created. This placeholder route can later be refined by selecting appropriate connections through Layer 1 switches or patch panels.
 
+#### How the system chooses the route
+
+When you connect two concrete devices, the system evaluates the physical topology and resolves the connection in this order of preference:
+
+1. **A path through existing Layer 1 infrastructure.** If the two devices are wired into the same L1 switch or reachable across the L1 fabric through patch panels and Layer 1 switches, the system builds the route along that physical path. This reuses the cabling that is already in place rather than requiring a dedicated direct link.
+2. **A provisional direct (device-to-device) connection.** If no valid physical path can be found through the L1 infrastructure, the system still creates the connection as a provisional direct link between the two devices. This lets you proceed with the sandbox even when the L1 route is not yet available, consistent with the Assembly Lab principle that a sandbox is always created even if not all requirements are met.
+
+A provisional direct connection is a placeholder. You can refine it later (see below) once the appropriate L1 path exists or once you decide which L1 segments the route should traverse.
+
+#### Creating a route between two devices
+
+Work in the sandbox (or in the blueprint's diagram editor) that contains both concrete devices:
+
+1. Open the sandbox or blueprint that contains the two devices you want to connect.
+2. In the diagram, select the first device, then draw a connection to the second device to request a route between them.
+3. Confirm the connection. The system automatically evaluates the L1 topology and either establishes the route through the existing Layer 1 infrastructure or creates a provisional direct connection if no such path is available.
+4. Inspect the resulting connection in the diagram to see whether it was resolved through L1 infrastructure or created as a provisional direct link.
+
+#### Refining a provisional direct connection
+
+If the system created a provisional direct connection because no L1 path was available, you can refine it later:
+
+1. Locate the provisional connection between the two devices in the diagram.
+2. Once the required cabling exists — for example, after both devices are connected to the same Layer 1 switch or reachable through a patch panel — re-evaluate the connection so the system can resolve it through the L1 infrastructure.
+3. Verify that the refined route now traverses the intended Layer 1 switches or patch panels.
+
+:::note
+When a route already exists between the resources, the route itself is not solved (Layer 1 ports are not reserved). This behavior is described under [Route Handling](#route-handling) above; the system still prefers resources that are connected to Layer 1 switches when selecting devices.
+:::
+
 ### L1 Port Auto-Add on Solve
 
 When solving an abstract requirement that is part of a route, if the solution resource is connected to a Layer 1 port, that port is automatically added to the route and reservation. This eliminates the need to manually manage L1 port assignments when resolving abstract requirements within routes.

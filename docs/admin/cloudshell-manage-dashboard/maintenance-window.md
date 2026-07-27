@@ -69,19 +69,38 @@ The maintenance window's areas are arranged as follows:
 
 *New in CloudShell 2026.1*
 
-In addition to the system-wide maintenance window described above, administrators can define maintenance windows scoped to individual domains. During a domain-scoped maintenance window, sandbox creation and modifications are restricted in that domain, while other domains continue operating normally.
+In addition to the system-wide maintenance window described above, administrators can define maintenance windows scoped to individual domains. During a domain-scoped maintenance window, the same restrictions described in [About the maintenance window](#about-the-maintenance-window) (login, sandbox reservation, and automation) apply only to the selected domain. Other domains keep operating normally.
 
-This is useful for planned infrastructure maintenance, upgrades, or other activities that require temporarily restricting access to specific lab resources without affecting other teams.
+This is useful for planned infrastructure maintenance, upgrades, or other activities that require temporarily restricting access in a specific domain without affecting other teams.
+
+A domain-scoped maintenance window uses exactly the same schedule, notification duration, and messages (**Message on Login**, **Notification Message**, **Error on Reserve**, and **Warning on Reserve**) as a system-wide window. The only difference is the domain the window applies to:
+
+- A window associated with the **Global** domain is system-wide and applies to all domains (this is the default for windows created from the **Global** domain, as described in [Setting a maintenance window](#setting-a-maintenance-window)).
+- A window associated with a specific domain applies only to that domain.
+
+Each domain can have at most one active or planned maintenance window at a time, independently of other domains.
 
 ### Configuring a Domain Maintenance Window
 
-To set a maintenance window for a specific domain, use the API:
+A domain maintenance window is configured the same way as a system-wide one — by adding a maintenance window and associating it with the target domain, rather than with the **Global** domain.
 
-- **UpdateDomainSetting** — Set maintenance window parameters for a specific domain
-- **GetDomainSettings** — Retrieve current domain settings including maintenance window configuration
+**To set a maintenance window for a specific domain:**
+
+1. As system administrator, open the **Manage** dashboard.
+2. In the page navigation bar, click **Maintenance Window**.
+3. Click the **Add New Maintenance Window** button.
+4. Associate the window with the domain you want to place under maintenance (instead of the **Global** domain).
+5. Enter the schedule, notification duration, and messages, as described in [Navigating the maintenance window](#navigating-the-maintenance-window). These fields behave identically to a system-wide window.
+6. Click **Save**.
+
+The window follows the same lifecycle as a system-wide window (**NEW** → **PLANNED** → **ACTIVE**), and can be extended, stopped, or deleted the same way. The restrictions take effect only for users of the associated domain.
 
 :::note
-The system-wide maintenance window (configured from the **Manage** dashboard) takes precedence over domain-level maintenance windows. If both are active, the system-wide restrictions apply.
+The values you provide are the same as for a system-wide window: a schedule (start time and duration), a notification duration (how long before the start time to display the **Notification Message**), and the four maintenance messages. The maintenance window is not configured through a per-domain "domain setting" value — associating the window with a domain is what scopes it. The exact placement of the domain selection in the UI may vary by version.
+:::
+
+:::note
+The system-wide maintenance window (a window associated with the **Global** domain) takes precedence over domain-level maintenance windows. If both a Global and a domain-scoped window are active, the system-wide (Global) restrictions apply.
 :::
 
 ## Related Topics
