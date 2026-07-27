@@ -20,3 +20,7 @@ CloudShell also provides the option of creating a saved sandbox. However, unlike
     The new blueprint's properties page is displayed.
     
 3. Make the necessary changes and click **Update** at the bottom right of the page.
+
+:::note
+When you save the sandbox as a blueprint, connections (routes) whose endpoint is not a resource — for example, a route to an abstract or otherwise non-resource endpoint — are preserved in the resulting blueprint. Previously, such routes could prevent the sandbox from being saved.
+:::

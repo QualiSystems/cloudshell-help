@@ -64,6 +64,41 @@ sidebar_position: 4
 	</tbody>
 </table>
 
+## Select the network route resolution strategy
+
+By default, CloudShell resolves network routes under a single, server-wide lock, so concurrent route resolutions run one at a time. Setting this key to `Optimistic` enables an opt-in resolver that performs the route-resolution work outside that global lock and commits the result using optimistic concurrency (it validates and, if another reservation claimed a needed resource in the meantime, retries). This allows multiple route resolutions to proceed in parallel, which can increase route-resolution throughput when many reservations resolve routes at the same time. The default `Legacy` strategy preserves the original single-lock behavior. Any unrecognized value falls back to `Legacy`.
+
+Changing this key requires a restart of the CloudShell Server.
+
+<table>
+	<tbody>
+		<tr>
+			<td>Key</td>
+			<td>`<add key="NetworkRouteResolverStrategy" value="Optimistic"/>`</td>
+		</tr>
+		<tr>
+			<td>Possible values</td>
+			<td>Legacy/Optimistic</td>
+		</tr>
+		<tr>
+			<td>Where to add/change</td>
+			<td>`customer.config` CloudShell Server installation directory</td>
+		</tr>
+		<tr>
+			<td>Default value</td>
+			<td>Legacy</td>
+		</tr>
+		<tr>
+			<td>Affected CloudShell Component</td>
+			<td>CloudShell Server</td>
+		</tr>
+		<tr>
+			<td>Version</td>
+			<td>2026.1 and above</td>
+		</tr>
+	</tbody>
+</table>
+
 ## Enable regular users to change their email address
 <table>
 	<tbody>

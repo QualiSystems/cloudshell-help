@@ -24,6 +24,10 @@ For more information, see [New Job Scheduling Architecture](../../../new-jss-ins
     :::tip
     For high load systems, we recommend using an SQL Server that is hosted on a separate machine (not Quali Server).
     :::
+
+    :::note PostgreSQL (Beta)
+    Starting with CloudShell 2025.1, PostgreSQL is available as an alternative relational database backend to SQL Server, **in Beta (evaluation only)**. Contact Quali Support for evaluation access. For details, see [Database Prerequisites](../../../../cs-system-requirements/database-prereq.md#postgresql-database-support-beta).
+    :::
     
 3. Select the MongoDB to use (create on-the-fly on the Quali Server or use an external MongoDB instance/cluster). CloudShell officially supports Mongo 4.2 and above (Community and Enterprise editions).
     
