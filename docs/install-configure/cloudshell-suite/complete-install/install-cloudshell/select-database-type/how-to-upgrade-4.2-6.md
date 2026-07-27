@@ -2,13 +2,29 @@
 sidebar_position: 2
 ---
 
-# How to Upgrade MongoDB From 4.2 to 6.0
+# How to Upgrade MongoDB From 4.2 to 7.0
 
-Following security risks in MongoDB 4.2, it was about time to update the version used by Cloudshell.
+Following security risks in earlier MongoDB versions, the MongoDB version bundled with CloudShell has been updated over successive releases. CloudShell 2026.1 bundles **MongoDB Server 7.0.30**.
 
 ## Disclaimer
 
 The below instructions are for Cloudshell default installation with a standalone MongoDB installation only.
+
+:::info Standalone vs. installer-managed MongoDB
+When MongoDB was installed as part of the CloudShell installation (the **Local MongoDB instance** option), the CloudShell installer upgrades the bundled MongoDB Server automatically during a standard CloudShell upgrade — you do not need to run the steps in this article.
+
+Follow this article only if you use a **standalone (non-installer-managed) MongoDB** deployment (the **Mongo DB Server or cluster** option), or an external MongoDB instance/cluster. In that case, you are responsible for upgrading MongoDB yourself before upgrading CloudShell.
+:::
+
+:::note MongoDB feature compatibility version
+MongoDB requires upgrading through each major release in sequence (for example, 5.0 → 6.0 → 7.0). You cannot skip a major version. After each step, set the feature compatibility version (FCV) to the version you just moved to before proceeding to the next one, using:
+
+```js
+db.adminCommand( { setFeatureCompatibilityVersion: "<version>" } )
+```
+
+Only after MongoDB is running on 7.0 with its FCV set to `"7.0"` should you upgrade CloudShell to 2026.1. The CloudShell MongoDB .NET driver is unchanged in 2026.1, so no application-side database changes are required.
+:::
 
 :::note
 MongoDB does not support Windows Server 2012. For details, see [Windows OS requirements](../../../../cs-system-requirements/min-requirements-for-cs.md).
@@ -224,6 +240,72 @@ MongoDB does not support Windows Server 2012. For details, see [Windows OS requi
     ```
 
     
+
+## Upgrade from 6.0 to 7.0
+
+CloudShell 2026.1 uses MongoDB Server 7.0. If your standalone MongoDB is on 6.0, upgrade it to 7.0 before upgrading CloudShell to 2026.1.
+
+:::warning
+Before starting, confirm that MongoDB is running on 6.0 and that its feature compatibility version (FCV) is already set to `"6.0"` (the last step of the previous section). MongoDB 7.0 refuses to start against data whose FCV is lower than `"6.0"`.
+:::
+
+The procedure mirrors the earlier steps — stop CloudShell and MongoDB, replace the `mongod.exe` binary with the 7.0 version, restart, verify, then raise the FCV — using the official MongoDB 7.0 binaries.
+
+1. Obtain the official MongoDB 7.0 Windows binaries and a compatible MongoDB Shell (`mongosh`) from the MongoDB Download Center: [https://www.mongodb.com/try/download/community](https://www.mongodb.com/try/download/community). CloudShell 2026.1 is validated with MongoDB Server **7.0.30**.
+
+2. Start the MongoDB shell and connect to `localhost`.
+
+3. Validate the current feature compatibility version:
+    ```js
+    db.adminCommand( { getParameter: 1, featureCompatibilityVersion: 1 } )
+    // Expected response: { version: '6.0' }, ok: 1
+    ```
+
+4. Open **Task Manager > Services** and stop the **Quali Server** process (if running).
+
+5. Shut down MongoDB by running:
+    ```js
+    use admin
+    db.adminCommand( { shutdown: 1 } )
+    // The shell connection closes. Close the shell window.
+    ```
+
+6. In File Explorer, open the extracted MongoDB 7.0 `bin` folder from your downloads.
+
+7. In a second File Explorer window, open the `bin` folder of your MongoDB installation (for a default CloudShell install this is `C:\Program Files\MongoDB\Server\4.2\bin`).
+
+8. Delete the existing `mongod.exe` from the MongoDB installation's `bin` folder.
+
+9. Copy the `mongod.exe` from the MongoDB 7.0 `bin` folder into the MongoDB installation's `bin` folder.
+
+10. Open **Task Manager > Services** and start the **MongoDB** service.
+
+11. Start the MongoDB shell and verify the upgrade:
+    ```js
+    db.version()
+    // Confirm a 7.0.x version is reported
+    use Quali
+    db.Reservation.countDocuments()
+    // Confirm the reservation count matches the pre-upgrade count
+    ```
+
+12. (Optional) Start **Quali Server** and open the **Sandboxes** dashboard in CloudShell Portal to confirm data is intact, then stop **Quali Server** again.
+
+13. Raise the feature compatibility version to 7.0:
+    ```js
+    db.adminCommand( { setFeatureCompatibilityVersion: "7.0", confirm: true } )
+    ```
+    :::note
+    MongoDB 7.0 requires the additional `confirm: true` argument for `setFeatureCompatibilityVersion`. If your build of MongoDB 7.0 rejects `confirm`, rerun the command without it.
+    :::
+
+14. MongoDB is now on 7.0. Proceed to upgrade CloudShell to 2026.1.
+
+For the authoritative, version-specific steps (including replica-set and sharded-cluster scenarios that are out of scope for this article), always follow MongoDB's official procedure: [Upgrade a Standalone to 7.0](https://www.mongodb.com/docs/manual/release-notes/7.0-upgrade-standalone/).
+
+:::info Related 2026.1 prerequisite upgrades
+Alongside MongoDB, CloudShell 2026.1 also upgrades other bundled prerequisites, which the CloudShell installer handles automatically: Node.js 22 → 24 LTS, Erlang OTP 25 → 26, and Apache httpd to 2.4.66. Note that Node.js 24 dropped 32-bit (x86) Windows support, so the x86 Node.js prerequisite has been removed from the installer; components requiring Node.js now run only on 64-bit Windows. For details, see [3rd Party Software](../../../../cs-system-requirements/third-party-software.md).
+:::
 
 ## Related Topics
 

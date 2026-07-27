@@ -1648,3 +1648,8 @@ undeploys
 paginated
 pagination
 UndeployApps
+FCV
+setFeatureCompatibilityVersion
+featureCompatibilityVersion
+Telnet
+sharded
