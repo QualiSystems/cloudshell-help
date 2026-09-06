@@ -56,7 +56,7 @@ Run the following in your local Command Line:
 python -m pip install shellfoundry
 ```
 
-For windows users, it is recommended to add the path (to the shellfoundry installation folder) to your local environment variables. For example, C:\\Python27\\Scripts. This will enable us to run the Shellfoundry commands from any folder of the Shell project.
+For windows users, it is recommended to add the path (to the shellfoundry installation folder) to your local environment variables. For example, C:\\Python313\\Scripts. This will enable us to run the Shellfoundry commands from any folder of the Shell project.
 
 **To update Shellfoundry:**
 
