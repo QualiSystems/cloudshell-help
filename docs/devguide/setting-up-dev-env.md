@@ -6,11 +6,13 @@ sidebar_position: 1
 
 In this section we’ll go over the recommended steps for setting up a development environment for developing CloudShell Shells and orchestration scripts.
 
-## Get the latest Python 3.9.x
+## Install Python
 
 ![Python](/Images/Devguide-intro/Intro-Setting-up-the-Development.png)
 
-Download and install the latest version of Python 3.9.x from the [official website](https://www.python.org/downloads/). We also recommend installing pip (even though technically its included in the latest versions of Python): pip 21.2.4 and up for Python 3.7 and pip 19.2.3 for Python 2.7.18. Python 2.7.x is supported for older shells. Follow the instructions on this website: [https://pip.pypa.io/en/stable/installing/](https://pip.pypa.io/en/stable/installing/)
+Download and install a current 64-bit version of Python 3 from the [official website](https://www.python.org/downloads/). Shellfoundry, CloudShell's shell development CLI, supports Python 3.9–3.13 (Python 3.13 requires shellfoundry 1.2.29 or later).
+
+Note that shells and scripts *execute* on the Python versions bundled with CloudShell itself — currently Python 3.9.9 (and Python 2.7.18 for legacy shells). Your driver code and its requirements.txt must stay compatible with the bundled version your CloudShell deployment runs, even if your dev machine uses a newer Python.
 :::tip
 CloudShell components such as Quali Server and the execution servers come with their own Python installation folders. Making changes to these folders may cause unexpected behavior in CloudShell. Therefore, if you plan on doing dev work on a machine that has CloudShell components installed, we recommend doing one of the following:
 
