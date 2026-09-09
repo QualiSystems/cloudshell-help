@@ -274,6 +274,37 @@ sidebar_position: 6
 	</tbody>
 </table>
 
+## Keep global inputs when saving a sandbox as a blueprint
+When saving a sandbox as a blueprint, keep global inputs that were linked to a resource requirement, even when that resource is saved as a concrete resource. Set to `False` to drop them instead, restoring the behavior of earlier versions.
+<table>
+	<tbody>
+		<tr>
+			<td>Key</td>
+			<td>`<add key="KeepResourceGlobalInputsOnSaveAsBlueprint" value="True"/>`</td>
+		</tr>
+		<tr>
+			<td>Possible values</td>
+			<td>True/False</td>
+		</tr>
+		<tr>
+			<td>Where to add/change</td>
+			<td>`customer.config` CloudShell Server installation directory</td>
+		</tr>
+		<tr>
+			<td>Default value</td>
+			<td>True</td>
+		</tr>
+		<tr>
+			<td>Affected CloudShell Component</td>
+			<td>CloudShell Server</td>
+		</tr>
+		<tr>
+			<td>Version</td>
+			<td>2026.1 and above</td>
+		</tr>
+	</tbody>
+</table>
+
 ## Set the route grouping policy
 <table>
 	<tbody>

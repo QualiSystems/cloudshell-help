@@ -1656,3 +1656,4 @@ setFeatureCompatibilityVersion
 featureCompatibilityVersion
 Telnet
 sharded
+CPython

@@ -18,7 +18,7 @@ Orchestration scripts can enable automating sandbox workflows. You can use orche
     CloudShell components such as Quali Server and the execution servers come with their own Python installation folders. Making changes to these folders may cause unexpected behavior in CloudShell. Therefore, if you plan on doing dev work on a machine that has CloudShell components installed, we recommend doing one of the following:
     
     - Configuring dedicated virtual environments for your projects out of these base installations. To do this in PyCharm, see [https://www.jetbrains.com/help/pycharm/creating-virtual-environment.html](https://www.jetbrains.com/help/pycharm/creating-virtual-environment.html). To do this via CLI, see [https://docs.python-guide.org/dev/virtualenvs/#lower-level-virtualenv](https://docs.python-guide.org/dev/virtualenvs/#lower-level-virtualenv).
-    - [Downloading separate installers](https://www.python.org/downloads/) for Python 2.7.18 and 3.9.9 and using these as global installations (by setting the installation folders in the machine’s PATH system variable) for any dev work being done.
+    - [Downloading separate installers](https://www.python.org/downloads/) for Python 2.7.18 and 3.13.15 — the versions bundled with CloudShell 2026.1 on Windows; use 3.9.9 to match an earlier version or a Linux Execution Server — and using these as global installations (by setting the installation folders in the machine’s PATH system variable) for any dev work being done.
     :::
 
 - **IDE/Text Editor:** Your preferred IDE editor. We recommend using PyCharm (which offers a free community edition) because of the tooling we’ve already created for that IDE, including a CloudShell developer plugin.

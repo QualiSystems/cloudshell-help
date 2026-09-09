@@ -20,8 +20,8 @@ If any of the below 3rd Party components are missing from your computer, the Clo
 - Microsoft Visual C++ 14.0 or greater
 - Microsoft Windows Installer 4.5
 - Node.js 24.14.0 LTS (64-bit only)
-- pip 21.2.4 and up for Python 3.7 and pip 19.2.3 for Python 2.7.18
-- Python Python 2.7.18 and 3.9.9
+- pip 21.2.4 and up for Python 3 and pip 19.2.3 for Python 2.7.18
+- Python 2.7.18 and 3.13.15 (64-bit)
 - RabbitMQ 3.12.0 (installed as part of the Quali Server installation)
 - Erlang 26.2.3
 - VCTools++ (For all users. Required for compiling Python dependencies)
@@ -33,10 +33,13 @@ The following bundled prerequisites were updated:
 - **Node.js**: 22.15.0 → 24.14.0 LTS (used by Sandbox API Gateway and Server Proxy)
 - **Erlang OTP**: 25.2.3 → 26.2.3 (RabbitMQ prerequisite)
 - **MongoDB**: 6.0.4 → 7.0.30
+- **Python 3**: 3.9.9 (32-bit) → 3.13.15 (64-bit). The bundled Python 2.7.18 is unchanged. This applies to the Python bundled with CloudShell on Windows; Linux Execution Servers and the Docker Execution Server image still provide Python 3.9.9.
 
 The CloudShell installer handles these upgrades automatically. Standalone MongoDB deployments must be upgraded manually to 7.0 before upgrading CloudShell.
 
 **Breaking change**: Node.js 24 dropped 32-bit (x86) Windows support. The x86 Node.js prerequisite has been removed from the CloudShell installer. Only 64-bit Windows is supported.
+
+**Driver compatibility**: shells and scripts running on a Windows Execution Server now execute on Python 3.13. See [Behavior Changes](../../release-notes/behavior-change.md).
 :::
 
 ## Optional
