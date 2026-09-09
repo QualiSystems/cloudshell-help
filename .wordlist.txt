@@ -1657,3 +1657,6 @@ featureCompatibilityVersion
 Telnet
 sharded
 CPython
+XXE
+CWE
+Mono

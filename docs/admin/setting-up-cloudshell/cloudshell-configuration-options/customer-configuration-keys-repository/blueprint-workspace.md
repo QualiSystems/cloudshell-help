@@ -274,6 +274,41 @@ sidebar_position: 6
 	</tbody>
 </table>
 
+## Preserve the diagram arrangement when the View Style changes
+When enabled, changing the diagram **View Style** resizes the resource cards in place and keeps the saved arrangement. When disabled (the default), the legacy per-axis resize is applied (Large ×2/×3, Small ÷2.7 and ×1.3), which is non-uniform and visibly displaces resources and link endpoints.
+
+:::note
+Enabling this may cause Large cards to overlap on a diagram that was arranged in a smaller View Style.
+:::
+<table>
+	<tbody>
+		<tr>
+			<td>Key</td>
+			<td>`<add key="PreserveDiagramLayoutOnViewStyleChange" value="True"/>`</td>
+		</tr>
+		<tr>
+			<td>Possible values</td>
+			<td>True/False</td>
+		</tr>
+		<tr>
+			<td>Where to add/change</td>
+			<td>`customer.config` CloudShell Portal installation directory</td>
+		</tr>
+		<tr>
+			<td>Default value</td>
+			<td>False</td>
+		</tr>
+		<tr>
+			<td>Affected CloudShell Component</td>
+			<td>CloudShell Portal</td>
+		</tr>
+		<tr>
+			<td>Version</td>
+			<td>2026.1 and above</td>
+		</tr>
+	</tbody>
+</table>
+
 ## Keep global inputs when saving a sandbox as a blueprint
 When saving a sandbox as a blueprint, keep global inputs that were linked to a resource requirement, even when that resource is saved as a concrete resource. Set to `False` to drop them instead, restoring the behavior of earlier versions.
 <table>

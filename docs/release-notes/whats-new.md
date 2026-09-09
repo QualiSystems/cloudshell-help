@@ -26,6 +26,8 @@ Updated bundled third-party components:
 Node.js 24 dropped 32-bit (x86) Windows support. The x86 Node.js prerequisite has been removed from the installer.
 :::
 
+Also fixed: an XML External Entity (XXE) vulnerability (CWE-611) on the Portal's SAML assertion consumer service endpoint, which could be reached without authentication. Deployments using SSO/SAML should upgrade.
+
 ### Export Diagram as PNG
 Export sandbox diagrams as PNG images directly from the browser. Available in the diagram toolbar under Export → PNG.
 
@@ -59,6 +61,16 @@ New TestShell API method that returns the list of reservations (current and hist
 
 ### Improved Abstract Resource Resolution Diagnostics
 When a blueprint reservation fails due to unresolvable abstract resources or route conflicts, the error message now includes detailed diagnostics — showing which resources could not be resolved, which routes failed, and the specific conflicts that prevented resolution.
+
+### Preserve the Diagram Arrangement When the View Style Changes
+Changing a diagram's **View Style** can now resize the resource cards in place and keep the saved arrangement, instead of applying the legacy per-axis resize (Large ×2/×3, Small ÷2.7 and ×1.3) that visibly displaces resources and link endpoints. This is opt-in — set `PreserveDiagramLayoutOnViewStyleChange` to `True` in the Portal's `customer.config`; the default is unchanged behavior.
+
+Independently of that setting, three flows that could move or persist diagram coordinates incorrectly were fixed: **Arrange**, dragging resources to new positions, and resizing a sticky note.
+
+### Execution Server Resilience on Linux
+Execution Servers running on Linux/Mono handle bursts of driver launches more reliably. Under a burst, reads from driver child processes could starve the socket-completion callbacks that service the Execution Server's messaging channel, wedging the agent until it was restarted. The Execution Server now reserves a floor of thread-pool worker threads at startup so the two cannot compete, and CloudShell Server tolerates a much longer transient stall — up to roughly 100 seconds — when dispatching an execution request to an Execution Server, instead of giving up after a few seconds.
+
+Also fixed: virtual environments on Linux Execution Servers were resolved using the Windows interpreter path layout (`Scripts` rather than `bin`).
 
 ### Driver Command Queue Inspection and Recovery API
 New system-administrator Automation API methods for seeing which resource driver commands are queued or running, and cancelling them. They address a resource left blocked by a command belonging to a previous — possibly already ended — sandbox, which a new sandbox could not previously see or cancel:
@@ -106,6 +118,10 @@ Importing a blueprint that references a category that does not exist in the targ
 - Fixed the Sandbox API crashing on the Node.js 24 runtime when handling conditional (cache-revalidation) requests to the explore endpoints.
 - Restored the full Ansible package (with bundled collections) in the Docker Execution Server image, fixing playbooks that failed with missing-module errors.
 - The About dialog now shows the full four-part product version, including the build number (for example, `2026.1.0.52`).
+- Fixed a resource placed directly into a blueprint being labeled with its own name twice on the sandbox diagram — for example `server1 (server1)` instead of `server1`. A resource that does resolve an abstract still shows that abstract's alias, and where an abstract's alias is identical to the resource name the diagram now shows the name once, matching the resource side pane.
+- Fixed a **Blueprint not found** message repeating indefinitely when the active domain was switched with a blueprint open, which prevented the redirect from completing. The message is now shown once and the redirect proceeds.
+- Fixed a server error (HTTP 500) when downloading a shell or provisioning script whose stored file name has no extension.
+- Fixed the sandbox **Properties** dialog showing a non-admin user an end time the sandbox does not have, for a sandbox that had been extended beyond the duration cap of its blueprint or user group. The dialog now shows the sandbox's real schedule, and opening it no longer silently shortens the sandbox.
 
 ---
 
