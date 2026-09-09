@@ -1638,6 +1638,9 @@ TopologyApp
 ServiceName
 GetResourceReservations
 RemoveEntitiesFromTopology
+ExportBlueprint
+ImportBlueprint
+TopologyInfo
 copiable
 dialogs
 unresolvable
