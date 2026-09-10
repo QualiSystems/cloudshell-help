@@ -55,19 +55,25 @@ sudo docker run -d --name ExecutionServer --restart unless-stopped -p 5093:5093 
 
 *Added in CloudShell 2026.1*
 
-The Docker Execution Server supports passing **Execution Server Selector** attributes via environment variables. This allows CloudShell to route commands to the correct Execution Server based on attribute matching (e.g., by region or capability).
+The Docker Execution Server can register itself with attributes, such as an **Execution Server Selector** value. This allows CloudShell to route commands to the correct Execution Server based on attribute matching (for example, by region or capability).
 
-To pass attributes, add `-e` flags to the `docker run` command using the format `ATTRIBUTE_<AttributeName>=<Value>`:
+Attributes are passed in a **single** `ES_ATTRIBUTES` environment variable holding a JSON object of attribute names and values — not as one variable per attribute:
 
 ```javascript
 sudo docker run -d --name ExecutionServer --restart unless-stopped -p 5093:5093 \
   -e PARAMS="192.168.25.4,admin,admin,ES-Docker" \
-  -e ATTRIBUTE_Region="US-East" \
-  -e ATTRIBUTE_Location="SiteA" \
+  -e ES_ATTRIBUTES="{'Execution Server Selector':'US-East','MyAttr':'MyValue'}" \
   -v ~/customer.config:/opt/ExecutionServer/customer.config qualihub/executionserver
 ```
 
-These attributes function as Execution Server Selectors — when a resource or App has matching selector attributes, CloudShell will route its commands to this Execution Server. For more on Execution Server selection, see [Setting Up Execution Servers to Run Commands](../../../admin/cloudshell-execution-server-configurations/setting-up-execution-servers-to-run-commands.md).
+:::note
+- Attribute names and values are single-quoted inside the JSON, and the whole value is wrapped in double quotes so the shell passes it as one argument.
+- Attribute names may contain spaces, as `Execution Server Selector` does.
+- `ES_ATTRIBUTES` is optional. When it is omitted, the Execution Server registers with no attributes beyond the Ansible support attribute, which the container always sets.
+- Attributes are applied when the container first registers the Execution Server. To change them later, update the variable and re-create the container.
+:::
+
+To make CloudShell route a resource's or App's commands to this Execution Server, give the resource or App a matching **Execution Server Selector** attribute value. For details, see [Setting Up Execution Servers to Run Commands](../../../admin/cloudshell-execution-server-configurations/setting-up-execution-servers-to-run-commands.md).
 :::info
 - If you want to specify the version, you can edit the end of the command to include the version number. Example: qualihub/executionserver:2024.1 
 - See what versions are available here: https://hub.docker.com/r/qualihub/executionserver/tags

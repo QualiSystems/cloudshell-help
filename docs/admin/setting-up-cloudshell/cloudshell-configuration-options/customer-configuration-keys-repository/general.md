@@ -769,7 +769,9 @@ This applies to the great majority of configuration keys, but not to every one o
 
 ## Allow unicode characters in script command context
 
-When set to `true`, allows passing unicode characters to script environment variables. This is useful when usernames or other context values contain unicode characters.
+When set to `true`, allows passing unicode characters to script environment variables. This is useful when usernames or other context values contain unicode characters. By default, unicode characters are suppressed when CloudShell builds the environment variables that pass the command context to a script.
+
+The Execution Server reads this key, so set it on each Execution Server that runs the affected scripts — setting it on the Quali Server has no effect. Restart the Execution Server service after changing it.
 
 <table>
 	<tbody>
@@ -783,7 +785,7 @@ When set to `true`, allows passing unicode characters to script environment vari
 		</tr>
 		<tr>
 			<td>Where to add/change</td>
-			<td>`customer.config` CloudShell Server installation directory</td>
+			<td>`customer.config` Execution Server installation directory</td>
 		</tr>
 		<tr>
 			<td>Default value</td>
@@ -791,11 +793,11 @@ When set to `true`, allows passing unicode characters to script environment vari
 		</tr>
 		<tr>
 			<td>Affected CloudShell Component</td>
-			<td>CloudShell Server</td>
+			<td>Execution Server</td>
 		</tr>
 		<tr>
 			<td>Version</td>
-			<td>2024.1 and above</td>
+			<td>2024.1.0.2669 and above</td>
 		</tr>
 	</tbody>
 </table>
@@ -819,6 +821,8 @@ The following placeholders are supported:
 | `{version}` | CloudShell version (without the build number). |
 | `{pageType}` | Identifier of the current Portal page (empty if not available). |
 | `{pageUrl}` | Path and query string of the current Portal page. |
+| `{pageContent}` | The visible text of the Portal's main content area, with runs of whitespace collapsed to single spaces and **truncated to the first 2000 characters**. |
+| `{context}` | All of the other placeholder values as a single JSON object. Use this to hand the whole context to a chat service that takes one free-text query — it is the placeholder used in the example that ships in `customer.config`. |
 
 **Available only inside a sandbox or blueprint page** (replaced with empty values on all other pages, such as the catalog or inventory):
 
@@ -832,14 +836,20 @@ The following placeholders are supported:
 | `{resourceCount}` | Number of resources in the sandbox/blueprint. |
 
 :::note
-Sandbox placeholders (`{sandboxId}`, `{sandboxName}`, `{status}`, `{setupStage}`, `{resourceList}`, `{resourceCount}`) are only populated when the user opens the AI Assistant from within a sandbox or blueprint diagram. On any other page they are replaced with empty values.
+- Sandbox placeholders (`{sandboxId}`, `{sandboxName}`, `{status}`, `{setupStage}`, `{resourceList}`, `{resourceCount}`) are only populated when the user opens the AI Assistant from within a sandbox or blueprint diagram. On any other page they are replaced with empty values.
+- Each value is URL-encoded automatically when it is substituted, so do not encode the placeholders yourself.
+- A placeholder that is not in the list above — including a misspelled one — is replaced with an empty string rather than reported as an error. If a template produces a URL with missing values, check the placeholder spelling first.
+:::
+
+:::warning Both `{pageContent}` and `{context}` send Portal content off-site
+`{pageContent}` carries whatever text is currently on the user's screen, and `{context}` embeds `{pageContent}` along with every other value. Using either one sends that content — which can include resource names, addresses, and attribute values shown on the page — to the external chat service in the URL, where it may be logged or retained by that service. Point the template only at a service your organization is willing to share this data with, and prefer the narrower placeholders if you do not need the full page.
 :::
 
 <table>
 	<tbody>
 		<tr>
 			<td>Key</td>
-			<td>`<add key="AIChatURL" value="https://your-ai-chat-url.com?page={pageUrl}&amp;sandbox={sandboxId}"/>`</td>
+			<td>`<add key="AiChatUrl" value="https://your-ai-chat-url.com?page={pageUrl}&amp;sandbox={sandboxId}"/>`</td>
 		</tr>
 		<tr>
 			<td>Possible values</td>
