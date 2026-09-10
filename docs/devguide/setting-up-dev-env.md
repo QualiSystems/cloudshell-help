@@ -12,12 +12,22 @@ In this section we’ll go over the recommended steps for setting up a developme
 
 Download and install a current 64-bit version of Python 3 from the [official website](https://www.python.org/downloads/). Shellfoundry, CloudShell's shell development CLI, supports Python 3.9–3.13 (Python 3.13 requires shellfoundry 1.2.29 or later).
 
-Note that shells and scripts *execute* on the Python versions bundled with CloudShell itself — currently Python 3.9.9 (and Python 2.7.18 for legacy shells). Your driver code and its requirements.txt must stay compatible with the bundled version your CloudShell deployment runs, even if your dev machine uses a newer Python.
+Note that shells and scripts *execute* on the Python versions bundled with CloudShell itself, not on your dev machine's Python. As of CloudShell 2026.1 that is:
+
+| Execution Server | Bundled Python 3 | Bundled Python 2 |
+| --- | --- | --- |
+| Windows | 3.13.15 (64-bit) | 2.7.18 |
+| Linux virtual appliance / from script | 3.9.9 | 2.7.18 |
+| Docker Execution Server image | 3.9.9 | 2.7.18 |
+
+Your driver code and its `requirements.txt` must stay compatible with the bundled version your CloudShell deployment runs. If your shells run on both Windows and Linux Execution Servers, they must work on both Python 3.9 and 3.13 — mind the standard-library removals in between, such as the `collections` aliases for the abstract base classes (`collections.Sequence`), which were removed in 3.10 in favor of `collections.abc`.
+
+Earlier CloudShell versions bundle Python 3.9.9 on Windows as well; see [Behavior Changes](../release-notes/behavior-change.md).
 :::tip
 CloudShell components such as Quali Server and the execution servers come with their own Python installation folders. Making changes to these folders may cause unexpected behavior in CloudShell. Therefore, if you plan on doing dev work on a machine that has CloudShell components installed, we recommend doing one of the following:
 
 - Configuring dedicated virtual environments for your projects out of these base installations. To do this in PyCharm, see [https://www.jetbrains.com/help/pycharm/creating-virtual-environment.html](https://www.jetbrains.com/help/pycharm/creating-virtual-environment.html). To do this via CLI, see [https://docs.python-guide.org/dev/virtualenvs/#lower-level-virtualenv](https://docs.python-guide.org/dev/virtualenvs/#lower-level-virtualenv).
-- [Downloading separate installers](https://www.python.org/downloads/) for Python 2.7.18 and 3.9.9 and using these as global installations (by setting the installation folders in the machine’s PATH system variable) for any dev work being done.
+- [Downloading separate installers](https://www.python.org/downloads/) for the bundled versions listed above and using these as global installations (by setting the installation folders in the machine’s PATH system variable) for any dev work being done.
 :::
 ## Pick and install an IDE
 

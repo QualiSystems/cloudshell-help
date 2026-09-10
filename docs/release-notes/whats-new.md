@@ -60,6 +60,28 @@ New TestShell API method that returns the list of reservations (current and hist
 ### Improved Abstract Resource Resolution Diagnostics
 When a blueprint reservation fails due to unresolvable abstract resources or route conflicts, the error message now includes detailed diagnostics — showing which resources could not be resolved, which routes failed, and the specific conflicts that prevented resolution.
 
+### Bundled Python 3 Upgraded to 3.13 (Windows)
+The Python 3 interpreter bundled with CloudShell on Windows has been upgraded from CPython 3.9.9 (32-bit) to **3.13.15 (64-bit)**. Shell drivers and orchestration scripts that run on a Windows Execution Server now execute on Python 3.13. The bundled Python 2.7.18 slot is unchanged and still ships, so legacy Python 2 shells are unaffected.
+
+:::warning Driver compatibility
+Driver code and its `requirements.txt` must be valid on Python 3.13. Modules and aliases removed between 3.9 and 3.13 are the most common cause of breakage — for example the `collections` aliases for the abstract base classes (`collections.Sequence`), which were removed in Python 3.10 and must be imported from `collections.abc` instead. Test your shells against Python 3.13 before upgrading.
+:::
+
+:::note Linux and Docker Execution Servers still use Python 3.9.9
+This upgrade covers the Python bundled with CloudShell on Windows. Linux Execution Servers — including the Linux virtual appliance and the Docker Execution Server image — still provide Python 3.9.9. If your shells run on both Windows and Linux Execution Servers, keep driver code compatible with both 3.9 and 3.13.
+:::
+
+### Global Inputs Kept When Saving a Sandbox as a Blueprint
+Saving a sandbox as a blueprint now keeps global inputs that were linked to a resource requirement, instead of dropping them:
+
+- Where the requirement is carried over to the saved blueprint (the work order flow), the kept global input is linked back to that requirement, so it still drives something.
+- Where the resource was pinned down as a concrete resource, there is nothing left to link to, so the input is kept as a plain value.
+
+Controlled by the `KeepResourceGlobalInputsOnSaveAsBlueprint` key (default `true`). Set it to `false` to drop these inputs instead, which restores the previous behavior.
+
+### Blueprint Import Validates Categories
+Importing a blueprint that references a category that does not exist in the target domain now fails the import with an explicit error, instead of importing the blueprint and silently dropping the category association. This completes the import validation set — family, model, attribute, script, driver and resource references already failed the import when missing.
+
 ### Bug Fixes
 - Fixed an issue where App deployment could retry unnecessarily on certain internal errors instead of failing fast with clear diagnostics.
 - Fixed SSO (SAML) users being bounced to the login page in a loop, instead of seeing the maintenance page, when signing in during a maintenance window. Aborted logins no longer leave a half-authenticated session.
