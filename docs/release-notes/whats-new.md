@@ -60,6 +60,21 @@ New TestShell API method that returns the list of reservations (current and hist
 ### Improved Abstract Resource Resolution Diagnostics
 When a blueprint reservation fails due to unresolvable abstract resources or route conflicts, the error message now includes detailed diagnostics — showing which resources could not be resolved, which routes failed, and the specific conflicts that prevented resolution.
 
+### Driver Command Queue Inspection and Recovery API
+New system-administrator Automation API methods for seeing which resource driver commands are queued or running, and cancelling them. They address a resource left blocked by a command belonging to a previous — possibly already ended — sandbox, which a new sandbox could not previously see or cancel:
+
+- `GetRunningCommands` — the driver commands queued or running in a reservation.
+- `GetResourceCommandExecutions` — the driver commands queued or running on a resource, across all reservations.
+- `CancelResourceCommand` — cancel one command by its execution id.
+- `ClearResourceCommands` — cancel every command queued or running on a resource. Does not wait behind the command it is clearing, so it can be called from a Setup script.
+
+For details and examples, see [Inspecting and Clearing Driver Commands on a Resource](../devguide/available-cs-api/useful-cs-api-examples/inspect-and-clear-driver-commands.md).
+
+### Sandbox Owners and Permitted Users Accepted by Display Name
+Creating a sandbox could fail with `User "<name>" does not exist` for a user who did exist, when that user's display name differed from their username — most often for users provisioned through SSO or Active Directory, where the directory supplies a display name such as `Jane Doe (Engineering)` while the login remains `jdoe`. Sandbox owners and permitted users may now be given as a user ID, a username, or a display name.
+
+Usernames are matched first, so no existing behavior changes. Because display names are not required to be unique, a display name shared by more than one user is rejected rather than resolved arbitrarily, and the error asks for the username instead. Permissions are unchanged — a user resolved this way must still be allowed to own a sandbox in the relevant domain.
+
 ### Bundled Python 3 Upgraded to 3.13 (Windows)
 The Python 3 interpreter bundled with CloudShell on Windows has been upgraded from CPython 3.9.9 (32-bit) to **3.13.15 (64-bit)**. Shell drivers and orchestration scripts that run on a Windows Execution Server now execute on Python 3.13. The bundled Python 2.7.18 slot is unchanged and still ships, so legacy Python 2 shells are unaffected.
 
