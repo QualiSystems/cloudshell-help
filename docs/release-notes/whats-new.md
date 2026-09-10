@@ -138,6 +138,7 @@ CloudShell now supports PostgreSQL as an alternative database backend. Contact Q
 ## Post-2024.1 GA Patch Releases
 
 ### 2024.1.0.2534 (October 2024)
+- **Route and Cable Connectivity Events** *(added in 2024.1.0.2529)* — Four new publishable server events, `SandboxRouteConnected`, `SandboxRouteDisconnected`, `SandboxCableConnected` and `SandboxCableDisconnected`, let MQ subscribers react to connectivity changes in a sandbox. See [CloudShell Server Events Queue](../admin/cloudshell-event-queue.md)
 - **Abstract Editor: Collapse Nodes** — Collapse abstract nodes in the diagram editor for cleaner visualization
 - **Reservation State Filter** — Now visible for all domain types in the Reservations Dashboard
 - **L1 Port Filter** — Filter resources by L1 ports when adding resources to a reservation

@@ -200,6 +200,26 @@ The final value is ultimately set by the system.
             <td>Only attributes with the **Available For Abstract Resource** rule are available as possible requirements or additional information when creating or editing abstract resources.</td>
         </tr>
         <tr>
+            <td>Abstract Strategy Match All</td>
+            <td>
+            Recommends the most suitable value for an abstract input used in a blueprint, based on the matches currently available. The heuristic scores candidates so that requests with rare matches are prioritized over those with common matches.
+
+Requires the **Available For Abstract Resources** rule on the same attribute, and the `EnableAbstractParameterInfosPerBlueprintCache` configuration key set to `False`. Consider also disabling `EnableBlueprintResolutionCache` so that resolution runs for each sandbox rather than being served from cache.
+            </td>
+        </tr>
+        <tr>
+            <td>Fixed</td>
+            <td>(Applies to Assembly Lab) Marks the resource structure as fixed: a resource request for this family or model cannot be partially solved — either the whole requested structure is matched, or the request stays unsolved.</td>
+        </tr>
+        <tr>
+            <td>Fixed Connectivity</td>
+            <td>(Applies to Assembly Lab) Marks connectivity as fixed. A resource request cannot be solved by a candidate that is connected via a cable, and the request cannot be partially solved. Use this instead of **Fixed** when cabled candidates must also be excluded.</td>
+        </tr>
+        <tr>
+            <td>`WorkOrderSkipMoveCheck`</td>
+            <td>(Applies to Assembly Lab) Skips the resource-structure check for abstract resources of this resource family, allowing moves that structure validation would otherwise block.</td>
+        </tr>
+        <tr>
             <td>Displayed In Search Filters</td>
             <td>Enables CloudShell users to search CloudShell elements by specific attribute values.</td>
         </tr>

@@ -9,10 +9,27 @@ CloudShell email notifications are based on HTML templates, which can be customi
 :::note Important
 Make backup copies of any templates you want to customize just in case you need to revert back. Upgrading CloudShell will override any custom templates you have so make sure to keep backups.
 
+To avoid this, keep your templates outside the installation directory using the [`EmailTemplatesDirectory`](#storing-templates-outside-the-installation-directory) key.
+
 After modifying these files, restart the Quali Server service for the changes to take effect.
 :::
 
 These templates reside on the Quali Server machine at `C:\Program Files (x86)\QualiSystems\CloudShell\Server\EmailTemplates` and use a combination of text and CloudShell variables that pass information from CloudShell.
+
+## Storing templates outside the installation directory
+
+*Starting with CloudShell 2024.1.0.2529*, the templates directory is configurable. Pointing it outside the CloudShell installation directory keeps your customized templates from being overwritten when you upgrade.
+
+To change it, add the following key to `customer.config` in the Quali Server installation directory and restart the Quali Server service:
+
+```xml
+<add key="EmailTemplatesDirectory" value="D:\CloudShellCustom\EmailTemplates"/>
+```
+
+:::note
+- When the key is absent or empty, CloudShell uses the default `EmailTemplates` folder under the Quali Server installation directory.
+- The directory you point to must contain the full set of template files that CloudShell expects — it replaces the default directory rather than layering on top of it. Copy the default `EmailTemplates` folder to the new location before setting the key, then customize the copy.
+:::
 
 For example, the "Sandbox Ending" email template:
 

@@ -9,7 +9,7 @@ sidebar_position: 16
 Ends a sandbox per specified sandbox ID. Returns a successful response when the sandbox is stopped.
 
 :::note
-*Added in CloudShell 2024.1:* This method also supports canceling **pending** (future/scheduled) reservations, not just stopping active sandboxes.
+*Added in CloudShell 2024.1.0.2603:* This method also supports canceling **pending** (future/scheduled) reservations, not just stopping active sandboxes.
 :::
 
 ### URL

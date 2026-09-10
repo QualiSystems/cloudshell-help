@@ -726,15 +726,15 @@ Python 3 automation requires Microsoft Visual C++ Redistributable 2015 x86 and x
 
 ## Environment variable configuration overrides
 
-*Starting with CloudShell 2024.1*, CloudShell supports overriding `customer.config` values using environment variables. This enables configuration management without modifying files directly, which is useful for containerized deployments and automation scenarios.
+*Starting with CloudShell 2024.1.0.2682*, CloudShell supports overriding `customer.config` values using environment variables. This enables configuration management without modifying files directly, which is useful for containerized deployments and automation scenarios.
 
-To override a configuration key, set an environment variable with the prefix `QS_` followed by the key name (with dots replaced by underscores). For example, to override `<add key="MyKey" value="SomeValue"/>`, set the environment variable `QS_MyKey`.
+To override a configuration key, set an environment variable whose name is **exactly the configuration key name** — there is no prefix and no character substitution. For example, to override `<add key="UseRabbitServer" value="false"/>`, set an environment variable named `UseRabbitServer`.
 
 <table>
 	<tbody>
 		<tr>
 			<td>Key</td>
-			<td>N/A (environment variable prefix: `QS_`)</td>
+			<td>N/A (the environment variable is named after the configuration key it overrides)</td>
 		</tr>
 		<tr>
 			<td>Possible values</td>
@@ -754,13 +754,17 @@ To override a configuration key, set an environment variable with the prefix `QS
 		</tr>
 		<tr>
 			<td>Version</td>
-			<td>2024.1 and above</td>
+			<td>2024.1.0.2682 and above</td>
 		</tr>
 	</tbody>
 </table>
 
 :::note
 Environment variable overrides take precedence over values defined in `customer.config`. This allows you to manage configuration centrally (e.g., via orchestration tools or container runtime) without modifying config files on disk.
+
+An environment variable that is unset or set to an empty string is ignored, and the value from `customer.config` (or the key's built-in default) is used instead. You therefore cannot use an environment variable to override a key to an empty value.
+
+This applies to the great majority of configuration keys, but not to every one of them — a small number are read straight from the configuration file and ignore the environment. If a key does not respond to an environment variable, set it in `customer.config` instead.
 :::
 
 ## Allow unicode characters in script command context
