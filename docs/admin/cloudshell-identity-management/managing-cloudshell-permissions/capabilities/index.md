@@ -23,22 +23,31 @@ Capability Sets can be managed through both the CloudShell API and the CloudShel
 
 Administrators can then associate these Capability Sets with user groups. If multiple Capability Sets apply to a user group, the system prioritizes the most permissive settings for each capability.
 
-### Example Capabilities
+### Available Capabilities
 
-- **VIEW SETTINGS**: Access to the Manage page in CloudShell Portal.
-- **VIEW EXECUTION SERVERS**: Access to Manage/Execution Servers.
-- **VIEW_CATEGORIES**: Access to Manage/Categories.
-- **VIEW_SANDBOX_DATA**: Access to sandbox data in CloudShell Portal.
-- **MANAGE_USERS_PERMISSIONS**: Ability to manage Capability Sets and Roles.
-- **ADD_REMOVE_BLUEPRINT_RESOURCE**: Add or remove resources from blueprints.
-- **ADD_REMOVE_SANDBOX_RESOURCE**: Add or remove resources from sandboxes.
-- **ADD_REMOVE_BLUEPRINT_ABSTRACT_RESOURCE**: Modify abstract resources in blueprints.
-- **ADD_REMOVE_SANDBOX_ABSTRACT_RESOURCE**: Modify abstract resources in sandboxes.
-- **ADD_REMOVE_BLUEPRINT_SERVICE**: Add or remove services from blueprints.
-- **ADD_REMOVE_SANDBOX_SERVICE**: Add or remove services from sandboxes.
-- **UPDATE_WORK_ORDER**: Make changes to work orders.
-- **VIEW_WORK_ORDER**: View work orders within sandboxes.
-- **UNSOLVE_SANDBOX_ABSTRACT**: Modify abstract matches in sandboxes.
+In CloudShell Portal, each capability's description is shown as a tooltip when you build a capability set.
+
+| Capability | Description |
+| --- | --- |
+| `VIEW_SETTINGS` | Access to the Manage page in CloudShell Portal. |
+| `VIEW_EXECUTION_SERVERS` | Access to Manage/Execution Servers, to monitor execution servers. |
+| `VIEW_CATEGORIES` | Access to Manage/Categories. |
+| `VIEW_SANDBOX_DATA` | Access to sandbox data in CloudShell Portal. |
+| `MANAGE_USERS_PERMISSIONS` | Ability to manage Capability Sets and Roles. |
+| `ADD_REMOVE_BLUEPRINT_RESOURCE` | Add or remove resources from blueprints. |
+| `ADD_REMOVE_SANDBOX_RESOURCE` | Add or remove resources from sandboxes. |
+| `ADD_REMOVE_BLUEPRINT_ABSTRACT_RESOURCE` | Modify abstract resources in blueprints. |
+| `ADD_REMOVE_SANDBOX_ABSTRACT_RESOURCE` | Modify abstract resources in sandboxes. |
+| `ADD_REMOVE_BLUEPRINT_SERVICE` | Add or remove services from blueprints. |
+| `ADD_REMOVE_SANDBOX_SERVICE` | Add or remove services from sandboxes. |
+| `ADD_REMOVE_SANDBOX_ROUTE_CONNECTION` | Add or remove routes in sandboxes. |
+| `SHARE_UNSHARE_SANDBOX_RESOURCE` | Share or unshare resources in sandboxes. |
+| `UNSOLVE_SANDBOX_ABSTRACT` | Modify abstract matches in sandboxes. |
+| `MOVE_RESOURCE` | Move sub-resources to a different resource, or change the resource path. |
+| `SET_SANDBOX_START_TIME` | Set the start time for sandboxes. |
+| `SET_SANDBOX_END_TIME` | Set the end time for sandboxes. |
+| `UPDATE_WORK_ORDER` | Make changes to work orders. |
+| `VIEW_WORK_ORDER` | View work orders within sandboxes. |
 
 ## Conclusion
 
