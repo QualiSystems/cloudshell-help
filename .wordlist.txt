@@ -1660,3 +1660,4 @@ CPython
 XXE
 CWE
 Mono
+whitespace
