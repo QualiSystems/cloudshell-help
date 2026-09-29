@@ -1664,3 +1664,5 @@ whitespace
 Unresolving
 affordance
 deployable
+plugable
+unresolve
