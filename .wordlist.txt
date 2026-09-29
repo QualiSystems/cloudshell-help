@@ -1661,3 +1661,6 @@ XXE
 CWE
 Mono
 whitespace
+Unresolving
+affordance
+deployable
