@@ -7,6 +7,12 @@ CloudShell Release History
 
 ## Version 2026.1
 
+### Blueprint Export/Import via the Automation API
+New `ExportBlueprint(topologyNames[])` and `ImportBlueprint(blueprintXml)` Automation API methods. Blueprints are exchanged as plain XML text, suitable for tracking in git — export is deterministic. The import payload cannot carry data models, drivers, scripts, inventory resources, or category definitions. Permissions match those for creating/editing a blueprint in the portal; no system-administrator role is required.
+
+### Paginated Owner / Permitted Users Pickers in the Reserve Dialog
+For large domains, the Owner and Permitted Users pickers in the Reserve dialog now use a server-side, domain-scoped, 50-per-page type-ahead search instead of loading every domain user up front, which was slow for administrators in large domains. A "type to search for more" affordance was added, and domain-group ordering was fixed.
+
 ### Maintenance Window By Domain
 Administrators can define maintenance windows scoped to individual domains. This enables planned downtime or restricted access for specific teams without affecting other domains.
 
@@ -59,6 +65,9 @@ New TestShell API methods for managing application links (SSH, Telnet, RDP, etc.
 ### GetResourceReservations API
 New TestShell API method that returns the list of reservations (current and historical) associated with a given resource.
 
+### Python Automation Package Updated
+`GetResourceReservations`, `GetResourceApplicationLinks`, `SetResourceApplicationLinks`, `GetFamilyDefaultApplicationLinks`, and `SetFamilyDefaultApplicationLinks` are now exposed in the generated Python automation package, alongside the existing TestShell (.NET) API.
+
 ### Improved Abstract Resource Resolution Diagnostics
 When a blueprint reservation fails due to unresolvable abstract resources or route conflicts, the error message now includes detailed diagnostics — showing which resources could not be resolved, which routes failed, and the specific conflicts that prevented resolution.
 
@@ -104,12 +113,26 @@ Saving a sandbox as a blueprint now keeps global inputs that were linked to a re
 - Where the requirement is carried over to the saved blueprint (the work order flow), the kept global input is linked back to that requirement, so it still drives something.
 - Where the resource was pinned down as a concrete resource, there is nothing left to link to, so the input is kept as a plain value.
 
-Controlled by the `KeepResourceGlobalInputsOnSaveAsBlueprint` key (default `true`). Set it to `false` to drop these inputs instead, which restores the previous behavior.
+Controlled by two `customer.config` keys, both defaulting to `true`: `KeepResourceGlobalInputsOnSaveAsBlueprint` (keeps the input) and `RelinkGlobalInputsOnSaveAsBlueprint` (re-links a kept input to a carried-over requirement). Set either to `false` to restore the previous behavior.
 
 ### Blueprint Import Validates Categories
 Importing a blueprint that references a category that does not exist in the target domain now fails the import with an explicit error, instead of importing the blueprint and silently dropping the category association. This completes the import validation set — family, model, attribute, script, driver and resource references already failed the import when missing.
 
+### Optimistic Abstract Resource Resolution (Opt-In)
+A new pluggable solver architecture can resolve abstract resource requirements outside the global abstract-resolution lock, using a generation counter with optimistic commit, bounded retry, and pessimistic fallback — improving throughput under concurrent load. Controlled by the `AbstractResolutionStrategy` setting (`Legacy` or `Optimistic`; default `Legacy`, unchanged behavior). To try it, set `AbstractResolutionStrategy=Optimistic` in the CloudShell Server `customer.config` and restart the service.
+
+### Optimistic Network Route Resolution (Opt-In)
+Network routes can likewise be resolved outside the global abstract lock, using the same optimistic-commit-with-fallback approach — measured at roughly 2.3× route-resolution throughput (283 ms → 124 ms at 4×15 concurrency) in testing. Controlled by the `NetworkRouteResolverStrategy` setting (`Legacy` or `Optimistic`; default `Legacy`, unchanged behavior). To try it, set `NetworkRouteResolverStrategy=Optimistic` in `customer.config` and restart the service.
+
 ### Bug Fixes
+- Fixed **Save as Blueprint** failing with an error when the blueprint a sandbox was originally created from had since been deleted. Global inputs are now read from the sandbox itself, so the save succeeds.
+- Fixed diagram PNG export hanging indefinitely on a "Please Wait" indicator in deployed builds. A required library was present in source but not marked as deployable content, so it 404'd in published builds; export now fails gracefully if the library is unavailable rather than hanging.
+- Fixed abstract resource resolution (QAC) failing on large inventories once the candidate-parent count exceeded Lucene's 1024-clause query limit. Resolution now uses a single path-hierarchy terms query regardless of parent count, and real Elasticsearch failures are now surfaced instead of a misleading "wrong result type" error.
+- Fixed `FindResources` timing out on large inventories. Resource-summary retrieval now serves from Elasticsearch instead of a heavy 5-table join.
+- Fixed saving a persistent-sandbox reservation failing with a `UtcDateTime expect date kind Utc but it is Unspecified` error.
+- Fixed editing a sticky note's text resetting its color to null and failing to save. Color is now only changed when one is explicitly provided.
+- Fixed route breadcrumbs accumulating on repeated abstract resolve/unresolve. Unresolving now cleans up its port-level breadcrumb, and **Select Connection** replaces the endpoint's current route instead of accumulating routes.
+- Fixed a `NullReferenceException` when deleting a saved app that has no cloud provider; such apps are now skipped instead of throwing.
 - Fixed an issue where App deployment could retry unnecessarily on certain internal errors instead of failing fast with clear diagnostics.
 - Fixed SSO (SAML) users being bounced to the login page in a loop, instead of seeing the maintenance page, when signing in during a maintenance window. Aborted logins no longer leave a half-authenticated session.
 - Fixed an active maintenance window being left stranded open when its end time was edited to a past time. Such edits are now rejected — use **Stop** to end an active window immediately.
