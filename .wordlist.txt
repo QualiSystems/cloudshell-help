@@ -1666,3 +1666,6 @@ affordance
 deployable
 plugable
 unresolve
+anonymized
+sanitization
+InSight
