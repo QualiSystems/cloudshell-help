@@ -8,9 +8,9 @@ This article explains how to move an existing CloudShell from Microsoft SQL Serv
 
 | Database (default name) | SQL Server connection name | PostgreSQL connection name |
 |---|---|---|
-| Quali | TestShell | TestShellPostgres |
-| QualiResults | TestShellResult | TestShellResultPostgres |
-| QualiInsight | InSightResult | InSightResultPostgres |
+| Quali | `TestShell` | `TestShellPostgres` |
+| QualiResults | `TestShellResult` | `TestShellResultPostgres` |
+| QualiInsight | `InSightResult` | `InSightResultPostgres` |
 
 :::tip
 Migrate a copy of your environment first, and keep your SQL Server databases until you have validated CloudShell on PostgreSQL.
