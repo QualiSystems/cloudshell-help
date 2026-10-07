@@ -6,6 +6,10 @@ sidebar_position: 3
 
 This article explains how to deploy/upgrade QualiX version 5.0 and up.
 
+:::tip
+From QualiX 5.1.1.538 you can deploy with plain Docker Compose instead, with no installation script, and upgrades keep your settings. See [Deploy QualiX Using Docker Compose](qualix-using-docker-compose.md).
+:::
+
 Note that there are two versions of the deployment script:
 
 - `deploy-qualix-docker-5.0.1.506.sh` installs both the required containers and QualiX on a clean machine.
