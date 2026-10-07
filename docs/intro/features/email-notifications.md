@@ -51,6 +51,10 @@ Note that the sandbox end-user can change the defaults in the **Email Notificati
 
 ![](/Images/CloudShell-Portal/Lab-Management/Reservations/ReservePaneEmailNotificaions.png)
 
+#### Per-domain defaults
+
+You can override these defaults for specific domains. For example, the **Before end** notification can default to 60 minutes in one domain and 24 hours in another. Domains without their own values use the keys above. Per-domain defaults are set using the `UpdateDomainSetting` Automation API method. For details, see [Setting Email Notification Defaults per Domain](../../devguide/available-cs-api/useful-cs-api-examples/per-domain-email-notification-defaults.md).
+
 ### Admin override keys
 
 **Email notifications for all sandbox events to admins/domain admins:**
