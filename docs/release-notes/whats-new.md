@@ -124,6 +124,11 @@ A new plugable solver architecture can resolve abstract resource requirements ou
 ### Optimistic Network Route Resolution (Opt-In)
 Network routes can likewise be resolved outside the global abstract lock, using the same optimistic-commit-with-fallback approach — measured at roughly 2.3× route-resolution throughput (283 ms → 124 ms at 4×15 concurrency) in testing. Controlled by the `NetworkRouteResolverStrategy` setting (`Legacy` or `Optimistic`; default `Legacy`, unchanged behavior). To try it, set `NetworkRouteResolverStrategy=Optimistic` in `customer.config` and restart the service.
 
+### "Blueprint not found" Message No Longer Loops on Domain Switch {#blueprint-not-found-loop}
+Switching the active domain while a blueprint that doesn't exist in the new domain is open used to repeat the **Blueprint not found** message indefinitely, blocking the redirect until the page load was stopped manually. The message is now shown once and you're redirected to the blueprint catalog of the new domain.
+
+Available in CloudShell **2026.2.0.190036** and later. 2026.1 releases up to and including 2026.1.0.102 don't include this fix.
+
 ### Bug Fixes
 - Fixed **Save as Blueprint** failing with an error when the blueprint a sandbox was originally created from had since been deleted. Global inputs are now read from the sandbox itself, so the save succeeds.
 - Fixed diagram PNG export hanging indefinitely on a "Please Wait" indicator in deployed builds. A required library was present in source but not marked as deployable content, so it 404'd in published builds; export now fails gracefully if the library is unavailable rather than hanging.
@@ -142,7 +147,6 @@ Network routes can likewise be resolved outside the global abstract lock, using 
 - Restored the full Ansible package (with bundled collections) in the Docker Execution Server image, fixing playbooks that failed with missing-module errors.
 - The About dialog now shows the full four-part product version, including the build number (for example, `2026.1.0.52`).
 - Fixed a resource placed directly into a blueprint being labeled with its own name twice on the sandbox diagram — for example `server1 (server1)` instead of `server1`. A resource that does resolve an abstract still shows that abstract's alias, and where an abstract's alias is identical to the resource name the diagram now shows the name once, matching the resource side pane.
-- Fixed a **Blueprint not found** message repeating indefinitely when the active domain was switched with a blueprint open, which prevented the redirect from completing. The message is now shown once and the redirect proceeds.
 - Fixed a server error (HTTP 500) when downloading a shell or provisioning script whose stored file name has no extension.
 - Fixed the sandbox **Properties** dialog showing a non-admin user an end time the sandbox does not have, for a sandbox that had been extended beyond the duration cap of its blueprint or user group. The dialog now shows the sandbox's real schedule, and opening it no longer silently shortens the sandbox.
 
