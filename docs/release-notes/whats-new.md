@@ -7,6 +7,11 @@ CloudShell Release History
 
 ## Version 2026.1
 
+### Minimum Lead Time in Resource Manager {#minimum-lead-time-rm}
+A domain's minimum lead time can now be viewed and set in Resource Manager, on the domain's **Properties** page, instead of only through the Admin REST API. Enter the number of minutes; the text under the field describes the effect. See [Minimum Lead Time](../admin/cloudshell-identity-management/cloudshell-domains/adding-domains.md#minimum-lead-time).
+
+Available in the next 2026.1 and 2026.2 patch releases. 2026.1 releases up to and including 2026.1.0.102 don't include it.
+
 ### Blueprint Export/Import via the Automation API
 New `ExportBlueprint(topologyNames[])` and `ImportBlueprint(blueprintXml)` Automation API methods. Blueprints are exchanged as plain XML text, suitable for tracking in git — export is deterministic. The import payload cannot carry data models, drivers, scripts, inventory resources, or category definitions. Permissions match those for creating/editing a blueprint in the portal; no system-administrator role is required.
 
@@ -130,6 +135,7 @@ Switching the active domain while a blueprint that doesn't exist in the new doma
 Available in CloudShell **2026.2.0.190036** and later. 2026.1 releases up to and including 2026.1.0.102 don't include this fix.
 
 ### Bug Fixes
+- Fixed the domain minimum lead time being enforced in seconds rather than minutes for reservations made through the API. A domain set to 60 now requires sandboxes to start at least 60 minutes ahead, as the Portal already showed.
 - Fixed **Save as Blueprint** failing with an error when the blueprint a sandbox was originally created from had since been deleted. Global inputs are now read from the sandbox itself, so the save succeeds.
 - Fixed diagram PNG export hanging indefinitely on a "Please Wait" indicator in deployed builds. A required library was present in source but not marked as deployable content, so it 404'd in published builds; export now fails gracefully if the library is unavailable rather than hanging.
 - Fixed abstract resource resolution (QAC) failing on large inventories once the candidate-parent count exceeded 1024-clause query limit. Resolution now uses a single path-hierarchy terms query regardless of parent count, and real Elasticsearch failures are now surfaced instead of a misleading "wrong result type" error.
