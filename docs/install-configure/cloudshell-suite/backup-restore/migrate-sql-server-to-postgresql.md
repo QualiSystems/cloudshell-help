@@ -20,8 +20,8 @@ Migrate a copy of your environment first, and keep your SQL Server databases unt
 
 The tool's version must match your installed CloudShell version exactly. The tool prints its version when it starts, but it doesn't block a mismatch, and a mismatched tool creates a database schema that doesn't match your Quali Server.
 
-- **CloudShell 2026.2 and later:** the CloudShell installation package includes the matching tool, in `CloudShell\Utilities\SqlServerToPostgresqlMigrator`.
-- **Earlier versions:** contact Quali Support for the tool that matches your version.
+- **CloudShell 2026.2.0.34 and later:** the CloudShell installation package includes the matching tool, in `CloudShell\Utilities\SqlServerToPostgresqlMigrator`.
+- **Earlier versions, including 2026.2.0.2:** contact Quali Support for the tool that matches your version.
 
 ## Before you start
 
