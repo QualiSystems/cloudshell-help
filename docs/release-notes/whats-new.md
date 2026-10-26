@@ -14,8 +14,8 @@ The Python and XML-RPC TestShell API methods `CreateReservation`, `CreateImmedia
 
 Available in CloudShell **2026.2.0.34** and later.
 
-### Minimum Lead Time in Resource Manager
-A domain's minimum lead time can now be set in Resource Manager, in the **Min. Lead Time** field on the domain's **Properties** page, instead of directly in the database. Available in CloudShell **2026.2.0.34** and later.
+### Minimum Lead Time in Resource Manager {#minimum-lead-time-rm}
+A domain's minimum lead time can now be viewed and set in Resource Manager, in the **Min. Lead Time** field on the domain's **Properties** page, instead of only through the Admin REST API. Enter the number of minutes; the text under the field describes the effect. See [Minimum Lead Time](../admin/cloudshell-identity-management/cloudshell-domains/adding-domains.md#minimum-lead-time). Available in CloudShell **2026.2.0.34** and later; 2026.1 releases up to and including 2026.1.0.102 don't include it.
 
 ### SQL Server to PostgreSQL Migration Tool Included
 The CloudShell installation package now includes the SQL Server to PostgreSQL migration tool, in `CloudShell\Utilities\SqlServerToPostgresqlMigrator`, with a README. See [Migrating the Databases from SQL Server to PostgreSQL](../install-configure/cloudshell-suite/backup-restore/migrate-sql-server-to-postgresql.md). Available in CloudShell **2026.2.0.34** and later.
@@ -36,6 +36,7 @@ Each Docker Execution Server release is also tagged with its release number, for
 Node.js, used by the Sandbox API Gateway and Server Proxy, was updated from 24.14.0 to 24.22.1 (Node.js October 2026 security release). Available in CloudShell **2026.2.0.34** and later.
 
 ### Bug Fixes
+- Fixed the domain minimum lead time being enforced in seconds rather than minutes for reservations made through the API. A domain set to 60 now requires sandboxes to start at least 60 minutes ahead, as the Portal already showed. (2026.2.0.34)
 - Fixed `GetReservationDetails` timing out on sandboxes with many resources. Resource details are now queried more efficiently. (2026.2.0.34)
 - Fixed diagram connection lines staying attached to the old card size after changing the View Style, with `PreserveDiagramLayoutOnViewStyleChange` enabled. (2026.2.0.34)
 - Fixed **Save as Blueprint** failing for a work-order sandbox with connected routes or cables. (2026.2.0.34)

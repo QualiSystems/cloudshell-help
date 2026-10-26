@@ -20,8 +20,18 @@ Designated system administrators have limited permissions for performing domain 
 6. Next, set up the domain, as explained in [Domains Window](../../../admin/cloudshell-identity-management/cloudshell-domains/domains-window.md).
 
 
-**Minimum Lead Time**
+## Minimum Lead Time
 
-You have the ability to establish a minimum lead time for reserving Sandboxes within a specific domain. This means that when this setting is configured, any sandbox reservations must be made for a date in the future, not for immediate use.
+You can require sandboxes in a domain to be reserved ahead of time. When a domain has a minimum lead time:
 
-To implement this, you need to adjust the `MinimumLeadTimeMinutes` parameter via a specific API call. Detailed instructions on how to make this API call can be found in [this guide](../../../api-guide/cs-admin-rest-api/edit-domain.md).
+- Sandboxes can't be reserved to start immediately. The **Now** option isn't offered in the reservation dialog.
+- A sandbox's start time must be at least the minimum lead time from the moment it's reserved. This applies to reservations made from the Portal and through the API.
+
+A value of 0 (the default) means no restriction.
+
+**To set the minimum lead time:**
+
+1. In Resource Manager, open the domain and select the **Properties** page (see [Domains Window](./domains-window.md#properties-page)).
+2. In **Min. Lead Time**, enter the number of minutes (0 to 525600) and press **Enter**.
+
+You can also set it with the `MinimumLeadTimeMinutes` parameter of the [Edit domain](../../../api-guide/cs-admin-rest-api/edit-domain.md) Admin REST API call.

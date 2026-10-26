@@ -41,13 +41,14 @@ The **Properties** page displays the current domain settings: the domain name, d
     :::note
     The default duration for a domain is indefinite.
     :::
-6. The **Resources** field displays the number of resources associated with the domain. Click the **Add Resource** button to find additional resources.
-7. The **Reservations** field shows a real time summary of the domain's activity.
-8. To add or remove groups from the domain, click the **Groups** tab. The **Groups** tab lists all groups associated with the domain. The **View Only** field is checked for any group with view-only access to the domain. To manage groups and their permission levels, see [Managing CloudShell Groups](../managing-users/managing-cloudshell-groups.md).
+6. To require sandboxes in this domain to be reserved ahead of time, set **Min. Lead Time** to the number of minutes (0 to 525600, that is, up to one year). The value is saved when you press **Enter** or move to another field, and the text under the field describes the effect, for example *Sandboxes in this domain must be reserved at least 1 h 30 min in advance*. Set it to **0** to remove the restriction. For details, see [Minimum Lead Time](./adding-domains.md#minimum-lead-time).
+7. The **Resources** field displays the number of resources associated with the domain. Click the **Add Resource** button to find additional resources.
+8. The **Reservations** field shows a real time summary of the domain's activity.
+9. To add or remove groups from the domain, click the **Groups** tab. The **Groups** tab lists all groups associated with the domain. The **View Only** field is checked for any group with view-only access to the domain. To manage groups and their permission levels, see [Managing CloudShell Groups](../managing-users/managing-cloudshell-groups.md).
     :::note
     You can also associate a group with a domain via the **Domains** area in the **Groups** tab.
     :::
-9. Click the **Topologies** tab to add or remove blueprints. The **Topologies** tab lists all blueprints associated with the domain. When you add a blueprint to a domain, the blueprint's resources, Apps and services are added as well. For additional information, see [Adding resources to a domain](./addingremoving-resources-from-a-domain.md#adding-resources-to-a-domain).
+10. Click the **Topologies** tab to add or remove blueprints. The **Topologies** tab lists all blueprints associated with the domain. When you add a blueprint to a domain, the blueprint's resources, Apps and services are added as well. For additional information, see [Adding resources to a domain](./addingremoving-resources-from-a-domain.md#adding-resources-to-a-domain).
     
     ![](/Images/Admin-Guide/User-Management/The-Domain-window_2.png)
     :::note

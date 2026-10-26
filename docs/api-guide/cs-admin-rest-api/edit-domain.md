@@ -6,7 +6,7 @@ sidebar_position: 6
 
 ### Description
 
-Gets a list of all domains in CloudShell
+Updates a domain's settings. Only the parameters included in the request body are changed
 
 ### URL
 
@@ -44,7 +44,7 @@ Example header format:
 | EndTime | (string) End time of domain's validity. When the end time is reached, the domain will be accessible but no longer in use. |
 | Archived | (bool) **true** to archive the domain. |
 | LicensePoolId | (string) Id of the license pool. Can be retrieved via [Get all license pools](./get-all-license-pools.md). |
-| MinimumLeadTimeMinutes | (int) Determine how soon a sandbox can be ordered from the present time. For example, a minimum lead time of 60 would mean that the FROM field must be now + 60 minutes. |
+| MinimumLeadTimeMinutes | (int) Minimum number of minutes between the time a sandbox is reserved and its start time. For example, 60 means the sandbox must start at least 60 minutes from now. 0 removes the restriction. Can also be set in Resource Manager (domain **Properties** page). |
 
 </details>
 
