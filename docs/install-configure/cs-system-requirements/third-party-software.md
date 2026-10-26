@@ -19,7 +19,7 @@ If any of the below 3rd Party components are missing from your computer, the Clo
 - Microsoft Visual C++ Runtime 10.0
 - Microsoft Visual C++ 14.0 or greater
 - Microsoft Windows Installer 4.5
-- Node.js 24.14.0 LTS (64-bit only)
+- Node.js 24.22.1 LTS (64-bit only). CloudShell 2026.2.0.2 and 2026.1 use Node.js 24.14.0.
 - pip 21.2.4 and up for Python 3 and pip 19.2.3 for Python 2.7.18
 - Python 2.7.18 and 3.13.15 (64-bit)
 - RabbitMQ 3.12.0 (installed as part of the Quali Server installation)

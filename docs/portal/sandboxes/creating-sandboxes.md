@@ -87,6 +87,8 @@ Blueprints of type ‘view’ cannot be reserved.
             - **On start** - Sends notification as the sandbox starts.
             - **On setup complete** - Sends notification when the sandbox setup completes.
             - **Before end** - (Unavailable for persistent blueprints) Sends notification before the Teardown process begins. The exact time is decided by the user.
+
+                To repeat this reminder until the sandbox ends, also select **and again every** and set the interval (minimum 15 minutes). Available in CloudShell 2026.2.0.34 and later.
                 
                 :::note
                 By default, it is not possible to launch a sandbox that has a shorter duration than the Before end period. However, your admin can enable this capability using the `ReservationEmail.VerifyNotificationBeforeEndLongerThanDuration` configuration key.
