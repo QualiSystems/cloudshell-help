@@ -5,6 +5,49 @@ sidebar_position: 2
 CloudShell Release History
 ==========
 
+## Version 2026.2
+
+### Repeating "Sandbox Ending" Email {#repeating-before-end-notification}
+The **Before end** email notification can now repeat until the sandbox ends. In the Reserve dialog or the sandbox **Properties**, select **Before end**, then select **and again every** and set an interval (minimum 15 minutes). The sandbox owner and permitted users keep getting the reminder at that interval until the sandbox ends.
+
+The Python and XML-RPC TestShell API methods `CreateReservation`, `CreateImmediateReservation`, `CreateTopologyReservation` and `CreateImmediateTopologyReservation` accept a new optional `notificationRepeatMinutes` parameter (0 = no repeat, otherwise at least 15). The parameter isn't available in the TCL and C# API clients.
+
+Available in CloudShell **2026.2.0.34** and later.
+
+### Minimum Lead Time in Resource Manager
+A domain's minimum lead time can now be set in Resource Manager, in the **Min. Lead Time** field on the domain's **Properties** page, instead of directly in the database. Available in CloudShell **2026.2.0.34** and later.
+
+### SQL Server to PostgreSQL Migration Tool Included
+The CloudShell installation package now includes the SQL Server to PostgreSQL migration tool, in `CloudShell\Utilities\SqlServerToPostgresqlMigrator`, with a README. See [Migrating the Databases from SQL Server to PostgreSQL](../install-configure/cloudshell-suite/backup-restore/migrate-sql-server-to-postgresql.md). Available in CloudShell **2026.2.0.34** and later.
+
+### Approval Group Notifications Limited to Administrators
+Only system administrators (any group) and domain administrators (groups in their current domain) can set **When new approval request created, notify users with group** on a blueprint. A group that is already set is kept when other users edit the blueprint. The new Quali Server key `DisableApprovalGroupNotifications` (default `false`) hides the option and stops group notification emails. Available in CloudShell **2026.2.0.34** and later.
+
+### Secrets Redacted from CloudShell Monitor Log Packages
+Log packages created by CloudShell Monitor now include redacted copies of the configuration files, with passwords, secrets, private keys and connection-string passwords masked. Available in CloudShell **2026.2.0.34** and later.
+
+### Execution Server Driver Environments Keep Their Seed Packages
+When creating a driver environment, the Execution Server now sets `VIRTUALENV_NO_PERIODIC_UPDATE=1`, so virtualenv no longer downloads newer pip and setuptools in the background. This prevents environments from picking up setuptools versions that break drivers (for example, a missing `pkg_resources`). Set `VIRTUALENV_NO_PERIODIC_UPDATE=0` on the Execution Server host to restore the previous behavior.
+
+### Docker Execution Server Per-Release Tag
+Each Docker Execution Server release is also tagged with its release number, for example `qualihub/executionserver:2026.2`, which always points to the newest 2026.2 image.
+
+### Security Updates
+Node.js, used by the Sandbox API Gateway and Server Proxy, was updated from 24.14.0 to 24.22.1 (Node.js October 2026 security release). Available in CloudShell **2026.2.0.34** and later.
+
+### Bug Fixes
+- Fixed `GetReservationDetails` timing out on sandboxes with many resources. Resource details are now queried more efficiently. (2026.2.0.34)
+- Fixed diagram connection lines staying attached to the old card size after changing the View Style, with `PreserveDiagramLayoutOnViewStyleChange` enabled. (2026.2.0.34)
+- Fixed **Save as Blueprint** failing for a work-order sandbox with connected routes or cables. (2026.2.0.34)
+- Fixed the **Drivers** tab being hidden in Resource Manager for resource models that have parent models. (2026.2.0.34)
+- The Activity Feed **All Components** filter now lists components in natural alphabetical order instead of diagram order. (2026.2.0.34)
+- Fixed the sandbox diagram occasionally staying on **LOADING**. (2026.2.0.34)
+- `ServiceExtension.dll` and `GenericServiceExtension.dll` now show the CloudShell version as their file version. Their assembly version is unchanged (2.0.0.0). (2026.2.0.34)
+- Fixed the App Orchestration package (1.0.1) on Python 3.13 Execution Servers. (2026.2.0.34)
+- Fixed reserving a sandbox failing with `User "..." does not exist` when the owner's username contains non-ASCII characters, such as accented letters or Japanese characters.
+- Fixed a custom logo override (`customer_override.css`) not being applied on the page shown after switching domain.
+- Fixed the Connect All VLAN service script on Python 3 Execution Servers; the installer now ships the current Networking and Sandbox Orchestration packages.
+
 ## Version 2026.1
 
 ### Minimum Lead Time in Resource Manager {#minimum-lead-time-rm}

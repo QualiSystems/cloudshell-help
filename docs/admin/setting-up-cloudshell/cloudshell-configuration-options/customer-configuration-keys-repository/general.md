@@ -573,6 +573,36 @@ Python 3 automation requires Microsoft Visual C++ Redistributable 2015 x86 and x
 	</tbody>
 </table>
 
+## Disable approval request notifications to user groups
+<table>
+	<tbody>
+		<tr>
+			<td>Key</td>
+			<td>`<add key="DisableApprovalGroupNotifications" value="True"/>`</td>
+		</tr>
+		<tr>
+			<td>Possible values</td>
+			<td>True/False. When True, blueprints can't notify a user group about new approval requests, the **notify users with group** option is hidden in the Portal, and no group notification emails are sent.</td>
+		</tr>
+		<tr>
+			<td>Where to add/change</td>
+			<td>`customer.config` Quali Server installation directory</td>
+		</tr>
+		<tr>
+			<td>Default value</td>
+			<td>False</td>
+		</tr>
+		<tr>
+			<td>Affected CloudShell Component</td>
+			<td>Quali Server</td>
+		</tr>
+		<tr>
+			<td>Version</td>
+			<td>2026.2.0.34 and above</td>
+		</tr>
+	</tbody>
+</table>
+
 ## Enabling the automatic removal of expired approval requests
 <table>
 	<tbody>

@@ -56,7 +56,7 @@ The sandbox’s name has a limit of 60 characters.
         <tr>
             <td>Email Notifications</td>
             <td>
-            Email notifications to be sent to the owner and permitted users of the sandbox at different times during the lifecycle of the sandbox. Options are **On start**, **On setup complete**, **Before end**, and **On end** (you can decide exactly when to receive notification).
+            Email notifications to be sent to the owner and permitted users of the sandbox at different times during the lifecycle of the sandbox. Options are **On start**, **On setup complete**, **Before end**, and **On end** (you can decide exactly when to receive notification). For **Before end**, select **and again every** to repeat the reminder at a set interval (minimum 15 minutes) until the sandbox ends (CloudShell 2026.2.0.34 and later).
 :::note
 This capability requires the administrator to activate the email notifications feature using the `ReservationEmail` configuration keys.
 :::
