@@ -14,8 +14,8 @@ The Python and XML-RPC TestShell API methods `CreateReservation`, `CreateImmedia
 
 Available in CloudShell **2026.2.0.34** and later.
 
-### Minimum Lead Time in Resource Manager
-A domain's minimum lead time can now be set in Resource Manager, in the **Min. Lead Time** field on the domain's **Properties** page, instead of directly in the database. Available in CloudShell **2026.2.0.34** and later.
+### Minimum Lead Time in Resource Manager {#minimum-lead-time-rm}
+A domain's minimum lead time can now be viewed and set in Resource Manager, in the **Min. Lead Time** field on the domain's **Properties** page, instead of only through the Admin REST API. Enter the number of minutes; the text under the field describes the effect. See [Minimum Lead Time](../admin/cloudshell-identity-management/cloudshell-domains/adding-domains.md#minimum-lead-time). Available in CloudShell **2026.2.0.34** and later; 2026.1 releases up to and including 2026.1.0.102 don't include it.
 
 ### SQL Server to PostgreSQL Migration Tool Included
 The CloudShell installation package now includes the SQL Server to PostgreSQL migration tool, in `CloudShell\Utilities\SqlServerToPostgresqlMigrator`, with a README. See [Migrating the Databases from SQL Server to PostgreSQL](../install-configure/cloudshell-suite/backup-restore/migrate-sql-server-to-postgresql.md). Available in CloudShell **2026.2.0.34** and later.
@@ -36,6 +36,7 @@ Each Docker Execution Server release is also tagged with its release number, for
 Node.js, used by the Sandbox API Gateway and Server Proxy, was updated from 24.14.0 to 24.22.1 (Node.js October 2026 security release). Available in CloudShell **2026.2.0.34** and later.
 
 ### Bug Fixes
+- Fixed the domain minimum lead time being enforced in seconds rather than minutes for reservations made through the API. A domain set to 60 now requires sandboxes to start at least 60 minutes ahead, as the Portal already showed. (2026.2.0.34)
 - Fixed `GetReservationDetails` timing out on sandboxes with many resources. Resource details are now queried more efficiently. (2026.2.0.34)
 - Fixed diagram connection lines staying attached to the old card size after changing the View Style, with `PreserveDiagramLayoutOnViewStyleChange` enabled. (2026.2.0.34)
 - Fixed **Save as Blueprint** failing for a work-order sandbox with connected routes or cables. (2026.2.0.34)
@@ -49,11 +50,6 @@ Node.js, used by the Sandbox API Gateway and Server Proxy, was updated from 24.1
 - Fixed the Connect All VLAN service script on Python 3 Execution Servers; the installer now ships the current Networking and Sandbox Orchestration packages.
 
 ## Version 2026.1
-
-### Minimum Lead Time in Resource Manager {#minimum-lead-time-rm}
-A domain's minimum lead time can now be viewed and set in Resource Manager, on the domain's **Properties** page, instead of only through the Admin REST API. Enter the number of minutes; the text under the field describes the effect. See [Minimum Lead Time](../admin/cloudshell-identity-management/cloudshell-domains/adding-domains.md#minimum-lead-time).
-
-Available in the next 2026.1 and 2026.2 patch releases. 2026.1 releases up to and including 2026.1.0.102 don't include it.
 
 ### Blueprint Export/Import via the Automation API
 New `ExportBlueprint(topologyNames[])` and `ImportBlueprint(blueprintXml)` Automation API methods. Blueprints are exchanged as plain XML text, suitable for tracking in git — export is deterministic. The import payload cannot carry data models, drivers, scripts, inventory resources, or category definitions. Permissions match those for creating/editing a blueprint in the portal; no system-administrator role is required.
@@ -178,7 +174,6 @@ Switching the active domain while a blueprint that doesn't exist in the new doma
 Available in CloudShell **2026.2.0.190036** and later. 2026.1 releases up to and including 2026.1.0.102 don't include this fix.
 
 ### Bug Fixes
-- Fixed the domain minimum lead time being enforced in seconds rather than minutes for reservations made through the API. A domain set to 60 now requires sandboxes to start at least 60 minutes ahead, as the Portal already showed.
 - Fixed **Save as Blueprint** failing with an error when the blueprint a sandbox was originally created from had since been deleted. Global inputs are now read from the sandbox itself, so the save succeeds.
 - Fixed diagram PNG export hanging indefinitely on a "Please Wait" indicator in deployed builds. A required library was present in source but not marked as deployable content, so it 404'd in published builds; export now fails gracefully if the library is unavailable rather than hanging.
 - Fixed abstract resource resolution (QAC) failing on large inventories once the candidate-parent count exceeded 1024-clause query limit. Resolution now uses a single path-hierarchy terms query regardless of parent count, and real Elasticsearch failures are now surfaced instead of a misleading "wrong result type" error.
