@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>cloudshell.api package &mdash; CloudShell Python API 2026.1.0.189799 documentation</title>
+  <title>cloudshell.api package &mdash; CloudShell Python API 2026.2.0.190144 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
 
@@ -14,7 +14,7 @@
     <link rel="shortcut icon" href="_static/favicon.ico"/>
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=5ab1c360"></script>
+      <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=5e67fefe"></script>
       <script src="_static/doctools.js?v=888ff710"></script>
       <script src="_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="_static/js/theme.js"></script>
@@ -33,7 +33,7 @@
       <img src="_static/just_logo.png" class="logo" alt="Logo"/>
   </a>
     <div class="version">
-      2026.1
+      2026.2
     </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -164,6 +164,11 @@
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.Authentication.xmlrpc_token"><code class="docutils literal notranslate"><span class="pre">Authentication.xmlrpc_token</span></code></a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#cloudshell.api.cloudshell_api.BlueprintXmlInfo"><code class="docutils literal notranslate"><span class="pre">BlueprintXmlInfo</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.BlueprintXmlInfo.Name"><code class="docutils literal notranslate"><span class="pre">BlueprintXmlInfo.Name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.BlueprintXmlInfo.Xml"><code class="docutils literal notranslate"><span class="pre">BlueprintXmlInfo.Xml</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#cloudshell.api.cloudshell_api.BulkAppDeploymentyInfo"><code class="docutils literal notranslate"><span class="pre">BulkAppDeploymentyInfo</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.BulkAppDeploymentyInfo.ResultItems"><code class="docutils literal notranslate"><span class="pre">BulkAppDeploymentyInfo.ResultItems</span></code></a></li>
 </ul>
@@ -218,10 +223,12 @@
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.ApproveApprovalRequest"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.ApproveApprovalRequest()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.ArchiveDomain"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.ArchiveDomain()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.AutoLoad"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.AutoLoad()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.CancelResourceCommand"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.CancelResourceCommand()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.ChangeReservationOwner"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.ChangeReservationOwner()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.CheckoutFromPool"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.CheckoutFromPool()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.CleanupSandboxConnectivity"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.CleanupSandboxConnectivity()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.ClearAndResetConsole"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.ClearAndResetConsole()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.ClearResourceCommands"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.ClearResourceCommands()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.ClearSandboxData"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.ClearSandboxData()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.ConfigureApps"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.ConfigureApps()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.ConfigureAppsV2"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.ConfigureAppsV2()</span></code></a></li>
@@ -273,6 +280,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.ExecuteResourceConnectedCommand"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.ExecuteResourceConnectedCommand()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.ExecuteServiceCommand"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.ExecuteServiceCommand()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.ExecuteTopologyCommand"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.ExecuteTopologyCommand()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.ExportBlueprint"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.ExportBlueprint()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.ExportFamiliesAndModels"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.ExportFamiliesAndModels()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.ExtendReservation"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.ExtendReservation()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.FindResources"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.FindResources()</span></code></a></li>
@@ -310,6 +318,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetResourceApplicationLinks"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetResourceApplicationLinks()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetResourceAvailability"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetResourceAvailability()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetResourceAvailabilityInTimeRange"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetResourceAvailabilityInTimeRange()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetResourceCommandExecutions"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetResourceCommandExecutions()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetResourceCommands"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetResourceCommands()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetResourceConnectedCommands"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetResourceConnectedCommands()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetResourceDetails"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetResourceDetails()</span></code></a></li>
@@ -322,6 +331,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetResourcesLabelsInTopology"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetResourcesLabelsInTopology()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetRouteSegments"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetRouteSegments()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetRoutesSolution"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetRoutesSolution()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetRunningCommands"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetRunningCommands()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetSandboxData"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetSandboxData()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetSavedSandboxes"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetSavedSandboxes()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetScheduledReservations"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetScheduledReservations()</span></code></a></li>
@@ -339,6 +349,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetTopologyUrls"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetTopologyUrls()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetUserDetails"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetUserDetails()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetValuesForLookupAttribute"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.GetValuesForLookupAttribute()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.ImportBlueprint"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.ImportBlueprint()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.IncludeResource"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.IncludeResource()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.IncludeResources"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.IncludeResources()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.LockResource"><code class="docutils literal notranslate"><span class="pre">CloudShellAPISession.LockResource()</span></code></a></li>
@@ -617,6 +628,10 @@
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.ErrorParameter.Value"><code class="docutils literal notranslate"><span class="pre">ErrorParameter.Value</span></code></a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#cloudshell.api.cloudshell_api.ExportBlueprintResponseInfo"><code class="docutils literal notranslate"><span class="pre">ExportBlueprintResponseInfo</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.ExportBlueprintResponseInfo.Blueprints"><code class="docutils literal notranslate"><span class="pre">ExportBlueprintResponseInfo.Blueprints</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#cloudshell.api.cloudshell_api.ExportConfigurationInfo"><code class="docutils literal notranslate"><span class="pre">ExportConfigurationInfo</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.ExportConfigurationInfo.Configuration"><code class="docutils literal notranslate"><span class="pre">ExportConfigurationInfo.Configuration</span></code></a></li>
 </ul>
@@ -788,6 +803,10 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#cloudshell.api.cloudshell_api.GroupsInfo"><code class="docutils literal notranslate"><span class="pre">GroupsInfo</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.GroupsInfo.Groups"><code class="docutils literal notranslate"><span class="pre">GroupsInfo.Groups</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#cloudshell.api.cloudshell_api.ImportBlueprintResponseInfo"><code class="docutils literal notranslate"><span class="pre">ImportBlueprintResponseInfo</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.ImportBlueprintResponseInfo.ImportedBlueprints"><code class="docutils literal notranslate"><span class="pre">ImportBlueprintResponseInfo.ImportedBlueprints</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#cloudshell.api.cloudshell_api.InputNameValue"><code class="docutils literal notranslate"><span class="pre">InputNameValue</span></code></a></li>
@@ -1189,6 +1208,19 @@
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.RouteWithWorkOrderInfo.SourceType"><code class="docutils literal notranslate"><span class="pre">RouteWithWorkOrderInfo.SourceType</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.RouteWithWorkOrderInfo.TargetType"><code class="docutils literal notranslate"><span class="pre">RouteWithWorkOrderInfo.TargetType</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.RouteWithWorkOrderInfo.WorkOrder"><code class="docutils literal notranslate"><span class="pre">RouteWithWorkOrderInfo.WorkOrder</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#cloudshell.api.cloudshell_api.RunningCommandInfo"><code class="docutils literal notranslate"><span class="pre">RunningCommandInfo</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.RunningCommandInfo.CommandName"><code class="docutils literal notranslate"><span class="pre">RunningCommandInfo.CommandName</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.RunningCommandInfo.ExecutionId"><code class="docutils literal notranslate"><span class="pre">RunningCommandInfo.ExecutionId</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.RunningCommandInfo.ReservationId"><code class="docutils literal notranslate"><span class="pre">RunningCommandInfo.ReservationId</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.RunningCommandInfo.ResourceFullName"><code class="docutils literal notranslate"><span class="pre">RunningCommandInfo.ResourceFullName</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.RunningCommandInfo.StartTime"><code class="docutils literal notranslate"><span class="pre">RunningCommandInfo.StartTime</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.RunningCommandInfo.Status"><code class="docutils literal notranslate"><span class="pre">RunningCommandInfo.Status</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#cloudshell.api.cloudshell_api.RunningCommandListInfo"><code class="docutils literal notranslate"><span class="pre">RunningCommandListInfo</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#cloudshell.api.cloudshell_api.RunningCommandListInfo.Commands"><code class="docutils literal notranslate"><span class="pre">RunningCommandListInfo.Commands</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#cloudshell.api.cloudshell_api.SandboxDataKeyValue"><code class="docutils literal notranslate"><span class="pre">SandboxDataKeyValue</span></code></a></li>
@@ -2092,6 +2124,24 @@
 </dd></dl>
 
 <dl class="py class">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.BlueprintXmlInfo">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cloudshell.api.cloudshell_api.</span></span><span class="sig-name descname"><span class="pre">BlueprintXmlInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xml_object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">find_prefix</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#BlueprintXmlInfo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.BlueprintXmlInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cloudshell.api.common_cloudshell_api.CommonResponseInfo" title="cloudshell.api.common_cloudshell_api.CommonResponseInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommonResponseInfo</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.BlueprintXmlInfo.Name">
+<span class="sig-name descname"><span class="pre">Name</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.BlueprintXmlInfo.Name" title="Permalink to this definition">¶</a></dt>
+<dd><p>:type : str</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.BlueprintXmlInfo.Xml">
+<span class="sig-name descname"><span class="pre">Xml</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.BlueprintXmlInfo.Xml" title="Permalink to this definition">¶</a></dt>
+<dd><p>:type : str</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
 <dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.BulkAppDeploymentyInfo">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cloudshell.api.cloudshell_api.</span></span><span class="sig-name descname"><span class="pre">BulkAppDeploymentyInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xml_object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">find_prefix</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#BulkAppDeploymentyInfo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.BulkAppDeploymentyInfo" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#cloudshell.api.common_cloudshell_api.CommonResponseInfo" title="cloudshell.api.common_cloudshell_api.CommonResponseInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommonResponseInfo</span></code></a></p>
@@ -2550,6 +2600,20 @@ For example: [AddRestrictionRequest(‘family_name’, ‘model_name’, sort_va
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.CloudShellAPISession.CancelResourceCommand">
+<span class="sig-name descname"><span class="pre">CancelResourceCommand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">commandId</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.CancelResourceCommand"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.CancelResourceCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cancel a queued or running resource driver command by its command execution id. If the command is still queued it is removed from the command queue; if it is already running it is cancelled. Requires system administrator permissions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>commandId</strong> (<em>str</em>) – Specify the string that represents the command execution’s unique identifier (as returned by EnqueueResourceCommand).</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.CloudShellAPISession.ChangeReservationOwner">
 <span class="sig-name descname"><span class="pre">ChangeReservationOwner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reservationId</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ownerName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.ChangeReservationOwner"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.ChangeReservationOwner" title="Permalink to this definition">¶</a></dt>
 <dd><p>Updates the owner in a specified reservation.</p>
@@ -2609,6 +2673,20 @@ For example: [AddRestrictionRequest(‘family_name’, ‘model_name’, sort_va
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="#cloudshell.api.cloudshell_api.CommandExecutionCompletedResultInfo" title="cloudshell.api.cloudshell_api.CommandExecutionCompletedResultInfo">CommandExecutionCompletedResultInfo</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.CloudShellAPISession.ClearResourceCommands">
+<span class="sig-name descname"><span class="pre">ClearResourceCommands</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resourceFullName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.ClearResourceCommands"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.ClearResourceCommands" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cancel every resource driver command currently queued or running on a specific resource, across all reservations, and return the commands that were cleared. Queued commands are dequeued and running commands are cancelled out-of-band, so this does not wait behind the very command it is clearing. Intended to be called during Setup to make sure a new sandbox starts with no residual commands from a previous one. Requires system administrator permissions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>resourceFullName</strong> (<em>str</em>) – Specify the resource full name. For example: ResourceName/Port.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#cloudshell.api.cloudshell_api.RunningCommandListInfo" title="cloudshell.api.cloudshell_api.RunningCommandListInfo">RunningCommandListInfo</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -2797,7 +2875,7 @@ For example: [AddRestrictionRequest(‘family_name’, ‘model_name’, sort_va
 
 <dl class="py method">
 <dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.CloudShellAPISession.CreateImmediateReservation">
-<span class="sig-name descname"><span class="pre">CreateImmediateReservation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reservationName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">owner</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">durationInMinutes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notifyOnStart</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notifyOnEnd</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notificationMinutesBeforeEnd</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isTerminationProtectionEnabled</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">approvalSid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.CreateImmediateReservation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.CreateImmediateReservation" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">CreateImmediateReservation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reservationName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">owner</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">durationInMinutes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notifyOnStart</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notifyOnEnd</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notificationMinutesBeforeEnd</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isTerminationProtectionEnabled</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">approvalSid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notificationRepeatMinutes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.CreateImmediateReservation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.CreateImmediateReservation" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines a reservation to be started immediately.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -2810,6 +2888,7 @@ For example: [AddRestrictionRequest(‘family_name’, ‘model_name’, sort_va
 <li><p><strong>notificationMinutesBeforeEnd</strong> (<em>int</em>) – Indicate the number of minutes before the end of the reservation to send out a Notify On End alert to the reservation owner. (0 = disabled)</p></li>
 <li><p><strong>isTerminationProtectionEnabled</strong> (<em>bool</em>) – Indicate whether to protect the reservation from being terminated.</p></li>
 <li><p><strong>approvalSid</strong> (<em>str</em>) – Leave empty. Used for internal purposes.</p></li>
+<li><p><strong>notificationRepeatMinutes</strong> (<em>int</em>) – Repeat the before-end notification every this many minutes until the reservation ends (0 = no repeat, minimum 15). Applies only when notificationMinutesBeforeEnd is set.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
@@ -2820,7 +2899,7 @@ For example: [AddRestrictionRequest(‘family_name’, ‘model_name’, sort_va
 
 <dl class="py method">
 <dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.CloudShellAPISession.CreateImmediateTopologyReservation">
-<span class="sig-name descname"><span class="pre">CreateImmediateTopologyReservation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reservationName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">owner</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">durationInMinutes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notifyOnStart</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notifyOnSetupComplete</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notifyOnEnd</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notificationMinutesBeforeEnd</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topologyFullPath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">globalInputs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">requirementsInputs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">additionalInfoInputs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.CreateImmediateTopologyReservation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.CreateImmediateTopologyReservation" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">CreateImmediateTopologyReservation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reservationName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">owner</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">durationInMinutes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notifyOnStart</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notifyOnSetupComplete</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notifyOnEnd</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notificationMinutesBeforeEnd</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topologyFullPath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">globalInputs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">requirementsInputs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">additionalInfoInputs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notificationRepeatMinutes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.CreateImmediateTopologyReservation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.CreateImmediateTopologyReservation" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines a reservation to be started immediately. The reservation will start regardless of conflicting resources.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -2856,6 +2935,7 @@ contains hi there
 doesnotcontain hi there</p>
 </p></li>
 <li><p><strong>additionalInfoInputs</strong> (<em>list</em><em>[</em><a class="reference internal" href="#cloudshell.api.cloudshell_api.UpdateTopologyAdditionalInfoInputsRequest" title="cloudshell.api.cloudshell_api.UpdateTopologyAdditionalInfoInputsRequest"><em>UpdateTopologyAdditionalInfoInputsRequest</em></a><em>]</em>) – Additional info inputs associated with the specified topology.</p></li>
+<li><p><strong>notificationRepeatMinutes</strong> (<em>int</em>) – Repeat the before-end notification every this many minutes until the reservation ends (0 = no repeat, minimum 15). Applies only when notificationMinutesBeforeEnd is set.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
@@ -2891,7 +2971,7 @@ doesnotcontain hi there</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.CloudShellAPISession.CreateReservation">
-<span class="sig-name descname"><span class="pre">CreateReservation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reservationName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">owner</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notifyOnStart</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notifyOnEnd</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notificationMinutesBeforeEnd</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isTerminationProtectionEnabled</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">approvalSid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.CreateReservation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.CreateReservation" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">CreateReservation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reservationName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">owner</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notifyOnStart</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notifyOnEnd</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notificationMinutesBeforeEnd</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isTerminationProtectionEnabled</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">approvalSid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notificationRepeatMinutes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.CreateReservation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.CreateReservation" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines a new reservation.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -2905,6 +2985,7 @@ doesnotcontain hi there</p>
 <li><p><strong>notificationMinutesBeforeEnd</strong> (<em>int</em>) – Indicate the number of minutes before the end of the reservation to send out a Notify On End alert to the reservation owner. (0 = disabled)</p></li>
 <li><p><strong>isTerminationProtectionEnabled</strong> (<em>bool</em>) – Indicate whether to protect the reservation from being terminated.</p></li>
 <li><p><strong>approvalSid</strong> (<em>str</em>) – Leave empty. Used for internal purposes.</p></li>
+<li><p><strong>notificationRepeatMinutes</strong> (<em>int</em>) – Repeat the before-end notification every this many minutes until the reservation ends (0 = no repeat, minimum 15). Applies only when notificationMinutesBeforeEnd is set.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
@@ -2997,7 +3078,7 @@ doesnotcontain hi there</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.CloudShellAPISession.CreateTopologyReservation">
-<span class="sig-name descname"><span class="pre">CreateTopologyReservation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reservationName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">owner</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notifyOnStart</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notifyOnSetupComplete</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notifyOnEnd</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notificationMinutesBeforeEnd</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topologyFullPath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">globalInputs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">requirementsInputs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">additionalInfoInputs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.CreateTopologyReservation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.CreateTopologyReservation" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">CreateTopologyReservation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reservationName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">owner</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notifyOnStart</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notifyOnSetupComplete</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notifyOnEnd</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notificationMinutesBeforeEnd</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topologyFullPath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">globalInputs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">requirementsInputs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">additionalInfoInputs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notificationRepeatMinutes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.CreateTopologyReservation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.CreateTopologyReservation" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines a new reservation.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -3034,6 +3115,7 @@ contains hi there
 doesnotcontain hi there</p>
 </p></li>
 <li><p><strong>additionalInfoInputs</strong> (<em>list</em><em>[</em><a class="reference internal" href="#cloudshell.api.cloudshell_api.UpdateTopologyAdditionalInfoInputsRequest" title="cloudshell.api.cloudshell_api.UpdateTopologyAdditionalInfoInputsRequest"><em>UpdateTopologyAdditionalInfoInputsRequest</em></a><em>]</em>) – Additional info inputs associated with the specified topology.</p></li>
+<li><p><strong>notificationRepeatMinutes</strong> (<em>int</em>) – Repeat the before-end notification every this many minutes until the reservation ends (0 = no repeat, minimum 15). Applies only when notificationMinutesBeforeEnd is set.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
@@ -3577,6 +3659,20 @@ Important: DeleteReservation does not perform teardown and therefore does not re
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="#cloudshell.api.cloudshell_api.CommandExecutionCompletedResultInfo" title="cloudshell.api.cloudshell_api.CommandExecutionCompletedResultInfo">CommandExecutionCompletedResultInfo</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.CloudShellAPISession.ExportBlueprint">
+<span class="sig-name descname"><span class="pre">ExportBlueprint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topologyNames</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.ExportBlueprint"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.ExportBlueprint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export one or more blueprints as their definition xml - the same xml CloudShell uses inside a package. Only the blueprint itself is returned: no data model, drivers, scripts, inventory resources or category definitions, so the result is safe to store in source control and cannot carry system-wide configuration. Use ImportBlueprint to bring it into another server that already has the referenced families, models, attributes, scripts, drivers and categories.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>topologyNames</strong> (<em>list</em><em>[</em><em>str</em><em>]</em>) – Specify a list of topology names. Include the full path from the root to the topology, separated by slashes. For example: FolderName/Topologies/TopologyName.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#cloudshell.api.cloudshell_api.ExportBlueprintResponseInfo" title="cloudshell.api.cloudshell_api.ExportBlueprintResponseInfo">ExportBlueprintResponseInfo</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -4146,6 +4242,20 @@ Important: DeleteReservation does not perform teardown and therefore does not re
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.CloudShellAPISession.GetResourceCommandExecutions">
+<span class="sig-name descname"><span class="pre">GetResourceCommandExecutions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resourceFullName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.GetResourceCommandExecutions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetResourceCommandExecutions" title="Permalink to this definition">¶</a></dt>
+<dd><p>List the resource driver commands currently queued or running on a specific resource, across all reservations, each with its command execution id (which can be passed to CancelResourceCommand), command name, status and the id of the reservation the command belongs to. Use this to find a command left behind by a previous sandbox that is blocking an exclusive, non-concurrent resource. Requires system administrator permissions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>resourceFullName</strong> (<em>str</em>) – Specify the resource full name. For example: ResourceName/Port.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#cloudshell.api.cloudshell_api.RunningCommandListInfo" title="cloudshell.api.cloudshell_api.RunningCommandListInfo">RunningCommandListInfo</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.CloudShellAPISession.GetResourceCommands">
 <span class="sig-name descname"><span class="pre">GetResourceCommands</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resourceFullPath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.GetResourceCommands"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetResourceCommands" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieves driver commands and parameters for a specified resource.</p>
@@ -4323,6 +4433,20 @@ Important: DeleteReservation does not perform teardown and therefore does not re
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="#cloudshell.api.cloudshell_api.EndPointConnectionInfo" title="cloudshell.api.cloudshell_api.EndPointConnectionInfo">EndPointConnectionInfo</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.CloudShellAPISession.GetRunningCommands">
+<span class="sig-name descname"><span class="pre">GetRunningCommands</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reservationId</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.GetRunningCommands"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.GetRunningCommands" title="Permalink to this definition">¶</a></dt>
+<dd><p>List the resource driver commands currently queued or running in a reservation, each with its command execution id (which can be passed to CancelResourceCommand), resource full name, command name, status and start time. Requires system administrator permissions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>reservationId</strong> (<em>str</em>) – Specify the string that represents the reservation’s unique identifier.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#cloudshell.api.cloudshell_api.RunningCommandListInfo" title="cloudshell.api.cloudshell_api.RunningCommandListInfo">RunningCommandListInfo</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -4562,6 +4686,20 @@ Important: DeleteReservation does not perform teardown and therefore does not re
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="#cloudshell.api.cloudshell_api.LookupValuesInfo" title="cloudshell.api.cloudshell_api.LookupValuesInfo">LookupValuesInfo</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.CloudShellAPISession.ImportBlueprint">
+<span class="sig-name descname"><span class="pre">ImportBlueprint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">blueprintXml</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#CloudShellAPISession.ImportBlueprint"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.CloudShellAPISession.ImportBlueprint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Import a blueprint from its definition xml, as produced by ExportBlueprint. Inventory and system-wide configuration are never modified - the call fails if any referenced resource family, resource model, resource attribute, script, driver or category does not already exist on this server. Equivalent to creating or editing a blueprint by hand.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>blueprintXml</strong> (<em>str</em>) – Specify the blueprint definition xml, as returned by ExportBlueprint.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#cloudshell.api.cloudshell_api.ImportBlueprintResponseInfo" title="cloudshell.api.cloudshell_api.ImportBlueprintResponseInfo">ImportBlueprintResponseInfo</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -7155,6 +7293,18 @@ Important: DeleteReservation does not perform teardown and therefore does not re
 </dd></dl>
 
 <dl class="py class">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.ExportBlueprintResponseInfo">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cloudshell.api.cloudshell_api.</span></span><span class="sig-name descname"><span class="pre">ExportBlueprintResponseInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xml_object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">find_prefix</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#ExportBlueprintResponseInfo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.ExportBlueprintResponseInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cloudshell.api.common_cloudshell_api.CommonResponseInfo" title="cloudshell.api.common_cloudshell_api.CommonResponseInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommonResponseInfo</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.ExportBlueprintResponseInfo.Blueprints">
+<span class="sig-name descname"><span class="pre">Blueprints</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.ExportBlueprintResponseInfo.Blueprints" title="Permalink to this definition">¶</a></dt>
+<dd><p>:type : list[BlueprintXmlInfo]</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
 <dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.ExportConfigurationInfo">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cloudshell.api.cloudshell_api.</span></span><span class="sig-name descname"><span class="pre">ExportConfigurationInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xml_object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">find_prefix</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#ExportConfigurationInfo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.ExportConfigurationInfo" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#cloudshell.api.common_cloudshell_api.CommonResponseInfo" title="cloudshell.api.common_cloudshell_api.CommonResponseInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommonResponseInfo</span></code></a></p>
@@ -7828,6 +7978,18 @@ Important: DeleteReservation does not perform teardown and therefore does not re
 <dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.GroupsInfo.Groups">
 <span class="sig-name descname"><span class="pre">Groups</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.GroupsInfo.Groups" title="Permalink to this definition">¶</a></dt>
 <dd><p>:type : list[GroupInfo]</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.ImportBlueprintResponseInfo">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cloudshell.api.cloudshell_api.</span></span><span class="sig-name descname"><span class="pre">ImportBlueprintResponseInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xml_object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">find_prefix</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#ImportBlueprintResponseInfo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.ImportBlueprintResponseInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cloudshell.api.common_cloudshell_api.CommonResponseInfo" title="cloudshell.api.common_cloudshell_api.CommonResponseInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommonResponseInfo</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.ImportBlueprintResponseInfo.ImportedBlueprints">
+<span class="sig-name descname"><span class="pre">ImportedBlueprints</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.ImportBlueprintResponseInfo.ImportedBlueprints" title="Permalink to this definition">¶</a></dt>
+<dd><p>:type : list[str]</p>
 </dd></dl>
 
 </dd></dl>
@@ -9570,6 +9732,60 @@ Important: DeleteReservation does not perform teardown and therefore does not re
 <dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.RouteWithWorkOrderInfo.WorkOrder">
 <span class="sig-name descname"><span class="pre">WorkOrder</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.RouteWithWorkOrderInfo.WorkOrder" title="Permalink to this definition">¶</a></dt>
 <dd><p>:type : WorkOrderRouteInfo</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.RunningCommandInfo">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cloudshell.api.cloudshell_api.</span></span><span class="sig-name descname"><span class="pre">RunningCommandInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xml_object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">find_prefix</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#RunningCommandInfo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.RunningCommandInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cloudshell.api.common_cloudshell_api.CommonResponseInfo" title="cloudshell.api.common_cloudshell_api.CommonResponseInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommonResponseInfo</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.RunningCommandInfo.CommandName">
+<span class="sig-name descname"><span class="pre">CommandName</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.RunningCommandInfo.CommandName" title="Permalink to this definition">¶</a></dt>
+<dd><p>:type : str</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.RunningCommandInfo.ExecutionId">
+<span class="sig-name descname"><span class="pre">ExecutionId</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.RunningCommandInfo.ExecutionId" title="Permalink to this definition">¶</a></dt>
+<dd><p>:type : str</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.RunningCommandInfo.ReservationId">
+<span class="sig-name descname"><span class="pre">ReservationId</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.RunningCommandInfo.ReservationId" title="Permalink to this definition">¶</a></dt>
+<dd><p>:type : str</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.RunningCommandInfo.ResourceFullName">
+<span class="sig-name descname"><span class="pre">ResourceFullName</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.RunningCommandInfo.ResourceFullName" title="Permalink to this definition">¶</a></dt>
+<dd><p>:type : str</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.RunningCommandInfo.StartTime">
+<span class="sig-name descname"><span class="pre">StartTime</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.RunningCommandInfo.StartTime" title="Permalink to this definition">¶</a></dt>
+<dd><p>:type : str</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.RunningCommandInfo.Status">
+<span class="sig-name descname"><span class="pre">Status</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.RunningCommandInfo.Status" title="Permalink to this definition">¶</a></dt>
+<dd><p>:type : str</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.RunningCommandListInfo">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cloudshell.api.cloudshell_api.</span></span><span class="sig-name descname"><span class="pre">RunningCommandListInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xml_object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">find_prefix</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cloudshell/api/cloudshell_api.html#RunningCommandListInfo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cloudshell.api.cloudshell_api.RunningCommandListInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cloudshell.api.common_cloudshell_api.CommonResponseInfo" title="cloudshell.api.common_cloudshell_api.CommonResponseInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommonResponseInfo</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cloudshell.api.cloudshell_api.RunningCommandListInfo.Commands">
+<span class="sig-name descname"><span class="pre">Commands</span></span><a class="headerlink" href="#cloudshell.api.cloudshell_api.RunningCommandListInfo.Commands" title="Permalink to this definition">¶</a></dt>
+<dd><p>:type : list[RunningCommandInfo]</p>
 </dd></dl>
 
 </dd></dl>
