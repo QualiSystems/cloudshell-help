@@ -204,7 +204,7 @@ The name in bold is the event's name: use it in `ServerEventsWhiteList.csv`, and
 
 ## Maintenance Window Events
 
-*Added in CloudShell 2026.2*
+*Added in CloudShell 2026.2.0.48*
 
 All maintenance window events carry the same fields:
 
