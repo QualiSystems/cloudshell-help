@@ -20,6 +20,16 @@ Each record in the Routes tab represents a single route. Routes are sorted alpha
 - For cable routes (known as "direct" in the work order), if both work order resources at the terminus have been selected, users can apply "connect" to indicate that the devices have been wired together in the lab (or "disconnect" for the inverse). The **Save & Connect** button is disabled for Cable type routes since no Layer 1 connection is needed.
 - For Layer 1 routes, users can assign the work order resource to be connected to another device in the lab.
 
+### Connecting Many Routes at Once {#connect-all-routes}
+
+The **Connect All** button above the route table connects, in one operation, every route that has resources selected on both ends and isn't connected yet. The number on the button is the number of routes it will connect.
+
+To connect only some of the routes, select their check boxes (the check box in the header row selects all routes that can be connected). The button then changes to **Connect Selected** and connects only the selected routes.
+
+Each route is connected separately, so a route that fails to connect doesn't stop the others. When the operation finishes, a summary shows how many routes were connected and lists each route that failed with the reason. Fix the cause and connect the failed routes again.
+
+Available in CloudShell **2026.2.0.48** and later.
+
 ### Route Search
 
 When searching for resources to assign to a route, the following search capabilities are available:

@@ -7,6 +7,12 @@ CloudShell Release History
 
 ## Version 2026.2
 
+### Connect All Routes in a Work Order {#work-order-connect-all}
+The work order **Routes** tab has a new **Connect All** button that connects every route that has resources selected on both ends and isn't connected yet. Select routes' check boxes to connect only those (**Connect Selected**). A route that fails to connect is skipped and reported in a summary, and the other routes are still connected. See [Work Order Management](../admin/setting-up-cloudshell/assembly-lab/work-order-management.md#connect-all-routes). Available in CloudShell **2026.2.0.48** and later.
+
+### Maintenance Window Events and Log Lines {#maintenance-window-events}
+Creating, updating, starting, ending, stopping and deleting a maintenance window is now written to `TeamServer.Service.txt` (`Maintenance window <id> <action> by <user>...`) and published to the [CloudShell Server Events Queue](../admin/cloudshell-event-queue.md) as `MaintenanceWindowCreated`, `MaintenanceWindowUpdated`, `MaintenanceWindowStarted`, `MaintenanceWindowEnded`, `MaintenanceWindowStopped` and `MaintenanceWindowDeleted` events. Available in CloudShell **2026.2.0.48** and later.
+
 ### Repeating "Sandbox Ending" Email {#repeating-before-end-notification}
 The **Before end** email notification can now repeat until the sandbox ends. In the Reserve dialog or the sandbox **Properties**, select **Before end**, then select **and again every** and set an interval (minimum 15 minutes). The sandbox owner and permitted users keep getting the reminder at that interval until the sandbox ends.
 
@@ -45,6 +51,8 @@ Node.js, used by the Sandbox API Gateway and Server Proxy, was updated from 24.1
 - Fixed the sandbox diagram occasionally staying on **LOADING**. (2026.2.0.34)
 - `ServiceExtension.dll` and `GenericServiceExtension.dll` now show the CloudShell version as their file version. Their assembly version is unchanged (2.0.0.0). (2026.2.0.34)
 - Fixed the App Orchestration package (1.0.1) on Python 3.13 Execution Servers. (2026.2.0.34)
+- When a resource search fails because of a search (Elasticsearch) error, the real error is now written to the Quali Server log instead of a `NullReferenceException`. The API still returns "Error occurred when searching for resources". (2026.2.0.48)
+- The CloudShell installation package now includes the current Python Automation API documentation (`CloudShell\Integration\CloudShell Automation API`) instead of the 2022.3 version. (2026.2.0.48)
 - Fixed reserving a sandbox failing with `User "..." does not exist` when the owner's username contains non-ASCII characters, such as accented letters or Japanese characters.
 - Fixed a custom logo override (`customer_override.css`) not being applied on the page shown after switching domain.
 - Fixed the Connect All VLAN service script on Python 3 Execution Servers; the installer now ships the current Networking and Sandbox Orchestration packages.
