@@ -190,6 +190,41 @@ The name in bold is the event's name: use it in `ServerEventsWhiteList.csv`, and
 
 **ResourceAttributeUpdated** *(Added in CloudShell 2024.1.0.2549)*:   This event is triggered when an attribute value is changed on a resource. Useful for monitoring attribute changes via MQ integration for audit or automation purposes.
 
+**MaintenanceWindowCreated** *(Added in CloudShell 2026.2.0.48)*:   This event is triggered when an administrator creates a maintenance window.
+
+**MaintenanceWindowUpdated** *(Added in CloudShell 2026.2.0.48)*:   This event occurs when an administrator changes a maintenance window.
+
+**MaintenanceWindowStarted** *(Added in CloudShell 2026.2.0.48)*:   This event is fired when a maintenance window becomes active: at its scheduled start, or right away when it is created or changed to start now.
+
+**MaintenanceWindowEnded** *(Added in CloudShell 2026.2.0.48)*:   This event is triggered when a maintenance window reaches its scheduled end.
+
+**MaintenanceWindowStopped** *(Added in CloudShell 2026.2.0.48)*:   This event occurs when an administrator stops an active maintenance window before its scheduled end.
+
+**MaintenanceWindowDeleted** *(Added in CloudShell 2026.2.0.48)*:   This event is fired when an administrator deletes a maintenance window that has not started.
+
+## Maintenance Window Events
+
+*Added in CloudShell 2026.2.0.48*
+
+All maintenance window events carry the same fields:
+
+- `MaintenanceWindowId`, `DomainId`, and `Status` (the window's status after the change: `Pending`, `Active`, `Ended`, `Stopped`, or `Deleted`).
+- `StartTime` and `EndTime`: the window's scheduled start and end, in UTC.
+- `EventTime`: when the change happened, in UTC.
+- `UserName`: the administrator who made the change, or `null` when CloudShell Server changed the window on its own. That happens at the scheduled start and end, and when the server starts and catches up on windows that started or ended while it was down.
+
+:::info[Example message]
+```json
+{"EventType":"MaintenanceWindowStarted","EventData":{"MaintenanceWindowId":7,"DomainId":"dbaf480c-09f7-46d3-a2e2-e35d3e374a16","Status":"Active","StartTime":"2026-11-14T06:00:00Z","EndTime":"2026-11-14T09:00:00Z","EventTime":"2026-11-14T06:00:00Z","UserName":null},"Version":"1.0"}
+```
+:::
+
+CloudShell Server also writes each of these events to its log (`TeamServer.Service.txt`), whether or not the events queue is enabled. Search for lines that start with `Maintenance window`, for example:
+
+```
+WARN  MaintenanceWindow - Maintenance window 7 started by the server. Status: Active, scheduled 2026-11-14 06:00 - 2026-11-14 09:00 UTC, domain dbaf480c-09f7-46d3-a2e2-e35d3e374a16
+```
+
 ## Domain ID in Events
 
 *Added in CloudShell 2024.1.0.2596*
