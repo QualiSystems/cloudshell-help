@@ -190,17 +190,17 @@ The name in bold is the event's name: use it in `ServerEventsWhiteList.csv`, and
 
 **ResourceAttributeUpdated** *(Added in CloudShell 2024.1.0.2549)*:   This event is triggered when an attribute value is changed on a resource. Useful for monitoring attribute changes via MQ integration for audit or automation purposes.
 
-**MaintenanceWindowCreated** *(Added in CloudShell 2026.2)*:   This event is triggered when an administrator creates a maintenance window.
+**MaintenanceWindowCreated** *(Added in CloudShell 2026.2.0.48)*:   This event is triggered when an administrator creates a maintenance window.
 
-**MaintenanceWindowUpdated** *(Added in CloudShell 2026.2)*:   This event occurs when an administrator changes a maintenance window.
+**MaintenanceWindowUpdated** *(Added in CloudShell 2026.2.0.48)*:   This event occurs when an administrator changes a maintenance window.
 
-**MaintenanceWindowStarted** *(Added in CloudShell 2026.2)*:   This event is fired when a maintenance window becomes active: at its scheduled start, or right away when it is created or changed to start now.
+**MaintenanceWindowStarted** *(Added in CloudShell 2026.2.0.48)*:   This event is fired when a maintenance window becomes active: at its scheduled start, or right away when it is created or changed to start now.
 
-**MaintenanceWindowEnded** *(Added in CloudShell 2026.2)*:   This event is triggered when a maintenance window reaches its scheduled end.
+**MaintenanceWindowEnded** *(Added in CloudShell 2026.2.0.48)*:   This event is triggered when a maintenance window reaches its scheduled end.
 
-**MaintenanceWindowStopped** *(Added in CloudShell 2026.2)*:   This event occurs when an administrator stops an active maintenance window before its scheduled end.
+**MaintenanceWindowStopped** *(Added in CloudShell 2026.2.0.48)*:   This event occurs when an administrator stops an active maintenance window before its scheduled end.
 
-**MaintenanceWindowDeleted** *(Added in CloudShell 2026.2)*:   This event is fired when an administrator deletes a maintenance window that has not started.
+**MaintenanceWindowDeleted** *(Added in CloudShell 2026.2.0.48)*:   This event is fired when an administrator deletes a maintenance window that has not started.
 
 ## Maintenance Window Events
 
