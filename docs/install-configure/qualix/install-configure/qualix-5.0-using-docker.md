@@ -12,9 +12,9 @@ From QualiX 5.1.1.538 you can deploy with plain Docker Compose instead, with no 
 
 Note that there are two versions of the deployment script:
 
-- `deploy-qualix-docker-5.0.1.506.sh` installs both the required containers and QualiX on a clean machine.
+- `deploy-qualix-docker-5.1.1.542.sh` installs both the required containers and QualiX on a clean machine.
 
-- `guacamole-quali-install-docker-5.0.1.506.sh` install Qualix startup scripts and requires Docker to be installed on the machine as a prerequisite
+- `guacamole-quali-install-docker-5.1.1.542.sh` install Qualix startup scripts and requires Docker to be installed on the machine as a prerequisite
 
 ## Deployment and Upgrade
 
@@ -46,9 +46,9 @@ There are three ways to deploy Qualix 5.0 (and up):
     For example:
     
     ```javascript
-    wget https://quali-prod-binaries.s3.amazonaws.com/deploy-qualix-docker-5.0.1.506.sh
-    chmod +x deploy-qualix-docker-5.0.1.506.sh
-    deploy-qualix-docker-5.0.1.506.sh
+    wget https://quali-prod-binaries.s3.amazonaws.com/deploy-qualix-docker-5.1.1.542.sh
+    chmod +x deploy-qualix-docker-5.1.1.542.sh
+    deploy-qualix-docker-5.1.1.542.sh
     ```
     
 3. Set [QualiX Configuration for Version 5.0 and up](../post-installation-config/qualix-config-for-5-and-up.md).
@@ -94,9 +94,9 @@ There are three ways to deploy Qualix 5.0 (and up):
     For example:
     
     ```javascript
-    wget https://quali-prod-binaries.s3.amazonaws.com/deploy-qualix-docker-5.0.1.506.sh
-    chmod +x deploy-qualix-docker-5.0.1.506.sh
-    deploy-qualix-docker-5.0.1.506.sh
+    wget https://quali-prod-binaries.s3.amazonaws.com/deploy-qualix-docker-5.1.1.542.sh
+    chmod +x deploy-qualix-docker-5.1.1.542.sh
+    deploy-qualix-docker-5.1.1.542.sh
     ```
     
 3. [Run QualiX](#run-qualix).
@@ -126,9 +126,9 @@ There are three ways to deploy Qualix 5.0 (and up):
     For example:
     
     ```javascript
-    wget https://quali-prod-binaries.s3.amazonaws.com/guacamole-quali-install-docker-5.0.1.506.sh
-    chmod +x guacamole-quali-install-docker-5.0.1.506.sh
-    guacamole-quali-install-docker-5.0.1.506.sh
+    wget https://quali-prod-binaries.s3.amazonaws.com/guacamole-quali-install-docker-5.1.1.542.sh
+    chmod +x guacamole-quali-install-docker-5.1.1.542.sh
+    guacamole-quali-install-docker-5.1.1.542.sh
     ```
     
 4. Start Qualix.
