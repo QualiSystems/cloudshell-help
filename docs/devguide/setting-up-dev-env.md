@@ -12,7 +12,7 @@ In this section we’ll go over the recommended steps for setting up a developme
 
 Download and install a current 64-bit version of Python 3 from the [official website](https://www.python.org/downloads/). Shellfoundry, CloudShell's shell development CLI, supports Python 3.9–3.13 (Python 3.13 requires shellfoundry 1.2.29 or later).
 
-Note that shells and scripts *execute* on the Python versions bundled with CloudShell itself, not on your dev machine's Python. As of CloudShell 2026.1 that is:
+Note that shells and scripts *execute* on the Python versions bundled with CloudShell itself, not on your dev machine's Python. As of CloudShell 2026.2 that is:
 
 | Execution Server | Bundled Python 3 | Bundled Python 2 |
 | --- | --- | --- |
@@ -22,7 +22,7 @@ Note that shells and scripts *execute* on the Python versions bundled with Cloud
 
 Your driver code and its `requirements.txt` must stay compatible with the bundled version your CloudShell deployment runs. If your shells run on both Windows and Linux Execution Servers, they must work on both Python 3.9 and 3.13 — mind the standard-library removals in between, such as the `collections` aliases for the abstract base classes (`collections.Sequence`), which were removed in 3.10 in favor of `collections.abc`.
 
-Earlier CloudShell versions bundle Python 3.9.9 on Windows as well; see [Behavior Changes](../release-notes/behavior-change.md).
+CloudShell 2026.1 and earlier versions bundle Python 3.9.9 on Windows as well; see [Behavior Changes](../release-notes/behavior-change.md).
 :::tip
 CloudShell components such as Quali Server and the execution servers come with their own Python installation folders. Making changes to these folders may cause unexpected behavior in CloudShell. Therefore, if you plan on doing dev work on a machine that has CloudShell components installed, we recommend doing one of the following:
 
