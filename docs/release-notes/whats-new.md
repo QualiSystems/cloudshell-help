@@ -38,6 +38,27 @@ When creating a driver environment, the Execution Server now sets `VIRTUALENV_NO
 ### Docker Execution Server Per-Release Tag
 Each Docker Execution Server release is also tagged with its release number, for example `qualihub/executionserver:2026.2`, which always points to the newest 2026.2 image.
 
+### Bundled Python 3 Upgraded to 3.13 (Windows)
+The Python 3 interpreter bundled with CloudShell on Windows has been upgraded from CPython 3.9.9 (32-bit) to **3.13.15 (64-bit)**. Shell drivers and orchestration scripts that run on a Windows Execution Server now execute on Python 3.13. The bundled Python 2.7.18 slot is unchanged and still ships, so legacy Python 2 shells are unaffected. CloudShell 2026.1 still bundles Python 3.9.9 (32-bit) on Windows.
+
+:::warning Driver compatibility
+Driver code and its `requirements.txt` must be valid on Python 3.13. Modules and aliases removed between 3.9 and 3.13 are the most common cause of breakage — for example the `collections` aliases for the abstract base classes (`collections.Sequence`), which were removed in Python 3.10 and must be imported from `collections.abc` instead. Test your shells against Python 3.13 before upgrading.
+:::
+
+:::note Linux and Docker Execution Servers still use Python 3.9.9
+This upgrade covers the Python bundled with CloudShell on Windows. Linux Execution Servers — including the Linux virtual appliance and the Docker Execution Server image — still provide Python 3.9.9. If your shells run on both Windows and Linux Execution Servers, keep driver code compatible with both 3.9 and 3.13.
+:::
+
+### Preserve the Diagram Arrangement When the View Style Changes
+Changing a diagram's **View Style** can now resize the resource cards in place and keep the saved arrangement, instead of applying the legacy per-axis resize (Large ×2/×3, Small ÷2.7 and ×1.3) that visibly displaces resources and link endpoints. This is opt-in — set `PreserveDiagramLayoutOnViewStyleChange` to `True` in the Portal's `customer.config`; the default is unchanged behavior.
+
+Independently of that setting, three flows that could move or persist diagram coordinates incorrectly were fixed: **Arrange**, dragging resources to new positions, and resizing a sticky note.
+
+### Sandbox Owners and Permitted Users Accepted by Display Name
+Creating a sandbox could fail with `User "<name>" does not exist` for a user who did exist, when that user's display name differed from their username — most often for users provisioned through SSO or Active Directory, where the directory supplies a display name such as `Jane Doe (Engineering)` while the login remains `jdoe`. Sandbox owners and permitted users may now be given as a user ID, a username, or a display name.
+
+Usernames are matched first, so no existing behavior changes. Because display names are not required to be unique, a display name shared by more than one user is rejected rather than resolved arbitrarily, and the error asks for the username instead. Permissions are unchanged — a user resolved this way must still be allowed to own a sandbox in the relevant domain.
+
 ### Security Updates
 Node.js, used by the Sandbox API Gateway and Server Proxy, was updated from 24.14.0 to 24.22.1 (Node.js October 2026 security release). Available in CloudShell **2026.2.0.34** and later.
 
@@ -56,6 +77,8 @@ Node.js, used by the Sandbox API Gateway and Server Proxy, was updated from 24.1
 - Fixed reserving a sandbox failing with `User "..." does not exist` when the owner's username contains non-ASCII characters, such as accented letters or Japanese characters.
 - Fixed a custom logo override (`customer_override.css`) not being applied on the page shown after switching domain.
 - Fixed the Connect All VLAN service script on Python 3 Execution Servers; the installer now ships the current Networking and Sandbox Orchestration packages.
+- Fixed a server error (HTTP 500) when downloading a shell or provisioning script whose stored file name has no extension.
+- Fixed the sandbox **Properties** dialog showing a non-admin user an end time the sandbox does not have, for a sandbox that had been extended beyond the duration cap of its blueprint or user group. The dialog now shows the sandbox's real schedule, and opening it no longer silently shortens the sandbox.
 
 ## Version 2026.1
 
@@ -123,11 +146,6 @@ New TestShell API method that returns the list of reservations (current and hist
 ### Improved Abstract Resource Resolution Diagnostics
 When a blueprint reservation fails due to unresolvable abstract resources or route conflicts, the error message now includes detailed diagnostics — showing which resources could not be resolved, which routes failed, and the specific conflicts that prevented resolution.
 
-### Preserve the Diagram Arrangement When the View Style Changes
-Changing a diagram's **View Style** can now resize the resource cards in place and keep the saved arrangement, instead of applying the legacy per-axis resize (Large ×2/×3, Small ÷2.7 and ×1.3) that visibly displaces resources and link endpoints. This is opt-in — set `PreserveDiagramLayoutOnViewStyleChange` to `True` in the Portal's `customer.config`; the default is unchanged behavior.
-
-Independently of that setting, three flows that could move or persist diagram coordinates incorrectly were fixed: **Arrange**, dragging resources to new positions, and resizing a sticky note.
-
 ### Execution Server Resilience on Linux
 Execution Servers running on Linux/Mono handle bursts of driver launches more reliably. Under a burst, reads from driver child processes could starve the socket-completion callbacks that service the Execution Server's messaging channel, wedging the agent until it was restarted. The Execution Server now reserves a floor of thread-pool worker threads at startup so the two cannot compete, and CloudShell Server tolerates a much longer transient stall — up to roughly 100 seconds — when dispatching an execution request to an Execution Server, instead of giving up after a few seconds.
 
@@ -142,22 +160,6 @@ New system-administrator Automation API methods for seeing which resource driver
 - `ClearResourceCommands` — cancel every command queued or running on a resource. Does not wait behind the command it is clearing, so it can be called from a Setup script.
 
 For details and examples, see [Inspecting and Clearing Driver Commands on a Resource](../devguide/available-cs-api/useful-cs-api-examples/inspect-and-clear-driver-commands.md).
-
-### Sandbox Owners and Permitted Users Accepted by Display Name
-Creating a sandbox could fail with `User "<name>" does not exist` for a user who did exist, when that user's display name differed from their username — most often for users provisioned through SSO or Active Directory, where the directory supplies a display name such as `Jane Doe (Engineering)` while the login remains `jdoe`. Sandbox owners and permitted users may now be given as a user ID, a username, or a display name.
-
-Usernames are matched first, so no existing behavior changes. Because display names are not required to be unique, a display name shared by more than one user is rejected rather than resolved arbitrarily, and the error asks for the username instead. Permissions are unchanged — a user resolved this way must still be allowed to own a sandbox in the relevant domain.
-
-### Bundled Python 3 Upgraded to 3.13 (Windows)
-The Python 3 interpreter bundled with CloudShell on Windows has been upgraded from CPython 3.9.9 (32-bit) to **3.13.15 (64-bit)**. Shell drivers and orchestration scripts that run on a Windows Execution Server now execute on Python 3.13. The bundled Python 2.7.18 slot is unchanged and still ships, so legacy Python 2 shells are unaffected.
-
-:::warning Driver compatibility
-Driver code and its `requirements.txt` must be valid on Python 3.13. Modules and aliases removed between 3.9 and 3.13 are the most common cause of breakage — for example the `collections` aliases for the abstract base classes (`collections.Sequence`), which were removed in Python 3.10 and must be imported from `collections.abc` instead. Test your shells against Python 3.13 before upgrading.
-:::
-
-:::note Linux and Docker Execution Servers still use Python 3.9.9
-This upgrade covers the Python bundled with CloudShell on Windows. Linux Execution Servers — including the Linux virtual appliance and the Docker Execution Server image — still provide Python 3.9.9. If your shells run on both Windows and Linux Execution Servers, keep driver code compatible with both 3.9 and 3.13.
-:::
 
 ### Global Inputs Kept When Saving a Sandbox as a Blueprint
 Saving a sandbox as a blueprint now keeps global inputs that were linked to a resource requirement, instead of dropping them:
@@ -199,8 +201,6 @@ Available in CloudShell **2026.2.0.190036** and later. 2026.1 releases up to and
 - Restored the full Ansible package (with bundled collections) in the Docker Execution Server image, fixing playbooks that failed with missing-module errors.
 - The About dialog now shows the full four-part product version, including the build number (for example, `2026.1.0.52`).
 - Fixed a resource placed directly into a blueprint being labeled with its own name twice on the sandbox diagram — for example `server1 (server1)` instead of `server1`. A resource that does resolve an abstract still shows that abstract's alias, and where an abstract's alias is identical to the resource name the diagram now shows the name once, matching the resource side pane.
-- Fixed a server error (HTTP 500) when downloading a shell or provisioning script whose stored file name has no extension.
-- Fixed the sandbox **Properties** dialog showing a non-admin user an end time the sandbox does not have, for a sandbox that had been extended beyond the duration cap of its blueprint or user group. The dialog now shows the sandbox's real schedule, and opening it no longer silently shortens the sandbox.
 
 ---
 
